@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+
+# conversion tooling: the original single-file site (6.7 MB) and scratch output
+tools/src/
+tools/out/
+tools/node_modules/
+
+# per-machine Claude Code permissions
+.claude/settings.local.json
