@@ -23,7 +23,7 @@ Log for the SEO implementation: what could not be resolved from the repo, what n
 | 16 | BlogPosting author is a `Person` with `url` pointing at `/about/`; there are no per-author pages. If author pages are wanted (the brief's Phase 3 text implies them), that is new routes and content. | 3 | open |
 | 17 | Article dates are given as midnight India Standard Time (`T00:00:00+05:30`) because the source has dates only and Google's validator asks for a time zone; the offices are Mumbai and Bengaluru. | 3 | assumed |
 | 18 | FAQPage is emitted on the PYZO landing and the four industry pages as asked, and validates (Schema Markup Validator: 0 errors), but Google withdrew FAQ rich results for sites outside government and health in 2023, so the Rich Results Test no longer lists it. Kept as requested. The nine capability and engineering pages also have FAQ accordions but were not in scope for FAQPage. | 3 | open |
-| 19 | Rich Results Test was executed by pasting the generated markup (the site is not public). Results: Article valid, Breadcrumbs valid, Organization valid; Service and FAQPage checked with the Schema Markup Validator (0 errors, 0 warnings). Re-run against live URLs after launch. | 3 | open |
+| 19 | Rich Results Test was executed by pasting the generated markup (the site is not public). Results: Article valid, Breadcrumbs valid, Organization valid; Service and FAQPage checked with the Schema Markup Validator (0 errors, 0 warnings). Repeat against the live URLs after launch. | 3 | open |
 | 13 | The hero backdrop is a CSS background, so it cannot carry `priority`; the light-theme variant is preloaded from the root layout (light is the default). The dark variant is not preloaded. | 5 | assumed |
 
 ## Needs copywriting
