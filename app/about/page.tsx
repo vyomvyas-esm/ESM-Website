@@ -1,8 +1,11 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "About Us - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "About Us",
+  description:
+    "We’re AI-native operators who engineer, deploy, and continuously improve production AI systems inside regulated enterprises.",
+  path: "/about/",
+});
 export default function WhoWeArePage() {
   return (
     <main className="page" id="page-who-we-are">
@@ -26,7 +29,7 @@ export default function WhoWeArePage() {
             inside regulated enterprises.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/contact">
+            <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -308,7 +311,7 @@ export default function WhoWeArePage() {
               </div>
               <div className="ppl-links">
                 <Link
-                  href={"/blog?author=Shreyas%20Sanghvi"}
+                  href={"/blog/?author=Shreyas%20Sanghvi"}
                   className="ppl-lnk"
                   title="Shreyas Sanghvi on the blog"
                   aria-label="Shreyas Sanghvi on the blog"
@@ -381,7 +384,7 @@ export default function WhoWeArePage() {
               </div>
               <div className="ppl-links">
                 <Link
-                  href={"/blog?author=Shardul%20Singh"}
+                  href={"/blog/?author=Shardul%20Singh"}
                   className="ppl-lnk"
                   title="Shardul Singh on the blog"
                   aria-label="Shardul Singh on the blog"
@@ -454,7 +457,7 @@ export default function WhoWeArePage() {
               </div>
               <div className="ppl-links">
                 <Link
-                  href={"/blog?author=Karan%20Trehan"}
+                  href={"/blog/?author=Karan%20Trehan"}
                   className="ppl-lnk"
                   title="Karan Trehan on the blog"
                   aria-label="Karan Trehan on the blog"
@@ -527,7 +530,7 @@ export default function WhoWeArePage() {
               </div>
               <div className="ppl-links">
                 <Link
-                  href={"/blog?author=Snehasis%20Panda"}
+                  href={"/blog/?author=Snehasis%20Panda"}
                   className="ppl-lnk"
                   title="Snehasis Panda on the blog"
                   aria-label="Snehasis Panda on the blog"
@@ -6361,7 +6364,7 @@ export default function WhoWeArePage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

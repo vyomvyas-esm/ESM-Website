@@ -1,9 +1,11 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { BlogIndex } from "@/components/BlogIndex";
-export const metadata: Metadata = {
-  title: "The AI Operator Journal - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "The AI Operator Journal",
+  description: "Field notes from the teams engineering AI that delivers enterprise value.",
+  path: "/blog/",
+});
 export default function BlogsPage() {
   return (
     <main className="page" id="page-blogs">
@@ -28,7 +30,7 @@ export default function BlogsPage() {
             Field notes from the teams engineering AI that delivers enterprise value.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/contact">
+            <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -63,7 +65,7 @@ export default function BlogsPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

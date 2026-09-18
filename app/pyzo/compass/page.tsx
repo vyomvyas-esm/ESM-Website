@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "Compass, Business Analyst - PYZO - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Compass, Business Analyst - PYZO",
+  description: "Where Compass makes a body of knowledge queryable, and puts it to work.",
+  path: "/pyzo/compass/",
+});
 export default function PyzoCompassPage() {
   return (
     <main className="page" id="page-pyzo-compass">
@@ -17,7 +19,7 @@ export default function PyzoCompassPage() {
             <div>
               <nav className="crumb rv" aria-label="Breadcrumb">
                 <Link href="/">Home</Link>
-                <span className="sep">·</span> <Link href="/pyzo">PYZO</Link>
+                <span className="sep">·</span> <Link href="/pyzo/">PYZO</Link>
                 <span className="sep">·</span> <span aria-current="page">Compass</span>
               </nav>
               <span
@@ -35,7 +37,7 @@ export default function PyzoCompassPage() {
                 confidence score attached.
               </p>
               <div className="mt-8 rv" data-d="200">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path
@@ -169,7 +171,7 @@ export default function PyzoCompassPage() {
             Deployed, and measured.
           </h2>
           <div className="mt-[46px]">
-            <Link className="csr rv" data-d="0" href="/case-studies/koita">
+            <Link className="csr rv" data-d="0" href="/case-studies/koita-foundation/">
               <span
                 className="clogo csr-logo logow-koita opacity-70"
                 role="img"
@@ -224,7 +226,7 @@ export default function PyzoCompassPage() {
                   Credit policy, exception rules, KYC thresholds and branch SOPs answered inside the workflow,
                   so an underwriter, a teller or an agent is working from the version currently in force.
                 </p>
-                <Link className="us-go group" href="/industries/bfsi">
+                <Link className="us-go group" href="/industries/bfsi/">
                   Explore BFSI
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -248,7 +250,7 @@ export default function PyzoCompassPage() {
                   GMP procedures, current SOPs, regulatory guidance and labelling answered on the floor and in
                   the field, with every answer traceable to the controlled document behind it.
                 </p>
-                <Link className="us-go group" href="/industries/healthcare">
+                <Link className="us-go group" href="/industries/healthcare/">
                   Explore Healthcare
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -273,7 +275,7 @@ export default function PyzoCompassPage() {
                   officers and citizens, with a documented trail behind every answer and the clause it was
                   drawn from.
                 </p>
-                <Link className="us-go group" href="/industries/public-sector">
+                <Link className="us-go group" href="/industries/public-sector/">
                   Explore Public Sector
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -298,7 +300,7 @@ export default function PyzoCompassPage() {
                   counter, without a ticket to the policy team and without the version drifting between
                   channels.
                 </p>
-                <Link className="us-go group" href="/industries/retail">
+                <Link className="us-go group" href="/industries/retail/">
                   Explore Retail
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -424,7 +426,7 @@ export default function PyzoCompassPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

@@ -1,8 +1,11 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "Careers - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Careers",
+  description:
+    "We engineer systems that operate inside banks, hospitals and governments, and we answer for what they produce.",
+  path: "/careers/",
+});
 export default function CareersPage() {
   return (
     <main className="page" id="page-careers">
@@ -28,7 +31,7 @@ export default function CareersPage() {
             they produce.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/careers/apply">
+            <Link className="btn btn-light group" href="/careers/apply/">
               Introduce yourself
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -150,7 +153,7 @@ export default function CareersPage() {
                 <span className="role-sep">·</span>
                 <span>Full time</span>
               </div>
-              <Link className="btn btn-ghost btn-sm group" href="/careers/apply">
+              <Link className="btn btn-ghost btn-sm group" href="/careers/apply/">
                 Apply
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
@@ -176,7 +179,7 @@ export default function CareersPage() {
                 <span className="role-sep">·</span>
                 <span>Full time</span>
               </div>
-              <Link className="btn btn-ghost btn-sm group" href="/careers/apply">
+              <Link className="btn btn-ghost btn-sm group" href="/careers/apply/">
                 Apply
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
@@ -201,7 +204,7 @@ export default function CareersPage() {
                 <span className="role-sep">·</span>
                 <span>Full time</span>
               </div>
-              <Link className="btn btn-ghost btn-sm group" href="/careers/apply">
+              <Link className="btn btn-ghost btn-sm group" href="/careers/apply/">
                 Apply
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
@@ -234,7 +237,7 @@ export default function CareersPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/careers/apply">
+                <Link className="btn btn-light group" href="/careers/apply/">
                   Introduce yourself
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

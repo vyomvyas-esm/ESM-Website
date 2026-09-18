@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "Loupe, Application Assistant - PYZO - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Loupe, Application Assistant - PYZO",
+  description: "Where Loupe guides and validates the submissions each industry depends on.",
+  path: "/pyzo/loupe/",
+});
 export default function PyzoLoupePage() {
   return (
     <main className="page" id="page-pyzo-loupe">
@@ -17,7 +19,7 @@ export default function PyzoLoupePage() {
             <div>
               <nav className="crumb rv" aria-label="Breadcrumb">
                 <Link href="/">Home</Link>
-                <span className="sep">·</span> <Link href="/pyzo">PYZO</Link>
+                <span className="sep">·</span> <Link href="/pyzo/">PYZO</Link>
                 <span className="sep">·</span> <span aria-current="page">Loupe</span>
               </nav>
               <span
@@ -34,7 +36,7 @@ export default function PyzoLoupePage() {
                 them, and validates each entry against the requirement it is meant to satisfy.
               </p>
               <div className="mt-8 rv" data-d="200">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path
@@ -195,7 +197,7 @@ export default function PyzoLoupePage() {
                   right document and consistent details, plus autofill from what you already hold in the core
                   and the bureau.
                 </p>
-                <Link className="us-go group" href="/industries/bfsi">
+                <Link className="us-go group" href="/industries/bfsi/">
                   Explore BFSI
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -220,7 +222,7 @@ export default function PyzoLoupePage() {
                   of entry, with missing signatures, versions and out-of-range values caught before anything
                   moves downstream.
                 </p>
-                <Link className="us-go group" href="/industries/healthcare">
+                <Link className="us-go group" href="/industries/healthcare/">
                   Explore Healthcare
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -245,7 +247,7 @@ export default function PyzoLoupePage() {
                   evidence checked at submission rather than at review, and guidance in the applicant's own
                   language.
                 </p>
-                <Link className="us-go group" href="/industries/public-sector">
+                <Link className="us-go group" href="/industries/public-sector/">
                   Explore Public Sector
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -269,7 +271,7 @@ export default function PyzoLoupePage() {
                   Checkout, seller registration and claim forms completed without the drop-off that comes from
                   a form that does not explain itself, validated at entry rather than rejected days later.
                 </p>
-                <Link className="us-go group" href="/industries/retail">
+                <Link className="us-go group" href="/industries/retail/">
                   Explore Retail
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -393,7 +395,7 @@ export default function PyzoLoupePage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

@@ -1,8 +1,11 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "Atlas, Training Coach - PYZO - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Atlas, Training Coach - PYZO",
+  description:
+    "Where Atlas turns institutional knowledge into evidenced learning across the industries we serve.",
+  path: "/pyzo/atlas/",
+});
 export default function PyzoAtlasPage() {
   return (
     <main className="page" id="page-pyzo-atlas">
@@ -17,7 +20,7 @@ export default function PyzoAtlasPage() {
             <div>
               <nav className="crumb rv" aria-label="Breadcrumb">
                 <Link href="/">Home</Link>
-                <span className="sep">·</span> <Link href="/pyzo">PYZO</Link>
+                <span className="sep">·</span> <Link href="/pyzo/">PYZO</Link>
                 <span className="sep">·</span> <span aria-current="page">Atlas</span>
               </nav>
               <span
@@ -35,7 +38,7 @@ export default function PyzoAtlasPage() {
                 change, and checking whether the knowledge actually stuck.
               </p>
               <div className="mt-8 rv" data-d="200">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path
@@ -180,7 +183,7 @@ export default function PyzoAtlasPage() {
             Deployed, and measured.
           </h2>
           <div className="mt-[46px]">
-            <Link className="csr rv" data-d="0" href="/case-studies/cipla">
+            <Link className="csr rv" data-d="0" href="/case-studies/cipla-global-training-academy/">
               <span
                 className="clogo csr-logo logow-cipla opacity-70"
                 role="img"
@@ -214,7 +217,7 @@ export default function PyzoAtlasPage() {
                 </svg>
               </span>
             </Link>
-            <Link className="csr rv" data-d="70" href="/case-studies/indusind">
+            <Link className="csr rv" data-d="70" href="/case-studies/indusind-bank/">
               <span
                 className="clogo csr-logo logow-indusind opacity-70"
                 role="img"
@@ -270,7 +273,7 @@ export default function PyzoAtlasPage() {
                   sourcing staff, assessed on cases rather than attendance, with nobody live on a system
                   before they are certified for it.
                 </p>
-                <Link className="us-go group" href="/industries/bfsi">
+                <Link className="us-go group" href="/industries/bfsi/">
                   Explore BFSI
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -295,7 +298,7 @@ export default function PyzoAtlasPage() {
                   awareness for every employee, and medical representative training certified before anyone
                   details a product.
                 </p>
-                <Link className="us-go group" href="/industries/healthcare">
+                <Link className="us-go group" href="/industries/healthcare/">
                   Explore Healthcare
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -320,7 +323,7 @@ export default function PyzoAtlasPage() {
                   delivered in the languages your staff work in, with competence evidenced rather than
                   assumed.
                 </p>
-                <Link className="us-go group" href="/industries/public-sector">
+                <Link className="us-go group" href="/industries/public-sector/">
                   Explore Public Sector
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -345,7 +348,7 @@ export default function PyzoAtlasPage() {
                   modules and certified, so service quality does not depend on who happens to be on shift that
                   day.
                 </p>
-                <Link className="us-go group" href="/industries/retail">
+                <Link className="us-go group" href="/industries/retail/">
                   Explore Retail
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -473,7 +476,7 @@ export default function PyzoAtlasPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

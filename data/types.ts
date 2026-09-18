@@ -7,6 +7,8 @@ export interface Author {
 
 export interface BlogPost {
   slug: string;
+  /** the prototype's slug, kept where Phase 1 repaired it (for the redirect map) */
+  legacySlug?: string;
   title: string;
   metaTitle: string;
   lede: string;
@@ -38,6 +40,8 @@ export interface BlogCard {
 
 export interface CaseStudy {
   slug: string;
+  /** the prototype's short id, e.g. "rbi" (for the redirect map) */
+  prototypeId: string;
   metaTitle: string;
   client: string;
   logo: string;
@@ -86,6 +90,6 @@ export interface PanelCard {
   client: string;
   line: string;
   logo?: string;
-  nav?: string;
+  href?: string;
   pair: { n: string; l: string }[];
 }

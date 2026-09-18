@@ -1,9 +1,13 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { CareersApplyForm } from "@/components/CareersApplyForm";
-export const metadata: Metadata = {
-  title: "Introduce yourself - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Introduce yourself",
+  description:
+    "Tell us what you have owned in production and what it cost you to learn, and we will keep it in front of the people who decide.",
+  path: "/careers/apply/",
+  noindex: true,
+});
 export default function CareersApplyPage() {
   return (
     <main className="page" id="page-careers-apply">
@@ -19,7 +23,7 @@ export default function CareersApplyPage() {
             <span className="sep">·</span>
             <span className="text-white/45">Company</span>
             <span className="sep">·</span>
-            <Link href="/careers">Careers</Link>
+            <Link href="/careers/">Careers</Link>
             <span className="sep">·</span>
             <span aria-current="page">Introduce yourself</span>
           </nav>

@@ -73,7 +73,7 @@ export const panels: Record<string, PanelCard[]> = {
       "client": "Cipla · Global Training Academy",
       "line": "SOPs turned into tracked, self-paced AI lessons for 20,000+ employees.",
       "logo": "cipla",
-      "nav": "cs-cipla",
+      "href": "/case-studies/cipla-global-training-academy/",
       "pair": [
         {
           "n": "20,000+",
@@ -89,7 +89,7 @@ export const panels: Record<string, PanelCard[]> = {
       "client": "IndusInd Bank",
       "line": "Policy documents turned into 150+ AI video modules, with no trainer dependency.",
       "logo": "indusind",
-      "nav": "cs-indusind",
+      "href": "/case-studies/indusind-bank/",
       "pair": [
         {
           "n": "50,000+",
@@ -107,7 +107,7 @@ export const panels: Record<string, PanelCard[]> = {
       "client": "Koita Foundation",
       "line": "A large body of digital-health material made answerable, traceable to source.",
       "logo": "koita",
-      "nav": "cs-koita",
+      "href": "/case-studies/koita-foundation/",
       "pair": [
         {
           "n": "~80%",
@@ -123,7 +123,7 @@ export const panels: Record<string, PanelCard[]> = {
       "client": "Indian School of Business · iVi",
       "line": "A candidate screen that stays consistent, explainable and blind to fluency bias.",
       "logo": "isb",
-      "nav": "cs-isb",
+      "href": "/case-studies/indian-school-of-business/",
       "pair": [
         {
           "n": "~97%",
@@ -141,7 +141,7 @@ export const panels: Record<string, PanelCard[]> = {
       "client": "RBI · Innovation Hub",
       "line": "A multilingual, voice-first grievance protocol any regulated bank can adopt.",
       "logo": "rbi",
-      "nav": "cs-rbi",
+      "href": "/case-studies/rbi-innovation-hub/",
       "pair": [
         {
           "n": "~80%",
@@ -157,7 +157,7 @@ export const panels: Record<string, PanelCard[]> = {
       "client": "Samagra",
       "line": "Crop, weather and scheme guidance by voice, in 12 languages, no app required.",
       "logo": "samagra",
-      "nav": "cs-samagra",
+      "href": "/case-studies/samagra/",
       "pair": [
         {
           "n": "3x",
@@ -175,7 +175,7 @@ export const panels: Record<string, PanelCard[]> = {
       "client": "Epic Global Inc.",
       "line": "Compliant listings generated and catalogues migrated across global marketplaces.",
       "logo": "epic",
-      "nav": "cs-epic",
+      "href": "/case-studies/epic-global/",
       "pair": [
         {
           "n": "~65%",
@@ -191,7 +191,7 @@ export const panels: Record<string, PanelCard[]> = {
       "client": "IndiaMART",
       "line": "Voice and chat agents handling a million marketplace conversations autonomously.",
       "logo": "indiamart",
-      "nav": "cs-indiamart",
+      "href": "/case-studies/indiamart/",
       "pair": [
         {
           "n": "1M+",
@@ -209,7 +209,7 @@ export const panels: Record<string, PanelCard[]> = {
       "client": "Cipla · Global Training Academy",
       "line": "SOPs turned into tracked, self-paced AI lessons for 20,000+ employees.",
       "logo": "cipla",
-      "nav": "cs-cipla",
+      "href": "/case-studies/cipla-global-training-academy/",
       "pair": [
         {
           "n": "20,000+",
@@ -227,7 +227,7 @@ export const panels: Record<string, PanelCard[]> = {
       "client": "Indian School of Business · iVi",
       "line": "A candidate screen that stays consistent, explainable and blind to fluency bias.",
       "logo": "isb",
-      "nav": "cs-isb",
+      "href": "/case-studies/indian-school-of-business/",
       "pair": [
         {
           "n": "~97%",

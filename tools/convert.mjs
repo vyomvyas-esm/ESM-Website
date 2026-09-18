@@ -2,7 +2,7 @@
  * One-shot converter: turns the single-file SPA (tools/src/site.html) into
  * the Next.js project layout. It is deterministic and safe to re-run.
  *
- *   node tools/convert.mjs
+ *   node --experimental-strip-types tools/convert.mjs
  *
  * What it produces
  *   public/img/*              base64 assets from the CSS and HTML, as files
@@ -16,6 +16,8 @@ import path from "node:path";
 import crypto from "node:crypto";
 import * as parse5 from "parse5";
 import prettier from "prettier";
+import { ROUTES, blogSlug, caseStudySlug } from "./slugs.mjs";
+import { firstSentences } from "../lib/seo.ts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const SRC = path.join(ROOT, "tools/src/site.html");
@@ -132,40 +134,12 @@ const footer = children(doc).find((n) => n.tagName === "footer");
 log("pages:", mains.length);
 
 /* ---------------------------------------------------------------- routes */
-const ROUTES = {
-  home: "/",
-  pyzo: "/pyzo",
-  "pyzo-atlas": "/pyzo/atlas",
-  "pyzo-compass": "/pyzo/compass",
-  "pyzo-evio": "/pyzo/evio",
-  "pyzo-forge": "/pyzo/forge",
-  "pyzo-loupe": "/pyzo/loupe",
-  "pyzo-prism": "/pyzo/prism",
-  "svc-agentic": "/services/agentic-ai",
-  "svc-governance": "/services/ai-governance",
-  "svc-modernisation": "/services/enterprise-ai",
-  "ind-bfsi": "/industries/bfsi",
-  "ind-healthcare": "/industries/healthcare",
-  "ind-public": "/industries/public-sector",
-  "ind-retail": "/industries/retail",
-  blogs: "/blog",
-  "case-studies": "/case-studies",
-  reports: "/reports",
-  "who-we-are": "/about",
-  people: "/about",
-  careers: "/careers",
-  "careers-apply": "/careers/apply",
-  contact: "/contact",
-  stack: "/technology",
-  privacy: "/privacy",
-  terms: "/terms",
-};
 const ANCHORS = new Set(["cta", "proof", "sectors", "pyzo-proof", "svc-proof", "ind-uses"]);
 export function routeFor(nav) {
   if (ANCHORS.has(nav)) return `#${nav}`;
   if (ROUTES[nav]) return ROUTES[nav];
-  if (nav.startsWith("blog-")) return `/blog/${nav.slice(5)}`;
-  if (nav.startsWith("cs-")) return `/case-studies/${nav.slice(3)}`;
+  if (nav.startsWith("blog-")) return `/blog/${blogSlug(nav.slice(5))}/`;
+  if (nav.startsWith("cs-")) return `/case-studies/${caseStudySlug(nav.slice(3))}/`;
   throw new Error(`unknown nav target: ${nav}`);
 }
 
@@ -320,24 +294,52 @@ const componentName = (id) =>
     .join("")
     .replace(/[^A-Za-z0-9]/g, "") + "Page";
 
-async function emitPage(id, { file, replace, attrs, imports = [], description } = {}) {
+/* Meta description per the SEO brief: the hero lede as written, trimmed to whole
+   sentences under the limit; otherwise the first body paragraph; otherwise empty and
+   listed for a human. Never paraphrased. */
+const needsCopy = [];
+function describe(id, main) {
+  // candidates in page order: every hero lede, then the first body paragraph
+  const ledes = qa(main, byCls("lede"));
+  const body = q(main, (n) => n.tagName === "p" && hasCls(n.parentNode, "prose"));
+  const candidates = [...ledes, ...(body ? [body] : [])];
+  for (const c of candidates) {
+    const d = firstSentences(text(c));
+    if (d) return d;
+  }
+  needsCopy.push({
+    path: ROUTES[id],
+    reason: candidates.length
+      ? `no sentence under the limit in the lede or first body paragraph (${candidates.map((c) => text(c).length).join(", ")} chars)`
+      : "no lede or body paragraph on the page",
+  });
+  return "";
+}
+const stripSuffix = (t) => t.replace(/\s*-\s*Es Magico$/, "");
+
+async function emitPage(id, { file, replace, attrs, imports = [], noindex = false } = {}) {
   const main = pageOf(id);
   if (!main) throw new Error(`no page ${id}`);
   const ctx = { replace, attrs, usesLink: false, buttons: [] };
   const inner = serializeChildren(main, main.childNodes.filter((n) => n.nodeName !== "#comment"), ctx, false);
   const imp = [
-    `import type { Metadata } from "next";`,
+    `import { pageMetadata } from "@/lib/seo";`,
     ctx.usesLink ? `import Link from "next/link";` : "",
     ctx.usesWaveform ? `import { Waveform } from "@/components/Waveform";` : "",
     ...imports,
   ]
     .filter(Boolean)
     .join("\n");
-  const meta = { title: TITLES[id] || "Es Magico" };
-  if (description) meta.description = description;
+  const seo = {
+    title: id === "home" ? TITLES[id] : stripSuffix(TITLES[id]),
+    ...(id === "home" ? { absoluteTitle: true } : {}),
+    description: describe(id, main),
+    path: ROUTES[id],
+    ...(noindex ? { noindex: true } : {}),
+  };
   const code = `${imp}
 
-export const metadata: Metadata = ${JSON.stringify(meta, null, 2)};
+export const metadata = pageMetadata(${JSON.stringify(seo, null, 2)});
 
 export default function ${componentName(id)}() {
   return (
@@ -358,6 +360,8 @@ async function emitRef(name, node, opts = {}) {
 }
 
 /* ------------------------------------------------------------- data files */
+let blogPostsOut = [];
+let caseStudiesOut = [];
 const tsExport = (name, type, value) =>
   `// Generated by tools/convert.mjs — do not edit by hand.\n${type ? `import type { ${type.replace(/\[\]$/, "")} } from "./types";\n\n` : ""}export const ${name}${type ? `: ${type}` : ""} = ${JSON.stringify(value, null, 2)};\n`;
 
@@ -392,7 +396,8 @@ function extractBlogs() {
     const prose = q(m, byCls("prose"));
     const rail = q(m, byCls("ar-rail"));
     const post = {
-      slug,
+      slug: blogSlug(slug),
+      ...(blogSlug(slug) !== slug ? { legacySlug: slug } : {}),
       title: text(q(m, (n) => n.tagName === "h1")),
       metaTitle: TITLES[key] || "",
       lede: text(q(m, byCls("lede"))),
@@ -412,7 +417,7 @@ function extractBlogs() {
     const thumb = q(card, (n) => n.tagName === "img");
     const inGrid = cardBy.has(slug);
     cards.push({
-      slug,
+      slug: blogSlug(slug),
       title: text(q(card, (n) => n.tagName === "h3")),
       date: text(q(card, (n) => n.tagName === "span" && hasCls(n, "text-white/35"))),
       tag: text(q(card, byCls("bl-tag"))),
@@ -425,9 +430,10 @@ function extractBlogs() {
     });
   }
   // the index is ordered newest first, like the original grid
-  const order = [...feats.filter((f) => !cardBy.has(f.slug)).map((f) => f.slug), ...cardBy.keys()];
+  const order = [...feats.filter((f) => !cardBy.has(f.slug)).map((f) => f.slug), ...cardBy.keys()].map(blogSlug);
   cards.sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug));
   posts.sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug));
+  blogPostsOut = posts;
   write("data/blog-posts.ts", tsExport("blogPosts", "BlogPost[]", posts));
   write("data/blog-index.ts", tsExport("blogCards", "BlogCard[]", cards) + `\nexport const blogFilters = ${JSON.stringify(filters, null, 2)};\n`);
   log("blogs:", posts.length, "featured:", feats.length, "missing thumbs:", cards.filter((c) => c.thumb && !fs.existsSync(path.join(ROOT, "public", c.thumb))).length);
@@ -450,7 +456,8 @@ function extractCaseStudies() {
     const mark = q(m, byCls("cs-mark"));
     const copy = children(q(card, byCls("csr-copy")));
     studies.push({
-      slug,
+      slug: caseStudySlug(slug),
+      prototypeId: slug,
       metaTitle: TITLES[`cs-${slug}`] || "",
       client: attr(mark, "aria-label"),
       logo: cls(mark).find((c) => c.startsWith("logow-")),
@@ -470,7 +477,8 @@ function extractCaseStudies() {
     });
   }
   const order = [...cardBy.keys()];
-  studies.sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug));
+  studies.sort((a, b) => order.indexOf(a.prototypeId) - order.indexOf(b.prototypeId));
+  caseStudiesOut = studies;
   write("data/case-studies.ts", tsExport("caseStudies", "CaseStudy[]", studies) + `\nexport const caseStudyFilters = ${JSON.stringify(filters, null, 2)};\n`);
   log("case studies:", studies.length);
 }
@@ -510,7 +518,7 @@ function extractSiteData() {
   for (const e of Object.values(DATA.proof)) for (const k of Object.keys(e)) e[k] = decode(e[k]);
   // only the fields the original renderer used are kept
   for (const [k, list] of Object.entries(DATA.panels))
-    DATA.panels[k] = list.map((c) => ({ client: decode(c.client), line: decode(c.line), ...(c.logo ? { logo: c.logo } : {}), ...(c.nav ? { nav: c.nav } : {}), pair: c.pair }));
+    DATA.panels[k] = list.map((c) => ({ client: decode(c.client), line: decode(c.line), ...(c.logo ? { logo: c.logo } : {}), ...(c.nav ? { href: routeFor(c.nav) } : {}), pair: c.pair }));
   const rail = q(pageOf("case-studies"), byCls("proof-rail"));
   const clients = children(rail).map((b) => ({
     key: attr(b, "data-client"),
@@ -561,9 +569,9 @@ const simple = {
   "pyzo-forge": "app/pyzo/forge/page.tsx",
   "pyzo-loupe": "app/pyzo/loupe/page.tsx",
   "pyzo-prism": "app/pyzo/prism/page.tsx",
-  "svc-agentic": "app/services/agentic-ai/page.tsx",
-  "svc-governance": "app/services/ai-governance/page.tsx",
-  "svc-modernisation": "app/services/enterprise-ai/page.tsx",
+  "svc-agentic": "app/engineering/agentic-ai/page.tsx",
+  "svc-governance": "app/engineering/ai-governance/page.tsx",
+  "svc-modernisation": "app/engineering/enterprise-ai/page.tsx",
   "ind-bfsi": "app/industries/bfsi/page.tsx",
   "ind-healthcare": "app/industries/healthcare/page.tsx",
   "ind-public": "app/industries/public-sector/page.tsx",
@@ -573,11 +581,7 @@ const simple = {
 };
 for (const [id, file] of Object.entries(simple)) await emitPage(id, { file });
 
-await emitPage("home", {
-  file: "app/page.tsx",
-  description:
-    "Es Magico is the Operator for AI-native Transformation. We deploy AI into production inside regulated enterprises and stand behind what it produces to auditors, regulators and boards.",
-});
+await emitPage("home", { file: "app/page.tsx" });
 
 // legal pages: the contents rail becomes plain anchors; the effects hook highlights the current one
 const tocAttrs = (node, attrs) => {
@@ -603,7 +607,7 @@ await emitPage("who-we-are", {
     if (node.tagName === "button" && attr(node, "data-author")) {
       const a = new Map(node.attrs.map((x) => [x.name, x.value]));
       const inner = serializeChildren(node, node.childNodes, { usesLink: false }, false);
-      return `<Link href={${JSON.stringify(`/blog?author=${encodeURIComponent(a.get("data-author"))}`)}} className=${escAttr(a.get("class"))} title=${escAttr(a.get("title"))} aria-label=${escAttr(a.get("aria-label"))}>${inner}</Link>`;
+      return `<Link href={${JSON.stringify(`/blog/?author=${encodeURIComponent(a.get("data-author"))}`)}} className=${escAttr(a.get("class"))} title=${escAttr(a.get("title"))} aria-label=${escAttr(a.get("aria-label"))}>${inner}</Link>`;
     }
   },
   attrs: (node, attrs) => {
@@ -634,6 +638,7 @@ await emitPage("contact", {
 });
 await emitPage("careers-apply", {
   file: "app/careers/apply/page.tsx",
+  noindex: true,
   imports: [`import { CareersApplyForm } from "@/components/CareersApplyForm";`],
   replace: (node) => {
     if (hasCls(node, "js-form")) return "<CareersApplyForm />";
@@ -680,4 +685,17 @@ await emitRef("ReportsModalRef", q(pageOf("reports"), byId("rpModal")));
 await emitRef("LedgerRef", q(pageOf("pyzo"), byCls("fd-bar")).parentNode);
 await emitRef("BlogPostRef", pageOf("blog-human-in-the-loop-data-capture"));
 await emitRef("CaseStudyRef", pageOf("cs-cipla"));
+// the human copy list: static pages from above, plus the templated routes under the same rule
+for (const p of blogPostsOut)
+  if (!firstSentences(p.lede)) needsCopy.push({ path: `/blog/${p.slug}/`, reason: `first sentence of the lede exceeds the limit (${p.lede.length} chars)` });
+for (const c of caseStudiesOut)
+  if (!firstSentences(c.lede)) needsCopy.push({ path: `/case-studies/${c.slug}/`, reason: `first sentence of the hero lede exceeds the limit (${c.lede.length} chars)` });
+const rows = needsCopy.map((n) => "| `" + n.path + "` | " + n.reason + " |").join("\n");
+write(
+  "docs/seo-needs-copy.md",
+  "# Pages that need a meta description written by a human\n\n" +
+    "Generated by `tools/convert.mjs`. Rule applied: the description is the page's existing lede (or first body paragraph) trimmed to whole sentences under 155 characters, never paraphrased. These pages have no sentence that fits, so their description is left empty rather than invented.\n\n" +
+    `${needsCopy.length} pages.\n\n| Path | Why |\n|---|---|\n${rows}\n`,
+);
+log("needs copy:", needsCopy.length);
 log("done");

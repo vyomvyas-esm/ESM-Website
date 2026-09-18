@@ -1,8 +1,11 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "Enterprise AI - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Enterprise AI",
+  description:
+    "We unify knowledge, data, and workflows into a foundation AI can reason over, ensuring every answer is traceable to source.",
+  path: "/engineering/enterprise-ai/",
+});
 export default function SvcModernisationPage() {
   return (
     <main className="page" id="page-svc-modernisation">
@@ -27,7 +30,7 @@ export default function SvcModernisationPage() {
             answer is traceable to source.
           </p>
           <div className="mt-9 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/contact">
+            <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -148,7 +151,7 @@ export default function SvcModernisationPage() {
                 Knowledge the enterprise keeps <span className="text-white/40">searching by hand.</span>
               </h2>
             </div>
-            <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies">
+            <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies/">
               See all case studies
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -165,7 +168,7 @@ export default function SvcModernisationPage() {
             Deployed in production, and measured against the number we agreed.
           </p>
           <div className="mt-[52px]">
-            <Link className="csr rv" data-d="0" href="/case-studies/koita">
+            <Link className="csr rv" data-d="0" href="/case-studies/koita-foundation/">
               <span
                 className="clogo csr-logo logow-koita opacity-70"
                 role="img"
@@ -199,7 +202,7 @@ export default function SvcModernisationPage() {
                 </svg>
               </span>
             </Link>
-            <Link className="csr rv" data-d="80" href="/case-studies/indusind">
+            <Link className="csr rv" data-d="80" href="/case-studies/indusind-bank/">
               <span
                 className="clogo csr-logo logow-indusind opacity-70"
                 role="img"
@@ -395,7 +398,7 @@ export default function SvcModernisationPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path
