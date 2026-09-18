@@ -24,11 +24,16 @@ Log for the SEO implementation: what could not be resolved from the repo, what n
 | 17 | Article dates are given as midnight India Standard Time (`T00:00:00+05:30`) because the source has dates only and Google's validator asks for a time zone; the offices are Mumbai and Bengaluru. | 3 | assumed |
 | 18 | FAQPage is emitted on the PYZO landing and the four industry pages as asked, and validates (Schema Markup Validator: 0 errors), but Google withdrew FAQ rich results for sites outside government and health in 2023, so the Rich Results Test no longer lists it. Kept as requested. The nine capability and engineering pages also have FAQ accordions but were not in scope for FAQPage. | 3 | open |
 | 19 | Rich Results Test was executed by pasting the generated markup (the site is not public). Results: Article valid, Breadcrumbs valid, Organization valid; Service and FAQPage checked with the Schema Markup Validator (0 errors, 0 warnings). Repeat against the live URLs after launch. | 3 | open |
+| 20 | Blog listing is now real routes: `/blog/`, `/blog/page/N/` (28 pages of 12), `/blog/<category>/` and `/blog/<category>/page/N/` for the six categories (58 new pages, 417 in total). The visible additions are the newer/older links, the "Page N of M" line and a row of category links at the foot of the list (the `<select>` alone is not crawlable); they use the existing ghost-button and tag styles. Search, author and sort remain client-side filters over the full index, as before; author buckets were not made routes. | 4 | assumed, open |
+| 21 | The 58 listing pages have no copy of their own, so they have titles ("Blog: AI in BFSI, page 2") but no meta description; added to `docs/seo-needs-copy.md` (now 167 entries). | 4 | open |
+| 22 | Article internal links: targets derived only where the data supports them (industry from the BFSI and Healthcare categories, capability only when the title names one, case studies through either). 117 articles link industry and case studies, 5 link a capability, 208 have no derivable target and are listed in `docs/seo-unmapped-articles.md`. A human can add `related` targets per article. The block reads "Related:" followed by the existing page titles as anchor text. | 4 | open |
+| 23 | Sitemap `lastmod` is set only on blog posts (from their date). Static pages and case studies have no date in the source, so it is omitted rather than set to the time of the export. | 4 | assumed |
 | 13 | The hero backdrop is a CSS background, so it cannot carry `priority`; the light-theme variant is preloaded from the root layout (light is the default). The dark variant is not preloaded. | 5 | assumed |
 
 ## Needs copywriting
 
-- `docs/seo-needs-copy.md`: 109 meta descriptions.
+- `docs/seo-needs-copy.md`: 167 meta descriptions (109 content pages, 58 listing pages).
+- `docs/seo-unmapped-articles.md`: 208 articles with no derivable internal-link targets.
 - `docs/seo-title-review.md`: 17 page titles, 12 blog titles.
 
 ## Assumptions and conventions
@@ -41,6 +46,7 @@ Log for the SEO implementation: what could not be resolved from the repo, what n
 - `data/blog-posts.ts` keeps `legacySlug` and `data/case-studies.ts` keeps `prototypeId` so the Phase 6 redirect map can be generated rather than hand-written.
 - `noindex, follow` applied to `/careers/apply/` only. Form confirmation states are client-side state on the same URL, not routes, so nothing else to exclude. Report gate is a modal on `/reports/`.
 - Two prototype bugs were fixed during the port rather than carried over: the reports "Series" filter values and case-study batching CSS.
+- Crawl infrastructure: `/sitemap.xml` is an index of `/sitemap-pages.xml`, `/sitemap-case-studies.xml` and `/sitemap-blog.xml` (the last with `image:image` entries for all 647 figures); `/robots.txt` allows all and points at the index; `/careers/apply/` (noindex) is left out of the sitemaps. Unknown routes and out-of-range listing pages return HTTP 404. `tools/seo-check.mjs --crawl` walks the generated HTML from `/`.
 - Structured data is rendered server-side per page as one `@graph` per script (`components/JsonLd.tsx`, builders in `lib/jsonld.ts`), from the same data the metadata uses. The Organization logo is the existing `/img/esm-logo.svg`.
 - Images: every raster goes through `next/image` with explicit width and height, AVIF/WebP negotiated by the optimiser, `loading="lazy"` on everything below the fold. Blog artwork is pre-processed by `tools/images.mjs` to WebP at most 1200px wide (source PNGs were ~1 MB each; 647 files now total 49 MB) and named `<post-slug>-<n>.webp`. Card thumbnails next to a visible title keep `alt=""`.
 

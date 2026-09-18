@@ -3,6 +3,7 @@
  *
  *   node tools/seo-check.mjs            # page assertions over .next/server/app/** /*.html
  *   node tools/seo-check.mjs --brand    # brand-rule grep over the diff against main (added lines)
+ *   node tools/seo-check.mjs --crawl    # link crawl of the generated HTML from /: orphans, broken links, redirects
  *
  * Page assertions: expected route count, unique titles, unique canonicals, no duplicate
  * descriptions, exactly one <h1>, canonical matches the file's route, every page has a
@@ -13,7 +14,8 @@ import path from "node:path";
 import { execSync } from "node:child_process";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
-const EXPECTED_ROUTES = 359;
+// 359 content pages plus the journal's category and page listings (lib/blog.ts)
+const EXPECTED_ROUTES = 417;
 const fail = (msg) => {
   console.error("FAIL:", msg);
   process.exitCode = 1;
@@ -43,6 +45,7 @@ function pages() {
       robots: pick(/<meta name="robots" content="([^"]*)"/),
       h1s: (html.match(/<h1[\s>]/g) || []).length,
       ogType: pick(/<meta property="og:type" content="([^"]*)"/),
+      links: [...html.matchAll(/<a[^>]*href="([^"]*)"/g)].map((m) => m[1].replace(/&amp;/g, "&")),
       jsonld: [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)].flatMap((m) => JSON.parse(m[1])["@graph"]),
       crumb: (() => {
         const nav = html.match(/<nav class="crumb[^"]*" aria-label="Breadcrumb">(.*?)<\/nav>/);
@@ -116,7 +119,8 @@ function checkPages() {
         if (JSON.stringify(expect) !== JSON.stringify(got)) ldIssues.push(`${p.route}: breadcrumb schema differs from visible crumb`);
       }
     }
-    if (p.route.startsWith("/blog/") && p.route !== "/blog/" && !types.includes("BlogPosting")) ldIssues.push(`${p.route}: no BlogPosting`);
+    if (p.ogType === "article" && !types.includes("BlogPosting")) ldIssues.push(`${p.route}: no BlogPosting`);
+    if (p.ogType !== "article" && types.includes("BlogPosting")) ldIssues.push(`${p.route}: BlogPosting on a non-article`);
     if (/^\/(pyzo|industries)\/(bfsi|healthcare|public-sector|retail)?\/?$/.test(p.route) && p.route !== "/pyzo/" && p.route.startsWith("/industries") && !types.includes("FAQPage")) ldIssues.push(`${p.route}: no FAQPage`);
     if (p.route === "/pyzo/" && !types.includes("FAQPage")) ldIssues.push(`${p.route}: no FAQPage`);
     if ((/^\/pyzo\/[a-z]+\/$/.test(p.route) || p.route.startsWith("/engineering/")) && !types.includes("Service")) ldIssues.push(`${p.route}: no Service`);
@@ -129,6 +133,26 @@ function checkPages() {
 
   const noindex = all.filter((p) => p.robots && /noindex/.test(p.robots)).map((p) => p.route);
   console.log(`noindex: ${noindex.join(", ") || "none"}`);
+
+  /* sitemaps: the index lists the three children; their URLs are exactly the indexable pages */
+  const app = path.join(ROOT, ".next/server/app");
+  const index = fs.readFileSync(path.join(app, "sitemap.xml.body"), "utf8");
+  const children = [...index.matchAll(/<loc>https:\/\/esmagico\.com\/(sitemap-[a-z-]+\.xml)<\/loc>/g)].map((m) => m[1]);
+  const inSitemap = new Set();
+  let images = 0;
+  for (const c of children) {
+    const xml = fs.readFileSync(path.join(app, `${c}.body`), "utf8");
+    for (const m of xml.matchAll(/<loc>https:\/\/esmagico\.com(\/[^<]*)<\/loc>/g)) if (!m[1].endsWith(".webp")) inSitemap.add(m[1]);
+    images += (xml.match(/<image:loc>/g) || []).length;
+  }
+  const indexable = new Set(all.filter((p) => !noindex.includes(p.route)).map((p) => p.route));
+  const notInSitemap = [...indexable].filter((r) => !inSitemap.has(r));
+  const notBuilt = [...inSitemap].filter((r) => !indexable.has(r));
+  console.log(`sitemap: ${children.length} children, ${inSitemap.size} urls, ${images} image entries; missing ${notInSitemap.length}, stray ${notBuilt.length}`);
+  if (notInSitemap.length) fail(`indexable pages missing from the sitemap: ${notInSitemap.slice(0, 5).join(", ")}`);
+  if (notBuilt.length) fail(`sitemap urls with no page: ${notBuilt.slice(0, 5).join(", ")}`);
+  const robots = fs.readFileSync(path.join(app, "robots.txt.body"), "utf8");
+  if (!/Allow: \//.test(robots) || !/Sitemap: https:\/\/esmagico\.com\/sitemap\.xml/.test(robots)) fail("robots.txt does not allow all or does not point at the sitemap index");
   const articles = all.filter((p) => p.ogType === "article").length;
   console.log(`og:type article: ${articles}, website: ${all.filter((p) => p.ogType === "website").length}`);
 }
@@ -181,5 +205,51 @@ function checkBrand() {
   if (badAlt.length) fail(`alt text violations: ${badAlt.slice(0, 5).join(" | ")}`);
 }
 
+/* Crawl the generated HTML from / following every internal href. Every generated page must
+   be reached (no orphans), every link must resolve to a page or a public file (no broken
+   links), and every page link must already be in its canonical /path/ form so a crawler
+   never hits the trailing-slash redirect (no chains). */
+function checkCrawl() {
+  const all = pages();
+  const byRoute = new Map(all.map((p) => [p.route, p]));
+  const publicDir = path.join(ROOT, "public");
+  const seen = new Set(["/"]);
+  const queue = ["/"];
+  const broken = new Set();
+  const redirecting = new Set();
+  let edges = 0;
+  while (queue.length) {
+    const route = queue.shift();
+    const page = byRoute.get(route);
+    if (!page) continue;
+    for (const raw of page.links) {
+      if (!raw.startsWith("/") || raw.startsWith("//")) continue;
+      const href = raw.split("#")[0].split("?")[0];
+      if (!href) continue;
+      edges++;
+      if (/\.[a-z0-9]+$/i.test(href)) {
+        if (!fs.existsSync(path.join(publicDir, href))) broken.add(`${route} -> ${href}`);
+        continue;
+      }
+      if (!href.endsWith("/")) redirecting.add(`${route} -> ${href}`);
+      const target = href.endsWith("/") ? href : `${href}/`;
+      if (!byRoute.has(target)) {
+        broken.add(`${route} -> ${href}`);
+        continue;
+      }
+      if (!seen.has(target)) {
+        seen.add(target);
+        queue.push(target);
+      }
+    }
+  }
+  const orphans = all.map((p) => p.route).filter((r) => !seen.has(r));
+  console.log(`crawl: ${seen.size} pages reached over ${edges} internal links; orphans ${orphans.length}, broken ${broken.size}, would redirect ${redirecting.size}`);
+  if (orphans.length) fail(`orphan pages: ${orphans.slice(0, 8).join(", ")}`);
+  if (broken.size) fail(`broken links: ${[...broken].slice(0, 8).join(", ")}`);
+  if (redirecting.size) fail(`links that would redirect: ${[...redirecting].slice(0, 8).join(", ")}`);
+}
+
 if (process.argv.includes("--brand")) checkBrand();
+else if (process.argv.includes("--crawl")) checkCrawl();
 else checkPages();

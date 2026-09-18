@@ -34,6 +34,17 @@ export interface BlogPost {
   /** article body in order: HTML chunks and references into `images` */
   body: BodyBlock[];
   images: ArticleImage[];
+  /** internal links derived from the category and title; see docs/seo-unmapped-articles.md */
+  related: {
+    industry?: RelatedLink;
+    capability?: RelatedLink;
+    caseStudies: RelatedLink[];
+  };
+}
+
+export interface RelatedLink {
+  label: string;
+  href: string;
 }
 
 export interface BlogCard {

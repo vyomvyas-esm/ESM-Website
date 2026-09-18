@@ -9,6 +9,8 @@ import { Byline } from "@/components/Byline";
 import { Cta } from "@/components/Cta";
 import { blogCards } from "@/data/blog-index";
 import { blogPosts } from "@/data/blog-posts";
+import { BlogListingPage } from "@/components/BlogListingPage";
+import { CATEGORIES, categoryBySlug, listingTitle } from "@/lib/blog";
 import { blogPosting, graph } from "@/lib/jsonld";
 import { firstSentences, isoDateTime, pageMetadata } from "@/lib/seo";
 
@@ -16,12 +18,17 @@ type Params = { params: Promise<{ slug: string }> };
 
 const bySlug = (slug: string) => blogPosts.find((p) => p.slug === slug);
 
+/* /blog/<slug>/ is an article, or a category listing for the six category slugs
+   (no article shares a slug with a category; the converter's data keeps it that way). */
 export function generateStaticParams() {
-  return blogPosts.map((p) => ({ slug: p.slug }));
+  return [...CATEGORIES.map((c) => ({ slug: c.slug })), ...blogPosts.map((p) => ({ slug: p.slug }))];
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const post = bySlug((await params).slug);
+  const { slug } = await params;
+  const category = categoryBySlug(slug);
+  if (category) return pageMetadata({ title: listingTitle(category, 1), path: `/blog/${category.slug}/` });
+  const post = bySlug(slug);
   if (!post) return {};
   const card = blogCards.find((c) => c.slug === post.slug);
   const published = isoDateTime(post.date);
@@ -43,7 +50,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 }
 
 export default async function BlogPostPage({ params }: Params) {
-  const post = bySlug((await params).slug);
+  const { slug } = await params;
+  const category = categoryBySlug(slug);
+  if (category) return <BlogListingPage category={category} page={1} />;
+  const post = bySlug(slug);
   if (!post) notFound();
 
   return (
@@ -111,6 +121,21 @@ export default async function BlogPostPage({ params }: Params) {
                   ),
                 )}
               </div>
+              {(post.related.industry || post.related.capability || post.related.caseStudies.length > 0) && (
+                <p className="mt-10 text-[12.5px] leading-[1.75] text-white/45 rv">
+                  Related:{" "}
+                  {[post.related.capability, post.related.industry, ...post.related.caseStudies]
+                    .filter((l): l is NonNullable<typeof l> => !!l)
+                    .map((l, i) => (
+                      <span key={l.href}>
+                        {i > 0 && " · "}
+                        <Link className="text-teal" href={l.href}>
+                          {l.label}
+                        </Link>
+                      </span>
+                    ))}
+                </p>
+              )}
               <div className="mt-12 rv">
                 <Link className="btn btn-ghost group" href="/blog/">
                   All blogs

@@ -67,7 +67,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and what the confidence signal costs"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "measuring-ai-roi-in-banking",
@@ -130,7 +133,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Instrumenting the system to report its own cost"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "why-accountable-ai-will-outlast-generative-ai",
@@ -194,7 +213,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What this means for how an enterprise organises"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "measuring-ai-roi-in-healthcare",
@@ -257,7 +279,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Hours returned are countable, outcomes moved are slower"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "latency-against-intelligence",
@@ -324,7 +362,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Speed bought at the edge of accuracy"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "measuring-the-roi-of-ai-productivity-tools",
@@ -383,7 +424,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The framework that actually measures return"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "the-cost-of-a-missing-field",
@@ -450,7 +494,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The document problem, and validating what cannot be typed"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-client-reporting-for-asset-managers",
@@ -513,7 +560,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Figures automated, commentary held on a leash"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "where-agentic-ai-is-heading-in-regulated-industries",
@@ -580,7 +643,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What this means for the institutions deploying it"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "the-ai-operating-model-for-health-systems",
@@ -639,7 +705,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Owning the layer costs more than buying six tools"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "input-integrity-for-agentic-systems",
@@ -706,7 +788,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Validation as a boundary the model does not cross"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "migrating-between-foundation-models-without-rewriting-your-stack",
@@ -774,7 +859,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: An interface costs you the newest features first"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-design-tools-compared",
@@ -833,7 +921,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Provenance is the risk that surfaces late"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-treasury-and-cash-flow-forecasting",
@@ -896,7 +987,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Showing the drivers behind every projection"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "latency-in-conversational-voice-ai",
@@ -963,7 +1070,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The techniques that buy time, and what each costs"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "writing-the-anonymised-case-study",
@@ -1022,7 +1132,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What anonymity costs a case study"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "responsible-ai-in-healthcare",
@@ -1085,7 +1198,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The readiness bar a pilot never has to clear"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "operationalizing-multilingual-voice-agents",
@@ -1152,7 +1281,10 @@ export const blogPosts: BlogPost[] = [
         "height": 630,
         "alt": "Illustration: The operational weight of fifteen pipelines"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "multilingual-ai-customer-service-in-banking",
@@ -1215,7 +1347,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Testing every language against the same rubric"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "claude-opus-4-6-and-agent-teams",
@@ -1282,7 +1430,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Coordination costs more than it appears to"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "the-review-debt-problem",
@@ -1341,7 +1492,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Counting the review hours the pitch leaves out"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "engineering-natural-voice-agents",
@@ -1408,7 +1562,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Noise is the variable you cannot control"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "scaling-outbound-conversations-without-adding-headcount",
@@ -1471,7 +1628,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The escalation path that filled with easy calls"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-pharma-manufacturing-and-quality",
@@ -1534,7 +1694,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Fitting the model into the validated environment"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-in-algorithmic-trading",
@@ -1601,7 +1777,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Instrumenting a decision made in microseconds"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "designing-the-handoff",
@@ -1668,7 +1860,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The handoff is where escalation usually fails"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "when-should-an-enterprise-upgrade-to-a-newer-model",
@@ -1735,7 +1930,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "red-teaming-financial-ai",
@@ -1798,7 +1996,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "how-a-regulated-lender-cleared-audit-on-first-pass",
@@ -1862,7 +2076,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Where it almost broke"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-patient-facing-chatbots",
@@ -1925,7 +2142,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What governance looks like when there is no clinician in the loop"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "scaling-workforce-enablement-without-scaling-trainers",
@@ -1992,7 +2225,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and where the human expert still belongs"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "real-time-ai-avatars",
@@ -2051,7 +2287,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The capability holds within a specific envelope, and it is narrower than the demonstration suggests."
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "the-economics-of-running-enterprise-ai",
@@ -2118,7 +2357,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "measuring-whether-training-actually-stuck",
@@ -2185,7 +2427,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and the risk in automated assessment"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-dispute-and-chargeback-automation",
@@ -2248,7 +2493,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "generic-ai-vs-sector-fluent-ai",
@@ -2311,7 +2572,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: How real sector fluency is engineered"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "multimodal-ai-in-healthcare",
@@ -2374,7 +2638,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "onboarding-the-workforce-onto-agentic-workflows",
@@ -2441,7 +2721,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Onboarding for stick, not for surge"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "choosing-an-enterprise-ai-assistant-platform",
@@ -2504,7 +2787,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: No platform wins on every axis, and the honest comparison names what each choice costs."
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "telematics-and-usage-based-insurance",
@@ -2567,7 +2853,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "the-frontier-bake-off",
@@ -2634,7 +2936,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-literacy-for-the-enterprise",
@@ -2701,7 +3006,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Operationalising literacy at scale"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "myth-a-more-powerful-model-solves-the-enterprise-ai-problem",
@@ -2761,7 +3069,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What the model can and cannot do"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-early-sepsis-and-deterioration-prediction",
@@ -2824,7 +3135,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-for-stress-testing-and-scenario-analysis",
@@ -2887,7 +3214,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "training-teams-to-supervise-ai-agents",
@@ -2954,7 +3297,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and why readiness is ongoing"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "claude-opus-4-5-cheaper-frontier-coding",
@@ -3022,7 +3368,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "consolidating-the-ai-tool-stack",
@@ -3085,7 +3434,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: A disciplined consolidation follows an order that protects capability while cutting sprawl"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "myth-a-convincing-demo-means-the-ai-is-ready",
@@ -3144,7 +3496,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Reading a demo honestly"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "data-privacy-for-healthcare-ai",
@@ -3207,7 +3562,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-native-transformation",
@@ -3274,7 +3645,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The operator stance on transformation"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-debt-collections",
@@ -3337,7 +3711,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "incident-response-for-ai-systems",
@@ -3404,7 +3794,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Preparing the incident response before the incident, and its cost"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "what-a-production-ready-agent-actually-requires",
@@ -3476,7 +3869,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Why the skipped half is the expensive half"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-complaint-handling-and-conduct-risk-detection",
@@ -3539,7 +3935,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-for-regulatory-submissions-in-pharma",
@@ -3602,7 +4014,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "gemini-3-pro-for-multimodal-and-agentic-workloads",
@@ -3669,7 +4097,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "building-a-golden-dataset-for-llm-evaluation",
@@ -3736,7 +4167,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The golden dataset is a living asset, and it costs to maintain"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-audio-for-brand-content",
@@ -3795,7 +4229,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The exposure follows a pattern worth naming, because it catches teams the same way every time."
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-portfolio-construction-and-risk-analytics",
@@ -3858,7 +4295,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "data-governance-for-agentic-ai",
@@ -3925,7 +4378,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and why this is harder than access control"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "buy-build-or-operate",
@@ -3980,7 +4436,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The question that actually decides it"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-healthcare-fraud-waste-and-abuse-detection",
@@ -4043,7 +4502,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "adaptive-reasoning-arrives",
@@ -4110,7 +4585,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "event-driven-agent-architectures",
@@ -4177,7 +4655,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The operational realities events introduce"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "voice-ai-in-banking-call-centers",
@@ -4240,7 +4721,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "voice-agents-for-the-contact-center",
@@ -4307,7 +4804,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Operationalising the contact centre agent"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-operating-model-your-risk-committee-will-approve",
@@ -4363,7 +4863,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Designing it in, and the cost of that"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-connected-medical-devices",
@@ -4426,7 +4929,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "an-agentic-ai-maturity-model",
@@ -4493,7 +5012,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Using the model honestly, and its trade-off"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "selecting-a-model-for-enterprise-rag",
@@ -4560,7 +5082,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "third-party-ai-risk-in-financial-services",
@@ -4623,7 +5148,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "accountability-in-autonomous-systems",
@@ -4690,7 +5231,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and the tiers of accountability"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "deep-document-ai-in-financial-services",
@@ -4745,7 +5289,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What audit-grade actually requires"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "from-proof-of-concept-to-production",
@@ -4816,7 +5363,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The gate that actually predicts survival"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-clinical-documentation-improvement",
@@ -4879,7 +5429,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-in-health-insurance-claims-adjudication",
@@ -4942,7 +5508,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "state-management-for-agents",
@@ -5009,7 +5591,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and the consistency problem"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "claude-haiku-4-5-economics-of-small-fast-models",
@@ -5077,7 +5662,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "agreeing-the-number-before-you-start",
@@ -5136,7 +5724,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, honestly"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "credit-model-monitoring-and-drift-detection-through-the-economic-cycle",
@@ -5200,7 +5791,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "small-language-models-in-agentic-systems",
@@ -5267,7 +5874,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and where the frontier model earns its cost"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-voice-agents-in-healthcare-call-centers",
@@ -5330,7 +5940,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "terminal-and-async-coding-agents-compared",
@@ -5393,7 +6019,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The controls that matter are the same across both, and the async mode raises the bar on each."
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "choosing-models-for-clinical-assistants",
@@ -5460,7 +6089,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "structured-outputs-in-production",
@@ -5527,7 +6159,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and the semantic layer validation misses"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "llms-for-earnings-calls-and-filings",
@@ -5590,7 +6225,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "the-cfo-test-for-enterprise-ai",
@@ -5645,7 +6296,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Measurement is a design input"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-surgical-planning-and-intraoperative-support",
@@ -5708,7 +6362,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "operationalizing-ai-act-obligations",
@@ -5775,7 +6445,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The collaboration this requires, and its trade-off"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-the-tools-you-already-use",
@@ -5834,7 +6507,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The action surface raises the stakes"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-communications-surveillance",
@@ -5897,7 +6573,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "claude-sonnet-4-5-and-long-horizon-agents",
@@ -5964,7 +6656,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "a-production-readiness-checklist-for-ai-agents",
@@ -6031,7 +6726,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Calibrating the checklist to consequence"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "demand-and-inventory-intelligence-under-real-margins",
@@ -6087,7 +6785,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering for the cost of being wrong"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "monitoring-clinical-ai-in-production",
@@ -6150,7 +6851,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-in-mortgage-processing",
@@ -6213,7 +6930,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "failure-analysis-for-ai-agents",
@@ -6280,7 +7013,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Analysis beyond the individual case, and its cost"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "the-best-models-for-ai-agents",
@@ -6347,7 +7083,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "order-delivery-and-returns-calls",
@@ -6406,7 +7145,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What we engineered, and the boundary that carries it"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-nursing-assistants-and-workflow-support",
@@ -6469,7 +7211,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "knowledge-graphs-and-rag",
@@ -6536,7 +7294,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and when structure is worth it"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "notions-workspace-agents",
@@ -6596,7 +7357,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Where the permission model becomes the risk"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "next-best-action-for-relationship-managers",
@@ -6659,7 +7423,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "the-supervisor-pattern-for-multi-agent-systems",
@@ -6726,7 +7506,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and when the supervisor is right"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "claude-opus-4-1-for-enterprise-coding",
@@ -6793,7 +7576,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "personalisation-that-holds-up-at-scale",
@@ -6852,7 +7638,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What holds it up in production"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-genomics-and-variant-interpretation",
@@ -6915,7 +7704,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "accelerated-life-insurance-underwriting-with-ai",
@@ -6978,7 +7783,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "excessive-agency",
@@ -7045,7 +7866,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and the tension with capability"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "when-anyone-can-generate-an-app",
@@ -7108,7 +7932,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Operationalising citizen development safely"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "explainable-fraud-detection",
@@ -7171,7 +7998,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "agents-vs-workflow-automation",
@@ -7238,7 +8081,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and the cost of the wrong choice"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "preserving-institutional-knowledge-in-government-with-agentic-ai",
@@ -7298,7 +8144,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What this preserves, and what it costs"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-medical-record-summarization",
@@ -7361,7 +8210,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "are-frontier-models-becoming-commodities",
@@ -7429,7 +8294,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "measuring-agent-roi",
@@ -7496,7 +8364,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and what the metric drives"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "data-privacy-and-residency-for-ai-in-banking",
@@ -7559,7 +8430,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "customer-support-agents-compared",
@@ -7622,7 +8509,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Operationalising the comparison"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-accreditation-and-citizen-services",
@@ -7681,7 +8571,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Where it almost breaks, and the fairness point"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-mental-health-support",
@@ -7744,7 +8637,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "an-ai-risk-management-framework-for-agentic-systems",
@@ -7811,7 +8720,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and keeping the framework living"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "gpt-5-in-production",
@@ -7878,7 +8790,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "geospatial-ai-for-catastrophe-and-property-risk",
@@ -7941,7 +8856,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "durable-execution-for-long-running-agents",
@@ -8008,7 +8939,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and matching infrastructure to duration"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "fair-and-auditable",
@@ -8067,7 +9001,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering for proof, not just performance"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "on-prem-vs-cloud-ai-for-hospitals",
@@ -8130,7 +9067,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "agentic-browsers-in-the-enterprise",
@@ -8189,7 +9142,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Operationalising agentic browsers"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "explainable-credit-decisions",
@@ -8252,7 +9208,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "continuous-evaluation-pipelines",
@@ -8319,7 +9291,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and acting on the signal"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "function-calling-and-tool-use-compared",
@@ -8386,7 +9361,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "handling-sensitive-health-data",
@@ -8445,7 +9423,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Trust is earned by what you refuse to do"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "operating-mcp-servers-in-the-enterprise",
@@ -8512,7 +9493,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and operating the servers as infrastructure"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-the-ehr-reducing-click-burden",
@@ -8576,7 +9560,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-for-esg-data-extraction-and-scoring",
@@ -8639,7 +9639,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "chatgpt-agent-examined",
@@ -8694,7 +9710,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What acting changes about the risk"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "scaling-agents-across-the-enterprise",
@@ -8761,7 +9780,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and scaling deliberately"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "kimi-k2-and-open-agentic-models",
@@ -8828,7 +9850,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-regulatory-change-management",
@@ -8891,7 +9916,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "patient-reminder-and-scheduling-calls",
@@ -8950,7 +9991,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What we engineer, and where a person takes over"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "validating-medical-imaging-ai",
@@ -9013,7 +10057,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "agentic-design-patterns",
@@ -9080,7 +10140,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Using patterns well, and the trade-off"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "grok-4-for-the-enterprise",
@@ -9147,7 +10210,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "authorized-push-payment-scam-detection",
@@ -9210,7 +10276,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "approval-workflows-for-autonomous-agents",
@@ -9277,7 +10359,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and the asynchrony problem"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "meeting-intelligence-tools-in-the-enterprise",
@@ -9336,7 +10421,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Operationalising meeting intelligence"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "cutting-administrative-load-in-healthcare-without-cutting",
@@ -9395,7 +10483,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Automating the volume, guarding the consequential"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-oncology-from-tumor-detection-to-treatment-planning",
@@ -9458,7 +10549,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "monitoring-llms-in-production",
@@ -9525,7 +10632,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and acting on the monitoring"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "the-ai-operating-model-for-banks",
@@ -9588,7 +10698,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "why-small-models-often-win-in-production",
@@ -9655,7 +10781,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "clinical-decision-support-that-keeps-the-clinician-in-the",
@@ -9714,7 +10843,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering support that resists automation bias"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "inference-optimization-for-llm-workloads",
@@ -9781,7 +10913,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and matching optimisation to the workload"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "explainable-ai-in-diagnosis",
@@ -9844,7 +10979,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-workflow-automation-compared",
@@ -9907,7 +11058,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The ownership problem automation tools recreate"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-policy-servicing-agents-in-insurance",
@@ -9970,7 +11124,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "long-term-memory-for-agents",
@@ -10037,7 +11207,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and what to keep versus let go"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "which-foundation-model-should-a-bank-standardize-on",
@@ -10104,7 +11277,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "fraud-flags-you-can-explain",
@@ -10163,7 +11339,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering flags that carry their reasons"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-population-health",
@@ -10226,7 +11405,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "fair-lending-compliance-for-ai-credit-models",
@@ -10289,7 +11484,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "reducing-hallucinations-in-agentic-systems",
@@ -10356,7 +11567,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and constraints matched to consequence"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "gamma-against-canva-for-ai-generated-decks-and-design",
@@ -10415,7 +11629,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The tools differ in what they are designed around, and that decides which fits an organisation"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "red-teaming-ai-agents",
@@ -10482,7 +11699,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and red-teaming as ongoing"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "on-prem-vs-cloud-llms-for-banks",
@@ -10545,7 +11765,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "compliant-collections-calls-at-scale",
@@ -10604,7 +11840,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Where it almost breaks"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "choosing-an-ai-model-for-clinical-assistants",
@@ -10667,7 +11906,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "llama-4-against-qwen-3-for-sovereign-enterprise-deployment",
@@ -10735,7 +11990,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "hybrid-search-for-enterprise-rag",
@@ -10802,7 +12060,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and matching the combination to the queries"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-actuarial-modeling",
@@ -10865,7 +12126,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "coding-assistants-compared",
@@ -10920,7 +12197,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Code egress is the selection criterion that outlasts quality"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "automating-loan-document-checks-without-breaking-your-audit-trail",
@@ -10980,7 +12260,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering checks that preserve the trail"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "planning-in-ai-agents",
@@ -11047,7 +12330,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and matching planning to the task"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-remote-patient-monitoring",
@@ -11110,7 +12396,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "claude-4-and-sustained-agentic-work",
@@ -11177,7 +12479,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "account-takeover-prevention",
@@ -11240,7 +12545,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "operationalizing-responsible-ai",
@@ -11307,7 +12628,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and enforcement as ongoing"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-underwriting-that-survives-a-model-risk-committee",
@@ -11366,7 +12690,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering underwriting for the committee"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-pharmacovigilance",
@@ -11429,7 +12756,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-image-generation-for-brand-creative",
@@ -11488,7 +12831,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The governance-first framework"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "why-ai-benchmarks-dont-predict-production-performance",
@@ -11556,7 +12902,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and what benchmarks are good for"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "controlling-ai-hallucinations-in-financial-advice",
@@ -11619,7 +12968,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "the-best-coding-models-for-software-teams",
@@ -11686,7 +13051,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "prompt-caching-in-production",
@@ -11753,7 +13121,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and where caching applies"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "the-es-magico-product-suite",
@@ -11812,7 +13183,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: How the capabilities combine in practice"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-the-radiology-workflow",
@@ -11875,7 +13249,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-trade-surveillance",
@@ -11938,7 +13328,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "reasoning-tiers-compared",
@@ -12005,7 +13411,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "build-or-buy-your-agent-stack",
@@ -12072,7 +13481,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and the lock-in consideration"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "generative-video-in-marketing",
@@ -12127,7 +13539,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The likeness problem generative video adds"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-loan-default-prediction",
@@ -12190,7 +13605,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "loupe-explained",
@@ -12249,7 +13680,14 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What LOUPE actually does"
       }
-    ]
+    ],
+    "related": {
+      "capability": {
+        "label": "Loupe, Application Assistant - PYZO",
+        "href": "/pyzo/loupe/"
+      },
+      "caseStudies": []
+    }
   },
   {
     "slug": "ci-cd-for-llm-applications",
@@ -12316,7 +13754,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and the residual non-determinism"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "controlling-hallucinations-in-medical-ai",
@@ -12379,7 +13820,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "llama-4-mixture-of-experts-and-sovereign-deployment",
@@ -12446,7 +13903,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "multi-agent-communication",
@@ -12513,7 +13973,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and reducing communication complexity"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-investment-research",
@@ -12576,7 +14039,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "gensparks-multi-agent-approach",
@@ -12640,7 +14119,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Operationalising multi-agent systems"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "compass-explained",
@@ -12699,7 +14181,19 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What COMPASS actually does"
       }
-    ]
+    ],
+    "related": {
+      "capability": {
+        "label": "Compass, Business Analyst - PYZO",
+        "href": "/pyzo/compass/"
+      },
+      "caseStudies": [
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-for-clinical-trial-patient-matching",
@@ -12762,7 +14256,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "testing-ai-agents",
@@ -12829,7 +14339,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and what unit tests are still good for"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-sme-lending",
@@ -12892,7 +14405,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "gemini-against-claude-for-document-intelligence",
@@ -12959,7 +14488,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "audit-trails-for-autonomous-agents",
@@ -13026,7 +14558,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and the audit trail as designed-in"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "prism-explained",
@@ -13085,7 +14620,19 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What PRISM actually does"
       }
-    ]
+    ],
+    "related": {
+      "capability": {
+        "label": "Prism, Evaluation Consultant - PYZO",
+        "href": "/pyzo/prism/"
+      },
+      "caseStudies": [
+        {
+          "label": "Indian School of Business, iVi: Thousands of applications, screened consistently and without bias.",
+          "href": "/case-studies/indian-school-of-business/"
+        }
+      ]
+    }
   },
   {
     "slug": "bias-in-healthcare-ai",
@@ -13148,7 +14695,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "manus-and-the-autonomous-agent-promise",
@@ -13211,7 +14774,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Operationalising autonomy without pretending it away"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "graph-ai-for-money-laundering-detection",
@@ -13274,7 +14840,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "sandboxing-agent-generated-code",
@@ -13341,7 +14923,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and sandboxing matched to the risk"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "long-context-reasoning-in-production",
@@ -13408,7 +14993,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off worth naming"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "atlas-explained",
@@ -13467,7 +15055,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What ATLAS actually does"
       }
-    ]
+    ],
+    "related": {
+      "capability": {
+        "label": "Atlas, Training Coach - PYZO",
+        "href": "/pyzo/atlas/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-for-patient-engagement-and-follow-up",
@@ -13530,7 +15134,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "agent-interoperability-and-the-a2a-protocol",
@@ -13572,7 +15192,10 @@ export const blogPosts: BlogPost[] = [
         "html": "<p>If you operate agents that might need to work with agents from other vendors, interoperability standards are what would enable that cooperation, and understanding what a given standard provides and commits you to is what lets you evaluate it rather than adopt it on the promise of interoperability. A standard for agent interoperability offers the ability to work across vendors, at the cost of the constraints and dependencies adopting the standard creates, and reading the standard well means understanding both. Knowing how to read a cross-vendor interoperability standard, what it enables and what it commits you to, is what lets you make a sound decision about adopting it.</p><h2 id=\"sec-1\">What interoperability standards provide</h2><figure class=\"art art-none\"><span class=\"art-mark\">Image to come</span><span class=\"art-cap\">Agent Interoperability and the A2A Protocol: Reading Cross-Vendor Standards</span></figure><p>An agent interoperability standard defines how agents communicate across vendor boundaries, providing a common protocol that agents from different vendors can implement to work together, which is the interoperability the standard offers. Without a shared standard, agents from different vendors have no common way to communicate, and integrating them requires custom integration per pair of agents, which does not scale, so the standard’s value is providing a common protocol that any agent implementing it can use to work with any other agent implementing it, replacing the custom per-pair integration with a shared standard. This is the interoperability the standard provides, a common way for agents across vendors to communicate and coordinate.</p><p>The interoperability matters as agents proliferate, because a landscape of agents from many vendors that cannot work together is a landscape of silos, and the standard that lets them interoperate is what enables coordination across the landscape. This connects to the multi-agent coordination and communication concerns, extended across vendor boundaries, where the standard provides the communication mechanism that cross-vendor coordination requires. The value of the interoperability is real where cross-vendor agent cooperation is needed, letting agents from different vendors work together through the common standard rather than being confined to their own vendor’s ecosystem. The standard provides interoperability by defining the common protocol that agents across vendors can implement to communicate and coordinate, which is what enables cross-vendor agent cooperation where it is needed.</p><h2 id=\"sec-2\">What the standards do not provide, and commit you to</h2><p>Reading an interoperability standard well means understanding what it does not provide and what it commits you to, because the interoperability comes with limits and costs that the promise of interoperability obscures. A standard defines how agents communicate, and it does not make the agents on either side reliable, governed, or secure, which means the interoperability enables cross-vendor communication without solving the reliability, governance, and security that each agent still requires. An agent communicating with another vendor’s agent through the standard is coordinating with an agent whose reliability and governance it does not control, which introduces the dependency and trust concerns of relying on another vendor’s agent, and the standard’s interoperability does not address these.</p><p>The standard also commits you to its constraints, because adopting a standard means implementing it, conforming to its protocol, and depending on it, which is a commitment with costs. The standard constrains how your agents communicate to conform to the protocol, creates a dependency on the standard and its evolution, and ties you to the standard’s approach to interoperability, which is the lock-in that adopting any standard creates. Reading the standard well means understanding these commitments, the constraint of conforming to the protocol, the dependency on the standard, and the trust in other vendors’ agents that interoperating with them requires, so the decision to adopt accounts for the costs and not just the interoperability. The standard does not provide the reliability, governance, and security each agent needs, and it commits you to its constraints and to trusting the agents you interoperate with, which are the costs of the interoperability that reading the standard well reveals.</p><h2 id=\"sec-3\">The trade-off, and adopting deliberately</h2><p>Adopting an interoperability standard trades the constraints and dependencies of the standard for the cross-vendor interoperability it provides, and naming that trade-off keeps the adoption deliberate. The interoperability is valuable where cross-vendor agent cooperation is needed, and the constraints, conforming to the protocol, depending on the standard, trusting other vendors’ agents, are real costs, so the decision to adopt should weigh the value of the interoperability against these costs rather than adopting on the promise of interoperability alone. An organisation that needs cross-vendor agent cooperation benefits from the standard despite its costs, and one that does not need cross-vendor cooperation adopts the standard’s costs for interoperability it does not need.</p><p>The deeper judgment is adopting deliberately based on whether the interoperability is actually needed, because the standard’s value depends on the need for cross-vendor cooperation, which not every agent deployment has. An agent deployment confined to one vendor’s ecosystem, or one that does not need to coordinate across vendors, does not need the interoperability standard and should not adopt its costs for a capability it will not use. An agent deployment that genuinely needs cross-vendor cooperation benefits from the standard, and should adopt it understanding the costs, implementing the standard while still providing the reliability, governance, and security the standard does not, and managing the dependency and trust the standard introduces. Reading the standard well and adopting deliberately, based on whether the cross-vendor interoperability is actually needed and understanding the costs of adopting it, is what makes the adoption decision sound. The interoperability standard is valuable where cross-vendor cooperation is needed and a cost where it is not, and adopting it deliberately based on the actual need is what gets the decision right.</p><figure class=\"art art-none\"><span class=\"art-mark\">Image to come</span><span class=\"art-cap\">Agent Interoperability and the A2A Protocol: Reading Cross-Vendor Standards</span></figure><h2 id=\"sec-4\">Where it almost broke</h2><p>We saw an organisation consider adopting an agent interoperability standard on the promise of interoperability, attracted by the ability to have its agents work with agents from other vendors, and the consideration had focused on the interoperability without weighing what the standard did not provide and committed the organisation to. Examining it showed that the organisation’s agent deployment did not actually have a strong need for cross-vendor cooperation, its agents operating largely within its own ecosystem, and adopting the standard would have committed it to the constraint of conforming to the protocol and the dependency on the standard for interoperability it would rarely use, a cost for a capability the deployment did not need.</p><p>The correction read the standard properly and decided deliberately. We evaluated whether the organisation actually needed the cross-vendor interoperability, which it largely did not, and understood what the standard would commit the organisation to, the protocol constraints, the dependency, and the trust in other vendors’ agents, weighing these against the limited interoperability need. The organisation decided not to adopt the standard broadly, avoiding the costs for the interoperability it did not need, while keeping the option to adopt it for the specific cases where cross-vendor cooperation was genuinely required. The decision was sound because it read the standard’s costs and matched the adoption to the actual need, rather than adopting on the promise of interoperability. The lesson was that an interoperability standard provides cross-vendor cooperation and commits you to its costs, and reading the standard well and adopting deliberately based on the actual need is what makes the decision right.</p><h2 id=\"sec-5\">Read what the standard commits you to</h2><p>The reframe that makes interoperability decisions sound is reading what the standard commits you to, not just the interoperability it promises. Agent interoperability and the A2A protocol provide cross-vendor agent cooperation and commit you to conforming to the protocol, depending on the standard, and trusting the agents you interoperate with, which are the costs that reading the standard well reveals. The standard enables cross-vendor communication without providing the reliability, governance, and security each agent still needs.</p><p>The teams that make sound interoperability decisions are the ones that read the standard for what it provides and commits them to, evaluated whether the cross-vendor interoperability was actually needed, and adopted deliberately based on the need and the costs. An interoperability standard is valuable where cross-vendor cooperation is genuinely needed and a cost where it is not, and adopting on the promise of interoperability without reading the commitments takes on the standard’s costs for a capability the deployment may not use. Reading what the standard commits you to, and adopting deliberately based on the actual need, is what turns an interoperability decision from a reflexive adoption of a promising standard into a sound judgment about whether the interoperability is worth its costs.</p>"
       }
     ],
-    "images": []
+    "images": [],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "explainable-ai-in-finance",
@@ -13635,7 +15258,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "domain-ai-for-legal-work",
@@ -13702,7 +15341,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Operationalising it under real governance"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "function-calling-maturity",
@@ -13769,7 +15411,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering for function-calling variation, and the trade-off"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "intelligent-document-processing-in-insurance",
@@ -13832,7 +15477,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "evio-explained",
@@ -13891,7 +15552,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What “holds up under compliance” actually requires"
       }
-    ]
+    ],
+    "related": {
+      "capability": {
+        "label": "Evio, Call Operator - PYZO",
+        "href": "/pyzo/evio/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "Indian School of Business, iVi: Thousands of applications, screened consistently and without bias.",
+          "href": "/case-studies/indian-school-of-business/"
+        }
+      ]
+    }
   },
   {
     "slug": "generative-ai-in-healthcare",
@@ -13954,7 +15631,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "why-benchmark-scores-dont-survive-contact-with-production",
@@ -14014,7 +15707,10 @@ export const blogPosts: BlogPost[] = [
         "height": 697,
         "alt": "Illustration: What a real eval catches that a benchmark cannot"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "the-react-pattern-in-production",
@@ -14081,7 +15777,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and bounding without crippling"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "perpetual-kyc-continuous-risk-monitoring-without-drowning",
@@ -14144,7 +15843,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "automated-research-tools-in-production",
@@ -14207,7 +15922,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Operationalising this responsibly"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "llm-as-a-judge-where-automated-evaluation-works-and-where",
@@ -14274,7 +15992,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Validating the judge, and the trade-off"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "multimodal-multilingual-ai",
@@ -14333,7 +16054,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering the shared core"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-claims-denial-management",
@@ -14396,7 +16120,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "grok-3-and-a-crowded-frontier",
@@ -14459,7 +16199,10 @@ export const blogPosts: BlogPost[] = [
         "height": 617,
         "alt": "Illustration: Reading the entrant into your strategy"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "the-real-cost-of-running-ai-agents",
@@ -14526,7 +16269,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and managing cost against capability"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-personalization-in-banking",
@@ -14589,7 +16335,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "getting-rag-to-hold-up-in-a-regulated-enterprise",
@@ -14648,7 +16410,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What holds up in production"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-digital-pathology",
@@ -14711,7 +16476,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "securing-agentic-systems",
@@ -14778,7 +16559,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and securing the whole surface"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "controllable-thinking",
@@ -14841,7 +16625,10 @@ export const blogPosts: BlogPost[] = [
         "height": 607,
         "alt": "Illustration: The governance surface the dial gives you"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "glean-and-permissions-aware-enterprise-search",
@@ -14904,7 +16691,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: What operationalising this actually requires"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "dora-and-ai-in-finance",
@@ -14967,7 +16757,23 @@ export const blogPosts: BlogPost[] = [
         "height": 612,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "context-engineering",
@@ -15034,7 +16840,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and managing the window deliberately"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "agentic-workflows-vs-chatbots-and-rpa",
@@ -15093,7 +16902,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Choosing the right one, and the cost of choosing wrong"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-patient-scheduling-and-no-show-reduction",
@@ -15156,7 +16968,23 @@ export const blogPosts: BlogPost[] = [
         "height": 731,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "synthetic-identity-fraud",
@@ -15219,7 +17047,23 @@ export const blogPosts: BlogPost[] = [
         "height": 617,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "measuring-rag-quality",
@@ -15286,7 +17130,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and measuring stages to diagnose"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "is-open-source-catching-up-deepseek-against-gpt-and-claude",
@@ -15349,7 +17196,10 @@ export const blogPosts: BlogPost[] = [
         "height": 612,
         "alt": "Illustration: What a like-for-like read actually compares"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "synthesia-against-heygen-for-enterprise-video-at-scale",
@@ -15412,7 +17262,10 @@ export const blogPosts: BlogPost[] = [
         "height": 622,
         "alt": "Illustration: Cost per asset, honestly"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-regulatory-reporting-and-reconciliation",
@@ -15475,7 +17328,23 @@ export const blogPosts: BlogPost[] = [
         "height": 620,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "why-most-enterprise-agent-pilots-never-reach-production",
@@ -15542,7 +17411,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and engineering pilots that transition"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "human-in-the-loop-that-survives-scrutiny",
@@ -15601,7 +17473,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Oversight that survives scrutiny is engineered around a few requirements, and they are demanding on purpose."
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "fda-regulated-ai",
@@ -15664,7 +17539,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "deepseek-r1-and-open-reasoning",
@@ -15727,7 +17618,10 @@ export const blogPosts: BlogPost[] = [
         "height": 611,
         "alt": "Illustration: Turning the trace into genuine governance value"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "agent-observability",
@@ -15794,7 +17688,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and observability as foundational"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "insurance-fraud-detection-with-ai",
@@ -15857,7 +17754,23 @@ export const blogPosts: BlogPost[] = [
         "height": 612,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "explainability-by-design",
@@ -15916,7 +17829,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: Engineering the explanation into the decision"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-medical-coding-and-autocoding",
@@ -15979,7 +17895,23 @@ export const blogPosts: BlogPost[] = [
         "height": 687,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "elevenlabs-and-production-voice",
@@ -16038,7 +17970,10 @@ export const blogPosts: BlogPost[] = [
         "height": 566,
         "alt": "Illustration: Where it fits"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "engineering-guardrails-for-ai-agents",
@@ -16105,7 +18040,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and matching guardrails to risk"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "rag-for-banking-knowledge-bases",
@@ -16168,7 +18106,23 @@ export const blogPosts: BlogPost[] = [
         "height": 617,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "deepseek-v3-and-the-cost-shock",
@@ -16231,7 +18185,10 @@ export const blogPosts: BlogPost[] = [
         "height": 627,
         "alt": "Illustration: The open-weight dimension, and its familiar catch"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "error-handling-for-ai-agents",
@@ -16298,7 +18255,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and error handling matched to the failures"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "designing-governance-into-agentic-ai-not-bolting-it-on",
@@ -16353,7 +18313,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The cost of engineering it in, and why it pays"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "rag-for-clinical-knowledge",
@@ -16416,7 +18379,23 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "app-generation-tools-compared",
@@ -16475,7 +18454,10 @@ export const blogPosts: BlogPost[] = [
         "height": 692,
         "alt": "Illustration: Enterprise implications"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "designing-agentic-workflows",
@@ -16542,7 +18524,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and determinism versus flexibility"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "alternative-data-credit-scoring",
@@ -16605,7 +18590,23 @@ export const blogPosts: BlogPost[] = [
         "height": 608,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "gemini-2-0-flash-agentic-multimodal-default",
@@ -16669,7 +18670,10 @@ export const blogPosts: BlogPost[] = [
         "height": 615,
         "alt": "Illustration: The trade-off nobody names in the excitement"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "what-hardened-means-in-enterprise-ai",
@@ -16729,7 +18733,10 @@ export const blogPosts: BlogPost[] = [
         "height": 693,
         "alt": "Illustration: How reusable blocks inherit trust"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-drug-discovery",
@@ -16796,7 +18803,23 @@ export const blogPosts: BlogPost[] = [
         "height": 490,
         "alt": "Illustration: Designing the pipeline so prediction and validation reinforce each other"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "the-model-context-protocol",
@@ -16863,7 +18886,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and adopting deliberately"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-sanctions-screening",
@@ -16926,7 +18952,23 @@ export const blogPosts: BlogPost[] = [
         "height": 487,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "microsoft-365-copilot-in-production",
@@ -16985,7 +19027,10 @@ export const blogPosts: BlogPost[] = [
         "height": 653,
         "alt": "Illustration: Enterprise implications beyond the tenant"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "llm-evaluation-framework-your-team-will-actually-use",
@@ -17053,7 +19098,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and thoroughness versus usability"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "the-architecture-behind-our-platform",
@@ -17112,7 +19160,10 @@ export const blogPosts: BlogPost[] = [
         "height": 687,
         "alt": "Illustration: The trade-off we accepted"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-revenue-cycle-management",
@@ -17179,7 +19230,23 @@ export const blogPosts: BlogPost[] = [
         "height": 611,
         "alt": "Illustration: Designing the audit trail before the audit"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "agent-assist-for-banking-contact-centers",
@@ -17242,7 +19309,23 @@ export const blogPosts: BlogPost[] = [
         "height": 622,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "from-preview-to-production",
@@ -17305,7 +19388,10 @@ export const blogPosts: BlogPost[] = [
         "height": 615,
         "alt": "Illustration: Where shallow models still win"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "deploying-ai-agents-at-scale",
@@ -17372,7 +19458,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and investing in the runtime layer"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-underwriting-in-p-c-insurance",
@@ -17435,7 +19524,23 @@ export const blogPosts: BlogPost[] = [
         "height": 620,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "multi-agent-systems",
@@ -17502,7 +19607,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and the discipline of not going multi-agent"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "operating-principles-behind-every-es-magico-engagement",
@@ -17558,7 +19666,10 @@ export const blogPosts: BlogPost[] = [
         "height": 685,
         "alt": "Illustration: Falsifiable principles are commercially inconvenient, which is the point"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "hipaa-compliant-ai",
@@ -17621,7 +19732,23 @@ export const blogPosts: BlogPost[] = [
         "height": 597,
         "alt": "Illustration: The trade-off, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "heygen-and-synthetic-video",
@@ -17684,7 +19811,10 @@ export const blogPosts: BlogPost[] = [
         "height": 695,
         "alt": "Illustration: Consent, likeness, and disclosure as engineering requirements"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "open-or-closed-framework-for-choosing-foundation-models",
@@ -17752,7 +19882,10 @@ export const blogPosts: BlogPost[] = [
         "height": 615,
         "alt": "Illustration: Lock-in: the cost of changing your mind"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "defending-agents-against-prompt-injection",
@@ -17819,7 +19952,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and defence in depth"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "model-risk-management-for-generative-ai",
@@ -17878,7 +20014,23 @@ export const blogPosts: BlogPost[] = [
         "height": 621,
         "alt": "Illustration: Where it almost broke"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-native-vs-ai-first",
@@ -17937,7 +20089,10 @@ export const blogPosts: BlogPost[] = [
         "height": 688,
         "alt": "Illustration: What this means for the buyer, and what it costs"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-symptom-checkers-and-triage-chatbots",
@@ -18000,7 +20155,23 @@ export const blogPosts: BlogPost[] = [
         "height": 476,
         "alt": "Illustration: A safe triage system makes three commitments visible in its behaviour even though the patient never reads"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "llm-cost-optimization",
@@ -18067,7 +20238,10 @@ export const blogPosts: BlogPost[] = [
         "height": 1024,
         "alt": "Illustration: The trade-off, and using the levers together"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "context-windows-explained-for-operators",
@@ -18130,7 +20304,10 @@ export const blogPosts: BlogPost[] = [
         "height": 613,
         "alt": "Illustration: The cost and latency the window figure omits"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "agentforce-examined",
@@ -18185,7 +20362,10 @@ export const blogPosts: BlogPost[] = [
         "height": 697,
         "alt": "Illustration: Enterprise implications"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "robo-advisors-and-ai-in-wealth-management",
@@ -18248,7 +20428,23 @@ export const blogPosts: BlogPost[] = [
         "height": 618,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "llmops-in-practice",
@@ -18315,7 +20511,10 @@ export const blogPosts: BlogPost[] = [
         "height": 615,
         "alt": "Illustration: What it costs to operate, named plainly"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "why-enterprises-choose-es-magico-in-regulated-environments",
@@ -18371,7 +20570,10 @@ export const blogPosts: BlogPost[] = [
         "height": 690,
         "alt": "Illustration: Why these criteria point to an operator, and what it costs"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ambient-clinical-documentation",
@@ -18434,7 +20636,23 @@ export const blogPosts: BlogPost[] = [
         "height": 495,
         "alt": "Illustration: Sign-off is the control, not the formality"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-in-insurance-claims-processing",
@@ -18497,7 +20715,23 @@ export const blogPosts: BlogPost[] = [
         "height": 620,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "agent-memory-systems",
@@ -18560,7 +20794,10 @@ export const blogPosts: BlogPost[] = [
         "height": 617,
         "alt": "Illustration: The judgment call: store the minimum, not the maximum"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "computer-use-is-here-but-agentic-readiness-isnt",
@@ -18620,7 +20857,10 @@ export const blogPosts: BlogPost[] = [
         "height": 366,
         "alt": "Illustration: The oversight layer you are now obligated to engineer"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "cursor-in-the-enterprise",
@@ -18683,7 +20923,10 @@ export const blogPosts: BlogPost[] = [
         "height": 605,
         "alt": "Illustration: Where it fits"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "agentic-rag-when-retrieval-becomes-a-decision",
@@ -18751,7 +20994,10 @@ export const blogPosts: BlogPost[] = [
         "height": 610,
         "alt": "Illustration: The judgment call: when iteration is worth it"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "inside-es-magico",
@@ -18810,7 +21056,10 @@ export const blogPosts: BlogPost[] = [
         "height": 532,
         "alt": "Illustration: Measured outcomes, in sectors that punish generic AI"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-for-prior-authorization",
@@ -18877,7 +21126,23 @@ export const blogPosts: BlogPost[] = [
         "height": 672,
         "alt": "Illustration: Designing the appeal and audit path before you need it"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "aml-transaction-monitoring-with-ai",
@@ -18940,7 +21205,23 @@ export const blogPosts: BlogPost[] = [
         "height": 622,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "qwen2-5-for-regulated-workloads",
@@ -18999,7 +21280,10 @@ export const blogPosts: BlogPost[] = [
         "height": 457,
         "alt": "Illustration: The position I will hold"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "human-in-the-loop-design",
@@ -19062,7 +21346,10 @@ export const blogPosts: BlogPost[] = [
         "height": 610,
         "alt": "Illustration: The trade-off you’re actually making"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-kyc-and-customer-onboarding",
@@ -19125,7 +21412,23 @@ export const blogPosts: BlogPost[] = [
         "height": 594,
         "alt": "Illustration: Engineering inside the constraint"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "why-most-enterprise-ai-stalls-after-the-pilot",
@@ -19185,7 +21488,10 @@ export const blogPosts: BlogPost[] = [
         "height": 496,
         "alt": "Illustration: What operators do differently: engineer the pilot to be hard to pass"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "clinical-decision-support-with-ai",
@@ -19248,7 +21554,23 @@ export const blogPosts: BlogPost[] = [
         "height": 523,
         "alt": "Illustration: What governance looks like when the model can be wrong about this patient"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "governing-agentic-ai",
@@ -19307,7 +21629,10 @@ export const blogPosts: BlogPost[] = [
         "height": 618,
         "alt": "Illustration: The trade-off, named honestly"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "notebooklm-and-source-grounded-ai",
@@ -19366,7 +21691,10 @@ export const blogPosts: BlogPost[] = [
         "height": 540,
         "alt": "Illustration: Where it fits"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "reasoning-models-reach-the-enterprise",
@@ -19429,7 +21757,10 @@ export const blogPosts: BlogPost[] = [
         "height": 562,
         "alt": "Illustration: What this forces in system design"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-credit-scoring-and-underwriting",
@@ -19496,7 +21827,23 @@ export const blogPosts: BlogPost[] = [
         "height": 517,
         "alt": "Illustration: Where human oversight actually belongs"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "evaluating-ai-agents",
@@ -19563,7 +21910,10 @@ export const blogPosts: BlogPost[] = [
         "height": 314,
         "alt": "Illustration: What this costs, and why it is still the cheapest thing you will engineer"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "deploying-ai-is-easy-operationalising-it-is-the-work",
@@ -19622,7 +21972,10 @@ export const blogPosts: BlogPost[] = [
         "height": 524,
         "alt": "Illustration: Why this is a budgeting failure, not a technical one"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-governance-in-healthcare",
@@ -19685,7 +22038,23 @@ export const blogPosts: BlogPost[] = [
         "height": 608,
         "alt": "Illustration: The trade-off no framework escapes"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "llm-tool-calling-in-production",
@@ -19752,7 +22121,10 @@ export const blogPosts: BlogPost[] = [
         "height": 401,
         "alt": "Illustration: Recovery is a design decision, not an afterthought"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "perplexity-as-an-enterprise-answer-engine",
@@ -19815,7 +22187,10 @@ export const blogPosts: BlogPost[] = [
         "height": 670,
         "alt": "Illustration: Data exposure is the deciding question"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-governance-in-financial-services",
@@ -19878,7 +22253,23 @@ export const blogPosts: BlogPost[] = [
         "height": 399,
         "alt": "Illustration: The piece most frameworks omit: evaluation as a gate"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "llama-3-1-405b-and-the-case-for-open-weight-models",
@@ -19942,7 +22333,10 @@ export const blogPosts: BlogPost[] = [
         "height": 460,
         "alt": "Illustration: Which deployments justify it"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "agent-orchestration-patterns",
@@ -20009,7 +22403,10 @@ export const blogPosts: BlogPost[] = [
         "height": 367,
         "alt": "Illustration: What this costs to operate"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "consultant-integrator-or-operator",
@@ -20068,7 +22465,10 @@ export const blogPosts: BlogPost[] = [
         "height": 375,
         "alt": "Illustration: Three models, one question: who can answer for the live system"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-in-medical-imaging",
@@ -20127,7 +22527,23 @@ export const blogPosts: BlogPost[] = [
         "height": 691,
         "alt": "Illustration: Designing the read so the AI helps without anchoring"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-chatbots-in-banking",
@@ -20190,7 +22606,23 @@ export const blogPosts: BlogPost[] = [
         "height": 487,
         "alt": "Illustration: Three mechanisms carry the load, and none of them are the language model."
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "why-ai-agents-fail-in-production",
@@ -20249,7 +22681,10 @@ export const blogPosts: BlogPost[] = [
         "height": 554,
         "alt": "Illustration: What containment actually costs"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "gamma-for-deck-generation-at-scale",
@@ -20312,7 +22747,10 @@ export const blogPosts: BlogPost[] = [
         "height": 582,
         "alt": "Illustration: Three questions matter more than the feature list."
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "gpt-4o-in-production",
@@ -20371,7 +22809,10 @@ export const blogPosts: BlogPost[] = [
         "height": 377,
         "alt": "Illustration: What this changes about deployment, cost, and risk"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "what-is-an-ai-operator",
@@ -20431,7 +22872,10 @@ export const blogPosts: BlogPost[] = [
         "height": 368,
         "alt": "Illustration: Why operating is a different problem from demonstrating"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   },
   {
     "slug": "ai-medical-scribes",
@@ -20494,7 +22938,23 @@ export const blogPosts: BlogPost[] = [
         "height": 795,
         "alt": "Illustration: Designing the review step as part of the system"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Healthcare & Life Sciences",
+        "href": "/industries/healthcare/"
+      },
+      "caseStudies": [
+        {
+          "label": "Cipla, Global Training Academy: A global training academy that speaks every employee’s language.",
+          "href": "/case-studies/cipla-global-training-academy/"
+        },
+        {
+          "label": "Koita Foundation: Fragmented digital-health knowledge, made answerable in plain language.",
+          "href": "/case-studies/koita-foundation/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-fraud-detection-in-banking",
@@ -20557,7 +23017,23 @@ export const blogPosts: BlogPost[] = [
         "height": 484,
         "alt": "Illustration: What the regulator asks, engineered in from the start"
       }
-    ]
+    ],
+    "related": {
+      "industry": {
+        "label": "Banking & Financial Services",
+        "href": "/industries/bfsi/"
+      },
+      "caseStudies": [
+        {
+          "label": "RBI, Innovation Hub: Grievance redressal that survives its own audit.",
+          "href": "/case-studies/rbi-innovation-hub/"
+        },
+        {
+          "label": "IndusInd Bank: Trainer-independent learning for 50,000+ employees.",
+          "href": "/case-studies/indusind-bank/"
+        }
+      ]
+    }
   },
   {
     "slug": "ai-agent-architecture-in-production",
@@ -20620,6 +23096,9 @@ export const blogPosts: BlogPost[] = [
         "height": 523,
         "alt": "Illustration: What AI agent architecture buys you in a regulated environment"
       }
-    ]
+    ],
+    "related": {
+      "caseStudies": []
+    }
   }
 ];

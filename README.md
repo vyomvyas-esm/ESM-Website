@@ -26,10 +26,14 @@ npm run build    # static export of all 361 routes
 ## Routes
 
 `/`, `/pyzo` and `/pyzo/{atlas,compass,evio,forge,loupe,prism}`,
-`/services/{agentic-ai,ai-governance,enterprise-ai}`,
-`/industries/{bfsi,healthcare,public-sector,retail}`, `/blog`, `/blog/[slug]`,
-`/case-studies`, `/case-studies/[slug]`, `/reports`, `/about`, `/careers`,
-`/careers/apply`, `/contact`, `/technology`, `/privacy`, `/terms`.
+`/engineering/{agentic-ai,ai-governance,enterprise-ai}`,
+`/industries/{bfsi,healthcare,public-sector,retail}`, `/blog/` with `/blog/page/N/`,
+`/blog/<category>/` and `/blog/<category>/page/N/`, `/blog/[slug]/`, `/case-studies/`,
+`/case-studies/[slug]/`, `/reports/`, `/about/`, `/careers/`, `/careers/apply/`,
+`/contact/`, `/technology/`, `/privacy/`, `/terms/`, plus `/sitemap.xml` and `/robots.txt`.
+
+SEO tooling: `node tools/seo-check.mjs` (page assertions), `--crawl` (orphans, broken
+links, redirects) and `--brand` (brand-rule grep over the diff), after `next build`.
 
 `/blog?author=Name` opens the journal with that author preselected (used by the
 leadership cards on `/about`).
