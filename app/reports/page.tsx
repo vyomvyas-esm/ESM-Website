@@ -1,9 +1,12 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { ReportsIndex } from "@/components/ReportsIndex";
-export const metadata: Metadata = {
-  title: "Reports - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Reports",
+  description:
+    "Deep research into how AI is engineered, governed and deployed in regulated enterprises, with the working shown and every figure sourced.",
+  path: "/reports/",
+});
 export default function ReportsPage() {
   return (
     <main className="page" id="page-reports">
@@ -29,7 +32,7 @@ export default function ReportsPage() {
             working shown and every figure sourced.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/contact">
+            <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -66,7 +69,7 @@ export default function ReportsPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

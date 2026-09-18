@@ -1,10 +1,12 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
 import { ProofBlock } from "@/components/ProofBlock";
-export const metadata: Metadata = {
-  title: "Define an Outcome - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Define an Outcome",
+  description: "",
+  path: "/contact/",
+});
 export default function ContactPage() {
   return (
     <main className="page" id="page-contact">
@@ -48,7 +50,7 @@ export default function ContactPage() {
                 <p className="eyebrow" style={{ textAlign: "left" }}>
                   Featured
                 </p>
-                <Link className="ft-card rv" href="/case-studies/rbi">
+                <Link className="ft-card rv" href="/case-studies/rbi-innovation-hub/">
                   <p className="ft-k">Newest case study</p>
                   <h3 className="ft-t">A national grievance protocol any regulated bank can adopt.</h3>
                   <div className="ft-figs">

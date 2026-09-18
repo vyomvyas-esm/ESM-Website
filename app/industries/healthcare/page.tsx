@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "Healthcare & Life Sciences - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Healthcare & Life Sciences",
+  description: "",
+  path: "/industries/healthcare/",
+});
 export default function IndHealthcarePage() {
   return (
     <main className="page" id="page-ind-healthcare">
@@ -27,7 +29,7 @@ export default function IndHealthcarePage() {
             their time back, without taking them off the decisions that matter.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/contact">
+            <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -105,7 +107,7 @@ export default function IndHealthcarePage() {
                 Live inside regulated healthcare.
               </h2>
             </div>
-            <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies">
+            <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies/">
               See all case studies
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -122,7 +124,7 @@ export default function IndHealthcarePage() {
             Deployed in production, and measured against the number we agreed.
           </p>
           <div className="mt-10">
-            <Link className="csr rv" data-d="0" href="/case-studies/cipla">
+            <Link className="csr rv" data-d="0" href="/case-studies/cipla-global-training-academy/">
               <span
                 className="clogo cs-logo csr-logo logow-cipla opacity-70"
                 role="img"
@@ -152,7 +154,7 @@ export default function IndHealthcarePage() {
                 </svg>
               </span>
             </Link>
-            <Link className="csr rv" data-d="60" href="/case-studies/koita">
+            <Link className="csr rv" data-d="60" href="/case-studies/koita-foundation/">
               <span
                 className="clogo cs-logo csr-logo logow-koita opacity-70"
                 role="img"
@@ -203,7 +205,7 @@ export default function IndHealthcarePage() {
                   Batch records, deviations and safety cases scored against the standard that applies to each
                   one.
                 </p>
-                <Link className="us-go group" href="/pyzo/prism">
+                <Link className="us-go group" href="/pyzo/prism/">
                   Explore Prism
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -228,7 +230,7 @@ export default function IndHealthcarePage() {
                   GMP procedures and the current SOP for every role, with labelling and guidance returned by
                   market.
                 </p>
-                <Link className="us-go group" href="/pyzo/compass">
+                <Link className="us-go group" href="/pyzo/compass/">
                   Explore Compass
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -253,7 +255,7 @@ export default function IndHealthcarePage() {
                   Adherence and refill calls across patient support, with adverse events captured during the
                   call.
                 </p>
-                <Link className="us-go group" href="/pyzo/evio">
+                <Link className="us-go group" href="/pyzo/evio/">
                   Explore Evio
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -278,7 +280,7 @@ export default function IndHealthcarePage() {
                   Source data and consent validated at site, well before queries accumulate ahead of database
                   lock.
                 </p>
-                <Link className="us-go group" href="/pyzo/loupe">
+                <Link className="us-go group" href="/pyzo/loupe/">
                   Explore Loupe
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -303,7 +305,7 @@ export default function IndHealthcarePage() {
                   GMP qualification and annual re-certification at plant scale, with the record held per
                   person.
                 </p>
-                <Link className="us-go group" href="/pyzo/atlas">
+                <Link className="us-go group" href="/pyzo/atlas/">
                   Explore Atlas
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -328,7 +330,7 @@ export default function IndHealthcarePage() {
                   Submission assembly and deviation records moved between the QMS, the LIMS and the ERP
                   untouched.
                 </p>
-                <Link className="us-go group" href="/pyzo/forge">
+                <Link className="us-go group" href="/pyzo/forge/">
                   Explore Forge
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -445,7 +447,7 @@ export default function IndHealthcarePage() {
             Other industries we serve.
           </h2>
           <div className="oi-grid mt-[40px] grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            <Link className="oi-row rv" data-d="0" href="/industries/bfsi">
+            <Link className="oi-row rv" data-d="0" href="/industries/bfsi/">
               <span className="oi-ic">
                 <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path d="M10 2.6 17 6H3Z" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" />
@@ -470,7 +472,7 @@ export default function IndHealthcarePage() {
                 </svg>
               </span>
             </Link>
-            <Link className="oi-row rv" data-d="60" href="/industries/public-sector">
+            <Link className="oi-row rv" data-d="60" href="/industries/public-sector/">
               <span className="oi-ic">
                 <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path
@@ -495,7 +497,7 @@ export default function IndHealthcarePage() {
                 </svg>
               </span>
             </Link>
-            <Link className="oi-row rv" data-d="120" href="/industries/retail">
+            <Link className="oi-row rv" data-d="120" href="/industries/retail/">
               <span className="oi-ic">
                 <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path
@@ -536,7 +538,7 @@ export default function IndHealthcarePage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path
