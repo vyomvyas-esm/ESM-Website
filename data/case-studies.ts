@@ -3,7 +3,8 @@ import type { CaseStudy } from "./types";
 
 export const caseStudies: CaseStudy[] = [
   {
-    "slug": "rbi",
+    "slug": "rbi-innovation-hub",
+    "prototypeId": "rbi",
     "metaTitle": "Grievance redressal that survives its own audit. - Case Study - Es Magico",
     "client": "RBI, Innovation Hub",
     "logo": "logow-rbi",
@@ -51,7 +52,8 @@ export const caseStudies: CaseStudy[] = [
     }
   },
   {
-    "slug": "cipla",
+    "slug": "cipla-global-training-academy",
+    "prototypeId": "cipla",
     "metaTitle": "A global training academy that speaks every employee's language. - Case Study - Es Magico",
     "client": "Cipla, Global Training Academy",
     "logo": "logow-cipla",
@@ -107,7 +109,8 @@ export const caseStudies: CaseStudy[] = [
     }
   },
   {
-    "slug": "koita",
+    "slug": "koita-foundation",
+    "prototypeId": "koita",
     "metaTitle": "Fragmented digital-health knowledge, made answerable in plain language. - Case Study - Es Magico",
     "client": "Koita Foundation",
     "logo": "logow-koita",
@@ -159,7 +162,8 @@ export const caseStudies: CaseStudy[] = [
     }
   },
   {
-    "slug": "isb",
+    "slug": "indian-school-of-business",
+    "prototypeId": "isb",
     "metaTitle": "Thousands of applications, screened consistently and without bias. - Case Study - Es Magico",
     "client": "Indian School of Business, iVi",
     "logo": "logow-isb",
@@ -208,7 +212,8 @@ export const caseStudies: CaseStudy[] = [
     }
   },
   {
-    "slug": "indusind",
+    "slug": "indusind-bank",
+    "prototypeId": "indusind",
     "metaTitle": "Trainer-independent learning for 50,000+ employees. - Case Study - Es Magico",
     "client": "IndusInd Bank",
     "logo": "logow-indusind",
@@ -253,6 +258,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     "slug": "samagra",
+    "prototypeId": "samagra",
     "metaTitle": "Voice-first agricultural guidance for farmers, in their own language. - Case Study - Es Magico",
     "client": "Samagra",
     "logo": "logow-samagra",
@@ -309,6 +315,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     "slug": "indiamart",
+    "prototypeId": "indiamart",
     "metaTitle": "A million marketplace conversations, handled autonomously. - Case Study - Es Magico",
     "client": "IndiaMART",
     "logo": "logow-indiamart",
@@ -360,7 +367,8 @@ export const caseStudies: CaseStudy[] = [
     }
   },
   {
-    "slug": "tataneu",
+    "slug": "tata-neu",
+    "prototypeId": "tataneu",
     "metaTitle": "A gamified rewards engine that keeps a super-app engaged. - Case Study - Es Magico",
     "client": "Tata Neu",
     "logo": "logow-tataneu2",
@@ -414,7 +422,8 @@ export const caseStudies: CaseStudy[] = [
     }
   },
   {
-    "slug": "epic",
+    "slug": "epic-global",
+    "prototypeId": "epic",
     "metaTitle": "Multi-marketplace e-commerce operations, automated end to end. - Case Study - Es Magico",
     "client": "Epic Global Inc.",
     "logo": "logow-epic",

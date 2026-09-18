@@ -1,8 +1,11 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "Technology - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Technology",
+  description:
+    "The components we engineer with, selected for what holds up in production inside a regulated estate.",
+  path: "/technology/",
+});
 export default function StackPage() {
   return (
     <main className="page" id="page-stack">
@@ -35,7 +38,7 @@ export default function StackPage() {
             change. That layer is what we operate, and it is what stays.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/contact">
+            <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -151,7 +154,7 @@ export default function StackPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

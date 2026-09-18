@@ -3,6 +3,7 @@ import { Inter, Schibsted_Grotesk } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SiteEffects } from "@/components/SiteEffects";
+import { SITE_URL, TITLE_SUFFIX } from "@/lib/seo";
 import "./globals.css";
 
 const inter = Inter({
@@ -19,13 +20,14 @@ const schibsted = Schibsted_Grotesk({
   display: "swap",
 });
 
+/* Only the origin and the title template live here. Every route sets its own title
+   and description (or deliberately none), so nothing is inherited from this layout. */
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Es Magico - The Operator for AI-native Transformation",
-    template: "%s",
+    default: "Es Magico",
+    template: `%s${TITLE_SUFFIX}`,
   },
-  description:
-    "Es Magico is the Operator for AI-native Transformation. We deploy AI into production inside regulated enterprises and stand behind what it produces to auditors, regulators and boards.",
 };
 
 /* Applied before first paint so a stored theme never flashes. Light is the default;

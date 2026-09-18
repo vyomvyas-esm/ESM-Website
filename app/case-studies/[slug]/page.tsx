@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Arrow } from "@/components/Arrow";
 import { Cta } from "@/components/Cta";
 import { caseStudies } from "@/data/case-studies";
+import { firstSentences, pageMetadata } from "@/lib/seo";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -16,7 +17,11 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const cs = bySlug((await params).slug);
   if (!cs) return {};
-  return { title: cs.metaTitle || cs.title, description: cs.lede };
+  return pageMetadata({
+    title: cs.metaTitle.replace(/\s*-\s*Es Magico$/, ""),
+    description: firstSentences(cs.lede),
+    path: `/case-studies/${cs.slug}/`,
+  });
 }
 
 export default async function CaseStudyPage({ params }: Params) {
@@ -37,7 +42,7 @@ export default async function CaseStudyPage({ params }: Params) {
             <span className="sep">·</span>
             <span className="text-white/45">Resources</span>
             <span className="sep">·</span>
-            <Link href="/case-studies">Case Studies</Link>
+            <Link href="/case-studies/">Case Studies</Link>
             <span className="sep">·</span>
             <span aria-current="page">{cs.client}</span>
           </nav>
@@ -80,7 +85,7 @@ export default async function CaseStudyPage({ params }: Params) {
             ))}
           </div>
           <div className="mt-10 rv">
-            <Link className="btn btn-ghost group" href="/case-studies">
+            <Link className="btn btn-ghost group" href="/case-studies/">
               All case studies
               <Arrow />
             </Link>

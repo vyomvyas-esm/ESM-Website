@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "Forge, Workflow Executor - PYZO - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Forge, Workflow Executor - PYZO",
+  description: "Where Forge executes real work across the applications each industry actually relies on.",
+  path: "/pyzo/forge/",
+});
 export default function PyzoForgePage() {
   return (
     <main className="page" id="page-pyzo-forge">
@@ -17,7 +19,7 @@ export default function PyzoForgePage() {
             <div>
               <nav className="crumb rv" aria-label="Breadcrumb">
                 <Link href="/">Home</Link>
-                <span className="sep">·</span> <Link href="/pyzo">PYZO</Link>
+                <span className="sep">·</span> <Link href="/pyzo/">PYZO</Link>
                 <span className="sep">·</span> <span aria-current="page">Forge</span>
               </nav>
               <span
@@ -34,7 +36,7 @@ export default function PyzoForgePage() {
                 way an operator would, including the legacy systems that expose no API to call.
               </p>
               <div className="mt-8 rv" data-d="200">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path
@@ -187,7 +189,7 @@ export default function PyzoForgePage() {
             Deployed, and measured.
           </h2>
           <div className="mt-[46px]">
-            <Link className="csr rv" data-d="0" href="/case-studies/epic">
+            <Link className="csr rv" data-d="0" href="/case-studies/epic-global/">
               <span
                 className="clogo csr-logo logow-epic opacity-70"
                 role="img"
@@ -242,7 +244,7 @@ export default function PyzoForgePage() {
                   Reconciliation breaks, disbursement steps and case routing executed across core banking, the
                   LMS and the CRM, including the systems that were never designed to talk to one another.
                 </p>
-                <Link className="us-go group" href="/industries/bfsi">
+                <Link className="us-go group" href="/industries/bfsi/">
                   Explore BFSI
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -267,7 +269,7 @@ export default function PyzoForgePage() {
                   across the QMS, the LIMS and the ERP without a person retyping between them or a record
                   falling behind.
                 </p>
-                <Link className="us-go group" href="/industries/healthcare">
+                <Link className="us-go group" href="/industries/healthcare/">
                   Explore Healthcare
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -291,7 +293,7 @@ export default function PyzoForgePage() {
                   Records and applications moved between departmental systems, so a citizen is never asked for
                   what one department already holds, with the status returned to the channel they used.
                 </p>
-                <Link className="us-go group" href="/industries/public-sector">
+                <Link className="us-go group" href="/industries/public-sector/">
                   Explore Public Sector
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -315,7 +317,7 @@ export default function PyzoForgePage() {
                   Order, inventory and returns exceptions worked end to end across commerce, the WMS and the
                   ERP, at the volume a peak week actually produces rather than the volume a demo assumes.
                 </p>
-                <Link className="us-go group" href="/industries/retail">
+                <Link className="us-go group" href="/industries/retail/">
                   Explore Retail
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -440,7 +442,7 @@ export default function PyzoForgePage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

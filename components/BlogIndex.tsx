@@ -35,7 +35,7 @@ function Featured({ card }: { card: BlogCard }) {
   return (
     <Link
       className="bl-feat card group grid cursor-pointer overflow-hidden md:grid-cols-2 rv"
-      href={`/blog/${card.slug}`}
+      href={`/blog/${card.slug}/`}
     >
       <Thumb
         src={card.thumb}
@@ -69,7 +69,7 @@ function Card({ card, index }: { card: BlogCard; index: number }) {
     <Link
       className="bl-card card group flex cursor-pointer flex-col overflow-hidden rv"
       data-d={(index % 3) * 60}
-      href={`/blog/${card.slug}`}
+      href={`/blog/${card.slug}/`}
     >
       <Thumb src={card.thumb} className="relative h-[176px] overflow-hidden" />
       <div className="flex flex-1 flex-col p-5">

@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "Public Sector & Governance - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Public Sector & Governance",
+  description: "",
+  path: "/industries/public-sector/",
+});
 export default function IndPublicPage() {
   return (
     <main className="page" id="page-ind-public">
@@ -27,7 +29,7 @@ export default function IndPublicPage() {
             these mandates demand, auditable from the first decision the system makes.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/contact">
+            <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -105,7 +107,7 @@ export default function IndPublicPage() {
                 Live inside public institutions.
               </h2>
             </div>
-            <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies">
+            <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies/">
               See all case studies
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -122,7 +124,7 @@ export default function IndPublicPage() {
             Deployed in production, and measured against the number we agreed.
           </p>
           <div className="mt-10">
-            <Link className="csr rv" data-d="0" href="/case-studies/samagra">
+            <Link className="csr rv" data-d="0" href="/case-studies/samagra/">
               <span
                 className="clogo cs-logo csr-logo logow-samagra opacity-70"
                 role="img"
@@ -152,7 +154,7 @@ export default function IndPublicPage() {
                 </svg>
               </span>
             </Link>
-            <Link className="csr rv" data-d="60" href="/case-studies/isb">
+            <Link className="csr rv" data-d="60" href="/case-studies/indian-school-of-business/">
               <span
                 className="clogo cs-logo csr-logo logow-isb opacity-70"
                 role="img"
@@ -204,7 +206,7 @@ export default function IndPublicPage() {
                   Accreditation, scheme eligibility and tenders scored consistently whoever happens to review
                   them.
                 </p>
-                <Link className="us-go group" href="/pyzo/prism">
+                <Link className="us-go group" href="/pyzo/prism/">
                   Explore Prism
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -229,7 +231,7 @@ export default function IndPublicPage() {
                   Circulars and scheme rules answered for assessors and citizens, traceable to the clause
                   behind them.
                 </p>
-                <Link className="us-go group" href="/pyzo/compass">
+                <Link className="us-go group" href="/pyzo/compass/">
                   Explore Compass
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -254,7 +256,7 @@ export default function IndPublicPage() {
                   Scheme outreach and eligibility checks by voice in regional languages, from any handset
                   anywhere.
                 </p>
-                <Link className="us-go group" href="/pyzo/evio">
+                <Link className="us-go group" href="/pyzo/evio/">
                   Explore Evio
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -279,7 +281,7 @@ export default function IndPublicPage() {
                   Forms completed right the first time with the evidence checked as it is attached rather than
                   later.
                 </p>
-                <Link className="us-go group" href="/pyzo/loupe">
+                <Link className="us-go group" href="/pyzo/loupe/">
                   Explore Loupe
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -304,7 +306,7 @@ export default function IndPublicPage() {
                   Certification against the current version of the standard, with refreshers delivered within
                   days.
                 </p>
-                <Link className="us-go group" href="/pyzo/atlas">
+                <Link className="us-go group" href="/pyzo/atlas/">
                   Explore Atlas
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -329,7 +331,7 @@ export default function IndPublicPage() {
                   Applications processed across legacy registries so a citizen is never asked twice for the
                   same thing.
                 </p>
-                <Link className="us-go group" href="/pyzo/forge">
+                <Link className="us-go group" href="/pyzo/forge/">
                   Explore Forge
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -445,7 +447,7 @@ export default function IndPublicPage() {
             Other industries we serve.
           </h2>
           <div className="oi-grid mt-[40px] grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            <Link className="oi-row rv" data-d="0" href="/industries/bfsi">
+            <Link className="oi-row rv" data-d="0" href="/industries/bfsi/">
               <span className="oi-ic">
                 <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path d="M10 2.6 17 6H3Z" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" />
@@ -470,7 +472,7 @@ export default function IndPublicPage() {
                 </svg>
               </span>
             </Link>
-            <Link className="oi-row rv" data-d="60" href="/industries/healthcare">
+            <Link className="oi-row rv" data-d="60" href="/industries/healthcare/">
               <span className="oi-ic">
                 <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path
@@ -495,7 +497,7 @@ export default function IndPublicPage() {
                 </svg>
               </span>
             </Link>
-            <Link className="oi-row rv" data-d="120" href="/industries/retail">
+            <Link className="oi-row rv" data-d="120" href="/industries/retail/">
               <span className="oi-ic">
                 <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path
@@ -536,7 +538,7 @@ export default function IndPublicPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

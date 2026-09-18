@@ -1,8 +1,11 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "Prism, Evaluation Consultant - PYZO - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Prism, Evaluation Consultant - PYZO",
+  description:
+    "Prism parses almost any input, audio, video, images or documents, and evaluates it against a rubric you define and defend.",
+  path: "/pyzo/prism/",
+});
 export default function PyzoPrismPage() {
   return (
     <main className="page" id="page-pyzo-prism">
@@ -17,7 +20,7 @@ export default function PyzoPrismPage() {
             <div>
               <nav className="crumb rv" aria-label="Breadcrumb">
                 <Link href="/">Home</Link>
-                <span className="sep">·</span> <Link href="/pyzo">PYZO</Link>
+                <span className="sep">·</span> <Link href="/pyzo/">PYZO</Link>
                 <span className="sep">·</span> <span aria-current="page">Prism</span>
               </nav>
               <span
@@ -34,7 +37,7 @@ export default function PyzoPrismPage() {
                 rubric you define and defend.
               </p>
               <div className="mt-8 rv" data-d="200">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path
@@ -167,7 +170,7 @@ export default function PyzoPrismPage() {
             Deployed, and measured.
           </h2>
           <div className="mt-[46px]">
-            <Link className="csr rv" data-d="0" href="/case-studies/isb">
+            <Link className="csr rv" data-d="0" href="/case-studies/indian-school-of-business/">
               <span
                 className="clogo csr-logo logow-isb opacity-70"
                 role="img"
@@ -223,7 +226,7 @@ export default function PyzoPrismPage() {
                   thin-file and edge cases where policy is easiest to bend, with reasoning documented well
                   enough to defend at audit.
                 </p>
-                <Link className="us-go group" href="/industries/bfsi">
+                <Link className="us-go group" href="/industries/bfsi/">
                   Explore BFSI
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -248,7 +251,7 @@ export default function PyzoPrismPage() {
                   applies, with a consistent and inspectable rationale behind every call and the marginal ones
                   escalated.
                 </p>
-                <Link className="us-go group" href="/industries/healthcare">
+                <Link className="us-go group" href="/industries/healthcare/">
                   Explore Healthcare
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -273,7 +276,7 @@ export default function PyzoPrismPage() {
                   the same evidence produces the same result regardless of who reviews it or which state it
                   arrives from.
                 </p>
-                <Link className="us-go group" href="/industries/public-sector">
+                <Link className="us-go group" href="/industries/public-sector/">
                   Explore Public Sector
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -297,7 +300,7 @@ export default function PyzoPrismPage() {
                   Returns, claims, seller quality and catalogue compliance evaluated at volume, with the
                   marginal cases escalated rather than waved through, in a quiet week and in peak week alike.
                 </p>
-                <Link className="us-go group" href="/industries/retail">
+                <Link className="us-go group" href="/industries/retail/">
                   Explore Retail
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -422,7 +425,7 @@ export default function PyzoPrismPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

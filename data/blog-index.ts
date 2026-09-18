@@ -41,7 +41,7 @@ export const blogCards: BlogCard[] = [
     }
   },
   {
-    "slug": "why-accountable-ai-will-outlast-generative-ai-as-the-phras",
+    "slug": "why-accountable-ai-will-outlast-generative-ai",
     "title": "Why ‘Accountable AI’ Outlasts ‘Generative AI’",
     "date": "22 July 2026",
     "tag": "EsMagico",
@@ -188,7 +188,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/315-t.webp"
   },
   {
-    "slug": "migrating-between-foundation-models-without-rewriting-your",
+    "slug": "migrating-between-foundation-models-without-rewriting-your-stack",
     "title": "Migrating Between Foundation Models",
     "date": "1 July 2026",
     "tag": "AI Models",
@@ -443,7 +443,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/298-t.webp"
   },
   {
-    "slug": "how-a-regulated-lender-cleared-audit-on-first-pass-with-gu",
+    "slug": "how-a-regulated-lender-cleared-audit-on-first-pass",
     "title": "Clearing Audit on First Pass",
     "date": "22 May 2026",
     "tag": "EsMagico",
@@ -653,7 +653,7 @@ export const blogCards: BlogCard[] = [
     "thumb": null
   },
   {
-    "slug": "myth-a-more-powerful-model-solves-the-enterprise-ai-proble",
+    "slug": "myth-a-more-powerful-model-solves-the-enterprise-ai-problem",
     "title": "Myth: A More Powerful Model",
     "date": "20 April 2026",
     "tag": "EsMagico",
@@ -713,7 +713,7 @@ export const blogCards: BlogCard[] = [
     "thumb": null
   },
   {
-    "slug": "claude-opus-4-5-cheaper-frontier-coding-and-what-the-price",
+    "slug": "claude-opus-4-5-cheaper-frontier-coding",
     "title": "Claude Opus 4.5 and the Price Cut",
     "date": "10 April 2026",
     "tag": "AI Models",
@@ -818,7 +818,7 @@ export const blogCards: BlogCard[] = [
     "thumb": null
   },
   {
-    "slug": "what-a-production-ready-agent-actually-requires-most-demos",
+    "slug": "what-a-production-ready-agent-actually-requires",
     "title": "What a Production-Ready Agent Requires",
     "date": "25 March 2026",
     "tag": "EsMagico",
@@ -1028,7 +1028,7 @@ export const blogCards: BlogCard[] = [
     "thumb": null
   },
   {
-    "slug": "building-an-ai-operating-model-your-risk-committee-will-ap",
+    "slug": "ai-operating-model-your-risk-committee-will-approve",
     "title": "An AI Operating Model Risk Will Approve",
     "date": "20 February 2026",
     "tag": "EsMagico",
@@ -1193,7 +1193,7 @@ export const blogCards: BlogCard[] = [
     "thumb": null
   },
   {
-    "slug": "claude-haiku-4-5-and-the-economics-of-small-fast-models-in",
+    "slug": "claude-haiku-4-5-economics-of-small-fast-models",
     "title": "Claude Haiku 4.5 and Small-Model Economics",
     "date": "26 January 2026",
     "tag": "AI Models",
@@ -1223,7 +1223,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/246-t.webp"
   },
   {
-    "slug": "credit-model-monitoring-and-drift-detection-through-the-ec",
+    "slug": "credit-model-monitoring-and-drift-detection-through-the-economic-cycle",
     "title": "Credit Model Monitoring Through the Cycle",
     "date": "21 January 2026",
     "tag": "AI in BFSI",
@@ -1433,7 +1433,7 @@ export const blogCards: BlogCard[] = [
     "thumb": null
   },
   {
-    "slug": "demand-and-inventory-intelligence-that-performs-under-real",
+    "slug": "demand-and-inventory-intelligence-under-real-margins",
     "title": "Demand and Inventory Under Real Margins",
     "date": "19 December 2025",
     "tag": "EsMagico",
@@ -1553,7 +1553,7 @@ export const blogCards: BlogCard[] = [
     "thumb": null
   },
   {
-    "slug": "notion-s-workspace-agents",
+    "slug": "notions-workspace-agents",
     "title": "Notion’s Workspace Agents",
     "date": "1 December 2025",
     "tag": "AI Tools",
@@ -1718,7 +1718,7 @@ export const blogCards: BlogCard[] = [
     "thumb": null
   },
   {
-    "slug": "preserving-institutional-knowledge-in-government-with-agen",
+    "slug": "preserving-institutional-knowledge-in-government-with-agentic-ai",
     "title": "Institutional Knowledge in Government",
     "date": "5 November 2025",
     "tag": "EsMagico",
@@ -1748,7 +1748,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/211-t.webp"
   },
   {
-    "slug": "are-frontier-models-becoming-commodities-an-operator-s-vie",
+    "slug": "are-frontier-models-becoming-commodities",
     "title": "Are Frontier Models Becoming Commodities?",
     "date": "31 October 2025",
     "tag": "AI Models",
@@ -2018,7 +2018,7 @@ export const blogCards: BlogCard[] = [
     "thumb": null
   },
   {
-    "slug": "ai-in-the-ehr-reducing-click-burden-without-compromising-t",
+    "slug": "ai-in-the-ehr-reducing-click-burden",
     "title": "AI in the EHR",
     "date": "19 September 2025",
     "tag": "AI in Healthcare",
@@ -2528,7 +2528,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/159-t.webp"
   },
   {
-    "slug": "llama-4-against-qwen-3-for-private-and-sovereign-enterpris",
+    "slug": "llama-4-against-qwen-3-for-sovereign-enterprise-deployment",
     "title": "Llama 4 Against Qwen 3",
     "date": "2 July 2025",
     "tag": "AI Models",
@@ -2588,7 +2588,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/155-t.webp"
   },
   {
-    "slug": "automating-loan-document-checks-without-breaking-your-audi",
+    "slug": "automating-loan-document-checks-without-breaking-your-audit-trail",
     "title": "Automating Loan Document Checks",
     "date": "23 June 2025",
     "tag": "EsMagico",
@@ -2723,7 +2723,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/146-t.webp"
   },
   {
-    "slug": "why-ai-benchmarks-don-t-predict-production-performance",
+    "slug": "why-ai-benchmarks-dont-predict-production-performance",
     "title": "Why AI Benchmarks Don’t Predict Production",
     "date": "2 June 2025",
     "tag": "Agentic AI",
@@ -2978,7 +2978,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/129-t.webp"
   },
   {
-    "slug": "genspark-s-multi-agent-approach",
+    "slug": "gensparks-multi-agent-approach",
     "title": "Genspark’s Multi-Agent Approach",
     "date": "23 April 2025",
     "tag": "AI Tools",
@@ -3308,7 +3308,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/107-t.webp"
   },
   {
-    "slug": "why-benchmark-scores-don-t-survive-contact-with-production",
+    "slug": "why-benchmark-scores-dont-survive-contact-with-production",
     "title": "Why Benchmark Scores Don’t Survive Production",
     "date": "3 March 2025",
     "tag": "AI Models",
@@ -3938,7 +3938,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/65-t.webp"
   },
   {
-    "slug": "gemini-2-0-flash-and-the-economics-of-an-agentic-multimoda",
+    "slug": "gemini-2-0-flash-agentic-multimodal-default",
     "title": "Gemini 2.0 Flash and Agentic Economics",
     "date": "25 November 2024",
     "tag": "AI Models",
@@ -3953,7 +3953,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/64-t.webp"
   },
   {
-    "slug": "what-hardened-means-in-enterprise-ai-and-how-reusable-bloc",
+    "slug": "what-hardened-means-in-enterprise-ai",
     "title": "What ‘Hardened’ Actually Means",
     "date": "22 November 2024",
     "tag": "EsMagico",
@@ -4028,7 +4028,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/59-t.webp"
   },
   {
-    "slug": "building-an-llm-evaluation-framework-your-team-will-actual",
+    "slug": "llm-evaluation-framework-your-team-will-actually-use",
     "title": "An LLM Evaluation Framework Teams Use",
     "date": "11 November 2024",
     "tag": "Agentic AI",
@@ -4148,7 +4148,7 @@ export const blogCards: BlogCard[] = [
     "thumb": null
   },
   {
-    "slug": "the-operating-principles-behind-every-es-magico-engagement",
+    "slug": "operating-principles-behind-every-es-magico-engagement",
     "title": "The Operating Principles Behind Our Work",
     "date": "23 October 2024",
     "tag": "EsMagico",
@@ -4193,7 +4193,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/48-t.webp"
   },
   {
-    "slug": "open-or-closed-a-practitioner-s-framework-for-choosing-fou",
+    "slug": "open-or-closed-framework-for-choosing-foundation-models",
     "title": "Open or Closed",
     "date": "16 October 2024",
     "tag": "AI Models",
@@ -4343,7 +4343,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/38-t.webp"
   },
   {
-    "slug": "why-enterprises-choose-es-magico-to-run-ai-in-regulated-en",
+    "slug": "why-enterprises-choose-es-magico-in-regulated-environments",
     "title": "Why Enterprises Choose Es Magico",
     "date": "23 September 2024",
     "tag": "EsMagico",
@@ -4403,7 +4403,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/34-t.webp"
   },
   {
-    "slug": "computer-use-is-here-but-agentic-readiness-isn-t",
+    "slug": "computer-use-is-here-but-agentic-readiness-isnt",
     "title": "Computer Use Is Here, But Agentic Readiness Isn’t",
     "date": "13 September 2024",
     "tag": "AI Models",
@@ -4433,7 +4433,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/32-t.webp"
   },
   {
-    "slug": "agentic-rag-when-retrieval-becomes-a-decision-not-a-lookup",
+    "slug": "agentic-rag-when-retrieval-becomes-a-decision",
     "title": "Agentic RAG: When Retrieval Becomes a Decision",
     "date": "9 September 2024",
     "tag": "Agentic AI",
@@ -4538,7 +4538,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/25-t.webp"
   },
   {
-    "slug": "why-most-enterprise-ai-stalls-after-the-pilot-and-what-ope",
+    "slug": "why-most-enterprise-ai-stalls-after-the-pilot",
     "title": "Why Enterprise AI Stalls After the Pilot",
     "date": "23 August 2024",
     "tag": "EsMagico",
@@ -4718,7 +4718,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/13-t.webp"
   },
   {
-    "slug": "llama-3-1-405b-and-the-case-for-open-weight-models-in-regu",
+    "slug": "llama-3-1-405b-and-the-case-for-open-weight-models",
     "title": "Llama 3.1 405B and Open Weights",
     "date": "26 July 2024",
     "tag": "AI Models",
@@ -4838,7 +4838,7 @@ export const blogCards: BlogCard[] = [
     "thumb": "/blog/5-t.webp"
   },
   {
-    "slug": "what-is-an-ai-operator-the-category-built-for-the-work-aft",
+    "slug": "what-is-an-ai-operator",
     "title": "What Is an AI Operator?",
     "date": "8 July 2024",
     "tag": "EsMagico",

@@ -1,11 +1,13 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Waveform } from "@/components/Waveform";
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Es Magico - The Operator for AI-native Transformation",
+  absoluteTitle: true,
   description:
-    "Es Magico is the Operator for AI-native Transformation. We deploy AI into production inside regulated enterprises and stand behind what it produces to auditors, regulators and boards.",
-};
+    "We deploy enterprise AI into your environment, take responsibility for what it does in production, and answer for the numbers it moves.",
+  path: "/",
+});
 export default function HomePage() {
   return (
     <main className="page" id="page-home">
@@ -26,7 +28,7 @@ export default function HomePage() {
               production, and answer for the numbers it moves.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3 rv" data-d="240">
-              <Link className="btn btn-light group" href="/contact">
+              <Link className="btn btn-light group" href="/contact/">
                 Define an Outcome
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
@@ -173,7 +175,7 @@ export default function HomePage() {
               </h2>
             </div>
             <div className="rv" data-d="120">
-              <Link className="btn btn-light group" href="/case-studies">
+              <Link className="btn btn-light group" href="/case-studies/">
                 See all case studies
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
@@ -215,7 +217,7 @@ export default function HomePage() {
                   <p className="ca-copy">
                     A multilingual, voice-first grievance protocol any regulated bank can adopt.
                   </p>
-                  <Link className="ca-link group" href="/case-studies/rbi">
+                  <Link className="ca-link group" href="/case-studies/rbi-innovation-hub/">
                     <span className="ca-goic">
                       <svg width="10" height="10" viewBox="0 0 16 16" fill="none">
                         <path
@@ -262,7 +264,7 @@ export default function HomePage() {
                   <p className="ca-copy">
                     Policy documents turned into 150+ AI video modules, with no trainer dependency.
                   </p>
-                  <Link className="ca-link group" href="/case-studies/indusind">
+                  <Link className="ca-link group" href="/case-studies/indusind-bank/">
                     <span className="ca-goic">
                       <svg width="10" height="10" viewBox="0 0 16 16" fill="none">
                         <path
@@ -309,7 +311,7 @@ export default function HomePage() {
                   <p className="ca-copy">
                     A gamified rewards engine with playable mechanics across a multi-vertical app.
                   </p>
-                  <Link className="ca-link group" href="/case-studies/tataneu">
+                  <Link className="ca-link group" href="/case-studies/tata-neu/">
                     <span className="ca-goic">
                       <svg width="10" height="10" viewBox="0 0 16 16" fill="none">
                         <path
@@ -358,7 +360,7 @@ export default function HomePage() {
                   <p className="ca-copy">
                     A candidate screen that stays consistent, explainable and blind to fluency bias.
                   </p>
-                  <Link className="ca-link group" href="/case-studies/isb">
+                  <Link className="ca-link group" href="/case-studies/indian-school-of-business/">
                     <span className="ca-goic">
                       <svg width="10" height="10" viewBox="0 0 16 16" fill="none">
                         <path
@@ -420,7 +422,7 @@ export default function HomePage() {
               Agentic AI that survives scrutiny.
             </p>
             <div className="pz-cta rv" data-d="120">
-              <Link className="btn btn-light group" href="/pyzo">
+              <Link className="btn btn-light group" href="/pyzo/">
                 Explore PYZO
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
@@ -436,7 +438,7 @@ export default function HomePage() {
           </div>
           <div className="mt-[62px] grid gap-4 lg:grid-cols-3">
             <div className="flex flex-col gap-4">
-              <Link className="card card-lit flex h-[336px] flex-col p-5 text-left rv" href="/pyzo/atlas">
+              <Link className="card card-lit flex h-[336px] flex-col p-5 text-left rv" href="/pyzo/atlas/">
                 <div className="bento-art">
                   <div className="mock mb-4 overflow-hidden">
                     <div className="art-film on-dark relative h-[86px]">
@@ -471,7 +473,7 @@ export default function HomePage() {
                   trainer.
                 </p>
               </Link>{" "}
-              <Link className="card flex h-[300px] flex-col p-5 text-left rv" href="/pyzo/forge">
+              <Link className="card flex h-[300px] flex-col p-5 text-left rv" href="/pyzo/forge/">
                 <div className="bento-art">
                   <div className="mock mb-5 p-3">
                     <div className="flex items-center">
@@ -507,7 +509,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="flex flex-col gap-4">
-              <Link className="card flex h-[300px] flex-col p-5 text-left rv" href="/pyzo/evio">
+              <Link className="card flex h-[300px] flex-col p-5 text-left rv" href="/pyzo/evio/">
                 <div className="bento-art">
                   <div className="art-media relative mb-5 h-[118px] overflow-hidden rounded-[8px]">
                     <Waveform
@@ -535,7 +537,7 @@ export default function HomePage() {
                   Handles inbound and outbound calls in 15+ languages, and transfers to a human when needed.
                 </p>
               </Link>{" "}
-              <Link className="card flex h-[336px] flex-col p-5 text-left rv" href="/pyzo/loupe">
+              <Link className="card flex h-[336px] flex-col p-5 text-left rv" href="/pyzo/loupe/">
                 <div className="bento-art">
                   <div className="mock mb-5 p-3">
                     <div className="space-y-1.5">
@@ -571,7 +573,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="flex flex-col gap-4">
-              <Link className="card card-lit flex h-[354px] flex-col p-5 text-left rv" href="/pyzo/compass">
+              <Link className="card card-lit flex h-[354px] flex-col p-5 text-left rv" href="/pyzo/compass/">
                 <div className="bento-art">
                   <div className="mock mb-4 p-2.5">
                     <div className="flex items-center gap-1.5 rounded-[6px] border border-white/10 bg-white/[.04] px-2 py-1.5">
@@ -618,7 +620,7 @@ export default function HomePage() {
                   functions.
                 </p>
               </Link>{" "}
-              <Link className="card flex h-[282px] flex-col p-5 text-left rv" href="/pyzo/prism">
+              <Link className="card flex h-[282px] flex-col p-5 text-left rv" href="/pyzo/prism/">
                 <div className="bento-art">
                   <div className="mock mb-5 p-3">
                     <div className="flex items-center justify-between">
@@ -690,7 +692,7 @@ export default function HomePage() {
             <Link
               className="card group flex flex-col p-4 text-left rv"
               data-d="0"
-              href="/services/agentic-ai"
+              href="/engineering/agentic-ai/"
             >
               <div className="relative h-[168px] w-full overflow-hidden rounded-[10px]">
                 <div className="pimg pimg-agentic"></div>
@@ -716,7 +718,7 @@ export default function HomePage() {
             <Link
               className="card group flex flex-col p-4 text-left rv"
               data-d="70"
-              href="/services/ai-governance"
+              href="/engineering/ai-governance/"
             >
               <div className="relative h-[168px] w-full overflow-hidden rounded-[10px]">
                 <div className="pimg pimg-governance"></div>
@@ -742,7 +744,7 @@ export default function HomePage() {
             <Link
               className="card group flex flex-col p-4 text-left rv"
               data-d="140"
-              href="/services/enterprise-ai"
+              href="/engineering/enterprise-ai/"
             >
               <div className="relative h-[168px] w-full overflow-hidden rounded-[10px]">
                 <div className="pimg pimg-enterprise"></div>
@@ -1034,7 +1036,7 @@ export default function HomePage() {
                 Underwriting, servicing, compliance and grievance, engineered to be questioned because here it
                 will be.
               </p>
-              <Link className="iq-go group" href="/industries/bfsi">
+              <Link className="iq-go group" href="/industries/bfsi/">
                 Explore BFSI
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -1068,7 +1070,7 @@ export default function HomePage() {
                 AI systems for clinical, operational and patient-facing workflows, designed around privacy,
                 governance and human oversight.
               </p>
-              <Link className="iq-go group" href="/industries/healthcare">
+              <Link className="iq-go group" href="/industries/healthcare/">
                 Explore Healthcare
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -1102,7 +1104,7 @@ export default function HomePage() {
                 AI systems for citizen services, accreditation and institutional knowledge, auditable by
                 design and held to a public standard.
               </p>
-              <Link className="iq-go group" href="/industries/public-sector">
+              <Link className="iq-go group" href="/industries/public-sector/">
                 Explore Public Sector
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -1136,7 +1138,7 @@ export default function HomePage() {
                 AI systems for customer experience, demand and inventory, engineered to hold at the volume a
                 peak week produces.
               </p>
-              <Link className="iq-go group" href="/industries/retail">
+              <Link className="iq-go group" href="/industries/retail/">
                 Explore Retail
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -1161,7 +1163,7 @@ export default function HomePage() {
             Ideas, evidence and outcomes.
           </h2>
           <div className="mt-[54px] grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <Link className="card group flex flex-col p-4 text-left rv" data-d="0" href="/blog">
+            <Link className="card group flex flex-col p-4 text-left rv" data-d="0" href="/blog/">
               <div className="relative h-[168px] w-full overflow-hidden rounded-[10px]">
                 <div className="pimg pimg-team"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#000306]/60 via-transparent to-[#000306]/20"></div>
@@ -1183,7 +1185,7 @@ export default function HomePage() {
                 </svg>
               </span>
             </Link>
-            <Link className="card group flex flex-col p-4 text-left rv" data-d="80" href="/reports">
+            <Link className="card group flex flex-col p-4 text-left rv" data-d="80" href="/reports/">
               <div className="relative h-[168px] w-full overflow-hidden rounded-[10px]">
                 <div className="pimg pimg-scrutiny"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#000306]/60 via-transparent to-[#000306]/20"></div>
@@ -1204,7 +1206,7 @@ export default function HomePage() {
                 </svg>
               </span>
             </Link>
-            <Link className="card group flex flex-col p-4 text-left rv" data-d="160" href="/case-studies">
+            <Link className="card group flex flex-col p-4 text-left rv" data-d="160" href="/case-studies/">
               <div className="relative h-[168px] w-full overflow-hidden rounded-[10px]">
                 <div className="pimg pimg-systems"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#000306]/60 via-transparent to-[#000306]/20"></div>
@@ -1246,7 +1248,7 @@ export default function HomePage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

@@ -4,7 +4,9 @@ import { notFound } from "next/navigation";
 import { Arrow } from "@/components/Arrow";
 import { Byline } from "@/components/Byline";
 import { Cta } from "@/components/Cta";
+import { blogCards } from "@/data/blog-index";
 import { blogPosts } from "@/data/blog-posts";
+import { firstSentences, isoDate, pageMetadata } from "@/lib/seo";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -17,7 +19,23 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const post = bySlug((await params).slug);
   if (!post) return {};
-  return { title: post.metaTitle || post.title, description: post.lede };
+  const card = blogCards.find((c) => c.slug === post.slug);
+  const published = isoDate(post.date);
+  return pageMetadata({
+    title: post.title,
+    description: firstSentences(post.lede),
+    path: `/blog/${post.slug}/`,
+    type: "article",
+    image: card?.thumb ?? undefined,
+    article: {
+      publishedTime: published,
+      // no modified date exists in the source; see docs/seo-open-items.md
+      modifiedTime: published,
+      authors: [post.author.name],
+      section: post.tag,
+      tags: [post.tag],
+    },
+  });
 }
 
 export default async function BlogPostPage({ params }: Params) {
@@ -38,7 +56,7 @@ export default async function BlogPostPage({ params }: Params) {
             <span className="sep">·</span>
             <span className="text-white/45">Resources</span>
             <span className="sep">·</span>
-            <Link href="/blog">Blog</Link>
+            <Link href="/blog/">Blog</Link>
           </nav>
           <h1
             className="mt-6 max-w-[22ch] font-display text-[clamp(1.75rem,3.2vw,2.8rem)] font-normal leading-[1.18] tracking-[-.025em] rv"
@@ -77,7 +95,7 @@ export default async function BlogPostPage({ params }: Params) {
               {/* article bodies are authored HTML carried over from the original site */}
               <div className="prose rv" dangerouslySetInnerHTML={{ __html: post.html }} />
               <div className="mt-12 rv">
-                <Link className="btn btn-ghost group" href="/blog">
+                <Link className="btn btn-ghost group" href="/blog/">
                   All blogs
                   <Arrow />
                 </Link>
