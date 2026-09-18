@@ -1,11 +1,18 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
+import { graph, service } from "@/lib/jsonld";
+import { services } from "@/data/page-schema";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "Evio, Call Operator - PYZO - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Evio, Call Operator - PYZO",
+  description: "Where Evio carries inbound and outbound calls, and knows when to hand over.",
+  path: "/pyzo/evio/",
+});
 export default function PyzoEvioPage() {
   return (
     <main className="page" id="page-pyzo-evio">
+      <JsonLd data={graph(service(services["pyzo-evio"]))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>
@@ -15,11 +22,9 @@ export default function PyzoEvioPage() {
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[92px]">
           <div className="grid items-center gap-12 lg:grid-cols-[1fr_360px]">
             <div>
-              <nav className="crumb rv" aria-label="Breadcrumb">
-                <Link href="/">Home</Link>
-                <span className="sep">·</span> <Link href="/pyzo">PYZO</Link>
-                <span className="sep">·</span> <span aria-current="page">Evio</span>
-              </nav>
+              <Breadcrumbs
+                items={[{ label: "Home", href: "/" }, { label: "PYZO", href: "/pyzo/" }, { label: "Evio" }]}
+              />
               <span
                 className="pzlogo pz-hero-logo pzlogo-evio rv"
                 data-d="30"
@@ -35,7 +40,7 @@ export default function PyzoEvioPage() {
                 cancellation in real time.
               </p>
               <div className="mt-8 rv" data-d="200">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path
@@ -173,7 +178,7 @@ export default function PyzoEvioPage() {
             Deployed, and measured.
           </h2>
           <div className="mt-[46px]">
-            <Link className="csr rv" data-d="0" href="/case-studies/rbi">
+            <Link className="csr rv" data-d="0" href="/case-studies/rbi-innovation-hub/">
               <span
                 className="clogo csr-logo logow-rbi opacity-70"
                 role="img"
@@ -207,7 +212,7 @@ export default function PyzoEvioPage() {
                 </svg>
               </span>
             </Link>
-            <Link className="csr rv" data-d="70" href="/case-studies/samagra">
+            <Link className="csr rv" data-d="70" href="/case-studies/samagra/">
               <span
                 className="clogo csr-logo logow-samagra opacity-70"
                 role="img"
@@ -263,7 +268,7 @@ export default function PyzoEvioPage() {
                   transaction verification, handled at a volume human teams cannot staff, with escalation the
                   moment a person is needed.
                 </p>
-                <Link className="us-go group" href="/industries/bfsi">
+                <Link className="us-go group" href="/industries/bfsi/">
                   Explore BFSI
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -288,7 +293,7 @@ export default function PyzoEvioPage() {
                   with the minimum dataset captured on the call, and HCP outreach where field coverage does
                   not reach.
                 </p>
-                <Link className="us-go group" href="/industries/healthcare">
+                <Link className="us-go group" href="/industries/healthcare/">
                   Explore Healthcare
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -313,7 +318,7 @@ export default function PyzoEvioPage() {
                   actually speak, reaching citizens who are not on an app, from any handset and on any
                   network.
                 </p>
-                <Link className="us-go group" href="/industries/public-sector">
+                <Link className="us-go group" href="/industries/public-sector/">
                   Explore Public Sector
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -338,7 +343,7 @@ export default function PyzoEvioPage() {
                   need judgement handed to a person rather than dropped, at a volume no contact centre is
                   staffed for.
                 </p>
-                <Link className="us-go group" href="/industries/retail">
+                <Link className="us-go group" href="/industries/retail/">
                   Explore Retail
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -463,7 +468,7 @@ export default function PyzoEvioPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

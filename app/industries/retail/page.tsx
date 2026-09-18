@@ -1,11 +1,19 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
+import { graph, faqPage } from "@/lib/jsonld";
+import { faqs } from "@/data/page-schema";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "Consumer & Retail - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Consumer & Retail",
+  description:
+    "We engineer customer experience, demand and inventory that performs under real traffic and real margins, at the volume a peak week actually produces.",
+  path: "/industries/retail/",
+});
 export default function IndRetailPage() {
   return (
     <main className="page" id="page-ind-retail">
+      <JsonLd data={graph(faqPage(faqs["ind-retail"]))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>
@@ -13,12 +21,9 @@ export default function IndRetailPage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[92px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span> <span className="text-white/45">Industries</span>
-            <span className="sep">·</span>
-            <span aria-current="page">Consumer &amp; Retail</span>
-          </nav>
+          <Breadcrumbs
+            items={[{ label: "Home", href: "/" }, { label: "Industries" }, { label: "Consumer & Retail" }]}
+          />
           <h1 className="h-hero mt-6 max-w-[16ch] rv" data-d="60">
             Personalisation that holds at real scale.
           </h1>
@@ -27,7 +32,7 @@ export default function IndRetailPage() {
             margins, at the volume a peak week actually produces.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/contact">
+            <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -105,7 +110,7 @@ export default function IndRetailPage() {
                 Live at consumer scale.
               </h2>
             </div>
-            <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies">
+            <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies/">
               See all case studies
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -122,7 +127,7 @@ export default function IndRetailPage() {
             Deployed in production, and measured against the number we agreed.
           </p>
           <div className="mt-10">
-            <Link className="csr rv" data-d="0" href="/case-studies/indiamart">
+            <Link className="csr rv" data-d="0" href="/case-studies/indiamart/">
               <span
                 className="clogo cs-logo csr-logo logow-indiamart opacity-70"
                 role="img"
@@ -152,7 +157,7 @@ export default function IndRetailPage() {
                 </svg>
               </span>
             </Link>
-            <Link className="csr rv" data-d="60" href="/case-studies/tataneu">
+            <Link className="csr rv" data-d="60" href="/case-studies/tata-neu/">
               <span
                 className="clogo cs-logo csr-logo logow-tataneu2 opacity-70"
                 role="img"
@@ -182,7 +187,7 @@ export default function IndRetailPage() {
                 </svg>
               </span>
             </Link>
-            <Link className="csr rv" data-d="120" href="/case-studies/epic">
+            <Link className="csr rv" data-d="120" href="/case-studies/epic-global/">
               <span
                 className="clogo cs-logo csr-logo logow-epic opacity-70"
                 role="img"
@@ -233,7 +238,7 @@ export default function IndRetailPage() {
                   Returns, claims and seller quality adjudicated the same way in a quiet week and in a peak
                   week.
                 </p>
-                <Link className="us-go group" href="/pyzo/prism">
+                <Link className="us-go group" href="/pyzo/prism/">
                   Explore Prism
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -258,7 +263,7 @@ export default function IndRetailPage() {
                   Product, returns and pricing rules answered identically on chat, on the phone and at the
                   counter.
                 </p>
-                <Link className="us-go group" href="/pyzo/compass">
+                <Link className="us-go group" href="/pyzo/compass/">
                   Explore Compass
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -283,7 +288,7 @@ export default function IndRetailPage() {
                   Order, delivery and win-back conversations handled end to end at a volume no team is staffed
                   for.
                 </p>
-                <Link className="us-go group" href="/pyzo/evio">
+                <Link className="us-go group" href="/pyzo/evio/">
                   Explore Evio
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -308,7 +313,7 @@ export default function IndRetailPage() {
                   Checkout and seller registration completed without the drop-off a confusing form always
                   causes.
                 </p>
-                <Link className="us-go group" href="/pyzo/loupe">
+                <Link className="us-go group" href="/pyzo/loupe/">
                   Explore Loupe
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -333,7 +338,7 @@ export default function IndRetailPage() {
                   Frontline and franchise training in short modules, certified and refreshed ahead of a busy
                   season.
                 </p>
-                <Link className="us-go group" href="/pyzo/atlas">
+                <Link className="us-go group" href="/pyzo/atlas/">
                   Explore Atlas
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -358,7 +363,7 @@ export default function IndRetailPage() {
                   Order, inventory and returns exceptions handled across commerce, the warehouse and the
                   ledger.
                 </p>
-                <Link className="us-go group" href="/pyzo/forge">
+                <Link className="us-go group" href="/pyzo/forge/">
                   Explore Forge
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -473,7 +478,7 @@ export default function IndRetailPage() {
             Other industries we serve.
           </h2>
           <div className="oi-grid mt-[40px] grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            <Link className="oi-row rv" data-d="0" href="/industries/bfsi">
+            <Link className="oi-row rv" data-d="0" href="/industries/bfsi/">
               <span className="oi-ic">
                 <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path d="M10 2.6 17 6H3Z" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" />
@@ -498,7 +503,7 @@ export default function IndRetailPage() {
                 </svg>
               </span>
             </Link>
-            <Link className="oi-row rv" data-d="60" href="/industries/healthcare">
+            <Link className="oi-row rv" data-d="60" href="/industries/healthcare/">
               <span className="oi-ic">
                 <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path
@@ -523,7 +528,7 @@ export default function IndRetailPage() {
                 </svg>
               </span>
             </Link>
-            <Link className="oi-row rv" data-d="120" href="/industries/public-sector">
+            <Link className="oi-row rv" data-d="120" href="/industries/public-sector/">
               <span className="oi-ic">
                 <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path
@@ -564,7 +569,7 @@ export default function IndRetailPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

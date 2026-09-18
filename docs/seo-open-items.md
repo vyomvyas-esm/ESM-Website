@@ -1,0 +1,50 @@
+# SEO open items
+
+Log for the SEO implementation: what could not be resolved from the repo, what needs copywriting, and every assumption made. Newest entries at the bottom of each section.
+
+## Needs a human decision
+
+| # | Item | Phase | Status |
+|---|---|---|---|
+| 1 | Six blog slugs keep words the brand rules forbid, inherited from their published titles (`the-economics-of-running-enterprise-ai`, `the-real-cost-of-running-ai-agents`, `durable-execution-for-long-running-agents`, `buy-build-or-operate`, `build-or-buy-your-agent-stack`, `building-a-golden-dataset-for-llm-evaluation`). Kept for stability; rename on request. | 1 | open |
+| 2 | ISB case-study slug is `indian-school-of-business`; `isb-ivi` is the alternative. | 1 | assumed, open |
+| 3 | The brief's shape lists `/people/`; no such page exists (the prototype aliased it to About). Not created. | 1 | open |
+| 4 | Titles that are positioning lines rather than search terms: see `docs/seo-title-review.md` (17 pages) plus 12 blog titles containing brand-rule words. Not rewritten. | 2 | open |
+| 5 | 109 pages have no meta description because no sentence of the source paragraph fits under 155 characters (96 blog articles, 8 of 9 case studies, 3 industry pages, contact). Listed in `docs/seo-needs-copy.md`. A human can either write them or relax the rule to a clause boundary; the code applies the rule as written. | 2 | open |
+| 6 | Blog `modifiedTime` equals `publishedTime`: the source has no modified date. Supply one per article (a `modified` field in `data/blog-posts.ts`) or accept the equality. | 2 | open |
+| 7 | Open Graph image fallback is the existing hero background `/img/img-hero.webp` (1:1 is not ideal; a purpose-made 1200x630 asset would be better). Blog posts use their own thumbnail where one exists; 108 posts have none and fall back. | 2 | assumed, open |
+| 8 | Production origin assumed to be `https://esmagico.com` (no `www`). Set in `lib/seo.ts`. | 2 | assumed |
+| 9 | Image export has two folders numbered `#308`. The one under "AI in BFSI" holds an image titled "Aggregate Scores Can Hide What Matters Most", which matches post #307's section "The aggregate score that hid two failing languages" (post #307 was otherwise without a folder). Reassigned to #307 in `tools/images.mjs` (`OVERRIDES`). Please confirm. | 5 | assumed, open |
+| 10 | Post #113 (`agent-interoperability-and-the-a2a-protocol`) has an empty folder in the export and post #155 (`coding-assistants-compared`) has one image instead of two. Those slots keep the "Image to come" placeholder. | 5 | open |
+| 11 | Within each post, the export's two files are placed in file-name order into the article's two figure slots. Verified on a sample, not on all 325. | 5 | assumed |
+| 12 | Alt text is templated: `Illustration: <heading of the section the figure sits in>`, because the images are concept illustrations of their section. 21 headings needed alternative phrasing to satisfy the brand rules; see `docs/seo-alt-text-review.md`. A human pass over the 647 alts is recommended. | 5 | assumed, open |
+| 14 | Breadcrumb schema vs the visible breadcrumb: the visible crumb shows label-only sections (Resources, Company, Engineering, Industries, Trust) that are not pages. Google's Rich Results Test rejects an intermediate ListItem without a URL ("Missing field item"), so the schema leaves those labels out; every linked crumb and the current page match the visible one exactly (asserted by `tools/seo-check.mjs`). To make the two identical, either drop the label from the visible breadcrumb (a text change to the design) or give those sections real hub pages. Both need a decision. | 3 | assumed, open |
+| 15 | Organization schema: `foundingDate`, `numberOfEmployees` and `address` are omitted (nothing in the repo states a founding date or headcount; the footer lists three offices without saying which is the registered address). `contactPoint` has the footer's email and phone but no `contactType`, since the footer does not say what the line is for. | 3 | open |
+| 16 | BlogPosting author is a `Person` with `url` pointing at `/about/`; there are no per-author pages. If author pages are wanted (the brief's Phase 3 text implies them), that is new routes and content. | 3 | open |
+| 17 | Article dates are given as midnight India Standard Time (`T00:00:00+05:30`) because the source has dates only and Google's validator asks for a time zone; the offices are Mumbai and Bengaluru. | 3 | assumed |
+| 18 | FAQPage is emitted on the PYZO landing and the four industry pages as asked, and validates (Schema Markup Validator: 0 errors), but Google withdrew FAQ rich results for sites outside government and health in 2023, so the Rich Results Test no longer lists it. Kept as requested. The nine capability and engineering pages also have FAQ accordions but were not in scope for FAQPage. | 3 | open |
+| 19 | Rich Results Test was executed by pasting the generated markup (the site is not public). Results: Article valid, Breadcrumbs valid, Organization valid; Service and FAQPage checked with the Schema Markup Validator (0 errors, 0 warnings). Repeat against the live URLs after launch. | 3 | open |
+| 13 | The hero backdrop is a CSS background, so it cannot carry `priority`; the light-theme variant is preloaded from the root layout (light is the default). The dark variant is not preloaded. | 5 | assumed |
+
+## Needs copywriting
+
+- `docs/seo-needs-copy.md`: 109 meta descriptions.
+- `docs/seo-title-review.md`: 17 page titles, 12 blog titles.
+
+## Assumptions and conventions
+
+- Trailing slashes everywhere (`trailingSlash: true`); all internal hrefs are written in the slash form so no crawl hits a redirect.
+- Title template `%s | Es Magico` is applied once in the root layout. The home page uses an absolute title because it already starts with the brand.
+- The root layout sets no description; a page with no description has none rather than inheriting one.
+- Blog dates in the source are display strings (`27 July 2026`); `lib/seo.ts#isoDate` converts them and throws on anything it cannot parse.
+- Blog `article:author` is the author's name (no author pages exist yet; see Phase 3).
+- `data/blog-posts.ts` keeps `legacySlug` and `data/case-studies.ts` keeps `prototypeId` so the Phase 6 redirect map can be generated rather than hand-written.
+- `noindex, follow` applied to `/careers/apply/` only. Form confirmation states are client-side state on the same URL, not routes, so nothing else to exclude. Report gate is a modal on `/reports/`.
+- Two prototype bugs were fixed during the port rather than carried over: the reports "Series" filter values and case-study batching CSS.
+- Structured data is rendered server-side per page as one `@graph` per script (`components/JsonLd.tsx`, builders in `lib/jsonld.ts`), from the same data the metadata uses. The Organization logo is the existing `/img/esm-logo.svg`.
+- Images: every raster goes through `next/image` with explicit width and height, AVIF/WebP negotiated by the optimiser, `loading="lazy"` on everything below the fold. Blog artwork is pre-processed by `tools/images.mjs` to WebP at most 1200px wide (source PNGs were ~1 MB each; 647 files now total 49 MB) and named `<post-slug>-<n>.webp`. Card thumbnails next to a visible title keep `alt=""`.
+
+## Known content gaps carried from the prototype (not SEO work)
+
+- Resolved: the second image export (`Blogs Complete (5).zip`) covered all posts; see items 9 and 10 for the two gaps left.
+- The brief names Archivo and IBM Plex Mono; the design layer uses Inter and Schibsted Grotesk. Changing families would be a visible typography change, so the current families stay unless told otherwise.

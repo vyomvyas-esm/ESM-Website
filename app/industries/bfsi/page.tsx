@@ -1,11 +1,18 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
+import { graph, faqPage } from "@/lib/jsonld";
+import { faqs } from "@/data/page-schema";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "Banking & Financial Services - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Banking & Financial Services",
+  description: "",
+  path: "/industries/bfsi/",
+});
 export default function IndBfsiPage() {
   return (
     <main className="page" id="page-ind-bfsi">
+      <JsonLd data={graph(faqPage(faqs["ind-bfsi"]))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>
@@ -13,12 +20,13 @@ export default function IndBfsiPage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[92px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span> <span className="text-white/45">Industries</span>
-            <span className="sep">·</span>
-            <span aria-current="page">Banking &amp; Financial Services</span>
-          </nav>
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Industries" },
+              { label: "Banking & Financial Services" },
+            ]}
+          />
           <h1 className="h-hero mt-6 max-w-[16ch] rv" data-d="60">
             Every decision here has to be defensible.
           </h1>
@@ -27,7 +35,7 @@ export default function IndBfsiPage() {
             it will be, and we operate it inside your environment, accountable for what it produces.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/contact">
+            <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -105,7 +113,7 @@ export default function IndBfsiPage() {
                 Live inside regulated banks.
               </h2>
             </div>
-            <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies">
+            <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies/">
               See all case studies
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -122,7 +130,7 @@ export default function IndBfsiPage() {
             Deployed in production, and measured against the number we agreed.
           </p>
           <div className="mt-10">
-            <Link className="csr rv" data-d="0" href="/case-studies/rbi">
+            <Link className="csr rv" data-d="0" href="/case-studies/rbi-innovation-hub/">
               <span
                 className="clogo cs-logo csr-logo logow-rbi opacity-70"
                 role="img"
@@ -152,7 +160,7 @@ export default function IndBfsiPage() {
                 </svg>
               </span>
             </Link>
-            <Link className="csr rv" data-d="60" href="/case-studies/indusind">
+            <Link className="csr rv" data-d="60" href="/case-studies/indusind-bank/">
               <span
                 className="clogo cs-logo csr-logo logow-indusind opacity-70"
                 role="img"
@@ -203,7 +211,7 @@ export default function IndBfsiPage() {
                   Underwriting, claims and SME lending judged against one rubric, with the marginal cases
                   escalated.
                 </p>
-                <Link className="us-go group" href="/pyzo/prism">
+                <Link className="us-go group" href="/pyzo/prism/">
                   Explore Prism
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -228,7 +236,7 @@ export default function IndBfsiPage() {
                   Credit policy, exception rules and KYC thresholds answered from the version currently in
                   force.
                 </p>
-                <Link className="us-go group" href="/pyzo/compass">
+                <Link className="us-go group" href="/pyzo/compass/">
                   Explore Compass
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -253,7 +261,7 @@ export default function IndBfsiPage() {
                   Overdue recovery and settlement conversations that adapt to the borrower and the bucket they
                   sit in.
                 </p>
-                <Link className="us-go group" href="/pyzo/evio">
+                <Link className="us-go group" href="/pyzo/evio/">
                   Explore Evio
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -278,7 +286,7 @@ export default function IndBfsiPage() {
                   KYC packs and loan files checked as they are captured and validated against the proof
                   supplied.
                 </p>
-                <Link className="us-go group" href="/pyzo/loupe">
+                <Link className="us-go group" href="/pyzo/loupe/">
                   Explore Loupe
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -303,7 +311,7 @@ export default function IndBfsiPage() {
                   Onboarding and mandatory certification for credit, collections and branch staff, assessed on
                   cases.
                 </p>
-                <Link className="us-go group" href="/pyzo/atlas">
+                <Link className="us-go group" href="/pyzo/atlas/">
                   Explore Atlas
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -328,7 +336,7 @@ export default function IndBfsiPage() {
                   Reconciliation breaks, disbursement steps and case routing executed across core banking and
                   the CRM.
                 </p>
-                <Link className="us-go group" href="/pyzo/forge">
+                <Link className="us-go group" href="/pyzo/forge/">
                   Explore Forge
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -443,7 +451,7 @@ export default function IndBfsiPage() {
             Other industries we serve.
           </h2>
           <div className="oi-grid mt-[40px] grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            <Link className="oi-row rv" data-d="0" href="/industries/healthcare">
+            <Link className="oi-row rv" data-d="0" href="/industries/healthcare/">
               <span className="oi-ic">
                 <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path
@@ -468,7 +476,7 @@ export default function IndBfsiPage() {
                 </svg>
               </span>
             </Link>
-            <Link className="oi-row rv" data-d="60" href="/industries/public-sector">
+            <Link className="oi-row rv" data-d="60" href="/industries/public-sector/">
               <span className="oi-ic">
                 <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path
@@ -493,7 +501,7 @@ export default function IndBfsiPage() {
                 </svg>
               </span>
             </Link>
-            <Link className="oi-row rv" data-d="120" href="/industries/retail">
+            <Link className="oi-row rv" data-d="120" href="/industries/retail/">
               <span className="oi-ic">
                 <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path
@@ -534,7 +542,7 @@ export default function IndBfsiPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

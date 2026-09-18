@@ -1,3 +1,17 @@
+export interface ImageSource {
+  src: string;
+  width: number;
+  height: number;
+}
+
+export interface ArticleImage extends ImageSource {
+  /** derived from the heading of the section the figure sits in; under 125 chars */
+  alt: string;
+}
+
+/** An article body is authored HTML with the figures lifted out so they can render through next/image. */
+export type BodyBlock = { html: string } | { image: number };
+
 export interface Author {
   name: string;
   role: string;
@@ -7,6 +21,8 @@ export interface Author {
 
 export interface BlogPost {
   slug: string;
+  /** the prototype's slug, kept where Phase 1 repaired it (for the redirect map) */
+  legacySlug?: string;
   title: string;
   metaTitle: string;
   lede: string;
@@ -15,8 +31,9 @@ export interface BlogPost {
   author: Author;
   railTitle: string;
   sections: { id: string; label: string }[];
-  /** article body, sanitised at build time from the original site */
-  html: string;
+  /** article body in order: HTML chunks and references into `images` */
+  body: BodyBlock[];
+  images: ArticleImage[];
 }
 
 export interface BlogCard {
@@ -30,14 +47,16 @@ export interface BlogCard {
   ts: number;
   /** lower-cased search haystack */
   txt: string;
-  /** null when the artwork is still to come */
-  thumb: string | null;
+  /** the article's first image; null when the artwork is still to come */
+  thumb: ImageSource | null;
   /** present when the post leads the "Start here" rail; author is "" for the default pick */
   featured?: { author: string; excerpt: string };
 }
 
 export interface CaseStudy {
   slug: string;
+  /** the prototype's short id, e.g. "rbi" (for the redirect map) */
+  prototypeId: string;
   metaTitle: string;
   client: string;
   logo: string;
@@ -62,6 +81,8 @@ export interface Report {
   topic: string;
   txt: string;
   cover: string;
+  width: number;
+  height: number;
   coverAlt: string;
   seriesLabel: string;
   title: string;
@@ -86,6 +107,6 @@ export interface PanelCard {
   client: string;
   line: string;
   logo?: string;
-  nav?: string;
+  href?: string;
   pair: { n: string; l: string }[];
 }
