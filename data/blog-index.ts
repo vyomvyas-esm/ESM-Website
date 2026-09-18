@@ -15,7 +15,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -1,
     "txt": "human-in-the-loop data capture: where validation belongs in an agentic pipeline agentic ai shardul singh",
-    "thumb": "/blog/325-t.webp",
+    "thumb": {
+      "src": "/blog/human-in-the-loop-data-capture-1.webp",
+      "width": 1024,
+      "height": 1024
+    },
     "featured": {
       "author": "",
       "excerpt": "Most capture pipelines put the reviewer at the end of the line, where a finished extraction looks settled and gets waved through. Oversight earns its keep at the point the agent is unsure, which makes this a placement decision before it is a staffing one."
@@ -34,7 +38,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 0,
     "txt": "measuring ai roi in banking: the cost of a resolved outcome bfsi snehasis panda",
-    "thumb": "/blog/324-t.webp",
+    "thumb": {
+      "src": "/blog/measuring-ai-roi-in-banking-1.webp",
+      "width": 1024,
+      "height": 1024
+    },
     "featured": {
       "author": "Snehasis Panda",
       "excerpt": "Most banks measuring their AI programs are counting the wrong things. The board deck shows how many pilots are running, how many use cases are in flight, how many models have been deployed, and everyone nods at the momentum. None of those numbers tells anyone whether the AI is producing value, because a pilot is an activity and value is an outcome, and a bank can run a hundred pilots while resolving nothing. The gap between activity and value is where AI programs quietly fail, consuming budget and executive attention for years while producing dashboards that measure effort. Measuring AI ROI in banking means shifting the unit of measurement to cost per resolved outcome, the fully-loaded cost of actually resolving a real business event through the AI system, because that is the only number that tells you whether the investment is working."
@@ -53,7 +61,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 1,
     "txt": "why ‘accountable ai’ will outlast ‘generative ai’ as the phrase that matters about es magico shreyas sanghvi",
-    "thumb": "/blog/323-t.webp",
+    "thumb": {
+      "src": "/blog/why-accountable-ai-will-outlast-generative-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    },
     "featured": {
       "author": "Shreyas Sanghvi",
       "excerpt": "Every few years the technology industry hands enterprises a new headline phrase for what AI now is, and enterprises reorganise around it. The phrase always describes a capability, the newest impressive thing the models can do. Every such phrase eventually fades, because the capability it named stops being novel and becomes ordinary. Building a durable strategy on the capability-of-the-moment means building on ground that shifts every couple of years."
@@ -72,7 +84,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 2,
     "txt": "measuring ai roi in healthcare: hours returned and outcomes moved healthcare shreyas sanghvi",
-    "thumb": "/blog/322-t.webp"
+    "thumb": {
+      "src": "/blog/measuring-ai-roi-in-healthcare-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "latency-against-intelligence",
@@ -87,7 +103,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 3,
     "txt": "latency against intelligence: the trade-off that won't disappear ai models karan trehan",
-    "thumb": "/blog/321-t.webp",
+    "thumb": {
+      "src": "/blog/latency-against-intelligence-1.webp",
+      "width": 1024,
+      "height": 1024
+    },
     "featured": {
       "author": "Karan Trehan",
       "excerpt": "Every team designing an AI system runs into the same wall, usually after the capability is already proven. The model that gives the best answers takes the longest to produce them. The faster response comes from a model or a configuration that thinks less, and thinking less shows up in the quality of what comes back. You can have the better answer or the quicker one, and the gap between them is not a bug in the current generation of models that a future release will close. It is structural, and designing as though it will go away leads to systems that disappoint on one axis or the other."
@@ -106,7 +126,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 4,
     "txt": "measuring the roi of ai productivity tools: an operating framework beyond seat counts ai tools karan trehan",
-    "thumb": "/blog/320-t.webp"
+    "thumb": {
+      "src": "/blog/measuring-the-roi-of-ai-productivity-tools-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "the-cost-of-a-missing-field",
@@ -121,7 +145,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 5,
     "txt": "the cost of a missing field: engineering complex application journeys that complete agentic ai shardul singh",
-    "thumb": "/blog/319-t.webp",
+    "thumb": {
+      "src": "/blog/the-cost-of-a-missing-field-1.webp",
+      "width": 1024,
+      "height": 1024
+    },
     "featured": {
       "author": "Shardul Singh",
       "excerpt": "The application looks finished. The user has spent fifteen minutes on it, entered dozens of fields, uploaded documents, and reached the final screen. Then a validation error fires on something entered six steps back, the form cannot submit, and a meaningful fraction of users simply leave. Every abandoned application at that point represents real acquisition cost already spent and a customer who wanted the outcome badly enough to start. The cost of a missing field is not the field. It is the entire journey that collapses because one requirement went unmet, and in regulated onboarding that cost is measured in lost customers and stalled revenue."
@@ -140,7 +168,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 6,
     "txt": "ai client reporting for asset managers: automation that stays accurate at scale bfsi snehasis panda",
-    "thumb": "/blog/318-t.webp"
+    "thumb": {
+      "src": "/blog/ai-client-reporting-for-asset-managers-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "where-agentic-ai-is-heading-in-regulated-industries",
@@ -155,7 +187,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 7,
     "txt": "where agentic ai is heading in regulated industries: an operator's view about es magico shreyas sanghvi",
-    "thumb": "/blog/317-t.webp"
+    "thumb": {
+      "src": "/blog/where-agentic-ai-is-heading-in-regulated-industries-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "the-ai-operating-model-for-health-systems",
@@ -170,7 +206,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 8,
     "txt": "the ai operating model for health systems: owning the layer that survives scrutiny healthcare shreyas sanghvi",
-    "thumb": "/blog/316-t.webp"
+    "thumb": {
+      "src": "/blog/the-ai-operating-model-for-health-systems-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "input-integrity-for-agentic-systems",
@@ -185,7 +225,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 9,
     "txt": "input integrity for agentic systems: guiding and validating what humans enter agentic ai shardul singh",
-    "thumb": "/blog/315-t.webp"
+    "thumb": {
+      "src": "/blog/input-integrity-for-agentic-systems-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "migrating-between-foundation-models-without-rewriting-your-stack",
@@ -200,7 +244,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 10,
     "txt": "migrating between foundation models without rewriting your stack ai models karan trehan",
-    "thumb": "/blog/314-t.webp"
+    "thumb": {
+      "src": "/blog/migrating-between-foundation-models-without-rewriting-your-stack-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-design-tools-compared",
@@ -215,7 +263,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 11,
     "txt": "ai design tools compared: brand control, provenance, and production fit ai tools karan trehan",
-    "thumb": "/blog/313-t.webp"
+    "thumb": {
+      "src": "/blog/ai-design-tools-compared-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-treasury-and-cash-flow-forecasting",
@@ -230,7 +282,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 12,
     "txt": "ai for treasury and cash-flow forecasting: forecasts finance will trust bfsi snehasis panda",
-    "thumb": "/blog/312-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-treasury-and-cash-flow-forecasting-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "latency-in-conversational-voice-ai",
@@ -245,7 +301,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 13,
     "txt": "latency in conversational voice ai: the trade-off that decides whether it sounds human agentic ai shardul singh",
-    "thumb": "/blog/311-t.webp"
+    "thumb": {
+      "src": "/blog/latency-in-conversational-voice-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "writing-the-anonymised-case-study",
@@ -260,7 +320,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 14,
     "txt": "writing the anonymised case study: proving outcomes without naming names about es magico shreyas sanghvi",
-    "thumb": "/blog/310-t.webp"
+    "thumb": {
+      "src": "/blog/writing-the-anonymised-case-study-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "responsible-ai-in-healthcare",
@@ -275,7 +339,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 15,
     "txt": "responsible ai in healthcare: from pilot to production without cutting corners healthcare shreyas sanghvi",
-    "thumb": "/blog/309-t.webp"
+    "thumb": {
+      "src": "/blog/responsible-ai-in-healthcare-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "operationalizing-multilingual-voice-agents",
@@ -290,7 +358,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 16,
     "txt": "multilingual voice agents in production: quality across 15+ languages agentic ai shardul singh",
-    "thumb": "/blog/308-t.webp"
+    "thumb": {
+      "src": "/blog/operationalizing-multilingual-voice-agents-1.webp",
+      "width": 657,
+      "height": 656
+    }
   },
   {
     "slug": "multilingual-ai-customer-service-in-banking",
@@ -305,7 +377,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 17,
     "txt": "multilingual ai customer service in banking: consistent quality across languages bfsi snehasis panda",
-    "thumb": "/blog/307-t.webp"
+    "thumb": {
+      "src": "/blog/multilingual-ai-customer-service-in-banking-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "claude-opus-4-6-and-agent-teams",
@@ -320,7 +396,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 18,
     "txt": "claude opus 4.6 and agent teams: putting multi-agent work into production ai models karan trehan",
-    "thumb": "/blog/306-t.webp"
+    "thumb": {
+      "src": "/blog/claude-opus-4-6-and-agent-teams-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "the-review-debt-problem",
@@ -335,7 +415,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 19,
     "txt": "the review-debt problem: why ai coding agents shift cost instead of removing it ai tools karan trehan",
-    "thumb": "/blog/305-t.webp"
+    "thumb": {
+      "src": "/blog/the-review-debt-problem-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "engineering-natural-voice-agents",
@@ -350,7 +434,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 20,
     "txt": "engineering natural voice agents: turn-taking, speaker separation, and noise agentic ai shardul singh",
-    "thumb": "/blog/304-t.webp"
+    "thumb": {
+      "src": "/blog/engineering-natural-voice-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "scaling-outbound-conversations-without-adding-headcount",
@@ -365,7 +453,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 21,
     "txt": "scaling outbound conversations without adding headcount: a voice ai story about es magico shreyas sanghvi",
-    "thumb": "/blog/303-t.webp"
+    "thumb": {
+      "src": "/blog/scaling-outbound-conversations-without-adding-headcount-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-pharma-manufacturing-and-quality",
@@ -380,7 +472,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 22,
     "txt": "ai in pharma manufacturing and quality: gxp-aligned models in production healthcare shreyas sanghvi",
-    "thumb": "/blog/302-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-pharma-manufacturing-and-quality-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-algorithmic-trading",
@@ -395,7 +491,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 23,
     "txt": "ai in algorithmic trading: where machine learning helps and governance draws the line bfsi snehasis panda",
-    "thumb": "/blog/301-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-algorithmic-trading-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "designing-the-handoff",
@@ -410,7 +510,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 24,
     "txt": "designing the handoff: when a voice agent should escalate to a person agentic ai shardul singh",
-    "thumb": "/blog/300-t.webp"
+    "thumb": {
+      "src": "/blog/designing-the-handoff-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "when-should-an-enterprise-upgrade-to-a-newer-model",
@@ -425,7 +529,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 25,
     "txt": "when should an enterprise upgrade to a newer model? ai models karan trehan",
-    "thumb": "/blog/299-t.webp"
+    "thumb": {
+      "src": "/blog/when-should-an-enterprise-upgrade-to-a-newer-model-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "red-teaming-financial-ai",
@@ -440,7 +548,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 26,
     "txt": "red-teaming financial ai: adversarial testing before you go to production bfsi snehasis panda",
-    "thumb": "/blog/298-t.webp"
+    "thumb": {
+      "src": "/blog/red-teaming-financial-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "how-a-regulated-lender-cleared-audit-on-first-pass",
@@ -455,7 +567,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 27,
     "txt": "how a regulated lender cleared audit on first pass with guided validation about es magico shreyas sanghvi",
-    "thumb": "/blog/297-t.webp"
+    "thumb": {
+      "src": "/blog/how-a-regulated-lender-cleared-audit-on-first-pass-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-patient-facing-chatbots",
@@ -470,7 +586,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 28,
     "txt": "ai patient-facing chatbots: engineering safe answers at scale healthcare snehasis panda",
-    "thumb": "/blog/296-t.webp"
+    "thumb": {
+      "src": "/blog/ai-patient-facing-chatbots-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "scaling-workforce-enablement-without-scaling-trainers",
@@ -485,7 +605,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 29,
     "txt": "scaling workforce enablement without scaling trainers agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/scaling-workforce-enablement-without-scaling-trainers-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "real-time-ai-avatars",
@@ -500,7 +624,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 30,
     "txt": "real-time ai avatars: reading interactive video tools for enterprise use ai tools karan trehan",
-    "thumb": "/blog/294-t.webp"
+    "thumb": {
+      "src": "/blog/real-time-ai-avatars-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "the-economics-of-running-enterprise-ai",
@@ -515,7 +643,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 31,
     "txt": "the economics of running enterprise ai: a cost-performance operating model ai models karan trehan",
-    "thumb": "/blog/293-t.webp"
+    "thumb": {
+      "src": "/blog/the-economics-of-running-enterprise-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "measuring-whether-training-actually-stuck",
@@ -530,7 +662,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 32,
     "txt": "measuring whether training actually stuck: assessment and role-play at scale agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/measuring-whether-training-actually-stuck-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-dispute-and-chargeback-automation",
@@ -545,7 +681,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 33,
     "txt": "ai for dispute and chargeback automation: faster resolution, no compliance gaps bfsi snehasis panda",
-    "thumb": "/blog/291-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-dispute-and-chargeback-automation-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "generic-ai-vs-sector-fluent-ai",
@@ -560,7 +700,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 34,
     "txt": "generic ai vs sector-fluent ai: why domain context decides the outcome about es magico shreyas sanghvi",
-    "thumb": "/blog/290-t.webp"
+    "thumb": {
+      "src": "/blog/generic-ai-vs-sector-fluent-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "multimodal-ai-in-healthcare",
@@ -575,7 +719,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 35,
     "txt": "multimodal ai in healthcare: combining imaging, notes, and labs, responsibly healthcare shreyas sanghvi",
-    "thumb": "/blog/289-t.webp"
+    "thumb": {
+      "src": "/blog/multimodal-ai-in-healthcare-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "onboarding-the-workforce-onto-agentic-workflows",
@@ -590,7 +738,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 36,
     "txt": "onboarding the workforce onto agentic workflows: adoption that sticks agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/onboarding-the-workforce-onto-agentic-workflows-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "choosing-an-enterprise-ai-assistant-platform",
@@ -605,7 +757,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 37,
     "txt": "choosing an enterprise ai assistant platform: a procurement-grade comparison ai tools karan trehan",
-    "thumb": "/blog/287-t.webp"
+    "thumb": {
+      "src": "/blog/choosing-an-enterprise-ai-assistant-platform-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "telematics-and-usage-based-insurance",
@@ -620,7 +776,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 38,
     "txt": "telematics and usage-based insurance: the data pipelines behind ubi pricing bfsi snehasis panda",
-    "thumb": "/blog/286-t.webp"
+    "thumb": {
+      "src": "/blog/telematics-and-usage-based-insurance-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "the-frontier-bake-off",
@@ -635,7 +795,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 39,
     "txt": "the frontier bake-off: where the margins narrow and selection stops mattering ai models karan trehan",
-    "thumb": "/blog/285-t.webp"
+    "thumb": {
+      "src": "/blog/the-frontier-bake-off-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-literacy-for-the-enterprise",
@@ -650,7 +814,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 40,
     "txt": "ai literacy for the enterprise: knowledge transfer at scale agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/ai-literacy-for-the-enterprise-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "myth-a-more-powerful-model-solves-the-enterprise-ai-problem",
@@ -665,7 +833,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 41,
     "txt": "myth: a more powerful model solves the enterprise ai problem about es magico shreyas sanghvi",
-    "thumb": "/blog/283-t.webp"
+    "thumb": {
+      "src": "/blog/myth-a-more-powerful-model-solves-the-enterprise-ai-problem-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-early-sepsis-and-deterioration-prediction",
@@ -680,7 +852,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 42,
     "txt": "ai for early sepsis and deterioration prediction: acting before the code healthcare shreyas sanghvi",
-    "thumb": "/blog/282-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-early-sepsis-and-deterioration-prediction-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-stress-testing-and-scenario-analysis",
@@ -695,7 +871,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 43,
     "txt": "ai for stress testing and scenario analysis: models the board can question bfsi snehasis panda",
-    "thumb": "/blog/281-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-stress-testing-and-scenario-analysis-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "training-teams-to-supervise-ai-agents",
@@ -710,7 +890,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 44,
     "txt": "training teams to supervise ai agents: closing the human-readiness gap agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/training-teams-to-supervise-ai-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "claude-opus-4-5-cheaper-frontier-coding",
@@ -725,7 +909,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 45,
     "txt": "claude opus 4.5, cheaper frontier coding, and what the price cut signals ai models karan trehan",
-    "thumb": "/blog/279-t.webp"
+    "thumb": {
+      "src": "/blog/claude-opus-4-5-cheaper-frontier-coding-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "consolidating-the-ai-tool-stack",
@@ -740,7 +928,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 46,
     "txt": "consolidating the ai tool stack: cutting sprawl without losing capability ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/consolidating-the-ai-tool-stack-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "myth-a-convincing-demo-means-the-ai-is-ready",
@@ -755,7 +947,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 47,
     "txt": "myth: a convincing demo means the ai is ready about es magico shreyas sanghvi",
-    "thumb": "/blog/277-t.webp"
+    "thumb": {
+      "src": "/blog/myth-a-convincing-demo-means-the-ai-is-ready-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "data-privacy-for-healthcare-ai",
@@ -770,7 +966,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 48,
     "txt": "data privacy for healthcare ai: de-identification and phi boundaries that hold healthcare shreyas sanghvi",
-    "thumb": "/blog/276-t.webp"
+    "thumb": {
+      "src": "/blog/data-privacy-for-healthcare-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-native-transformation",
@@ -785,7 +985,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 49,
     "txt": "ai-native transformation: why operating the layer beats adopting the tools agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/ai-native-transformation-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-debt-collections",
@@ -800,7 +1004,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 50,
     "txt": "ai in debt collections: improving recovery within fair-treatment rules bfsi snehasis panda",
-    "thumb": "/blog/274-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-debt-collections-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "incident-response-for-ai-systems",
@@ -815,7 +1023,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 51,
     "txt": "incident response for ai systems: when an agent does the wrong thing agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/incident-response-for-ai-systems-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "what-a-production-ready-agent-actually-requires",
@@ -830,7 +1042,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 52,
     "txt": "what a production-ready agent actually requires (most demos skip half of it) about es magico shreyas sanghvi",
-    "thumb": "/blog/272-t.webp"
+    "thumb": {
+      "src": "/blog/what-a-production-ready-agent-actually-requires-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-complaint-handling-and-conduct-risk-detection",
@@ -845,7 +1061,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 53,
     "txt": "ai for complaint handling and conduct-risk detection: catching issues early bfsi snehasis panda",
-    "thumb": "/blog/271-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-complaint-handling-and-conduct-risk-detection-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-regulatory-submissions-in-pharma",
@@ -860,7 +1080,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 54,
     "txt": "ai for regulatory submissions in pharma: accelerating filings you can defend healthcare shreyas sanghvi",
-    "thumb": "/blog/270-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-regulatory-submissions-in-pharma-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "gemini-3-pro-for-multimodal-and-agentic-workloads",
@@ -875,7 +1099,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 55,
     "txt": "gemini 3 pro for multimodal and agentic workloads: a production reading ai models karan trehan",
-    "thumb": "/blog/269-t.webp"
+    "thumb": {
+      "src": "/blog/gemini-3-pro-for-multimodal-and-agentic-workloads-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "building-a-golden-dataset-for-llm-evaluation",
@@ -890,7 +1118,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 56,
     "txt": "building a golden dataset for llm evaluation: your most valuable ai asset agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/building-a-golden-dataset-for-llm-evaluation-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-audio-for-brand-content",
@@ -905,7 +1137,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 57,
     "txt": "ai audio for brand content: adopting music generation without the licensing trap ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/ai-audio-for-brand-content-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-portfolio-construction-and-risk-analytics",
@@ -920,7 +1156,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 58,
     "txt": "ai in portfolio construction and risk analytics: augmentation with accountability bfsi snehasis panda",
-    "thumb": "/blog/266-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-portfolio-construction-and-risk-analytics-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "data-governance-for-agentic-ai",
@@ -935,7 +1175,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 59,
     "txt": "data governance for agentic ai: controlling what agents can see and send agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/data-governance-for-agentic-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "buy-build-or-operate",
@@ -950,7 +1194,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 60,
     "txt": "buy, build, or operate: how enterprises should source their ai about es magico shreyas sanghvi",
-    "thumb": "/blog/264-t.webp"
+    "thumb": {
+      "src": "/blog/buy-build-or-operate-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-healthcare-fraud-waste-and-abuse-detection",
@@ -965,7 +1213,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 61,
     "txt": "ai for healthcare fraud, waste, and abuse detection: defensible flags at scale healthcare shreyas sanghvi",
-    "thumb": "/blog/263-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-healthcare-fraud-waste-and-abuse-detection-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "adaptive-reasoning-arrives",
@@ -980,7 +1232,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 62,
     "txt": "adaptive reasoning arrives: reading gpt-5.1 against the field ai models karan trehan",
-    "thumb": "/blog/262-t.webp"
+    "thumb": {
+      "src": "/blog/adaptive-reasoning-arrives-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "event-driven-agent-architectures",
@@ -995,7 +1251,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 63,
     "txt": "event-driven agent architectures: triggering action without polling agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/event-driven-agent-architectures-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "voice-ai-in-banking-call-centers",
@@ -1010,7 +1270,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 64,
     "txt": "voice ai in banking call centers: latency, compliance, and escalation bfsi snehasis panda",
-    "thumb": "/blog/260-t.webp"
+    "thumb": {
+      "src": "/blog/voice-ai-in-banking-call-centers-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "voice-agents-for-the-contact-center",
@@ -1025,7 +1289,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 65,
     "txt": "voice agents for the contact centre: latency, compliance, and escalation ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/voice-agents-for-the-contact-center-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-operating-model-your-risk-committee-will-approve",
@@ -1040,7 +1308,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 66,
     "txt": "building an ai operating model your risk committee will approve about es magico shreyas sanghvi",
-    "thumb": "/blog/258-t.webp"
+    "thumb": {
+      "src": "/blog/ai-operating-model-your-risk-committee-will-approve-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-connected-medical-devices",
@@ -1055,7 +1327,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 67,
     "txt": "ai in connected medical devices: engineering reliability at the point of care healthcare snehasis panda",
-    "thumb": "/blog/257-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-connected-medical-devices-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "an-agentic-ai-maturity-model",
@@ -1070,7 +1346,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 68,
     "txt": "an agentic ai maturity model: from pilots to operated fleets agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/an-agentic-ai-maturity-model-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "selecting-a-model-for-enterprise-rag",
@@ -1085,7 +1365,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 69,
     "txt": "selecting a model for enterprise rag: a retrieval-first evaluation framework ai models karan trehan",
-    "thumb": "/blog/255-t.webp"
+    "thumb": {
+      "src": "/blog/selecting-a-model-for-enterprise-rag-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "third-party-ai-risk-in-financial-services",
@@ -1100,7 +1384,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 70,
     "txt": "third-party ai risk in financial services: governing vendor models bfsi snehasis panda",
-    "thumb": "/blog/254-t.webp"
+    "thumb": {
+      "src": "/blog/third-party-ai-risk-in-financial-services-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "accountability-in-autonomous-systems",
@@ -1115,7 +1403,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 71,
     "txt": "accountability in autonomous systems: who owns the agent's decision agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/accountability-in-autonomous-systems-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "deep-document-ai-in-financial-services",
@@ -1130,7 +1422,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 72,
     "txt": "deep document ai in financial services: evaluating hebbia for audit-grade analysis ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/deep-document-ai-in-financial-services-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "from-proof-of-concept-to-production",
@@ -1145,7 +1441,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 73,
     "txt": "from proof of concept to production: a field guide for enterprise ai about es magico shreyas sanghvi",
-    "thumb": "/blog/251-t.webp"
+    "thumb": {
+      "src": "/blog/from-proof-of-concept-to-production-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-clinical-documentation-improvement",
@@ -1160,7 +1460,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 74,
     "txt": "ai for clinical documentation improvement: better coding, defensible records healthcare snehasis panda",
-    "thumb": "/blog/250-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-clinical-documentation-improvement-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-health-insurance-claims-adjudication",
@@ -1175,7 +1479,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 75,
     "txt": "ai in health insurance claims adjudication: automation without wrongful denials bfsi snehasis panda",
-    "thumb": "/blog/249-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-health-insurance-claims-adjudication-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "state-management-for-agents",
@@ -1190,7 +1498,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 76,
     "txt": "state management for agents: checkpoints, rollback, and recovery agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/state-management-for-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "claude-haiku-4-5-economics-of-small-fast-models",
@@ -1205,7 +1517,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 77,
     "txt": "claude haiku 4.5 and the economics of small, fast models in production ai models karan trehan",
-    "thumb": "/blog/247-t.webp"
+    "thumb": {
+      "src": "/blog/claude-haiku-4-5-economics-of-small-fast-models-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "agreeing-the-number-before-you-start",
@@ -1220,7 +1536,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 78,
     "txt": "agreeing the number before you start: setting ai outcomes leadership will trust about es magico shreyas sanghvi",
-    "thumb": "/blog/246-t.webp"
+    "thumb": {
+      "src": "/blog/agreeing-the-number-before-you-start-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "credit-model-monitoring-and-drift-detection-through-the-economic-cycle",
@@ -1235,7 +1555,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 79,
     "txt": "credit model monitoring and drift detection through the economic cycle bfsi snehasis panda",
-    "thumb": "/blog/245-t.webp"
+    "thumb": {
+      "src": "/blog/credit-model-monitoring-and-drift-detection-through-the-economic-cycle-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "small-language-models-in-agentic-systems",
@@ -1250,7 +1574,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 80,
     "txt": "small language models in agentic systems: where frontier is overkill agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/small-language-models-in-agentic-systems-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-voice-agents-in-healthcare-call-centers",
@@ -1265,7 +1593,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 81,
     "txt": "ai voice agents in healthcare call centres: access, compliance, and escalation healthcare shreyas sanghvi",
-    "thumb": "/blog/243-t.webp"
+    "thumb": {
+      "src": "/blog/ai-voice-agents-in-healthcare-call-centers-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "terminal-and-async-coding-agents-compared",
@@ -1280,7 +1612,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 82,
     "txt": "terminal and async coding agents compared: fitting them into your engineering workflow ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/terminal-and-async-coding-agents-compared-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "choosing-models-for-clinical-assistants",
@@ -1295,7 +1631,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 83,
     "txt": "choosing models for clinical assistants: a healthcare decision guide ai models karan trehan",
-    "thumb": "/blog/241-t.webp"
+    "thumb": {
+      "src": "/blog/choosing-models-for-clinical-assistants-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "structured-outputs-in-production",
@@ -1310,7 +1650,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 84,
     "txt": "structured outputs in production: reliable json from unreliable models agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/structured-outputs-in-production-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "llms-for-earnings-calls-and-filings",
@@ -1325,7 +1669,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 85,
     "txt": "llms for earnings calls and filings: faster research with verifiable citations bfsi snehasis panda",
-    "thumb": "/blog/239-t.webp"
+    "thumb": {
+      "src": "/blog/llms-for-earnings-calls-and-filings-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "the-cfo-test-for-enterprise-ai",
@@ -1340,7 +1688,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 86,
     "txt": "the cfo test for enterprise ai: if you can't measure it, it won't survive scrutiny about es magico shreyas sanghvi",
-    "thumb": "/blog/238-t.webp"
+    "thumb": {
+      "src": "/blog/the-cfo-test-for-enterprise-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-surgical-planning-and-intraoperative-support",
@@ -1355,7 +1707,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 87,
     "txt": "ai in surgical planning and intraoperative support: precision with human control healthcare shreyas sanghvi",
-    "thumb": "/blog/237-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-surgical-planning-and-intraoperative-support-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "operationalizing-ai-act-obligations",
@@ -1370,7 +1726,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 88,
     "txt": "ai act obligations in practice: engineering compliance into agents agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/operationalizing-ai-act-obligations-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-the-tools-you-already-use",
@@ -1385,7 +1745,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 89,
     "txt": "ai in the tools you already use: reading the permission model behind claude in excel and chrome ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/ai-in-the-tools-you-already-use-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-communications-surveillance",
@@ -1400,7 +1764,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 90,
     "txt": "ai communications surveillance: monitoring chat and voice for conduct risk bfsi snehasis panda",
-    "thumb": "/blog/234-t.webp"
+    "thumb": {
+      "src": "/blog/ai-communications-surveillance-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "claude-sonnet-4-5-and-long-horizon-agents",
@@ -1415,7 +1783,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 91,
     "txt": "claude sonnet 4.5 and long-horizon agents: reading the agentic maturity curve ai models karan trehan",
-    "thumb": "/blog/233-t.webp"
+    "thumb": {
+      "src": "/blog/claude-sonnet-4-5-and-long-horizon-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "a-production-readiness-checklist-for-ai-agents",
@@ -1430,7 +1802,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 92,
     "txt": "a production readiness checklist for ai agents agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/a-production-readiness-checklist-for-ai-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "demand-and-inventory-intelligence-under-real-margins",
@@ -1445,7 +1821,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 93,
     "txt": "demand and inventory intelligence that performs under real margins about es magico shreyas sanghvi",
-    "thumb": "/blog/231-t.webp"
+    "thumb": {
+      "src": "/blog/demand-and-inventory-intelligence-under-real-margins-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "monitoring-clinical-ai-in-production",
@@ -1460,7 +1840,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 94,
     "txt": "monitoring clinical ai in production: catching drift before patients feel it healthcare shreyas sanghvi",
-    "thumb": "/blog/230-t.webp"
+    "thumb": {
+      "src": "/blog/monitoring-clinical-ai-in-production-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-mortgage-processing",
@@ -1475,7 +1859,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 95,
     "txt": "ai in mortgage processing: document automation across origination bfsi snehasis panda",
-    "thumb": "/blog/229-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-mortgage-processing-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "failure-analysis-for-ai-agents",
@@ -1490,7 +1878,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 96,
     "txt": "failure analysis for ai agents: turning production errors into eval cases agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/failure-analysis-for-ai-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "the-best-models-for-ai-agents",
@@ -1505,7 +1897,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 97,
     "txt": "the best models for ai agents: an agentic-readiness selection framework ai models karan trehan",
-    "thumb": "/blog/227-t.webp"
+    "thumb": {
+      "src": "/blog/the-best-models-for-ai-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "order-delivery-and-returns-calls",
@@ -1520,7 +1916,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 98,
     "txt": "order, delivery and returns calls: voice ai for retail operations about es magico shreyas sanghvi",
-    "thumb": "/blog/226-t.webp"
+    "thumb": {
+      "src": "/blog/order-delivery-and-returns-calls-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-nursing-assistants-and-workflow-support",
@@ -1535,7 +1935,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 99,
     "txt": "ai nursing assistants and workflow support: easing load without adding risk healthcare shreyas sanghvi",
-    "thumb": "/blog/225-t.webp"
+    "thumb": {
+      "src": "/blog/ai-nursing-assistants-and-workflow-support-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "knowledge-graphs-and-rag",
@@ -1550,7 +1954,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 100,
     "txt": "knowledge graphs and rag: when structure beats pure vector search agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/knowledge-graphs-and-rag-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "notions-workspace-agents",
@@ -1565,7 +1973,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 101,
     "txt": "notion's workspace agents: ai inside the tools you already operate ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/notions-workspace-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "next-best-action-for-relationship-managers",
@@ -1580,7 +1992,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 102,
     "txt": "next-best-action for relationship managers: ai guidance bankers actually trust bfsi snehasis panda",
-    "thumb": "/blog/222-t.webp"
+    "thumb": {
+      "src": "/blog/next-best-action-for-relationship-managers-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "the-supervisor-pattern-for-multi-agent-systems",
@@ -1595,7 +2011,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 103,
     "txt": "the supervisor pattern for multi-agent systems: coordination you can govern agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/the-supervisor-pattern-for-multi-agent-systems-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "claude-opus-4-1-for-enterprise-coding",
@@ -1610,7 +2030,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 104,
     "txt": "claude opus 4.1 for enterprise coding: where it earns its cost ai models karan trehan",
-    "thumb": "/blog/220-t.webp"
+    "thumb": {
+      "src": "/blog/claude-opus-4-1-for-enterprise-coding-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "personalisation-that-holds-up-at-scale",
@@ -1625,7 +2049,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 105,
     "txt": "personalisation that holds up at scale: retail ai beyond the pilot about es magico shreyas sanghvi",
-    "thumb": "/blog/219-t.webp"
+    "thumb": {
+      "src": "/blog/personalisation-that-holds-up-at-scale-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-genomics-and-variant-interpretation",
@@ -1640,7 +2068,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 106,
     "txt": "ai in genomics and variant interpretation: scaling analysis with accountability healthcare shreyas sanghvi",
-    "thumb": "/blog/218-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-genomics-and-variant-interpretation-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "accelerated-life-insurance-underwriting-with-ai",
@@ -1655,7 +2087,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 107,
     "txt": "accelerated life insurance underwriting with ai: speed without anti-selection bfsi snehasis panda",
-    "thumb": "/blog/217-t.webp"
+    "thumb": {
+      "src": "/blog/accelerated-life-insurance-underwriting-with-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "excessive-agency",
@@ -1670,7 +2106,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 108,
     "txt": "excessive agency: the agent security risk permissions quietly create agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/excessive-agency-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "when-anyone-can-generate-an-app",
@@ -1685,7 +2125,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 109,
     "txt": "when anyone can generate an app: managing the citizen-development and shadow-it risk ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/when-anyone-can-generate-an-app-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "explainable-fraud-detection",
@@ -1700,7 +2144,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 110,
     "txt": "explainable fraud detection: decisions you can defend to customers and regulators bfsi snehasis panda",
-    "thumb": "/blog/214-t.webp"
+    "thumb": {
+      "src": "/blog/explainable-fraud-detection-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "agents-vs-workflow-automation",
@@ -1715,7 +2163,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 111,
     "txt": "agents vs workflow automation: choosing the right tool for the job agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/agents-vs-workflow-automation-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "preserving-institutional-knowledge-in-government-with-agentic-ai",
@@ -1730,7 +2182,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 112,
     "txt": "preserving institutional knowledge in government with agentic ai about es magico shreyas sanghvi",
-    "thumb": "/blog/212-t.webp"
+    "thumb": {
+      "src": "/blog/preserving-institutional-knowledge-in-government-with-agentic-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-medical-record-summarization",
@@ -1745,7 +2201,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 113,
     "txt": "ai for medical record summarisation: faster chart review you can trust healthcare snehasis panda",
-    "thumb": "/blog/211-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-medical-record-summarization-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "are-frontier-models-becoming-commodities",
@@ -1760,7 +2220,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 114,
     "txt": "are frontier models becoming commodities? an operator's view on differentiation ai models karan trehan",
-    "thumb": "/blog/210-t.webp"
+    "thumb": {
+      "src": "/blog/are-frontier-models-becoming-commodities-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "measuring-agent-roi",
@@ -1775,7 +2239,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 115,
     "txt": "measuring agent roi: what one resolved task actually costs agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/measuring-agent-roi-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "data-privacy-and-residency-for-ai-in-banking",
@@ -1790,7 +2258,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 116,
     "txt": "data privacy and residency for ai in banking: engineer the boundaries first bfsi snehasis panda",
-    "thumb": "/blog/208-t.webp"
+    "thumb": {
+      "src": "/blog/data-privacy-and-residency-for-ai-in-banking-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "customer-support-agents-compared",
@@ -1805,7 +2277,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 117,
     "txt": "customer-support agents compared: deflection, escalation, and accountability ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/customer-support-agents-compared-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-accreditation-and-citizen-services",
@@ -1820,7 +2296,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 118,
     "txt": "ai for accreditation and citizen services: procedural rigour by design about es magico shreyas sanghvi",
-    "thumb": "/blog/206-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-accreditation-and-citizen-services-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-mental-health-support",
@@ -1835,7 +2315,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 119,
     "txt": "ai in mental health support: where it helps and where the guardrails must hold healthcare shreyas sanghvi",
-    "thumb": "/blog/205-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-mental-health-support-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "an-ai-risk-management-framework-for-agentic-systems",
@@ -1850,7 +2334,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 120,
     "txt": "an ai risk management framework for agentic systems agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/an-ai-risk-management-framework-for-agentic-systems-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "gpt-5-in-production",
@@ -1865,7 +2353,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 121,
     "txt": "gpt-5 in production: deploying a unified, routed model ai models karan trehan",
-    "thumb": "/blog/203-t.webp"
+    "thumb": {
+      "src": "/blog/gpt-5-in-production-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "geospatial-ai-for-catastrophe-and-property-risk",
@@ -1880,7 +2372,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 122,
     "txt": "geospatial ai for catastrophe and property risk: better exposure models bfsi snehasis panda",
-    "thumb": "/blog/202-t.webp"
+    "thumb": {
+      "src": "/blog/geospatial-ai-for-catastrophe-and-property-risk-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "durable-execution-for-long-running-agents",
@@ -1895,7 +2391,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 123,
     "txt": "durable execution for long-running agents: reliability infrastructure that holds agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/durable-execution-for-long-running-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "fair-and-auditable",
@@ -1910,7 +2410,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 124,
     "txt": "fair and auditable: what public-sector ai has to prove about es magico shreyas sanghvi",
-    "thumb": "/blog/200-t.webp"
+    "thumb": {
+      "src": "/blog/fair-and-auditable-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "on-prem-vs-cloud-ai-for-hospitals",
@@ -1925,7 +2429,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 125,
     "txt": "on-prem vs cloud ai for hospitals: a phi-first deployment decision guide healthcare shreyas sanghvi",
-    "thumb": "/blog/199-t.webp"
+    "thumb": {
+      "src": "/blog/on-prem-vs-cloud-ai-for-hospitals-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "agentic-browsers-in-the-enterprise",
@@ -1940,7 +2448,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 126,
     "txt": "agentic browsers in the enterprise: reading the security surface of ai that clicks ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/agentic-browsers-in-the-enterprise-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "explainable-credit-decisions",
@@ -1955,7 +2467,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 127,
     "txt": "explainable credit decisions: generating adverse-action notices from ai models bfsi snehasis panda",
-    "thumb": "/blog/197-t.webp"
+    "thumb": {
+      "src": "/blog/explainable-credit-decisions-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "continuous-evaluation-pipelines",
@@ -1970,7 +2486,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 128,
     "txt": "continuous evaluation pipelines: catching regression before your users do agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/continuous-evaluation-pipelines-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "function-calling-and-tool-use-compared",
@@ -1985,7 +2505,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 129,
     "txt": "function calling and tool use, compared: where model maturity actually differs ai models karan trehan",
-    "thumb": "/blog/195-t.webp"
+    "thumb": {
+      "src": "/blog/function-calling-and-tool-use-compared-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "handling-sensitive-health-data",
@@ -2000,7 +2524,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 130,
     "txt": "handling sensitive health data: engineering ai for privacy and trust about es magico shreyas sanghvi",
-    "thumb": "/blog/194-t.webp"
+    "thumb": {
+      "src": "/blog/handling-sensitive-health-data-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "operating-mcp-servers-in-the-enterprise",
@@ -2015,7 +2543,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 131,
     "txt": "operating mcp servers in the enterprise: governance for standardised tool access agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/operating-mcp-servers-in-the-enterprise-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-the-ehr-reducing-click-burden",
@@ -2030,7 +2562,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 132,
     "txt": "ai in the ehr: reducing click burden without compromising the record healthcare shreyas sanghvi",
-    "thumb": "/blog/192-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-the-ehr-reducing-click-burden-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-esg-data-extraction-and-scoring",
@@ -2045,7 +2581,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 133,
     "txt": "ai for esg data extraction and scoring: defensible sustainability signals bfsi snehasis panda",
-    "thumb": "/blog/191-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-esg-data-extraction-and-scoring-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "chatgpt-agent-examined",
@@ -2060,7 +2600,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 134,
     "txt": "chatgpt agent, examined: a unified agent and the oversight it demands ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/chatgpt-agent-examined-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "scaling-agents-across-the-enterprise",
@@ -2075,7 +2619,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 135,
     "txt": "scaling agents across the enterprise: from one workflow to a fleet agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/scaling-agents-across-the-enterprise-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "kimi-k2-and-open-agentic-models",
@@ -2090,7 +2638,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 136,
     "txt": "kimi k2 and open agentic models: evaluating moonshot ai for tool-heavy workloads ai models karan trehan",
-    "thumb": "/blog/188-t.webp"
+    "thumb": {
+      "src": "/blog/kimi-k2-and-open-agentic-models-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-regulatory-change-management",
@@ -2105,7 +2657,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 137,
     "txt": "ai for regulatory change management: from obligation to operational control bfsi snehasis panda",
-    "thumb": "/blog/187-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-regulatory-change-management-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "patient-reminder-and-scheduling-calls",
@@ -2120,7 +2676,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 138,
     "txt": "patient reminder and scheduling calls: voice ai that reduces no-shows about es magico shreyas sanghvi",
-    "thumb": "/blog/186-t.webp"
+    "thumb": {
+      "src": "/blog/patient-reminder-and-scheduling-calls-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "validating-medical-imaging-ai",
@@ -2135,7 +2695,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 139,
     "txt": "validating medical imaging ai: why test-set performance isn't clinical readiness healthcare shreyas sanghvi",
-    "thumb": "/blog/185-t.webp"
+    "thumb": {
+      "src": "/blog/validating-medical-imaging-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "agentic-design-patterns",
@@ -2150,7 +2714,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 140,
     "txt": "agentic design patterns: a practitioner's catalogue for production systems agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/agentic-design-patterns-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "grok-4-for-the-enterprise",
@@ -2165,7 +2733,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 141,
     "txt": "grok 4 for the enterprise: capability, governance, and the cost of a new default ai models karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/grok-4-for-the-enterprise-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "authorized-push-payment-scam-detection",
@@ -2180,7 +2752,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 142,
     "txt": "authorized push payment scam detection: real-time intervention that works bfsi snehasis panda",
-    "thumb": "/blog/182-t.webp"
+    "thumb": {
+      "src": "/blog/authorized-push-payment-scam-detection-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "approval-workflows-for-autonomous-agents",
@@ -2195,7 +2771,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 143,
     "txt": "approval workflows for autonomous agents: designing the pause before the action agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/approval-workflows-for-autonomous-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "meeting-intelligence-tools-in-the-enterprise",
@@ -2210,7 +2790,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 144,
     "txt": "meeting intelligence tools in the enterprise: value against privacy and retention risk ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/meeting-intelligence-tools-in-the-enterprise-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "cutting-administrative-load-in-healthcare-without-cutting",
@@ -2225,7 +2809,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 145,
     "txt": "cutting administrative load in healthcare without cutting corners on safety about es magico shreyas sanghvi",
-    "thumb": "/blog/179-t.webp"
+    "thumb": {
+      "src": "/blog/cutting-administrative-load-in-healthcare-without-cutting-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-oncology-from-tumor-detection-to-treatment-planning",
@@ -2240,7 +2828,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 146,
     "txt": "ai in oncology: from tumour detection to treatment planning, with oversight healthcare shreyas sanghvi",
-    "thumb": "/blog/178-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-oncology-from-tumor-detection-to-treatment-planning-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "monitoring-llms-in-production",
@@ -2255,7 +2847,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 147,
     "txt": "monitoring llms in production: catching drift, degradation, and silent failures agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/monitoring-llms-in-production-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "the-ai-operating-model-for-banks",
@@ -2270,7 +2866,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 148,
     "txt": "the ai operating model for banks: why owning the operating layer wins bfsi snehasis panda",
-    "thumb": "/blog/176-t.webp"
+    "thumb": {
+      "src": "/blog/the-ai-operating-model-for-banks-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "why-small-models-often-win-in-production",
@@ -2285,7 +2885,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 149,
     "txt": "why small models often win in production: a frontier-vs-small trade-off analysis ai models karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/why-small-models-often-win-in-production-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "clinical-decision-support-that-keeps-the-clinician-in-the",
@@ -2300,7 +2904,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 150,
     "txt": "clinical decision support that keeps the clinician in the loop about es magico shreyas sanghvi",
-    "thumb": "/blog/174-t.webp"
+    "thumb": {
+      "src": "/blog/clinical-decision-support-that-keeps-the-clinician-in-the-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "inference-optimization-for-llm-workloads",
@@ -2315,7 +2923,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 151,
     "txt": "inference optimisation for llm workloads: throughput, batching, and cost agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/inference-optimization-for-llm-workloads-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "explainable-ai-in-diagnosis",
@@ -2330,7 +2942,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 152,
     "txt": "explainable ai in diagnosis: decisions clinicians and regulators can question healthcare shreyas sanghvi",
-    "thumb": "/blog/172-t.webp"
+    "thumb": {
+      "src": "/blog/explainable-ai-in-diagnosis-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-workflow-automation-compared",
@@ -2345,7 +2961,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 153,
     "txt": "ai workflow automation compared: governing what you automate ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/ai-workflow-automation-compared-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-policy-servicing-agents-in-insurance",
@@ -2360,7 +2980,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 154,
     "txt": "ai policy-servicing agents in insurance: self-service without mis-selling bfsi snehasis panda",
-    "thumb": "/blog/170-t.webp"
+    "thumb": {
+      "src": "/blog/ai-policy-servicing-agents-in-insurance-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "long-term-memory-for-agents",
@@ -2375,7 +2999,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 155,
     "txt": "long-term memory for agents: retrieval, decay, and avoiding context pollution agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/long-term-memory-for-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "which-foundation-model-should-a-bank-standardize-on",
@@ -2390,7 +3018,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 156,
     "txt": "which foundation model should a bank standardise on? ai models karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/which-foundation-model-should-a-bank-standardize-on-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "fraud-flags-you-can-explain",
@@ -2405,7 +3037,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 157,
     "txt": "fraud flags you can explain: accountable ai for financial services about es magico shreyas sanghvi",
-    "thumb": "/blog/167-t.webp"
+    "thumb": {
+      "src": "/blog/fraud-flags-you-can-explain-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-population-health",
@@ -2420,7 +3056,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 158,
     "txt": "ai in population health: risk stratification that targets the right patients healthcare shreyas sanghvi",
-    "thumb": "/blog/166-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-population-health-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "fair-lending-compliance-for-ai-credit-models",
@@ -2435,7 +3075,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 159,
     "txt": "fair-lending compliance for ai credit models: bias testing you can defend bfsi snehasis panda",
-    "thumb": "/blog/165-t.webp"
+    "thumb": {
+      "src": "/blog/fair-lending-compliance-for-ai-credit-models-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "reducing-hallucinations-in-agentic-systems",
@@ -2450,7 +3094,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 160,
     "txt": "reducing hallucinations in agentic systems: constraints that actually hold agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/reducing-hallucinations-in-agentic-systems-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "gamma-against-canva-for-ai-generated-decks-and-design",
@@ -2465,7 +3113,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 161,
     "txt": "gamma against canva for ai-generated decks and design: a decision guide ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/gamma-against-canva-for-ai-generated-decks-and-design-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "red-teaming-ai-agents",
@@ -2480,7 +3132,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 162,
     "txt": "red-teaming ai agents: adversarial testing before you go live agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/red-teaming-ai-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "on-prem-vs-cloud-llms-for-banks",
@@ -2495,7 +3151,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 163,
     "txt": "on-prem vs cloud llms for banks: a deployment decision guide bfsi snehasis panda",
-    "thumb": "/blog/161-t.webp"
+    "thumb": {
+      "src": "/blog/on-prem-vs-cloud-llms-for-banks-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "compliant-collections-calls-at-scale",
@@ -2510,7 +3170,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 164,
     "txt": "compliant collections calls at scale: what voice ai has to get right in bfsi about es magico shreyas sanghvi",
-    "thumb": "/blog/160-t.webp"
+    "thumb": {
+      "src": "/blog/compliant-collections-calls-at-scale-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "choosing-an-ai-model-for-clinical-assistants",
@@ -2525,7 +3189,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 165,
     "txt": "choosing an ai model for clinical assistants: a healthcare decision guide healthcare snehasis panda",
-    "thumb": "/blog/159-t.webp"
+    "thumb": {
+      "src": "/blog/choosing-an-ai-model-for-clinical-assistants-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "llama-4-against-qwen-3-for-sovereign-enterprise-deployment",
@@ -2540,7 +3208,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 166,
     "txt": "llama 4 against qwen 3 for private and sovereign enterprise deployment ai models karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/llama-4-against-qwen-3-for-sovereign-enterprise-deployment-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "hybrid-search-for-enterprise-rag",
@@ -2555,7 +3227,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 167,
     "txt": "hybrid search for enterprise rag: why semantic alone isn't enough agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/hybrid-search-for-enterprise-rag-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-actuarial-modeling",
@@ -2570,7 +3246,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 168,
     "txt": "ai in actuarial modeling: where it helps and where judgment stays human bfsi snehasis panda",
-    "thumb": "/blog/156-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-actuarial-modeling-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "coding-assistants-compared",
@@ -2585,7 +3265,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 169,
     "txt": "coding assistants compared: a production selection guide for engineering teams ai tools karan trehan",
-    "thumb": "/blog/155-t.webp"
+    "thumb": {
+      "src": "/blog/coding-assistants-compared-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "automating-loan-document-checks-without-breaking-your-audit-trail",
@@ -2600,7 +3284,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 170,
     "txt": "automating loan document checks without breaking your audit trail about es magico shreyas sanghvi",
-    "thumb": "/blog/154-t.webp"
+    "thumb": {
+      "src": "/blog/automating-loan-document-checks-without-breaking-your-audit-trail-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "planning-in-ai-agents",
@@ -2615,7 +3303,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 171,
     "txt": "planning in ai agents: decomposition, re-planning, and where it goes wrong agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/planning-in-ai-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-remote-patient-monitoring",
@@ -2630,7 +3322,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 172,
     "txt": "ai in remote patient monitoring: turning sensor data into action healthcare snehasis panda",
-    "thumb": "/blog/152-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-remote-patient-monitoring-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "claude-4-and-sustained-agentic-work",
@@ -2645,7 +3341,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 173,
     "txt": "claude 4 and sustained agentic work: what long-horizon tasks demand of an operator ai models karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/claude-4-and-sustained-agentic-work-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "account-takeover-prevention",
@@ -2660,7 +3360,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 174,
     "txt": "account takeover prevention: behavioral biometrics in digital banking bfsi snehasis panda",
-    "thumb": "/blog/150-t.webp"
+    "thumb": {
+      "src": "/blog/account-takeover-prevention-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "operationalizing-responsible-ai",
@@ -2675,7 +3379,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 175,
     "txt": "responsible ai in practice: from principles to enforced controls agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/operationalizing-responsible-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-underwriting-that-survives-a-model-risk-committee",
@@ -2690,7 +3398,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 176,
     "txt": "ai underwriting that survives a model-risk committee about es magico shreyas sanghvi",
-    "thumb": "/blog/148-t.webp"
+    "thumb": {
+      "src": "/blog/ai-underwriting-that-survives-a-model-risk-committee-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-pharmacovigilance",
@@ -2705,7 +3417,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 177,
     "txt": "ai in pharmacovigilance: adverse-event detection at scale healthcare snehasis panda",
-    "thumb": "/blog/147-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-pharmacovigilance-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-image-generation-for-brand-creative",
@@ -2720,7 +3436,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 178,
     "txt": "ai image generation for brand creative: a governance-first adoption guide ai tools karan trehan",
-    "thumb": "/blog/146-t.webp"
+    "thumb": {
+      "src": "/blog/ai-image-generation-for-brand-creative-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "why-ai-benchmarks-dont-predict-production-performance",
@@ -2735,7 +3455,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 179,
     "txt": "why ai benchmarks don't predict production performance agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/why-ai-benchmarks-dont-predict-production-performance-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "controlling-ai-hallucinations-in-financial-advice",
@@ -2750,7 +3474,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 180,
     "txt": "controlling ai hallucinations in financial advice: constraints that hold bfsi snehasis panda",
-    "thumb": "/blog/144-t.webp"
+    "thumb": {
+      "src": "/blog/controlling-ai-hallucinations-in-financial-advice-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "the-best-coding-models-for-software-teams",
@@ -2765,7 +3493,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 181,
     "txt": "the best coding models for software teams: a production selection guide ai models karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/the-best-coding-models-for-software-teams-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "prompt-caching-in-production",
@@ -2780,7 +3512,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 182,
     "txt": "prompt caching in production: cutting cost and latency without quality loss agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/prompt-caching-in-production-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "the-es-magico-product-suite",
@@ -2795,7 +3531,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 183,
     "txt": "the es magico product suite: how the agentic capabilities fit together about es magico shreyas sanghvi",
-    "thumb": "/blog/141-t.webp"
+    "thumb": {
+      "src": "/blog/the-es-magico-product-suite-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-the-radiology-workflow",
@@ -2810,7 +3550,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 184,
     "txt": "ai in the radiology workflow: worklist prioritisation that earns radiologist trust healthcare shreyas sanghvi",
-    "thumb": "/blog/140-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-the-radiology-workflow-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-trade-surveillance",
@@ -2825,7 +3569,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 185,
     "txt": "ai trade surveillance: detecting market abuse without drowning in alerts bfsi snehasis panda",
-    "thumb": "/blog/139-t.webp"
+    "thumb": {
+      "src": "/blog/ai-trade-surveillance-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "reasoning-tiers-compared",
@@ -2840,7 +3588,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 186,
     "txt": "reasoning tiers compared: o3, o4-mini, and choosing depth against cost ai models karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/reasoning-tiers-compared-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "build-or-buy-your-agent-stack",
@@ -2855,7 +3607,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 187,
     "txt": "build or buy your agent stack: a control-and-velocity decision lens agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/build-or-buy-your-agent-stack-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "generative-video-in-marketing",
@@ -2870,7 +3626,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 188,
     "txt": "generative video in marketing: deploying runway without the rights risk ai tools karan trehan",
-    "thumb": "/blog/136-t.webp"
+    "thumb": {
+      "src": "/blog/generative-video-in-marketing-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-loan-default-prediction",
@@ -2885,7 +3645,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 189,
     "txt": "ai for loan default prediction: early-warning systems that prioritize collections bfsi snehasis panda",
-    "thumb": "/blog/135-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-loan-default-prediction-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "loupe-explained",
@@ -2900,7 +3664,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 190,
     "txt": "loupe, explained: guided form-filling for high-stakes submissions about es magico shreyas sanghvi",
-    "thumb": "/blog/134-t.webp"
+    "thumb": {
+      "src": "/blog/loupe-explained-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ci-cd-for-llm-applications",
@@ -2915,7 +3683,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 191,
     "txt": "ci/cd for llm applications: shipping changes without breaking production agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/ci-cd-for-llm-applications-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "controlling-hallucinations-in-medical-ai",
@@ -2930,7 +3702,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 192,
     "txt": "controlling hallucinations in medical ai: grounding every clinical claim healthcare snehasis panda",
-    "thumb": "/blog/132-t.webp"
+    "thumb": {
+      "src": "/blog/controlling-hallucinations-in-medical-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "llama-4-mixture-of-experts-and-sovereign-deployment",
@@ -2945,7 +3721,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 193,
     "txt": "llama 4, mixture-of-experts, and sovereign deployment: reading the open-weight shift ai models karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/llama-4-mixture-of-experts-and-sovereign-deployment-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "multi-agent-communication",
@@ -2960,7 +3740,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 194,
     "txt": "multi-agent communication: shared state, message passing, and where it deadlocks agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/multi-agent-communication-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-investment-research",
@@ -2975,7 +3759,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 195,
     "txt": "ai for investment research: faster analyst summaries you can audit bfsi snehasis panda",
-    "thumb": "/blog/129-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-investment-research-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "gensparks-multi-agent-approach",
@@ -2990,7 +3778,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 196,
     "txt": "genspark's multi-agent approach: where orchestrated agents fit enterprise workflows ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/gensparks-multi-agent-approach-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "compass-explained",
@@ -3005,7 +3797,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 197,
     "txt": "compass, explained: making institutional knowledge answerable about es magico shreyas sanghvi",
-    "thumb": "/blog/127-t.webp"
+    "thumb": {
+      "src": "/blog/compass-explained-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-clinical-trial-patient-matching",
@@ -3020,7 +3816,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 198,
     "txt": "ai for clinical trial patient matching: faster enrolment, cleaner eligibility healthcare snehasis panda",
-    "thumb": "/blog/126-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-clinical-trial-patient-matching-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "testing-ai-agents",
@@ -3035,7 +3835,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 199,
     "txt": "testing ai agents: why unit tests don't cover non-deterministic systems agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/testing-ai-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-sme-lending",
@@ -3050,7 +3854,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 200,
     "txt": "ai in sme lending: automating document-heavy underwriting at speed bfsi snehasis panda",
-    "thumb": "/blog/124-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-sme-lending-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "gemini-against-claude-for-document-intelligence",
@@ -3065,7 +3873,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 201,
     "txt": "gemini against claude for document intelligence: a long-context decision guide ai models karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/gemini-against-claude-for-document-intelligence-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "audit-trails-for-autonomous-agents",
@@ -3080,7 +3892,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 202,
     "txt": "audit trails for autonomous agents: logging decisions regulators will question agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/audit-trails-for-autonomous-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "prism-explained",
@@ -3095,7 +3911,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 203,
     "txt": "prism, explained: defensible evaluation at enterprise scale about es magico shreyas sanghvi",
-    "thumb": "/blog/121-t.webp"
+    "thumb": {
+      "src": "/blog/prism-explained-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "bias-in-healthcare-ai",
@@ -3110,7 +3930,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 204,
     "txt": "bias in healthcare ai: detecting and defending against inequitable models healthcare shreyas sanghvi",
-    "thumb": "/blog/120-t.webp"
+    "thumb": {
+      "src": "/blog/bias-in-healthcare-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "manus-and-the-autonomous-agent-promise",
@@ -3125,7 +3949,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 205,
     "txt": "manus and the autonomous agent promise: separating capability from production reality ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/manus-and-the-autonomous-agent-promise-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "graph-ai-for-money-laundering-detection",
@@ -3140,7 +3968,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 206,
     "txt": "graph ai for money laundering detection: finding the network bfsi snehasis panda",
-    "thumb": "/blog/118-t.webp"
+    "thumb": {
+      "src": "/blog/graph-ai-for-money-laundering-detection-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "sandboxing-agent-generated-code",
@@ -3155,7 +3987,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 207,
     "txt": "sandboxing agent-generated code: containing what you can't fully trust agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/sandboxing-agent-generated-code-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "long-context-reasoning-in-production",
@@ -3170,7 +4006,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 208,
     "txt": "long-context reasoning in production: deploying gemini 2.5 pro ai models karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/long-context-reasoning-in-production-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "atlas-explained",
@@ -3185,7 +4025,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 209,
     "txt": "atlas, explained: turning sops into on-demand learning that sticks about es magico shreyas sanghvi",
-    "thumb": "/blog/115-t.webp"
+    "thumb": {
+      "src": "/blog/atlas-explained-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-patient-engagement-and-follow-up",
@@ -3200,7 +4044,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 210,
     "txt": "ai for patient engagement and follow-up: adherence without eroding trust healthcare snehasis panda",
-    "thumb": "/blog/114-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-patient-engagement-and-follow-up-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "agent-interoperability-and-the-a2a-protocol",
@@ -3230,7 +4078,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 212,
     "txt": "explainable ai in finance: choosing methods that satisfy regulators bfsi snehasis panda",
-    "thumb": "/blog/112-t.webp"
+    "thumb": {
+      "src": "/blog/explainable-ai-in-finance-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "domain-ai-for-legal-work",
@@ -3245,7 +4097,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 213,
     "txt": "domain ai for legal work: reading harvey through a governance lens ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/domain-ai-for-legal-work-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "function-calling-maturity",
@@ -3260,7 +4116,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 214,
     "txt": "function calling maturity: where models differ and why it breaks agents agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/function-calling-maturity-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "intelligent-document-processing-in-insurance",
@@ -3275,7 +4135,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 215,
     "txt": "intelligent document processing in insurance: the engine behind claims automation bfsi snehasis panda",
-    "thumb": "/blog/109-t.webp"
+    "thumb": {
+      "src": "/blog/intelligent-document-processing-in-insurance-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "evio-explained",
@@ -3290,7 +4154,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 216,
     "txt": "evio, explained: voice ai that sounds human and holds up under compliance about es magico shreyas sanghvi",
-    "thumb": "/blog/108-t.webp"
+    "thumb": {
+      "src": "/blog/evio-explained-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "generative-ai-in-healthcare",
@@ -3305,7 +4173,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 217,
     "txt": "generative ai in healthcare: where it's production-ready and where it isn't healthcare shreyas sanghvi",
-    "thumb": "/blog/107-t.webp"
+    "thumb": {
+      "src": "/blog/generative-ai-in-healthcare-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "why-benchmark-scores-dont-survive-contact-with-production",
@@ -3320,7 +4192,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 218,
     "txt": "why benchmark scores don't survive contact with production ai models karan trehan",
-    "thumb": "/blog/106-t.webp"
+    "thumb": {
+      "src": "/blog/why-benchmark-scores-dont-survive-contact-with-production-1.webp",
+      "width": 618,
+      "height": 617
+    }
   },
   {
     "slug": "the-react-pattern-in-production",
@@ -3335,7 +4211,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 219,
     "txt": "the react pattern in production: reasoning and acting without runaway loops agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/the-react-pattern-in-production-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "perpetual-kyc-continuous-risk-monitoring-without-drowning",
@@ -3350,7 +4230,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 220,
     "txt": "perpetual kyc: continuous risk monitoring without drowning in reviews bfsi snehasis panda",
-    "thumb": "/blog/104-t.webp"
+    "thumb": {
+      "src": "/blog/perpetual-kyc-continuous-risk-monitoring-without-drowning-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "automated-research-tools-in-production",
@@ -3365,7 +4249,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 221,
     "txt": "automated research tools in production: speed versus verifiable truth ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/automated-research-tools-in-production-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "llm-as-a-judge-where-automated-evaluation-works-and-where",
@@ -3380,7 +4268,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 222,
     "txt": "llm-as-a-judge: where automated evaluation works and where it lies agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/llm-as-a-judge-where-automated-evaluation-works-and-where-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "multimodal-multilingual-ai",
@@ -3395,7 +4287,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 223,
     "txt": "multimodal, multilingual ai: engineering consistency across channels about es magico shreyas sanghvi",
-    "thumb": "/blog/101-t.webp"
+    "thumb": {
+      "src": "/blog/multimodal-multilingual-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-claims-denial-management",
@@ -3410,7 +4306,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 224,
     "txt": "ai for claims denial management: predicting and preventing payer rejections healthcare snehasis panda",
-    "thumb": "/blog/100-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-claims-denial-management-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "grok-3-and-a-crowded-frontier",
@@ -3425,7 +4325,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 225,
     "txt": "grok 3 and a crowded frontier: reading a new entrant for enterprise use ai models karan trehan",
-    "thumb": "/blog/99-t.webp"
+    "thumb": {
+      "src": "/blog/grok-3-and-a-crowded-frontier-1.webp",
+      "width": 616,
+      "height": 617
+    }
   },
   {
     "slug": "the-real-cost-of-running-ai-agents",
@@ -3440,7 +4344,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 226,
     "txt": "the real cost of running ai agents: token economics at production scale agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/the-real-cost-of-running-ai-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-personalization-in-banking",
@@ -3455,7 +4363,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 227,
     "txt": "ai personalization in banking: relevant offers within consent and conduct rules bfsi snehasis panda",
-    "thumb": "/blog/97-t.webp"
+    "thumb": {
+      "src": "/blog/ai-personalization-in-banking-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "getting-rag-to-hold-up-in-a-regulated-enterprise",
@@ -3470,7 +4382,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 228,
     "txt": "getting rag to hold up in a regulated enterprise about es magico shreyas sanghvi",
-    "thumb": "/blog/96-t.webp"
+    "thumb": {
+      "src": "/blog/getting-rag-to-hold-up-in-a-regulated-enterprise-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-in-digital-pathology",
@@ -3485,7 +4401,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 229,
     "txt": "ai in digital pathology: augmenting the pathologist healthcare shreyas sanghvi",
-    "thumb": "/blog/95-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-digital-pathology-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "securing-agentic-systems",
@@ -3500,7 +4420,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 230,
     "txt": "securing agentic systems: the threat model beyond prompt injection agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/securing-agentic-systems-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "controllable-thinking",
@@ -3515,7 +4439,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 231,
     "txt": "controllable thinking: deploying claude 3.7 sonnet's hybrid reasoning ai models karan trehan",
-    "thumb": "/blog/93-t.webp"
+    "thumb": {
+      "src": "/blog/controllable-thinking-1.webp",
+      "width": 612,
+      "height": 615
+    }
   },
   {
     "slug": "glean-and-permissions-aware-enterprise-search",
@@ -3530,7 +4458,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 232,
     "txt": "glean and permissions-aware enterprise search: knowledge work in production ai tools karan trehan",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/glean-and-permissions-aware-enterprise-search-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "dora-and-ai-in-finance",
@@ -3545,7 +4477,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 233,
     "txt": "dora and ai in finance: operational resilience for production ai systems bfsi snehasis panda",
-    "thumb": "/blog/91-t.webp"
+    "thumb": {
+      "src": "/blog/dora-and-ai-in-finance-1.webp",
+      "width": 610,
+      "height": 611
+    }
   },
   {
     "slug": "context-engineering",
@@ -3560,7 +4496,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 234,
     "txt": "context engineering: managing the window as a production resource agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/context-engineering-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "agentic-workflows-vs-chatbots-and-rpa",
@@ -3575,7 +4515,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 235,
     "txt": "agentic workflows vs chatbots and rpa: what's actually different about es magico shreyas sanghvi",
-    "thumb": "/blog/89-t.webp"
+    "thumb": {
+      "src": "/blog/agentic-workflows-vs-chatbots-and-rpa-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-for-patient-scheduling-and-no-show-reduction",
@@ -3590,7 +4534,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 236,
     "txt": "ai for patient scheduling and no-show reduction: operational gains that hold up healthcare snehasis panda",
-    "thumb": "/blog/88-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-patient-scheduling-and-no-show-reduction-1.webp",
+      "width": 691,
+      "height": 687
+    }
   },
   {
     "slug": "synthetic-identity-fraud",
@@ -3605,7 +4553,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 237,
     "txt": "synthetic identity fraud: detecting customers who don't actually exist bfsi snehasis panda",
-    "thumb": "/blog/87-t.webp"
+    "thumb": {
+      "src": "/blog/synthetic-identity-fraud-1.webp",
+      "width": 617,
+      "height": 617
+    }
   },
   {
     "slug": "measuring-rag-quality",
@@ -3620,7 +4572,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 238,
     "txt": "measuring rag quality: grounding, faithfulness, and retrieval metrics agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/measuring-rag-quality-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "is-open-source-catching-up-deepseek-against-gpt-and-claude",
@@ -3635,7 +4591,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 239,
     "txt": "is open source catching up? deepseek against gpt and claude in enterprise conditions ai models karan trehan",
-    "thumb": "/blog/85-t.webp"
+    "thumb": {
+      "src": "/blog/is-open-source-catching-up-deepseek-against-gpt-and-claude-1.webp",
+      "width": 615,
+      "height": 610
+    }
   },
   {
     "slug": "synthesia-against-heygen-for-enterprise-video-at-scale",
@@ -3650,7 +4610,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 240,
     "txt": "synthesia against heygen for enterprise video at scale ai tools karan trehan",
-    "thumb": "/blog/84-t.webp"
+    "thumb": {
+      "src": "/blog/synthesia-against-heygen-for-enterprise-video-at-scale-1.webp",
+      "width": 687,
+      "height": 687
+    }
   },
   {
     "slug": "ai-for-regulatory-reporting-and-reconciliation",
@@ -3665,7 +4629,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 241,
     "txt": "ai for regulatory reporting and reconciliation: accuracy you can defend bfsi snehasis panda",
-    "thumb": "/blog/83-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-regulatory-reporting-and-reconciliation-1.webp",
+      "width": 625,
+      "height": 622
+    }
   },
   {
     "slug": "why-most-enterprise-agent-pilots-never-reach-production",
@@ -3680,7 +4648,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 242,
     "txt": "why most enterprise agent pilots never reach production agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/why-most-enterprise-agent-pilots-never-reach-production-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "human-in-the-loop-that-survives-scrutiny",
@@ -3695,7 +4667,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 243,
     "txt": "human-in-the-loop that survives scrutiny: oversight that actually works about es magico shreyas sanghvi",
-    "thumb": "/blog/81-t.webp"
+    "thumb": {
+      "src": "/blog/human-in-the-loop-that-survives-scrutiny-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "fda-regulated-ai",
@@ -3710,7 +4686,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 244,
     "txt": "fda-regulated ai: what samd approval means for your clinical model healthcare shreyas sanghvi",
-    "thumb": "/blog/80-t.webp"
+    "thumb": {
+      "src": "/blog/fda-regulated-ai-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "deepseek-r1-and-open-reasoning",
@@ -3725,7 +4705,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 245,
     "txt": "deepseek r1 and open reasoning: what transparent chains of thought mean for governance ai models karan trehan",
-    "thumb": "/blog/79-t.webp"
+    "thumb": {
+      "src": "/blog/deepseek-r1-and-open-reasoning-1.webp",
+      "width": 615,
+      "height": 607
+    }
   },
   {
     "slug": "agent-observability",
@@ -3740,7 +4724,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 246,
     "txt": "agent observability: tracing decisions you have to answer for agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/agent-observability-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "insurance-fraud-detection-with-ai",
@@ -3755,7 +4743,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 247,
     "txt": "insurance fraud detection with ai: catching fraud without punishing honest claimants bfsi snehasis panda",
-    "thumb": "/blog/77-t.webp"
+    "thumb": {
+      "src": "/blog/insurance-fraud-detection-with-ai-1.webp",
+      "width": 613,
+      "height": 608
+    }
   },
   {
     "slug": "explainability-by-design",
@@ -3770,7 +4762,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 248,
     "txt": "explainability by design: making every ai decision defensible to an auditor about es magico shreyas sanghvi",
-    "thumb": "/blog/76-t.webp"
+    "thumb": {
+      "src": "/blog/explainability-by-design-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-medical-coding-and-autocoding",
@@ -3785,7 +4781,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 249,
     "txt": "ai medical coding and autocoding: accuracy you can defend in an audit healthcare snehasis panda",
-    "thumb": "/blog/75-t.webp"
+    "thumb": {
+      "src": "/blog/ai-medical-coding-and-autocoding-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "elevenlabs-and-production-voice",
@@ -3800,7 +4800,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 250,
     "txt": "elevenlabs and production voice: quality, latency, and the fraud surface ai tools karan trehan",
-    "thumb": "/blog/74-t.webp"
+    "thumb": {
+      "src": "/blog/elevenlabs-and-production-voice-1.webp",
+      "width": 696,
+      "height": 695
+    }
   },
   {
     "slug": "engineering-guardrails-for-ai-agents",
@@ -3815,7 +4819,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 251,
     "txt": "engineering guardrails for ai agents: input, output, and action controls agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/engineering-guardrails-for-ai-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "rag-for-banking-knowledge-bases",
@@ -3830,7 +4838,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 252,
     "txt": "rag for banking knowledge bases: building policy assistants you can trust bfsi snehasis panda",
-    "thumb": "/blog/72-t.webp"
+    "thumb": {
+      "src": "/blog/rag-for-banking-knowledge-bases-1.webp",
+      "width": 612,
+      "height": 607
+    }
   },
   {
     "slug": "deepseek-v3-and-the-cost-shock",
@@ -3845,7 +4857,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 253,
     "txt": "deepseek-v3 and the cost shock: when efficient open weights change the math ai models karan trehan",
-    "thumb": "/blog/71-t.webp"
+    "thumb": {
+      "src": "/blog/deepseek-v3-and-the-cost-shock-1.webp",
+      "width": 612,
+      "height": 616
+    }
   },
   {
     "slug": "error-handling-for-ai-agents",
@@ -3860,7 +4876,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 254,
     "txt": "error handling for ai agents: recovering from bad tool output and dead ends agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/error-handling-for-ai-agents-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "designing-governance-into-agentic-ai-not-bolting-it-on",
@@ -3875,7 +4895,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 255,
     "txt": "designing governance into agentic ai from the first sprint about es magico shreyas sanghvi",
-    "thumb": "/blog/69-t.webp"
+    "thumb": {
+      "src": "/blog/designing-governance-into-agentic-ai-not-bolting-it-on-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "rag-for-clinical-knowledge",
@@ -3890,7 +4914,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 256,
     "txt": "rag for clinical knowledge: building guideline assistants clinicians can trust healthcare shreyas sanghvi",
-    "thumb": "/blog/68-t.webp"
+    "thumb": {
+      "src": "/blog/rag-for-clinical-knowledge-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "app-generation-tools-compared",
@@ -3905,7 +4933,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 257,
     "txt": "app-generation tools compared: from generated ui to a system you can operate ai tools karan trehan",
-    "thumb": "/blog/67-t.webp"
+    "thumb": {
+      "src": "/blog/app-generation-tools-compared-1.webp",
+      "width": 695,
+      "height": 690
+    }
   },
   {
     "slug": "designing-agentic-workflows",
@@ -3920,7 +4952,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 258,
     "txt": "designing agentic workflows: where determinism beats autonomy agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/designing-agentic-workflows-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "alternative-data-credit-scoring",
@@ -3935,7 +4971,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 259,
     "txt": "alternative-data credit scoring: expanding access without importing bias bfsi snehasis panda",
-    "thumb": "/blog/65-t.webp"
+    "thumb": {
+      "src": "/blog/alternative-data-credit-scoring-1.webp",
+      "width": 617,
+      "height": 623
+    }
   },
   {
     "slug": "gemini-2-0-flash-agentic-multimodal-default",
@@ -3950,7 +4990,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 260,
     "txt": "gemini 2.0 flash and the economics of an agentic, multimodal default ai models karan trehan",
-    "thumb": "/blog/64-t.webp"
+    "thumb": {
+      "src": "/blog/gemini-2-0-flash-agentic-multimodal-default-1.webp",
+      "width": 617,
+      "height": 617
+    }
   },
   {
     "slug": "what-hardened-means-in-enterprise-ai",
@@ -3965,7 +5009,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 261,
     "txt": "what ‘hardened’ means in enterprise ai, and how reusable blocks inherit trust about es magico shreyas sanghvi",
-    "thumb": "/blog/63-t.webp"
+    "thumb": {
+      "src": "/blog/what-hardened-means-in-enterprise-ai-1.webp",
+      "width": 687,
+      "height": 690
+    }
   },
   {
     "slug": "ai-in-drug-discovery",
@@ -3980,7 +5028,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 262,
     "txt": "ai in drug discovery: where it compresses timelines and where validation stays hard healthcare shreyas sanghvi",
-    "thumb": "/blog/62-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-drug-discovery-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "the-model-context-protocol",
@@ -3995,7 +5047,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 263,
     "txt": "the model context protocol: standardising tool access, and what it costs agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/the-model-context-protocol-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-sanctions-screening",
@@ -4010,7 +5066,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 264,
     "txt": "ai sanctions screening: better name matching with a defensible audit trail bfsi snehasis panda",
-    "thumb": "/blog/60-t.webp"
+    "thumb": {
+      "src": "/blog/ai-sanctions-screening-1.webp",
+      "width": 617,
+      "height": 617
+    }
   },
   {
     "slug": "microsoft-365-copilot-in-production",
@@ -4025,7 +5085,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 265,
     "txt": "microsoft 365 copilot in production: the permissions problem nobody demos ai tools karan trehan",
-    "thumb": "/blog/59-t.webp"
+    "thumb": {
+      "src": "/blog/microsoft-365-copilot-in-production-1.webp",
+      "width": 728,
+      "height": 727
+    }
   },
   {
     "slug": "llm-evaluation-framework-your-team-will-actually-use",
@@ -4040,7 +5104,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 266,
     "txt": "building an llm evaluation framework your team will actually use agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/llm-evaluation-framework-your-team-will-actually-use-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "the-architecture-behind-our-platform",
@@ -4055,7 +5123,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 267,
     "txt": "the architecture behind our platform: reusable building blocks for enterprise agents about es magico shreyas sanghvi",
-    "thumb": "/blog/57-t.webp"
+    "thumb": {
+      "src": "/blog/the-architecture-behind-our-platform-1.webp",
+      "width": 691,
+      "height": 687
+    }
   },
   {
     "slug": "ai-in-revenue-cycle-management",
@@ -4070,7 +5142,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 268,
     "txt": "ai in revenue cycle management: cleaner claims, fewer denials healthcare shreyas sanghvi",
-    "thumb": "/blog/56-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-revenue-cycle-management-1.webp",
+      "width": 613,
+      "height": 616
+    }
   },
   {
     "slug": "agent-assist-for-banking-contact-centers",
@@ -4085,7 +5161,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 269,
     "txt": "agent assist for banking contact centers: augmenting bankers without adding risk bfsi snehasis panda",
-    "thumb": "/blog/55-t.webp"
+    "thumb": {
+      "src": "/blog/agent-assist-for-banking-contact-centers-1.webp",
+      "width": 621,
+      "height": 617
+    }
   },
   {
     "slug": "from-preview-to-production",
@@ -4100,7 +5180,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 270,
     "txt": "from preview to production: o1-class reasoning at real cost ai models karan trehan",
-    "thumb": "/blog/54-t.webp"
+    "thumb": {
+      "src": "/blog/from-preview-to-production-1.webp",
+      "width": 618,
+      "height": 613
+    }
   },
   {
     "slug": "deploying-ai-agents-at-scale",
@@ -4115,7 +5199,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 271,
     "txt": "deploying ai agents at scale: the runtime layer that decides reliability agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/deploying-ai-agents-at-scale-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "ai-underwriting-in-p-c-insurance",
@@ -4130,7 +5218,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 272,
     "txt": "ai underwriting in p&c insurance: pricing accuracy against fairness bfsi snehasis panda",
-    "thumb": "/blog/52-t.webp"
+    "thumb": {
+      "src": "/blog/ai-underwriting-in-p-c-insurance-1.webp",
+      "width": 613,
+      "height": 607
+    }
   },
   {
     "slug": "multi-agent-systems",
@@ -4145,7 +5237,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 273,
     "txt": "multi-agent systems: when coordination earns its complexity agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/multi-agent-systems-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "operating-principles-behind-every-es-magico-engagement",
@@ -4160,7 +5256,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 274,
     "txt": "the operating principles behind every es magico engagement about es magico shreyas sanghvi",
-    "thumb": "/blog/50-t.webp"
+    "thumb": {
+      "src": "/blog/operating-principles-behind-every-es-magico-engagement-1.webp",
+      "width": 592,
+      "height": 597
+    }
   },
   {
     "slug": "hipaa-compliant-ai",
@@ -4175,7 +5275,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 275,
     "txt": "hipaa-compliant ai: engineering phi boundaries before you deploy healthcare shreyas sanghvi",
-    "thumb": "/blog/49-t.webp"
+    "thumb": {
+      "src": "/blog/hipaa-compliant-ai-1.webp",
+      "width": 592,
+      "height": 592
+    }
   },
   {
     "slug": "heygen-and-synthetic-video",
@@ -4190,7 +5294,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 276,
     "txt": "heygen and synthetic video: ai avatars for training and comms ai tools karan trehan",
-    "thumb": "/blog/48-t.webp"
+    "thumb": {
+      "src": "/blog/heygen-and-synthetic-video-1.webp",
+      "width": 636,
+      "height": 641
+    }
   },
   {
     "slug": "open-or-closed-framework-for-choosing-foundation-models",
@@ -4205,7 +5313,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 277,
     "txt": "open or closed: a practitioner's framework for choosing foundation models in the enterprise ai models karan trehan",
-    "thumb": "/blog/47-t.webp"
+    "thumb": {
+      "src": "/blog/open-or-closed-framework-for-choosing-foundation-models-1.webp",
+      "width": 621,
+      "height": 617
+    }
   },
   {
     "slug": "defending-agents-against-prompt-injection",
@@ -4220,7 +5332,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 278,
     "txt": "defending agents against prompt injection: an architecture problem agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/defending-agents-against-prompt-injection-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "model-risk-management-for-generative-ai",
@@ -4235,7 +5351,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 279,
     "txt": "model risk management for generative ai: extending sr 11-7 to llms bfsi snehasis panda",
-    "thumb": "/blog/45-t.webp"
+    "thumb": {
+      "src": "/blog/model-risk-management-for-generative-ai-1.webp",
+      "width": 622,
+      "height": 622
+    }
   },
   {
     "slug": "ai-native-vs-ai-first",
@@ -4250,7 +5370,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 280,
     "txt": "ai-native vs ai-first: what the distinction means for your enterprise about es magico shreyas sanghvi",
-    "thumb": "/blog/44-t.webp"
+    "thumb": {
+      "src": "/blog/ai-native-vs-ai-first-1.webp",
+      "width": 692,
+      "height": 687
+    }
   },
   {
     "slug": "ai-symptom-checkers-and-triage-chatbots",
@@ -4265,7 +5389,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 281,
     "txt": "ai symptom checkers and triage chatbots: safe routing under clinical rules healthcare snehasis panda",
-    "thumb": "/blog/43-t.webp"
+    "thumb": {
+      "src": "/blog/ai-symptom-checkers-and-triage-chatbots-1.webp",
+      "width": 461,
+      "height": 465
+    }
   },
   {
     "slug": "llm-cost-optimization",
@@ -4280,7 +5408,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 282,
     "txt": "llm cost optimisation: the levers operators underuse agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/llm-cost-optimization-1.webp",
+      "width": 1024,
+      "height": 1024
+    }
   },
   {
     "slug": "context-windows-explained-for-operators",
@@ -4295,7 +5427,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 283,
     "txt": "context windows, explained for operators: where long context helps and where it quietly fails ai models karan trehan",
-    "thumb": "/blog/41-t.webp"
+    "thumb": {
+      "src": "/blog/context-windows-explained-for-operators-1.webp",
+      "width": 612,
+      "height": 612
+    }
   },
   {
     "slug": "agentforce-examined",
@@ -4310,7 +5446,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 284,
     "txt": "agentforce, examined: what crm-native agents change about customer operations ai tools karan trehan",
-    "thumb": "/blog/40-t.webp"
+    "thumb": {
+      "src": "/blog/agentforce-examined-1.webp",
+      "width": 697,
+      "height": 697
+    }
   },
   {
     "slug": "robo-advisors-and-ai-in-wealth-management",
@@ -4325,7 +5465,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 285,
     "txt": "robo-advisors and ai in wealth management: automating advice within suitability rules bfsi snehasis panda",
-    "thumb": "/blog/39-t.webp"
+    "thumb": {
+      "src": "/blog/robo-advisors-and-ai-in-wealth-management-1.webp",
+      "width": 618,
+      "height": 622
+    }
   },
   {
     "slug": "llmops-in-practice",
@@ -4340,7 +5484,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 286,
     "txt": "llmops in practice: the operational layer between a model and production agentic ai shardul singh",
-    "thumb": "/blog/38-t.webp"
+    "thumb": {
+      "src": "/blog/llmops-in-practice-1.webp",
+      "width": 612,
+      "height": 612
+    }
   },
   {
     "slug": "why-enterprises-choose-es-magico-in-regulated-environments",
@@ -4355,7 +5503,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 287,
     "txt": "why enterprises choose es magico to operate ai in regulated environments about es magico shreyas sanghvi",
-    "thumb": "/blog/37-t.webp"
+    "thumb": {
+      "src": "/blog/why-enterprises-choose-es-magico-in-regulated-environments-1.webp",
+      "width": 687,
+      "height": 687
+    }
   },
   {
     "slug": "ambient-clinical-documentation",
@@ -4370,7 +5522,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 288,
     "txt": "ambient clinical documentation: from conversation to audit-ready note healthcare snehasis panda",
-    "thumb": "/blog/36-t.webp"
+    "thumb": {
+      "src": "/blog/ambient-clinical-documentation-1.webp",
+      "width": 395,
+      "height": 392
+    }
   },
   {
     "slug": "ai-in-insurance-claims-processing",
@@ -4385,7 +5541,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 289,
     "txt": "ai in insurance claims processing: from fnol to settlement, safely bfsi snehasis panda",
-    "thumb": "/blog/35-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-insurance-claims-processing-1.webp",
+      "width": 620,
+      "height": 623
+    }
   },
   {
     "slug": "agent-memory-systems",
@@ -4400,7 +5560,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 290,
     "txt": "agent memory systems: engineering state without losing control agentic ai shardul singh",
-    "thumb": "/blog/34-t.webp"
+    "thumb": {
+      "src": "/blog/agent-memory-systems-1.webp",
+      "width": 612,
+      "height": 617
+    }
   },
   {
     "slug": "computer-use-is-here-but-agentic-readiness-isnt",
@@ -4415,7 +5579,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 291,
     "txt": "computer use is here, but agentic readiness isn't: reading the claude 3.5 sonnet update ai models karan trehan",
-    "thumb": "/blog/33-t.webp"
+    "thumb": {
+      "src": "/blog/computer-use-is-here-but-agentic-readiness-isnt-1.webp",
+      "width": 538,
+      "height": 520
+    }
   },
   {
     "slug": "cursor-in-the-enterprise",
@@ -4430,7 +5598,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 292,
     "txt": "cursor in the enterprise: an ai code editor's real production trade-offs ai tools karan trehan",
-    "thumb": "/blog/32-t.webp"
+    "thumb": {
+      "src": "/blog/cursor-in-the-enterprise-1.webp",
+      "width": 692,
+      "height": 688
+    }
   },
   {
     "slug": "agentic-rag-when-retrieval-becomes-a-decision",
@@ -4445,7 +5617,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 293,
     "txt": "agentic rag: when retrieval becomes a decision agentic ai shardul singh",
-    "thumb": "/blog/31-t.webp"
+    "thumb": {
+      "src": "/blog/agentic-rag-when-retrieval-becomes-a-decision-1.webp",
+      "width": 611,
+      "height": 608
+    }
   },
   {
     "slug": "inside-es-magico",
@@ -4460,7 +5636,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 294,
     "txt": "inside es magico: the operator for ai-native transformation about es magico shreyas sanghvi",
-    "thumb": "/blog/30-t.webp"
+    "thumb": {
+      "src": "/blog/inside-es-magico-1.webp",
+      "width": 617,
+      "height": 517
+    }
   },
   {
     "slug": "ai-for-prior-authorization",
@@ -4475,7 +5655,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 295,
     "txt": "ai for prior authorisation: speeding approvals without wrongful denials healthcare snehasis panda",
-    "thumb": "/blog/29-t.webp"
+    "thumb": {
+      "src": "/blog/ai-for-prior-authorization-1.webp",
+      "width": 656,
+      "height": 645
+    }
   },
   {
     "slug": "aml-transaction-monitoring-with-ai",
@@ -4490,7 +5674,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 296,
     "txt": "aml transaction monitoring with ai: fewer alerts, never a missed filing bfsi snehasis panda",
-    "thumb": "/blog/28-t.webp"
+    "thumb": {
+      "src": "/blog/aml-transaction-monitoring-with-ai-1.webp",
+      "width": 691,
+      "height": 693
+    }
   },
   {
     "slug": "qwen2-5-for-regulated-workloads",
@@ -4505,7 +5693,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 297,
     "txt": "qwen2.5 for regulated workloads: evaluating open weights from alibaba ai models karan trehan",
-    "thumb": "/blog/27-t.webp"
+    "thumb": {
+      "src": "/blog/qwen2-5-for-regulated-workloads-1.webp",
+      "width": 576,
+      "height": 582
+    }
   },
   {
     "slug": "human-in-the-loop-design",
@@ -4520,7 +5712,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 298,
     "txt": "human-in-the-loop design: where to put the human and where not to agentic ai shardul singh",
-    "thumb": "/blog/26-t.webp"
+    "thumb": {
+      "src": "/blog/human-in-the-loop-design-1.webp",
+      "width": 636,
+      "height": 637
+    }
   },
   {
     "slug": "ai-in-kyc-and-customer-onboarding",
@@ -4535,7 +5731,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 299,
     "txt": "ai in kyc and customer onboarding: faster verification without the false rejects bfsi snehasis panda",
-    "thumb": "/blog/25-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-kyc-and-customer-onboarding-1.webp",
+      "width": 499,
+      "height": 530
+    }
   },
   {
     "slug": "why-most-enterprise-ai-stalls-after-the-pilot",
@@ -4550,7 +5750,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 300,
     "txt": "why most enterprise ai stalls after the pilot, and what operators do differently about es magico shreyas sanghvi",
-    "thumb": "/blog/24-t.webp"
+    "thumb": {
+      "src": "/blog/why-most-enterprise-ai-stalls-after-the-pilot-1.webp",
+      "width": 615,
+      "height": 595
+    }
   },
   {
     "slug": "clinical-decision-support-with-ai",
@@ -4565,7 +5769,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 301,
     "txt": "clinical decision support with ai: augmenting diagnosis without overriding judgment healthcare snehasis panda",
-    "thumb": "/blog/23-t.webp"
+    "thumb": {
+      "src": "/blog/clinical-decision-support-with-ai-1.webp",
+      "width": 872,
+      "height": 617
+    }
   },
   {
     "slug": "governing-agentic-ai",
@@ -4580,7 +5788,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 302,
     "txt": "governing agentic ai: oversight as a load-bearing system agentic ai shardul singh",
-    "thumb": "/blog/22-t.webp"
+    "thumb": {
+      "src": "/blog/governing-agentic-ai-1.webp",
+      "width": 622,
+      "height": 622
+    }
   },
   {
     "slug": "notebooklm-and-source-grounded-ai",
@@ -4595,7 +5807,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 303,
     "txt": "notebooklm and source-grounded ai: when constraining the model is the feature ai tools karan trehan",
-    "thumb": "/blog/21-t.webp"
+    "thumb": {
+      "src": "/blog/notebooklm-and-source-grounded-ai-1.webp",
+      "width": 620,
+      "height": 620
+    }
   },
   {
     "slug": "reasoning-models-reach-the-enterprise",
@@ -4610,7 +5826,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 304,
     "txt": "reasoning models reach the enterprise: what o1-preview changes about ai system design ai models karan trehan",
-    "thumb": "/blog/20-t.webp"
+    "thumb": {
+      "src": "/blog/reasoning-models-reach-the-enterprise-1.webp",
+      "width": 615,
+      "height": 580
+    }
   },
   {
     "slug": "ai-credit-scoring-and-underwriting",
@@ -4625,7 +5845,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 305,
     "txt": "ai credit scoring and underwriting: the explainability burden on every decision bfsi snehasis panda",
-    "thumb": "/blog/19-t.webp"
+    "thumb": {
+      "src": "/blog/ai-credit-scoring-and-underwriting-1.webp",
+      "width": 562,
+      "height": 525
+    }
   },
   {
     "slug": "evaluating-ai-agents",
@@ -4640,7 +5864,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 306,
     "txt": "evaluating ai agents: why task success rate is the only metric that matters agentic ai shardul singh",
-    "thumb": "/blog/18-t.webp"
+    "thumb": {
+      "src": "/blog/evaluating-ai-agents-1.webp",
+      "width": 593,
+      "height": 552
+    }
   },
   {
     "slug": "deploying-ai-is-easy-operationalising-it-is-the-work",
@@ -4655,7 +5883,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 307,
     "txt": "deploying ai is easy. operationalising it is the work. about es magico shreyas sanghvi",
-    "thumb": "/blog/17-t.webp"
+    "thumb": {
+      "src": "/blog/deploying-ai-is-easy-operationalising-it-is-the-work-1.webp",
+      "width": 589,
+      "height": 445
+    }
   },
   {
     "slug": "ai-governance-in-healthcare",
@@ -4670,7 +5902,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 308,
     "txt": "ai governance in healthcare: a practical framework for clinical deployment healthcare shreyas sanghvi",
-    "thumb": "/blog/16-t.webp"
+    "thumb": {
+      "src": "/blog/ai-governance-in-healthcare-1.webp",
+      "width": 1045,
+      "height": 768
+    }
   },
   {
     "slug": "llm-tool-calling-in-production",
@@ -4685,7 +5921,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 309,
     "txt": "llm tool calling in production: schema adherence, retries, and recovery agentic ai shardul singh",
-    "thumb": "/blog/15-t.webp"
+    "thumb": {
+      "src": "/blog/llm-tool-calling-in-production-1.webp",
+      "width": 894,
+      "height": 335
+    }
   },
   {
     "slug": "perplexity-as-an-enterprise-answer-engine",
@@ -4700,7 +5940,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 310,
     "txt": "perplexity as an enterprise answer engine: citations, trust, and data exposure ai tools karan trehan",
-    "thumb": "/blog/14-t.webp"
+    "thumb": {
+      "src": "/blog/perplexity-as-an-enterprise-answer-engine-1.webp",
+      "width": 631,
+      "height": 628
+    }
   },
   {
     "slug": "ai-governance-in-financial-services",
@@ -4715,7 +5959,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 311,
     "txt": "ai governance in financial services: a practical framework for banks bfsi snehasis panda",
-    "thumb": "/blog/13-t.webp"
+    "thumb": {
+      "src": "/blog/ai-governance-in-financial-services-1.webp",
+      "width": 563,
+      "height": 496
+    }
   },
   {
     "slug": "llama-3-1-405b-and-the-case-for-open-weight-models",
@@ -4730,7 +5978,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 312,
     "txt": "llama 3.1 405b and the case for open-weight models in regulated deployments ai models karan trehan",
-    "thumb": "/blog/12-t.webp"
+    "thumb": {
+      "src": "/blog/llama-3-1-405b-and-the-case-for-open-weight-models-1.webp",
+      "width": 586,
+      "height": 329
+    }
   },
   {
     "slug": "agent-orchestration-patterns",
@@ -4745,7 +5997,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 313,
     "txt": "agent orchestration patterns: sequential, parallel, and when to use each agentic ai shardul singh",
-    "thumb": "/blog/11-t.webp"
+    "thumb": {
+      "src": "/blog/agent-orchestration-patterns-1.webp",
+      "width": 605,
+      "height": 563
+    }
   },
   {
     "slug": "consultant-integrator-or-operator",
@@ -4760,7 +6016,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 314,
     "txt": "consultant, integrator, or operator: who actually owns your ai in production about es magico shreyas sanghvi",
-    "thumb": "/blog/10-t.webp"
+    "thumb": {
+      "src": "/blog/consultant-integrator-or-operator-1.webp",
+      "width": 891,
+      "height": 502
+    }
   },
   {
     "slug": "ai-in-medical-imaging",
@@ -4775,7 +6035,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 315,
     "txt": "ai in medical imaging: where diagnostic support helps and where radiologists stay in the loop healthcare snehasis panda",
-    "thumb": "/blog/9-t.webp"
+    "thumb": {
+      "src": "/blog/ai-in-medical-imaging-1.webp",
+      "width": 977,
+      "height": 428
+    }
   },
   {
     "slug": "ai-chatbots-in-banking",
@@ -4790,7 +6054,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 316,
     "txt": "ai chatbots in banking: what separates a production assistant from a demo bfsi snehasis panda",
-    "thumb": "/blog/8-t.webp"
+    "thumb": {
+      "src": "/blog/ai-chatbots-in-banking-1.webp",
+      "width": 619,
+      "height": 589
+    }
   },
   {
     "slug": "why-ai-agents-fail-in-production",
@@ -4805,7 +6073,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 317,
     "txt": "why ai agents fail in production: the failure modes nobody demos agentic ai shardul singh",
-    "thumb": "/blog/7-t.webp"
+    "thumb": {
+      "src": "/blog/why-ai-agents-fail-in-production-1.webp",
+      "width": 1199,
+      "height": 410
+    }
   },
   {
     "slug": "gamma-for-deck-generation-at-scale",
@@ -4820,7 +6092,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 318,
     "txt": "gamma for deck generation at scale: where ai presentations earn their place ai tools karan trehan",
-    "thumb": "/blog/6-t.webp"
+    "thumb": {
+      "src": "/blog/gamma-for-deck-generation-at-scale-1.webp",
+      "width": 625,
+      "height": 625
+    }
   },
   {
     "slug": "gpt-4o-in-production",
@@ -4835,7 +6111,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 319,
     "txt": "gpt-4o in production: multimodal workflows without the glue code ai models karan trehan",
-    "thumb": "/blog/5-t.webp"
+    "thumb": {
+      "src": "/blog/gpt-4o-in-production-1.webp",
+      "width": 593,
+      "height": 472
+    }
   },
   {
     "slug": "what-is-an-ai-operator",
@@ -4850,7 +6130,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 320,
     "txt": "what is an ai operator? the category built for the work after the demo about es magico shreyas sanghvi",
-    "thumb": "/blog/4-t.webp"
+    "thumb": {
+      "src": "/blog/what-is-an-ai-operator-1.webp",
+      "width": 750,
+      "height": 748
+    }
   },
   {
     "slug": "ai-medical-scribes",
@@ -4865,7 +6149,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 321,
     "txt": "ai medical scribes: cutting clinician documentation burden without adding risk healthcare snehasis panda",
-    "thumb": "/blog/3-t.webp"
+    "thumb": {
+      "src": "/blog/ai-medical-scribes-1.webp",
+      "width": 545,
+      "height": 271
+    }
   },
   {
     "slug": "ai-fraud-detection-in-banking",
@@ -4880,7 +6168,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 322,
     "txt": "ai fraud detection in banking: scoring inside the authorization window bfsi snehasis panda",
-    "thumb": "/blog/2-t.webp"
+    "thumb": {
+      "src": "/blog/ai-fraud-detection-in-banking-1.webp",
+      "width": 526,
+      "height": 512
+    }
   },
   {
     "slug": "ai-agent-architecture-in-production",
@@ -4895,7 +6187,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": 323,
     "txt": "ai agent architecture in production: patterns that survive real workloads agentic ai shardul singh",
-    "thumb": "/blog/1-t.webp"
+    "thumb": {
+      "src": "/blog/ai-agent-architecture-in-production-1.webp",
+      "width": 593,
+      "height": 582
+    }
   }
 ];
 

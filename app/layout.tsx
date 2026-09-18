@@ -3,6 +3,7 @@ import { Inter, Schibsted_Grotesk } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SiteEffects } from "@/components/SiteEffects";
+import { preload } from "react-dom";
 import { SITE_URL, TITLE_SUFFIX } from "@/lib/seo";
 import "./globals.css";
 
@@ -35,6 +36,10 @@ export const metadata: Metadata = {
 const themeBoot = `try{if(localStorage.getItem('esm-theme')!=='dark')document.documentElement.setAttribute('data-theme','light')}catch(e){document.documentElement.setAttribute('data-theme','light')}`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  /* The hero backdrop is the largest element on every template and is painted from CSS,
+     so it cannot carry `priority`; a preload does the same job. Light is the default
+     theme, so that variant is preloaded; the dark one loads on demand. */
+  preload("/img/img-hero-light.webp", { as: "image", fetchPriority: "high" });
   return (
     <html
       lang="en"

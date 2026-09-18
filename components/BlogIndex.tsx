@@ -1,27 +1,23 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { blogCards, blogFilters } from "@/data/blog-index";
-import type { BlogCard } from "@/data/types";
+import type { BlogCard, ImageSource } from "@/data/types";
 import { Arrow } from "./Arrow";
 import { Byline } from "./Byline";
 import { FilterSelect } from "./FilterSelect";
 
 const STEP = 12;
 
-function Thumb({ src, className }: { src: string | null; className: string }) {
+/* Card artwork sits next to the visible title, so it is decorative here: alt="".
+   The box is sized by the card (h-176 / min-h-240) and .thumb covers it. */
+function Thumb({ src, className, sizes }: { src: ImageSource | null; className: string; sizes: string }) {
   return (
     <div className={className}>
       {src ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          className="thumb"
-          src={src}
-          alt=""
-          loading="lazy"
-          decoding="async"
-        />
+        <Image className="thumb" src={src.src} width={src.width} height={src.height} alt="" sizes={sizes} loading="lazy" />
       ) : (
         <span className="thumb thumb-none">
           <span>Image to come</span>
@@ -37,10 +33,7 @@ function Featured({ card }: { card: BlogCard }) {
       className="bl-feat card group grid cursor-pointer overflow-hidden md:grid-cols-2 rv"
       href={`/blog/${card.slug}/`}
     >
-      <Thumb
-        src={card.thumb}
-        className="relative min-h-[240px] overflow-hidden"
-      />
+      <Thumb src={card.thumb} className="relative min-h-[240px] overflow-hidden" sizes="(min-width: 768px) 50vw, 100vw" />
       <div className="flex flex-col justify-center p-7 lg:p-9">
         <div className="flex items-center gap-3">
           <span className="bl-tag">{card.tag}</span>
@@ -71,7 +64,7 @@ function Card({ card, index }: { card: BlogCard; index: number }) {
       data-d={(index % 3) * 60}
       href={`/blog/${card.slug}/`}
     >
-      <Thumb src={card.thumb} className="relative h-[176px] overflow-hidden" />
+      <Thumb src={card.thumb} className="relative h-[176px] overflow-hidden" sizes="(min-width: 768px) 33vw, 100vw" />
       <div className="flex flex-1 flex-col p-5">
         <div className="flex items-center gap-3">
           <span className="bl-tag">{card.tag}</span>

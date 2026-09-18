@@ -17,7 +17,9 @@ export const reports: Report[] = [
       "US Community Banking",
       "FDIC-sourced"
     ],
-    "name": "Building the Evidence Trail"
+    "name": "Building the Evidence Trail",
+    "width": 620,
+    "height": 792
   },
   {
     "id": "rp-spend-without-saving",
@@ -34,7 +36,9 @@ export const reports: Report[] = [
       "US Community Banking",
       "Efficiency ratio"
     ],
-    "name": "Spend Without the Saving"
+    "name": "Spend Without the Saving",
+    "width": 620,
+    "height": 753
   },
   {
     "id": "rp-line-fda-drew",
@@ -51,7 +55,9 @@ export const reports: Report[] = [
       "Pharmacovigilance",
       "FDA guidance"
     ],
-    "name": "The Line the FDA Drew"
+    "name": "The Line the FDA Drew",
+    "width": 620,
+    "height": 786
   },
   {
     "id": "rp-first-clinical-test",
@@ -68,7 +74,9 @@ export const reports: Report[] = [
       "AI Drug Discovery",
       "Clinical evidence"
     ],
-    "name": "The First Clinical Test"
+    "name": "The First Clinical Test",
+    "width": 620,
+    "height": 757
   }
 ];
 

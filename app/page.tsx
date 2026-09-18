@@ -1,6 +1,7 @@
 import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Waveform } from "@/components/Waveform";
+import Image from "next/image";
 export const metadata = pageMetadata({
   title: "Es Magico - The Operator for AI-native Transformation",
   absoluteTitle: true,
@@ -233,7 +234,7 @@ export default function HomePage() {
                   </Link>
                 </div>
                 <div className="ca-shot">
-                  <img src="/img/c10ede5058.webp" alt="" loading="lazy" decoding="async" />
+                  <Image src="/img/c10ede5058.webp" width={800} height={534} alt="" loading="lazy" />
                 </div>
               </div>
             </details>
@@ -280,7 +281,7 @@ export default function HomePage() {
                   </Link>
                 </div>
                 <div className="ca-shot">
-                  <img src="/img/68766e3b91.webp" alt="" loading="lazy" decoding="async" />
+                  <Image src="/img/68766e3b91.webp" width={800} height={534} alt="" loading="lazy" />
                 </div>
               </div>
             </details>
@@ -327,7 +328,7 @@ export default function HomePage() {
                   </Link>
                 </div>
                 <div className="ca-shot">
-                  <img src="/img/116e0c0bba.webp" alt="" loading="lazy" decoding="async" />
+                  <Image src="/img/116e0c0bba.webp" width={800} height={534} alt="" loading="lazy" />
                 </div>
               </div>
             </details>
@@ -376,7 +377,7 @@ export default function HomePage() {
                   </Link>
                 </div>
                 <div className="ca-shot">
-                  <img src="/img/1b4eaeebf1.webp" alt="" loading="lazy" decoding="async" />
+                  <Image src="/img/1b4eaeebf1.webp" width={800} height={534} alt="" loading="lazy" />
                 </div>
               </div>
             </details>

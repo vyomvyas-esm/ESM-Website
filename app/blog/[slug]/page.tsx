@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Arrow } from "@/components/Arrow";
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     description: firstSentences(post.lede),
     path: `/blog/${post.slug}/`,
     type: "article",
-    image: card?.thumb ?? undefined,
+    image: card?.thumb?.src,
     article: {
       publishedTime: published,
       // no modified date exists in the source; see docs/seo-open-items.md
@@ -92,8 +93,26 @@ export default async function BlogPostPage({ params }: Params) {
               </aside>
             )}
             <div className="ar-body">
-              {/* article bodies are authored HTML carried over from the original site */}
-              <div className="prose rv" dangerouslySetInnerHTML={{ __html: post.html }} />
+              {/* article bodies are authored HTML carried over from the original site;
+                  figures are lifted out so the artwork renders through next/image */}
+              <div className="prose rv">
+                {post.body.map((block, i) =>
+                  "html" in block ? (
+                    <div key={i} dangerouslySetInnerHTML={{ __html: block.html }} />
+                  ) : (
+                    <figure key={i} className="art">
+                      <Image
+                        src={post.images[block.image].src}
+                        width={post.images[block.image].width}
+                        height={post.images[block.image].height}
+                        alt={post.images[block.image].alt}
+                        sizes="(min-width: 1024px) 700px, 100vw"
+                        loading="lazy"
+                      />
+                    </figure>
+                  ),
+                )}
+              </div>
               <div className="mt-12 rv">
                 <Link className="btn btn-ghost group" href="/blog/">
                   All blogs

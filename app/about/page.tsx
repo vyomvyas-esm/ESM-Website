@@ -1,5 +1,6 @@
 import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
+import Image from "next/image";
 export const metadata = pageMetadata({
   title: "About Us",
   description:
@@ -302,7 +303,14 @@ export default function WhoWeArePage() {
           </p>
           <div className="ppl-grid mt-[46px]">
             <article className="ppl-card rv" data-d="0">
-              <img className="ppl-photo" src="/img/av-shreyas.webp" alt="Shreyas Sanghvi" loading="lazy" />
+              <Image
+                src="/img/av-shreyas.webp"
+                width={383}
+                height={383}
+                alt="Shreyas Sanghvi"
+                className="ppl-photo"
+                loading="lazy"
+              />
               <h3 className="ppl-name">Shreyas Sanghvi</h3>
               <p className="ppl-role">Co-founder &amp; CEO</p>
               <div className="ppl-creds">
@@ -375,7 +383,14 @@ export default function WhoWeArePage() {
               </div>
             </article>
             <article className="ppl-card rv" data-d="70">
-              <img className="ppl-photo" src="/img/av-shardul.webp" alt="Shardul Singh" loading="lazy" />
+              <Image
+                src="/img/av-shardul.webp"
+                width={380}
+                height={380}
+                alt="Shardul Singh"
+                className="ppl-photo"
+                loading="lazy"
+              />
               <h3 className="ppl-name">Shardul Singh</h3>
               <p className="ppl-role">Co-founder &amp; CTO</p>
               <div className="ppl-creds">
@@ -448,7 +463,14 @@ export default function WhoWeArePage() {
               </div>
             </article>
             <article className="ppl-card rv" data-d="140">
-              <img className="ppl-photo" src="/img/be3cf7096b.webp" alt="Karan Trehan" loading="lazy" />
+              <Image
+                src="/img/be3cf7096b.webp"
+                width={381}
+                height={381}
+                alt="Karan Trehan"
+                className="ppl-photo"
+                loading="lazy"
+              />
               <h3 className="ppl-name">Karan Trehan</h3>
               <p className="ppl-role">VP, Technology</p>
               <div className="ppl-creds">
@@ -521,7 +543,14 @@ export default function WhoWeArePage() {
               </div>
             </article>
             <article className="ppl-card rv" data-d="210">
-              <img className="ppl-photo" src="/img/av-snehasis.webp" alt="Snehasis Panda" loading="lazy" />
+              <Image
+                src="/img/av-snehasis.webp"
+                width={381}
+                height={381}
+                alt="Snehasis Panda"
+                className="ppl-photo"
+                loading="lazy"
+              />
               <h3 className="ppl-name">Snehasis Panda</h3>
               <p className="ppl-role">Chief Business Officer</p>
               <div className="ppl-creds">

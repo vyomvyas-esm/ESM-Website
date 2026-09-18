@@ -1,5 +1,5 @@
 /*
- * SEO verification, run after `next build`:
+ * SEO verification, executed after `next build`:
  *
  *   node tools/seo-check.mjs            # page assertions over .next/server/app/** /*.html
  *   node tools/seo-check.mjs --brand    # brand-rule grep over the diff against main (added lines)
@@ -97,29 +97,37 @@ function checkPages() {
   console.log(`og:type article: ${articles}, website: ${all.filter((p) => p.ogType === "website").length}`);
 }
 
-/* Brand rules over the diff. Files that quote existing content verbatim are skipped:
-   blog bodies and titles (data/blog-*.ts) and the two review documents that list current
-   titles for a human. Everything else, including every page, component, lib and doc
-   we write, must be clean. */
-const SKIP = [/^data\/blog-posts\.ts$/, /^data\/blog-index\.ts$/, /^docs\/seo-url-map\.md$/, /^docs\/seo-title-review\.md$/];
+/* Brand rules over the diff against main, including untracked files. Skipped, because
+   they quote existing content verbatim: the extracted content data (data/*.ts; the alt
+   text generated into it is checked separately below), the slug map (prototype slugs), the alt overrides (article headings)
+   and the review documents that list current titles for a human. In every other file,
+   added lines are checked with code spans removed (a quoted path is not prose), and a
+   line may carry `brand-rules: allow` only where it defines the rules themselves. */
+const SKIP = [/^data\//, /^tools\/slugs\.mjs$/, /^tools\/alt-overrides\.mjs$/, /^docs\/seo-url-map\.md$/, /^docs\/seo-title-review\.md$/, /^docs\/seo-alt-text-review\.md$/, /^public\//, /package-lock\.json$/];
 const RULES = [
-  { name: "em/en dash", re: /[–—]/ },
-  { name: "run-word", re: /\b(run|running|runs)\b/i },
-  { name: "build-word", re: /\b(build|built|building)\b/i },
+  { name: "em/en dash", re: /[–—]/ }, // brand-rules: allow
+  { name: "run-word", re: /\b(run|running|runs)\b/i }, // brand-rules: allow
+  { name: "build-word", re: /\b(build|built|building)\b/i }, // brand-rules: allow
 ];
 function checkBrand() {
-  const diff = execSync("git diff main -- . :!package-lock.json", { cwd: ROOT, encoding: "utf8", maxBuffer: 1 << 28 });
+  let diff = execSync("git diff main -- .", { cwd: ROOT, encoding: "utf8", maxBuffer: 1 << 28 });
+  const untracked = execSync("git ls-files --others --exclude-standard", { cwd: ROOT, encoding: "utf8" }).split("\n").filter(Boolean);
+  for (const f of untracked) {
+    if (/\.(webp|png|jpg|svg|avif)$/.test(f)) continue;
+    diff += `\n+++ b/${f}\n` + fs.readFileSync(path.join(ROOT, f), "utf8").split("\n").map((l) => "+" + l).join("\n");
+  }
   let file = "";
   let skip = false;
   let hits = 0;
-  for (const line of diff.split("\n")) {
-    const m = line.match(/^\+\+\+ b\/(.*)$/);
+  for (const raw of diff.split("\n")) {
+    const m = raw.match(/^\+\+\+ b\/(.*)$/);
     if (m) {
       file = m[1];
       skip = SKIP.some((re) => re.test(file));
       continue;
     }
-    if (skip || !line.startsWith("+") || line.startsWith("+++")) continue;
+    if (skip || !raw.startsWith("+") || raw.startsWith("+++") || raw.includes("brand-rules: allow")) continue;
+    const line = raw.replace(/`[^`]*`/g, "");
     for (const r of RULES) {
       if (r.re.test(line)) {
         hits++;
@@ -129,6 +137,12 @@ function checkBrand() {
   }
   console.log(`brand grep: ${hits} hits`);
   if (hits) fail("brand rules violated in the diff");
+
+  // alt text is generated into the (otherwise skipped) blog data, so it is checked on its own
+  const alts = [...fs.readFileSync(path.join(ROOT, "data/blog-posts.ts"), "utf8").matchAll(/"alt": ("(?:[^"\\]|\\.)*")/g)].map((m) => JSON.parse(m[1]));
+  const badAlt = alts.filter((a) => RULES.some((r) => r.re.test(a)) || a.length > 124 || !a.trim());
+  console.log(`alt texts: ${alts.length} checked, ${badAlt.length} violations`);
+  if (badAlt.length) fail(`alt text violations: ${badAlt.slice(0, 5).join(" | ")}`);
 }
 
 if (process.argv.includes("--brand")) checkBrand();
