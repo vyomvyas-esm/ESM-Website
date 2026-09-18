@@ -1,4 +1,8 @@
 import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
+import { graph, faqPage } from "@/lib/jsonld";
+import { faqs } from "@/data/page-schema";
 import Link from "next/link";
 import { Waveform } from "@/components/Waveform";
 import { PyzoPanels } from "@/components/PyzoPanels";
@@ -12,6 +16,7 @@ export const metadata = pageMetadata({
 export default function PyzoPage() {
   return (
     <main className="page" id="page-pyzo">
+      <JsonLd data={graph(faqPage(faqs["pyzo"]))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>
@@ -19,11 +24,7 @@ export default function PyzoPage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[96px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span>
-            <span aria-current="page">PYZO</span>
-          </nav>
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "PYZO" }]} />
           <h1 className="h-hero mt-6 max-w-[15ch] rv" data-d="60">
             Six capabilities. One hardened foundation.
           </h1>

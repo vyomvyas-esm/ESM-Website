@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Arrow } from "@/components/Arrow";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Cta } from "@/components/Cta";
 import { caseStudies } from "@/data/case-studies";
 import { firstSentences, pageMetadata } from "@/lib/seo";
@@ -37,15 +38,9 @@ export default async function CaseStudyPage({ params }: Params) {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[80px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span>
-            <span className="text-white/45">Resources</span>
-            <span className="sep">·</span>
-            <Link href="/case-studies/">Case Studies</Link>
-            <span className="sep">·</span>
-            <span aria-current="page">{cs.client}</span>
-          </nav>
+          <Breadcrumbs
+            items={[{ label: "Home", href: "/" }, { label: "Resources" }, { label: "Case Studies", href: "/case-studies/" }, { label: cs.client }]}
+          />
           <div className="cs-mark-wrap rv" data-d="30">
             <span className={`clogo cs-mark ${cs.logo}`} role="img" aria-label={cs.client}></span>
           </div>

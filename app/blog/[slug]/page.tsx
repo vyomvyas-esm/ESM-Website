@@ -3,11 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Arrow } from "@/components/Arrow";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
 import { Byline } from "@/components/Byline";
 import { Cta } from "@/components/Cta";
 import { blogCards } from "@/data/blog-index";
 import { blogPosts } from "@/data/blog-posts";
-import { firstSentences, isoDate, pageMetadata } from "@/lib/seo";
+import { blogPosting, graph } from "@/lib/jsonld";
+import { firstSentences, isoDateTime, pageMetadata } from "@/lib/seo";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -21,7 +24,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const post = bySlug((await params).slug);
   if (!post) return {};
   const card = blogCards.find((c) => c.slug === post.slug);
-  const published = isoDate(post.date);
+  const published = isoDateTime(post.date);
   return pageMetadata({
     title: post.title,
     description: firstSentences(post.lede),
@@ -45,6 +48,7 @@ export default async function BlogPostPage({ params }: Params) {
 
   return (
     <main className="page">
+      <JsonLd data={graph(blogPosting(post, firstSentences(post.lede)))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>
@@ -52,13 +56,7 @@ export default async function BlogPostPage({ params }: Params) {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[70px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span>
-            <span className="text-white/45">Resources</span>
-            <span className="sep">·</span>
-            <Link href="/blog/">Blog</Link>
-          </nav>
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Resources" }, { label: "Blog", href: "/blog/" }]} />
           <h1
             className="mt-6 max-w-[22ch] font-display text-[clamp(1.75rem,3.2vw,2.8rem)] font-normal leading-[1.18] tracking-[-.025em] rv"
             data-d="60"

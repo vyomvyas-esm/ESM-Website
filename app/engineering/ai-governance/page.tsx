@@ -1,4 +1,8 @@
 import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
+import { graph, service } from "@/lib/jsonld";
+import { services } from "@/data/page-schema";
 import Link from "next/link";
 export const metadata = pageMetadata({
   title: "AI Governance",
@@ -9,6 +13,7 @@ export const metadata = pageMetadata({
 export default function SvcGovernancePage() {
   return (
     <main className="page" id="page-svc-governance">
+      <JsonLd data={graph(service(services["svc-governance"]))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>
@@ -16,12 +21,9 @@ export default function SvcGovernancePage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[86px] pb-[132px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span> <span className="text-white/45">Engineering</span>
-            <span className="sep">·</span>
-            <span aria-current="page">AI Governance</span>
-          </nav>
+          <Breadcrumbs
+            items={[{ label: "Home", href: "/" }, { label: "Engineering" }, { label: "AI Governance" }]}
+          />
           <h1 className="h-hero mt-6 max-w-[15ch] rv" data-d="60">
             Governance a regulator will accept.
           </h1>

@@ -5,6 +5,8 @@ import { Footer } from "@/components/Footer";
 import { SiteEffects } from "@/components/SiteEffects";
 import { preload } from "react-dom";
 import { SITE_URL, TITLE_SUFFIX } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { graph, organization, webSite } from "@/lib/jsonld";
 import "./globals.css";
 
 const inter = Inter({
@@ -51,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: themeBoot }} />
       </head>
       <body className="font-body antialiased">
+        <JsonLd data={graph(organization(), webSite())} />
         <Header />
         {children}
         <Footer />

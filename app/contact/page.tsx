@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
 import { ProofBlock } from "@/components/ProofBlock";
@@ -17,11 +18,7 @@ export default function ContactPage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[46px] pb-[76px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span>
-            <span aria-current="page">Define an Outcome</span>
-          </nav>
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Define an Outcome" }]} />
           <div className="mt-8 grid items-stretch gap-10 lg:grid-cols-2 lg:gap-16">
             <div className="flex flex-col rv">
               <h1 className="font-display text-[clamp(1.75rem,3.1vw,2.5rem)] font-normal leading-[1.15] tracking-[-.025em] max-w-[16ch]">

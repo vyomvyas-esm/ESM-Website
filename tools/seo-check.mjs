@@ -43,6 +43,14 @@ function pages() {
       robots: pick(/<meta name="robots" content="([^"]*)"/),
       h1s: (html.match(/<h1[\s>]/g) || []).length,
       ogType: pick(/<meta property="og:type" content="([^"]*)"/),
+      jsonld: [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)].flatMap((m) => JSON.parse(m[1])["@graph"]),
+      crumb: (() => {
+        const nav = html.match(/<nav class="crumb[^"]*" aria-label="Breadcrumb">(.*?)<\/nav>/);
+        if (!nav) return null;
+        return [...nav[1].matchAll(/<a[^>]*href="([^"]*)"[^>]*>([^<]*)<\/a>|<span aria-current="page">([^<]*)<\/span>|<span class="text-white\/45">([^<]*)<\/span>/g)].map((m) =>
+          m[1] ? { label: m[2], href: m[1] } : { label: m[3] ?? m[4] },
+        );
+      })(),
     };
   });
 }
@@ -90,6 +98,34 @@ function checkPages() {
   const h1 = all.filter((p) => p.h1s !== 1);
   console.log(`pages with exactly one <h1>: ${all.length - h1.length}`);
   if (h1.length) fail(`h1 count != 1: ${h1.map((p) => `${p.route} (${p.h1s})`).join(", ")}`);
+
+  /* structured data: every page carries Organization + WebSite; every page below home a
+     BreadcrumbList whose linked items and last item are the visible crumb's; the
+     templates carry their own type. */
+  const decode = (t) => t.replace(/&amp;/g, "&").replace(/&#x27;/g, "'").replace(/&quot;/g, '"');
+  const ldIssues = [];
+  for (const p of all) {
+    const types = p.jsonld.map((n) => n["@type"]);
+    if (!types.includes("Organization") || !types.includes("WebSite")) ldIssues.push(`${p.route}: no Organization/WebSite`);
+    if (p.route !== "/") {
+      const bl = p.jsonld.find((n) => n["@type"] === "BreadcrumbList");
+      if (!bl || !p.crumb) ldIssues.push(`${p.route}: missing BreadcrumbList or visible crumb`);
+      else {
+        const expect = p.crumb.filter((c, i) => c.href || i === p.crumb.length - 1).map((c) => ({ name: decode(c.label), item: c.href ? `https://esmagico.com${c.href}` : undefined }));
+        const got = bl.itemListElement.map((i) => ({ name: i.name, item: i.item }));
+        if (JSON.stringify(expect) !== JSON.stringify(got)) ldIssues.push(`${p.route}: breadcrumb schema differs from visible crumb`);
+      }
+    }
+    if (p.route.startsWith("/blog/") && p.route !== "/blog/" && !types.includes("BlogPosting")) ldIssues.push(`${p.route}: no BlogPosting`);
+    if (/^\/(pyzo|industries)\/(bfsi|healthcare|public-sector|retail)?\/?$/.test(p.route) && p.route !== "/pyzo/" && p.route.startsWith("/industries") && !types.includes("FAQPage")) ldIssues.push(`${p.route}: no FAQPage`);
+    if (p.route === "/pyzo/" && !types.includes("FAQPage")) ldIssues.push(`${p.route}: no FAQPage`);
+    if ((/^\/pyzo\/[a-z]+\/$/.test(p.route) || p.route.startsWith("/engineering/")) && !types.includes("Service")) ldIssues.push(`${p.route}: no Service`);
+  }
+  const counts = {};
+  for (const p of all) for (const n of p.jsonld) counts[n["@type"]] = (counts[n["@type"]] || 0) + 1;
+  console.log(`json-ld nodes: ${Object.entries(counts).map(([k, v]) => `${k} ${v}`).join(", ")}`);
+  console.log(`json-ld issues: ${ldIssues.length}`);
+  if (ldIssues.length) fail(ldIssues.slice(0, 8).join("; "));
 
   const noindex = all.filter((p) => p.robots && /noindex/.test(p.robots)).map((p) => p.route);
   console.log(`noindex: ${noindex.join(", ") || "none"}`);

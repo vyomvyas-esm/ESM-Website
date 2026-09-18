@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import Link from "next/link";
 export const metadata = pageMetadata({
   title: "Technology",
@@ -16,13 +17,9 @@ export default function StackPage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[88px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span>
-            <span className="text-white/45">Company</span>
-            <span className="sep">·</span>
-            <span aria-current="page">Technology</span>
-          </nav>
+          <Breadcrumbs
+            items={[{ label: "Home", href: "/" }, { label: "Company" }, { label: "Technology" }]}
+          />
           <h1 className="h-hero mt-6 max-w-[15ch] rv" data-d="60">
             The stack we operate on.
           </h1>

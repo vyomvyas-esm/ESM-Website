@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import Link from "next/link";
 import { CaseStudiesIndex } from "@/components/CaseStudiesIndex";
 import { ProofBlock } from "@/components/ProofBlock";
@@ -18,13 +19,9 @@ export default function CaseStudiesPage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[88px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span>
-            <span className="text-white/45">Resources</span>
-            <span className="sep">·</span>
-            <span aria-current="page">Case Studies</span>
-          </nav>
+          <Breadcrumbs
+            items={[{ label: "Home", href: "/" }, { label: "Resources" }, { label: "Case Studies" }]}
+          />
           <h1 className="h-hero mt-6 max-w-[18ch] rv" data-d="60">
             Proof in Production.
           </h1>

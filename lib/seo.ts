@@ -14,6 +14,10 @@ export function isoDate(display: string): string {
   if (!m || month === null || month < 0) throw new Error(`unparseable date: ${display}`);
   return `${m[3]}-${String(month + 1).padStart(2, "0")}-${m[1].padStart(2, "0")}`;
 }
+/* The source records dates only. Google's validator wants a time and zone on article
+   dates, so they are given as midnight India Standard Time, where the offices are
+   (see docs/seo-open-items.md). */
+export const isoDateTime = (display: string) => `${isoDate(display)}T00:00:00+05:30`;
 const MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
 
 /**

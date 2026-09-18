@@ -1,4 +1,8 @@
 import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
+import { graph, service } from "@/lib/jsonld";
+import { services } from "@/data/page-schema";
 import Link from "next/link";
 export const metadata = pageMetadata({
   title: "Prism, Evaluation Consultant - PYZO",
@@ -9,6 +13,7 @@ export const metadata = pageMetadata({
 export default function PyzoPrismPage() {
   return (
     <main className="page" id="page-pyzo-prism">
+      <JsonLd data={graph(service(services["pyzo-prism"]))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>
@@ -18,11 +23,9 @@ export default function PyzoPrismPage() {
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[92px]">
           <div className="grid items-center gap-12 lg:grid-cols-[1fr_360px]">
             <div>
-              <nav className="crumb rv" aria-label="Breadcrumb">
-                <Link href="/">Home</Link>
-                <span className="sep">·</span> <Link href="/pyzo/">PYZO</Link>
-                <span className="sep">·</span> <span aria-current="page">Prism</span>
-              </nav>
+              <Breadcrumbs
+                items={[{ label: "Home", href: "/" }, { label: "PYZO", href: "/pyzo/" }, { label: "Prism" }]}
+              />
               <span
                 className="pzlogo pz-hero-logo pzlogo-prism rv"
                 data-d="30"

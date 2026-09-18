@@ -1,4 +1,8 @@
 import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
+import { graph, faqPage } from "@/lib/jsonld";
+import { faqs } from "@/data/page-schema";
 import Link from "next/link";
 export const metadata = pageMetadata({
   title: "Public Sector & Governance",
@@ -8,6 +12,7 @@ export const metadata = pageMetadata({
 export default function IndPublicPage() {
   return (
     <main className="page" id="page-ind-public">
+      <JsonLd data={graph(faqPage(faqs["ind-public"]))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>
@@ -15,12 +20,13 @@ export default function IndPublicPage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[92px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span> <span className="text-white/45">Industries</span>
-            <span className="sep">·</span>
-            <span aria-current="page">Public Sector &amp; Governance</span>
-          </nav>
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Industries" },
+              { label: "Public Sector & Governance" },
+            ]}
+          />
           <h1 className="h-hero mt-6 max-w-[16ch] rv" data-d="60">
             Auditable by design, fair by default.
           </h1>

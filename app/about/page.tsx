@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import Link from "next/link";
 import Image from "next/image";
 export const metadata = pageMetadata({
@@ -17,11 +18,7 @@ export default function WhoWeArePage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[88px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span>
-            <span aria-current="page">About Us</span>
-          </nav>
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "About Us" }]} />
           <h1 className="h-hero mt-6 max-w-[14ch] rv" data-d="60">
             The operator in the room.
           </h1>
