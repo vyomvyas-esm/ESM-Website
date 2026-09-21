@@ -461,7 +461,7 @@ export default function WhoWeArePage() {
             </article>
             <article className="ppl-card rv" data-d="140">
               <Image
-                src="/img/be3cf7096b.webp"
+                src="/img/photo-karan-trehan.webp"
                 width={381}
                 height={381}
                 alt="Karan Trehan"

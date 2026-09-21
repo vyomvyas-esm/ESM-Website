@@ -1585,7 +1585,7 @@ h1,h2,h3,h4,h5,.font-display{
      -moz-appearance:none;
           appearance:none;
   cursor:pointer;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none'><path d='M2.5 4.5 6 8l3.5-3.5' stroke='%238B9A9A' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-image:url("/img/chevron-select.svg");
   background-repeat:no-repeat;
   background-position:right .9rem center
 }
@@ -1967,7 +1967,7 @@ html:not(.can-hover)
   font-family:inherit;
   font-size:.8125rem;
   padding:.28rem 1.5rem .28rem .2rem;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none'><path d='M2.5 4.5 6 8l3.5-3.5' stroke='%238B9A9A' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-image:url("/img/chevron-select.svg");
   background-repeat:no-repeat;
   background-position:right .3rem center
 }

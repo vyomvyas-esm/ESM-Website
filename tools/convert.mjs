@@ -54,13 +54,23 @@ const MIME_EXT = {
   "image/gif": "gif",
   "image/avif": "avif",
 };
+/* Descriptive file names for assets the prototype embedded without a name (SEO brief,
+   Phase 5): keyed by the first ten characters of the content hash, so a changed image
+   simply surfaces as a new hash to be named. */
+const NAMED_ASSETS = {
+  c10ede5058: "proof-rbi-innovation-hub",
+  "68766e3b91": "proof-indusind-bank",
+  "116e0c0bba": "proof-tata-neu",
+  "1b4eaeebf1": "proof-indian-school-of-business",
+  be3cf7096b: "photo-karan-trehan",
+};
 const seenAssets = new Map(); // sha1 -> public path
 function saveAsset(mime, b64, hint) {
   const buf = Buffer.from(b64, "base64");
   const sha = crypto.createHash("sha1").update(buf).digest("hex");
   if (seenAssets.has(sha)) return seenAssets.get(sha);
   const ext = MIME_EXT[mime] || "bin";
-  const name = `${hint || sha.slice(0, 10)}.${ext}`;
+  const name = `${hint || NAMED_ASSETS[sha.slice(0, 10)] || sha.slice(0, 10)}.${ext}`;
   write(`public/img/${name}`, buf);
   const pub = `/img/${name}`;
   seenAssets.set(sha, pub);
@@ -78,12 +88,23 @@ site = site.replace(
   /url\("data:([^;"]+);base64,([^"]+)"\)/g,
   (_, mime, b64) => `url("${saveAsset(mime, b64)}")`,
 );
+// the inline SVG chevrons (select controls) become one file; the data URI's %-escapes are decoded
+const svgFiles = new Map();
+site = site.replace(/url\("data:image\/svg\+xml;utf8,([^"]*)"\)/g, (_, raw) => {
+  const svg = decodeURIComponent(raw);
+  if (!svgFiles.has(svg)) {
+    const name = `chevron-select${svgFiles.size ? `-${svgFiles.size + 1}` : ""}.svg`;
+    write(`public/img/${name}`, svg + "\n");
+    svgFiles.set(svg, name);
+  }
+  return `url("/img/${svgFiles.get(svg)}")`;
+});
 // the SPA page switch is now routing
 site = site.replace(/\.page\{\s*display:none\s*\}\s*/, "").replace(/\.page\.is-active\{\s*display:block\s*\}\s*/, "");
 // fonts are self-hosted through next/font and exposed as variables
 site = site.replaceAll("Inter,system-ui,sans-serif", "var(--font-inter),system-ui,sans-serif");
 site = site.replaceAll('"Schibsted Grotesk",system-ui,sans-serif', "var(--font-schibsted),system-ui,sans-serif");
-if (/base64/.test(site)) throw new Error("base64 left in css");
+if (/data:image/.test(site)) throw new Error("data URI left in css");
 write(
   "styles/site.css",
   `/* The site's own design layer, carried over from the original build.\n   Tokens live on :root; Tailwind utilities are layered underneath in globals.css. */\n\n${site.trim()}\n`,
