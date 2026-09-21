@@ -1,8 +1,13 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import Link from "next/link";
-export const metadata: Metadata = {
-  title: "About Us - Es Magico",
-};
+import Image from "next/image";
+export const metadata = pageMetadata({
+  title: "About Us",
+  description:
+    "We’re AI-native operators who engineer, deploy, and continuously improve production AI systems inside regulated enterprises.",
+  path: "/about/",
+});
 export default function WhoWeArePage() {
   return (
     <main className="page" id="page-who-we-are">
@@ -13,11 +18,7 @@ export default function WhoWeArePage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[88px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span>
-            <span aria-current="page">About Us</span>
-          </nav>
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "About Us" }]} />
           <h1 className="h-hero mt-6 max-w-[14ch] rv" data-d="60">
             The operator in the room.
           </h1>
@@ -26,7 +27,7 @@ export default function WhoWeArePage() {
             inside regulated enterprises.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/contact">
+            <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -299,7 +300,14 @@ export default function WhoWeArePage() {
           </p>
           <div className="ppl-grid mt-[46px]">
             <article className="ppl-card rv" data-d="0">
-              <img className="ppl-photo" src="/img/av-shreyas.webp" alt="Shreyas Sanghvi" loading="lazy" />
+              <Image
+                src="/img/av-shreyas.webp"
+                width={383}
+                height={383}
+                alt="Shreyas Sanghvi"
+                className="ppl-photo"
+                loading="lazy"
+              />
               <h3 className="ppl-name">Shreyas Sanghvi</h3>
               <p className="ppl-role">Co-founder &amp; CEO</p>
               <div className="ppl-creds">
@@ -308,7 +316,7 @@ export default function WhoWeArePage() {
               </div>
               <div className="ppl-links">
                 <Link
-                  href={"/blog?author=Shreyas%20Sanghvi"}
+                  href={"/blog/?author=Shreyas%20Sanghvi"}
                   className="ppl-lnk"
                   title="Shreyas Sanghvi on the blog"
                   aria-label="Shreyas Sanghvi on the blog"
@@ -372,7 +380,14 @@ export default function WhoWeArePage() {
               </div>
             </article>
             <article className="ppl-card rv" data-d="70">
-              <img className="ppl-photo" src="/img/av-shardul.webp" alt="Shardul Singh" loading="lazy" />
+              <Image
+                src="/img/av-shardul.webp"
+                width={380}
+                height={380}
+                alt="Shardul Singh"
+                className="ppl-photo"
+                loading="lazy"
+              />
               <h3 className="ppl-name">Shardul Singh</h3>
               <p className="ppl-role">Co-founder &amp; CTO</p>
               <div className="ppl-creds">
@@ -381,7 +396,7 @@ export default function WhoWeArePage() {
               </div>
               <div className="ppl-links">
                 <Link
-                  href={"/blog?author=Shardul%20Singh"}
+                  href={"/blog/?author=Shardul%20Singh"}
                   className="ppl-lnk"
                   title="Shardul Singh on the blog"
                   aria-label="Shardul Singh on the blog"
@@ -445,7 +460,14 @@ export default function WhoWeArePage() {
               </div>
             </article>
             <article className="ppl-card rv" data-d="140">
-              <img className="ppl-photo" src="/img/be3cf7096b.webp" alt="Karan Trehan" loading="lazy" />
+              <Image
+                src="/img/photo-karan-trehan.webp"
+                width={381}
+                height={381}
+                alt="Karan Trehan"
+                className="ppl-photo"
+                loading="lazy"
+              />
               <h3 className="ppl-name">Karan Trehan</h3>
               <p className="ppl-role">VP, Technology</p>
               <div className="ppl-creds">
@@ -454,7 +476,7 @@ export default function WhoWeArePage() {
               </div>
               <div className="ppl-links">
                 <Link
-                  href={"/blog?author=Karan%20Trehan"}
+                  href={"/blog/?author=Karan%20Trehan"}
                   className="ppl-lnk"
                   title="Karan Trehan on the blog"
                   aria-label="Karan Trehan on the blog"
@@ -518,7 +540,14 @@ export default function WhoWeArePage() {
               </div>
             </article>
             <article className="ppl-card rv" data-d="210">
-              <img className="ppl-photo" src="/img/av-snehasis.webp" alt="Snehasis Panda" loading="lazy" />
+              <Image
+                src="/img/av-snehasis.webp"
+                width={381}
+                height={381}
+                alt="Snehasis Panda"
+                className="ppl-photo"
+                loading="lazy"
+              />
               <h3 className="ppl-name">Snehasis Panda</h3>
               <p className="ppl-role">Chief Business Officer</p>
               <div className="ppl-creds">
@@ -527,7 +556,7 @@ export default function WhoWeArePage() {
               </div>
               <div className="ppl-links">
                 <Link
-                  href={"/blog?author=Snehasis%20Panda"}
+                  href={"/blog/?author=Snehasis%20Panda"}
                   className="ppl-lnk"
                   title="Snehasis Panda on the blog"
                   aria-label="Snehasis Panda on the blog"
@@ -6361,7 +6390,7 @@ export default function WhoWeArePage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

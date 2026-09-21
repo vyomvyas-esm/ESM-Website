@@ -57,37 +57,37 @@ export function Footer() {
 
               <ul className="mt-4 space-y-[10px] fn-two">
                 <li>
-                  <Link className="foot-link" href="/pyzo/atlas">
+                  <Link className="foot-link" href="/pyzo/atlas/">
                     Atlas
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/pyzo/compass">
+                  <Link className="foot-link" href="/pyzo/compass/">
                     Compass
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/pyzo/evio">
+                  <Link className="foot-link" href="/pyzo/evio/">
                     Evio
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/pyzo/forge">
+                  <Link className="foot-link" href="/pyzo/forge/">
                     Forge
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/pyzo/loupe">
+                  <Link className="foot-link" href="/pyzo/loupe/">
                     Loupe
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/pyzo/prism">
+                  <Link className="foot-link" href="/pyzo/prism/">
                     Prism
                   </Link>
                 </li>
@@ -101,19 +101,19 @@ export function Footer() {
 
               <ul className="mt-4 space-y-[10px]">
                 <li>
-                  <Link className="foot-link" href="/services/agentic-ai">
+                  <Link className="foot-link" href="/engineering/agentic-ai/">
                     Agentic AI
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/services/ai-governance">
+                  <Link className="foot-link" href="/engineering/ai-governance/">
                     AI Governance
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/services/enterprise-ai">
+                  <Link className="foot-link" href="/engineering/enterprise-ai/">
                     Enterprise AI
                   </Link>
                 </li>
@@ -127,25 +127,25 @@ export function Footer() {
 
               <ul className="mt-4 space-y-[10px]">
                 <li>
-                  <Link className="foot-link" href="/industries/bfsi">
+                  <Link className="foot-link" href="/industries/bfsi/">
                     BFSI
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/industries/healthcare">
+                  <Link className="foot-link" href="/industries/healthcare/">
                     Healthcare
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/industries/public-sector">
+                  <Link className="foot-link" href="/industries/public-sector/">
                     Public Sector
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/industries/retail">
+                  <Link className="foot-link" href="/industries/retail/">
                     Consumer
                   </Link>
                 </li>
@@ -159,19 +159,19 @@ export function Footer() {
 
               <ul className="mt-4 space-y-[10px]">
                 <li>
-                  <Link className="foot-link" href="/blog">
+                  <Link className="foot-link" href="/blog/">
                     Blog
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/case-studies">
+                  <Link className="foot-link" href="/case-studies/">
                     Case Studies
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/reports">
+                  <Link className="foot-link" href="/reports/">
                     Reports
                   </Link>
                 </li>
@@ -185,19 +185,19 @@ export function Footer() {
 
               <ul className="mt-4 space-y-[10px]">
                 <li>
-                  <Link className="foot-link" href="/about">
+                  <Link className="foot-link" href="/about/">
                     About Us
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/careers">
+                  <Link className="foot-link" href="/careers/">
                     Careers
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/technology">
+                  <Link className="foot-link" href="/technology/">
                     Technology
                   </Link>
                 </li>
@@ -209,13 +209,13 @@ export function Footer() {
 
               <ul className="mt-4 space-y-[10px]">
                 <li>
-                  <Link className="foot-link" href="/privacy">
+                  <Link className="foot-link" href="/privacy/">
                     Privacy Policy
                   </Link>
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/terms">
+                  <Link className="foot-link" href="/terms/">
                     Terms &amp; Conditions
                   </Link>
                 </li>

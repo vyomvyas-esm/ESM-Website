@@ -5,8 +5,6 @@ import { useState } from "react";
 import { panels, panelTabs } from "@/data/site-data";
 import { Arrow } from "./Arrow";
 
-const hrefFor = (nav: string) => (nav.startsWith("cs-") ? `/case-studies/${nav.slice(3)}` : `/${nav}`);
-
 /* Capability proof rows on the PYZO page: one tab per product, a row per deployment. */
 export function PyzoPanels() {
   const [tab, setTab] = useState(panelTabs[0].key);
@@ -50,8 +48,8 @@ export function PyzoPanels() {
               </span>
             </>
           );
-          return c.nav ? (
-            <Link key={i} className="csr" href={hrefFor(c.nav)}>
+          return c.href ? (
+            <Link key={i} className="csr" href={c.href}>
               {body}
             </Link>
           ) : (

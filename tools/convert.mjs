@@ -2,7 +2,7 @@
  * One-shot converter: turns the single-file SPA (tools/src/site.html) into
  * the Next.js project layout. It is deterministic and safe to re-run.
  *
- *   node tools/convert.mjs
+ *   node --experimental-strip-types tools/convert.mjs
  *
  * What it produces
  *   public/img/*              base64 assets from the CSS and HTML, as files
@@ -16,6 +16,10 @@ import path from "node:path";
 import crypto from "node:crypto";
 import * as parse5 from "parse5";
 import prettier from "prettier";
+import { ROUTES, blogSlug, caseStudySlug } from "./slugs.mjs";
+import { firstSentences } from "../lib/seo.ts";
+import { blogImages } from "../data/blog-images.ts";
+import { ALT_OVERRIDES } from "./alt-overrides.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const SRC = path.join(ROOT, "tools/src/site.html");
@@ -50,13 +54,23 @@ const MIME_EXT = {
   "image/gif": "gif",
   "image/avif": "avif",
 };
+/* Descriptive file names for assets the prototype embedded without a name (SEO brief,
+   Phase 5): keyed by the first ten characters of the content hash, so a changed image
+   simply surfaces as a new hash to be named. */
+const NAMED_ASSETS = {
+  c10ede5058: "proof-rbi-innovation-hub",
+  "68766e3b91": "proof-indusind-bank",
+  "116e0c0bba": "proof-tata-neu",
+  "1b4eaeebf1": "proof-indian-school-of-business",
+  be3cf7096b: "photo-karan-trehan",
+};
 const seenAssets = new Map(); // sha1 -> public path
 function saveAsset(mime, b64, hint) {
   const buf = Buffer.from(b64, "base64");
   const sha = crypto.createHash("sha1").update(buf).digest("hex");
   if (seenAssets.has(sha)) return seenAssets.get(sha);
   const ext = MIME_EXT[mime] || "bin";
-  const name = `${hint || sha.slice(0, 10)}.${ext}`;
+  const name = `${hint || NAMED_ASSETS[sha.slice(0, 10)] || sha.slice(0, 10)}.${ext}`;
   write(`public/img/${name}`, buf);
   const pub = `/img/${name}`;
   seenAssets.set(sha, pub);
@@ -74,12 +88,23 @@ site = site.replace(
   /url\("data:([^;"]+);base64,([^"]+)"\)/g,
   (_, mime, b64) => `url("${saveAsset(mime, b64)}")`,
 );
+// the inline SVG chevrons (select controls) become one file; the data URI's %-escapes are decoded
+const svgFiles = new Map();
+site = site.replace(/url\("data:image\/svg\+xml;utf8,([^"]*)"\)/g, (_, raw) => {
+  const svg = decodeURIComponent(raw);
+  if (!svgFiles.has(svg)) {
+    const name = `chevron-select${svgFiles.size ? `-${svgFiles.size + 1}` : ""}.svg`;
+    write(`public/img/${name}`, svg + "\n");
+    svgFiles.set(svg, name);
+  }
+  return `url("/img/${svgFiles.get(svg)}")`;
+});
 // the SPA page switch is now routing
 site = site.replace(/\.page\{\s*display:none\s*\}\s*/, "").replace(/\.page\.is-active\{\s*display:block\s*\}\s*/, "");
 // fonts are self-hosted through next/font and exposed as variables
 site = site.replaceAll("Inter,system-ui,sans-serif", "var(--font-inter),system-ui,sans-serif");
 site = site.replaceAll('"Schibsted Grotesk",system-ui,sans-serif', "var(--font-schibsted),system-ui,sans-serif");
-if (/base64/.test(site)) throw new Error("base64 left in css");
+if (/data:image/.test(site)) throw new Error("data URI left in css");
 write(
   "styles/site.css",
   `/* The site's own design layer, carried over from the original build.\n   Tokens live on :root; Tailwind utilities are layered underneath in globals.css. */\n\n${site.trim()}\n`,
@@ -94,6 +119,27 @@ body = body.replace(
 // blog artwork loads from /public/blog
 body = body.replace(/src="assets\/blog\/([^"]+)"\s+data-blog="[^"]+"/g, 'src="/blog/$1"');
 body = body.replace(/\s+data-blog="[^"]+"/g, "");
+
+/* Pixel size of a PNG or WebP from its header, read synchronously so no file handle
+   lingers across the renames below (sharp's async metadata does on Windows). */
+function readDims(file) {
+  const b = fs.readFileSync(file);
+  if (b.subarray(1, 4).toString() === "PNG") return { width: b.readUInt32BE(16), height: b.readUInt32BE(20) };
+  if (b.subarray(8, 12).toString() === "WEBP") {
+    const chunk = b.subarray(12, 16).toString();
+    if (chunk === "VP8 ") return { width: b.readUInt16LE(26) & 0x3fff, height: b.readUInt16LE(28) & 0x3fff };
+    if (chunk === "VP8L") {
+      const bits = b.readUInt32LE(21);
+      return { width: (bits & 0x3fff) + 1, height: ((bits >> 14) & 0x3fff) + 1 };
+    }
+    if (chunk === "VP8X") return { width: b.readUIntLE(24, 3) + 1, height: b.readUIntLE(27, 3) + 1 };
+  }
+  throw new Error(`cannot read dimensions of ${file}`);
+}
+// assets renamed after extraction (report covers) keep resolving under their old path
+const renamedAssets = {};
+const assetPath = (src) => renamedAssets[src] ?? src;
+const dimsOf = (src) => readDims(path.join(ROOT, "public", assetPath(src)));
 
 /* ------------------------------------------------------------------- dom */
 const doc = parse5.parseFragment(body);
@@ -132,40 +178,12 @@ const footer = children(doc).find((n) => n.tagName === "footer");
 log("pages:", mains.length);
 
 /* ---------------------------------------------------------------- routes */
-const ROUTES = {
-  home: "/",
-  pyzo: "/pyzo",
-  "pyzo-atlas": "/pyzo/atlas",
-  "pyzo-compass": "/pyzo/compass",
-  "pyzo-evio": "/pyzo/evio",
-  "pyzo-forge": "/pyzo/forge",
-  "pyzo-loupe": "/pyzo/loupe",
-  "pyzo-prism": "/pyzo/prism",
-  "svc-agentic": "/services/agentic-ai",
-  "svc-governance": "/services/ai-governance",
-  "svc-modernisation": "/services/enterprise-ai",
-  "ind-bfsi": "/industries/bfsi",
-  "ind-healthcare": "/industries/healthcare",
-  "ind-public": "/industries/public-sector",
-  "ind-retail": "/industries/retail",
-  blogs: "/blog",
-  "case-studies": "/case-studies",
-  reports: "/reports",
-  "who-we-are": "/about",
-  people: "/about",
-  careers: "/careers",
-  "careers-apply": "/careers/apply",
-  contact: "/contact",
-  stack: "/technology",
-  privacy: "/privacy",
-  terms: "/terms",
-};
 const ANCHORS = new Set(["cta", "proof", "sectors", "pyzo-proof", "svc-proof", "ind-uses"]);
 export function routeFor(nav) {
   if (ANCHORS.has(nav)) return `#${nav}`;
   if (ROUTES[nav]) return ROUTES[nav];
-  if (nav.startsWith("blog-")) return `/blog/${nav.slice(5)}`;
-  if (nav.startsWith("cs-")) return `/case-studies/${nav.slice(3)}`;
+  if (nav.startsWith("blog-")) return `/blog/${blogSlug(nav.slice(5))}/`;
+  if (nav.startsWith("cs-")) return `/case-studies/${caseStudySlug(nav.slice(3))}/`;
   throw new Error(`unknown nav target: ${nav}`);
 }
 
@@ -237,6 +255,17 @@ function serialize(node, ctx, inSvg = false) {
   for (const a of node.attrs) attrs.set(a.prefix ? `${a.prefix}:${a.name}` : a.name, a.value);
   ctx.attrs?.(node, attrs);
 
+  if (tag === "img" && (attrs.get("src") || "").startsWith("/img/")) {
+    // local raster through next/image with explicit dimensions (SEO brief, Phase 5.1)
+    const { width, height } = dimsOf(attrs.get("src"));
+    attrs.set("src", assetPath(attrs.get("src")));
+    ctx.usesImage = true;
+    const extra = [];
+    if (attrs.has("class")) extra.push(`className=${escAttr(attrs.get("class"))}`);
+    if (attrs.has("loading")) extra.push(`loading=${escAttr(attrs.get("loading"))}`);
+    if (attrs.has("sizes")) extra.push(`sizes=${escAttr(attrs.get("sizes"))}`);
+    return `<Image src=${escAttr(attrs.get("src"))} width={${width}} height={${height}} alt=${escAttr(attrs.get("alt") ?? "")} ${extra.join(" ")} />`;
+  }
   if (attrs.has("data-wave")) {
     ctx.usesWaveform = true;
     return `<Waveform n={${Number(attrs.get("data-wave"))}} className=${escAttr(attrs.get("class") || "")} />`;
@@ -320,28 +349,129 @@ const componentName = (id) =>
     .join("")
     .replace(/[^A-Za-z0-9]/g, "") + "Page";
 
-async function emitPage(id, { file, replace, attrs, imports = [], description } = {}) {
+/* Meta description per the SEO brief: the hero lede as written, trimmed to whole
+   sentences under the limit; otherwise the first body paragraph; otherwise empty and
+   listed for a human. Never paraphrased. */
+const needsCopy = [];
+function describe(id, main) {
+  // candidates in page order: every hero lede, then the first body paragraph
+  const ledes = qa(main, byCls("lede"));
+  const body = q(main, (n) => n.tagName === "p" && hasCls(n.parentNode, "prose"));
+  const candidates = [...ledes, ...(body ? [body] : [])];
+  for (const c of candidates) {
+    const d = firstSentences(text(c));
+    if (d) return d;
+  }
+  needsCopy.push({
+    path: ROUTES[id],
+    reason: candidates.length
+      ? `no sentence under the limit in the lede or first body paragraph (${candidates.map((c) => text(c).length).join(", ")} chars)`
+      : "no lede or body paragraph on the page",
+  });
+  return "";
+}
+const stripSuffix = (t) => t.replace(/\s*-\s*Es Magico$/, "");
+
+/* The visible breadcrumb becomes <Breadcrumbs items=…/>, which renders the same markup
+   and the BreadcrumbList schema from one list (SEO brief, Phase 3). Items are read from
+   the prototype's nav exactly as shown: a link, a label that is not a page, or the
+   current page. */
+function crumbItems(nav) {
+  const items = [];
+  for (const c of children(nav)) {
+    if (hasCls(c, "sep")) continue;
+    const nav = attr(c, "data-nav");
+    if (nav) items.push({ label: text(c), href: routeFor(nav) });
+    else if (c.tagName === "a" && attr(c, "href")) items.push({ label: text(c), href: attr(c, "href") });
+    else items.push({ label: text(c) });
+  }
+  return items;
+}
+const crumbReplace = (node) => {
+  if (node.tagName === "nav" && hasCls(node, "crumb")) {
+    return `<Breadcrumbs items={${JSON.stringify(crumbItems(node))}} />`;
+  }
+};
+
+const pageSchema = { faqs: {}, services: {} };
+
+/* FAQPage from the accordion as rendered: the summary's visible question and the answer. */
+function faqItems(main) {
+  return qa(main, (n) => n.tagName === "details" && hasCls(n.parentNode, "faq")).map((d) => ({
+    question: text(q(d, (n) => n.tagName === "summary"))
+      .replace(/\s+$/, "")
+      .trim(),
+    answer: text(q(d, byCls("ans"))),
+  }));
+}
+
+async function emitPage(id, { file, replace, attrs, imports = [], noindex = false, faq = false, service = false, component = null } = {}) {
   const main = pageOf(id);
   if (!main) throw new Error(`no page ${id}`);
-  const ctx = { replace, attrs, usesLink: false, buttons: [] };
+  const ctx = {
+    // a page's own replacement wins, and null (remove) is a decision too
+    replace: (node) => {
+      const own = replace?.(node);
+      return own !== undefined ? own : crumbReplace(node);
+    },
+    attrs,
+    usesLink: false,
+    buttons: [],
+  };
   const inner = serializeChildren(main, main.childNodes.filter((n) => n.nodeName !== "#comment"), ctx, false);
+  const hasCrumb = !!q(main, (n) => n.tagName === "nav" && hasCls(n, "crumb"));
+  const nodes = [];
+  if (faq) {
+    const items = faqItems(main);
+    if (!items.length) throw new Error(`no FAQ on ${id}`);
+    pageSchema.faqs[id] = items;
+    nodes.push(`faqPage(faqs[${JSON.stringify(id)}])`);
+  }
+  if (service) {
+    const lede = q(main, byCls("lede"));
+    pageSchema.services[id] = { name: stripSuffix(TITLES[id]), description: lede ? text(lede) : "", path: ROUTES[id] };
+    nodes.push(`service(services[${JSON.stringify(id)}])`);
+  }
+  const jsonld = nodes.length ? `<JsonLd data={graph(${nodes.join(", ")})} />` : "";
   const imp = [
-    `import type { Metadata } from "next";`,
+    `import { pageMetadata } from "@/lib/seo";`,
+    hasCrumb ? `import { Breadcrumbs } from "@/components/Breadcrumbs";` : "",
+    nodes.length ? `import { JsonLd } from "@/components/JsonLd";` : "",
+    nodes.length ? `import { graph${faq ? ", faqPage" : ""}${service ? ", service" : ""} } from "@/lib/jsonld";` : "",
+    nodes.length ? `import { ${[faq ? "faqs" : "", service ? "services" : ""].filter(Boolean).join(", ")} } from "@/data/page-schema";` : "",
     ctx.usesLink ? `import Link from "next/link";` : "",
     ctx.usesWaveform ? `import { Waveform } from "@/components/Waveform";` : "",
+    ctx.usesImage ? `import Image from "next/image";` : "",
     ...imports,
   ]
     .filter(Boolean)
     .join("\n");
-  const meta = { title: TITLES[id] || "Es Magico" };
-  if (description) meta.description = description;
-  const code = `${imp}
+  const seo = {
+    title: id === "home" ? TITLES[id] : stripSuffix(TITLES[id]),
+    ...(id === "home" ? { absoluteTitle: true } : {}),
+    description: describe(id, main),
+    path: ROUTES[id],
+    ...(noindex ? { noindex: true } : {}),
+  };
+  // a template shared by several routes: the routes own the metadata, this owns the markup
+  const code = component
+    ? `${imp.replace(`import { pageMetadata } from "@/lib/seo";`, "")}
+${component.prelude}
 
-export const metadata: Metadata = ${JSON.stringify(meta, null, 2)};
+export function ${component.name}(${component.params}) {
+${component.body}
+  return (
+    <main className="page" id="page-${id}">${jsonld}${inner}</main>
+  );
+}
+`
+    : `${imp}
+
+export const metadata = pageMetadata(${JSON.stringify(seo, null, 2)});
 
 export default function ${componentName(id)}() {
   return (
-    <main className="page" id="page-${id}">${inner}</main>
+    <main className="page" id="page-${id}">${jsonld}${inner}</main>
   );
 }
 `;
@@ -358,8 +488,59 @@ async function emitRef(name, node, opts = {}) {
 }
 
 /* ------------------------------------------------------------- data files */
+let blogPostsOut = [];
+let caseStudiesOut = [];
 const tsExport = (name, type, value) =>
   `// Generated by tools/convert.mjs — do not edit by hand.\n${type ? `import type { ${type.replace(/\[\]$/, "")} } from "./types";\n\n` : ""}export const ${name}${type ? `: ${type}` : ""} = ${JSON.stringify(value, null, 2)};\n`;
+
+/* Alt text for article figures (SEO brief, Phase 5.4): the images are concept
+   illustrations of the section they sit in, so the alt is derived from that section's
+   heading (or the article title before the first heading), kept under 125 characters
+   and put through the brand rules. Substitutions are logged for review. */
+const ALT_LIMIT = 124;
+const FORBIDDEN = /[–—]|\b(run|runs|running|build|built|building)\b/i; // brand-rules: allow
+const altSubs = [];
+function altFor(heading, where) {
+  let source = heading;
+  if (FORBIDDEN.test(heading)) {
+    source = ALT_OVERRIDES[heading];
+    if (!source || FORBIDDEN.test(source)) throw new Error(`alt text needs an override for heading: ${heading} (${where})`);
+    altSubs.push({ where, before: heading, after: source });
+  }
+  let alt = `Illustration: ${source}`;
+  if (alt.length > ALT_LIMIT) alt = alt.slice(0, ALT_LIMIT).replace(/\s+\S*$/, "");
+  return alt;
+}
+
+/* The article body: authored HTML with each <figure> lifted out as an image reference,
+   so the page can render it through next/image with real dimensions. */
+function bodyBlocks(prose, slug, title) {
+  const sources = blogImages[slug] ?? [];
+  const body = [];
+  const images = [];
+  let html = "";
+  let heading = title;
+  const flush = () => {
+    if (html.trim()) body.push({ html: html.trim() });
+    html = "";
+  };
+  for (const node of prose.childNodes) {
+    if (isEl(node) && node.tagName === "h2") heading = text(node);
+    if (isEl(node) && node.tagName === "figure") {
+      const src = sources[images.length];
+      if (src) {
+        flush();
+        images.push({ ...src, alt: altFor(heading, `${slug} #${images.length + 1}`) });
+        body.push({ image: images.length - 1 });
+        continue;
+      }
+      // no artwork supplied for this slot: the placeholder figure stays as it was
+    }
+    html += parse5.serialize({ childNodes: [node] });
+  }
+  flush();
+  return { body, images };
+}
 
 function extractBlogs() {
   const index = pageOf("blogs");
@@ -392,7 +573,8 @@ function extractBlogs() {
     const prose = q(m, byCls("prose"));
     const rail = q(m, byCls("ar-rail"));
     const post = {
-      slug,
+      slug: blogSlug(slug),
+      ...(blogSlug(slug) !== slug ? { legacySlug: slug } : {}),
       title: text(q(m, (n) => n.tagName === "h1")),
       metaTitle: TITLES[key] || "",
       lede: text(q(m, byCls("lede"))),
@@ -405,14 +587,13 @@ function extractBlogs() {
       },
       railTitle: rail ? text(q(rail, byCls("ar-h"))) : "",
       sections: rail ? qa(rail, byCls("ar-link")).map((l) => ({ id: attr(l, "data-sec"), label: text(l) })) : [],
-      html: innerHTML(prose),
+      ...bodyBlocks(prose, blogSlug(slug), text(q(m, (n) => n.tagName === "h1"))),
     };
     if (!post.author.avatar) throw new Error(`no avatar for ${slug}`);
     posts.push(post);
-    const thumb = q(card, (n) => n.tagName === "img");
     const inGrid = cardBy.has(slug);
     cards.push({
-      slug,
+      slug: blogSlug(slug),
       title: text(q(card, (n) => n.tagName === "h3")),
       date: text(q(card, (n) => n.tagName === "span" && hasCls(n, "text-white/35"))),
       tag: text(q(card, byCls("bl-tag"))),
@@ -420,17 +601,35 @@ function extractBlogs() {
       author: post.author,
       ts: inGrid ? Number(attr(card, "data-ts")) : -1,
       txt: inGrid ? attr(card, "data-txt") : `${post.title} ${post.tag} ${post.author.name}`.toLowerCase(),
-      thumb: thumb ? attr(thumb, "src") : null,
+      thumb: post.images[0] ? { src: post.images[0].src, width: post.images[0].width, height: post.images[0].height } : null,
       ...(feat ? { featured: { author: feat.author, excerpt: feat.excerpt } } : {}),
     });
   }
   // the index is ordered newest first, like the original grid
-  const order = [...feats.filter((f) => !cardBy.has(f.slug)).map((f) => f.slug), ...cardBy.keys()];
+  const order = [...feats.filter((f) => !cardBy.has(f.slug)).map((f) => f.slug), ...cardBy.keys()].map(blogSlug);
   cards.sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug));
   posts.sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug));
+  blogPostsOut = posts;
   write("data/blog-posts.ts", tsExport("blogPosts", "BlogPost[]", posts));
   write("data/blog-index.ts", tsExport("blogCards", "BlogCard[]", cards) + `\nexport const blogFilters = ${JSON.stringify(filters, null, 2)};\n`);
-  log("blogs:", posts.length, "featured:", feats.length, "missing thumbs:", cards.filter((c) => c.thumb && !fs.existsSync(path.join(ROOT, "public", c.thumb))).length);
+  log("blogs:", posts.length, "featured:", feats.length, "without artwork:", cards.filter((c) => !c.thumb).length, "images:", posts.reduce((n, p) => n + p.images.length, 0), "alt substitutions:", altSubs.length);
+  write(
+    "docs/seo-alt-text-review.md",
+    [
+      "# Article image alt text",
+      "",
+      "Generated by `tools/convert.mjs`. Every article figure's alt is `Illustration: <heading of the section it sits in>` (the article title before the first heading), trimmed to " + ALT_LIMIT + " characters on a word boundary. The images are concept illustrations of their section, which is why the heading is the description. Card thumbnails next to a visible title keep `alt=\"\"`.",
+      "",
+      "## Headings changed by the brand rules",
+      "",
+      "These headings contain a word the brand rules forbid in text this work produces, so the alt uses the phrasing shown instead; the heading in the article itself is untouched.",
+      "",
+      "| Image | Heading | Alt source used |",
+      "|---|---|---|",
+      ...altSubs.map((a) => "| `" + a.where + "` | " + a.before + " | " + a.after + " |"),
+      "",
+    ].join("\n"),
+  );
   return { count: posts.length };
 }
 
@@ -450,7 +649,8 @@ function extractCaseStudies() {
     const mark = q(m, byCls("cs-mark"));
     const copy = children(q(card, byCls("csr-copy")));
     studies.push({
-      slug,
+      slug: caseStudySlug(slug),
+      prototypeId: slug,
       metaTitle: TITLES[`cs-${slug}`] || "",
       client: attr(mark, "aria-label"),
       logo: cls(mark).find((c) => c.startsWith("logow-")),
@@ -470,7 +670,8 @@ function extractCaseStudies() {
     });
   }
   const order = [...cardBy.keys()];
-  studies.sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug));
+  studies.sort((a, b) => order.indexOf(a.prototypeId) - order.indexOf(b.prototypeId));
+  caseStudiesOut = studies;
   write("data/case-studies.ts", tsExport("caseStudies", "CaseStudy[]", studies) + `\nexport const caseStudyFilters = ${JSON.stringify(filters, null, 2)};\n`);
   log("case studies:", studies.length);
 }
@@ -495,8 +696,12 @@ function extractReports() {
   // covers were extracted under a content hash; give them the report's name
   for (const r of reports) {
     const nice = `/img/${r.id}${path.extname(r.cover)}`;
-    if (r.cover !== nice) fs.renameSync(path.join(ROOT, "public", r.cover), path.join(ROOT, "public", nice));
+    if (r.cover !== nice) {
+      fs.renameSync(path.join(ROOT, "public", r.cover), path.join(ROOT, "public", nice));
+      renamedAssets[r.cover] = nice;
+    }
     r.cover = nice;
+    Object.assign(r, dimsOf(nice));
   }
   // the original select values ("AI in BFSI") never matched the cards ("BFSI"); filter on the card values
   const series = opts("rpSeries").map((o) => (o.value === "all" ? o : { value: reports.find((r) => r.seriesLabel.startsWith(o.value) || o.value.endsWith(r.series))?.series ?? o.value, label: o.label }));
@@ -510,7 +715,7 @@ function extractSiteData() {
   for (const e of Object.values(DATA.proof)) for (const k of Object.keys(e)) e[k] = decode(e[k]);
   // only the fields the original renderer used are kept
   for (const [k, list] of Object.entries(DATA.panels))
-    DATA.panels[k] = list.map((c) => ({ client: decode(c.client), line: decode(c.line), ...(c.logo ? { logo: c.logo } : {}), ...(c.nav ? { nav: c.nav } : {}), pair: c.pair }));
+    DATA.panels[k] = list.map((c) => ({ client: decode(c.client), line: decode(c.line), ...(c.logo ? { logo: c.logo } : {}), ...(c.nav ? { href: routeFor(c.nav) } : {}), pair: c.pair }));
   const rail = q(pageOf("case-studies"), byCls("proof-rail"));
   const clients = children(rail).map((b) => ({
     key: attr(b, "data-client"),
@@ -547,10 +752,49 @@ function extractSiteData() {
   log("site data written");
 }
 
+/* Internal links from each article (SEO brief, Phase 4.5). Targets are derived, never
+   guessed: the industry page from the article's category, a capability page only when
+   the title names it, and case studies through whichever of those two is known. */
+const INDUSTRY_BY_TAG = { "AI in BFSI": ["ind-bfsi", "bfsi"], "AI in Healthcare": ["ind-healthcare", "healthcare"] };
+const CAPABILITY = /\b(atlas|compass|evio|forge|loupe|prism)\b/i;
+function relatedFor(post) {
+  const link = (id) => ({ label: stripSuffix(TITLES[id]), href: ROUTES[id] });
+  const [indId, indKey] = INDUSTRY_BY_TAG[post.tag] ?? [];
+  const cap = post.title.match(CAPABILITY)?.[1].toLowerCase();
+  const csLink = (c) => ({ label: `${c.client}: ${c.title}`, href: `/case-studies/${c.slug}/` });
+  let studies = [];
+  if (indKey) studies = caseStudiesOut.filter((c) => c.card.industry === indKey);
+  else if (cap) studies = caseStudiesOut.filter((c) => c.card.products.some((p) => p.toLowerCase() === cap));
+  return {
+    ...(indId ? { industry: link(indId) } : {}),
+    ...(cap ? { capability: link(`pyzo-${cap}`) } : {}),
+    caseStudies: studies.slice(0, 2).map(csLink),
+  };
+}
+function addRelated() {
+  const unmapped = [];
+  for (const post of blogPostsOut) {
+    post.related = relatedFor(post);
+    const r = post.related;
+    if (!r.industry || !r.capability || !r.caseStudies.length)
+      unmapped.push({ slug: post.slug, tag: post.tag, missing: [!r.industry && "industry", !r.capability && "capability", !r.caseStudies.length && "case study"].filter(Boolean).join(", ") });
+  }
+  write("data/blog-posts.ts", tsExport("blogPosts", "BlogPost[]", blogPostsOut));
+  const rows = unmapped.map((u) => "| `/blog/" + u.slug + "/` | " + u.tag + " | " + u.missing + " |").join("\n");
+  write(
+    "docs/seo-unmapped-articles.md",
+    "# Articles without a full set of internal links\n\n" +
+      "Generated by `tools/convert.mjs`. Each article should link to its PYZO capability, its industry page and at least one case study (SEO brief, Phase 4.5). Targets are derived only where the data supports them: the industry from the category (AI in BFSI, AI in Healthcare), the capability only when the article title names one, and case studies through the mapped industry or capability. Anything else is listed here for a human to map by adding `related` targets to the article data rather than guessed.\n\n" +
+      `${unmapped.length} of ${blogPostsOut.length} articles are missing at least one target.\n\n| Article | Category | Missing |\n|---|---|---|\n${rows}\n`,
+  );
+  log("related links: fully mapped", blogPostsOut.length - unmapped.length, "flagged", unmapped.length);
+}
+
 /* ------------------------------------------------------------------- run */
 fs.rmSync(OUT_REF, { recursive: true, force: true });
 extractBlogs();
 extractCaseStudies();
+addRelated();
 extractReports();
 extractSiteData();
 
@@ -561,9 +805,9 @@ const simple = {
   "pyzo-forge": "app/pyzo/forge/page.tsx",
   "pyzo-loupe": "app/pyzo/loupe/page.tsx",
   "pyzo-prism": "app/pyzo/prism/page.tsx",
-  "svc-agentic": "app/services/agentic-ai/page.tsx",
-  "svc-governance": "app/services/ai-governance/page.tsx",
-  "svc-modernisation": "app/services/enterprise-ai/page.tsx",
+  "svc-agentic": "app/engineering/agentic-ai/page.tsx",
+  "svc-governance": "app/engineering/ai-governance/page.tsx",
+  "svc-modernisation": "app/engineering/enterprise-ai/page.tsx",
   "ind-bfsi": "app/industries/bfsi/page.tsx",
   "ind-healthcare": "app/industries/healthcare/page.tsx",
   "ind-public": "app/industries/public-sector/page.tsx",
@@ -571,13 +815,11 @@ const simple = {
   careers: "app/careers/page.tsx",
   stack: "app/technology/page.tsx",
 };
-for (const [id, file] of Object.entries(simple)) await emitPage(id, { file });
+const SERVICE_PAGES = new Set(["pyzo-atlas", "pyzo-compass", "pyzo-evio", "pyzo-forge", "pyzo-loupe", "pyzo-prism", "svc-agentic", "svc-governance", "svc-modernisation"]);
+const FAQ_PAGES = new Set(["pyzo", "ind-bfsi", "ind-healthcare", "ind-public", "ind-retail"]);
+for (const [id, file] of Object.entries(simple)) await emitPage(id, { file, service: SERVICE_PAGES.has(id), faq: FAQ_PAGES.has(id) });
 
-await emitPage("home", {
-  file: "app/page.tsx",
-  description:
-    "Es Magico is the Operator for AI-native Transformation. We deploy AI into production inside regulated enterprises and stand behind what it produces to auditors, regulators and boards.",
-});
+await emitPage("home", { file: "app/page.tsx" });
 
 // legal pages: the contents rail becomes plain anchors; the effects hook highlights the current one
 const tocAttrs = (node, attrs) => {
@@ -603,7 +845,7 @@ await emitPage("who-we-are", {
     if (node.tagName === "button" && attr(node, "data-author")) {
       const a = new Map(node.attrs.map((x) => [x.name, x.value]));
       const inner = serializeChildren(node, node.childNodes, { usesLink: false }, false);
-      return `<Link href={${JSON.stringify(`/blog?author=${encodeURIComponent(a.get("data-author"))}`)}} className=${escAttr(a.get("class"))} title=${escAttr(a.get("title"))} aria-label=${escAttr(a.get("aria-label"))}>${inner}</Link>`;
+      return `<Link href={${JSON.stringify(`/blog/?author=${encodeURIComponent(a.get("data-author"))}`)}} className=${escAttr(a.get("class"))} title=${escAttr(a.get("title"))} aria-label=${escAttr(a.get("aria-label"))}>${inner}</Link>`;
     }
   },
   attrs: (node, attrs) => {
@@ -614,6 +856,7 @@ await emitPage("who-we-are", {
 // pyzo: the capability proof tabs and the foundation ledger are stateful
 await emitPage("pyzo", {
   file: "app/pyzo/page.tsx",
+  faq: true,
   imports: [`import { PyzoPanels } from "@/components/PyzoPanels";`, `import { FoundationLedger } from "@/components/FoundationLedger";`],
   replace: (node) => {
     if (hasCls(node, "fd-bar")) return "<FoundationLedger />";
@@ -634,6 +877,7 @@ await emitPage("contact", {
 });
 await emitPage("careers-apply", {
   file: "app/careers/apply/page.tsx",
+  noindex: true,
   imports: [`import { CareersApplyForm } from "@/components/CareersApplyForm";`],
   replace: (node) => {
     if (hasCls(node, "js-form")) return "<CareersApplyForm />";
@@ -642,11 +886,29 @@ await emitPage("careers-apply", {
 
 // listing pages: the filterable lists are data-driven client components
 await emitPage("blogs", {
-  file: "app/blog/page.tsx",
-  imports: [`import { BlogIndex } from "@/components/BlogIndex";`],
+  file: "components/BlogListingPage.tsx",
+  imports: [`import { BlogIndex } from "@/components/BlogIndex";`, `import { cardsFor, pageCount, PAGE_SIZE, type Category } from "@/lib/blog";`],
+  component: {
+    name: "BlogListingPage",
+    params: "{ category, page }: { category: Category | null; page: number }",
+    prelude: `/* The journal listing, shared by /blog/, /blog/page/N/ and /blog/<category>/ (SEO
+   brief, Phase 4.6). The hero is the blog page's; a category page takes its name as
+   the heading and adds itself to the breadcrumb. */`,
+    body: `  const all = cardsFor(category);
+  const pages = pageCount(all);
+  const cards = all.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const crumbs = category
+    ? [{ label: "Home", href: "/" }, { label: "Resources" }, { label: "Blog", href: "/blog/" }, { label: category.tag }]
+    : [{ label: "Home", href: "/" }, { label: "Resources" }, { label: "Blog" }];`,
+  },
   replace: (node) => {
     if (node.tagName === "section" && q(node, byId("blFeatHead"))) return null;
-    if (hasCls(node, "bl-layout")) return "<BlogIndex />";
+    if (hasCls(node, "bl-layout")) return "<BlogIndex cards={cards} page={page} pages={pages} category={category} />";
+    if (node.tagName === "nav" && hasCls(node, "crumb")) return "<Breadcrumbs items={crumbs} />";
+    if (node.tagName === "h1") {
+      const cls = attr(node, "class");
+      return `<h1 className=${escAttr(cls)} data-d=${escAttr(attr(node, "data-d") || "0")}>{category ? category.tag : ${JSON.stringify(text(node))}}</h1>`;
+    }
   },
 });
 await emitPage("case-studies", {
@@ -680,4 +942,29 @@ await emitRef("ReportsModalRef", q(pageOf("reports"), byId("rpModal")));
 await emitRef("LedgerRef", q(pageOf("pyzo"), byCls("fd-bar")).parentNode);
 await emitRef("BlogPostRef", pageOf("blog-human-in-the-loop-data-capture"));
 await emitRef("CaseStudyRef", pageOf("cs-cipla"));
+// the human copy list: static pages from above, plus the templated routes under the same rule
+for (const p of blogPostsOut)
+  if (!firstSentences(p.lede)) needsCopy.push({ path: `/blog/${p.slug}/`, reason: `first sentence of the lede exceeds the limit (${p.lede.length} chars)` });
+for (const c of caseStudiesOut)
+  if (!firstSentences(c.lede)) needsCopy.push({ path: `/case-studies/${c.slug}/`, reason: `first sentence of the hero lede exceeds the limit (${c.lede.length} chars)` });
+// the journal's category and page routes have no copy of their own
+const { allListings, listingPath } = await import("../lib/blog.ts");
+for (const l of allListings()) {
+  if (!l.category && l.page === 1) continue;
+  needsCopy.push({ path: listingPath(l.category, l.page), reason: l.category ? `category listing page ${l.page}: no copy of its own` : `journal page ${l.page}: no copy of its own` });
+}
+const rows = needsCopy.map((n) => "| `" + n.path + "` | " + n.reason + " |").join("\n");
+write(
+  "docs/seo-needs-copy.md",
+  "# Pages that need a meta description written by a human\n\n" +
+    "Generated by `tools/convert.mjs`. Rule applied: the description is the page's existing lede (or first body paragraph) trimmed to whole sentences under 155 characters, never paraphrased. These pages have no sentence that fits, so their description is left empty rather than invented.\n\n" +
+    `${needsCopy.length} pages.\n\n| Path | Why |\n|---|---|\n${rows}\n`,
+);
+write(
+  "data/page-schema.ts",
+  `// Generated by tools/convert.mjs from the page copy. Do not edit by hand.\nimport type { Faq } from "@/lib/jsonld";\n\n` +
+    `/** FAQ accordions, as visible on the page, keyed by prototype page id */\nexport const faqs: Record<string, Faq[]> = ${JSON.stringify(pageSchema.faqs, null, 2)};\n\n` +
+    `/** Service nodes: the page title and its hero lede */\nexport const services: Record<string, { name: string; description: string; path: string }> = ${JSON.stringify(pageSchema.services, null, 2)};\n`,
+);
+log("needs copy:", needsCopy.length);
 log("done");

@@ -1,9 +1,13 @@
-import type { Metadata } from "next";
-import Link from "next/link";
+import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CareersApplyForm } from "@/components/CareersApplyForm";
-export const metadata: Metadata = {
-  title: "Introduce yourself - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Introduce yourself",
+  description:
+    "Tell us what you have owned in production and what it cost you to learn, and we will keep it in front of the people who decide.",
+  path: "/careers/apply/",
+  noindex: true,
+});
 export default function CareersApplyPage() {
   return (
     <main className="page" id="page-careers-apply">
@@ -14,15 +18,14 @@ export default function CareersApplyPage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[46px] pb-[76px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span>
-            <span className="text-white/45">Company</span>
-            <span className="sep">·</span>
-            <Link href="/careers">Careers</Link>
-            <span className="sep">·</span>
-            <span aria-current="page">Introduce yourself</span>
-          </nav>
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Company" },
+              { label: "Careers", href: "/careers/" },
+              { label: "Introduce yourself" },
+            ]}
+          />
           <div className="mt-8 grid items-stretch gap-10 lg:grid-cols-2 lg:gap-16">
             <div className="flex flex-col rv">
               <h1 className="font-display text-[clamp(1.75rem,3.1vw,2.5rem)] font-normal leading-[1.15] tracking-[-.025em] max-w-[16ch]">

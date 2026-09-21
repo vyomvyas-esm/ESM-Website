@@ -20,16 +20,22 @@ npm run build    # static export of all 361 routes
 | `data/` | Generated content: 325 blog posts, 9 case studies, 4 reports, proof quotes, PYZO panel data. `types.ts` is hand-written. |
 | `styles/site.css` | The site's own design layer (tokens on `:root`, light theme under `html[data-theme="light"]`), carried over verbatim with its images moved to `public/img`. |
 | `app/globals.css` | Tailwind v4 entry: the theme tokens (`white` maps to the foreground variable so utilities work in both themes), the v3 border-colour default, and the import of `site.css`. |
-| `public/blog/` | Blog artwork. 108 of the 325 posts reference images that were not in the source export; those cards show the "Image to come" placeholder until the files are added. |
-| `tools/` | The converter used for the port. See `tools/README.md`. |
+| `public/blog/` | Blog artwork, 647 WebP files named `<post-slug>-<n>.webp`, produced by `tools/images.mjs` from the client's export. Two posts still have a placeholder slot (see `docs/seo-open-items.md`). |
+| `lib/` | `seo.ts` (metadata builder, description rule), `jsonld.ts` (structured data), `blog.ts` (listing model), `sitemap.ts`. |
+| `docs/` | The SEO working papers: URL map, open items, copy the site still needs, title and alt-text reviews, unmapped articles. |
+| `tools/` | The converter, the image pipeline and the SEO checks. See `tools/README.md`. |
 
 ## Routes
 
 `/`, `/pyzo` and `/pyzo/{atlas,compass,evio,forge,loupe,prism}`,
-`/services/{agentic-ai,ai-governance,enterprise-ai}`,
-`/industries/{bfsi,healthcare,public-sector,retail}`, `/blog`, `/blog/[slug]`,
-`/case-studies`, `/case-studies/[slug]`, `/reports`, `/about`, `/careers`,
-`/careers/apply`, `/contact`, `/technology`, `/privacy`, `/terms`.
+`/engineering/{agentic-ai,ai-governance,enterprise-ai}`,
+`/industries/{bfsi,healthcare,public-sector,retail}`, `/blog/` with `/blog/page/N/`,
+`/blog/<category>/` and `/blog/<category>/page/N/`, `/blog/[slug]/`, `/case-studies/`,
+`/case-studies/[slug]/`, `/reports/`, `/about/`, `/careers/`, `/careers/apply/`,
+`/contact/`, `/technology/`, `/privacy/`, `/terms/`, plus `/sitemap.xml` and `/robots.txt`.
+
+SEO tooling: `node tools/seo-check.mjs` (page assertions), `--crawl` (orphans, broken
+links, redirects) and `--brand` (brand-rule grep over the diff), after `next build`.
 
 `/blog?author=Name` opens the journal with that author preselected (used by the
 leadership cards on `/about`).
