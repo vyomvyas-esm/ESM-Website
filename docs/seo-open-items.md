@@ -9,8 +9,8 @@ Log for the SEO implementation: what could not be resolved from the repo, what n
 | 1 | Six blog slugs keep words the brand rules forbid, inherited from their published titles (`the-economics-of-running-enterprise-ai`, `the-real-cost-of-running-ai-agents`, `durable-execution-for-long-running-agents`, `buy-build-or-operate`, `build-or-buy-your-agent-stack`, `building-a-golden-dataset-for-llm-evaluation`). Kept for stability; rename on request. | 1 | open |
 | 2 | ISB case-study slug is `indian-school-of-business`; `isb-ivi` is the alternative. | 1 | assumed, open |
 | 3 | The brief's shape lists `/people/`; no such page exists (the prototype aliased it to About). Not created. | 1 | open |
-| 4 | Titles that are positioning lines rather than search terms: see `docs/seo-title-review.md` (17 pages) plus 12 blog titles containing brand-rule words. Not rewritten. | 2 | open |
-| 5 | 109 pages have no meta description because no sentence of the source paragraph fits under 155 characters (96 blog articles, 8 of 9 case studies, 3 industry pages, contact). Listed in `docs/seo-needs-copy.md`. A human can either write them or relax the rule to a clause boundary; the code applies the rule as written. | 2 | open |
+| 4 | Titles that were positioning lines rather than search terms: 16 pages and 12 blog titles (`docs/seo-title-review.md`). Rewritten by the site's copywriter and applied from `data/copy-overrides.json` to the `<title>` and Open Graph title only; article H1s and the BlogPosting headline keep the published headline. If the editor adopts a blog retitle into the article itself, change the title in `data/blog-posts.ts`. | 2 | done |
+| 5 | 167 pages had no meta description because no sentence of their copy fit under 155 characters (or, for the 58 listing pages, there was no copy). Written by the copywriter and applied from `data/copy-overrides.json`; `docs/seo-needs-copy.md` now lists 0. Validated by `seo-check --copy`: length, uniqueness, brand rules, paths. | 2 | done |
 | 6 | Blog `modifiedTime` equals `publishedTime`: the source has no modified date. Supply one per article (a `modified` field in `data/blog-posts.ts`) or accept the equality. | 2 | open |
 | 7 | Open Graph image fallback is the existing hero background `/img/img-hero.webp` (1:1 is not ideal; a purpose-made 1200x630 asset would be better). Blog posts use their own thumbnail where one exists; 108 posts have none and fall back. | 2 | assumed, open |
 | 8 | Production origin assumed to be `https://esmagico.com` (no `www`). Set in `lib/seo.ts`. | 2 | assumed |
@@ -25,7 +25,7 @@ Log for the SEO implementation: what could not be resolved from the repo, what n
 | 18 | FAQPage is emitted on the PYZO landing and the four industry pages as asked, and validates (Schema Markup Validator: 0 errors), but Google withdrew FAQ rich results for sites outside government and health in 2023, so the Rich Results Test no longer lists it. Kept as requested. The nine capability and engineering pages also have FAQ accordions but were not in scope for FAQPage. | 3 | open |
 | 19 | Rich Results Test was executed by pasting the generated markup (the site is not public). Results: Article valid, Breadcrumbs valid, Organization valid; Service and FAQPage checked with the Schema Markup Validator (0 errors, 0 warnings). Repeat against the live URLs after launch. | 3 | open |
 | 20 | Blog listing is now real routes: `/blog/`, `/blog/page/N/` (28 pages of 12), `/blog/<category>/` and `/blog/<category>/page/N/` for the six categories (58 new pages, 417 in total). The visible additions are the newer/older links, the "Page N of M" line and a row of category links at the foot of the list (the `<select>` alone is not crawlable); they use the existing ghost-button and tag styles. Search, author and sort remain client-side filters over the full index, as before; author buckets were not made routes. | 4 | assumed, open |
-| 21 | The 58 listing pages have no copy of their own, so they have titles ("Blog: AI in BFSI, page 2") but no meta description; added to `docs/seo-needs-copy.md` (now 167 entries). | 4 | open |
+| 21 | The 58 listing pages had no copy of their own; descriptions were written (see item 5). | 4 | done |
 | 22 | Article internal links: targets derived only where the data supports them (industry from the BFSI and Healthcare categories, capability only when the title names one, case studies through either). 117 articles link industry and case studies, 5 link a capability, 208 have no derivable target and are listed in `docs/seo-unmapped-articles.md`. A human can add `related` targets per article. The block reads "Related:" followed by the existing page titles as anchor text. | 4 | open |
 | 23 | Sitemap `lastmod` is set only on blog posts (from their date). Static pages and case studies have no date in the source, so it is omitted rather than set to the time of the export. | 4 | assumed |
 | 24 | Fonts: the brief's Phase 5 names Archivo, Inter and IBM Plex Mono, but the design layer uses Inter and Schibsted Grotesk (mono is the system stack). Both are self-hosted and subset through `next/font/google` with no Google Fonts link tag or preconnect. Switching families is a visible typography change, so the design's families stay until told otherwise. | 5 | open |
@@ -37,9 +37,9 @@ Log for the SEO implementation: what could not be resolved from the repo, what n
 
 ## Needs copywriting
 
-- `docs/seo-needs-copy.md`: 167 meta descriptions (109 content pages, 58 listing pages).
+- `docs/seo-needs-copy.md`: 0 (all 167 written into `data/copy-overrides.json`).
 - `docs/seo-unmapped-articles.md`: 208 articles with no derivable internal-link targets.
-- `docs/seo-title-review.md`: 17 page titles, 12 blog titles.
+- `docs/seo-title-review.md`: all 28 rewritten (applied to `<title>`; H1s unchanged).
 
 ## Assumptions and conventions
 
@@ -51,6 +51,7 @@ Log for the SEO implementation: what could not be resolved from the repo, what n
 - `data/blog-posts.ts` keeps `legacySlug` and `data/case-studies.ts` keeps `prototypeId` so the Phase 6 redirect map can be generated rather than hand-written.
 - `noindex, follow` applied to `/careers/apply/` only. Form confirmation states are client-side state on the same URL, not routes, so nothing else to exclude. Report gate is a modal on `/reports/`.
 - Two prototype bugs were fixed during the port rather than carried over: the reports "Series" filter values and case-study batching CSS.
+- Human-written copy lives in `data/copy-overrides.json` (keyed by path) and is applied by `lib/seo.ts#pageMetadata`: a written title replaces the page's own, a written description fills in only where the page's copy yielded none. `tools/copy-brief.mjs` produces the writer's brief from what is still missing.
 - Redirects: `tools/redirects.mjs` regenerates `data/redirects.json` from `legacySlug`, `prototypeId` and the `/services` map; `tools/seo-check.mjs --redirects` asserts one hop, destinations exist and no source is a live page.
 - Crawl infrastructure: `/sitemap.xml` is an index of `/sitemap-pages.xml`, `/sitemap-case-studies.xml` and `/sitemap-blog.xml` (the last with `image:image` entries for all 647 figures); `/robots.txt` allows all and points at the index; `/careers/apply/` (noindex) is left out of the sitemaps. Unknown routes and out-of-range listing pages return HTTP 404. `tools/seo-check.mjs --crawl` walks the generated HTML from `/`.
 - Structured data is rendered server-side per page as one `@graph` per script (`components/JsonLd.tsx`, builders in `lib/jsonld.ts`), from the same data the metadata uses. The Organization logo is the existing `/img/esm-logo.svg`.

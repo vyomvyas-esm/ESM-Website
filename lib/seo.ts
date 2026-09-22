@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import copy from "../data/copy-overrides.json" with { type: "json" };
 
 export const SITE_URL = "https://esmagico.com";
 export const SITE_NAME = "Es Magico";
@@ -58,11 +59,21 @@ export interface PageSeo {
   };
 }
 
+const overrides = copy as { descriptions: Record<string, string>; titles: Record<string, string> };
+
 export function pageMetadata(seo: PageSeo): Metadata {
   const url = new URL(seo.path, SITE_URL).toString();
   const image = seo.image === null ? undefined : (seo.image ?? DEFAULT_OG_IMAGE);
+  // human-written copy (data/copy-overrides.json) replaces a tagline title and fills a
+  // description the page's own copy could not supply; a written title takes the template
+  const title = overrides.titles[seo.path];
+  const description = seo.description || overrides.descriptions[seo.path];
+  // the root layout's title template does not reach its own segment, so the home page
+  // carries the suffix itself
+  const resolvedTitle =
+    seo.path === "/" ? { absolute: `${title ?? seo.title}${title ? TITLE_SUFFIX : ""}` } : (title ?? (seo.absoluteTitle ? { absolute: seo.title } : seo.title));
   const meta: Metadata = {
-    title: seo.absoluteTitle ? { absolute: seo.title } : seo.title,
+    title: resolvedTitle,
     alternates: { canonical: seo.path },
     openGraph: {
       type: seo.type ?? "website",
@@ -78,7 +89,7 @@ export function pageMetadata(seo: PageSeo): Metadata {
     },
   };
   // an absent description must stay absent: nothing may inherit the root layout's
-  if (seo.description) meta.description = seo.description;
+  if (description) meta.description = description;
   if (seo.noindex) meta.robots = { index: false, follow: true };
   return meta;
 }

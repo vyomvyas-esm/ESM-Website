@@ -5,6 +5,7 @@
  *   node tools/seo-check.mjs --brand    # brand-rule grep over the diff against main (added lines)
  *   node tools/seo-check.mjs --crawl    # link crawl of the generated HTML from /: orphans, broken links, redirects
  *   node tools/seo-check.mjs --redirects # data/redirects.json: one hop, destinations exist, sources are not pages
+ *   node tools/seo-check.mjs --copy      # data/copy-overrides.json: paths exist, lengths, uniqueness, brand rules
  *
  * Page assertions: expected route count, unique titles, unique canonicals, no duplicate
  * descriptions, exactly one <h1>, canonical matches the file's route, every page has a
@@ -41,7 +42,7 @@ function pages() {
     return {
       route,
       title: pick(/<title>([^<]*)<\/title>/),
-      description: pick(/<meta name="description" content="([^"]*)"/),
+      description: (pick(/<meta name="description" content="([^"]*)"/) || "").replace(/&#x27;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, "&") || undefined,
       canonical: pick(/<link rel="canonical" href="([^"]*)"/),
       robots: pick(/<meta name="robots" content="([^"]*)"/),
       h1s: (html.match(/<h1[\s>]/g) || []).length,
@@ -273,7 +274,47 @@ function checkRedirects() {
   if (issues.length) fail(issues.slice(0, 8).join("; "));
 }
 
+/* Human-written descriptions and titles (data/copy-overrides.json): every key is a page
+   that needed it, every value obeys the brand rules and the length limits, nothing is
+   duplicated, and no title carries the brand (the template adds it). */
+function checkCopy() {
+  const copy = JSON.parse(fs.readFileSync(path.join(ROOT, "data/copy-overrides.json"), "utf8"));
+  const routes = new Set(pages().map((p) => p.route));
+  const needsCopy = new Set([...fs.readFileSync(path.join(ROOT, "docs/seo-needs-copy.md"), "utf8").matchAll(/^\| `([^`]+)` \|/gm)].map((m) => m[1]));
+  const HYPE = /\b(revolutionary|cutting-edge|game-changing|unlock|seamless|transform the way)\b/i;
+  const issues = [];
+  const rules = (where, text) => {
+    for (const r of RULES) if (r.re.test(text)) issues.push(`${r.name}: ${where}: ${text.slice(0, 80)}`);
+    if (HYPE.test(text)) issues.push(`hype word: ${where}`);
+    if (/\bEsMagico\b|\bEs-Magico\b/.test(text)) issues.push(`brand must be two words: ${where}`);
+  };
+  const descs = Object.entries(copy.descriptions);
+  for (const [route, text] of descs) {
+    if (!routes.has(route)) issues.push(`description for a path that is not a page: ${route}`);
+    if (text.length >= 155) issues.push(`description too long (${text.length}): ${route}`);
+    if (text.length < 50) issues.push(`description too short (${text.length}): ${route}`);
+    if (/…|\.\.\.$/.test(text)) issues.push(`trailing ellipsis: ${route}`);
+    rules(route, text);
+  }
+  const dupDesc = descs.map(([, t]) => t).filter((v, i, a) => a.indexOf(v) !== i);
+  if (dupDesc.length) issues.push(`duplicate descriptions: ${dupDesc.length}`);
+  const missing = [...needsCopy].filter((r) => routes.has(r) && !copy.descriptions[r]);
+  const titles = Object.entries(copy.titles);
+  for (const [route, text] of titles) {
+    if (!routes.has(route)) issues.push(`title for a path that is not a page: ${route}`);
+    if (text.length > 60 || text.length < 35) issues.push(`title length ${text.length}: ${route}`);
+    if (/es magico/i.test(text)) issues.push(`title carries the brand (the template adds it): ${route}`);
+    rules(route, text);
+  }
+  const dupTitle = titles.map(([, t]) => t).filter((v, i, a) => a.indexOf(v) !== i);
+  if (dupTitle.length) issues.push(`duplicate titles: ${dupTitle.join(" | ")}`);
+  console.log(`copy overrides: ${descs.length} descriptions, ${titles.length} titles; pages still without a description ${missing.length}; issues ${issues.length}`);
+  if (missing.length) console.log(`  still missing: ${missing.slice(0, 10).join(", ")}${missing.length > 10 ? ", ..." : ""}`);
+  if (issues.length) fail(issues.slice(0, 12).join("\n  "));
+}
+
 if (process.argv.includes("--brand")) checkBrand();
+else if (process.argv.includes("--copy")) checkCopy();
 else if (process.argv.includes("--crawl")) checkCrawl();
 else if (process.argv.includes("--redirects")) checkRedirects();
 else checkPages();
