@@ -8,8 +8,8 @@ Non-negotiable, and a script will reject anything that breaks them:
 
 1. Derive every line from the page's existing copy (the H1 and source text are given below). Do not add positioning, claims, benefits, numbers, client names, quotes or dates that are not already on that page.
 2. **No em dashes or en dashes anywhere.** Use an ASCII hyphen, a colon, or the word "to".
-3. The words **run, running, runs** must not appear. Use deploy, operate, execute, handle, in production, or live.
-4. The words **build, built, building** must not appear. Use engineer, engineered, engineering.
+3. The words **run, running, runs** must not appear. Use deploy, operate, execute, handle, in production, or live. <!-- brand-rules: allow -->
+4. The words **build, built, building** must not appear. Use engineer, engineered, engineering. <!-- brand-rules: allow -->
 5. British spelling: operationalise, modernisation, personalisation, prioritise.
 6. No hype vocabulary: revolutionary, cutting-edge, game-changing, unlock, seamless, transform-the-way.
 7. "Es Magico" is always two words.
