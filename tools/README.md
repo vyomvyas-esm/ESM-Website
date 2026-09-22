@@ -21,5 +21,9 @@ SEO checks, after `next build`:
     node tools/seo-check.mjs            # routes, titles, canonicals, descriptions, h1, JSON-LD, sitemaps
     node tools/seo-check.mjs --crawl    # orphans, broken links, links that would redirect
     node tools/seo-check.mjs --brand    # dashes and forbidden words in the diff against main
+    node tools/seo-check.mjs --redirects # data/redirects.json: one hop, destinations exist
+
+`redirects.mjs` regenerates `data/redirects.json` from the data; rows from the Search
+Console export are kept under its `manual` key.
 
 `url-map.mjs` regenerates `docs/seo-url-map.md` (the Phase 1 proposal).

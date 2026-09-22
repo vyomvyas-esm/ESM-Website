@@ -4,6 +4,7 @@
  *   node tools/seo-check.mjs            # page assertions over .next/server/app/** /*.html
  *   node tools/seo-check.mjs --brand    # brand-rule grep over the diff against main (added lines)
  *   node tools/seo-check.mjs --crawl    # link crawl of the generated HTML from /: orphans, broken links, redirects
+ *   node tools/seo-check.mjs --redirects # data/redirects.json: one hop, destinations exist, sources are not pages
  *
  * Page assertions: expected route count, unique titles, unique canonicals, no duplicate
  * descriptions, exactly one <h1>, canonical matches the file's route, every page has a
@@ -250,6 +251,29 @@ function checkCrawl() {
   if (redirecting.size) fail(`links that would redirect: ${[...redirecting].slice(0, 8).join(", ")}`);
 }
 
+/* The redirect map: every entry lands on a generated page in one hop, no source is a
+   live page, no destination is itself redirected, and next.config.ts serves the file. */
+function checkRedirects() {
+  const map = JSON.parse(fs.readFileSync(path.join(ROOT, "data/redirects.json"), "utf8"));
+  const entries = [...map.generated, ...map.manual];
+  const routes = new Set(pages().map((p) => p.route));
+  const sources = new Set(entries.map((e) => e.source));
+  const issues = [];
+  for (const e of entries) {
+    if (!routes.has(e.destination)) issues.push(`destination is not a page: ${e.source} -> ${e.destination}`);
+    if (routes.has(`${e.source}/`)) issues.push(`source is a live page: ${e.source}`);
+    if (sources.has(e.destination.replace(/\/$/, ""))) issues.push(`chain: ${e.source} -> ${e.destination}`);
+    if (e.source.endsWith("/") || !e.destination.endsWith("/")) issues.push(`form: ${e.source} -> ${e.destination}`);
+  }
+  const dup = entries.map((e) => e.source).filter((v, i, a) => a.indexOf(v) !== i);
+  if (dup.length) issues.push(`duplicate sources: ${dup.join(", ")}`);
+  const config = fs.readFileSync(path.join(ROOT, "next.config.ts"), "utf8");
+  if (!/redirects\.json/.test(config) || !/permanent: true/.test(config)) issues.push("next.config.ts does not serve data/redirects.json with permanent: true");
+  console.log(`redirects: ${map.generated.length} generated, ${map.manual.length} manual; issues ${issues.length}`);
+  if (issues.length) fail(issues.slice(0, 8).join("; "));
+}
+
 if (process.argv.includes("--brand")) checkBrand();
 else if (process.argv.includes("--crawl")) checkCrawl();
+else if (process.argv.includes("--redirects")) checkRedirects();
 else checkPages();
