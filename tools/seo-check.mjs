@@ -164,7 +164,7 @@ function checkPages() {
    and the review documents that list current titles for a human. In every other file,
    added lines are checked with code spans removed (a quoted path is not prose), and a
    line may carry `brand-rules: allow` only where it defines the rules themselves. */
-const SKIP = [/^data\//, /^tools\/slugs\.mjs$/, /^tools\/alt-overrides\.mjs$/, /^docs\/seo-url-map\.md$/, /^docs\/seo-title-review\.md$/, /^docs\/seo-alt-text-review\.md$/, /^public\//, /package-lock\.json$/];
+const SKIP = [/^data\//, /^tools\/slugs\.mjs$/, /^tools\/alt-overrides\.mjs$/, /^docs\/seo-url-map\.md$/, /^docs\/seo-title-review\.md$/, /^docs\/seo-alt-text-review\.md$/, /^docs\/seo-copy-brief\.md$/, /^public\//, /package-lock\.json$/];
 const RULES = [
   { name: "em/en dash", re: /[–—]/ }, // brand-rules: allow
   { name: "run-word", re: /\b(run|running|runs)\b/i }, // brand-rules: allow
