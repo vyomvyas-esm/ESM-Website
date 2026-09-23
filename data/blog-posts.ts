@@ -69,6 +69,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -135,7 +139,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -215,6 +219,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -281,7 +289,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -364,6 +372,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -426,6 +438,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -496,6 +512,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -562,7 +582,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -645,6 +665,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -707,7 +731,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -790,6 +814,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -861,6 +889,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -923,6 +955,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -989,7 +1025,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -1072,6 +1108,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -1134,6 +1174,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -1200,7 +1244,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -1283,6 +1327,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -1349,7 +1397,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -1432,6 +1480,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -1494,6 +1546,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -1564,6 +1620,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -1630,6 +1690,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -1696,7 +1760,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -1779,7 +1843,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -1862,6 +1926,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -1932,6 +2000,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -1998,7 +2070,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -2078,6 +2150,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -2144,7 +2220,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -2227,6 +2303,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -2289,6 +2369,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -2359,6 +2443,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -2429,6 +2517,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -2495,7 +2587,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -2574,6 +2666,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -2640,7 +2736,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -2723,6 +2819,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -2789,6 +2889,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -2855,7 +2959,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -2938,6 +3042,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -3008,6 +3116,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -3071,6 +3183,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -3137,7 +3253,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -3216,7 +3332,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -3299,6 +3415,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -3370,6 +3490,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -3436,6 +3560,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -3498,6 +3626,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -3564,7 +3696,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -3647,6 +3779,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -3713,7 +3849,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -3796,6 +3932,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -3871,6 +4011,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -3937,7 +4081,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -4016,7 +4160,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -4099,6 +4243,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -4169,6 +4317,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -4231,6 +4383,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -4297,7 +4453,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -4380,6 +4536,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -4438,6 +4598,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -4504,7 +4668,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -4587,6 +4751,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -4657,6 +4825,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -4723,7 +4895,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -4806,6 +4978,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -4865,6 +5041,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -4931,7 +5111,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -5014,6 +5194,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -5084,6 +5268,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -5150,7 +5338,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -5233,6 +5421,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -5291,6 +5483,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -5365,6 +5561,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -5431,7 +5631,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -5510,7 +5710,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -5593,6 +5793,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -5664,6 +5868,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -5726,6 +5934,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -5793,7 +6005,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -5876,6 +6088,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -5942,7 +6158,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -6021,6 +6237,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -6091,6 +6311,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -6161,6 +6385,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -6227,7 +6455,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -6298,6 +6526,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -6364,7 +6596,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -6447,6 +6679,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -6509,6 +6745,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -6575,7 +6815,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -6658,6 +6898,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -6728,6 +6972,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -6787,6 +7035,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -6853,7 +7105,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -6932,7 +7184,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -7015,6 +7267,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -7085,6 +7341,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -7147,6 +7407,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -7213,7 +7477,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -7296,6 +7560,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -7359,6 +7627,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -7425,7 +7697,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -7508,6 +7780,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -7578,6 +7854,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -7640,6 +7920,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -7706,7 +7990,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -7785,7 +8069,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -7868,6 +8152,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -7934,6 +8222,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -8000,7 +8292,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -8083,6 +8375,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -8146,6 +8442,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -8212,7 +8512,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -8296,6 +8596,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -8366,6 +8670,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -8432,7 +8740,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -8511,6 +8819,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -8573,6 +8885,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -8639,7 +8955,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -8722,6 +9038,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -8792,6 +9112,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -8858,7 +9182,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -8941,6 +9265,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -9003,6 +9331,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -9069,7 +9401,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -9144,6 +9476,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -9210,7 +9546,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -9293,6 +9629,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -9363,6 +9703,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -9425,6 +9769,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -9495,6 +9843,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -9562,7 +9914,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -9641,7 +9993,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -9712,6 +10064,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -9782,6 +10138,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -9852,6 +10212,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -9918,7 +10282,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -9993,6 +10357,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -10059,7 +10427,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -10142,6 +10510,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -10212,6 +10584,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -10278,7 +10654,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -10361,6 +10737,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -10423,6 +10803,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -10485,6 +10869,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -10551,7 +10939,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -10634,6 +11022,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -10700,7 +11092,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -10783,6 +11175,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -10845,6 +11241,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -10915,6 +11315,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -10981,7 +11385,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -11060,6 +11464,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -11126,7 +11534,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -11209,6 +11617,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -11279,6 +11691,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -11341,6 +11757,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -11407,7 +11827,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -11486,7 +11906,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -11569,6 +11989,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -11631,6 +12055,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -11701,6 +12129,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -11767,7 +12199,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -11842,6 +12274,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -11908,7 +12344,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -11992,6 +12428,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -12062,6 +12502,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -12128,7 +12572,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -12199,6 +12643,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -12262,6 +12710,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -12332,6 +12784,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -12398,7 +12854,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -12481,6 +12937,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -12547,7 +13007,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -12630,6 +13090,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -12692,6 +13156,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -12758,7 +13226,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -12833,6 +13301,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -12904,6 +13376,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -12970,7 +13446,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -13053,6 +13529,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -13123,6 +13603,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -13185,6 +13669,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -13251,7 +13739,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -13330,7 +13818,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -13413,6 +13901,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -13483,6 +13975,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -13541,6 +14037,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -13607,7 +14107,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -13682,6 +14182,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "capability": {
         "label": "Loupe, Application Assistant - PYZO",
         "href": "/pyzo/loupe/"
@@ -13756,6 +14260,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -13822,7 +14330,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -13905,6 +14413,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -13975,6 +14487,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -14041,7 +14557,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -14121,6 +14637,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -14183,6 +14703,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "capability": {
         "label": "Compass, Business Analyst - PYZO",
         "href": "/pyzo/compass/"
@@ -14258,7 +14782,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -14341,6 +14865,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -14407,7 +14935,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -14490,6 +15018,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -14560,6 +15092,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -14622,6 +15158,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "capability": {
         "label": "Prism, Evaluation Consultant - PYZO",
         "href": "/pyzo/prism/"
@@ -14697,7 +15237,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -14776,6 +15316,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -14842,7 +15386,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -14925,6 +15469,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -14995,6 +15543,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -15057,6 +15609,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "capability": {
         "label": "Atlas, Training Coach - PYZO",
         "href": "/pyzo/atlas/"
@@ -15136,7 +15692,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -15194,6 +15750,10 @@ export const blogPosts: BlogPost[] = [
     ],
     "images": [],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -15260,7 +15820,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -15343,6 +15903,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -15413,6 +15977,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -15479,7 +16047,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -15554,6 +16122,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "capability": {
         "label": "Evio, Call Operator - PYZO",
         "href": "/pyzo/evio/"
@@ -15633,7 +16205,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -15709,6 +16281,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -15779,6 +16355,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -15845,7 +16425,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -15924,6 +16504,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -15994,6 +16578,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -16056,6 +16644,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -16122,7 +16714,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -16201,6 +16793,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -16271,6 +16867,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -16337,7 +16937,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -16412,6 +17012,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -16478,7 +17082,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -16561,6 +17165,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -16627,6 +17235,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -16693,6 +17305,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -16759,7 +17375,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -16842,6 +17458,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -16904,6 +17524,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -16970,7 +17594,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -17049,7 +17673,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -17132,6 +17756,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -17198,6 +17826,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -17264,6 +17896,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -17330,7 +17966,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -17413,6 +18049,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -17475,6 +18115,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -17541,7 +18185,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -17620,6 +18264,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -17690,6 +18338,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -17756,7 +18408,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -17831,6 +18483,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -17897,7 +18553,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -17972,6 +18628,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -18042,6 +18702,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -18108,7 +18772,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -18187,6 +18851,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -18257,6 +18925,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -18315,6 +18987,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -18381,7 +19057,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -18456,6 +19132,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -18526,6 +19206,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -18592,7 +19276,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -18672,6 +19356,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -18735,6 +19423,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -18805,7 +19497,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -18888,6 +19580,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -18954,7 +19650,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -19029,6 +19725,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -19100,6 +19800,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -19162,6 +19866,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -19232,7 +19940,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -19311,7 +20019,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -19390,6 +20098,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -19460,6 +20172,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -19526,7 +20242,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -19609,6 +20325,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -19668,6 +20388,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -19734,7 +20458,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -19813,6 +20537,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -19884,6 +20612,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -19954,6 +20686,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -20016,7 +20752,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -20091,6 +20827,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -20157,7 +20897,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -20240,6 +20980,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -20306,6 +21050,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -20364,6 +21112,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -20430,7 +21182,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -20513,6 +21265,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -20572,6 +21328,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -20638,7 +21398,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -20717,7 +21477,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -20796,6 +21556,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -20859,6 +21623,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -20925,6 +21693,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -20996,6 +21768,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -21058,6 +21834,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -21128,7 +21908,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -21207,7 +21987,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -21282,6 +22062,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -21348,6 +22132,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -21414,7 +22202,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -21490,6 +22278,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -21556,7 +22348,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -21631,6 +22423,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -21693,6 +22489,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -21759,6 +22559,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -21829,7 +22633,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -21912,6 +22716,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -21974,6 +22782,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -22040,7 +22852,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -22123,6 +22935,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -22189,6 +23005,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -22255,7 +23075,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -22335,6 +23155,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -22405,6 +23229,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -22467,6 +23295,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -22529,7 +23361,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -22608,7 +23440,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -22683,6 +23515,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -22749,6 +23585,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -22811,6 +23651,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Enterprise AI",
+        "href": "/engineering/enterprise-ai/"
+      },
       "caseStudies": []
     }
   },
@@ -22874,6 +23718,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "About Us",
+        "href": "/about/"
+      },
       "caseStudies": []
     }
   },
@@ -22940,7 +23788,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Healthcare & Life Sciences",
         "href": "/industries/healthcare/"
       },
@@ -23019,7 +23867,7 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
-      "industry": {
+      "section": {
         "label": "Banking & Financial Services",
         "href": "/industries/bfsi/"
       },
@@ -23098,6 +23946,10 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     "related": {
+      "section": {
+        "label": "Agentic AI",
+        "href": "/engineering/agentic-ai/"
+      },
       "caseStudies": []
     }
   }

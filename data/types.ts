@@ -34,9 +34,10 @@ export interface BlogPost {
   /** article body in order: HTML chunks and references into `images` */
   body: BodyBlock[];
   images: ArticleImage[];
-  /** internal links derived from the category and title; see docs/seo-unmapped-articles.md */
+  /** internal links derived from the category, refined per article in data/article-links.json */
   related: {
-    industry?: RelatedLink;
+    /** the section that covers this category: an industry page, an engineering page or About */
+    section?: RelatedLink;
     capability?: RelatedLink;
     caseStudies: RelatedLink[];
   };

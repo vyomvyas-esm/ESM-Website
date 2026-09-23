@@ -121,10 +121,10 @@ export default async function BlogPostPage({ params }: Params) {
                   ),
                 )}
               </div>
-              {(post.related.industry || post.related.capability || post.related.caseStudies.length > 0) && (
+              {(post.related.section || post.related.capability || post.related.caseStudies.length > 0) && (
                 <p className="mt-10 text-[12.5px] leading-[1.75] text-white/45 rv">
                   Related:{" "}
-                  {[post.related.capability, post.related.industry, ...post.related.caseStudies]
+                  {[post.related.capability, post.related.section, ...post.related.caseStudies]
                     .filter((l): l is NonNullable<typeof l> => !!l)
                     .map((l, i) => (
                       <span key={l.href}>
