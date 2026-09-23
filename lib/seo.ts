@@ -4,8 +4,10 @@ import copy from "../data/copy-overrides.json" with { type: "json" };
 export const SITE_URL = "https://esmagico.com";
 export const SITE_NAME = "Es Magico";
 export const TITLE_SUFFIX = " | Es Magico";
-/** Used when a page has no image of its own. An existing site asset, not new artwork. */
-export const DEFAULT_OG_IMAGE = "/img/img-hero.webp";
+/** Used when a page has no image of its own: the site's wordmark on its own hero
+    backdrop, at the 1200x630 proportion platforms crop link previews to. Composed by
+    tools/og-image.mjs from existing assets; a purpose-made card should replace it. */
+export const DEFAULT_OG_IMAGE = "/img/og-card.png";
 export const DESCRIPTION_LIMIT = 155;
 
 /** "27 July 2026" -> "2026-07-27". Throws on anything else so bad dates never reach markup. */

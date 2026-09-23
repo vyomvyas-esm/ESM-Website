@@ -162,5 +162,26 @@
       "destination": "/blog/what-is-an-ai-operator/"
     }
   ],
-  "manual": []
+  "manual": [
+    {
+      "source": "/blogs",
+      "destination": "/blog/"
+    },
+    {
+      "source": "/build/agentic-ai-systems",
+      "destination": "/engineering/agentic-ai/"
+    },
+    {
+      "source": "/build/ai-strategy-governance",
+      "destination": "/engineering/ai-governance/"
+    },
+    {
+      "source": "/build/gen-ai-llms",
+      "destination": "/engineering/enterprise-ai/"
+    },
+    {
+      "source": "/case-studies/dominos-india",
+      "destination": "/case-studies/"
+    }
+  ]
 }
