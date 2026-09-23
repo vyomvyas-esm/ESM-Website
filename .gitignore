@@ -15,3 +15,6 @@ tools/node_modules/
 
 # Word lock files
 ~$*
+
+# one-off status report deliverables, sent rather than versioned
+docs/seo-status-report.*
