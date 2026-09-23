@@ -11,19 +11,57 @@ const abs = (path: string) => new URL(path, SITE_URL).toString();
 
 export type JsonLd = Record<string, unknown>;
 
+/* Offices as listed on /about/ and in the footer. Mumbai is the first named everywhere
+   and the Terms name the company as Indian with offices in Mumbai and Bengaluru, so
+   Mumbai is the organization's address and the other two are additional locations. */
+const OFFICES = [
+  {
+    name: "Mumbai",
+    streetAddress: "Lodha Supremus, 1307, Saki Vihar Road, Tunga Village, Chandivali, Powai",
+    addressLocality: "Mumbai",
+    addressRegion: "Maharashtra",
+    postalCode: "400072",
+    addressCountry: "IN",
+  },
+  {
+    name: "Bengaluru",
+    streetAddress: "Unicorn Club 113, 3rd Floor, 19th Main, Sector 4, HSR Layout",
+    addressLocality: "Bengaluru",
+    addressRegion: "Karnataka",
+    postalCode: "560102",
+    addressCountry: "IN",
+  },
+  {
+    name: "New Jersey",
+    streetAddress: "2 University Plaza Drive, Suite 100",
+    addressLocality: "Hackensack",
+    addressRegion: "NJ",
+    postalCode: "07601",
+    addressCountry: "US",
+  },
+];
+const postalAddress = ({ name, ...a }: (typeof OFFICES)[number]) => ({ "@type": "PostalAddress", ...a });
+
 export function organization(): JsonLd {
+  const [head, ...others] = OFFICES;
   return {
     "@type": "Organization",
     "@id": ORG_ID,
     name: SITE_NAME,
-    legalName: "Es Magico Experiences Private Limited", // footer
+    legalName: "Es Magico Experiences Private Limited", // footer and legal pages
     url: `${SITE_URL}/`,
     logo: { "@type": "ImageObject", url: abs("/img/esm-logo.svg") },
     sameAs: ["https://x.com/EsMagicoAI", "https://www.linkedin.com/company/esmagico/", "https://www.instagram.com/esmagicoai"],
+    address: postalAddress(head),
+    // "50+ specialists on the bench" on /about/
+    numberOfEmployees: { "@type": "QuantitativeValue", minValue: 50 },
+    location: others.map((o) => ({ "@type": "Place", name: o.name, address: postalAddress(o) })),
     contactPoint: {
       "@type": "ContactPoint",
       email: "connect@esmagico.com", // footer
       telephone: "+91 94074 74888", // footer
+      areaServed: ["IN", "US"], // the offices above
+      availableLanguage: "en",
     },
   };
 }
@@ -117,4 +155,19 @@ export function service(input: { name: string; description: string; path: string
 /** One @graph per page: the Organization and WebSite from the layout plus the page's own nodes. */
 export function graph(...nodes: JsonLd[]): JsonLd {
   return { "@context": "https://schema.org", "@graph": nodes };
+}
+
+/* A page that states when it was last updated, such as the privacy notice and the terms.
+   The date comes from the line printed on the page itself. */
+export function webPage(input: { name: string; path: string; dateModified: string }): JsonLd {
+  const url = abs(input.path);
+  return {
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    name: input.name,
+    dateModified: input.dateModified,
+    isPartOf: { "@id": SITE_ID },
+    publisher: { "@id": ORG_ID },
+  };
 }

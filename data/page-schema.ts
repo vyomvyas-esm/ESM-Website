@@ -151,3 +151,17 @@ export const services: Record<string, { name: string; description: string; path:
     "path": "/engineering/enterprise-ai/"
   }
 };
+
+/** Pages that print their own "Last updated" date */
+export const updated: Record<string, { name: string; path: string; dateModified: string }> = {
+  "privacy": {
+    "name": "Privacy Policy",
+    "path": "/privacy/",
+    "dateModified": "2026-08-10"
+  },
+  "terms": {
+    "name": "Terms & Conditions",
+    "path": "/terms/",
+    "dateModified": "2026-08-10"
+  }
+};

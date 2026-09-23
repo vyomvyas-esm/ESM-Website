@@ -1,5 +1,8 @@
 import { pageMetadata } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
+import { graph, webPage } from "@/lib/jsonld";
+import { updated } from "@/data/page-schema";
 import Link from "next/link";
 export const metadata = pageMetadata({
   title: "Privacy Policy",
@@ -10,6 +13,7 @@ export const metadata = pageMetadata({
 export default function PrivacyPage() {
   return (
     <main className="page" id="page-privacy">
+      <JsonLd data={graph(webPage(updated["privacy"]))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>
