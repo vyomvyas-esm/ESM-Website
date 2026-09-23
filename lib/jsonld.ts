@@ -82,10 +82,12 @@ export interface Crumb {
   href?: string;
 }
 
-/* Derived from the same list as the visible breadcrumb. Google rejects an intermediate
-   ListItem without a URL ("Missing field item", verified in the Rich Results Test), so a
-   label that is not a page is left out of the schema; every linked crumb and the current
-   page appear exactly as shown. See docs/seo-open-items.md for the alternative. */
+/* Derived from the same list as the visible breadcrumb. The visible trail keeps its
+   section labels (Resources, Company, Engineering, Industries, Trust); they are not
+   pages, and Google rejects an intermediate ListItem without a URL ("Missing field
+   item", verified in the Rich Results Test), so the schema leaves them out. Every
+   linked crumb and the current page appear exactly as shown. Decided 23 September
+   2026; see item 14 in docs/seo-open-items.md. */
 export function breadcrumbList(items: Crumb[]): JsonLd {
   const kept = items.filter((c, i) => c.href || i === items.length - 1);
   return {

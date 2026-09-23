@@ -134,25 +134,22 @@ const steps = [
   ["01", "Search Console export of the currently indexed addresses",
     "The 40 redirects cover what this port changed. The addresses the live site has indexed today are unknown to the repository, so links from search results would reach a 404 at launch. The export drops straight into the prepared file and each entry maps to its nearest section.",
     "Marketing. Blocks launch."],
-  ["02", "Breadcrumb wording decision",
-    "Visible breadcrumbs show section labels such as Resources and Company that are not pages. Google rejects those entries in the schema, so they are left out of it while the visible trail is untouched. Making the two identical means either dropping the label from the design or creating real section pages.",
-    "Design and SEO"],
-  ["03", "Typefaces",
+  ["02", "Typefaces",
     "The brief names Archivo and IBM Plex Mono; the design uses Inter and Schibsted Grotesk, both self hosted and subset. Changing families is a visible typography change, so the design's own faces stay until someone decides otherwise.",
     "Design"],
-  ["04", "Two facts the site does not state",
+  ["03", "Two facts the site does not state",
     "Team size and all three office addresses are now in the organisation schema, taken from the About page, and the legal pages carry the update date they print. Two gaps are left: the year the company was founded appears nowhere on the site, and there is no image at the 1200 by 630 proportion that social platforms crop to, so link previews fall back to the hero.",
     "Marketing"],
-  ["05", "208 articles without internal links",
+  ["04", "208 articles without internal links",
     "Links were derived only where the data supports it, never guessed. Articles in the Agentic AI, AI Models, AI Tools and Es Magico categories carry no industry or capability signal. Each needs a target chosen by a person; the list is in the repository.",
     "Content"],
-  ["06", "Two gaps in the image export",
+  ["05", "Two gaps in the image export",
     "One article has an empty folder and another has a single image instead of two, so those slots keep the placeholder. One mis numbered folder was reassigned on the evidence of the image itself and needs a second opinion.",
     "Content"],
-  ["07", "Merge the stack and confirm the production origin",
+  ["06", "Merge the stack and confirm the production origin",
     "Five pull requests are open and stacked in order; the sixth is ready to open. The origin is set to the domain without www and needs confirming against the hosting before launch.",
     "Engineering"],
-  ["08", "After launch",
+  ["07", "After launch",
     "Submit the sitemap index in Search Console, repeat the Rich Results Test against live addresses rather than pasted markup, watch 404 reports for addresses the export missed, and repeat the link crawl against the deployed site.",
     "Marketing and Engineering"],
 ];
@@ -167,7 +164,7 @@ children.push(
   new Paragraph({
     spacing: { after: 160 },
     border: { bottom: { style: BorderStyle.SINGLE, size: 12, color: INK, space: 10 } },
-    children: [t("The marketing site has been ported from the single file HTML prototype to Next.js, and the full SEO brief has been implemented across seven phases. The site is complete on the engineering side and is waiting on three decisions and one data export before launch.", { size: 21 })],
+    children: [t("The marketing site has been ported from the single file HTML prototype to Next.js, and the full SEO brief has been implemented across seven phases. The site is complete on the engineering side and is waiting on two decisions and one data export before launch.", { size: 21 })],
   }),
 );
 children.push(
@@ -245,7 +242,7 @@ children.push(
 );
 
 children.push(h2("Future steps"));
-children.push(p("Eighteen items remain open. The eight below are the ones that need a person; the first holds up launch.", { after: 140, color: MUTED, size: 18 }));
+children.push(p("Seventeen items remain open. The seven below are the ones that need a person; the first holds up launch.", { after: 140, color: MUTED, size: 18 }));
 const snW = 620;
 const ownW = 2100;
 children.push(
