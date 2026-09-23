@@ -10,41 +10,41 @@ const NAV: { label: string; items: { label: string; href: string }[] }[] = [
   {
     label: "Engineering",
     items: [
-      { label: "Agentic AI", href: "/services/agentic-ai" },
-      { label: "AI Governance", href: "/services/ai-governance" },
-      { label: "Enterprise AI", href: "/services/enterprise-ai" },
+      { label: "Agentic AI", href: "/engineering/agentic-ai/" },
+      { label: "AI Governance", href: "/engineering/ai-governance/" },
+      { label: "Enterprise AI", href: "/engineering/enterprise-ai/" },
     ],
   },
   {
     label: "Industries",
     items: [
-      { label: "Banking & Financial Services", href: "/industries/bfsi" },
-      { label: "Healthcare & Life Sciences", href: "/industries/healthcare" },
-      { label: "Public Sector & Governance", href: "/industries/public-sector" },
-      { label: "Consumer & Retail", href: "/industries/retail" },
+      { label: "Banking & Financial Services", href: "/industries/bfsi/" },
+      { label: "Healthcare & Life Sciences", href: "/industries/healthcare/" },
+      { label: "Public Sector & Governance", href: "/industries/public-sector/" },
+      { label: "Consumer & Retail", href: "/industries/retail/" },
     ],
   },
   {
     label: "Resources",
     items: [
-      { label: "Blog", href: "/blog" },
-      { label: "Case Studies", href: "/case-studies" },
-      { label: "Reports", href: "/reports" },
+      { label: "Blog", href: "/blog/" },
+      { label: "Case Studies", href: "/case-studies/" },
+      { label: "Reports", href: "/reports/" },
     ],
   },
   {
     label: "Company",
     items: [
-      { label: "About Us", href: "/about" },
-      { label: "Careers", href: "/careers" },
-      { label: "Technology", href: "/technology" },
+      { label: "About Us", href: "/about/" },
+      { label: "Careers", href: "/careers/" },
+      { label: "Technology", href: "/technology/" },
     ],
   },
 ];
 
 const PYZO_ITEMS = ["Atlas", "Compass", "Evio", "Forge", "Loupe", "Prism"].map((p) => ({
   label: p,
-  href: `/pyzo/${p.toLowerCase()}`,
+  href: `/pyzo/${p.toLowerCase()}/`,
 }));
 
 function Chevron() {
@@ -132,7 +132,7 @@ export function Header() {
           <nav className="hidden lg:flex items-center gap-8" aria-label="Primary">
             <Dropdown
               trigger={
-                <Link className="nav-link is-accent" aria-label="PYZO" href="/pyzo">
+                <Link className="nav-link is-accent" aria-label="PYZO" href="/pyzo/">
                   <PyzoLogo /> <Chevron />
                 </Link>
               }
@@ -154,7 +154,7 @@ export function Header() {
 
           <div className="flex items-center gap-3">
             <ThemeSwitch />{" "}
-            <Link className="btn btn-light btn-sm hidden sm:inline-flex" href="/contact">
+            <Link className="btn btn-light btn-sm hidden sm:inline-flex" href="/contact/">
               Define an Outcome
             </Link>{" "}
             <button
@@ -174,7 +174,7 @@ export function Header() {
 
       <div className={`mmenu lg:hidden border-t border-hair backdrop-blur-xl${open ? "" : " hidden"}`}>
         <nav className="mx-auto max-w-shell px-6 py-5 flex flex-col gap-3" aria-label="Mobile">
-          <Link className="flex text-left" aria-label="PYZO" href="/pyzo">
+          <Link className="flex text-left" aria-label="PYZO" href="/pyzo/">
             <PyzoLogo size="lg" />
           </Link>
           <div className="flex flex-col gap-3 pl-3 border-l border-hair">
@@ -197,7 +197,7 @@ export function Header() {
             </div>
           ))}
           <div className="mt-3 flex items-center gap-3">
-            <Link className="btn btn-light btn-sm" href="/contact">
+            <Link className="btn btn-light btn-sm" href="/contact/">
               Define an Outcome
             </Link>{" "}
             <span className="text-[12px] text-white/45">Appearance</span> <ThemeSwitch />

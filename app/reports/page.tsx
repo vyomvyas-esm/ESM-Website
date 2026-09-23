@@ -1,9 +1,13 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import Link from "next/link";
 import { ReportsIndex } from "@/components/ReportsIndex";
-export const metadata: Metadata = {
-  title: "Reports - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Reports",
+  description:
+    "Deep research into how AI is engineered, governed and deployed in regulated enterprises, with the working shown and every figure sourced.",
+  path: "/reports/",
+});
 export default function ReportsPage() {
   return (
     <main className="page" id="page-reports">
@@ -14,13 +18,7 @@ export default function ReportsPage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[88px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span>
-            <span className="text-white/45">Resources</span>
-            <span className="sep">·</span>
-            <span aria-current="page">Reports</span>
-          </nav>
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Resources" }, { label: "Reports" }]} />
           <h1 className="h-hero mt-6 max-w-[16ch] rv" data-d="60">
             Beyond market reports.
           </h1>
@@ -29,7 +27,7 @@ export default function ReportsPage() {
             working shown and every figure sourced.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/contact">
+            <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -66,7 +64,7 @@ export default function ReportsPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

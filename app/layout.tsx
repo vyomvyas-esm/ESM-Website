@@ -3,6 +3,10 @@ import { Inter, Schibsted_Grotesk } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SiteEffects } from "@/components/SiteEffects";
+import { preload } from "react-dom";
+import { SITE_URL, TITLE_SUFFIX } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { graph, organization, webSite } from "@/lib/jsonld";
 import "./globals.css";
 
 const inter = Inter({
@@ -19,13 +23,14 @@ const schibsted = Schibsted_Grotesk({
   display: "swap",
 });
 
+/* Only the origin and the title template live here. Every route sets its own title
+   and description (or deliberately none), so nothing is inherited from this layout. */
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Es Magico - The Operator for AI-native Transformation",
-    template: "%s",
+    default: "Es Magico",
+    template: `%s${TITLE_SUFFIX}`,
   },
-  description:
-    "Es Magico is the Operator for AI-native Transformation. We deploy AI into production inside regulated enterprises and stand behind what it produces to auditors, regulators and boards.",
 };
 
 /* Applied before first paint so a stored theme never flashes. Light is the default;
@@ -33,6 +38,10 @@ export const metadata: Metadata = {
 const themeBoot = `try{if(localStorage.getItem('esm-theme')!=='dark')document.documentElement.setAttribute('data-theme','light')}catch(e){document.documentElement.setAttribute('data-theme','light')}`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  /* The hero backdrop is the largest element on every template and is painted from CSS,
+     so it cannot carry `priority`; a preload does the same job. Light is the default
+     theme, so that variant is preloaded; the dark one loads on demand. */
+  preload("/img/img-hero-light.webp", { as: "image", fetchPriority: "high" });
   return (
     <html
       lang="en"
@@ -44,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: themeBoot }} />
       </head>
       <body className="font-body antialiased">
+        <JsonLd data={graph(organization(), webSite())} />
         <Header />
         {children}
         <Footer />

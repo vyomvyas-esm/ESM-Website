@@ -1,10 +1,14 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import Link from "next/link";
 import { CaseStudiesIndex } from "@/components/CaseStudiesIndex";
 import { ProofBlock } from "@/components/ProofBlock";
-export const metadata: Metadata = {
-  title: "Case Studies - Es Magico",
-};
+export const metadata = pageMetadata({
+  title: "Case Studies",
+  description:
+    "Every case study shows how AI moved from ambition to production and the business metric it changed.",
+  path: "/case-studies/",
+});
 export default function CaseStudiesPage() {
   return (
     <main className="page" id="page-case-studies">
@@ -15,13 +19,9 @@ export default function CaseStudiesPage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[88px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span>
-            <span className="text-white/45">Resources</span>
-            <span className="sep">·</span>
-            <span aria-current="page">Case Studies</span>
-          </nav>
+          <Breadcrumbs
+            items={[{ label: "Home", href: "/" }, { label: "Resources" }, { label: "Case Studies" }]}
+          />
           <h1 className="h-hero mt-6 max-w-[18ch] rv" data-d="60">
             Proof in Production.
           </h1>
@@ -30,7 +30,7 @@ export default function CaseStudiesPage() {
             changed.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/contact">
+            <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -74,7 +74,7 @@ export default function CaseStudiesPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

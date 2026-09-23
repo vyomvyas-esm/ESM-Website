@@ -1,14 +1,22 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
+import { graph, faqPage } from "@/lib/jsonld";
+import { faqs } from "@/data/page-schema";
 import Link from "next/link";
 import { Waveform } from "@/components/Waveform";
 import { PyzoPanels } from "@/components/PyzoPanels";
 import { FoundationLedger } from "@/components/FoundationLedger";
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "PYZO - Six capabilities. One hardened foundation.",
-};
+  description:
+    "A unified agentic AI platform where every product shares the same core services, making deployments more reliable, scalable, and easier to govern.",
+  path: "/pyzo/",
+});
 export default function PyzoPage() {
   return (
     <main className="page" id="page-pyzo">
+      <JsonLd data={graph(faqPage(faqs["pyzo"]))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>
@@ -16,11 +24,7 @@ export default function PyzoPage() {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[96px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span>
-            <span aria-current="page">PYZO</span>
-          </nav>
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "PYZO" }]} />
           <h1 className="h-hero mt-6 max-w-[15ch] rv" data-d="60">
             Six capabilities. One hardened foundation.
           </h1>
@@ -29,7 +33,7 @@ export default function PyzoPage() {
             deployments more reliable, scalable, and easier to govern.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
-            <Link className="btn btn-light group" href="/contact">
+            <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -55,7 +59,7 @@ export default function PyzoPage() {
           </h2>
           <div className="mt-[62px] grid gap-4 lg:grid-cols-3">
             <div className="flex flex-col gap-4">
-              <Link className="card card-lit flex h-[336px] flex-col p-5 text-left rv" href="/pyzo/atlas">
+              <Link className="card card-lit flex h-[336px] flex-col p-5 text-left rv" href="/pyzo/atlas/">
                 <div className="bento-art">
                   <div className="mock mb-4 overflow-hidden">
                     <div className="art-film on-dark relative h-[86px]">
@@ -90,7 +94,7 @@ export default function PyzoPage() {
                   trainer.
                 </p>
               </Link>{" "}
-              <Link className="card flex h-[300px] flex-col p-5 text-left rv" href="/pyzo/forge">
+              <Link className="card flex h-[300px] flex-col p-5 text-left rv" href="/pyzo/forge/">
                 <div className="bento-art">
                   <div className="mock mb-5 p-3">
                     <div className="flex items-center">
@@ -126,7 +130,7 @@ export default function PyzoPage() {
               </Link>
             </div>
             <div className="flex flex-col gap-4">
-              <Link className="card flex h-[300px] flex-col p-5 text-left rv" href="/pyzo/evio">
+              <Link className="card flex h-[300px] flex-col p-5 text-left rv" href="/pyzo/evio/">
                 <div className="bento-art">
                   <div className="art-media relative mb-5 h-[118px] overflow-hidden rounded-[8px]">
                     <Waveform
@@ -154,7 +158,7 @@ export default function PyzoPage() {
                   Handles inbound and outbound calls in 15+ languages, and transfers to a human when needed.
                 </p>
               </Link>{" "}
-              <Link className="card flex h-[336px] flex-col p-5 text-left rv" href="/pyzo/loupe">
+              <Link className="card flex h-[336px] flex-col p-5 text-left rv" href="/pyzo/loupe/">
                 <div className="bento-art">
                   <div className="mock mb-5 p-3">
                     <div className="space-y-1.5">
@@ -190,7 +194,7 @@ export default function PyzoPage() {
               </Link>
             </div>
             <div className="flex flex-col gap-4">
-              <Link className="card card-lit flex h-[354px] flex-col p-5 text-left rv" href="/pyzo/compass">
+              <Link className="card card-lit flex h-[354px] flex-col p-5 text-left rv" href="/pyzo/compass/">
                 <div className="bento-art">
                   <div className="mock mb-4 p-2.5">
                     <div className="flex items-center gap-1.5 rounded-[6px] border border-white/10 bg-white/[.04] px-2 py-1.5">
@@ -237,7 +241,7 @@ export default function PyzoPage() {
                   functions.
                 </p>
               </Link>{" "}
-              <Link className="card flex h-[282px] flex-col p-5 text-left rv" href="/pyzo/prism">
+              <Link className="card flex h-[282px] flex-col p-5 text-left rv" href="/pyzo/prism/">
                 <div className="bento-art">
                   <div className="mock mb-5 p-3">
                     <div className="flex items-center justify-between">
@@ -464,7 +468,7 @@ export default function PyzoPage() {
                 <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

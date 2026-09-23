@@ -12,3 +12,9 @@ tools/node_modules/
 
 # per-machine Claude Code permissions
 .claude/settings.local.json
+
+# Word lock files
+~$*
+
+# one-off status report deliverables, sent rather than versioned
+docs/seo-status-report.*
