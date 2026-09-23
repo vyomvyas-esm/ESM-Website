@@ -51,6 +51,8 @@ export function organization(): JsonLd {
     legalName: "Es Magico Experiences Private Limited", // footer and legal pages
     url: `${SITE_URL}/`,
     logo: { "@type": "ImageObject", url: abs("/img/esm-logo.svg") },
+    // supplied by the client on 23 September 2026; the site itself does not state it
+    foundingDate: "2017",
     sameAs: ["https://x.com/EsMagicoAI", "https://www.linkedin.com/company/esmagico/", "https://www.instagram.com/esmagicoai"],
     address: postalAddress(head),
     // "50+ specialists on the bench" on /about/
