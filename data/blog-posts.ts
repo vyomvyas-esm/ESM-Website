@@ -12589,68 +12589,6 @@ export const blogPosts: BlogPost[] = [
     }
   },
   {
-    "slug": "coding-assistants-compared",
-    "title": "Coding Assistants Compared: A Production Selection Guide for Engineering Teams",
-    "metaTitle": "Coding Assistants Compared: A Production Selection Guide for Engineering Teams - Es Magico",
-    "lede": "Engineering teams selecting a coding assistant tend to run the evaluation on the most visible axis and the least durable one. Developers try the contenders, judge which produces better code on a few tasks, and the preference that emerges drives the decision, while the code-quality gap between serious tools is converging and will keep converging. The attributes that actually determine which assistant fits a production engineering organisation sit underneath the code: how it handles source code egress, how it fits the team’s workflow, how its output interacts with review capacity, and what it demands of the pipeline. Those are the axes a selection has to weigh, because they are the ones the team lives with after the quality gap closes.",
-    "tag": "AI Tools",
-    "date": "25 June 2025",
-    "author": {
-      "name": "Karan Trehan",
-      "role": "VP, Technology",
-      "avatar": "av-karan"
-    },
-    "railTitle": "The story",
-    "sections": [
-      {
-        "id": "sec-1",
-        "label": "Code egress is the selection criterion that outlasts quality"
-      },
-      {
-        "id": "sec-2",
-        "label": "Workflow fit determines whether the assistant helps or disrupts"
-      },
-      {
-        "id": "sec-3",
-        "label": "The review-capacity interaction the comparison must include"
-      },
-      {
-        "id": "sec-4",
-        "label": "Operationalising the selection"
-      },
-      {
-        "id": "sec-5",
-        "label": "Where each fits"
-      }
-    ],
-    "body": [
-      {
-        "html": "<p>A coding assistant helps engineers write, modify, and understand code, with awareness of the surrounding repository and, increasingly, the ability to act across files. The capability that genuinely changed is the shift from line-level completion to repository-aware, multi-file assistance, so the assistant reasons across a codebase rather than finishing a line. That is a real advance in how much it can help. Selecting one for production means weighing the properties that survive the converging quality gap, and code egress leads the list.</p><h2 id=\"sec-1\">Code egress is the selection criterion that outlasts quality</h2>"
-      },
-      {
-        "image": 0
-      },
-      {
-        "html": "<p>Every coding assistant sends source context to a model endpoint to function, and what happens to that context is the question with the longest consequence, because source code is core intellectual property.</p><p>Where the code is processed, how long it is retained, whether it can influence training, and what contractual force sits behind each are the questions that determine whether an assistant is safe for a codebase holding proprietary algorithms, security implementations, and unreleased product logic. Two assistants with indistinguishable output can offer completely different answers here, and for an organisation whose code is its competitive advantage those answers decide feasibility before capability enters the conversation. An assistant with impressive output and weak egress terms is a worse production choice than a capable one with strong terms, because the egress exposure is permanent and the quality gap is temporary.</p><h2 id=\"sec-2\">Workflow fit determines whether the assistant helps or disrupts</h2><p>Coding assistants operate in different modes, interactive assistance in the editor, delegated work handled in the background, and the mode has to match how the team actually works, because a mismatch turns a productivity tool into friction.</p><p>An assistant that keeps the developer in the loop continuously suits work that needs judgment throughout, and one that lets the developer delegate a defined task and review the result later suits bounded, parallelisable work, and most teams need both depending on the task. The selection question is whether the assistant supports the modes the team’s work actually calls for, and whether it fits the editor, the review process, and the pipeline the team already runs, because an assistant that fights the existing workflow loses its advantage to the friction it creates. This is the supervision-model distinction that determines fit far more than raw capability, and it connects to how the pipeline handles what the assistant produces, which is where production readiness for AI-assisted engineering does the load-bearing work.</p><h2 id=\"sec-3\">The review-capacity interaction the comparison must include</h2><p>Every coding assistant generates code faster than a human can, and that speed lands on review, which is the constraint the selection has to account for rather than ignore.</p><p>The assistant that generates more, or that delegates work for later review, shifts more load onto review capacity, and review capacity depends on senior engineers who are already the scarcest resource, so the productivity gain is partly spent on the review the generation creates. Reviewing generated code is also weaker scrutiny, because the reviewer reconstructs intent from fluent output rather than carrying the mental model of writing it, and the dangerous defects, wrong system assumptions, missed edge cases, security patterns conventional in public code and wrong in your context, are camouflaged by competent presentation. A selection that weighs generation capability without weighing this interaction picks a tool that looks productive and shifts an unmeasured cost onto the reviewers. The trade-off is direct. More generation capability means more review load, and the right assistant is the one whose fit and egress terms suit the team, with review capacity planned to absorb what it produces.</p><h2 id=\"sec-4\">Operationalising the selection</h2><p>Enforcement lives in the pipeline regardless of which assistant is chosen, mandatory human approval on sensitive paths, security and licence scanning that cannot be bypassed, and coverage gates that apply however the code was produced, and this is the governed-pipeline discipline behind FORGE, where automation ships with gates and recovery built in. Path classification precedes access, distinguishing the sensitive paths, authentication, payments, cryptographic logic, safety-critical code, that deserve the strictest review from the low-consequence work that can move faster, and teams selecting a coding assistant should score the contenders on code egress and workflow fit first, treat code quality as a threshold to clear rather than the axis to win, and plan review capacity against expected generation volume before rollout.</p><figure class=\"art art-none\"><span class=\"art-mark\">Image to come</span><span class=\"art-cap\">Coding Assistants Compared: A Production Selection Guide for Engineering Teams</span></figure><h2 id=\"sec-5\">Where each fits</h2><p>The assistants strong on egress terms and workflow integration fit production engineering organisations where code is core IP and the tool has to fit an existing pipeline, and the choice among them comes down to which supervision modes the team’s work calls for.</p><p>The weaker fit for all of them is any rollout that selects on code quality alone, skips the code-egress question, or grants access without planning review capacity, because the assistant inherits whatever the team’s pipeline discipline and review capacity actually are. That work comes first regardless of which contender is chosen.</p><p>Coding assistants are a real productivity gain, and selecting one for production means weighing the properties that outlast the converging quality gap: code egress, workflow fit, and the review-capacity interaction. The organisations that select well scored the durable axes first and treated code quality as a threshold to clear rather than the contest to win. If a coding assistant selection is underway in your organisation, the more revealing exercise than comparing output is establishing what each contender does with your source code and whether your review capacity can absorb what it will generate, because those answers are the ones you will still be living with when every assistant writes equally good code.</p>"
-      }
-    ],
-    "images": [
-      {
-        "src": "/blog/coding-assistants-compared-1.webp",
-        "width": 1024,
-        "height": 1024,
-        "alt": "Illustration: Code egress is the selection criterion that outlasts quality"
-      }
-    ],
-    "related": {
-      "section": {
-        "label": "Enterprise AI",
-        "href": "/engineering/enterprise-ai/"
-      },
-      "caseStudies": []
-    }
-  },
-  {
     "slug": "automating-loan-document-checks-without-breaking-your-audit-trail",
     "legacySlug": "automating-loan-document-checks-without-breaking-your-audi",
     "title": "Automating Loan Document Checks Without Breaking Your Audit Trail",
@@ -15706,55 +15644,6 @@ export const blogPosts: BlogPost[] = [
           "href": "/case-studies/koita-foundation/"
         }
       ]
-    }
-  },
-  {
-    "slug": "agent-interoperability-and-the-a2a-protocol",
-    "title": "Agent Interoperability and the A2A Protocol: Reading Cross-Vendor Standards",
-    "metaTitle": "Agent Interoperability and the A2A Protocol: Reading Cross-Vendor Standards - Es Magico",
-    "lede": "Agents built by different vendors cannot work together without a shared way to communicate, and the emergence of cross-vendor agent interoperability standards is an attempt to provide it. As agents proliferate across vendors, the question of how an agent from one vendor coordinates with an agent from another becomes real, and interoperability standards like agent-to-agent protocols aim to answer it by defining how agents communicate across vendor boundaries. Agent interoperability and the A2A protocol are about enabling agents from different vendors to work together, and reading these cross-vendor standards well means understanding what interoperability they actually provide, what they do not, and what adopting them commits you to, because a standard is a set of trade-offs as much as a capability. Understanding how to read an interoperability standard is what lets you decide whether and how to adopt it.",
-    "tag": "Agentic AI",
-    "date": "19 March 2025",
-    "author": {
-      "name": "Shardul Singh",
-      "role": "CTO",
-      "avatar": "av-shardul"
-    },
-    "railTitle": "The story",
-    "sections": [
-      {
-        "id": "sec-1",
-        "label": "What interoperability standards provide"
-      },
-      {
-        "id": "sec-2",
-        "label": "What the standards do not provide, and commit you to"
-      },
-      {
-        "id": "sec-3",
-        "label": "The trade-off, and adopting deliberately"
-      },
-      {
-        "id": "sec-4",
-        "label": "Where it almost broke"
-      },
-      {
-        "id": "sec-5",
-        "label": "Read what the standard commits you to"
-      }
-    ],
-    "body": [
-      {
-        "html": "<p>If you operate agents that might need to work with agents from other vendors, interoperability standards are what would enable that cooperation, and understanding what a given standard provides and commits you to is what lets you evaluate it rather than adopt it on the promise of interoperability. A standard for agent interoperability offers the ability to work across vendors, at the cost of the constraints and dependencies adopting the standard creates, and reading the standard well means understanding both. Knowing how to read a cross-vendor interoperability standard, what it enables and what it commits you to, is what lets you make a sound decision about adopting it.</p><h2 id=\"sec-1\">What interoperability standards provide</h2><figure class=\"art art-none\"><span class=\"art-mark\">Image to come</span><span class=\"art-cap\">Agent Interoperability and the A2A Protocol: Reading Cross-Vendor Standards</span></figure><p>An agent interoperability standard defines how agents communicate across vendor boundaries, providing a common protocol that agents from different vendors can implement to work together, which is the interoperability the standard offers. Without a shared standard, agents from different vendors have no common way to communicate, and integrating them requires custom integration per pair of agents, which does not scale, so the standard’s value is providing a common protocol that any agent implementing it can use to work with any other agent implementing it, replacing the custom per-pair integration with a shared standard. This is the interoperability the standard provides, a common way for agents across vendors to communicate and coordinate.</p><p>The interoperability matters as agents proliferate, because a landscape of agents from many vendors that cannot work together is a landscape of silos, and the standard that lets them interoperate is what enables coordination across the landscape. This connects to the multi-agent coordination and communication concerns, extended across vendor boundaries, where the standard provides the communication mechanism that cross-vendor coordination requires. The value of the interoperability is real where cross-vendor agent cooperation is needed, letting agents from different vendors work together through the common standard rather than being confined to their own vendor’s ecosystem. The standard provides interoperability by defining the common protocol that agents across vendors can implement to communicate and coordinate, which is what enables cross-vendor agent cooperation where it is needed.</p><h2 id=\"sec-2\">What the standards do not provide, and commit you to</h2><p>Reading an interoperability standard well means understanding what it does not provide and what it commits you to, because the interoperability comes with limits and costs that the promise of interoperability obscures. A standard defines how agents communicate, and it does not make the agents on either side reliable, governed, or secure, which means the interoperability enables cross-vendor communication without solving the reliability, governance, and security that each agent still requires. An agent communicating with another vendor’s agent through the standard is coordinating with an agent whose reliability and governance it does not control, which introduces the dependency and trust concerns of relying on another vendor’s agent, and the standard’s interoperability does not address these.</p><p>The standard also commits you to its constraints, because adopting a standard means implementing it, conforming to its protocol, and depending on it, which is a commitment with costs. The standard constrains how your agents communicate to conform to the protocol, creates a dependency on the standard and its evolution, and ties you to the standard’s approach to interoperability, which is the lock-in that adopting any standard creates. Reading the standard well means understanding these commitments, the constraint of conforming to the protocol, the dependency on the standard, and the trust in other vendors’ agents that interoperating with them requires, so the decision to adopt accounts for the costs and not just the interoperability. The standard does not provide the reliability, governance, and security each agent needs, and it commits you to its constraints and to trusting the agents you interoperate with, which are the costs of the interoperability that reading the standard well reveals.</p><h2 id=\"sec-3\">The trade-off, and adopting deliberately</h2><p>Adopting an interoperability standard trades the constraints and dependencies of the standard for the cross-vendor interoperability it provides, and naming that trade-off keeps the adoption deliberate. The interoperability is valuable where cross-vendor agent cooperation is needed, and the constraints, conforming to the protocol, depending on the standard, trusting other vendors’ agents, are real costs, so the decision to adopt should weigh the value of the interoperability against these costs rather than adopting on the promise of interoperability alone. An organisation that needs cross-vendor agent cooperation benefits from the standard despite its costs, and one that does not need cross-vendor cooperation adopts the standard’s costs for interoperability it does not need.</p><p>The deeper judgment is adopting deliberately based on whether the interoperability is actually needed, because the standard’s value depends on the need for cross-vendor cooperation, which not every agent deployment has. An agent deployment confined to one vendor’s ecosystem, or one that does not need to coordinate across vendors, does not need the interoperability standard and should not adopt its costs for a capability it will not use. An agent deployment that genuinely needs cross-vendor cooperation benefits from the standard, and should adopt it understanding the costs, implementing the standard while still providing the reliability, governance, and security the standard does not, and managing the dependency and trust the standard introduces. Reading the standard well and adopting deliberately, based on whether the cross-vendor interoperability is actually needed and understanding the costs of adopting it, is what makes the adoption decision sound. The interoperability standard is valuable where cross-vendor cooperation is needed and a cost where it is not, and adopting it deliberately based on the actual need is what gets the decision right.</p><figure class=\"art art-none\"><span class=\"art-mark\">Image to come</span><span class=\"art-cap\">Agent Interoperability and the A2A Protocol: Reading Cross-Vendor Standards</span></figure><h2 id=\"sec-4\">Where it almost broke</h2><p>We saw an organisation consider adopting an agent interoperability standard on the promise of interoperability, attracted by the ability to have its agents work with agents from other vendors, and the consideration had focused on the interoperability without weighing what the standard did not provide and committed the organisation to. Examining it showed that the organisation’s agent deployment did not actually have a strong need for cross-vendor cooperation, its agents operating largely within its own ecosystem, and adopting the standard would have committed it to the constraint of conforming to the protocol and the dependency on the standard for interoperability it would rarely use, a cost for a capability the deployment did not need.</p><p>The correction read the standard properly and decided deliberately. We evaluated whether the organisation actually needed the cross-vendor interoperability, which it largely did not, and understood what the standard would commit the organisation to, the protocol constraints, the dependency, and the trust in other vendors’ agents, weighing these against the limited interoperability need. The organisation decided not to adopt the standard broadly, avoiding the costs for the interoperability it did not need, while keeping the option to adopt it for the specific cases where cross-vendor cooperation was genuinely required. The decision was sound because it read the standard’s costs and matched the adoption to the actual need, rather than adopting on the promise of interoperability. The lesson was that an interoperability standard provides cross-vendor cooperation and commits you to its costs, and reading the standard well and adopting deliberately based on the actual need is what makes the decision right.</p><h2 id=\"sec-5\">Read what the standard commits you to</h2><p>The reframe that makes interoperability decisions sound is reading what the standard commits you to, not just the interoperability it promises. Agent interoperability and the A2A protocol provide cross-vendor agent cooperation and commit you to conforming to the protocol, depending on the standard, and trusting the agents you interoperate with, which are the costs that reading the standard well reveals. The standard enables cross-vendor communication without providing the reliability, governance, and security each agent still needs.</p><p>The teams that make sound interoperability decisions are the ones that read the standard for what it provides and commits them to, evaluated whether the cross-vendor interoperability was actually needed, and adopted deliberately based on the need and the costs. An interoperability standard is valuable where cross-vendor cooperation is genuinely needed and a cost where it is not, and adopting on the promise of interoperability without reading the commitments takes on the standard’s costs for a capability the deployment may not use. Reading what the standard commits you to, and adopting deliberately based on the actual need, is what turns an interoperability decision from a reflexive adoption of a promising standard into a sound judgment about whether the interoperability is worth its costs.</p>"
-      }
-    ],
-    "images": [],
-    "related": {
-      "section": {
-        "label": "Agentic AI",
-        "href": "/engineering/agentic-ai/"
-      },
-      "caseStudies": []
     }
   },
   {

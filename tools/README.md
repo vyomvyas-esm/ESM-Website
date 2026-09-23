@@ -26,4 +26,11 @@ SEO checks, after `next build`:
 `redirects.mjs` regenerates `data/redirects.json` from the data; rows from the Search
 Console export are kept under its `manual` key.
 
-`url-map.mjs` regenerates `docs/seo-url-map.md` (the Phase 1 proposal).
+`url-map.mjs` produced `docs/seo-url-map.md` (the Phase 1 proposal). It reads the
+pre-port route files, which no longer exist, so it is kept as a record of that phase
+rather than as a tool that still executes.
+
+Two articles are left out of the port because the export had no complete artwork for
+them: the `DROPPED_POSTS` set above `extractBlogs` in `convert.mjs`. Executing
+`images.mjs` again puts their folders back into `data/blog-images.ts`; `convert.mjs`
+ignores them for as long as the slugs stay in that set.

@@ -8,7 +8,7 @@ To add one, put it in `data/article-links.json` under the article's slug and reg
 { "articles": { "agent-observability": { "capability": "pyzo-loupe", "caseStudies": ["rbi-innovation-hub"] } } }
 ```
 
-321 of 325 articles.
+319 of 323 articles.
 
 | Article | Category | Section it links to | Could also take |
 |---|---|---|---|
@@ -182,7 +182,6 @@ To add one, put it in `data/article-links.json` under the article's slug and reg
 | `/blog/llama-4-against-qwen-3-for-sovereign-enterprise-deployment/` | AI Models | Enterprise AI | capability, case study |
 | `/blog/hybrid-search-for-enterprise-rag/` | Agentic AI | Agentic AI | capability, case study |
 | `/blog/ai-in-actuarial-modeling/` | AI in BFSI | Banking & Financial Services | capability |
-| `/blog/coding-assistants-compared/` | AI Tools | Enterprise AI | capability, case study |
 | `/blog/automating-loan-document-checks-without-breaking-your-audit-trail/` | EsMagico | About Us | capability, case study |
 | `/blog/planning-in-ai-agents/` | Agentic AI | Agentic AI | capability, case study |
 | `/blog/ai-in-remote-patient-monitoring/` | AI in Healthcare | Healthcare & Life Sciences | capability |
@@ -221,7 +220,6 @@ To add one, put it in `data/article-links.json` under the article's slug and reg
 | `/blog/sandboxing-agent-generated-code/` | Agentic AI | Agentic AI | capability, case study |
 | `/blog/long-context-reasoning-in-production/` | AI Models | Enterprise AI | capability, case study |
 | `/blog/ai-for-patient-engagement-and-follow-up/` | AI in Healthcare | Healthcare & Life Sciences | capability |
-| `/blog/agent-interoperability-and-the-a2a-protocol/` | Agentic AI | Agentic AI | capability, case study |
 | `/blog/explainable-ai-in-finance/` | AI in BFSI | Banking & Financial Services | capability |
 | `/blog/domain-ai-for-legal-work/` | AI Tools | Enterprise AI | capability, case study |
 | `/blog/function-calling-maturity/` | Agentic AI | Agentic AI | capability, case study |

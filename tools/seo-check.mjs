@@ -16,8 +16,9 @@ import path from "node:path";
 import { execSync } from "node:child_process";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
-// 359 content pages plus the journal's category and page listings (lib/blog.ts)
-const EXPECTED_ROUTES = 417;
+// 356 content pages (24 static, 9 case studies, 323 articles) plus the journal's
+// category and page listings, /blog/ among them (lib/blog.ts)
+const EXPECTED_ROUTES = 413;
 const fail = (msg) => {
   console.error("FAIL:", msg);
   process.exitCode = 1;
@@ -270,6 +271,17 @@ function checkRedirects() {
   if (dup.length) issues.push(`duplicate sources: ${dup.join(", ")}`);
   const config = fs.readFileSync(path.join(ROOT, "next.config.ts"), "utf8");
   if (!/redirects\.json/.test(config) || !/permanent: true/.test(config)) issues.push("next.config.ts does not serve data/redirects.json with permanent: true");
+  // one canonical host: the origin in lib/seo.ts, next.config.ts and proxy.ts must agree,
+  // or www would be left answering as an address of its own (duplicate content)
+  const hostOf = (file, re) => (fs.readFileSync(path.join(ROOT, file), "utf8").match(re) || [])[1];
+  const hosts = {
+    "lib/seo.ts": hostOf("lib/seo.ts", /SITE_URL = "https:\/\/([^"/]+)"/),
+    "next.config.ts": hostOf("next.config.ts", /CANONICAL_ORIGIN = "https:\/\/([^"/]+)"/),
+    "proxy.ts": hostOf("proxy.ts", /CANONICAL_HOST = "([^"]+)"/),
+  };
+  const distinct = [...new Set(Object.values(hosts))];
+  if (distinct.length !== 1 || !distinct[0]) issues.push(`canonical host differs between files: ${JSON.stringify(hosts)}`);
+  if (!/type: "host" as const/.test(config)) issues.push("next.config.ts has no www variant, so an old path on www would take two hops");
   console.log(`redirects: ${map.generated.length} generated, ${map.manual.length} manual; issues ${issues.length}`);
   if (issues.length) fail(issues.slice(0, 8).join("; "));
 }

@@ -2042,13 +2042,6 @@ export const blogImages: Record<string, ImageSource[]> = {
       "height": 1024
     }
   ],
-  "coding-assistants-compared": [
-    {
-      "src": "/blog/coding-assistants-compared-1.webp",
-      "width": 1024,
-      "height": 1024
-    }
-  ],
   "automating-loan-document-checks-without-breaking-your-audit-trail": [
     {
       "src": "/blog/automating-loan-document-checks-without-breaking-your-audit-trail-1.webp",
@@ -2541,7 +2534,6 @@ export const blogImages: Record<string, ImageSource[]> = {
       "height": 1024
     }
   ],
-  "agent-interoperability-and-the-a2a-protocol": [],
   "explainable-ai-in-finance": [
     {
       "src": "/blog/explainable-ai-in-finance-1.webp",

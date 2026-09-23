@@ -556,6 +556,12 @@ function bodyBlocks(prose, slug, title) {
   return { body, images };
 }
 
+/* Articles the port leaves out. The image export supplied no artwork for these, so their
+   figures stayed as "Image to come" placeholders; an article is dropped rather than
+   published with a hole in it (see docs/seo-open-items.md). Neither slug was ever an
+   address on the live site, so no redirect is owed for them. */
+const DROPPED_POSTS = new Set(["agent-interoperability-and-the-a2a-protocol", "coding-assistants-compared"]);
+
 function extractBlogs() {
   const index = pageOf("blogs");
   const grid = q(index, byId("blGrid"));
@@ -576,6 +582,7 @@ function extractBlogs() {
     const id = attr(m, "id");
     if (!id.startsWith("page-blog-")) continue;
     const slug = id.slice("page-blog-".length);
+    if (DROPPED_POSTS.has(slug)) continue;
     const key = `blog-${slug}`;
     // the lead post of the "Start here" rail is not repeated in the grid, so its card comes from the rail
     const feat = feats.find((f) => f.slug === slug);
@@ -626,7 +633,7 @@ function extractBlogs() {
   blogPostsOut = posts;
   write("data/blog-posts.ts", tsExport("blogPosts", "BlogPost[]", posts));
   write("data/blog-index.ts", tsExport("blogCards", "BlogCard[]", cards) + `\nexport const blogFilters = ${JSON.stringify(filters, null, 2)};\n`);
-  log("blogs:", posts.length, "featured:", feats.length, "without artwork:", cards.filter((c) => !c.thumb).length, "images:", posts.reduce((n, p) => n + p.images.length, 0), "alt substitutions:", altSubs.length);
+  log("blogs:", posts.length, "left out for missing artwork:", DROPPED_POSTS.size, "featured:", feats.length, "without artwork:", cards.filter((c) => !c.thumb).length, "images:", posts.reduce((n, p) => n + p.images.length, 0), "alt substitutions:", altSubs.length);
   write(
     "docs/seo-alt-text-review.md",
     [

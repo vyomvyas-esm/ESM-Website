@@ -3253,25 +3253,6 @@ export const blogCards: BlogCard[] = [
     }
   },
   {
-    "slug": "coding-assistants-compared",
-    "title": "Coding Assistants Compared",
-    "date": "25 June 2025",
-    "tag": "AI Tools",
-    "topic": "AI Tools",
-    "author": {
-      "name": "Karan Trehan",
-      "role": "VP, Technology",
-      "avatar": "av-karan"
-    },
-    "ts": 169,
-    "txt": "coding assistants compared: a production selection guide for engineering teams ai tools karan trehan",
-    "thumb": {
-      "src": "/blog/coding-assistants-compared-1.webp",
-      "width": 1024,
-      "height": 1024
-    }
-  },
-  {
     "slug": "automating-loan-document-checks-without-breaking-your-audit-trail",
     "title": "Automating Loan Document Checks",
     "date": "23 June 2025",
@@ -4049,21 +4030,6 @@ export const blogCards: BlogCard[] = [
       "width": 1024,
       "height": 1024
     }
-  },
-  {
-    "slug": "agent-interoperability-and-the-a2a-protocol",
-    "title": "Agent Interoperability and the A2A Protocol",
-    "date": "19 March 2025",
-    "tag": "Agentic AI",
-    "topic": "Agentic AI",
-    "author": {
-      "name": "Shardul Singh",
-      "role": "CTO",
-      "avatar": "av-shardul"
-    },
-    "ts": 211,
-    "txt": "agent interoperability and the a2a protocol: reading cross-vendor standards agentic ai shardul singh",
-    "thumb": null
   },
   {
     "slug": "explainable-ai-in-finance",

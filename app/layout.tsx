@@ -3,6 +3,7 @@ import { Inter, Schibsted_Grotesk } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SiteEffects } from "@/components/SiteEffects";
+import { Analytics } from "@/components/Analytics";
 import { preload } from "react-dom";
 import { SITE_URL, TITLE_SUFFIX } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
@@ -58,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <Footer />
         <SiteEffects />
+        <Analytics />
       </body>
     </html>
   );
