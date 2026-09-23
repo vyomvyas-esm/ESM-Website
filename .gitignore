@@ -12,3 +12,6 @@ tools/node_modules/
 
 # per-machine Claude Code permissions
 .claude/settings.local.json
+
+# Word lock files
+~$*
