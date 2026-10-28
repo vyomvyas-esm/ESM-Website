@@ -25,7 +25,7 @@ export default function TermsPage() {
             items={[{ label: "Home", href: "/" }, { label: "Trust" }, { label: "Terms & Conditions" }]}
           />
           <h1 className="h-hero mt-6 max-w-[16ch] rv" data-d="60">
-            Terms &amp; Conditions.
+            Terms &amp; Conditions
           </h1>
           <p className="lede mt-5 max-w-[660px] rv" data-d="120">
             The terms on which you may use esmagico.com. Engagements are governed by a separate signed
@@ -47,7 +47,7 @@ export default function TermsPage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pb-[110px]">
+      <section className="relative overflow-hidden bg-ink pb-[108px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <div className="lg-grid">
             <aside className="lg-toc">
@@ -308,9 +308,8 @@ export default function TermsPage() {
             <div className="relative mx-auto grid w-full max-w-shell items-start gap-10 px-6 py-[86px] lg:grid-cols-[1fr_auto] lg:gap-16 lg:px-8">
               <div>
                 <h2 className="h-cta max-w-[24ch] lg:max-w-none">
-                  Tell us the number you need to <span className="text-teal">move.</span>
+                  Tell us the number you need to <span className="text-teal">move</span>
                 </h2>
-                <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
                 <Link className="btn btn-light group" href="/contact/">

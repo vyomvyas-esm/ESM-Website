@@ -1,4 +1,4 @@
-import type { BlogPost } from "@/data/types";
+import type { BlogPost, GlossaryTerm } from "@/data/types";
 import { SITE_NAME, SITE_URL, isoDateTime } from "./seo";
 
 /* Structured data builders. Every value comes from content that already exists in the
@@ -173,5 +173,34 @@ export function webPage(input: { name: string; path: string; dateModified: strin
     dateModified: input.dateModified,
     isPartOf: { "@id": SITE_ID },
     publisher: { "@id": ORG_ID },
+  };
+}
+
+/* The glossary is a DefinedTermSet and each term page a DefinedTerm in it, as the
+   design's own markup declared. The term's description is its page lede. */
+export const GLOSSARY_PATH = "/resources/glossary/";
+const TERM_SET_ID = `${abs(GLOSSARY_PATH)}#termset`;
+
+export function definedTermSet(terms: GlossaryTerm[]): JsonLd {
+  return {
+    "@type": "DefinedTermSet",
+    "@id": TERM_SET_ID,
+    name: "Es Magico glossary",
+    url: abs(GLOSSARY_PATH),
+    publisher: { "@id": ORG_ID },
+    hasDefinedTerm: terms.map((t) => ({ "@id": `${abs(`${GLOSSARY_PATH}${t.slug}/`)}#term` })),
+  };
+}
+
+export function definedTerm(t: GlossaryTerm): JsonLd {
+  const url = abs(`${GLOSSARY_PATH}${t.slug}/`);
+  return {
+    "@type": "DefinedTerm",
+    "@id": `${url}#term`,
+    name: t.term,
+    description: t.lede,
+    termCode: t.slug,
+    url,
+    inDefinedTermSet: { "@id": TERM_SET_ID },
   };
 }

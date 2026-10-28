@@ -5,208 +5,44 @@ export const caseStudies: CaseStudy[] = [
   {
     "slug": "rbi-innovation-hub",
     "prototypeId": "rbi",
-    "metaTitle": "Grievance redressal that survives its own audit. - Case Study - Es Magico",
-    "client": "RBI, Innovation Hub",
+    "metaTitle": "Automated grievance workflows with a complete audit record - Case Study - Es Magico",
+    "client": "Reserve Bank Innovation Hub",
     "logo": "logow-rbi",
-    "title": "Grievance redressal that survives its own audit.",
-    "lede": "The RBI Innovation Hub wanted a grievance protocol any regulated bank could adopt, whatever its digital maturity, without losing the audit trail. It is live across multiple banks today.",
+    "title": "Automated grievance workflows with natural-language access and a complete audit record",
+    "lede": "",
     "chips": [
       "BFSI",
       "Evio",
       "12+ languages",
-      "Still live"
+      "11+ workflows"
     ],
-    "html": "<p class=\"kicker\">The stakes</p><p>A public sector bank in India handles grievances from customers who are often not on apps, who are more comfortable in a regional language than in English, and who may be calling from a feature phone. Every complaint is regulated: there are turnaround obligations, an escalation ladder, and an expectation that the bank can produce the history of any case when the regulator asks.</p><p class=\"kicker\">The gap</p><p>Individual banks had their own intake channels at very different levels of maturity, and none of them travelled. A protocol that worked in a demonstration for one bank could not be handed to the next, which had different core systems and a different language mix. The harder constraint was the record: anything conversational had to leave a trail an auditor could reconstruct months later, which is where most conversational pilots quietly stop.</p><p class=\"kicker\">What we engineered and deployed</p><p>We co-designed an open grievance redressal protocol with the Hub and engineered it as a layer a bank embeds into the workflows it already has. Intake operates over voice and chat, across WhatsApp, SMS and the bank’s own portal, in more than twelve Indic languages, with Evio handling the conversation and escalating to a person when it should. We deployed it inside the banks’ environments and stayed accountable for how it behaved there.</p><ul><li>An open protocol a bank embeds into its existing workflows</li><li>Conversational intake over WhatsApp, SMS, voice and web</li><li>Real-time tracking, ticketing and escalation logic</li><li>More than twelve Indic languages, voice or text</li><li>Every interaction logged and independently trackable</li></ul><p class=\"kicker\">How it held up under scrutiny</p><p>Every interaction is logged as it happens, with the inputs, the routing decision and the state of the ticket, so a specific grievance can be reconstructed long after the conversation ended. Escalation thresholds are set by the bank, and a case that crosses one reaches a person with the context intact. The record is what makes the protocol adoptable: a bank can answer for a case without depending on us to explain it.</p><p class=\"kicker\">The number</p><p>Average grievance turnaround fell by around 80%, measured the same way before and after, and registering a complaint dropped to roughly two minutes. Both figures were agreed with the Hub before the work began.</p><p class=\"kicker\">What is still in production</p><p>Indian Bank and Bank of Baroda are live on the protocol today, with more than twenty user journeys automated and support available around the clock in the languages their customers use. It is designed so the next bank adopts it without it being re-engineered.</p>",
+    "html": "<p class=\"kicker\">The stakes</p><p>A public sector bank in India receives grievances at a volume its support desk was never staffed to absorb, and a substantial share of those complaints originate from customers who prefer a regional language and cannot complete a written web form. Most such banks also lack the internal engineering capacity to address the problem independently. The RBI Innovation Hub, the research institution of the central bank, set out to address this at the level of the whole system, for every institution at once.</p><p class=\"kicker\">The gap</p><p>Each bank held the knowledge of how its own grievances should be classified, routed, and resolved, and none of it was accessible to the person raising the complaint. A conversational layer that performs well in a demonstration does not constitute a grievance mechanism that a regulator can inspect. Any protocol intended for adoption across regulated entities had to resolve a complaint against the receiving bank’s own procedures, produce a consistent record on every interaction, and integrate with whatever workflow that bank already operated.</p><p class=\"kicker\">What we engineered and operated</p><p>We co-designed and engineered an open protocol with the Hub, and we operated it in production ourselves after launch. A complaint is raised in ordinary language, by voice or by text, across WhatsApp, SMS, and web portals in twelve or more languages. The protocol interprets the complaint, classifies it against the receiving institution’s grievance categories, and resolves what falls within its scope. More than eleven grievance workflows are automated end-to-end, from intake through classification and routing to closure, and any matter the protocol cannot resolve is escalated to a human officer with the ticket trackable in real time. Indian Bank and Bank of Baroda are live on the protocol.</p><p class=\"kicker\">How it held up under scrutiny</p><p>Compliance was designed into the protocol from the outset. Every interaction is logged for audit, and every grievance is independently trackable, which provides the regulator a single consistent view across institutions that had previously operated in isolation from one another. Because the protocol was established as shared infrastructure, each adopting bank inherits both the workflow automation and the audit record from the first day.</p>",
     "metrics": [
       {
-        "n": "~80%",
-        "label": "lower grievance turnaround"
+        "n": "81%",
+        "label": "reduction in average grievance turnaround, as intake, classification, and routing proceed without queuing"
       },
       {
-        "n": "~2 min",
-        "label": "to register a grievance"
+        "n": "2 min",
+        "label": "to raise a complaint in ordinary language, replacing a telephone call and a written form"
       },
       {
         "n": "12+",
-        "label": "Indic languages, voice or text"
-      },
-      {
-        "n": "2",
-        "label": "banks live: Indian Bank, Bank of Baroda"
+        "label": "Indic languages, with 11+ workflows automated end to end and open around the clock"
       }
     ],
     "card": {
-      "name": "RBI · Innovation Hub",
-      "line": "A voice-first grievance protocol any regulated bank can adopt.",
+      "name": "RBI Innovation Hub",
+      "line": "Grievances raised by voice or text in twelve languages, every one logged and trackable.",
       "industry": "bfsi",
       "products": [
         "Evio"
       ],
-      "txt": "rbi · innovation hub a multilingual, voice-first grievance protocol any regulated bank can adopt, reaching people who are not on apps or comfortable in english. grievance turnaround · bfsi",
+      "txt": "rbi innovation hub grievances raised by voice or text in twelve languages, every one logged and trackable. lower grievance turnaround",
       "figs": [
         {
-          "n": "~80%",
+          "n": "81%",
           "l": "lower grievance turnaround"
-        }
-      ]
-    }
-  },
-  {
-    "slug": "cipla-global-training-academy",
-    "prototypeId": "cipla",
-    "metaTitle": "A global training academy that speaks every employee's language. - Case Study - Es Magico",
-    "client": "Cipla, Global Training Academy",
-    "logo": "logow-cipla",
-    "title": "A global training academy that speaks every employee’s language.",
-    "lede": "Es Magico deployed PYZO Atlas as the foundation of Cipla’s Global Training Academy, turning SOPs, compliance manuals and quality documentation into interactive, multilingual AI learning across manufacturing, quality and compliance.",
-    "chips": [
-      "Life Sciences",
-      "Atlas",
-      "English and Spanish",
-      "20,000+ employees"
-    ],
-    "html": "<p class=\"kicker\">The problem</p><p>As a global pharmaceutical organisation, Cipla needed a consistent, scalable approach to workforce training across manufacturing, quality and compliance. Delivery depended on instructors and varied across regions, which made consistency, regulatory readiness and competency hard to maintain across a multilingual workforce. Employees also needed to learn in their preferred language and demonstrate understanding of critical procedures.</p><p class=\"kicker\">What we engineered</p><p>Atlas converted existing manufacturing, quality and compliance content into AI-driven training, delivered multilingually and tracked centrally for compliance readiness.</p><ul><li>Manufacturing, quality and compliance content turned into AI training modules</li><li>Multilingual delivery in English and Spanish</li><li>AI-generated video lessons, assessments and knowledge checks</li><li>Self-paced learning across global teams</li><li>Competency tracking and progress monitoring</li><li>Central management of content across functions and geographies</li></ul>",
-    "metrics": [
-      {
-        "n": "20,000+",
-        "label": "employees enabled"
-      },
-      {
-        "n": "~70%",
-        "label": "less content effort"
-      },
-      {
-        "n": "~60%",
-        "label": "faster onboarding & certification"
-      },
-      {
-        "n": "~50%",
-        "label": "fewer trainer-led sessions"
-      },
-      {
-        "n": "~90%",
-        "label": "content consistency"
-      },
-      {
-        "n": "24/7",
-        "label": "self-paced access"
-      }
-    ],
-    "card": {
-      "name": "Cipla · Global Training Academy",
-      "line": "SOPs turned into tracked, self-paced AI lessons for 20,000+ employees.",
-      "industry": "healthcare",
-      "products": [
-        "Atlas"
-      ],
-      "txt": "cipla · global training academy sops and quality documentation turned into tracked, self-paced ai lessons across geographies and languages, for 20,000+ employees. training-content effort · life sciences",
-      "figs": [
-        {
-          "n": "20,000+",
-          "l": "employees enabled"
-        }
-      ]
-    }
-  },
-  {
-    "slug": "koita-foundation",
-    "prototypeId": "koita",
-    "metaTitle": "Fragmented digital-health knowledge, made answerable in plain language. - Case Study - Es Magico",
-    "client": "Koita Foundation",
-    "logo": "logow-koita",
-    "title": "Fragmented digital-health knowledge, made answerable in plain language.",
-    "lede": "Es Magico engineered a knowledge intelligence platform that unifies scattered digital-health material into a single conversational layer, so professionals, researchers and policymakers get evidence-backed answers traced to source.",
-    "chips": [
-      "Healthcare",
-      "Compass",
-      "RAG + Knowledge Graph",
-      "7+ repositories"
-    ],
-    "html": "<p class=\"kicker\">The problem</p><p>Healthcare professionals, researchers and policymakers rely on information spread across websites, publications, standards repositories, expert directories and institutional sources. Finding an accurate answer means searching fragmented systems by hand. Keyword search cannot give contextual answers, trace relationships between entities, or surface knowledge hidden across sources, so time is lost and valuable knowledge goes underused.</p><p class=\"kicker\">What we engineered</p><p>We engineered a platform that combines retrieval-augmented generation with knowledge-graph technology, so a natural-language question returns an evidence-backed answer drawn from many repositories, publications, standards and expert networks.</p><ul><li>A conversational interface for natural-language discovery</li><li>Hybrid RAG and knowledge-graph architecture for contextual reasoning</li><li>Cross-source retrieval across sites, publications, standards and experts</li><li>Deep crawling and automated indexing of linked content</li><li>Expert, institution, publication and standards relationship mapping</li><li>Confidence scoring and source attribution on every response</li><li>Automated re-indexing to keep repositories current</li></ul>",
-    "metrics": [
-      {
-        "n": "~80%",
-        "label": "less information-discovery time"
-      },
-      {
-        "n": "7+",
-        "label": "repositories unified"
-      },
-      {
-        "n": "~90%",
-        "label": "faster access to expertise"
-      },
-      {
-        "n": "~95%",
-        "label": "source traceability"
-      },
-      {
-        "n": "Weekly",
-        "label": "automated re-indexing"
-      }
-    ],
-    "card": {
-      "name": "Koita Foundation",
-      "line": "A body of digital-health material made answerable and traceable.",
-      "industry": "healthcare",
-      "products": [
-        "Compass"
-      ],
-      "txt": "koita foundation a large body of digital-health material made answerable in plain language, every answer traceable to source. faster discovery · healthcare",
-      "figs": [
-        {
-          "n": "~80%",
-          "l": "less information-discovery time"
-        }
-      ]
-    }
-  },
-  {
-    "slug": "indian-school-of-business",
-    "prototypeId": "isb",
-    "metaTitle": "Thousands of applications, screened consistently and without bias. - Case Study - Es Magico",
-    "client": "Indian School of Business, iVi",
-    "logo": "logow-isb",
-    "title": "Thousands of applications, screened consistently and without bias.",
-    "lede": "Es Magico engineered Prism for ISB’s iVi programme, an evaluation platform that parses documents and conducts asynchronous interviews, scoring candidates against ISB’s own rubric so faculty review a clean, explainable shortlist.",
-    "chips": [
-      "Education",
-      "Prism",
-      "Evio",
-      "3,000+ interviews"
-    ],
-    "html": "<p class=\"kicker\">The problem</p><p>ISB was launching its iVi programme and expected thousands of applications a year. The admissions team wanted to reduce the man-hours spent evaluating candidates while keeping shortlisting consistent and objective, and still return structured, actionable feedback.</p><p class=\"kicker\">What we engineered</p><p>We engineered Prism to score candidates against NLP-based rubrics mapped to ISB’s evaluation criteria, generating reports with quantitative scores, qualitative feedback and psychometric insight, so faculty conduct final interviews only on the final shortlist.</p><ul><li>AI-powered document parsing</li><li>Asynchronous, structured interviews</li><li>Scoring against rubrics mapped to ISB’s criteria</li><li>Reports with quantitative scores and qualitative feedback</li><li>Faculty review focused on the final shortlist</li></ul>",
-    "metrics": [
-      {
-        "n": "~97%",
-        "label": "concordance with faculty"
-      },
-      {
-        "n": "~80%",
-        "label": "less evaluation time"
-      },
-      {
-        "n": "~5,000",
-        "label": "man-hours saved a year"
-      },
-      {
-        "n": "3,000+",
-        "label": "interviews conducted"
-      }
-    ],
-    "card": {
-      "name": "Indian School of Business · iVi",
-      "line": "A candidate screen that stays consistent, explainable and unbiased.",
-      "industry": "others",
-      "products": [
-        "Evio",
-        "Prism"
-      ],
-      "txt": "indian school of business · ivi a candidate screen that stays consistent, explainable and blind to the fluency bias that distorts a manual read. concordance with faculty · education",
-      "figs": [
-        {
-          "n": "~97%",
-          "l": "concordance with faculty"
         }
       ]
     }
@@ -214,154 +50,314 @@ export const caseStudies: CaseStudy[] = [
   {
     "slug": "indusind-bank",
     "prototypeId": "indusind",
-    "metaTitle": "Trainer-independent learning for 50,000+ employees. - Case Study - Es Magico",
-    "client": "IndusInd Bank",
+    "metaTitle": "AI-powered knowledge source-based process training - Case Study - Es Magico",
+    "client": "IndusInd Bank Limited",
     "logo": "logow-indusind",
-    "title": "Trainer-independent learning for 50,000+ employees.",
-    "lede": "Es Magico engineered an AI video-based learning and development platform for IndusInd Bank, turning internal presentations, SOPs and policy documents into interactive, self-paced training that needs no trainer.",
+    "title": "AI-Powered Knowledge Source-Based Process Training and Query Resolution",
+    "lede": "",
     "chips": [
       "BFSI",
       "Atlas",
-      "150+ videos",
-      "50,000+ employees"
+      "12,000+ trained",
+      "7,800+ hours saved"
     ],
-    "html": "<p class=\"kicker\">The problem</p><p>IndusInd Bank needed to scale internal training across branches and a stream of evolving compliance and product modules. Traditional methods depended on trainers, took time and were inconsistent in delivery. The bank needed something scalable, engaging and self-paced.</p><p class=\"kicker\">What we engineered</p><p>We engineered a video-based learning platform on the bank’s own knowledge assets, so employees learn on demand, across devices, with no dependency on a trainer.</p><ul><li>Internal presentations, SOPs and policies turned into AI video modules</li><li>Embedded Q&amp;A, summaries and reinforcement checks</li><li>A trainer-independent environment, available on demand</li><li>Progress and feedback tracking to refine future content</li></ul>",
+    "html": "<p class=\"kicker\">The stakes</p><p>IndusInd Bank operates training across a national branch network on subject matter that changes continually, from product updates to revised compliance modules and standard operating procedures. In a regulated bank, a training programme that falls a few weeks behind on a compliance matter is a genuine regulatory exposure. The bank has to be able to demonstrate that its people were trained, on the current version, and to show an auditor the record.</p><p class=\"kicker\">The gap</p><p>The previous approach depended on trainers who had to be scheduled, dispatched to each location, and trusted to deliver the same material consistently across regions. That model did not scale with the network, it was slow to refresh whenever a policy changed, and delivery varied enough between regions that the bank had no way to evidence consistency across them.</p><p class=\"kicker\">What we engineered and operated</p><p>We designed, developed and implemented ATLAS, an AI-powered knowledge and process-training platform that ingests the bank's own controlled documents, including presentations, standard operating procedures and policy files, and converts them into concise interactive learning modules. The document intelligence layer extracts and structures information from source documents, so each module is generated directly from the governing document and stays faithful to it. Modules carry embedded questions, summaries and reinforcement checks, and employees can resolve queries against the same source material through an AI-assisted interface. A compliance update that once took a quarter to roll out as classroom training now becomes a course within the same week.</p><p class=\"kicker\">How it held up under scrutiny</p><p>What distinguishes the platform in a regulated setting is its record. Completion is tracked at the level of the individual and the module, so when an auditor asks who was trained on a particular policy and when, the bank answers with a report it already holds. Because each module is generated directly from the source document, the training cannot quietly diverge from the policy it exists to convey. We have remained accountable for the platform through post-implementation support, regenerating modules and updating the underlying knowledge as the bank's controlled documents are revised.</p>",
     "metrics": [
       {
-        "n": "50,000+",
-        "label": "employees trained"
+        "n": "63%",
+        "label": "cost reduction in content creation, as modules are generated from the bank’s own controlled documents"
       },
       {
-        "n": "150+",
-        "label": "AI training videos"
+        "n": "12,000+",
+        "label": "employees trained, with completion recorded against each person and module"
       },
       {
-        "n": "3,000+",
-        "label": "man-hours saved"
+        "n": "7,800+",
+        "label": "person-hours saved across training delivery and administration"
       }
     ],
     "card": {
       "name": "IndusInd Bank",
-      "line": "Policy documents turned into 150+ AI video modules, no trainer.",
+      "line": "Controlled documents turned into interactive modules, with completion recorded per person.",
       "industry": "bfsi",
       "products": [
         "Atlas"
       ],
-      "txt": "indusind bank internal sops and policy documents turned into 150+ interactive ai video modules, trained across the bank with no trainer dependency. employees trained · bfsi",
+      "txt": "indusind bank controlled documents turned into interactive modules, with completion recorded per person. employees trained",
       "figs": [
         {
-          "n": "50,000+",
+          "n": "12,000+",
           "l": "employees trained"
         }
       ]
     }
   },
   {
-    "slug": "samagra",
-    "prototypeId": "samagra",
-    "metaTitle": "Voice-first agricultural guidance for farmers, in their own language. - Case Study - Es Magico",
-    "client": "Samagra",
-    "logo": "logow-samagra",
-    "title": "Voice-first agricultural guidance for farmers, in their own language.",
-    "lede": "Es Magico partnered with Samagra to engineer a multilingual, voice-first AI assistant for farmers, giving smallholders access to crop, weather and scheme guidance without needing to read or navigate an app.",
+    "slug": "indian-school-of-business",
+    "prototypeId": "isb",
+    "metaTitle": "AI-powered application evaluation platform - Case Study - Es Magico",
+    "client": "Indian School of Business",
+    "logo": "logow-isb",
+    "title": "AI-Powered Application Evaluation Platform",
+    "lede": "",
     "chips": [
-      "Public Sector",
-      "Evio",
-      "12 languages",
-      "50,000+ farmers"
+      "Education",
+      "Prism",
+      "9,200+ applications",
+      "97% concordance"
     ],
-    "html": "<p class=\"kicker\">The problem</p><p>Farmers across India have limited access to vital agricultural knowledge because of low digital literacy and language barriers. That gap keeps them from making informed decisions on crop cycles, weather preparedness and government schemes.</p><p class=\"kicker\">What we engineered</p><p>We engineered a conversational assistant that meets farmers where they are, in their own language and on the devices they already have, combining their profile with real-time weather and soil insight.</p><ul><li>Conversational AI in 10+ regional languages</li><li>Voice-first design for low-end and feature phones</li><li>Personalised advisory from farmer profile, weather and soil</li><li>Integration with government databases and schemes</li><li>A continuous learning loop from farmer queries and feedback</li></ul>",
+    "html": "<p class=\"kicker\">The stakes</p><p>When the Indian School of Business launched its iVi programme, it expected several thousand applications a year and gave the admissions team a clear mandate. Assess candidates consistently and objectively against a defined evaluation framework, return structured feedback to each of them, and stop placing senior faculty in front of applications they should never have had to review. Admissions decisions at an institution of this standing are examined, by the candidates who receive them and by the institution itself.</p><p class=\"kicker\">The gap</p><p>Evaluating at that volume by hand degrades in familiar ways. Reviewers differ in judgement, attention falls away over a long evaluation cycle, and differences in language fluency quietly distort an assessment that was meant to measure something else. All of it consumes the limited time of faculty who ought only to be seeing the final shortlist, and none of it produces feedback the candidate can use.</p><p class=\"kicker\">What we engineered and operated</p><p>We designed, developed and implemented PRISM, an AI-native application processing and document intelligence platform. It ingests and parses each submitted application and supporting information, extracting relevant content from documents of varying structure and quality and converting it into structured candidate information. The platform then conducts asynchronous, candidate-specific interviews as part of a structured AI-assisted assessment pipeline. Candidates are scored against configurable rubrics aligned directly with ISB's own evaluation criteria, and each receives a comprehensive report carrying quantitative scores, written feedback and insight. Faculty review an evidence-backed shortlist and conduct final interviews only on the candidates who reach it.</p><p class=\"kicker\">How it held up under scrutiny</p><p>The evaluation is defensible because ISB defines the rubric and the platform applies it identically to every candidate, and because the consequential judgement stays with people. Faculty conduct the final interviews, and PRISM's scoring was validated against theirs, reaching 97% concordance once faculty had completed their own assessment. We have remained accountable for the platform through post-implementation support across successive admissions cycles, with the rubric reconfigured as ISB's criteria evolve.</p>",
     "metrics": [
       {
-        "n": "3x",
-        "label": "more farmer engagement"
+        "n": "97%",
+        "label": "concordance between PRISM’s scoring and the faculty’s own assessment"
       },
       {
-        "n": "50,000+",
-        "label": "farmers engaged"
+        "n": "9,200+",
+        "label": "applications assisted and evaluated"
       },
       {
-        "n": "100,000+",
-        "label": "queries handled"
-      },
-      {
-        "n": "~35%",
-        "label": "higher weather preparedness"
-      },
-      {
-        "n": "~27%",
-        "label": "faster scheme adoption"
-      },
-      {
-        "n": "~72%",
-        "label": "query-resolution accuracy"
+        "n": "6,100",
+        "label": "faculty-hours saved a year, across the admissions cycle"
       }
     ],
     "card": {
-      "name": "Samagra",
-      "line": "Crop and scheme guidance by voice, in 12 languages, with no app.",
-      "industry": "public",
+      "name": "Indian School of Business",
+      "line": "Thousands of applications scored against ISB’s own rubric before faculty read one.",
+      "industry": "education",
       "products": [
-        "Evio"
+        "Prism"
       ],
-      "txt": "samagra a voice-first assistant that gives smallholder farmers crop, weather and scheme guidance in 12 languages, no reading or app required. more farmer engagement · public sector",
+      "txt": "indian school of business thousands of applications scored against isb’s own rubric before faculty read one. concordance with faculty",
       "figs": [
         {
-          "n": "3x",
-          "l": "more farmer engagement"
+          "n": "97%",
+          "l": "concordance with faculty"
         }
       ]
     }
   },
   {
-    "slug": "indiamart",
-    "prototypeId": "indiamart",
-    "metaTitle": "A million marketplace conversations, handled autonomously. - Case Study - Es Magico",
-    "client": "IndiaMART",
-    "logo": "logow-indiamart",
-    "title": "A million marketplace conversations, handled autonomously.",
-    "lede": "Es Magico deployed Evio, a natural, multilingual voice and chat agent, to automate IndiaMART’s marketplace and support conversations with human-like fluency, across sales, support and verification.",
+    "slug": "data-security-council-of-india",
+    "prototypeId": "dsci",
+    "metaTitle": "AI-powered startup grant evaluation - Case Study - Es Magico",
+    "client": "Data Security Council of India",
+    "logo": "logow-dsci",
+    "title": "AI-Powered Startup Grant Evaluation",
+    "lede": "",
     "chips": [
-      "Consumer & Retail",
-      "Evio",
-      "Multilingual",
-      "1M+ conversations"
+      "Others",
+      "Prism",
+      "450+ applications",
+      "Seven-point framework"
     ],
-    "html": "<p class=\"kicker\">The problem</p><p>IndiaMART handles 1.5 million customer conversations a month across its marketplace, call centres and digital channels. Order status, supplier discovery, lead follow-ups, verification, returns and support were largely handled by agents, which meant high cost, long waits at peak, inconsistent multilingual support and little visibility into the conversation data. The company needed a scalable, compliant, multilingual system that could operate continuously without adding headcount.</p><p class=\"kicker\">What we engineered</p><p>We deployed Evio, a multilingual AI agent platform that automates marketplace and customer conversations, understanding intent and context in real time and handling interruptions and turn-taking naturally.</p><ul><li>AI agents for voice and chat across support, sales and verification</li><li>Real-time intent and context understanding for buyer and seller queries</li><li>Multilingual conversations across regions</li><li>Natural handling of interruptions, objections and turn-taking</li><li>Consistent, compliant messaging across every touchpoint</li></ul>",
+    "html": "<p class=\"kicker\">The stakes</p><p>The Data Security Council of India received 450+ applications to a startup grant programme, each of which had to be assessed against a weighted rubric covering technical prototype, product roadmap and technical articulation. Two reviewers carried the entire process. An evaluation of this kind is read by every applicant who does not advance, which means the standard applied to the first application and the four hundredth has to be visibly the same one.</p><p class=\"kicker\">The gap</p><p>The trade-off was the familiar one and it was uncomfortable in both directions. Move quickly enough to meet the deadline and consistency degrades across a long review cycle, or hold the standard and miss the timeline the programme had committed to. Reviewer fatigue and drift are not failures of diligence, they are what happens to any two people scoring several hundred submissions against a multi-dimensional rubric by hand.</p><p class=\"kicker\">What we engineered and operated</p><p>We designed, developed and implemented PRISM, an AI-native application processing and document intelligence platform. The platform ingests and parses each application, extracting relevant content from submissions that vary considerably in structure and converting it into a structured application record. Authenticity checks surface plagiarism and quality signals before human review, and a seven-point framework assesses relevance, correctness, clarity and context within each submission. Outputs are standardised so applications can be compared directly against one another, supporting an AI-assisted application assessment workflow. The two reviewers operated the platform independently from the first day, without training.</p><p class=\"kicker\">How it held up under scrutiny</p><p>The evaluation is defensible because DSCI defined the rubric and the same weighting was applied to every application without exception. All 450+ applications were scored across the full rubric with no gaps, so no submission advanced or fell on an incomplete assessment. The DSCI team rated the evaluation 8 out of 10 for credibility once the process had concluded, and we have supported the platform post-implementation across subsequent evaluation rounds.</p>",
     "metrics": [
       {
-        "n": "1M+",
-        "label": "conversations handled"
+        "n": "450+",
+        "label": "applications scored across the full rubric, with no gaps"
       },
       {
-        "n": "~40%",
-        "label": "lower support cost"
+        "n": "320+",
+        "label": "hours of manual review time saved"
       },
       {
-        "n": "~68%",
-        "label": "call deflection"
-      },
-      {
-        "n": "~30%",
-        "label": "faster resolution at peak"
-      },
-      {
-        "n": "24/7",
-        "label": "availability"
+        "n": "8 / 10",
+        "label": "credibility rating from the DSCI team on the evaluation process"
       }
     ],
     "card": {
-      "name": "IndiaMART",
-      "line": "Voice and chat agents handling a million marketplace conversations.",
+      "name": "Data Security Council of India",
+      "line": "More than 450 grant applications scored on one rubric by two reviewers.",
+      "industry": "others",
+      "products": [
+        "Prism"
+      ],
+      "txt": "data security council of india more than 450 grant applications scored on one rubric by two reviewers. applications scored, no gaps",
+      "figs": [
+        {
+          "n": "450+",
+          "l": "applications scored, no gaps"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "koita-foundation",
+    "prototypeId": "koita",
+    "metaTitle": "An AI-powered knowledge hub with citation-backed retrieval - Case Study - Es Magico",
+    "client": "Koita Foundation",
+    "logo": "logow-koita",
+    "title": "An AI-powered knowledge hub with citation-backed retrieval across seven repositories",
+    "lede": "",
+    "chips": [
+      "Healthcare",
+      "Compass",
+      "7+ repositories",
+      "95% traceability"
+    ],
+    "html": "<p class=\"kicker\">The stakes</p><p>The clinicians, researchers, and policymakers the Koita Foundation supports operate from knowledge held in several places simultaneously, distributed across publications, standards repositories, expert directories, and institutional websites. Locating a particular clinical standard, or identifying the appropriate expert on a question, has required working through several systems manually with no reliable means of establishing whether all relevant material had been found. Those undertaking this work are the same people whose time the institution can least afford to allocate to searching.</p><p class=\"kicker\">The gap</p><p>Keyword search returns documents, leaving the user to find the answer inside them, and provides no assistance in assessing which source to rely upon or how two pieces of information relate to one another. Institutional knowledge assets were consequently underused, expertise was accessible only to those who already knew where to look, and considerable qualified time was allocated to manual research that produced no record of its own thoroughness.</p><p class=\"kicker\">What we engineered and operated</p><p>We engineered a knowledge intelligence platform that unifies seven or more repositories behind a single natural-language interface, combining retrieval-augmented generation with a knowledge graph. Deep crawling and automated indexing bring each connected source into the corpus; classification and summarisation are applied at ingest, and administrators retain control over which sources are admitted in the first instance. A user poses a question in ordinary language and receives a response assembled across every connected source simultaneously, with the underlying experts, institutions, publications, and standards explicitly mapped. Automated re-indexing is performed weekly, so every query reflects the current state of the sources.</p><p class=\"kicker\">How it held up under scrutiny</p><p>A response of this kind is usable only where its provenance is visible, so traceability was treated as a core requirement from the outset. Every response carries inline citations, a confidence score, and source attribution, and approximately 95% of responses can be traced to their origin, which enables a clinician or a policymaker to verify the evidence for themselves.</p>",
+    "metrics": [
+      {
+        "n": "83%",
+        "label": "reduction in information discovery time, as a single query replaces a search across seven systems"
+      },
+      {
+        "n": "95%",
+        "label": "source traceability, through inline citations, confidence scoring, and source attribution"
+      },
+      {
+        "n": "7+",
+        "label": "knowledge repositories unified behind a single natural-language retrieval interface"
+      }
+    ],
+    "card": {
+      "name": "Koita Foundation",
+      "line": "Seven repositories answerable in plain language, every answer traced to source.",
+      "industry": "healthcare",
+      "products": [
+        "Compass"
+      ],
+      "txt": "koita foundation seven repositories answerable in plain language, every answer traced to source. less discovery time",
+      "figs": [
+        {
+          "n": "83%",
+          "l": "less discovery time"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "whirlpool",
+    "prototypeId": "whirlpool",
+    "metaTitle": "Intelligent document processing with automated validation - Case Study - Es Magico",
+    "client": "Whirlpool",
+    "logo": "logow-whirlpool",
+    "title": "Intelligent document processing with automated validation workflows",
+    "lede": "",
+    "chips": [
+      "Consumer & Retail",
+      "Loupe",
+      "54% cycle time",
+      "72% faster validation"
+    ],
+    "html": "<p class=\"kicker\">The stakes</p><p>Procurement at a global home appliance manufacturer proceeds through a chain of teams that each hold one part of the process. A requesting team submits its data, a validating team reviews it, the requesting team corrects and resubmits, and only then does the data team begin processing. Every one of those handoffs was conducted over email. Each correction cycle adds days to a request that a category manager has already committed to a timeline, and the errors causing those cycles are typically minor and repetitive.</p><p class=\"kicker\">The gap</p><p>The constraint was not the processing itself but the interval between the point at which an error entered the data and the point at which it was identified. A validating team detects a formatting problem or a missing field days after submission, returns it, and waits. The organisation also held the knowledge of its own failure patterns and could not access it: no party had visibility into how frequently the same error recurred, so identical corrections were applied repeatedly without anything being learned from them.</p><p class=\"kicker\">What we engineered and operated</p><p>We engineered a procurement assistant that automates the validation workflow end-to-end. It parses each incoming submission on arrival, verifies the data against the rules the validating team had been applying manually, and returns any error to the requesting team immediately, with the reason attached, before any review cycle begins. Corrected data is returned to the platform, which generates structured insight directly for the processing team and eliminates the email loop that previously separated them. Fault tolerance pinpoints where within a submission the fault resides, so the rest of the submission can proceed, and a continuous learning layer maintains a retrievable record of recurring faults, surfacing the errors that appear most frequently together with the applicable remedy.</p><p class=\"kicker\">How it held up under scrutiny</p><p>Procurement data carries commercial consequence, so the assistant reports every item it cannot resolve and leaves the decision with the people who own the data. Errors are surfaced with the reason attached and corrected by the team that owns the data. The record of what was flagged and what was amended remains with the request. The processing team receives data that has already been verified, which is what allows the validation step to compress while remaining in place.</p>",
+    "metrics": [
+      {
+        "n": "54%",
+        "label": "reduction in procurement cycle time, as automated validation eliminates the correction loop"
+      },
+      {
+        "n": "72%",
+        "label": "faster data validation, with errors identified and explained at the point of submission"
+      },
+      {
+        "n": "Retrievable",
+        "label": "recurring faults, so each correction arrives with its remedy and the same fault stops recurring"
+      }
+    ],
+    "card": {
+      "name": "Whirlpool",
+      "line": "Procurement submissions validated on arrival, with the reason attached to every error.",
       "industry": "retail",
+      "products": [
+        "Loupe"
+      ],
+      "txt": "whirlpool procurement submissions validated on arrival, with the reason attached to every error. shorter procurement cycle",
+      "figs": [
+        {
+          "n": "54%",
+          "l": "shorter procurement cycle"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "government-of-odisha",
+    "prototypeId": "odisha",
+    "metaTitle": "Unified knowledge sources retrieved in twelve languages - Case Study - Es Magico",
+    "client": "Government of Odisha",
+    "logo": "logow-odisha",
+    "title": "Unified knowledge sources retrieved through natural-language queries in twelve languages",
+    "lede": "",
+    "chips": [
+      "Public Sector",
+      "Evio",
+      "12 languages",
+      "72% first-contact"
+    ],
+    "html": "<p class=\"kicker\">The stakes</p><p>A smallholder farmer determining whether to spray this week, or whether a subsidy applies to his land, is making a decision that affects the household’s harvest. The information that would resolve it already exists, held across agricultural databases, live weather feeds, soil records, and government scheme portals. Accessing it has required a smartphone, an internet connection, an application, an account, and the ability to read and navigate all of them. Most smallholders possess none of these.</p><p class=\"kicker\">The gap</p><p>The sources were held separately from one another, and none could be interrogated in plain language. Advisory services had been designed around a literate user operating a smartphone, so the process failed the intended beneficiary at the first step. Government schemes went unclaimed, and weather warnings did not reach those most exposed to them. General advice was of limited value in any case, because what mattered was the particular farmer’s own crop and landholding, which no district average could reflect.</p><p class=\"kicker\">What we engineered and operated</p><p>We unified four classes of sources behind a single interface: agricultural databases, live weather feeds, soil data, and government scheme databases, each joined to the farmer’s own profile covering location, crop type, and land size. The farmer poses a question aloud, in one of twelve regional languages, on a feature phone, requiring no reading, no application, and no navigation. The advisory engine determines which sources bear on that question, assembles the response from them, and returns it within the same call. Scheme eligibility, insurance products, and support programmes that previously required a portal are now accessible entirely by voice. Farmer queries and feedback improve retrieval accuracy over time.</p><p class=\"kicker\">How it held up under scrutiny</p><p>For guidance a household will act upon, accuracy matters considerably more than fluency. Every response is assembled from the farmer’s actual profile and from official scheme data, with nothing improvised, and first-contact resolution is reported plainly at 72%. The remainder is escalated to a human officer, so no answer rests on assumption.</p>",
+    "metrics": [
+      {
+        "n": "72%",
+        "label": "first-contact resolution, by spoken query, in twelve languages, requiring no typing"
+      },
+      {
+        "n": "27%",
+        "label": "faster adoption of government schemes, as eligibility became answerable in a single query"
+      },
+      {
+        "n": "35%",
+        "label": "improvement in preparedness for adverse weather events, reducing crop-related losses"
+      }
+    ],
+    "card": {
+      "name": "Government of Odisha",
+      "line": "Farmers ask aloud on a feature phone, in twelve languages, and get an answer in the call.",
+      "industry": "public",
       "products": [
         "Evio"
       ],
-      "txt": "indiamart voice and chat agents that handle a million marketplace conversations autonomously, across support, sales and verification. support cost · consumer & retail",
+      "txt": "government of odisha farmers ask aloud on a feature phone, in twelve languages, and get an answer in the call. first-contact resolution",
       "figs": [
         {
-          "n": "1M+",
-          "l": "conversations handled"
+          "n": "72%",
+          "l": "first-contact resolution"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "government-of-uttar-pradesh",
+    "prototypeId": "up",
+    "metaTitle": "A statewide knowledge repository with automated assessment - Case Study - Es Magico",
+    "client": "Government of Uttar Pradesh",
+    "logo": "logow-up",
+    "title": "A statewide knowledge repository with automated assessment workflows",
+    "lede": "",
+    "chips": [
+      "Public Sector",
+      "Prism",
+      "7.2M+ in a day",
+      "Four-level assessment"
+    ],
+    "html": "<p class=\"kicker\">The stakes</p><p>Uttar Pradesh operates the largest government school system in the country, and the NIPUN Bharat mission commits it to foundational literacy and numeracy for every child in the early primary years. A school is designated NIPUN, or a district is, on the evidence of what children demonstrably achieve. That evidence retains value only if it can be retrieved years afterwards and attributed to the child, the teacher, and the officer who conducted the assessment.</p><p class=\"kicker\">The gap</p><p>The assessment operated at four levels simultaneously. Students were assessed, teachers assessed their students, DIET mentors assessed independently at the district level, and external examiners conducted their own. All of it operated on paper, in schools where connectivity cannot be assumed. The knowledge existed, and the means of retrieval did not: a teacher could not retrieve a child’s assessment history, a block officer could not observe a competency trend, and the state consolidated a position that was already outdated on arrival.</p><p class=\"kicker\">What we engineered and operated</p><p>We engineered the ingestion pipeline and the retrieval layer above it. Every student and teacher in the state was ingested and mapped to their school, so every record resolves to a named child under a named teacher. Handwritten assessment work is processed through OCR into structured records, and each assessment draws a randomised questionnaire from a bank mapped to NIPUN Bharat criteria, so every record enters the repository already classified against the competency it examines. Capture operates offline in the classroom and synchronises when connectivity becomes available, which enables statewide ingestion without requiring statewide connectivity. On the retrieval side, a teacher opens a child’s complete assessment history in a single step, and dashboards at the state, district, block, and school levels return results by competency with recommended actions attached.</p><p class=\"kicker\">How it held up under scrutiny</p><p>The designation rests on the assessment record, so the integrity of that record governs the design. Randomisation from a common bank maintains a constant standard without rendering the paper repeatable; independent assessment by DIET mentors and external examiners verifies the teacher’s own scoring, and every result is attributable to the child, the school and the assessor from the point of ingestion, with nothing reconstructed later. At its peak, the platform ingested and indexed more than 7.2 million assessments in a single day, processed in batches.</p>",
+    "metrics": [
+      {
+        "n": "7.2M+",
+        "label": "assessments ingested, classified and made retrievable in a single day at peak"
+      },
+      {
+        "n": "46%",
+        "label": "reduction in the time required to complete and record a student assessment"
+      },
+      {
+        "n": "22%",
+        "label": "reduction in incomplete or invalid records entering the repository"
+      }
+    ],
+    "card": {
+      "name": "Government of Uttar Pradesh",
+      "line": "A statewide assessment record, attributable to the child, the teacher and the assessor.",
+      "industry": "public",
+      "products": [
+        "Prism"
+      ],
+      "txt": "government of uttar pradesh a statewide assessment record, attributable to the child, the teacher and the assessor. assessments in a day at peak",
+      "figs": [
+        {
+          "n": "7.2M+",
+          "l": "assessments in a day at peak"
         }
       ]
     }
@@ -372,50 +368,38 @@ export const caseStudies: CaseStudy[] = [
     "metaTitle": "A gamified rewards engine that keeps a super-app engaged. - Case Study - Es Magico",
     "client": "Tata Neu",
     "logo": "logow-tataneu2",
-    "title": "A gamified rewards engine that keeps a super-app engaged.",
-    "lede": "Es Magico engineered a gamified rewards engine for Tata Neu, with playable mechanics and configurable offers that lift engagement across a diverse, multi-vertical ecosystem.",
+    "title": "AI-Powered Prompt-Based Gamified Loyalty Campaign Engine",
+    "lede": "",
     "chips": [
       "Consumer & Retail",
       "Custom engineering",
-      "20+ categories",
-      "500,000+ users"
+      "0.75M+ users",
+      "1.8M+ rewards"
     ],
-    "html": "<p class=\"kicker\">The problem</p><p>Every super-app faces user fatigue and drop-off after acquisition, and with retail, grocery, travel and finance under one roof, engaging users across services is hard. Tata Neu found that traditional loyalty was not driving sustained engagement across its ecosystem, with campaign experimentation slow to set up and little insight into what actually worked.</p><p class=\"kicker\">What we engineered</p><p>We engineered a gamified rewards engine that adds playable mechanics to the rewards journey, and lets offers and campaigns be configured and iterated on performance insight.</p><ul><li>Configurable reward flows across the rewards journey</li><li>Playable mechanics such as scratch cards and spin the wheel</li><li>Campaign iteration against live performance insight</li><li>Offer and campaign setup without an engineering ticket</li><li>A unified cross-brand rewards experience</li></ul>",
+    "html": "<p class=\"kicker\">The stakes</p><p>Tata Neu brings retail, grocery, travel and financial services together in a single app, and its commercial case depends on a customer who arrives for one service going on to use the others. The harder problem came after acquisition, when users who had completed a first transaction disengaged and activity across the verticals thinned. A loyalty programme spread across this many categories has to give a grocery shopper a credible reason to open the travel or finance section, and it has to do so for hundreds of thousands of users with very different habits.</p><p class=\"kicker\">The gap</p><p>The Tata Neu team had concluded that its existing loyalty mechanics were not sustaining engagement across the app’s ecosystem. Rewards were largely uniform and took little account of what an individual user actually did in the app. The available tools offered limited room for experimentation, and the team had little visibility into which elements of a campaign had worked, so each new campaign was designed without evidence from the last.</p><p class=\"kicker\">What we engineered and operated</p><p>We engineered an AI-powered gamified loyalty engine that allows the campaign team to create an offer from a prompt, describing the reward and the products and categories it applies to. The engine assembles the campaign and attaches it to a game format, with scratch cards and spin-the-wheel among the mechanics designed into the app. Cohort creation determines which users see each campaign, and reward flows adapt to each user’s behaviour, so two customers opening the same game can be offered different rewards. Because every campaign operates on one engine, users encounter a consistent rewards experience across Tata brands and services. Performance insights return to the team while a campaign is live, and campaigns can be adjusted before they close.</p><p class=\"kicker\">How it held up under scrutiny</p><p>Every reward issued carries a cost to the business, so the engine had to show what each campaign returned as clearly as it showed what it gave away. Issuance and redemption are tracked against each campaign, which gives the team a direct view of how many rewards are claimed against how many were offered, and cohorts show which audiences responded. That visibility made experimentation a routine part of the team’s work, with campaigns adjusted on evidence while still live, and it is how a loyalty programme at this scale produces outcomes that survive scrutiny.</p>",
     "metrics": [
       {
-        "n": "500,000+",
-        "label": "users engaged"
+        "n": "45%",
+        "label": "reward redemption across campaigns, tracked from issue to redemption"
       },
       {
-        "n": "700,000+",
-        "label": "rewards issued"
+        "n": "0.75M+",
+        "label": "users engaged with gamified rewards"
       },
       {
-        "n": "200,000+",
-        "label": "rewards redeemed"
-      },
-      {
-        "n": "100+",
-        "label": "campaigns launched"
-      },
-      {
-        "n": "20+",
-        "label": "products & categories"
-      },
-      {
-        "n": "~6 min",
-        "label": "to create an offer"
+        "n": "1.8M+",
+        "label": "rewards issued across the Tata Neu ecosystem"
       }
     ],
     "card": {
       "name": "Tata Neu",
-      "line": "A gamified rewards engine with playable mechanics across verticals.",
+      "line": "A gamified rewards engine that keeps a multi-vertical super-app engaged.",
       "industry": "retail",
       "products": [],
-      "txt": "tata neu a gamified loyalty engine with personalised rewards and playable mechanics that lifts engagement across a multi-vertical super-app. users engaged · consumer & retail",
+      "txt": "tata neu a gamified rewards engine that keeps a multi-vertical super-app engaged. users engaged",
       "figs": [
         {
-          "n": "500,000+",
+          "n": "0.75M+",
           "l": "users engaged"
         }
       ]
@@ -427,47 +411,41 @@ export const caseStudies: CaseStudy[] = [
     "metaTitle": "Multi-marketplace e-commerce operations, automated end to end. - Case Study - Es Magico",
     "client": "Epic Global Inc.",
     "logo": "logow-epic",
-    "title": "Multi-marketplace e-commerce operations, automated end to end.",
-    "lede": "Es Magico engineered a modular, AI-powered marketplace enablement platform for Epic Global, so a multi-brand, multi-marketplace operation could generate compliant listings and migrate catalogues across continents in a few clicks.",
+    "title": "AI-Powered Multi-Marketplace Listing and Compliance Automation",
+    "lede": "",
     "chips": [
       "Consumer & Retail",
-      "Custom engineering",
-      "3 marketplaces",
-      "Multi-brand"
+      "Forge",
+      "86% less manual work",
+      "Under 2 hrs to onboard"
     ],
-    "html": "<p class=\"kicker\">The problem</p><p>Epic Global manages several D2C brands and hit heavy operational friction scaling across Amazon, eBay, Walmart, Coupang and more. Each platform needed custom, localised content; titles, bullets and descriptions were created by hand; flat-file uploads were slow and error-prone; and inconsistent image standards caused rejections. Without version control, optimising listings or tracking performance was hard, and cross-marketplace migration stayed manual.</p><p class=\"kicker\">What we engineered</p><p>We engineered a modular platform for Epic’s multi-brand, multi-marketplace operation, from one-click content generation to cross-marketplace migration, with validation and price sensitivity engineered in.</p><ul><li>One-click, marketplace-specific SEO content from product specs</li><li>An intelligent flat-file manager with real-time validation</li><li>An image compliance engine that flags and regenerates non-compliant images</li><li>Content versioning for A/B testing, rollback and tracking</li><li>Cross-marketplace migration with content and pricing preserved</li><li>A price-sensitivity engine for region-wise adjustments</li></ul>",
+    "html": "<p class=\"kicker\">The stakes</p><p>Epic Global is a US-based e-commerce consultancy operating multiple D2C brands across Amazon, eBay, Walmart, Coupang and several other marketplaces on more than one continent. Each platform enforces its own content conventions and image standards through automated validation that rejects a non-conforming listing before a shopper ever sees it. For a consultancy valued on how quickly a brand goes live in a new region, every rejected file is time charged against the client relationship.</p><p class=\"kicker\">The gap</p><p>Basic AI assistance was already in place, yet listing copy was still being written and localised by hand for each marketplace. Flat file uploads were slow and failed validation often, and images were rejected for falling short of platform standards. Moving a catalogue from one marketplace to another meant recreating every listing manually. With no version control, the team could neither test a change to a listing nor attribute a shift in performance to it, and price testing across regions was not possible at all.</p><p class=\"kicker\">What we engineered and operated</p><p>We engineered a modular marketplace enablement platform around the way Epic’s team already worked. Content generation takes a product’s specifications and reference ASINs and writes copy to the conventions and search behaviour of each destination marketplace, so one product record becomes several localised listings. The flat file manager pre-fills 30 to 40% of product fields and validates every entry as it is made, prompting the user at the point of error before an upload is attempted. An image compliance engine checks each asset against the target platform’s standards, flags those that would be rejected and generates a compliant replacement from a prompt. Listing components are versioned for A/B testing and rollback, with performance data attached to the change that produced it. Catalogue migration carries content and pricing between marketplaces intact, and a price sensitivity engine uses competitor and historical data to recommend adjustments region by region.</p><p class=\"kicker\">How it held up under scrutiny</p><p>In marketplace commerce the auditor is the platform itself, and its validation applies to every submission without exception. The platform applies those same rules earlier, inside Epic’s own workflow, so errors surface while a team member can still correct them. Versioning adds a second layer of accountability, since every change to a listing is recorded and reversible and a brand manager can show exactly what was live on any given date. Pricing remains a recommendation that the brand team chooses to apply, and brand managers now make these changes directly without waiting on engineering support. Together, early validation and a complete change history give Epic’s brand teams outcomes that survive scrutiny.</p>",
     "metrics": [
       {
-        "n": "~65%",
-        "label": "faster listing turnaround"
+        "n": "86%",
+        "label": "reduction in person-hours spent on redundant manual processes across the listing workflow"
       },
       {
-        "n": "~80%",
-        "label": "fewer redundant man-hours"
+        "n": "Under 2 hrs",
+        "label": "to onboard a new brand onto the platform"
       },
       {
-        "n": "under 2 hrs",
-        "label": "to onboard a brand"
-      },
-      {
-        "n": "~35%",
-        "label": "of fields auto-filled"
-      },
-      {
-        "n": "3",
-        "label": "marketplaces automated"
+        "n": "37%",
+        "label": "of product fields pre-filled in the flat file manager, with validation at the point of entry"
       }
     ],
     "card": {
       "name": "Epic Global Inc.",
-      "line": "Compliant listings generated and catalogues migrated across markets.",
+      "line": "Compliant listings generated and catalogues migrated across global marketplaces.",
       "industry": "retail",
-      "products": [],
-      "txt": "epic global inc. a modular platform that generates compliant listings and migrates catalogues across global marketplaces in a few clicks. listing turnaround · consumer & retail",
+      "products": [
+        "Forge"
+      ],
+      "txt": "epic global inc. compliant listings generated and catalogues migrated across global marketplaces. less redundant manual work",
       "figs": [
         {
-          "n": "~65%",
-          "l": "faster listing turnaround"
+          "n": "86%",
+          "l": "less redundant manual work"
         }
       ]
     }
@@ -495,6 +473,10 @@ export const caseStudyFilters = {
     {
       "value": "consumer & retail",
       "label": "Consumer & Retail"
+    },
+    {
+      "value": "education",
+      "label": "Education"
     },
     {
       "value": "others",

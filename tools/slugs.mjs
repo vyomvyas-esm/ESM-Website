@@ -28,9 +28,9 @@ export const ROUTES = {
   careers: "/careers/",
   "careers-apply": "/careers/apply/",
   contact: "/contact/",
-  stack: "/technology/",
   privacy: "/privacy/",
   terms: "/terms/",
+  glossary: "/resources/glossary/",
 };
 
 /** prototype case-study id -> client-name slug */
@@ -44,6 +44,10 @@ export const CASE_STUDY_SLUGS = {
   indiamart: "indiamart",
   tataneu: "tata-neu",
   epic: "epic-global",
+  dsci: "data-security-council-of-india",
+  whirlpool: "whirlpool",
+  odisha: "government-of-odisha",
+  up: "government-of-uttar-pradesh",
 };
 /** prototype blog slug -> repaired slug; anything not listed is unchanged */
 export const BLOG_SLUG_REPAIRS = {

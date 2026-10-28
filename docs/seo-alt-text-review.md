@@ -8,8 +8,6 @@ These headings contain a word the brand rules forbid in text this work produces,
 
 | Image | Heading | Alt source used |
 |---|---|---|
-| `scaling-outbound-conversations-without-adding-headcount #1` | Why conversational voice AI is hard to run well | Why conversational voice AI is hard to operate well |
-| `consolidating-the-ai-tool-stack #2` | A disciplined consolidation runs in an order that protects capability while cutting sprawl. | A disciplined consolidation follows an order that protects capability while cutting sprawl |
 | `incident-response-for-ai-systems #2` | Building response before the incident, and its cost | Preparing the incident response before the incident, and its cost |
 | `ai-voice-agents-in-healthcare-call-centers #1` | Why the front door has to be built for the wrong caller | Why the front door has to be designed for the wrong caller |
 | `demand-and-inventory-intelligence-under-real-margins #2` | Building for the cost of being wrong | Engineering for the cost of being wrong |
@@ -20,12 +18,9 @@ These headings contain a word the brand rules forbid in text this work produces,
 | `gamma-against-canva-for-ai-generated-decks-and-design #2` | The tools differ in what they are built around, and the difference decides which fits a given organisation. | The tools differ in what they are designed around, and that decides which fits an organisation |
 | `automating-loan-document-checks-without-breaking-your-audit-trail #2` | Building checks that preserve the trail | Engineering checks that preserve the trail |
 | `function-calling-maturity #2` | Building robust to function-calling variation, and the trade-off | Engineering for function-calling variation, and the trade-off |
-| `the-react-pattern-in-production #1` | Why the ReAct loop runs away | Why the ReAct loop spirals |
 | `why-most-enterprise-agent-pilots-never-reach-production #2` | The trade-off, and building pilots that transition | The trade-off, and engineering pilots that transition |
 | `designing-governance-into-agentic-ai-not-bolting-it-on #2` | The cost of building it in, and why it pays | The cost of engineering it in, and why it pays |
 | `the-architecture-behind-our-platform #1` | What a building block actually is, and why it’s shared | What a reusable block actually is, and why it is shared |
 | `why-most-enterprise-ai-stalls-after-the-pilot #2` | What operators do differently: build the pilot to be hard to pass | What operators do differently: engineer the pilot to be hard to pass |
 | `evaluating-ai-agents #2` | What this costs, and why it’s still the cheapest thing you’ll build | What this costs, and why it is still the cheapest thing you will engineer |
-| `deploying-ai-is-easy-operationalising-it-is-the-work #1` | A demo is one good run. Production is the distribution. | A demo is one good attempt. Production is the distribution. |
 | `consultant-integrator-or-operator #1` | The sourcing model is built to end. The system isn’t. | The sourcing model is designed to end. The system is not. |
-| `consultant-integrator-or-operator #2` | Three models, one question: who can answer for the running system | Three models, one question: who can answer for the live system |

@@ -4,8 +4,7 @@ import Link from "next/link";
 import { ReportsIndex } from "@/components/ReportsIndex";
 export const metadata = pageMetadata({
   title: "Reports",
-  description:
-    "Deep research into how AI is engineered, governed and deployed in regulated enterprises, with the working shown and every figure sourced.",
+  description: "",
   path: "/reports/",
 });
 export default function ReportsPage() {
@@ -19,12 +18,12 @@ export default function ReportsPage() {
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[88px]">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Resources" }, { label: "Reports" }]} />
-          <h1 className="h-hero mt-6 max-w-[16ch] rv" data-d="60">
-            Beyond market reports.
+          <h1 className="h-hero mt-6 max-w-[20ch] rv" data-d="60">
+            The evidence behind enterprise AI decisions
           </h1>
           <p className="lede mt-5 max-w-[660px] rv" data-d="120">
-            Deep research into how AI is engineered, governed and deployed in regulated enterprises, with the
-            working shown and every figure sourced.
+            Deep reports on AI in banking and life sciences, with every figure sourced and every conclusion
+            argued, written for leaders who have to defend an AI investment in the room where it is decided.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
             <Link className="btn btn-light group" href="/contact/">
@@ -42,12 +41,8 @@ export default function ReportsPage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pb-[104px]">
+      <section className="relative overflow-hidden bg-ink pb-[108px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
-          <span className="eyebrow rv">Published research</span>
-          <h2 className="h-sec rv" data-d="60">
-            What we <span className="text-white/40">have published.</span>
-          </h2>
           <ReportsIndex />
         </div>
       </section>
@@ -60,8 +55,9 @@ export default function ReportsPage() {
             <div className="cta-wash" aria-hidden="true"></div>
             <div className="relative mx-auto grid w-full max-w-shell items-start gap-10 px-6 py-[86px] lg:grid-cols-[1fr_auto] lg:gap-16 lg:px-8">
               <div>
-                <h2 className="h-cta max-w-[24ch] lg:max-w-none">Tell us the number you need to move.</h2>
-                <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
+                <h2 className="h-cta max-w-[24ch] lg:max-w-none">
+                  Tell us the number you need to <span className="text-teal">move</span>
+                </h2>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
                 <Link className="btn btn-light group" href="/contact/">

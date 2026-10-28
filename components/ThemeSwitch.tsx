@@ -13,8 +13,7 @@ const isLight = () => document.documentElement.getAttribute("data-theme") === "l
 
 export function setTheme(next: "light" | "dark") {
   const root = document.documentElement;
-  if (next === "dark") root.removeAttribute("data-theme");
-  else root.setAttribute("data-theme", "light");
+  root.setAttribute("data-theme", next);
   try {
     localStorage.setItem("esm-theme", next);
   } catch {

@@ -13,6 +13,7 @@ const INDUSTRY_KEY: Record<string, string> = {
   healthcare: "healthcare",
   "public sector": "public",
   "consumer & retail": "retail",
+  education: "education",
   others: "others",
 };
 

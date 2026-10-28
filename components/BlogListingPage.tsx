@@ -28,10 +28,12 @@ export function BlogListingPage({ category, page }: { category: Category | null;
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[88px]">
           <Breadcrumbs items={crumbs} />
           <h1 className="h-hero mt-6 max-w-[16ch] rv" data-d="60">
-            {category ? category.tag : "The AI Operator Journal."}
+            {category ? category.tag : "What we learn operating AI"}
           </h1>
           <p className="lede mt-5 max-w-[660px] rv" data-d="120">
-            Field notes from the teams engineering AI that delivers enterprise value.
+            Every post draws on a system we engineered and still answer for in production, written by the
+            engineers and leaders accountable for it, so each lesson has already been tested against real
+            users and real auditors.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
             <Link className="btn btn-light group" href="/contact/">
@@ -64,9 +66,8 @@ export function BlogListingPage({ category, page }: { category: Category | null;
             <div className="relative mx-auto grid w-full max-w-shell items-start gap-10 px-6 py-[86px] lg:grid-cols-[1fr_auto] lg:gap-16 lg:px-8">
               <div>
                 <h2 className="h-cta max-w-[24ch] lg:max-w-none">
-                  Tell us the number you need to <span className="text-teal">move.</span>
+                  Tell us the number you need to <span className="text-teal">move</span>
                 </h2>
-                <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
                 <Link className="btn btn-light group" href="/contact/">

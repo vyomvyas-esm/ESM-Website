@@ -2,152 +2,53 @@
 import type { Faq } from "@/lib/jsonld";
 
 /** FAQ accordions, as visible on the page, keyed by prototype page id */
-export const faqs: Record<string, Faq[]> = {
-  "ind-bfsi": [
-    {
-      "question": "Will an automated decision hold up in a model-risk review?",
-      "answer": "That is the design goal from the first sprint. Every decision is logged with its inputs, the score and the policy that acted on it, so a specific case can be reconstructed and defended to an examiner months later. Reason codes are emitted at decision time and held with the record."
-    },
-    {
-      "question": "Where does a person stay in the loop?",
-      "answer": "On the marginal and high-consequence cases: the thin-file application near the threshold, the flagged transaction a policy held, the exception a rule cannot judge. Automation clears the clear cases; a named human owns the ones that carry real cost."
-    },
-    {
-      "question": "How do you keep a model fair across customer segments?",
-      "answer": "Fairness is monitored continuously across segments against defined thresholds, with the same seriousness as performance. A model that quietly grows harder on one group over two quarters is surfaced as an event months before an audit would reach it."
-    },
-    {
-      "question": "Can this run inside our VPC, under our IAM and our change process?",
-      "answer": "Yes. We deploy into your environment with isolated hosting, role-based access and encryption, so customer data stays where your policies and the regulator require it to."
-    }
-  ],
-  "ind-healthcare": [
-    {
-      "question": "Does the AI make the clinical decision?",
-      "answer": "No. It supports the decision and the consequential call stays with a qualified clinician. The system is engineered so the clinician’s sign-off is a real review, and diagnostic accountability is never transferred to a model."
-    },
-    {
-      "question": "How do you stop a fluent but wrong output reaching the record?",
-      "answer": "Every answer is traceable to the source it came from, so a reviewer checks the work rather than trusting it. High-stakes fields are surfaced for explicit attention, and the system flags where it is uncertain instead of phrasing a guess as a fact."
-    },
-    {
-      "question": "Will it hold up to validation on our own population?",
-      "answer": "We validate on your setting, your patient mix and your equipment rather than a vendor benchmark, and we monitor for drift, because performance shifts when inputs shift. Evaluation stays an ongoing discipline for as long as the system is live."
-    },
-    {
-      "question": "How does this stand up to a GxP audit and our pharmacovigilance obligations?",
-      "answer": "Every action is written to a validated audit trail: the inputs, the model version, the reviewer and the timestamp. Systems are qualified before use and requalified after a change, so the record supports IQ, OQ and PQ. Adverse event intake captures the minimum dataset during the call, in the format your safety database expects."
-    }
-  ],
-  "ind-public": [
-    {
-      "question": "How is a decision made auditable?",
-      "answer": "A documented trail sits behind every decision by design: what evidence was seen, which standard applied, and the rationale for the result. It is reconstructable from the first day, long before anyone asks."
-    },
-    {
-      "question": "How do you keep assessments consistent across assessors and regions?",
-      "answer": "Cases are scored against the published standard the same way regardless of who reviews them, so the same evidence produces the same result. The clause a decision was scored against travels with it."
-    },
-    {
-      "question": "Can it reach citizens who are not on an app?",
-      "answer": "Yes. Services and outreach are delivered by voice and across languages, so a form or a smartphone is never the barrier between a citizen and the service they are entitled to."
-    },
-    {
-      "question": "What does the audit trail look like when a citizen appeals a decision?",
-      "answer": "The complete file: the evidence submitted, the criteria applied, the version of the standard in force on that date, the score with its reasoning, and every subsequent change with its author. An appeal is reviewed against what was actually in front of the system, and the same record answers an RTI request or an audit by the accrediting body."
-    }
-  ],
-  "ind-retail": [
-    {
-      "question": "Will it hold up at peak-week volume?",
-      "answer": "Performance is engineered for real traffic and real margin. The workload a peak week produces is the design target, so throughput does not fall over exactly when the business needs it most."
-    },
-    {
-      "question": "How does personalisation stay within consent and conduct rules?",
-      "answer": "Relevance is engineered inside the consent and conduct boundaries from the start, so a lift in conversion never comes at the cost of a compliance gap you have to explain later."
-    },
-    {
-      "question": "What happens to the cases the system cannot handle?",
-      "answer": "They are escalated to a person with the context intact. The system is generous with what it resolves and conservative about anything that needs judgement or changes an order’s state."
-    },
-    {
-      "question": "What happens on the day traffic is four times a normal Tuesday?",
-      "answer": "It is engineered for that day rather than for an average one. Capacity is provisioned against peak, degradation is graceful rather than sudden, and the queue for human escalation is bounded so it does not silently grow through the night. If a downstream system slows, work is held and replayed rather than dropped."
-    }
-  ],
-  "pyzo": [
-    {
-      "question": "How is PYZO different from engineering on a raw LLM?",
-      "answer": "A capable model wired to a prompt gives you a demo. PYZO is the engineering and operational layer on top of it, orchestration, retrieval, guardrails, evaluation and monitoring, so the system operates unattended and holds up under audit."
-    },
-    {
-      "question": "Do the six capabilities work independently, or together?",
-      "answer": "Both. Each capability solves a discrete problem on its own, and all six sit on one shared foundation, so they interoperate cleanly and every deployment strengthens the next."
-    },
-    {
-      "question": "Can PYZO operate inside our own environment?",
-      "answer": "Yes. We deploy into your environment with isolated hosting, role-based access and encryption, so your data stays where your policies require it to."
-    },
-    {
-      "question": "How do you keep it auditable and compliant?",
-      "answer": "Every decision is logged and traceable to source, with a person kept on the consequential calls. PII masking, AES-256 encryption, role-based access and ISO 27001 certification are engineered in from the foundation."
-    },
-    {
-      "question": "What does the shared foundation actually give us?",
-      "answer": "Twelve reusable layers, hardened across regulated deployments. A new use case inherits proven orchestration, safety and governance instead of starting from scratch."
-    },
-    {
-      "question": "How quickly can we go live?",
-      "answer": "A discovery conversation takes about a week. A proof of concept, engineered in your environment, follows in two to three."
-    }
-  ]
-};
+export const faqs: Record<string, Faq[]> = {};
 
 /** Service nodes: the page title and its hero lede */
 export const services: Record<string, { name: string; description: string; path: string }> = {
   "pyzo-atlas": {
     "name": "Atlas, Training Coach - PYZO",
-    "description": "Atlas turns SOPs, compliance manuals and knowledge documents into short, structured lessons delivered by an AI avatar of your best trainer, refreshing as the underlying procedures change, and checking whether the knowledge actually stuck.",
+    "description": "Converts static SOPs and compliance manuals into 24/7 interactive AI video modules and role-play simulations.",
     "path": "/pyzo/atlas/"
   },
   "pyzo-compass": {
     "name": "Compass, Business Analyst - PYZO",
-    "description": "Compass unifies institutional knowledge scattered across documents, systems and conversations into a single retrievable layer, then answers in plain language with an inline citation and a confidence score attached.",
+    "description": "Unlocks enterprise knowledge repositories to execute complex, multi-system queries and actions with full source traceability.",
     "path": "/pyzo/compass/"
   },
   "pyzo-evio": {
-    "name": "Evio, Call Operator - PYZO",
-    "description": "Evio handles inbound and outbound calls with a human-like voice, holding a natural conversation on lines that are rarely clean, barge-in, speaker diarisation and noise cancellation in real time.",
+    "name": "Evio, Voice Operator - PYZO",
+    "description": "Manages high-volume voice conversations across 15+ languages with automated intent routing and seamless human handoff.",
     "path": "/pyzo/evio/"
   },
   "pyzo-forge": {
     "name": "Forge, Workflow Executor - PYZO",
-    "description": "Forge executes real workflows on a device, moving across desktop and browser applications the way an operator would, including the legacy systems that expose no API to call.",
+    "description": "Executes cross-application workflows across desktop, browser and legacy systems, with self-healing process execution.",
     "path": "/pyzo/forge/"
   },
   "pyzo-loupe": {
     "name": "Loupe, Application Assistant - PYZO",
-    "description": "Loupe guides an applicant field by field through an application that would otherwise defeat them, and validates each entry against the requirement it is meant to satisfy.",
+    "description": "Guides complex form completion field by field, validating inputs in real time for applicants and compliance reviewers.",
     "path": "/pyzo/loupe/"
   },
   "pyzo-prism": {
     "name": "Prism, Evaluation Consultant - PYZO",
-    "description": "Prism parses almost any input, audio, video, images or documents, and evaluates it against a rubric you define and defend.",
+    "description": "Evaluates documents and applications against defined rubrics, providing explainable scoring ready for audit scrutiny.",
     "path": "/pyzo/prism/"
   },
   "svc-agentic": {
     "name": "Agentic AI",
-    "description": "We engineer agentic systems that execute real workflows across your applications, resolve what they can, and escalate what they can’t.",
+    "description": "We engineer agents around one number your business already tracks, then operate them in production and report against that number every month.",
     "path": "/engineering/agentic-ai/"
   },
   "svc-governance": {
     "name": "AI Governance",
-    "description": "We engineer the governance, traceability and human oversight that let an enterprise put AI into production and defend it afterwards.",
+    "description": "We engineer governance into the architecture from the first design review, so every decision leaves a trail your auditor and your regulator can follow back to its source.",
     "path": "/engineering/ai-governance/"
   },
   "svc-modernisation": {
-    "name": "Enterprise AI",
-    "description": "We unify knowledge, data, and workflows into a foundation AI can reason over, ensuring every answer is traceable to source.",
+    "name": "Data Architecture",
+    "description": "We turn scattered enterprise data into one governed layer that every agent draws on, so accuracy improves and the investment compounds.",
     "path": "/engineering/enterprise-ai/"
   }
 };

@@ -1,8 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { JsonLd } from "@/components/JsonLd";
-import { graph, faqPage } from "@/lib/jsonld";
-import { faqs } from "@/data/page-schema";
 import Link from "next/link";
 export const metadata = pageMetadata({
   title: "Banking & Financial Services",
@@ -12,14 +9,13 @@ export const metadata = pageMetadata({
 export default function IndBfsiPage() {
   return (
     <main className="page" id="page-ind-bfsi">
-      <JsonLd data={graph(faqPage(faqs["ind-bfsi"]))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>
           <div className="hero-scrim"></div>
           <div className="sky-fade"></div>
         </div>
-        <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[92px]">
+        <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[96px]">
           <Breadcrumbs
             items={[
               { label: "Home", href: "/" },
@@ -27,12 +23,12 @@ export default function IndBfsiPage() {
               { label: "Banking & Financial Services" },
             ]}
           />
-          <h1 className="h-hero mt-6 max-w-[16ch] rv" data-d="60">
-            Every decision here has to be defensible.
+          <h1 className="h-hero mt-6 max-w-[20ch] rv" data-d="60">
+            AI for banking that a regulator can examine
           </h1>
           <p className="lede mt-5 max-w-[680px] rv" data-d="120">
-            We engineer underwriting, servicing, compliance and grievance work to be questioned, because here
-            it will be, and we operate it inside your environment, accountable for what it produces.
+            From credit decisioning to grievance redressal, we engineer AI that a regulator can examine and
+            operate it inside your environment, accountable for every result.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
             <Link className="btn btn-light group" href="/contact/">
@@ -48,69 +44,336 @@ export default function IndBfsiPage() {
               </svg>
             </Link>{" "}
             <a className="btn btn-ghost" href="#ind-uses">
-              See the use cases
+              See where AI fits
             </a>
+          </div>
+        </div>
+        <div className="brand-band relative rv" data-d="240">
+          <div className="mx-auto max-w-shell px-6 lg:px-8">
+            <div className="bm-rail">
+              <ul
+                className="bm-track"
+                aria-label="Banking and financial services clients"
+                style={{ "--bm-dur": "36s", "--bm-gap": "clamp(3rem,10vw,9rem)" } as Record<string, string>}
+              >
+                <li className="bm-item">
+                  <span
+                    className="clogo logow-rbi"
+                    role="img"
+                    aria-label="Reserve Bank Innovation Hub"
+                  ></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-indusind" role="img" aria-label="IndusInd Bank"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hsbc" role="img" aria-label="HSBC"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hdfc" role="img" aria-label="HDFC Capital"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-rbi" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-indusind" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hsbc" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hdfc" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-rbi" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-indusind" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hsbc" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hdfc" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-rbi" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-indusind" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hsbc" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hdfc" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-rbi" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-indusind" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hsbc" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hdfc" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-rbi" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-indusind" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hsbc" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hdfc" aria-hidden="true"></span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
       <section className="relative overflow-hidden bg-ink py-[108px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
+          <div className="glow-top" aria-hidden="true"></div>
+          <div className="grid gap-12 lg:grid-cols-[minmax(280px,1fr)_2fr] lg:gap-16">
             <div className="rv">
-              <span className="eyebrow rv">What we engineer</span>
-              <h2 className="h-sec max-w-[15ch]">
-                Decisions that hold up <span className="text-white/40">under audit.</span>
-              </h2>
-              <p className="mt-7 max-w-[48ch] text-[12.5px] leading-[1.9] text-white/45">
-                Credit and underwriting decisioning, servicing and collections, fraud and compliance, and
-                grievance redressal, each one explainable, logged, and traceable to source, so it can be
-                defended long after it is made.
-              </p>
+              <span className="eyebrow rv">The pressures</span>
+              <h2 className="h-sec">What every bank is up against</h2>
             </div>
-            <div className="num-list">
-              <div className="num-row rv" data-d="0">
-                <span className="num-idx">01</span>
-                <div>
-                  <h3 className="font-display text-[14.5px] font-medium">Decisioning that defends itself</h3>
-                  <p className="mt-2.5 max-w-[46ch] text-[12px] leading-[1.75] text-white/45">
-                    Credit, underwriting and claims scored against one standard, each decision logged with the
-                    reason it was made, so it holds up when a regulator asks months later.
-                  </p>
-                </div>
+            <div className="ctrl-grid">
+              <div className="ctrl-col rv" data-d="0">
+                <span className="ctrl-rule"></span>
+                <h3 className="mt-5 font-display text-[14.5px] font-medium leading-snug">
+                  Grievances at a volume no desk can staff
+                </h3>
+                <p className="mt-3 text-[12px] leading-[1.8] text-white/45">
+                  Complaints arrive in many languages and through every channel, and each one has to be logged
+                  and closed within the timelines the regulator sets.
+                </p>
               </div>
-              <div className="num-row rv" data-d="70">
-                <span className="num-idx">02</span>
-                <div>
-                  <h3 className="font-display text-[14.5px] font-medium">Servicing and recovery at volume</h3>
-                  <p className="mt-2.5 max-w-[46ch] text-[12px] leading-[1.75] text-white/45">
-                    Grievance redressal, collections and servicing conversations handled at a scale no team
-                    can staff, with the difficult cases escalated to a person.
-                  </p>
-                </div>
+              <div className="ctrl-col rv" data-d="70">
+                <span className="ctrl-rule"></span>
+                <h3 className="mt-5 font-display text-[14.5px] font-medium leading-snug">
+                  Decisions questioned long after they are made
+                </h3>
+                <p className="mt-3 text-[12px] leading-[1.8] text-white/45">
+                  A credit or servicing decision taken today can be examined months later, and the bank has to
+                  show the reason it was made.
+                </p>
               </div>
-              <div className="num-row rv" data-d="140">
-                <span className="num-idx">03</span>
-                <div>
-                  <h3 className="font-display text-[14.5px] font-medium">
-                    Fraud and compliance in the load path
-                  </h3>
-                  <p className="mt-2.5 max-w-[46ch] text-[12px] leading-[1.75] text-white/45">
-                    Fraud scoring, sanctions and KYC checks engineered into the decision itself, with a
-                    documented trail behind every call.
-                  </p>
-                </div>
+              <div className="ctrl-col rv" data-d="140">
+                <span className="ctrl-rule"></span>
+                <h3 className="mt-5 font-display text-[14.5px] font-medium leading-snug">
+                  Policy that changes faster than training
+                </h3>
+                <p className="mt-3 text-[12px] leading-[1.8] text-white/45">
+                  Product rules and compliance circulars change often, and every branch has to work from the
+                  current version the day it takes effect.
+                </p>
+              </div>
+              <div className="ctrl-col rv" data-d="0">
+                <span className="ctrl-rule"></span>
+                <h3 className="mt-5 font-display text-[14.5px] font-medium leading-snug">
+                  Customers who will not use a form
+                </h3>
+                <p className="mt-3 text-[12px] leading-[1.8] text-white/45">
+                  A large share of customers prefer a regional language or a phone call, and a written web
+                  form leaves them unserved.
+                </p>
+              </div>
+              <div className="ctrl-col rv" data-d="70">
+                <span className="ctrl-rule"></span>
+                <h3 className="mt-5 font-display text-[14.5px] font-medium leading-snug">
+                  Collections that cannot scale with headcount
+                </h3>
+                <p className="mt-3 text-[12px] leading-[1.8] text-white/45">
+                  Overdue accounts grow faster than recovery teams, and every conversation has to stay within
+                  the conduct rules for collections.
+                </p>
+              </div>
+              <div className="ctrl-col rv" data-d="140">
+                <span className="ctrl-rule"></span>
+                <h3 className="mt-5 font-display text-[14.5px] font-medium leading-snug">
+                  Fraud that moves faster than review
+                </h3>
+                <p className="mt-3 text-[12px] leading-[1.8] text-white/45">
+                  Mule accounts and scams move money in minutes, so checks have to happen inside the
+                  transaction and leave a record behind them.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="ind-bfsi-proof" className="relative overflow-hidden bg-ink py-[108px]">
+      <section id="ind-uses" className="relative overflow-hidden bg-ink pt-[96px] pb-[108px]">
+        <div className="relative mx-auto max-w-shell px-6 lg:px-8">
+          <span className="eyebrow rv">Across the bank</span>
+          <h2 className="h-sec rv" data-d="60">
+            Where AI fits in a bank
+          </h2>
+          <div className="iq-grid mt-[46px]">
+            <article className="iq-cell rv" data-d="0">
+              <div className="iq-top">
+                <span className="iq-pzmark pzlogo-atlas" role="img" aria-label="Atlas"></span>
+                <h3 className="iq-name">Every branch trained to one standard</h3>
+              </div>
+              <p className="iq-note">
+                Converts your compliance manuals and product documentation into assessed, multilingual lessons
+                led by an AI avatar of your best trainer, so every branch and contact-centre employee reaches
+                certified competence before serving a customer.
+              </p>
+              <Link className="iq-go group" href="/pyzo/atlas/">
+                Explore Atlas
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </article>
+            <article className="iq-cell rv" data-d="50">
+              <div className="iq-top">
+                <span className="iq-pzmark pzlogo-compass" role="img" aria-label="Compass"></span>
+                <h3 className="iq-name">Audit preparation in days</h3>
+              </div>
+              <p className="iq-note">
+                Answers a frontline question from your own policy wording and regulatory circulars with the
+                source attached, and compresses the preparation time for an audit or inspection from weeks to
+                days.
+              </p>
+              <Link className="iq-go group" href="/pyzo/compass/">
+                Explore Compass
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </article>
+            <article className="iq-cell rv" data-d="100">
+              <div className="iq-top">
+                <span className="iq-pzmark pzlogo-evio" role="img" aria-label="Evio"></span>
+                <h3 className="iq-name">Collections in the borrower’s language</h3>
+              </div>
+              <p className="iq-note">
+                Holds collections and policy-renewal conversations in more than fifteen languages at a volume
+                a call centre could never staff, logging every call for independent review.
+              </p>
+              <Link className="iq-go group" href="/pyzo/evio/">
+                Explore Evio
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </article>
+            <article className="iq-cell rv" data-d="150">
+              <div className="iq-top">
+                <span className="iq-pzmark pzlogo-forge" role="img" aria-label="Forge"></span>
+                <h3 className="iq-name">Workflows that survive a screen change</h3>
+              </div>
+              <p className="iq-note">
+                Operates your account-opening and reconciliation workflows across the applications your teams
+                already use, including legacy systems with no API, and repairs its own steps when a screen
+                changes.
+              </p>
+              <Link className="iq-go group" href="/pyzo/forge/">
+                Explore Forge
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </article>
+            <article className="iq-cell rv" data-d="200">
+              <div className="iq-top">
+                <span className="iq-pzmark pzlogo-loupe" role="img" aria-label="Loupe"></span>
+                <h3 className="iq-name">Applications complete the first time</h3>
+              </div>
+              <p className="iq-note">
+                Guides an applicant through a loan or account-opening form and checks every upload for
+                completeness, lowering the not-in-good-order rate and bringing time-to-fund forward.
+              </p>
+              <Link className="iq-go group" href="/pyzo/loupe/">
+                Explore Loupe
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </article>
+            <article className="iq-cell rv" data-d="250">
+              <div className="iq-top">
+                <span className="iq-pzmark pzlogo-prism" role="img" aria-label="Prism"></span>
+                <h3 className="iq-name">Claims and loans assessed consistently</h3>
+              </div>
+              <p className="iq-note">
+                Assesses every loan application or insurance claim against your own rubric with the reasoning
+                attached, so a reviewer sees why each decision was reached and keeps the final call.
+              </p>
+              <Link className="iq-go group" href="/pyzo/prism/">
+                Explore Prism
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="ind-bfsi-proof" className="relative overflow-hidden bg-ink pt-[108px] pb-[108px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <div className="pf-head">
             <div>
-              <span className="eyebrow rv">Proof in BFSI</span>
+              <span className="eyebrow rv">Proof in banking</span>
               <h2 className="h-sec rv" data-d="60">
-                Live inside regulated banks.
+                Governed outcomes, proven in production
               </h2>
             </div>
             <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies/">
@@ -126,405 +389,268 @@ export default function IndBfsiPage() {
               </svg>
             </Link>
           </div>
-          <p className="prose-lede mt-6 max-w-[760px] rv" data-d="90">
-            Deployed in production, and measured against the number we agreed.
-          </p>
-          <div className="mt-10">
-            <Link className="csr rv" data-d="0" href="/case-studies/rbi-innovation-hub/">
-              <span
-                className="clogo cs-logo csr-logo logow-rbi opacity-70"
-                role="img"
-                aria-label="RBI · Innovation Hub"
-              ></span>
-              <div className="csr-copy">
-                <p className="text-[13px] font-medium text-white">RBI · Innovation Hub</p>
-                <p className="mt-2 text-[11.5px] leading-[1.7] text-white/45">
-                  A voice-first grievance protocol any regulated bank can adopt.
-                </p>
-              </div>
-              <div className="csr-figs">
-                <div className="csr-fig">
-                  <div className="n tally">~80%</div>
-                  <div className="l">lower grievance turnaround</div>
+          <div className="cs-acc mt-[46px]">
+            <details className="ca-row rv" data-d="0">
+              <summary>
+                <span className="ca-ic">
+                  <span className="ca-x"></span>
+                </span>
+                <span className="clogo ca-logo logow-rbi" role="img" aria-label="RBI Innovation Hub"></span>
+                <span className="ca-head">
+                  81% reduction in TAT with a voice-first grievance protocol for banking
+                </span>
+              </summary>
+              <div className="ca-body">
+                <div className="ca-left">
+                  <div className="ca-figs">
+                    <div className="ca-fig">
+                      <div className="n tally">81%</div>
+                      <div className="l">Lower turnaround time</div>
+                    </div>
+                    <div className="ca-fig">
+                      <div className="n tally">2 min</div>
+                      <div className="l">Average registration time</div>
+                    </div>
+                    <div className="ca-fig">
+                      <div className="n tally">12+</div>
+                      <div className="l">Indic languages</div>
+                    </div>
+                  </div>
+                  <p className="ca-copy">
+                    A multilingual, voice-first grievance protocol that ensures audit-ready execution in
+                    adherence to complex regulatory mandates for tier-one banking.
+                  </p>
+                  <Link className="ca-link group" href="/case-studies/rbi-innovation-hub/">
+                    <span className="ca-goic">
+                      <svg width="10" height="10" viewBox="0 0 16 16" fill="none">
+                        <path
+                          d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    Read the case study
+                  </Link>
                 </div>
               </div>
-              <span className="csr-arw text-teal">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path
-                    d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </Link>
-            <Link className="csr rv" data-d="60" href="/case-studies/indusind-bank/">
-              <span
-                className="clogo cs-logo csr-logo logow-indusind opacity-70"
-                role="img"
-                aria-label="IndusInd Bank"
-              ></span>
-              <div className="csr-copy">
-                <p className="text-[13px] font-medium text-white">IndusInd Bank</p>
-                <p className="mt-2 text-[11.5px] leading-[1.7] text-white/45">
-                  Policy documents turned into 150+ AI video modules, no trainer.
-                </p>
-              </div>
-              <div className="csr-figs">
-                <div className="csr-fig">
-                  <div className="n tally">50,000+</div>
-                  <div className="l">employees trained</div>
+            </details>
+            <details className="ca-row rv" data-d="60">
+              <summary>
+                <span className="ca-ic">
+                  <span className="ca-x"></span>
+                </span>
+                <span className="clogo ca-logo logow-indusind" role="img" aria-label="IndusInd Bank"></span>
+                <span className="ca-head">
+                  33% increase in process adherence via trainer-independent learning
+                </span>
+              </summary>
+              <div className="ca-body">
+                <div className="ca-left">
+                  <div className="ca-figs">
+                    <div className="ca-fig">
+                      <div className="n tally">63%</div>
+                      <div className="l">Cost reduction in content creation</div>
+                    </div>
+                    <div className="ca-fig">
+                      <div className="n tally">12,000+</div>
+                      <div className="l">Employees trained</div>
+                    </div>
+                    <div className="ca-fig">
+                      <div className="n tally">7,800+</div>
+                      <div className="l">Person-hours saved</div>
+                    </div>
+                  </div>
+                  <p className="ca-copy">
+                    Process training for the workforce with AI avatar-led, trainer-independent sessions with
+                    role-play simulations and instant query resolution.
+                  </p>
+                  <Link className="ca-link group" href="/case-studies/indusind-bank/">
+                    <span className="ca-goic">
+                      <svg width="10" height="10" viewBox="0 0 16 16" fill="none">
+                        <path
+                          d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    Read the case study
+                  </Link>
                 </div>
               </div>
-              <span className="csr-arw text-teal">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path
-                    d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </Link>
-          </div>
-        </div>
-      </section>
-      <section id="ind-uses" className="relative overflow-hidden bg-ink py-[108px]">
-        <div className="relative mx-auto max-w-shell px-6 lg:px-8">
-          <div className="glow-top" aria-hidden="true"></div>
-          <span className="eyebrow rv">Use cases</span>
-          <h2 className="h-sec rv">Six capabilities, one banking estate.</h2>
-          <p className="prose-lede mt-6 max-w-[760px] rv" data-d="60">
-            Each one deployed inside your environment, operated by us, and answerable for what it produces.
-          </p>
-          <div className="us-grid mt-[46px]">
-            <article className="us-cell rv" data-d="0">
-              <span className="us-n">01</span>
-              <div className="us-body">
-                <span className="us-tag">Prism</span>
-                <h3 className="us-h">Every file scored the same way</h3>
-                <p className="us-p">
-                  Underwriting, claims and SME lending judged against one rubric, with the marginal cases
-                  escalated.
-                </p>
-                <Link className="us-go group" href="/pyzo/prism/">
-                  Explore Prism
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">
-                    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                      <path
-                        d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
-                        stroke="currentColor"
-                        strokeWidth="1.2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </Link>
-              </div>
-            </article>
-            <article className="us-cell rv" data-d="50">
-              <span className="us-n">02</span>
-              <div className="us-body">
-                <span className="us-tag">Compass</span>
-                <h3 className="us-h">Policy answered where the work happens</h3>
-                <p className="us-p">
-                  Credit policy, exception rules and KYC thresholds answered from the version currently in
-                  force.
-                </p>
-                <Link className="us-go group" href="/pyzo/compass/">
-                  Explore Compass
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">
-                    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                      <path
-                        d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
-                        stroke="currentColor"
-                        strokeWidth="1.2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </Link>
-              </div>
-            </article>
-            <article className="us-cell rv" data-d="100">
-              <span className="us-n">03</span>
-              <div className="us-body">
-                <span className="us-tag">Evio</span>
-                <h3 className="us-h">Calls made at a volume you cannot staff</h3>
-                <p className="us-p">
-                  Overdue recovery and settlement conversations that adapt to the borrower and the bucket they
-                  sit in.
-                </p>
-                <Link className="us-go group" href="/pyzo/evio/">
-                  Explore Evio
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">
-                    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                      <path
-                        d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
-                        stroke="currentColor"
-                        strokeWidth="1.2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </Link>
-              </div>
-            </article>
-            <article className="us-cell rv" data-d="150">
-              <span className="us-n">04</span>
-              <div className="us-body">
-                <span className="us-tag">Loupe</span>
-                <h3 className="us-h">Applications that clear the first time</h3>
-                <p className="us-p">
-                  KYC packs and loan files checked as they are captured and validated against the proof
-                  supplied.
-                </p>
-                <Link className="us-go group" href="/pyzo/loupe/">
-                  Explore Loupe
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">
-                    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                      <path
-                        d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
-                        stroke="currentColor"
-                        strokeWidth="1.2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </Link>
-              </div>
-            </article>
-            <article className="us-cell rv" data-d="200">
-              <span className="us-n">05</span>
-              <div className="us-body">
-                <span className="us-tag">Atlas</span>
-                <h3 className="us-h">Staff certified before they go live</h3>
-                <p className="us-p">
-                  Onboarding and mandatory certification for credit, collections and branch staff, assessed on
-                  cases.
-                </p>
-                <Link className="us-go group" href="/pyzo/atlas/">
-                  Explore Atlas
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">
-                    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                      <path
-                        d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
-                        stroke="currentColor"
-                        strokeWidth="1.2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </Link>
-              </div>
-            </article>
-            <article className="us-cell rv" data-d="250">
-              <span className="us-n">06</span>
-              <div className="us-body">
-                <span className="us-tag">Forge</span>
-                <h3 className="us-h">Work moved between systems that do not talk</h3>
-                <p className="us-p">
-                  Reconciliation breaks, disbursement steps and case routing executed across core banking and
-                  the CRM.
-                </p>
-                <Link className="us-go group" href="/pyzo/forge/">
-                  Explore Forge
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">
-                    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                      <path
-                        d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
-                        stroke="currentColor"
-                        strokeWidth="1.2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </Link>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section className="relative overflow-hidden bg-ink py-[96px]">
-        <div className="relative mx-auto max-w-shell px-6 lg:px-8">
-          <span className="eyebrow rv">FAQ</span>
-          <h2 className="h-sec rv" data-d="60">
-            Questions we get asked.
-          </h2>
-          <div className="faq wide-block mt-9 rv" data-d="100">
-            <details>
-              <summary>
-                Will an automated decision hold up in a model-risk review?{" "}
-                <span className="ic">
-                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                    <path
-                      d="M6 1.6v8.8M1.6 6h8.8"
-                      stroke="currentColor"
-                      strokeWidth="1.3"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
-              </summary>
-              <div className="ans">
-                That is the design goal from the first sprint. Every decision is logged with its inputs, the
-                score and the policy that acted on it, so a specific case can be reconstructed and defended to
-                an examiner months later. Reason codes are emitted at decision time and held with the record.
-              </div>
-            </details>
-            <details>
-              <summary>
-                Where does a person stay in the loop?{" "}
-                <span className="ic">
-                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                    <path
-                      d="M6 1.6v8.8M1.6 6h8.8"
-                      stroke="currentColor"
-                      strokeWidth="1.3"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
-              </summary>
-              <div className="ans">
-                On the marginal and high-consequence cases: the thin-file application near the threshold, the
-                flagged transaction a policy held, the exception a rule cannot judge. Automation clears the
-                clear cases; a named human owns the ones that carry real cost.
-              </div>
-            </details>
-            <details>
-              <summary>
-                How do you keep a model fair across customer segments?{" "}
-                <span className="ic">
-                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                    <path
-                      d="M6 1.6v8.8M1.6 6h8.8"
-                      stroke="currentColor"
-                      strokeWidth="1.3"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
-              </summary>
-              <div className="ans">
-                Fairness is monitored continuously across segments against defined thresholds, with the same
-                seriousness as performance. A model that quietly grows harder on one group over two quarters
-                is surfaced as an event months before an audit would reach it.
-              </div>
-            </details>
-            <details>
-              <summary>
-                Can this run inside our VPC, under our IAM and our change process?{" "}
-                <span className="ic">
-                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                    <path
-                      d="M6 1.6v8.8M1.6 6h8.8"
-                      stroke="currentColor"
-                      strokeWidth="1.3"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
-              </summary>
-              <div className="ans">
-                Yes. We deploy into your environment with isolated hosting, role-based access and encryption,
-                so customer data stays where your policies and the regulator require it to.
-              </div>
             </details>
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pb-[96px]">
+      <section className="relative overflow-hidden bg-ink pb-[108px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
-          <span className="eyebrow rv">Elsewhere</span>
-          <h2 className="h-sec rv" data-d="60">
-            Other industries we serve.
-          </h2>
-          <div className="oi-grid mt-[40px] grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            <Link className="oi-row rv" data-d="0" href="/industries/healthcare/">
-              <span className="oi-ic">
-                <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                  <path
-                    d="M2.5 10h3.2l1.6-4 2.6 8.6 2-4.6h5.6"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-              <span className="oi-name">Healthcare &amp; Life Sciences</span>
-              <span className="ic ml-auto">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path
-                    d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
+          <div className="pf-head">
+            <div>
+              <span className="eyebrow rv">From the blog</span>
+              <h2 className="h-sec rv" data-d="60">
+                Field notes from the people
+                <br className="hidden sm:block" /> operating these systems
+              </h2>
+            </div>
+            <Link className="btn btn-ghost group rv" data-d="120" href="/blog/">
+              All blogs
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path
+                  d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                  stroke="currentColor"
+                  strokeWidth="1.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </Link>
-            <Link className="oi-row rv" data-d="60" href="/industries/public-sector/">
-              <span className="oi-ic">
-                <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                  <path
-                    d="M10 3v14M4.6 5.4h10.8M6.2 5.4 3.6 11h5.2ZM13.8 5.4 11.2 11h5.2ZM6.5 17h7"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-              <span className="oi-name">Public Sector &amp; Governance</span>
-              <span className="ic ml-auto">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path
-                    d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
+          </div>
+          <div className="mt-[46px] grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <Link
+              data-topic="AI in BFSI"
+              data-author="Snehasis Panda"
+              data-ts="17"
+              data-txt="multilingual ai customer service in banking: consistent quality across languages bfsi snehasis panda"
+              className="bl-card card group flex cursor-pointer flex-col overflow-hidden rv"
+              data-d="0"
+              href="/blog/multilingual-ai-customer-service-in-banking/"
+            >
+              <div className="relative h-[176px] overflow-hidden">
+                <img className="thumb" src="/blog/307-t.webp" alt="" decoding="async" />
+              </div>
+              <div className="flex flex-1 flex-col p-5">
+                <h3 className="font-display text-[13.5px] font-medium leading-snug">
+                  Multilingual AI Customer Service in Banking
+                </h3>
+                <div className="mt-3 flex items-center justify-between gap-3">
+                  <span className="bl-tag">AI in BFSI</span>
+                  <span className="bl-date shrink-0 text-right text-[10.5px] text-white/35">
+                    15 June 2026
+                  </span>
+                </div>
+                <div className="mt-auto flex items-center justify-between gap-3 pt-5">
+                  <span className="byline">
+                    <span className="av av-snehasis" style={{ width: "26px", height: "26px" }}></span>
+                    <span className="by-txt">
+                      <span className="by-name">Snehasis Panda</span>
+                      <span className="by-role">CBO</span>
+                    </span>
+                  </span>{" "}
+                  <span className="shrink-0 inline-flex items-center gap-1.5 text-[11.5px] text-teal">
+                    Read{" "}
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path
+                          d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                          stroke="currentColor"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
             </Link>
-            <Link className="oi-row rv" data-d="120" href="/industries/retail/">
-              <span className="oi-ic">
-                <svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                  <path
-                    d="M4.6 6.4h10.8l-1 10.2H5.6ZM7.4 6.4V5a2.6 2.6 0 0 1 5.2 0v1.4"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-              <span className="oi-name">Consumer &amp; Retail</span>
-              <span className="ic ml-auto">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path
-                    d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
+            <Link
+              data-topic="AI in BFSI"
+              data-author="Snehasis Panda"
+              data-ts="127"
+              data-txt="explainable credit decisions: generating adverse-action notices from ai models bfsi snehasis panda"
+              className="bl-card card group flex cursor-pointer flex-col overflow-hidden rv"
+              data-d="60"
+              href="/blog/explainable-credit-decisions/"
+            >
+              <div className="relative h-[176px] overflow-hidden">
+                <img className="thumb" src="/blog/197-t.webp" alt="" decoding="async" />
+              </div>
+              <div className="flex flex-1 flex-col p-5">
+                <h3 className="font-display text-[13.5px] font-medium leading-snug">
+                  Explainable Credit Decisions
+                </h3>
+                <div className="mt-3 flex items-center justify-between gap-3">
+                  <span className="bl-tag">AI in BFSI</span>
+                  <span className="bl-date shrink-0 text-right text-[10.5px] text-white/35">
+                    1 October 2025
+                  </span>
+                </div>
+                <div className="mt-auto flex items-center justify-between gap-3 pt-5">
+                  <span className="byline">
+                    <span className="av av-snehasis" style={{ width: "26px", height: "26px" }}></span>
+                    <span className="by-txt">
+                      <span className="by-name">Snehasis Panda</span>
+                      <span className="by-role">CBO</span>
+                    </span>
+                  </span>{" "}
+                  <span className="shrink-0 inline-flex items-center gap-1.5 text-[11.5px] text-teal">
+                    Read{" "}
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path
+                          d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                          stroke="currentColor"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </Link>
+            <Link
+              data-topic="AI in BFSI"
+              data-author="Snehasis Panda"
+              data-ts="137"
+              data-txt="ai for regulatory change management: from obligation to operational control bfsi snehasis panda"
+              className="bl-card card group flex cursor-pointer flex-col overflow-hidden rv"
+              data-d="120"
+              href="/blog/ai-for-regulatory-change-management/"
+            >
+              <div className="relative h-[176px] overflow-hidden">
+                <img className="thumb" src="/blog/187-t.webp" alt="" decoding="async" />
+              </div>
+              <div className="flex flex-1 flex-col p-5">
+                <h3 className="font-display text-[13.5px] font-medium leading-snug">
+                  AI for Regulatory Change Management
+                </h3>
+                <div className="mt-3 flex items-center justify-between gap-3">
+                  <span className="bl-tag">AI in BFSI</span>
+                  <span className="bl-date shrink-0 text-right text-[10.5px] text-white/35">
+                    8 September 2025
+                  </span>
+                </div>
+                <div className="mt-auto flex items-center justify-between gap-3 pt-5">
+                  <span className="byline">
+                    <span className="av av-snehasis" style={{ width: "26px", height: "26px" }}></span>
+                    <span className="by-txt">
+                      <span className="by-name">Snehasis Panda</span>
+                      <span className="by-role">CBO</span>
+                    </span>
+                  </span>{" "}
+                  <span className="shrink-0 inline-flex items-center gap-1.5 text-[11.5px] text-teal">
+                    Read{" "}
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path
+                          d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                          stroke="currentColor"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
             </Link>
           </div>
         </div>
@@ -538,8 +664,9 @@ export default function IndBfsiPage() {
             <div className="cta-wash" aria-hidden="true"></div>
             <div className="relative mx-auto grid w-full max-w-shell items-start gap-10 px-6 py-[86px] lg:grid-cols-[1fr_auto] lg:gap-16 lg:px-8">
               <div>
-                <h2 className="h-cta max-w-[24ch] lg:max-w-none">Tell us the number you need to move.</h2>
-                <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
+                <h2 className="h-cta max-w-[24ch] lg:max-w-none">
+                  Tell us which decision has to be <span className="text-teal">defensible</span>
+                </h2>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
                 <Link className="btn btn-light group" href="/contact/">

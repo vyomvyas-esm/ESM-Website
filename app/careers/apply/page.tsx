@@ -17,7 +17,7 @@ export default function CareersApplyPage() {
           <div className="hero-scrim"></div>
           <div className="sky-fade"></div>
         </div>
-        <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[46px] pb-[76px]">
+        <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[46px] pb-[80px]">
           <Breadcrumbs
             items={[
               { label: "Home", href: "/" },
@@ -28,8 +28,8 @@ export default function CareersApplyPage() {
           />
           <div className="mt-8 grid items-stretch gap-10 lg:grid-cols-2 lg:gap-16">
             <div className="flex flex-col rv">
-              <h1 className="font-display text-[clamp(1.75rem,3.1vw,2.5rem)] font-normal leading-[1.15] tracking-[-.025em] max-w-[16ch]">
-                Tell us what you have shipped.
+              <h1 className="font-display text-[clamp(1.75rem,3.1vw,2.5rem)] font-semibold leading-[1.15] tracking-[-.025em] max-w-[16ch]">
+                Tell us what you have shipped
               </h1>
               <p className="lede hero-lede mt-5 max-w-[560px]">
                 Tell us what you have owned in production and what it cost you to learn, and we will keep it

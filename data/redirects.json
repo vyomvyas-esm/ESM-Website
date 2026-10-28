@@ -18,20 +18,28 @@
       "destination": "/case-studies/rbi-innovation-hub/"
     },
     {
-      "source": "/case-studies/cipla",
-      "destination": "/case-studies/cipla-global-training-academy/"
-    },
-    {
-      "source": "/case-studies/koita",
-      "destination": "/case-studies/koita-foundation/"
+      "source": "/case-studies/indusind",
+      "destination": "/case-studies/indusind-bank/"
     },
     {
       "source": "/case-studies/isb",
       "destination": "/case-studies/indian-school-of-business/"
     },
     {
-      "source": "/case-studies/indusind",
-      "destination": "/case-studies/indusind-bank/"
+      "source": "/case-studies/dsci",
+      "destination": "/case-studies/data-security-council-of-india/"
+    },
+    {
+      "source": "/case-studies/koita",
+      "destination": "/case-studies/koita-foundation/"
+    },
+    {
+      "source": "/case-studies/odisha",
+      "destination": "/case-studies/government-of-odisha/"
+    },
+    {
+      "source": "/case-studies/up",
+      "destination": "/case-studies/government-of-uttar-pradesh/"
     },
     {
       "source": "/case-studies/tataneu",
@@ -182,6 +190,30 @@
     {
       "source": "/case-studies/dominos-india",
       "destination": "/case-studies/"
+    },
+    {
+      "source": "/case-studies/cipla-global-training-academy",
+      "destination": "/case-studies/"
+    },
+    {
+      "source": "/case-studies/cipla",
+      "destination": "/case-studies/"
+    },
+    {
+      "source": "/case-studies/indiamart",
+      "destination": "/case-studies/"
+    },
+    {
+      "source": "/case-studies/samagra",
+      "destination": "/case-studies/"
+    },
+    {
+      "source": "/technology",
+      "destination": "/"
+    },
+    {
+      "source": "/glossary",
+      "destination": "/resources/glossary/"
     }
   ]
 }

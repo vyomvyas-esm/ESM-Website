@@ -16,9 +16,9 @@ import path from "node:path";
 import { execSync } from "node:child_process";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
-// 356 content pages (24 static, 9 case studies, 323 articles) plus the journal's
-// category and page listings, /blog/ among them (lib/blog.ts)
-const EXPECTED_ROUTES = 413;
+// 713 content pages (24 static, 10 case studies, 364 articles, 315 glossary terms) plus
+// the journal's category and page listings, /blog/ among them (lib/blog.ts)
+const EXPECTED_ROUTES = 777;
 const fail = (msg) => {
   console.error("FAIL:", msg);
   process.exitCode = 1;
@@ -113,7 +113,8 @@ function checkPages() {
   for (const p of all) {
     const types = p.jsonld.map((n) => n["@type"]);
     if (!types.includes("Organization") || !types.includes("WebSite")) ldIssues.push(`${p.route}: no Organization/WebSite`);
-    if (p.route !== "/") {
+    // the home and PYZO heroes are full-height and carry no breadcrumb in the design
+    if (p.route !== "/" && p.route !== "/pyzo/") {
       const bl = p.jsonld.find((n) => n["@type"] === "BreadcrumbList");
       if (!bl || !p.crumb) ldIssues.push(`${p.route}: missing BreadcrumbList or visible crumb`);
       else {
@@ -124,8 +125,10 @@ function checkPages() {
     }
     if (p.ogType === "article" && !types.includes("BlogPosting")) ldIssues.push(`${p.route}: no BlogPosting`);
     if (p.ogType !== "article" && types.includes("BlogPosting")) ldIssues.push(`${p.route}: BlogPosting on a non-article`);
-    if (/^\/(pyzo|industries)\/(bfsi|healthcare|public-sector|retail)?\/?$/.test(p.route) && p.route !== "/pyzo/" && p.route.startsWith("/industries") && !types.includes("FAQPage")) ldIssues.push(`${p.route}: no FAQPage`);
-    if (p.route === "/pyzo/" && !types.includes("FAQPage")) ldIssues.push(`${p.route}: no FAQPage`);
+    // the FAQ accordions were removed in the v62 design, so FAQPage must not outlive them
+    if (types.includes("FAQPage")) ldIssues.push(`${p.route}: FAQPage with no FAQ on the page`);
+    if (p.route === "/resources/glossary/" && !types.includes("DefinedTermSet")) ldIssues.push(`${p.route}: no DefinedTermSet`);
+    if (/^\/resources\/glossary\/[a-z0-9-]+\/$/.test(p.route) && !types.includes("DefinedTerm")) ldIssues.push(`${p.route}: no DefinedTerm`);
     if ((/^\/pyzo\/[a-z]+\/$/.test(p.route) || p.route.startsWith("/engineering/")) && !types.includes("Service")) ldIssues.push(`${p.route}: no Service`);
   }
   const counts = {};
@@ -246,7 +249,8 @@ function checkCrawl() {
       }
     }
   }
-  const orphans = all.map((p) => p.route).filter((r) => !seen.has(r));
+  // a noindex page may be unlinked: /careers/apply/ lost its link when applications moved to LinkedIn
+  const orphans = all.filter((p) => !seen.has(p.route) && !(p.robots && /noindex/.test(p.robots))).map((p) => p.route);
   console.log(`crawl: ${seen.size} pages reached over ${edges} internal links; orphans ${orphans.length}, broken ${broken.size}, would redirect ${redirecting.size}`);
   if (orphans.length) fail(`orphan pages: ${orphans.slice(0, 8).join(", ")}`);
   if (broken.size) fail(`broken links: ${[...broken].slice(0, 8).join(", ")}`);

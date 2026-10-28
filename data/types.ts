@@ -104,21 +104,31 @@ export interface Report {
   name: string;
 }
 
-export interface ProofEntry {
-  big: string;
-  label: string;
-  big2: string;
-  label2: string;
-  text: string;
-  name: string;
-  title: string;
-  lc: string;
+/** The case study shown under a product tab on the PYZO page */
+export interface CapabilityProof {
+  logo: string;
+  aria: string;
+  head: string;
+  figs: { n: string; l: string }[];
+  copy: string;
+  href: string;
 }
 
-export interface PanelCard {
-  client: string;
-  line: string;
-  logo?: string;
-  href?: string;
-  pair: { n: string; l: string }[];
+/** A glossary term: its index row and its own page */
+export interface GlossaryTerm {
+  slug: string;
+  term: string;
+  /** the capability filter key, e.g. "compass" or "governance" */
+  set: string;
+  /** lower-case search text for the index */
+  txt: string;
+  /** the one-line definition shown in the index and on related-term cards */
+  def: string;
+  capability: { label: string; href: string };
+  lede: string;
+  html: string;
+  /** slugs of related terms */
+  related: string[];
+  metaTitle: string;
+  metaDescription: string;
 }

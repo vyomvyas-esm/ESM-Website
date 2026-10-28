@@ -26,6 +26,621 @@ export const blogCards: BlogCard[] = [
     }
   },
   {
+    "slug": "grounding-agents-in-live-enterprise-data",
+    "title": "Grounding Agents in Live Enterprise Data Without Copying It",
+    "date": "30 October 2026",
+    "tag": "Agentic AI",
+    "topic": "Agentic AI",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -41,
+    "txt": "grounding agents in live enterprise data without copying it agentic ai shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "engineering-ai-for-multilingual-india",
+    "title": "Engineering AI for Multilingual India",
+    "date": "28 October 2026",
+    "tag": "EsMagico",
+    "topic": "EsMagico",
+    "author": {
+      "name": "Shreyas Sanghvi",
+      "role": "CEO",
+      "avatar": "av-shreyas"
+    },
+    "ts": -40,
+    "txt": "engineering ai for multilingual india: lessons from the public sector esmagico shreyas sanghvi",
+    "thumb": null
+  },
+  {
+    "slug": "ai-in-trade-finance-letters-of-credit",
+    "title": "AI in Trade Finance",
+    "date": "26 October 2026",
+    "tag": "AI in BFSI",
+    "topic": "AI in BFSI",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -39,
+    "txt": "ai in trade finance: checking documents against letters of credit ai in bfsi shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "risk-based-clinical-trial-monitoring",
+    "title": "Risk-Based Clinical Trial Monitoring With AI",
+    "date": "23 October 2026",
+    "tag": "AI in Healthcare",
+    "topic": "AI in Healthcare",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -38,
+    "txt": "risk-based clinical trial monitoring with ai: oversight where it counts ai in healthcare shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "mistral-large-4-open-weight-option",
+    "title": "Mistral Large 4 and the European Open-Weight Option for Regulated Use",
+    "date": "21 October 2026",
+    "tag": "AI Models",
+    "topic": "AI Models",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -37,
+    "txt": "mistral large 4 and the european open-weight option for regulated use ai models snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "managing-evaluation-drift",
+    "title": "When the Rubric Ages Faster Than the Model",
+    "date": "19 October 2026",
+    "tag": "Agentic AI",
+    "topic": "Agentic AI",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -36,
+    "txt": "when the rubric ages faster than the model: managing evaluation drift agentic ai shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "microsoft-autopilot-agent-identity",
+    "title": "Microsoft Autopilot and Agent Identity",
+    "date": "16 October 2026",
+    "tag": "AI Tools",
+    "topic": "AI Tools",
+    "author": {
+      "name": "Shreyas Sanghvi",
+      "role": "CEO",
+      "avatar": "av-shreyas"
+    },
+    "ts": -35,
+    "txt": "microsoft autopilot and agent identity: when an agent gets an account ai tools shreyas sanghvi",
+    "thumb": null
+  },
+  {
+    "slug": "policy-lapse-prediction-life-insurance",
+    "title": "Policy Lapse Prediction in Life Insurance",
+    "date": "14 October 2026",
+    "tag": "AI in BFSI",
+    "topic": "AI in BFSI",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -34,
+    "txt": "policy lapse prediction in life insurance: outreach policyholders welcome ai in bfsi snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "back-pressure-for-agent-fleets",
+    "title": "Back-Pressure for Agent Fleets",
+    "date": "12 October 2026",
+    "tag": "Agentic AI",
+    "topic": "Agentic AI",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -33,
+    "txt": "back-pressure for agent fleets: staying stable when upstream systems slow agentic ai shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "decision-models-that-return-no-text",
+    "title": "Decision Models That Return No Text",
+    "date": "9 October 2026",
+    "tag": "AI Models",
+    "topic": "AI Models",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -32,
+    "txt": "decision models that return no text: typed answers for governed ai ai models shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "abdm-interoperable-health-records-ai",
+    "title": "Interoperable Health Records and AI",
+    "date": "7 October 2026",
+    "tag": "AI in Healthcare",
+    "topic": "AI in Healthcare",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -31,
+    "txt": "interoperable health records and ai: what abdm changes for hospitals ai in healthcare shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "prism-in-isb-ivi-admissions",
+    "title": "One Rubric for Every Applicant",
+    "date": "5 October 2026",
+    "tag": "EsMagico",
+    "topic": "EsMagico",
+    "author": {
+      "name": "Shreyas Sanghvi",
+      "role": "CEO",
+      "avatar": "av-shreyas"
+    },
+    "ts": -30,
+    "txt": "one rubric for every applicant: prism in isb's ivi admissions esmagico shreyas sanghvi",
+    "thumb": null
+  },
+  {
+    "slug": "eleven-v4-voice-stack-decision",
+    "title": "Eleven v4 and the Voice Stack Decision for Multilingual Agents",
+    "date": "2 October 2026",
+    "tag": "AI Tools",
+    "topic": "AI Tools",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -29,
+    "txt": "eleven v4 and the voice stack decision for multilingual agents ai tools snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "ai-investor-servicing-amcs",
+    "title": "AI for Investor Servicing at AMCs",
+    "date": "30 September 2026",
+    "tag": "AI in BFSI",
+    "topic": "AI in BFSI",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -28,
+    "txt": "ai for investor servicing at amcs: faster answers within sebi's limits ai in bfsi snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "ai-checks-on-uploaded-evidence",
+    "title": "Is This the Right Document? AI Checks on Uploaded Evidence",
+    "date": "28 September 2026",
+    "tag": "Agentic AI",
+    "topic": "Agentic AI",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -27,
+    "txt": "is this the right document? ai checks on uploaded evidence agentic ai snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "gpt-6-and-claude-opus-5-5",
+    "title": "GPT-6 and Claude Opus 5.5 on the Same Day",
+    "date": "25 September 2026",
+    "tag": "AI Models",
+    "topic": "AI Models",
+    "author": {
+      "name": "Shreyas Sanghvi",
+      "role": "CEO",
+      "avatar": "av-shreyas"
+    },
+    "ts": -26,
+    "txt": "gpt-6 and claude opus 5.5 on the same day: an upgrade discipline ai models shreyas sanghvi",
+    "thumb": null
+  },
+  {
+    "slug": "ai-for-pharma-medical-information",
+    "title": "AI for Pharma Medical Information",
+    "date": "23 September 2026",
+    "tag": "AI in Healthcare",
+    "topic": "AI in Healthcare",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -25,
+    "txt": "ai for pharma medical information: accurate answers to clinicians at scale ai in healthcare snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "multilingual-retrieval-indian-enterprises",
+    "title": "Multilingual Retrieval",
+    "date": "21 September 2026",
+    "tag": "Agentic AI",
+    "topic": "Agentic AI",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -24,
+    "txt": "multilingual retrieval: answering indian enterprises in their own language agentic ai shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "ai-governance-for-nbfcs",
+    "title": "AI Governance for NBFCs",
+    "date": "18 September 2026",
+    "tag": "AI in BFSI",
+    "topic": "AI in BFSI",
+    "author": {
+      "name": "Shreyas Sanghvi",
+      "role": "CEO",
+      "avatar": "av-shreyas"
+    },
+    "ts": -23,
+    "txt": "ai governance for nbfcs: supervisory expectations without a large team ai in bfsi shreyas sanghvi",
+    "thumb": null
+  },
+  {
+    "slug": "perplexity-hybrid-compute",
+    "title": "Perplexity Hybrid Compute",
+    "date": "16 September 2026",
+    "tag": "AI Tools",
+    "topic": "AI Tools",
+    "author": {
+      "name": "Shreyas Sanghvi",
+      "role": "CEO",
+      "avatar": "av-shreyas"
+    },
+    "ts": -22,
+    "txt": "perplexity hybrid compute: sensitive work split between device and cloud ai tools shreyas sanghvi",
+    "thumb": null
+  },
+  {
+    "slug": "cashless-claims-tpa-pre-authorisation",
+    "title": "Cashless Claims in Indian Hospitals",
+    "date": "14 September 2026",
+    "tag": "AI in Healthcare",
+    "topic": "AI in Healthcare",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -21,
+    "txt": "cashless claims in indian hospitals: ai for tpa pre-authorisation ai in healthcare snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "synthetic-test-calls",
+    "title": "Synthetic Test Calls",
+    "date": "11 September 2026",
+    "tag": "Agentic AI",
+    "topic": "Agentic AI",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -20,
+    "txt": "synthetic test calls: evaluating a voice agent before it meets a customer agentic ai shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "deepfake-voices-at-the-contact-centre",
+    "title": "Deepfake Voices at the Contact Centre",
+    "date": "9 September 2026",
+    "tag": "AI in BFSI",
+    "topic": "AI in BFSI",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -19,
+    "txt": "deepfake voices at the contact centre: authenticating cloned callers ai in bfsi snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "pricing-agentic-ai-by-outcome",
+    "title": "Pricing Agentic AI by Outcome",
+    "date": "7 September 2026",
+    "tag": "EsMagico",
+    "topic": "EsMagico",
+    "author": {
+      "name": "Shreyas Sanghvi",
+      "role": "CEO",
+      "avatar": "av-shreyas"
+    },
+    "ts": -18,
+    "txt": "pricing agentic ai by outcome: commercial models when agents do the work esmagico shreyas sanghvi",
+    "thumb": null
+  },
+  {
+    "slug": "claude-fable-5-1-and-mythos-5-1",
+    "title": "Claude Fable 5.1 and Mythos 5.1",
+    "date": "4 September 2026",
+    "tag": "AI Models",
+    "topic": "AI Models",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -17,
+    "txt": "claude fable 5.1 and mythos 5.1: one model at two safeguard levels ai models snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "automating-applications-that-have-no-api",
+    "title": "Automating Applications That Have No API",
+    "date": "2 September 2026",
+    "tag": "Agentic AI",
+    "topic": "Agentic AI",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -16,
+    "txt": "automating applications that have no api: agents for the legacy estate agentic ai shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "preparing-pharma-field-teams",
+    "title": "Preparing Pharma Field Teams",
+    "date": "31 August 2026",
+    "tag": "AI in Healthcare",
+    "topic": "AI in Healthcare",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -15,
+    "txt": "preparing pharma field teams: compliant detailing practised with ai ai in healthcare snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "account-aggregator-data-in-credit-decisions",
+    "title": "Account Aggregator Data in Credit Decisions",
+    "date": "28 August 2026",
+    "tag": "AI in BFSI",
+    "topic": "AI in BFSI",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -14,
+    "txt": "account aggregator data in credit decisions: consent-led underwriting ai in bfsi snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "from-meeting-to-ticket",
+    "title": "From Meeting to Ticket",
+    "date": "26 August 2026",
+    "tag": "Agentic AI",
+    "topic": "Agentic AI",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -13,
+    "txt": "from meeting to ticket: reliable action extraction into jira and github agentic ai shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "nabh-accreditation-readiness",
+    "title": "NABH Accreditation Readiness",
+    "date": "24 August 2026",
+    "tag": "AI in Healthcare",
+    "topic": "AI in Healthcare",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -12,
+    "txt": "nabh accreditation readiness: keeping evidence audit-ready all year ai in healthcare snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "muse-spark-contributor-tier",
+    "title": "Muse Spark's Contributor Tier",
+    "date": "21 August 2026",
+    "tag": "AI Models",
+    "topic": "AI Models",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -11,
+    "txt": "muse spark's contributor tier: the data price of a discounted model ai models snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "scoring-video-and-written-submissions",
+    "title": "Scoring Video and Written Submissions to the Same Standard",
+    "date": "19 August 2026",
+    "tag": "Agentic AI",
+    "topic": "Agentic AI",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -10,
+    "txt": "scoring video and written submissions to the same standard agentic ai shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "ai-in-video-kyc",
+    "title": "AI in Video KYC: Liveness Checks and Deepfake Defence You Can Audit",
+    "date": "17 August 2026",
+    "tag": "AI in BFSI",
+    "topic": "AI in BFSI",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -9,
+    "txt": "ai in video kyc: liveness checks and deepfake defence you can audit ai in bfsi snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "the-first-ninety-days-after-go-live",
+    "title": "The First Ninety Days After Go-Live",
+    "date": "14 August 2026",
+    "tag": "EsMagico",
+    "topic": "EsMagico",
+    "author": {
+      "name": "Shreyas Sanghvi",
+      "role": "CEO",
+      "avatar": "av-shreyas"
+    },
+    "ts": -8,
+    "txt": "the first ninety days after go-live: what operating an agent involves esmagico shreyas sanghvi",
+    "thumb": null
+  },
+  {
+    "slug": "muse-code-examined",
+    "title": "Muse Code, Examined",
+    "date": "12 August 2026",
+    "tag": "AI Tools",
+    "topic": "AI Tools",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -7,
+    "txt": "muse code, examined: what replayable subagents mean for coding agents ai tools shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "designing-the-emergency-stop",
+    "title": "Designing the Emergency Stop",
+    "date": "10 August 2026",
+    "tag": "Agentic AI",
+    "topic": "Agentic AI",
+    "author": {
+      "name": "Shardul Singh",
+      "role": "CTO",
+      "avatar": "av-shardul"
+    },
+    "ts": -6,
+    "txt": "designing the emergency stop: safe shutdown for production agents agentic ai shardul singh",
+    "thumb": null
+  },
+  {
+    "slug": "qwen3-8-max-for-the-enterprise",
+    "title": "Qwen3.8-Max for the Enterprise",
+    "date": "7 August 2026",
+    "tag": "AI Models",
+    "topic": "AI Models",
+    "author": {
+      "name": "Shreyas Sanghvi",
+      "role": "CEO",
+      "avatar": "av-shreyas"
+    },
+    "ts": -5,
+    "txt": "qwen3.8-max for the enterprise: hosted now, open weights promised ai models shreyas sanghvi",
+    "thumb": null
+  },
+  {
+    "slug": "ai-for-bed-management",
+    "title": "AI for Bed Management",
+    "date": "5 August 2026",
+    "tag": "AI in Healthcare",
+    "topic": "AI in Healthcare",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -4,
+    "txt": "ai for bed management: discharge predictions hospitals can plan around ai in healthcare snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "mule-account-detection-with-ai",
+    "title": "Mule Account Detection With AI",
+    "date": "3 August 2026",
+    "tag": "AI in BFSI",
+    "topic": "AI in BFSI",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -3,
+    "txt": "mule account detection with ai: finding accounts that move fraud money ai in bfsi snehasis panda",
+    "thumb": null
+  },
+  {
+    "slug": "openai-presence-forward-deployed-voice-agents",
+    "title": "OpenAI Presence and the Forward-Deployed Model for Voice Agents",
+    "date": "31 July 2026",
+    "tag": "AI Tools",
+    "topic": "AI Tools",
+    "author": {
+      "name": "Shreyas Sanghvi",
+      "role": "CEO",
+      "avatar": "av-shreyas"
+    },
+    "ts": -2,
+    "txt": "openai presence and the forward-deployed model for voice agents ai tools shreyas sanghvi",
+    "thumb": null
+  },
+  {
+    "slug": "when-the-sop-changes-every-week",
+    "title": "When the SOP Changes Every Week",
+    "date": "29 July 2026",
+    "tag": "Agentic AI",
+    "topic": "Agentic AI",
+    "author": {
+      "name": "Snehasis Panda",
+      "role": "CBO",
+      "avatar": "av-snehasis"
+    },
+    "ts": -1,
+    "txt": "when the sop changes every week: keeping workforce training current agentic ai snehasis panda",
+    "thumb": null
+  },
+  {
     "slug": "measuring-ai-roi-in-banking",
     "title": "Measuring AI ROI in Banking",
     "date": "24 July 2026",
@@ -45,7 +660,7 @@ export const blogCards: BlogCard[] = [
     },
     "featured": {
       "author": "Snehasis Panda",
-      "excerpt": "Most banks measuring their AI programs are counting the wrong things. The board deck shows how many pilots are running, how many use cases are in flight, how many models have been deployed, and everyone nods at the momentum. None of those numbers tells anyone whether the AI is producing value, because a pilot is an activity and value is an outcome, and a bank can run a hundred pilots while resolving nothing. The gap between activity and value is where AI programs quietly fail, consuming budget and executive attention for years while producing dashboards that measure effort. Measuring AI ROI in banking means shifting the unit of measurement to cost per resolved outcome, the fully-loaded cost of actually resolving a real business event through the AI system, because that is the only number that tells you whether the investment is working."
+      "excerpt": "Most banks measuring their AI programs are counting the wrong things. The board deck shows how many pilots are operating, how many use cases are in flight, how many models have been deployed, and everyone nods at the momentum. None of those numbers tells anyone whether the AI is producing value, because a pilot is an activity and value is an outcome, and a bank can operate a hundred pilots while resolving nothing. The gap between activity and value is where AI programs quietly fail, consuming budget and executive attention for years while producing dashboards that measure effort. Measuring AI ROI in banking means shifting the unit of measurement to cost per resolved outcome, the fully-loaded cost of actually resolving a real business event through the AI system, because that is the only number that tells you whether the investment is working."
     }
   },
   {
@@ -110,7 +725,7 @@ export const blogCards: BlogCard[] = [
     },
     "featured": {
       "author": "Karan Trehan",
-      "excerpt": "Every team designing an AI system runs into the same wall, usually after the capability is already proven. The model that gives the best answers takes the longest to produce them. The faster response comes from a model or a configuration that thinks less, and thinking less shows up in the quality of what comes back. You can have the better answer or the quicker one, and the gap between them is not a bug in the current generation of models that a future release will close. It is structural, and designing as though it will go away leads to systems that disappoint on one axis or the other."
+      "excerpt": "Every team designing an AI system encounters the same wall, usually after the capability is already proven. The model that gives the best answers takes the longest to produce them. The faster response comes from a model or a configuration that thinks less, and thinking less shows up in the quality of what comes back. You can have the better answer or the quicker one, and the gap between them is not a bug in the current generation of models that a future release will close. It is structural, and designing as though it will go away leads to systems that disappoint on one axis or the other."
     }
   },
   {
@@ -632,7 +1247,7 @@ export const blogCards: BlogCard[] = [
   },
   {
     "slug": "the-economics-of-running-enterprise-ai",
-    "title": "The Economics of Running Enterprise AI",
+    "title": "The Economics of Operating Enterprise AI",
     "date": "13 May 2026",
     "tag": "AI Models",
     "topic": "AI Models",
@@ -2380,7 +2995,7 @@ export const blogCards: BlogCard[] = [
   },
   {
     "slug": "durable-execution-for-long-running-agents",
-    "title": "Durable Execution for Long-Running Agents",
+    "title": "Durable Execution for Long-lived Agents",
     "date": "10 October 2025",
     "tag": "Agentic AI",
     "topic": "Agentic AI",
@@ -2741,7 +3356,7 @@ export const blogCards: BlogCard[] = [
   },
   {
     "slug": "authorized-push-payment-scam-detection",
-    "title": "Authorized Push Payment Scam Detection",
+    "title": "Authorised Push Payment Scam Detection",
     "date": "27 August 2025",
     "tag": "AI in BFSI",
     "topic": "AI in BFSI",
@@ -4299,7 +4914,7 @@ export const blogCards: BlogCard[] = [
   },
   {
     "slug": "the-real-cost-of-running-ai-agents",
-    "title": "The Real Cost of Running AI Agents",
+    "title": "The Real Cost of Operating AI Agents",
     "date": "12 February 2025",
     "tag": "Agentic AI",
     "topic": "Agentic AI",
@@ -4318,7 +4933,7 @@ export const blogCards: BlogCard[] = [
   },
   {
     "slug": "ai-personalization-in-banking",
-    "title": "AI Personalization in Banking",
+    "title": "AI Personalisation in Banking",
     "date": "10 February 2025",
     "tag": "AI in BFSI",
     "topic": "AI in BFSI",

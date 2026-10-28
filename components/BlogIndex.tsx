@@ -55,13 +55,20 @@ function Featured({ card }: { card: BlogCard }) {
 function Card({ card, index }: { card: BlogCard; index: number }) {
   return (
     <Link className="bl-card card group flex cursor-pointer flex-col overflow-hidden rv" data-d={(index % 3) * 60} href={`/blog/${card.slug}/`}>
-      <Thumb src={card.thumb} className="relative h-[176px] overflow-hidden" sizes="(min-width: 768px) 33vw, 100vw" />
-      <div className="flex flex-1 flex-col p-5">
-        <div className="flex items-center gap-3">
-          <span className="bl-tag">{card.tag}</span>
-          <span className="text-[10.5px] text-white/35">{card.date}</span>
+      {card.thumb ? (
+        <Thumb src={card.thumb} className="relative h-[176px] overflow-hidden" sizes="(min-width: 768px) 33vw, 100vw" />
+      ) : (
+        /* a post whose artwork has not arrived shows its category on the design's placeholder */
+        <div className="bl-ph relative h-[176px] overflow-hidden">
+          <span className="bl-ph-k">{card.tag}</span>
         </div>
-        <h3 className="mt-3 font-display text-[13.5px] font-medium leading-snug">{card.title}</h3>
+      )}
+      <div className="flex flex-1 flex-col p-5">
+        <h3 className="font-display text-[13.5px] font-medium leading-snug">{card.title}</h3>
+        <div className="mt-3 flex items-center justify-between gap-3">
+          <span className="bl-tag">{card.tag}</span>
+          <span className="bl-date shrink-0 text-right text-[10.5px] text-white/35">{card.date}</span>
+        </div>
         <div className="mt-auto flex items-center justify-between gap-3 pt-5">
           <Byline author={card.author} size={26} />
           <span className="shrink-0 inline-flex items-center gap-1.5 text-[11.5px] text-teal">
@@ -122,7 +129,6 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
 
   const feats = blogCards.filter((c) => c.featured);
   const featured = feats.find((c) => c.featured!.author === author) ?? feats.find((c) => c.featured!.author === "");
-  const featKey = featured?.featured?.author ?? "";
   const visible = filtering ? Math.min(shown, live.length) : live.length;
   const reset =
     <T,>(set: (v: T) => void) =>
@@ -133,8 +139,7 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
 
   return (
     <>
-      <h2 className="h-sec rv">{featKey ? `Start with ${featKey}.` : "Start here."}</h2>
-      <div className="mt-9">{featured && <Featured key={featured.slug} card={featured} />}</div>
+      <div>{featured && <Featured key={featured.slug} card={featured} />}</div>
 
       {/* the original kept the rail in its own section; this wrapper keeps that 70px gap */}
       <div className="mt-[70px]">

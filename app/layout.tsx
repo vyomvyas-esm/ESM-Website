@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SiteEffects } from "@/components/SiteEffects";
 import { Analytics } from "@/components/Analytics";
+import { PyzoDiagrams } from "@/components/PyzoDiagrams";
 import { preload } from "react-dom";
 import { SITE_URL, TITLE_SUFFIX } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
@@ -35,8 +36,9 @@ export const metadata: Metadata = {
 };
 
 /* Applied before first paint so a stored theme never flashes. Light is the default;
-   only an explicit "dark" choice switches, exactly as the original site behaved. */
-const themeBoot = `try{if(localStorage.getItem('esm-theme')!=='dark')document.documentElement.setAttribute('data-theme','light')}catch(e){document.documentElement.setAttribute('data-theme','light')}`;
+   only an explicit "dark" choice switches. Dark is named on the attribute rather than
+   implied by its absence, because the design layer has html[data-theme="dark"] rules. */
+const themeBoot = `try{document.documentElement.setAttribute('data-theme',localStorage.getItem('esm-theme')==='dark'?'dark':'light')}catch(e){}`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   /* The hero backdrop is the largest element on every template and is painted from CSS,
@@ -59,6 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <Footer />
         <SiteEffects />
+        <PyzoDiagrams />
         <Analytics />
       </body>
     </html>

@@ -12,16 +12,16 @@ const NAV: { label: string; items: { label: string; href: string }[] }[] = [
     items: [
       { label: "Agentic AI", href: "/engineering/agentic-ai/" },
       { label: "AI Governance", href: "/engineering/ai-governance/" },
-      { label: "Enterprise AI", href: "/engineering/enterprise-ai/" },
+      { label: "Data Architecture", href: "/engineering/enterprise-ai/" },
     ],
   },
   {
     label: "Industries",
     items: [
-      { label: "Banking & Financial Services", href: "/industries/bfsi/" },
-      { label: "Healthcare & Life Sciences", href: "/industries/healthcare/" },
-      { label: "Public Sector & Governance", href: "/industries/public-sector/" },
-      { label: "Consumer & Retail", href: "/industries/retail/" },
+      { label: "BFSI", href: "/industries/bfsi/" },
+      { label: "Healthcare", href: "/industries/healthcare/" },
+      { label: "Public Sector", href: "/industries/public-sector/" },
+      { label: "Consumer", href: "/industries/retail/" },
     ],
   },
   {
@@ -30,6 +30,7 @@ const NAV: { label: string; items: { label: string; href: string }[] }[] = [
       { label: "Blog", href: "/blog/" },
       { label: "Case Studies", href: "/case-studies/" },
       { label: "Reports", href: "/reports/" },
+      { label: "Glossary", href: "/resources/glossary/" },
     ],
   },
   {
@@ -37,7 +38,6 @@ const NAV: { label: string; items: { label: string; href: string }[] }[] = [
     items: [
       { label: "About Us", href: "/about/" },
       { label: "Careers", href: "/careers/" },
-      { label: "Technology", href: "/technology/" },
     ],
   },
 ];

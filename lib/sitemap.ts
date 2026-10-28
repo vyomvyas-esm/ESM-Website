@@ -1,10 +1,12 @@
 import { blogPosts } from "@/data/blog-posts";
 import { caseStudies } from "@/data/case-studies";
+import { glossary } from "@/data/glossary";
+import { GLOSSARY_PATH } from "./jsonld";
 import { allListings, listingPath } from "./blog";
 import { SITE_URL, isoDate } from "./seo";
 
-/* Sitemap content (SEO brief, Phase 4.1): an index with children for pages, case studies
-   and blog. Everything comes from the same data as the routes. lastModified is set only
+/* Sitemap content (SEO brief, Phase 4.1): an index with children for pages, case studies,
+   blog and glossary. Everything comes from the same data as the routes. lastModified is set only
    where the source has a date (blog posts); see docs/seo-open-items.md. */
 
 export interface SitemapEntry {
@@ -35,12 +37,11 @@ const STATIC_PATHS = [
   "/about/",
   "/careers/",
   "/contact/",
-  "/technology/",
   "/privacy/",
   "/terms/",
 ];
 
-export const SITEMAPS = ["pages", "case-studies", "blog"] as const;
+export const SITEMAPS = ["pages", "case-studies", "blog", "glossary"] as const;
 export type SitemapName = (typeof SITEMAPS)[number];
 
 export function entriesFor(name: SitemapName): SitemapEntry[] {
@@ -55,6 +56,8 @@ export function entriesFor(name: SitemapName): SitemapEntry[] {
         lastModified: isoDate(p.date),
         images: p.images.map((i) => i.src),
       }));
+    case "glossary":
+      return [{ path: GLOSSARY_PATH }, ...glossary.map((t) => ({ path: `${GLOSSARY_PATH}${t.slug}/` }))];
   }
 }
 
