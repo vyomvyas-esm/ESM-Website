@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Arrow } from "@/components/Arrow";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Cta } from "@/components/Cta";
 import { caseStudies } from "@/data/case-studies";
+import { firstSentences, pageMetadata } from "@/lib/seo";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -16,7 +18,12 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const cs = bySlug((await params).slug);
   if (!cs) return {};
-  return { title: cs.metaTitle || cs.title, description: cs.lede };
+  return pageMetadata({
+    title: cs.metaTitle.replace(/\s*-\s*Es Magico$/, ""),
+    // later designs dropped the hero lede; the card line is then the study in one sentence
+    description: firstSentences(cs.lede) || firstSentences(cs.card.line),
+    path: `/case-studies/${cs.slug}/`,
+  });
 }
 
 export default async function CaseStudyPage({ params }: Params) {
@@ -32,24 +39,20 @@ export default async function CaseStudyPage({ params }: Params) {
           <div className="sky-fade"></div>
         </div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[80px]">
-          <nav className="crumb rv" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span className="sep">·</span>
-            <span className="text-white/45">Resources</span>
-            <span className="sep">·</span>
-            <Link href="/case-studies">Case Studies</Link>
-            <span className="sep">·</span>
-            <span aria-current="page">{cs.client}</span>
-          </nav>
+          <Breadcrumbs
+            items={[{ label: "Home", href: "/" }, { label: "Resources" }, { label: "Case Studies", href: "/case-studies/" }, { label: cs.card.name }]}
+          />
           <div className="cs-mark-wrap rv" data-d="30">
             <span className={`clogo cs-mark ${cs.logo}`} role="img" aria-label={cs.client}></span>
           </div>
-          <h1 className="h-hero mt-6 max-w-[18ch] rv" data-d="60">
+          <h1 className="h-hero mt-6 max-w-[20ch] rv" data-d="60">
             {cs.title}
           </h1>
-          <p className="lede mt-5 max-w-[680px] rv" data-d="120">
-            {cs.lede}
-          </p>
+          {cs.lede && (
+            <p className="lede mt-5 max-w-[680px] rv" data-d="120">
+              {cs.lede}
+            </p>
+          )}
           <div className="mt-7 flex flex-wrap gap-2 rv" data-d="160">
             {cs.chips.map((c) => (
               <span key={c} className="chip">
@@ -80,7 +83,7 @@ export default async function CaseStudyPage({ params }: Params) {
             ))}
           </div>
           <div className="mt-10 rv">
-            <Link className="btn btn-ghost group" href="/case-studies">
+            <Link className="btn btn-ghost group" href="/case-studies/">
               All case studies
               <Arrow />
             </Link>

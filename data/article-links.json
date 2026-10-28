@@ -1,0 +1,4 @@
+{
+  "$comment": "Per-article internal link targets chosen by a person, keyed by article slug. Applied on top of what tools/convert.mjs derives from the article's category. capability: one of pyzo-atlas, pyzo-compass, pyzo-evio, pyzo-forge, pyzo-loupe, pyzo-prism. caseStudies: case-study slugs, at most two are rendered. Anything listed here wins over the derived target.",
+  "articles": {}
+}

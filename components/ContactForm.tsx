@@ -3,9 +3,8 @@ import { PrototypeForm } from "./PrototypeForm";
 export function ContactForm() {
   return (
     <PrototypeForm
-      submitLabel="Send to an Operator"
+      submitLabel="Submit"
       doneTitle="Thanks, an operator will be in touch."
-      doneText="We’ll come back with how we’d engineer it, and how we’d prove it survived scrutiny."
       fields={[
         { kind: "input", id: "contact-name", label: "Your name", type: "text", placeholder: "Jane Doe", autoComplete: "name" },
         { kind: "input", id: "contact-email", label: "Work email", type: "email", placeholder: "jane@company.com", autoComplete: "email" },

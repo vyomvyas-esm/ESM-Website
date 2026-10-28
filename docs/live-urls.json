@@ -1,0 +1,68 @@
+{
+  "$comment": "Addresses the live esmagico.com served when crawled. Discovered by following links from the home page, so it is a floor rather than the full indexed set; the Search Console export is still worth cross-checking against it.",
+  "crawledAt": "2026-09-23",
+  "origin": "https://esmagico.com",
+  "count": 15,
+  "pages": {
+    "/": {
+      "status": 200,
+      "title": "Es Magico — Enterprise AI Platform"
+    },
+    "/about": {
+      "status": 200,
+      "title": "About Us — Es Magico"
+    },
+    "/blogs": {
+      "status": 200,
+      "title": "Blogs &amp; Insights — Es Magico"
+    },
+    "/build/agentic-ai-systems": {
+      "status": 200,
+      "title": "Agentic AI Systems — Es Magico"
+    },
+    "/build/ai-strategy-governance": {
+      "status": 200,
+      "title": "AI Strategy &amp; Governance — Es Magico"
+    },
+    "/build/gen-ai-llms": {
+      "status": 200,
+      "title": "Gen AI &amp; LLMs — Es Magico"
+    },
+    "/case-studies": {
+      "status": 200,
+      "title": "Case Studies — Es Magico"
+    },
+    "/case-studies/dominos-india": {
+      "status": 200,
+      "title": "Domino&#x27;s India Case Study — Es Magico"
+    },
+    "/case-studies/epic-global": {
+      "status": 200,
+      "title": "Epic Global (US-Based) Case Study — Es Magico"
+    },
+    "/case-studies/indian-school-of-business": {
+      "status": 200,
+      "title": "Indian School of Business (ISB) Case Study — Es Magico"
+    },
+    "/case-studies/indusind-bank": {
+      "status": 200,
+      "title": "IndusInd Bank Case Study — Es Magico"
+    },
+    "/case-studies/rbi-innovation-hub": {
+      "status": 200,
+      "title": "RBI Innovation Hub Case Study — Es Magico"
+    },
+    "/case-studies/samagra": {
+      "status": 200,
+      "title": "Samagra (Transforming Governance) Case Study — Es Magico"
+    },
+    "/case-studies/tata-neu": {
+      "status": 200,
+      "title": "Tata Neu Case Study — Es Magico"
+    },
+    "/reports": {
+      "status": 200,
+      "title": "Reports — Es Magico"
+    }
+  }
+}
