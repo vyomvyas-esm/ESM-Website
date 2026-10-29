@@ -70,8 +70,7 @@ boot script in `app/layout.tsx` applies it before first paint. Both themes are n
 
 ## Forms
 
-The contact, careers and newsletter forms and the report gate are prototypes,
-exactly as on the original site: they acknowledge the entry but send nothing.
-Wire their submit handlers (`components/PrototypeForm.tsx`,
-`components/NewsletterForm.tsx`, `components/ReportsIndex.tsx`) to a real
-endpoint when one exists.
+The contact, careers, newsletter and report forms send each entry to a Google Sheet
+through a Google Apps Script web app (`lib/forms.ts`, `tools/apps-script/Code.gs`).
+Set `NEXT_PUBLIC_FORMS_ENDPOINT` to the web app URL before building; without it the
+forms acknowledge the entry and send nothing. Setup steps: `tools/apps-script/README.md`.

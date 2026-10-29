@@ -3,6 +3,7 @@ import { PrototypeForm } from "./PrototypeForm";
 export function ContactForm() {
   return (
     <PrototypeForm
+      form="contact"
       submitLabel="Submit"
       doneTitle="Thanks, an operator will be in touch."
       fields={[
