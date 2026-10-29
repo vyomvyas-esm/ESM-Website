@@ -4,17 +4,21 @@ import Image from "next/image";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { reportFilters, reports } from "@/data/reports";
 import type { Report } from "@/data/types";
+import { HONEYPOT, sendForm } from "@/lib/forms";
 import { Arrow } from "./Arrow";
 import { FilterSelect } from "./FilterSelect";
 
 const EMAIL = /^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/;
 
-/* The report gate: takes an address and acknowledges it. Nothing is sent yet;
-   wire the submit handler to a real endpoint when one exists. */
+/* The report gate: the request goes to the Report requests tab of the forms sheet
+   (lib/forms.ts), from where the report is sent by hand. */
 function ReportGate({ report, onClose }: { report: Report; onClose: () => void }) {
   const [err, setErr] = useState(false);
   const [done, setDone] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [failed, setFailed] = useState("");
   const emailRef = useRef<HTMLInputElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -28,8 +32,9 @@ function ReportGate({ report, onClose }: { report: Report; onClose: () => void }
     };
   }, [onClose]);
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (sending) return;
     const v = (emailRef.current?.value || "").trim();
     if (!EMAIL.test(v)) {
       setErr(true);
@@ -37,7 +42,18 @@ function ReportGate({ report, onClose }: { report: Report; onClose: () => void }
       return;
     }
     setErr(false);
-    setDone(true);
+    setFailed("");
+    const form = new FormData(formRef.current!);
+    const get = (k: string) => String(form.get(k) ?? "").trim();
+    setSending(true);
+    try {
+      await sendForm("report", { report: report.name, email: v, name: get("name"), org: get("org"), [HONEYPOT]: get(HONEYPOT) });
+      setDone(true);
+    } catch (x) {
+      setFailed((x as Error).message);
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -59,25 +75,29 @@ function ReportGate({ report, onClose }: { report: Report; onClose: () => void }
             </p>
           </div>
         ) : (
-          <form className="rp-form" noValidate onSubmit={submit}>
+          <form ref={formRef} className="rp-form" noValidate onSubmit={submit}>
             <label className="field">
               <span>Work email</span>
-              <input ref={emailRef} type="email" required placeholder="jane@company.com" autoComplete="email" />
+              <input ref={emailRef} name="email" type="email" required placeholder="jane@company.com" autoComplete="email" />
             </label>
             <label className="field">
               <span>Name</span>
-              <input type="text" required placeholder="Jane Doe" autoComplete="name" />
+              <input name="name" type="text" required placeholder="Jane Doe" autoComplete="name" />
             </label>
             <label className="field">
               <span>Organisation</span>
-              <input type="text" placeholder="Company name" autoComplete="organization" />
+              <input name="org" type="text" placeholder="Company name" autoComplete="organization" />
             </label>
-            <button type="submit" className="btn btn-light group w-full justify-center">
-              Send it to me
+            <input name={HONEYPOT} type="text" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hp-field" />
+            <button type="submit" className="btn btn-light group w-full justify-center" disabled={sending} aria-busy={sending}>
+              {sending ? "Sending…" : "Send it to me"}
               <Arrow />
             </button>
             <p className="rp-err" hidden={!err}>
               Please enter a work email address.
+            </p>
+            <p className="rp-err" role="alert" hidden={!failed}>
+              {failed}
             </p>
           </form>
         )}

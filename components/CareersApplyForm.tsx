@@ -3,6 +3,7 @@ import { PrototypeForm } from "./PrototypeForm";
 export function CareersApplyForm() {
   return (
     <PrototypeForm
+      form="careers"
       submitLabel="Send your introduction"
       doneTitle="Thanks, we have it."
       doneText="If there is a fit, someone from the team will write back. We read every one of these."
