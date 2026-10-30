@@ -2,7 +2,8 @@ import { blogCards } from "../data/blog-index.ts";
 import type { BlogCard } from "../data/types.ts";
 
 /* The journal's listing model: real pages and real category routes (SEO brief, Phase 4.6)
-   in place of a client-side "show more" over all 325 posts. */
+   in place of a client-side "show more" over every post. An article slug is never a bare
+   number (the converter's slugs are words), so /blog/<n>/ is free for page n. */
 
 export const PAGE_SIZE = 12;
 
@@ -31,9 +32,17 @@ export function cardsFor(category?: Category | null): BlogCard[] {
 
 export const pageCount = (cards: BlogCard[]) => Math.max(1, Math.ceil(cards.length / PAGE_SIZE));
 
+/** /blog/, /blog/2/, /blog/<category>/ and /blog/<category>/2/: the number alone, no "page" segment */
 export function listingPath(category: Category | null | undefined, page: number): string {
   const base = category ? `/blog/${category.slug}/` : "/blog/";
-  return page > 1 ? `${base}page/${page}/` : base;
+  return page > 1 ? `${base}${page}/` : base;
+}
+
+/** a listing page number from a URL segment, or null when it is not one */
+export function pageNumber(segment: string, category: Category | null): number | null {
+  if (!/^[0-9]+$/.test(segment)) return null;
+  const page = Number(segment);
+  return page >= 2 && page <= pageCount(cardsFor(category)) ? page : null;
 }
 
 /** every listing route, for static params and the sitemap */

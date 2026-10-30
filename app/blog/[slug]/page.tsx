@@ -10,7 +10,7 @@ import { Cta } from "@/components/Cta";
 import { blogCards } from "@/data/blog-index";
 import { blogPosts } from "@/data/blog-posts";
 import { BlogListingPage } from "@/components/BlogListingPage";
-import { CATEGORIES, categoryBySlug, listingTitle } from "@/lib/blog";
+import { CATEGORIES, cardsFor, categoryBySlug, listingPath, listingTitle, pageCount, pageNumber } from "@/lib/blog";
 import { blogPosting, graph } from "@/lib/jsonld";
 import { firstSentences, isoDateTime, pageMetadata } from "@/lib/seo";
 
@@ -18,14 +18,23 @@ type Params = { params: Promise<{ slug: string }> };
 
 const bySlug = (slug: string) => blogPosts.find((p) => p.slug === slug);
 
-/* /blog/<slug>/ is an article, or a category listing for the six category slugs
-   (no article shares a slug with a category; the converter's data keeps it that way). */
+/* /blog/<slug>/ is an article, a category listing for the six category slugs, or page N
+   of the whole journal for a bare number (no article shares a slug with either). */
+export const dynamicParams = false;
+
 export function generateStaticParams() {
-  return [...CATEGORIES.map((c) => ({ slug: c.slug })), ...blogPosts.map((p) => ({ slug: p.slug }))];
+  const pages = pageCount(cardsFor(null));
+  return [
+    ...Array.from({ length: pages - 1 }, (_, i) => ({ slug: String(i + 2) })),
+    ...CATEGORIES.map((c) => ({ slug: c.slug })),
+    ...blogPosts.map((p) => ({ slug: p.slug })),
+  ];
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
+  const page = pageNumber(slug, null);
+  if (page) return pageMetadata({ title: listingTitle(null, page), path: listingPath(null, page) });
   const category = categoryBySlug(slug);
   if (category) return pageMetadata({ title: listingTitle(category, 1), path: `/blog/${category.slug}/` });
   const post = bySlug(slug);
@@ -51,6 +60,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
 export default async function BlogPostPage({ params }: Params) {
   const { slug } = await params;
+  const page = pageNumber(slug, null);
+  if (page) return <BlogListingPage category={null} page={page} />;
   const category = categoryBySlug(slug);
   if (category) return <BlogListingPage category={category} page={1} />;
   const post = bySlug(slug);

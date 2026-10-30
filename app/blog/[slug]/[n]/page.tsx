@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BlogListingPage } from "@/components/BlogListingPage";
-import { CATEGORIES, cardsFor, categoryBySlug, listingPath, listingTitle, pageCount } from "@/lib/blog";
+import { CATEGORIES, cardsFor, categoryBySlug, listingPath, listingTitle, pageCount, pageNumber } from "@/lib/blog";
 import { pageMetadata } from "@/lib/seo";
 
 type Params = { params: Promise<{ slug: string; n: string }> };
 
-/* /blog/<category>/page/N/ for N >= 2; page 1 is /blog/<category>/ */
+export const dynamicParams = false;
+
+/* /blog/<category>/N/ for N >= 2; page 1 is /blog/<category>/ */
 export function generateStaticParams() {
   return CATEGORIES.flatMap((c) => {
     const pages = pageCount(cardsFor(c));
@@ -16,9 +18,8 @@ export function generateStaticParams() {
 
 const resolve = (slug: string, n: string) => {
   const category = categoryBySlug(slug);
-  const page = Number(n);
-  if (!category || !Number.isInteger(page) || page < 2 || page > pageCount(cardsFor(category))) return null;
-  return { category, page };
+  const page = category ? pageNumber(n, category) : null;
+  return category && page ? { category, page } : null;
 };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
