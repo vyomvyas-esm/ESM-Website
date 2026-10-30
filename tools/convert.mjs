@@ -984,7 +984,7 @@ await emitPage("blogs", {
   component: {
     name: "BlogListingPage",
     params: "{ category, page }: { category: Category | null; page: number }",
-    prelude: `/* The journal listing, shared by /blog/, /blog/page/N/ and /blog/<category>/ (SEO
+    prelude: `/* The journal listing, shared by /blog/, /blog/N/ and /blog/<category>/ (SEO
    brief, Phase 4.6). The hero is the blog page's; a category page takes its name as
    the heading and adds itself to the breadcrumb. */`,
     body: `  const all = cardsFor(category);

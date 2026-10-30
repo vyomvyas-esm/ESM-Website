@@ -6,12 +6,11 @@ import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { blogCards, blogFilters } from "@/data/blog-index";
 import type { BlogCard, ImageSource } from "@/data/types";
-import { CATEGORIES, listingPath, type Category } from "@/lib/blog";
+import { CATEGORIES, PAGE_SIZE, listingPath, type Category } from "@/lib/blog";
 import { Arrow } from "./Arrow";
 import { Byline } from "./Byline";
 import { FilterSelect } from "./FilterSelect";
-
-const STEP = 12;
+import { Pager } from "./Pager";
 
 /* Card artwork sits next to the visible title, so it is decorative here: alt="".
    The box is sized by the card (h-176 / min-h-240) and .thumb covers it. */
@@ -92,14 +91,16 @@ interface Props {
 }
 
 /* The journal listing. Pages and categories are real routes rendered on the server, so
-   every post is reachable by a crawler; search, author and sort stay client-side and,
-   while any of them is active, list matches from the full index instead of the page. */
+   every post is reachable by a crawler, and the page bar links them. Search, author and
+   sort stay client-side and, while any of them is active, page through matches from the
+   full index with the same bar, in the browser. */
 export function BlogIndex({ cards, page, pages, category }: Props) {
   const router = useRouter();
   const [q, setQ] = useState("");
   const [author, setAuthor] = useState("");
   const [sort, setSort] = useState("new");
-  const [shown, setShown] = useState(STEP);
+  // the page of matches shown while searching or filtering
+  const [matchPage, setMatchPage] = useState(1);
   const barRef = useRef<HTMLDivElement>(null);
 
   // /blog/?author=Name, from the leadership bubbles on the About page. Read on the
@@ -108,7 +109,7 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
     const who = new URLSearchParams(window.location.search).get("author");
     if (!who || !blogFilters.authors.some((a) => a.value === who)) return;
     setAuthor(who);
-    setShown(STEP);
+    setMatchPage(1);
     barRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
   }, []);
 
@@ -129,12 +130,18 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
 
   const feats = blogCards.filter((c) => c.featured);
   const featured = feats.find((c) => c.featured!.author === author) ?? feats.find((c) => c.featured!.author === "");
-  const visible = filtering ? Math.min(shown, live.length) : live.length;
+  const matchPages = Math.max(1, Math.ceil(live.length / PAGE_SIZE));
+  const shownCards = filtering ? live.slice((matchPage - 1) * PAGE_SIZE, matchPage * PAGE_SIZE) : live;
+  const pickMatchPage = (n: number) => {
+    setMatchPage(n);
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    barRef.current?.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+  };
   const reset =
     <T,>(set: (v: T) => void) =>
     (v: T) => {
       set(v);
-      setShown(STEP);
+      setMatchPage(1);
     };
 
   return (
@@ -183,46 +190,24 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
           </aside>
           <div className="bl-main">
             <div className="grid gap-4 md:grid-cols-2">
-              {live.slice(0, visible).map((c, i) => (
+              {shownCards.map((c, i) => (
                 <Card key={c.slug} card={c} index={i} />
               ))}
             </div>
             {live.length === 0 && <p className="mt-10 text-[13px] text-white/45">Nothing matches that yet.</p>}
-            {filtering && visible < live.length && (
+            {filtering && live.length > 0 && (
               <div className="mt-10 flex flex-col items-center gap-3">
-                <button type="button" className="btn btn-ghost group" onClick={() => setShown((s) => s + STEP)}>
-                  Show more blogs
-                  <Arrow />
-                </button>
+                <Pager page={matchPage} pages={matchPages} label="Pages of matching blogs" onPick={pickMatchPage} />
                 <p className="text-[11.5px] text-white/35">
-                  Showing {visible} of {live.length}
+                  {live.length} {live.length === 1 ? "blog matches" : "blogs match"}
                 </p>
               </div>
             )}
             {!filtering && (
-              <nav className="mt-10 flex flex-col items-center gap-3" aria-label="Pages and categories">
-                {pages > 1 && (
-                  <div className="flex flex-wrap items-center justify-center gap-3">
-                    {page > 1 && (
-                      <Link className="btn btn-ghost" href={listingPath(category, page - 1)} rel="prev">
-                        Newer blogs
-                      </Link>
-                    )}
-                    {page < pages && (
-                      <Link className="btn btn-ghost group" href={listingPath(category, page + 1)} rel="next">
-                        Older blogs
-                        <Arrow />
-                      </Link>
-                    )}
-                  </div>
-                )}
-                {pages > 1 && (
-                  <p className="text-[11.5px] text-white/35">
-                    Page {page} of {pages}
-                  </p>
-                )}
+              <div className="mt-10 flex flex-col items-center gap-5">
+                <Pager page={page} pages={pages} label="Blog pages" hrefFor={(n) => listingPath(category, n)} />
                 {/* real links to every category, so each listing is reachable by a crawler */}
-                <p className="flex flex-wrap items-center justify-center gap-2">
+                <nav className="flex flex-wrap items-center justify-center gap-2" aria-label="Blog categories">
                   {category && (
                     <Link className="bl-tag" href="/blog/">
                       All categories
@@ -233,8 +218,8 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
                       {c.tag}
                     </Link>
                   ))}
-                </p>
-              </nav>
+                </nav>
+              </div>
             )}
           </div>
         </div>

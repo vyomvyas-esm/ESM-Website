@@ -42,3 +42,53 @@
     animation: none;
   }
 }
+
+/* Numbered pages under the journal (components/Pager.tsx). Built from the design's own
+   tokens, so both themes follow; the current page carries the teal of the active tab. */
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.pager-num,
+.pager-arrow {
+  display: inline-grid;
+  place-items: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid var(--hair);
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+  color: rgb(var(--c-fg) / 0.7);
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background-color 0.2s;
+}
+.pager-arrow {
+  padding: 0;
+}
+a.pager-num:hover,
+a.pager-arrow:hover,
+button.pager-num:hover,
+button.pager-arrow:hover {
+  border-color: var(--teal);
+  color: var(--teal-txt);
+}
+.pager-num.is-on {
+  border-color: var(--teal);
+  background: var(--teal);
+  color: #fff;
+}
+.pager-arrow.is-off {
+  opacity: 0.35;
+}
+.pager-gap {
+  min-width: 20px;
+  text-align: center;
+  color: rgb(var(--c-fg) / 0.35);
+}
