@@ -43,6 +43,18 @@ const nextConfig: NextConfig = {
       ]),
     ];
   },
+  /* The site's files live in assets/ and are served by app/media (see the note there on
+     why not public/). These keep their public addresses: /img/… and /js/… as before, and
+     the blog artwork at /blog/<file>.webp beside the articles. */
+  async rewrites() {
+    return {
+      beforeFiles: [
+        { source: "/img/:path*", destination: "/media/img/:path*" },
+        { source: "/js/:path*", destination: "/media/js/:path*" },
+        { source: "/blog/:file([^/]+\\.webp)", destination: "/media/blog/:file" },
+      ],
+    };
+  },
   images: {
     // every raster goes through next/image; serve AVIF where the browser accepts it, else WebP
     formats: ["image/avif", "image/webp"],

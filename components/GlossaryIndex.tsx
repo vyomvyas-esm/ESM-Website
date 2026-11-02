@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { glossary, glossarySets } from "@/data/glossary";
 import { GLOSSARY_PATH } from "@/lib/jsonld";
-import { FilterSelect } from "./FilterSelect";
+import { FilterSelect, countBy } from "./FilterSelect";
 
 const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const letterOf = (term: string) => term.charAt(0).toUpperCase();
@@ -70,7 +70,13 @@ export function GlossaryIndex() {
             />
           </div>
           <div className="bl-selects">
-            <FilterSelect label="Capability" value={set} options={glossarySets} onChange={setSet} />
+            <FilterSelect
+              label="Capability"
+              value={set}
+              options={glossarySets}
+              counts={countBy(glossary, glossarySets, (t, v) => t.set === v)}
+              onChange={setSet}
+            />
           </div>
           <div className="gl-jump">
             <p className="gl-jump-k">Jump to a letter</p>

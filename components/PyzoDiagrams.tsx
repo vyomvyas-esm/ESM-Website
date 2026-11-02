@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 /*
  * The PYZO architecture diagrams ([data-pyzo-arch]) and card flows ([data-pyzo-flow])
- * are plain-JavaScript libraries carried over from the design (public/js). They are
+ * are plain-JavaScript libraries carried over from the design (assets/js). They are
  * loaded only on a page that has a mount point, mounted again after each navigation,
  * and bound to the site's theme, since each carries its own light and dark palette.
  */

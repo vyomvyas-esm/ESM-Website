@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { caseStudies, caseStudyFilters } from "@/data/case-studies";
 import { Arrow } from "./Arrow";
-import { FilterSelect } from "./FilterSelect";
+import { FilterSelect, countBy } from "./FilterSelect";
 
 const STEP = 6;
 // the select speaks in industry names; the cards carry short keys
@@ -73,8 +73,20 @@ export function CaseStudiesIndex() {
             />
           </div>
           <div className="bl-selects">
-            <FilterSelect label="Industry" value={industry} options={caseStudyFilters.industries} onChange={reset(setIndustry)} />
-            <FilterSelect label="Product" value={product} options={caseStudyFilters.products} onChange={reset(setProduct)} />
+            <FilterSelect
+              label="Industry"
+              value={industry}
+              options={caseStudyFilters.industries}
+              counts={countBy(caseStudies, caseStudyFilters.industries, (s, v) => s.card.industry === INDUSTRY_KEY[v] || s.card.industry === v)}
+              onChange={reset(setIndustry)}
+            />
+            <FilterSelect
+              label="Product"
+              value={product}
+              options={caseStudyFilters.products}
+              counts={countBy(caseStudies, caseStudyFilters.products, (s, v) => s.card.products.includes(v))}
+              onChange={reset(setProduct)}
+            />
           </div>
         </div>
       </aside>

@@ -9,7 +9,7 @@ import type { BlogCard, ImageSource } from "@/data/types";
 import { CATEGORIES, PAGE_SIZE, listingPath, type Category } from "@/lib/blog";
 import { Arrow } from "./Arrow";
 import { Byline } from "./Byline";
-import { FilterSelect } from "./FilterSelect";
+import { FilterSelect, countBy } from "./FilterSelect";
 import { Pager } from "./Pager";
 
 /* Card artwork sits next to the visible title, so it is decorative here: alt="".
@@ -128,6 +128,9 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
       .sort((a, b) => (a.ts - b.ts) * dir);
   }, [filtering, cards, q, author, sort, category]);
 
+  const categoryOptions = [{ value: "", label: "All categories" }, ...CATEGORIES.map((c) => ({ value: c.slug, label: c.tag }))];
+  // author counts are within the category being browsed, like the list itself
+  const inCategory = category ? blogCards.filter((c) => c.topic === category.tag) : blogCards;
   const feats = blogCards.filter((c) => c.featured);
   const featured = feats.find((c) => c.featured!.author === author) ?? feats.find((c) => c.featured!.author === "");
   const matchPages = Math.max(1, Math.ceil(live.length / PAGE_SIZE));
@@ -172,10 +175,17 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
                 <FilterSelect
                   label="Category"
                   value={category?.slug ?? ""}
-                  options={[{ value: "", label: "All categories" }, ...CATEGORIES.map((c) => ({ value: c.slug, label: c.tag }))]}
+                  options={categoryOptions}
+                  counts={countBy(blogCards, categoryOptions, (c, slug) => c.topic === CATEGORIES.find((k) => k.slug === slug)?.tag)}
                   onChange={(slug) => router.push(listingPath(CATEGORIES.find((c) => c.slug === slug) ?? null, 1))}
                 />
-                <FilterSelect label="Author" value={author} options={blogFilters.authors} onChange={reset(setAuthor)} />
+                <FilterSelect
+                  label="Author"
+                  value={author}
+                  options={blogFilters.authors}
+                  counts={countBy(inCategory, blogFilters.authors, (c, name) => c.author.name === name)}
+                  onChange={reset(setAuthor)}
+                />
                 <FilterSelect
                   label="Sort"
                   value={sort}
