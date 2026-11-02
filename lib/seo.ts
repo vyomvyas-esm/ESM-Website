@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import copy from "../data/copy-overrides.json" with { type: "json" };
 
-export const SITE_URL = "https://esmagico.com";
+export const SITE_URL = "https://www.esmagico.com";
 export const SITE_NAME = "Es Magico";
 export const TITLE_SUFFIX = " | Es Magico";
 /** Used when a page has no image of its own: the site's wordmark on its own hero

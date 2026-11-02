@@ -1,7 +1,7 @@
 // The approved URL map (SEO Phase 1). Shared by convert.mjs and url-map.mjs so the
 // generated pages, data and the proposal document can never disagree.
 
-export const SITE_URL = "https://esmagico.com";
+export const SITE_URL = "https://www.esmagico.com";
 
 /** prototype page id -> public path (with trailing slash) */
 export const ROUTES = {
