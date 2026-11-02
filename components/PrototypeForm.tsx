@@ -103,7 +103,7 @@ export function PrototypeForm({ form: formName, fields, submitLabel, doneTitle, 
   return (
     <form
       ref={ref}
-      className={`js-form form-panel card flex w-full flex-col p-7 backdrop-blur-md lg:p-8${sent ? " form-sent" : ""}${flip ? ` ${flip}` : ""}`}
+      className={`js-form form-panel card flex w-full flex-col p-7 backdrop-blur-md lg:p-8 ${sent ? "form-sent" : ""}${flip ? ` ${flip}` : ""}`}
       onSubmit={send}
       noValidate
     >
