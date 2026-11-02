@@ -6,11 +6,12 @@ const redirectMap: { generated: Redirect[]; manual: Redirect[] } = JSON.parse(re
 type Redirect = { source: string; destination: string };
 
 /* The canonical origin, matching SITE_URL in lib/seo.ts and proxy.ts; tools/seo-check.mjs
-   --redirects fails if the three drift. www is not an address of its own: every path on it
-   goes to the same path on the apex, and an old path arriving on www goes to its new page
-   on the apex in one hop rather than through the apex copy of the old path. */
-const CANONICAL_ORIGIN = "https://esmagico.com";
-const onWww = [{ type: "host" as const, value: `www.${new URL(CANONICAL_ORIGIN).host}` }];
+   --redirects fails if the three drift. The site lives on www (confirmed 2 November 2026);
+   the bare domain is not an address of its own: every path on it goes to the same path on
+   www, and an old path arriving there goes to its new page on www in one hop rather than
+   through the www copy of the old path. */
+const CANONICAL_ORIGIN = "https://www.esmagico.com";
+const onApex = [{ type: "host" as const, value: new URL(CANONICAL_ORIGIN).host.replace(/^www\./, "") }];
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -20,15 +21,15 @@ const nextConfig: NextConfig = {
   skipTrailingSlashRedirect: true,
   /* One-hop permanent redirects for every URL the port changed (SEO brief, Phase 6).
      Sources are bare paths so a request with or without the slash lands on the new
-     page in a single hop; see tools/redirects.mjs. The www variants come first so a
-     host and a path are settled together. Every other path on www is sent to the apex
-     by proxy.ts. */
+     page in a single hop; see tools/redirects.mjs. The bare-domain variants come first so
+     a host and a path are settled together. Every other path on the bare domain is sent
+     to www by proxy.ts. */
   async redirects() {
     const map = [...redirectMap.generated, ...redirectMap.manual];
     return [
       ...map.flatMap(({ source, destination }) => [
-        { source, has: onWww, destination: `${CANONICAL_ORIGIN}${destination}`, permanent: true },
-        { source: `${source}/`, has: onWww, destination: `${CANONICAL_ORIGIN}${destination}`, permanent: true },
+        { source, has: onApex, destination: `${CANONICAL_ORIGIN}${destination}`, permanent: true },
+        { source: `${source}/`, has: onApex, destination: `${CANONICAL_ORIGIN}${destination}`, permanent: true },
       ]),
       ...map.flatMap(({ source, destination }) => [
         { source, destination, permanent: true },

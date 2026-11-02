@@ -7,13 +7,13 @@ import redirectMap from "@/data/redirects.json";
    next.config.ts (skipTrailingSlashRedirect) and done here instead:
    - an old path, with or without the slash, goes straight to its new page
    - any other page path without a slash gets one; files and Next internals pass through
-   - anything arriving on www goes to the canonical host, carrying the decision above
-     with it, so a www request for an old bare path still takes a single hop
+   - anything arriving on the bare domain goes to the canonical www host, carrying the
+     decision above with it, so a request for an old bare path there still takes one hop
    The config's redirects() serves the same map, so the old URLs do not depend on this
    file alone. Plain URL objects are used for the targets: NextURL re-normalises the
    trailing slash and would strip it again. */
-const CANONICAL_HOST = "esmagico.com"; // SITE_URL in lib/seo.ts; seo-check --redirects fails on drift
-const WWW_HOST = `www.${CANONICAL_HOST}`;
+const CANONICAL_HOST = "www.esmagico.com"; // SITE_URL in lib/seo.ts; seo-check --redirects fails on drift
+const BARE_HOST = CANONICAL_HOST.replace(/^www\./, "");
 
 const destinations = new Map<string, string>();
 for (const r of [...redirectMap.generated, ...redirectMap.manual]) destinations.set(r.source, r.destination);
@@ -21,7 +21,7 @@ for (const r of [...redirectMap.generated, ...redirectMap.manual]) destinations.
 export default function proxy(request: NextRequest) {
   const url = new URL(request.url);
   const { pathname } = url;
-  const offHost = (request.headers.get("host") ?? url.host).toLowerCase() === WWW_HOST;
+  const offHost = (request.headers.get("host") ?? url.host).toLowerCase() === BARE_HOST;
   const bare = pathname.replace(/\/+$/, "") || "/";
   const isFile = /\.[a-z0-9]+$/i.test(pathname);
   const mapped = destinations.get(bare);

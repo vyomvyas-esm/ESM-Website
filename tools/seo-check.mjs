@@ -19,6 +19,9 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 // 713 content pages (24 static, 10 case studies, 364 articles, 315 glossary terms) plus
 // the journal's category and page listings, /blog/ among them (lib/blog.ts)
 const EXPECTED_ROUTES = 777;
+// the canonical origin; lib/seo.ts, next.config.ts and proxy.ts must agree (--redirects)
+const ORIGIN = "https://www.esmagico.com";
+const ORIGIN_RE = ORIGIN.replace(/[.\/]/g, "\\$&");
 const fail = (msg) => {
   console.error("FAIL:", msg);
   process.exitCode = 1;
@@ -86,7 +89,7 @@ function checkPages() {
 
   const noCanon = all.filter((p) => !p.canonical);
   if (noCanon.length) fail(`pages without canonical: ${noCanon.map((p) => p.route).join(", ")}`);
-  const wrongCanon = all.filter((p) => p.canonical && p.canonical !== `https://esmagico.com${p.route}`);
+  const wrongCanon = all.filter((p) => p.canonical && p.canonical !== `${ORIGIN}${p.route}`);
   if (wrongCanon.length) fail(`canonical does not match route: ${wrongCanon.map((p) => `${p.route} -> ${p.canonical}`).join(", ")}`);
   const dupCanon = dupes("canonical");
   console.log(`unique canonicals: ${all.length - dupCanon.reduce((n, [, r]) => n + r.length - 1, 0)}`);
@@ -118,7 +121,7 @@ function checkPages() {
       const bl = p.jsonld.find((n) => n["@type"] === "BreadcrumbList");
       if (!bl || !p.crumb) ldIssues.push(`${p.route}: missing BreadcrumbList or visible crumb`);
       else {
-        const expect = p.crumb.filter((c, i) => c.href || i === p.crumb.length - 1).map((c) => ({ name: decode(c.label), item: c.href ? `https://esmagico.com${c.href}` : undefined }));
+        const expect = p.crumb.filter((c, i) => c.href || i === p.crumb.length - 1).map((c) => ({ name: decode(c.label), item: c.href ? `${ORIGIN}${c.href}` : undefined }));
         const got = bl.itemListElement.map((i) => ({ name: i.name, item: i.item }));
         if (JSON.stringify(expect) !== JSON.stringify(got)) ldIssues.push(`${p.route}: breadcrumb schema differs from visible crumb`);
       }
@@ -143,12 +146,12 @@ function checkPages() {
   /* sitemaps: the index lists the three children; their URLs are exactly the indexable pages */
   const app = path.join(ROOT, ".next/server/app");
   const index = fs.readFileSync(path.join(app, "sitemap.xml.body"), "utf8");
-  const children = [...index.matchAll(/<loc>https:\/\/esmagico\.com\/(sitemap-[a-z-]+\.xml)<\/loc>/g)].map((m) => m[1]);
+  const children = [...index.matchAll(new RegExp(`<loc>${ORIGIN_RE}/(sitemap-[a-z-]+\\.xml)</loc>`, "g"))].map((m) => m[1]);
   const inSitemap = new Set();
   let images = 0;
   for (const c of children) {
     const xml = fs.readFileSync(path.join(app, `${c}.body`), "utf8");
-    for (const m of xml.matchAll(/<loc>https:\/\/esmagico\.com(\/[^<]*)<\/loc>/g)) if (!m[1].endsWith(".webp")) inSitemap.add(m[1]);
+    for (const m of xml.matchAll(new RegExp(`<loc>${ORIGIN_RE}(/[^<]*)</loc>`, "g"))) if (!m[1].endsWith(".webp")) inSitemap.add(m[1]);
     images += (xml.match(/<image:loc>/g) || []).length;
   }
   const indexable = new Set(all.filter((p) => !noindex.includes(p.route)).map((p) => p.route));
@@ -158,7 +161,7 @@ function checkPages() {
   if (notInSitemap.length) fail(`indexable pages missing from the sitemap: ${notInSitemap.slice(0, 5).join(", ")}`);
   if (notBuilt.length) fail(`sitemap urls with no page: ${notBuilt.slice(0, 5).join(", ")}`);
   const robots = fs.readFileSync(path.join(app, "robots.txt.body"), "utf8");
-  if (!/Allow: \//.test(robots) || !/Sitemap: https:\/\/esmagico\.com\/sitemap\.xml/.test(robots)) fail("robots.txt does not allow all or does not point at the sitemap index");
+  if (!/Allow: \//.test(robots) || !new RegExp(`Sitemap: ${ORIGIN_RE}/sitemap\\.xml`).test(robots)) fail("robots.txt does not allow all or does not point at the sitemap index");
   const articles = all.filter((p) => p.ogType === "article").length;
   console.log(`og:type article: ${articles}, website: ${all.filter((p) => p.ogType === "website").length}`);
 }
@@ -276,7 +279,7 @@ function checkRedirects() {
   const config = fs.readFileSync(path.join(ROOT, "next.config.ts"), "utf8");
   if (!/redirects\.json/.test(config) || !/permanent: true/.test(config)) issues.push("next.config.ts does not serve data/redirects.json with permanent: true");
   // one canonical host: the origin in lib/seo.ts, next.config.ts and proxy.ts must agree,
-  // or www would be left answering as an address of its own (duplicate content)
+  // or the bare domain would be left answering as an address of its own (duplicate content)
   const hostOf = (file, re) => (fs.readFileSync(path.join(ROOT, file), "utf8").match(re) || [])[1];
   const hosts = {
     "lib/seo.ts": hostOf("lib/seo.ts", /SITE_URL = "https:\/\/([^"/]+)"/),
@@ -285,7 +288,8 @@ function checkRedirects() {
   };
   const distinct = [...new Set(Object.values(hosts))];
   if (distinct.length !== 1 || !distinct[0]) issues.push(`canonical host differs between files: ${JSON.stringify(hosts)}`);
-  if (!/type: "host" as const/.test(config)) issues.push("next.config.ts has no www variant, so an old path on www would take two hops");
+  if (distinct[0] !== new URL(ORIGIN).host) issues.push(`canonical host ${distinct[0]} is not this checker's ${ORIGIN}`);
+  if (!/type: "host" as const/.test(config)) issues.push("next.config.ts has no host variant, so an old path on the bare domain would take two hops");
   console.log(`redirects: ${map.generated.length} generated, ${map.manual.length} manual; issues ${issues.length}`);
   if (issues.length) fail(issues.slice(0, 8).join("; "));
 }

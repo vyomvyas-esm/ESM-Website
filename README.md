@@ -43,11 +43,12 @@ leadership cards on `/about`).
 
 ## Hosts, redirects and analytics
 
-The canonical origin is `https://esmagico.com`, declared once in `lib/seo.ts` and
-repeated in `next.config.ts` and `proxy.ts`; `node tools/seo-check.mjs --redirects`
-fails if the three disagree. Anything arriving on `www.esmagico.com` is sent to the
-same path on the apex with a 308, and every URL the port changed
-(`data/redirects.json`) reaches its new page in a single hop from either host.
+The canonical origin is `https://www.esmagico.com`, declared once in `lib/seo.ts` and
+repeated in `next.config.ts`, `proxy.ts` and `tools/seo-check.mjs`; `node
+tools/seo-check.mjs --redirects` fails if they disagree. Anything arriving on the bare
+`esmagico.com` is sent to the same path on www with a 308, and every URL the port
+changed (`data/redirects.json`) reaches its new page in a single hop from either host.
+Both hosts must point at the deployment so that redirect can happen.
 
 Google Analytics 4 reports to `G-VG2X6BHZJQ`, the property the live site already uses.
 It is inert outside a production deployment. `NEXT_PUBLIC_GA_ID` points it at another
