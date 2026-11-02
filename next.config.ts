@@ -15,6 +15,12 @@ const onApex = [{ type: "host" as const, value: new URL(CANONICAL_ORIGIN).host.r
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  /* Shared hosting (Hostinger) caps how many processes a build may start. The build script
+     uses webpack rather than Turbopack, whose CSS step runs in a separate worker process
+     that such a cap kills, and prerendering is held to two workers. */
+  experimental: {
+    cpus: 2,
+  },
   // one canonical form for every URL: /path/; the bare form 308s to it from proxy.ts,
   // which also knows the redirect map, so an old URL never takes two hops
   trailingSlash: true,
