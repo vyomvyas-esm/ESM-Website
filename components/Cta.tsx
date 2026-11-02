@@ -24,7 +24,7 @@ export function Cta({ children }: { children?: React.ReactNode }) {
               <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
             </div>
             <div className="flex flex-col items-start lg:pt-2">
-              <Link className="btn btn-light group" href="/contact">
+              <Link className="btn btn-light group" href="/contact/">
                 Define an Outcome
                 <Arrow />
               </Link>

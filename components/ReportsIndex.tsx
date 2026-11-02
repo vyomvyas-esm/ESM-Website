@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { reportFilters, reports } from "@/data/reports";
 import type { Report } from "@/data/types";
@@ -134,8 +135,7 @@ export function ReportsIndex() {
             {live.map((r, i) => (
               <article key={r.id} className="rp-card rv" data-d={i * 70} id={r.id}>
                 <div className="rp-cover">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={r.cover} alt={r.coverAlt} loading="lazy" decoding="async" />
+                  <Image src={r.cover} width={r.width} height={r.height} alt={r.coverAlt} sizes="(min-width: 1024px) 320px, 100vw" loading="lazy" />
                 </div>
                 <div className="rp-body">
                   <p className="rp-series">{r.seriesLabel}</p>

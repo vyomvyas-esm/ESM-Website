@@ -8,16 +8,18 @@ export const reports: Report[] = [
     "topic": "US Community Banking",
     "txt": "building the evidence trail the economics, governance and execution of production ai why ai programmes in u.s. community and regional banks stall after the pilot, and the sequencing that gets them into production.",
     "cover": "/img/rp-evidence-trail.webp",
-    "coverAlt": "Building the Evidence Trail cover",
+    "coverAlt": "Assembling the Evidence Trail cover",
     "seriesLabel": "BFSI · Report 01",
-    "title": "Building the Evidence Trail",
+    "title": "Assembling the Evidence Trail",
     "subtitle": "The Economics, Governance and Execution of Production AI",
-    "tease": "Most banks in this bracket have run a pilot and stalled. The report traces where the stall actually happens, which is rarely the model and almost always the distance between a working demonstration and a system that can carry an audit. It sets out what the FDIC data says about who is spending and on what, why the sequencing of governance before scale is the decision that separates the two groups, and the order of operations we would follow inside a bank of that size.",
+    "tease": "Most banks in this bracket have piloted AI and stalled. The report traces where the stall actually happens, which is almost always in the distance between a working demonstration and a system that can carry an audit. It sets out what the FDIC data says about who is spending and on what, and why sequencing governance before scale separates the two groups. It closes with the order of operations we would follow inside a bank of that size.",
     "tags": [
       "US Community Banking",
       "FDIC-sourced"
     ],
-    "name": "Building the Evidence Trail"
+    "name": "Assembling the Evidence Trail",
+    "width": 620,
+    "height": 792
   },
   {
     "id": "rp-spend-without-saving",
@@ -29,12 +31,14 @@ export const reports: Report[] = [
     "seriesLabel": "BFSI · Report 02",
     "title": "Spend Without the Saving",
     "subtitle": "Back-Office Efficiency, Workflow Redesign and the Path to AI-Driven Banking",
-    "tease": "Technology spend at U.S. community banks has risen steadily while efficiency ratios have barely moved. The report takes that gap seriously rather than treating it as a paradox: where the money goes, why back-office work absorbs it without releasing capacity, and which redesign decisions change the ratio instead of the line item. It ends on the operating changes that show up in the numbers within a reporting cycle.",
+    "tease": "Technology spend at U.S. community banks has risen steadily while efficiency ratios have barely moved. The report treats that gap as an operating problem. It follows where the money goes and why back-office work absorbs it without releasing capacity, then names the redesign decisions that move the efficiency ratio itself. It ends on the operating changes that show up in the numbers within a reporting cycle.",
     "tags": [
       "US Community Banking",
       "Efficiency ratio"
     ],
-    "name": "Spend Without the Saving"
+    "name": "Spend Without the Saving",
+    "width": 620,
+    "height": 753
   },
   {
     "id": "rp-line-fda-drew",
@@ -46,12 +50,14 @@ export const reports: Report[] = [
     "seriesLabel": "Life Sciences · Report 03",
     "title": "The Line the FDA Drew",
     "subtitle": "Pharmacovigilance, Regulatory Operations and Manufacturing Quality",
-    "tease": "The FDA has been more specific about AI than most people in pharma realise, and the line it has drawn is not where the caution suggests. The report maps what can be deployed today across pharmacovigilance, regulatory operations and manufacturing quality, what the credibility framework asks of a higher-risk application, and how an organisation moves across that line with the evidence already assembled.",
+    "tease": "The FDA has been more specific about AI than most people in pharma realise, and the line it has drawn lies further out than the caution in the industry suggests. The report maps what can be deployed today across pharmacovigilance, regulatory operations and manufacturing quality, what the credibility framework asks of a higher-risk application, and how an organisation moves across that line with the evidence already assembled.",
     "tags": [
       "Pharmacovigilance",
       "FDA guidance"
     ],
-    "name": "The Line the FDA Drew"
+    "name": "The Line the FDA Drew",
+    "width": 620,
+    "height": 786
   },
   {
     "id": "rp-first-clinical-test",
@@ -63,12 +69,14 @@ export const reports: Report[] = [
     "seriesLabel": "Life Sciences · Report 04",
     "title": "The First Clinical Test",
     "subtitle": "AI Drug Discovery, Clinical Operations and the Economics of Failure",
-    "tease": "An AI-discovered drug has now been through a clinical readout, and the result is more interesting than either the enthusiasts or the sceptics have reported. The report works through what the evidence actually establishes, what it does not, and what that means for where a pharmaceutical company should place its next AI investment, with the economics of failure treated as the central number rather than a footnote.",
+    "tease": "An AI-discovered drug has now been through a clinical readout, and the result is more interesting than either the enthusiasts or the sceptics have reported. The report works through what the evidence actually establishes, what it does not, and what that means for where a pharmaceutical company should place its next AI investment, with the economics of failure treated as the central number throughout.",
     "tags": [
       "AI Drug Discovery",
       "Clinical evidence"
     ],
-    "name": "The First Clinical Test"
+    "name": "The First Clinical Test",
+    "width": 620,
+    "height": 757
   }
 ];
 

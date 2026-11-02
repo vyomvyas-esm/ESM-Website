@@ -13,6 +13,7 @@ const INDUSTRY_KEY: Record<string, string> = {
   healthcare: "healthcare",
   "public sector": "public",
   "consumer & retail": "retail",
+  education: "education",
   others: "others",
 };
 
@@ -80,7 +81,7 @@ export function CaseStudiesIndex() {
       <div className="bl-main">
         <div>
           {live.slice(0, shown).map((s, i) => (
-            <Link key={s.slug} className="cs-card csr rv" data-d={(i % 3) * 60} href={`/case-studies/${s.slug}`}>
+            <Link key={s.slug} className="cs-card csr rv" data-d={(i % 3) * 60} href={`/case-studies/${s.slug}/`}>
               <span className={`clogo cs-logo ${s.logo} csr-logo`}></span>
               <div className="csr-copy">
                 <p className="text-[13px] font-medium text-white">{s.card.name}</p>

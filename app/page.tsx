@@ -1,32 +1,51 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-import { Waveform } from "@/components/Waveform";
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Es Magico - The Operator for AI-native Transformation",
-  description:
-    "Es Magico is the Operator for AI-native Transformation. We deploy AI into production inside regulated enterprises and stand behind what it produces to auditors, regulators and boards.",
-};
+  absoluteTitle: true,
+  description: "",
+  path: "/",
+});
 export default function HomePage() {
   return (
     <main className="page" id="page-home">
-      <section className="home-hero relative isolate flex min-h-[100svh] flex-col overflow-hidden pt-[68px]">
+      <section className="hero-tall relative isolate flex min-h-[100svh] flex-col overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>
           <div className="hero-scrim"></div>
         </div>
         <div className="relative mx-auto flex w-full max-w-shell flex-1 flex-col px-6 lg:px-8">
           <div className="hero-mid flex flex-1 flex-col items-center justify-center text-center">
-            <span className="eyebrow rv">Operator for AI-native Transformation</span>
-            <h1 className="h-hero mt-7 max-w-[940px] rv" data-d="80">
-              We engineer AI ambition
-              <br className="hidden md:block" /> into enterprise value.
+            <span className="eyebrow rv">AI-native Operator for Regulated Enterprises</span>
+            <h1 className="h-hero hh-h1 mt-7 rv" data-d="80">
+              Engineering AI ambition
+              <span className="hh-line">
+                <svg className="hh-arrow" viewBox="0 0 64 16" fill="none" aria-hidden="true">
+                  <path
+                    d="M2.4 8h57M50.8 2.7 59.4 8l-8.6 5.3"
+                    stroke="currentColor"
+                    strokeWidth="4.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <span className="hh-rot" id="heroRot">
+                  <span className="hh-opt is-on">
+                    <span className="hh-lead">Governed</span> outcomes
+                  </span>
+                  <span className="hh-opt" aria-hidden="true">
+                    <span className="hh-lead">Enterprise</span> value
+                  </span>
+                </span>
+              </span>
             </h1>
             <p className="lede hero-lede mt-5 max-w-[640px] rv" data-d="160">
-              We deploy enterprise AI into your environment, take responsibility for what it does in
-              production, and answer for the numbers it moves.
+              We operationalise Agentic AI in your enterprise environment, owning the governance, the
+              architecture, and the day-to-day operations, with our Enterprise AI suite, PYZO, to deliver
+              proven enterprise value with improved operational efficiency.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3 rv" data-d="240">
-              <Link className="btn btn-light group" href="/contact">
+              <Link className="btn btn-light group" href="/contact/">
                 Define an Outcome
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
@@ -39,142 +58,312 @@ export default function HomePage() {
                 </svg>
               </Link>{" "}
               <a className="btn btn-ghost" href="#proof">
-                See the Proof
+                Check the proof
               </a>
             </div>
           </div>
           <p className="hero-caption eyebrow mb-3 text-center rv" data-d="320">
-            Operating inside leading enterprises
+            Operating inside regulated enterprises
           </p>
         </div>
-        <div
-          className="brand-band relative overflow-hidden py-[18px] rv"
-          data-d="360"
-          style={{
-            maskImage: "linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%)",
-            WebkitMaskImage: "linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%)",
-          }}
-        >
-          <div className="marquee">
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-rbi" role="img" aria-label="Reserve Bank Innovation Hub"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-indusind" role="img" aria-label="IndusInd Bank"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-hdfc" role="img" aria-label="HDFC Capital"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-tatadigital" role="img" aria-label="Tata Digital"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span
-                className="clogo logow-tataconsumer"
-                role="img"
-                aria-label="Tata Consumer Products"
-              ></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-cipla" role="img" aria-label="Cipla"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-koita" role="img" aria-label="Koita Foundation"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-isb" role="img" aria-label="Indian School of Business"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-indiamart" role="img" aria-label="IndiaMART"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-samagra" role="img" aria-label="Samagra"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-msrdc" role="img" aria-label="MSRDC"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-abfrl" role="img" aria-label="ABFRL"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-bookmyshow" role="img" aria-label="BookMyShow"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-plum" role="img" aria-label="Plum"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-epic" role="img" aria-label="Epic Global"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-rbi" role="img" aria-label="Reserve Bank Innovation Hub"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-indusind" role="img" aria-label="IndusInd Bank"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-hdfc" role="img" aria-label="HDFC Capital"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-tatadigital" role="img" aria-label="Tata Digital"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span
-                className="clogo logow-tataconsumer"
-                role="img"
-                aria-label="Tata Consumer Products"
-              ></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-cipla" role="img" aria-label="Cipla"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-koita" role="img" aria-label="Koita Foundation"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-isb" role="img" aria-label="Indian School of Business"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-indiamart" role="img" aria-label="IndiaMART"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-samagra" role="img" aria-label="Samagra"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-msrdc" role="img" aria-label="MSRDC"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-abfrl" role="img" aria-label="ABFRL"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-bookmyshow" role="img" aria-label="BookMyShow"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-plum" role="img" aria-label="Plum"></span>
-            </span>
-            <span className="bm-item flex items-center px-[clamp(1.2rem,2.8vw,2.6rem)]">
-              <span className="clogo logow-epic" role="img" aria-label="Epic Global"></span>
-            </span>
+        <div className="brand-band relative rv" data-d="360">
+          <div className="mx-auto max-w-shell px-6 lg:px-8">
+            <div className="bm-rail">
+              <ul className="bm-track" aria-label="Clients">
+                <li className="bm-item">
+                  <span
+                    className="clogo logow-rbi"
+                    role="img"
+                    aria-label="Reserve Bank Innovation Hub"
+                  ></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-indusind" role="img" aria-label="IndusInd Bank"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hsbc" role="img" aria-label="HSBC"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hdfc" role="img" aria-label="HDFC Capital"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-cipla" role="img" aria-label="Cipla"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-nabh" role="img" aria-label="NABH"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-m3" role="img" aria-label="M3 Inc."></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-koita" role="img" aria-label="Koita Foundation"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-up" role="img" aria-label="Government of Uttar Pradesh"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-odisha" role="img" aria-label="Government of Odisha"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-qci" role="img" aria-label="Quality Council of India"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-msrdc" role="img" aria-label="MSRDC"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-dsci" role="img" aria-label="DSCI"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-egov" role="img" aria-label="eGov Foundation"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-samagra" role="img" aria-label="Samagra Governance"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-evalueserve" role="img" aria-label="Evalueserve"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-bookmyshow" role="img" aria-label="BookMyShow"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-tatadigital" role="img" aria-label="Tata Digital"></span>
+                </li>
+                <li className="bm-item">
+                  <span
+                    className="clogo logow-tataconsumer"
+                    role="img"
+                    aria-label="Tata Consumer Products"
+                  ></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-isb" role="img" aria-label="Indian School of Business"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-abfrl" role="img" aria-label="ABFRL"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-indiamart" role="img" aria-label="IndiaMART"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-oyo" role="img" aria-label="OYO"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-epic" role="img" aria-label="Epic Global"></span>
+                </li>
+                <li className="bm-item">
+                  <span
+                    className="clogo logow-lsc"
+                    role="img"
+                    aria-label="LSC Freights &amp; Logistics"
+                  ></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-rbi" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-indusind" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hsbc" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-hdfc" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-cipla" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-nabh" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-m3" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-koita" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-up" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-odisha" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-qci" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-msrdc" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-dsci" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-egov" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-samagra" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-evalueserve" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-bookmyshow" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-tatadigital" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-tataconsumer" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-isb" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-abfrl" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-indiamart" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-oyo" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-epic" aria-hidden="true"></span>
+                </li>
+                <li className="bm-item">
+                  <span className="clogo logow-lsc" aria-hidden="true"></span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
-      <section id="proof" className="relative overflow-hidden bg-ink pb-[104px]">
+      <section id="proof" className="relative overflow-hidden bg-ink pb-[108px]">
         <div className="proof-photo" aria-hidden="true"></div>
         <div className="proof-scrim" aria-hidden="true"></div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
-          <p className="cert-strip eyebrow pt-[22px] text-center">
-            ISO/IEC 27001:2022 · SOC 2 Type II · PII masking · AES-256 encryption · isolated hosting ·
-            role-based access
-          </p>
+          <p className="eyebrow gov-label pt-[22px] text-center">Enterprise-grade governance</p>
+          <ul className="cs-chips" aria-label="Security and compliance posture">
+            <li className="cs-chip">
+              <svg
+                className="cs-ic"
+                width="15"
+                height="15"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+                stroke="currentColor"
+                strokeWidth="1.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="8" cy="6.4" r="4.1" />
+                <path d="M5.6 10.1 4.6 14.4l3.4-1.7 3.4 1.7-1-4.3" />
+              </svg>
+              <span>ISO/IEC 27001:2022</span>
+            </li>
+            <li className="cs-chip">
+              <svg
+                className="cs-ic"
+                width="15"
+                height="15"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+                stroke="currentColor"
+                strokeWidth="1.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M8 1.9 13.3 4v4c0 3.1-2.1 5.4-5.3 6.3C4.8 13.4 2.7 11.1 2.7 8V4Z" />
+                <path d="m5.9 7.9 1.5 1.6 2.9-3.1" />
+              </svg>
+              <span>SOC 2 Type II</span>
+            </li>
+            <li className="cs-chip">
+              <svg
+                className="cs-ic"
+                width="15"
+                height="15"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+                stroke="currentColor"
+                strokeWidth="1.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M2.2 8s2.3-3.9 5.8-3.9S13.8 8 13.8 8s-2.3 3.9-5.8 3.9S2.2 8 2.2 8Z" />
+                <circle cx="8" cy="8" r="1.6" />
+                <path d="M3.2 3.2l9.6 9.6" />
+              </svg>
+              <span>PII masking</span>
+            </li>
+            <li className="cs-chip">
+              <svg
+                className="cs-ic"
+                width="15"
+                height="15"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+                stroke="currentColor"
+                strokeWidth="1.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="3.1" y="7.1" width="9.8" height="6.6" rx="1.6" />
+                <path d="M5.5 7.1V5.2a2.5 2.5 0 0 1 5 0v1.9" />
+                <path d="M8 9.8v1.3" />
+              </svg>
+              <span>AES-256 encryption</span>
+            </li>
+            <li className="cs-chip">
+              <svg
+                className="cs-ic"
+                width="15"
+                height="15"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+                stroke="currentColor"
+                strokeWidth="1.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="2.4" y="2.6" width="11.2" height="4.3" rx="1.3" />
+                <rect x="2.4" y="9.1" width="11.2" height="4.3" rx="1.3" />
+                <path d="M4.7 4.75h.01M4.7 11.25h.01" />
+              </svg>
+              <span>Isolated hosting</span>
+            </li>
+            <li className="cs-chip">
+              <svg
+                className="cs-ic"
+                width="15"
+                height="15"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+                stroke="currentColor"
+                strokeWidth="1.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="2.1" y="2.7" width="11.8" height="10.6" rx="2" />
+                <circle cx="8" cy="6.6" r="1.7" />
+                <path d="M5.2 11.2c.5-1.4 1.6-2.1 2.8-2.1s2.3.7 2.8 2.1" />
+              </svg>
+              <span>Role-based access</span>
+            </li>
+          </ul>
           <div className="cs-head mt-[96px] grid gap-8 lg:grid-cols-[1fr_auto] lg:gap-12">
             <div className="rv">
               <span className="eyebrow rv">Proof in production</span>
-              <h2 className="h-sec h-sec-sm mt-5 whitespace-nowrap">
-                Outcomes you <span className="text-white/40">can measure.</span>
-              </h2>
+              <h2 className="h-sec h-sec-sm mt-5">Governed outcomes, proven in production</h2>
             </div>
             <div className="rv" data-d="120">
-              <Link className="btn btn-light group" href="/case-studies">
-                See all case studies
+              <Link className="btn btn-light group" href="/case-studies/">
+                Read all case studies
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
                     d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
@@ -193,29 +382,32 @@ export default function HomePage() {
                 <span className="ca-ic">
                   <span className="ca-x"></span>
                 </span>
-                <span className="clogo ca-logo logow-rbi"></span>
-                <span className="ca-head">Grievance redressal that survives its own audit.</span>
+                <span className="clogo ca-logo logow-rbi" role="img" aria-label="RBI Innovation Hub"></span>
+                <span className="ca-head">
+                  81% reduction in TAT with a voice-first grievance protocol for banking
+                </span>
               </summary>
               <div className="ca-body">
                 <div className="ca-left">
                   <div className="ca-figs">
                     <div className="ca-fig">
-                      <div className="n tally">~80%</div>
-                      <div className="l">lower grievance turnaround</div>
+                      <div className="n tally">81%</div>
+                      <div className="l">Lower turnaround time</div>
                     </div>
                     <div className="ca-fig">
-                      <div className="n tally">~2 min</div>
-                      <div className="l">to register a grievance</div>
+                      <div className="n tally">2 min</div>
+                      <div className="l">Average registration time</div>
                     </div>
                     <div className="ca-fig">
                       <div className="n tally">12+</div>
-                      <div className="l">Indic languages, voice or text</div>
+                      <div className="l">Indic languages</div>
                     </div>
                   </div>
                   <p className="ca-copy">
-                    A multilingual, voice-first grievance protocol any regulated bank can adopt.
+                    A multilingual, voice-first grievance protocol that ensures audit-ready execution in
+                    adherence to complex regulatory mandates for tier-one banking.
                   </p>
-                  <Link className="ca-link group" href="/case-studies/rbi">
+                  <Link className="ca-link group" href="/case-studies/rbi-innovation-hub/">
                     <span className="ca-goic">
                       <svg width="10" height="10" viewBox="0 0 16 16" fill="none">
                         <path
@@ -227,11 +419,8 @@ export default function HomePage() {
                         />
                       </svg>
                     </span>
-                    See the case study
+                    Read the case study
                   </Link>
-                </div>
-                <div className="ca-shot">
-                  <img src="/img/c10ede5058.webp" alt="" loading="lazy" decoding="async" />
                 </div>
               </div>
             </details>
@@ -240,29 +429,32 @@ export default function HomePage() {
                 <span className="ca-ic">
                   <span className="ca-x"></span>
                 </span>
-                <span className="clogo ca-logo logow-indusind"></span>
-                <span className="ca-head">Trainer-independent learning for 50,000+ employees.</span>
+                <span className="clogo ca-logo logow-indusind" role="img" aria-label="IndusInd Bank"></span>
+                <span className="ca-head">
+                  33% increase in process adherence via trainer-independent learning
+                </span>
               </summary>
               <div className="ca-body">
                 <div className="ca-left">
                   <div className="ca-figs">
                     <div className="ca-fig">
-                      <div className="n tally">50,000+</div>
-                      <div className="l">employees trained</div>
+                      <div className="n tally">63%</div>
+                      <div className="l">Cost reduction in content creation</div>
                     </div>
                     <div className="ca-fig">
-                      <div className="n tally">150+</div>
-                      <div className="l">AI training videos</div>
+                      <div className="n tally">12,000+</div>
+                      <div className="l">Employees trained</div>
                     </div>
                     <div className="ca-fig">
-                      <div className="n tally">3,000+</div>
-                      <div className="l">man-hours saved</div>
+                      <div className="n tally">7,800+</div>
+                      <div className="l">Person-hours saved</div>
                     </div>
                   </div>
                   <p className="ca-copy">
-                    Policy documents turned into 150+ AI video modules, with no trainer dependency.
+                    Process training for the workforce with AI avatar-led, trainer-independent sessions with
+                    role-play simulations and instant query resolution.
                   </p>
-                  <Link className="ca-link group" href="/case-studies/indusind">
+                  <Link className="ca-link group" href="/case-studies/indusind-bank/">
                     <span className="ca-goic">
                       <svg width="10" height="10" viewBox="0 0 16 16" fill="none">
                         <path
@@ -274,11 +466,8 @@ export default function HomePage() {
                         />
                       </svg>
                     </span>
-                    See the case study
+                    Read the case study
                   </Link>
-                </div>
-                <div className="ca-shot">
-                  <img src="/img/68766e3b91.webp" alt="" loading="lazy" decoding="async" />
                 </div>
               </div>
             </details>
@@ -287,29 +476,36 @@ export default function HomePage() {
                 <span className="ca-ic">
                   <span className="ca-x"></span>
                 </span>
-                <span className="clogo ca-logo logow-tataneu2"></span>
-                <span className="ca-head">A gamified rewards engine that keeps a super-app engaged.</span>
+                <span
+                  className="clogo ca-logo logow-qci"
+                  role="img"
+                  aria-label="Quality Council of India"
+                ></span>
+                <span className="ca-head">
+                  78% reduction in application filing time through guided AI assistance
+                </span>
               </summary>
               <div className="ca-body">
                 <div className="ca-left">
                   <div className="ca-figs">
                     <div className="ca-fig">
-                      <div className="n tally">500,000+</div>
-                      <div className="l">users engaged</div>
+                      <div className="n tally">78%</div>
+                      <div className="l">Less application filing time</div>
                     </div>
                     <div className="ca-fig">
-                      <div className="n tally">700,000+</div>
-                      <div className="l">rewards issued</div>
+                      <div className="n tally">63%</div>
+                      <div className="l">Less assessor review time</div>
                     </div>
                     <div className="ca-fig">
-                      <div className="n tally">200,000+</div>
-                      <div className="l">rewards redeemed</div>
+                      <div className="n tally">910+</div>
+                      <div className="l">Requirements automated</div>
                     </div>
                   </div>
                   <p className="ca-copy">
-                    A gamified rewards engine with playable mechanics across a multi-vertical app.
+                    AI-powered assistance to evaluate accreditation documents for completeness and
+                    correctness, against strict standards to accelerate compliance checks at public scale.
                   </p>
-                  <Link className="ca-link group" href="/case-studies/tataneu">
+                  <Link className="ca-link group" href="/case-studies/">
                     <span className="ca-goic">
                       <svg width="10" height="10" viewBox="0 0 16 16" fill="none">
                         <path
@@ -321,11 +517,8 @@ export default function HomePage() {
                         />
                       </svg>
                     </span>
-                    See the case study
+                    Read the case study
                   </Link>
-                </div>
-                <div className="ca-shot">
-                  <img src="/img/116e0c0bba.webp" alt="" loading="lazy" decoding="async" />
                 </div>
               </div>
             </details>
@@ -334,31 +527,32 @@ export default function HomePage() {
                 <span className="ca-ic">
                   <span className="ca-x"></span>
                 </span>
-                <span className="clogo ca-logo logow-isb"></span>
+                <span className="clogo ca-logo logow-tataneu2" role="img" aria-label="Tata Neu"></span>
                 <span className="ca-head">
-                  Thousands of applications, screened consistently and without bias.
+                  27% increase in customer retention with a gamified rewards engine
                 </span>
               </summary>
               <div className="ca-body">
                 <div className="ca-left">
                   <div className="ca-figs">
                     <div className="ca-fig">
-                      <div className="n tally">~97%</div>
-                      <div className="l">concordance with faculty</div>
+                      <div className="n tally">45%</div>
+                      <div className="l">Reward redemption</div>
                     </div>
                     <div className="ca-fig">
-                      <div className="n tally">~80%</div>
-                      <div className="l">less evaluation time</div>
+                      <div className="n tally">0.75M+</div>
+                      <div className="l">Users engaged</div>
                     </div>
                     <div className="ca-fig">
-                      <div className="n tally">~5,000</div>
-                      <div className="l">man-hours saved a year</div>
+                      <div className="n tally">1.8M+</div>
+                      <div className="l">Rewards issued</div>
                     </div>
                   </div>
                   <p className="ca-copy">
-                    A candidate screen that stays consistent, explainable and blind to fluency bias.
+                    A gamified rewards engine turns complex app interactions of user cohorts into
+                    high-engagement playable mechanics at enterprise scale.
                   </p>
-                  <Link className="ca-link group" href="/case-studies/isb">
+                  <Link className="ca-link group" href="/case-studies/tata-neu/">
                     <span className="ca-goic">
                       <svg width="10" height="10" viewBox="0 0 16 16" fill="none">
                         <path
@@ -370,20 +564,68 @@ export default function HomePage() {
                         />
                       </svg>
                     </span>
-                    See the case study
+                    Read the case study
                   </Link>
                 </div>
-                <div className="ca-shot">
-                  <img src="/img/1b4eaeebf1.webp" alt="" loading="lazy" decoding="async" />
+              </div>
+            </details>
+            <details className="ca-row rv" data-d="200">
+              <summary>
+                <span className="ca-ic">
+                  <span className="ca-x"></span>
+                </span>
+                <span
+                  className="clogo ca-logo logow-isb"
+                  role="img"
+                  aria-label="Indian School of Business"
+                ></span>
+                <span className="ca-head">
+                  74% reduction in evaluation time through AI-native candidate screening
+                </span>
+              </summary>
+              <div className="ca-body">
+                <div className="ca-left">
+                  <div className="ca-figs">
+                    <div className="ca-fig">
+                      <div className="n tally">97%</div>
+                      <div className="l">Faculty concordance</div>
+                    </div>
+                    <div className="ca-fig">
+                      <div className="n tally">9,200+</div>
+                      <div className="l">Candidates evaluated</div>
+                    </div>
+                    <div className="ca-fig">
+                      <div className="n tally">6,100</div>
+                      <div className="l">Person-hours saved a year</div>
+                    </div>
+                  </div>
+                  <p className="ca-copy">
+                    A rubric-based evaluation methodology for consistent and explainable candidate screening
+                    at scale, free of bias.
+                  </p>
+                  <Link className="ca-link group" href="/case-studies/indian-school-of-business/">
+                    <span className="ca-goic">
+                      <svg width="10" height="10" viewBox="0 0 16 16" fill="none">
+                        <path
+                          d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    Read the case study
+                  </Link>
                 </div>
               </div>
             </details>
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pt-[86px] pb-[104px]">
+      <section className="relative overflow-hidden bg-ink pt-[86px] pb-[108px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
-          <span className="eyebrow rv">Our Enterprise Suite</span>
+          <span className="eyebrow rv">The enterprise AI suite</span>
           <div className="pz-split mt-7">
             <div className="pz-mark rv">
               <span className="pyzo-logo xl">
@@ -416,11 +658,8 @@ export default function HomePage() {
                 </svg>
               </span>
             </div>
-            <p className="pz-lede h-sec h-sec-sm rv" data-d="80">
-              Agentic AI that survives scrutiny.
-            </p>
             <div className="pz-cta rv" data-d="120">
-              <Link className="btn btn-light group" href="/pyzo">
+              <Link className="btn btn-light group" href="/pyzo/">
                 Explore PYZO
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
@@ -434,374 +673,285 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="mt-[62px] grid gap-4 lg:grid-cols-3">
-            <div className="flex flex-col gap-4">
-              <Link className="card card-lit flex h-[336px] flex-col p-5 text-left rv" href="/pyzo/atlas">
-                <div className="bento-art">
-                  <div className="mock mb-4 overflow-hidden">
-                    <div className="art-film on-dark relative h-[86px]">
-                      <span className="absolute inset-0 grid place-items-center">
-                        <span className="grid h-8 w-8 place-items-center rounded-full bg-white/90 text-ink">
-                          <svg width="10" height="10" viewBox="0 0 12 12" fill="currentColor">
-                            <path d="M3.6 2.2 9.4 6l-5.8 3.8z" />
-                          </svg>
-                        </span>
-                      </span>{" "}
-                      <span className="absolute left-2 top-2 rounded bg-black/45 px-1.5 py-0.5 text-[7px] tracking-[.12em] text-white/70">
-                        SOP 04 · AI TRAINER
-                      </span>{" "}
-                      <span className="absolute bottom-0 left-0 right-0 h-[3px] bg-white/10">
-                        <span className="block h-full w-[62%] bg-teal"></span>
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-1.5 px-2.5 py-2">
-                      <span className="lang">EN</span>
-                      <span className="lang">HI</span>
-                      <span className="lang">TA</span>{" "}
-                      <span className="ml-auto text-[7.5px] text-white/35">Assessment 8/10</span>
-                    </div>
-                  </div>
-                </div>
-                <h3 className="font-display text-[15px] font-medium">
-                  <span className="pzlogo pz-card-logo pzlogo-atlas" role="img" aria-label="Atlas"></span>
+          <div className="pz-grid mt-[62px]">
+            <Link className="card pz-card flex flex-col p-5 text-left rv" href="/pyzo/atlas/">
+              <div className="bento-art">
+                <div
+                  data-pyzo-flow="atlas"
+                  data-start="full"
+                  data-play="restart"
+                  data-trigger=".pz-card"
+                ></div>
+              </div>
+              <div className="pz-card-head">
+                <h3 className="pz-card-lock">
+                  <span className="pz-card-mark pzlogo-atlas" aria-hidden="true"></span>
+                  <span className="pz-card-name">Atlas</span>
                 </h3>
-                <p className="mt-[3px] text-[11.5px] text-teal/85">Training Coach</p>
-                <p className="mt-3 text-[11.5px] leading-[1.65] text-white/45">
-                  Turns SOPs into on-demand multilingual training, delivered by an AI avatar of your best
-                  trainer.
-                </p>
-              </Link>{" "}
-              <Link className="card flex h-[300px] flex-col p-5 text-left rv" href="/pyzo/forge">
-                <div className="bento-art">
-                  <div className="mock mb-5 p-3">
-                    <div className="flex items-center">
-                      <span className="node">CRM</span>
-                      <span className="hop"></span> <span className="node">ERP</span>
-                      <span className="hop"></span> <span className="node">Portal</span>
-                    </div>
-                    <div className="mt-3 space-y-1.5">
-                      <div className="flex items-center gap-1.5">
-                        <span className="tick ok"></span>
-                        <span className="text-[7.5px] text-white/45">Extract claim, 214 rows</span>
-                      </div>
-                      <div className="flex items-center gap-1.5">
-                        <span className="tick warn"></span>
-                        <span className="text-[7.5px] text-white/45">Field moved, selector repaired</span>
-                        <span className="ml-auto text-[7px] text-teal">self-healed</span>
-                      </div>
-                      <div className="flex items-center gap-1.5">
-                        <span className="tick ok"></span>
-                        <span className="text-[7.5px] text-white/45">Posted to queue</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <h3 className="font-display text-[15px] font-medium">
-                  <span className="pzlogo pz-card-logo pzlogo-forge" role="img" aria-label="Forge"></span>
+                <p className="pz-card-role text-[11.5px] text-teal/85">Training coach</p>
+              </div>
+              <p className="pz-card-note">
+                Converts static SOPs and compliance manuals into 24/7 interactive AI video modules and
+                role-play simulations.
+              </p>
+            </Link>
+            <Link className="card pz-card flex flex-col p-5 text-left rv" href="/pyzo/compass/">
+              <div className="bento-art">
+                <div
+                  data-pyzo-flow="compass"
+                  data-start="full"
+                  data-play="restart"
+                  data-trigger=".pz-card"
+                ></div>
+              </div>
+              <div className="pz-card-head">
+                <h3 className="pz-card-lock">
+                  <span className="pz-card-mark pzlogo-compass" aria-hidden="true"></span>
+                  <span className="pz-card-name">Compass</span>
                 </h3>
-                <p className="mt-[3px] text-[11.5px] text-teal/85">Workflow Executor</p>
-                <p className="mt-3 text-[11.5px] leading-[1.65] text-white/45">
-                  Automates workflows across desktop and browser applications, and repairs its own broken
-                  steps.
-                </p>
-              </Link>
-            </div>
-            <div className="flex flex-col gap-4">
-              <Link className="card flex h-[300px] flex-col p-5 text-left rv" href="/pyzo/evio">
-                <div className="bento-art">
-                  <div className="art-media relative mb-5 h-[118px] overflow-hidden rounded-[8px]">
-                    <Waveform
-                      n={40}
-                      className="absolute inset-0 flex items-center justify-center gap-[3px]"
-                    />
-                    <div className="absolute inset-0 grid place-items-center">
-                      <span className="grid h-10 w-10 place-items-center rounded-full art-dot">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M6.6 3.5c.5-.3 1.2-.2 1.6.3l2 2.6c.4.5.3 1.2-.2 1.6l-1.3 1c-.3.2-.4.6-.2.9a12 12 0 0 0 4.6 4.6c.3.2.7.1.9-.2l1-1.3c.4-.5 1.1-.6 1.6-.2l2.6 2c.5.4.6 1.1.3 1.6l-1.2 1.9c-.5.8-1.5 1.2-2.4 1A16.8 16.8 0 0 1 4.4 7.2c-.2-.9.2-1.9 1-2.4Z" />
-                        </svg>
-                      </span>
-                    </div>
-                    <span className="art-pill absolute left-2 top-2">LIVE · 15 LANGUAGES</span>
-                    <span className="art-pill art-pill-accent absolute bottom-2 right-2">
-                      Transfer to human
-                    </span>
-                  </div>
-                </div>
-                <h3 className="font-display text-[15px] font-medium">
-                  <span className="pzlogo pz-card-logo pzlogo-evio" role="img" aria-label="Evio"></span>
+                <p className="pz-card-role text-[11.5px] text-teal/85">Business analyst</p>
+              </div>
+              <p className="pz-card-note">
+                Unlocks enterprise knowledge repositories to execute complex, multi-system queries and actions
+                with full source traceability.
+              </p>
+            </Link>
+            <Link className="card pz-card flex flex-col p-5 text-left rv" href="/pyzo/evio/">
+              <div className="bento-art">
+                <div
+                  data-pyzo-flow="evio"
+                  data-start="full"
+                  data-play="restart"
+                  data-trigger=".pz-card"
+                ></div>
+              </div>
+              <div className="pz-card-head">
+                <h3 className="pz-card-lock">
+                  <span className="pz-card-mark pzlogo-evio" aria-hidden="true"></span>
+                  <span className="pz-card-name">Evio</span>
                 </h3>
-                <p className="mt-[3px] text-[11.5px] text-teal/85">Call Operator</p>
-                <p className="mt-3 text-[11.5px] leading-[1.65] text-white/45">
-                  Handles inbound and outbound calls in 15+ languages, and transfers to a human when needed.
-                </p>
-              </Link>{" "}
-              <Link className="card flex h-[336px] flex-col p-5 text-left rv" href="/pyzo/loupe">
-                <div className="bento-art">
-                  <div className="mock mb-5 p-3">
-                    <div className="space-y-1.5">
-                      <div className="frow">
-                        <span className="flab">PAN</span>
-                        <span className="fval">ABCDE1234F</span>
-                        <span className="tick ok"></span>
-                      </div>
-                      <div className="frow">
-                        <span className="flab">Turnover</span>
-                        <span className="fval">₹4.2 Cr</span>
-                        <span className="tick ok"></span>
-                      </div>
-                      <div className="frow is-flagged">
-                        <span className="flab">GST cert</span>
-                        <span className="fval">expired 03/24</span>
-                        <span className="tick warn"></span>
-                      </div>
-                    </div>
-                    <div className="mt-2.5 flex items-center gap-1.5 border-t border-white/10 pt-2">
-                      <span className="text-[7px] text-white/35">12 of 14 fields complete</span>{" "}
-                      <span className="ml-auto text-[7px] text-teal">2 to fix before submit</span>
-                    </div>
-                  </div>
-                </div>
-                <h3 className="font-display text-[15px] font-medium">
-                  <span className="pzlogo pz-card-logo pzlogo-loupe" role="img" aria-label="Loupe"></span>
+                <p className="pz-card-role text-[11.5px] text-teal/85">Voice operator</p>
+              </div>
+              <p className="pz-card-note">
+                Manages high-volume voice conversations across 15+ languages with automated intent routing and
+                seamless human handoff.
+              </p>
+            </Link>
+            <Link className="card pz-card flex flex-col p-5 text-left rv" href="/pyzo/forge/">
+              <div className="bento-art">
+                <div
+                  data-pyzo-flow="forge"
+                  data-start="full"
+                  data-play="restart"
+                  data-trigger=".pz-card"
+                ></div>
+              </div>
+              <div className="pz-card-head">
+                <h3 className="pz-card-lock">
+                  <span className="pz-card-mark pzlogo-forge" aria-hidden="true"></span>
+                  <span className="pz-card-name">Forge</span>
                 </h3>
-                <p className="mt-[3px] text-[11.5px] text-teal/85">Application Assistant</p>
-                <p className="mt-3 text-[11.5px] leading-[1.65] text-white/45">
-                  Guides and validates complex applications field by field, for applicant and reviewer alike.
-                </p>
-              </Link>
-            </div>
-            <div className="flex flex-col gap-4">
-              <Link className="card card-lit flex h-[354px] flex-col p-5 text-left rv" href="/pyzo/compass">
-                <div className="bento-art">
-                  <div className="mock mb-4 p-2.5">
-                    <div className="flex items-center gap-1.5 rounded-[6px] border border-white/10 bg-white/[.04] px-2 py-1.5">
-                      <svg
-                        width="9"
-                        height="9"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        className="shrink-0 text-teal"
-                      >
-                        <circle cx="7" cy="7" r="4.6" stroke="currentColor" strokeWidth="1.4" />
-                        <path
-                          d="m10.6 10.6 3 3"
-                          stroke="currentColor"
-                          strokeWidth="1.4"
-                          strokeLinecap="round"
-                        />
-                      </svg>{" "}
-                      <span className="text-[7.5px] text-white/60">
-                        Which branches missed SLA last quarter?
-                      </span>
-                    </div>
-                    <div className="mt-3 flex items-end gap-1.5">
-                      <span className="cbar" style={{ height: "14px" }}></span>
-                      <span className="cbar" style={{ height: "22px" }}></span>
-                      <span className="cbar" style={{ height: "11px" }}></span>
-                      <span className="cbar" style={{ height: "27px" }}></span>
-                      <span className="cbar" style={{ height: "18px" }}></span>
-                      <span className="cbar" style={{ height: "31px" }}></span>
-                    </div>
-                    <div className="mt-3 flex items-center gap-1.5">
-                      <span className="src">Policy v4.2</span>
-                      <span className="src">Ops ledger</span>{" "}
-                      <span className="ml-auto text-[7px] text-teal/80">3 sources cited</span>
-                    </div>
-                  </div>
-                </div>
-                <h3 className="font-display text-[15px] font-medium">
-                  <span className="pzlogo pz-card-logo pzlogo-compass" role="img" aria-label="Compass"></span>
+                <p className="pz-card-role text-[11.5px] text-teal/85">Workflow executor</p>
+              </div>
+              <p className="pz-card-note">
+                Executes cross-application workflows across desktop, browser and legacy systems, with
+                self-healing process execution.
+              </p>
+            </Link>
+            <Link className="card pz-card flex flex-col p-5 text-left rv" href="/pyzo/loupe/">
+              <div className="bento-art">
+                <div
+                  data-pyzo-flow="loupe"
+                  data-start="full"
+                  data-play="restart"
+                  data-trigger=".pz-card"
+                ></div>
+              </div>
+              <div className="pz-card-head">
+                <h3 className="pz-card-lock">
+                  <span className="pz-card-mark pzlogo-loupe" aria-hidden="true"></span>
+                  <span className="pz-card-name">Loupe</span>
                 </h3>
-                <p className="mt-[3px] text-[11.5px] text-teal/85">Business Analyst</p>
-                <p className="mt-3 text-[11.5px] leading-[1.65] text-white/45">
-                  Retrieves institutional knowledge and leverages it to execute customisable actions across
-                  functions.
-                </p>
-              </Link>{" "}
-              <Link className="card flex h-[282px] flex-col p-5 text-left rv" href="/pyzo/prism">
-                <div className="bento-art">
-                  <div className="mock mb-5 p-3">
-                    <div className="flex items-center justify-between">
-                      <span className="text-[8px] tracking-[.12em] text-white/40">RUBRIC v3</span>{" "}
-                      <span className="rounded-full border border-teal/40 bg-teal/10 px-2 py-0.5 text-[8px] text-teal">
-                        Score 79
-                      </span>
-                    </div>
-                    <div className="mt-3 space-y-2">
-                      <div className="flex items-center gap-2">
-                        <span className="w-[64px] shrink-0 text-[7.5px] text-white/45">Evidence quality</span>
-                        <span className="bar flex-1">
-                          <span
-                            className="block h-full rounded-[2px] bg-teal/70"
-                            style={{ width: "82%" }}
-                          ></span>
-                        </span>
-                        <span className="w-[16px] text-right text-[7.5px] text-white/60">82</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="w-[64px] shrink-0 text-[7.5px] text-white/45">Policy fit</span>
-                        <span className="bar flex-1">
-                          <span
-                            className="block h-full rounded-[2px] bg-teal/70"
-                            style={{ width: "64%" }}
-                          ></span>
-                        </span>
-                        <span className="w-[16px] text-right text-[7.5px] text-white/60">64</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="w-[64px] shrink-0 text-[7.5px] text-white/45">Risk flags</span>
-                        <span className="bar flex-1">
-                          <span
-                            className="block h-full rounded-[2px] bg-teal/70"
-                            style={{ width: "91%" }}
-                          ></span>
-                        </span>
-                        <span className="w-[16px] text-right text-[7.5px] text-white/60">91</span>
-                      </div>
-                    </div>
-                    <p className="mt-3 text-[7px] leading-[1.5] text-white/30">
-                      Scored against the rubric you defined, with the reasoning kept.
-                    </p>
-                  </div>
-                </div>
-                <h3 className="font-display text-[15px] font-medium">
-                  <span className="pzlogo pz-card-logo pzlogo-prism" role="img" aria-label="Prism"></span>
+                <p className="pz-card-role text-[11.5px] text-teal/85">Application assistant</p>
+              </div>
+              <p className="pz-card-note">
+                Guides complex form completion field by field, validating inputs in real time for applicants
+                and compliance reviewers.
+              </p>
+            </Link>
+            <Link className="card pz-card flex flex-col p-5 text-left rv" href="/pyzo/prism/">
+              <div className="bento-art">
+                <div
+                  data-pyzo-flow="prism"
+                  data-start="full"
+                  data-play="restart"
+                  data-trigger=".pz-card"
+                ></div>
+              </div>
+              <div className="pz-card-head">
+                <h3 className="pz-card-lock">
+                  <span className="pz-card-mark pzlogo-prism" aria-hidden="true"></span>
+                  <span className="pz-card-name">Prism</span>
                 </h3>
-                <p className="mt-[3px] text-[11.5px] text-teal/85">Evaluation Consultant</p>
-                <p className="mt-3 text-[11.5px] leading-[1.65] text-white/45">
-                  Scores any file against a rubric you define, with judgement you can defend afterwards.
-                </p>
-              </Link>
-            </div>
+                <p className="pz-card-role text-[11.5px] text-teal/85">Evaluation consultant</p>
+              </div>
+              <p className="pz-card-note">
+                Evaluates documents and applications against defined rubrics, providing explainable scoring
+                ready for audit scrutiny.
+              </p>
+            </Link>
           </div>
         </div>
       </section>
       <section className="relative overflow-hidden bg-ink py-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
-          <span className="eyebrow rv">What we engineer</span>
+          <span className="eyebrow rv">Engineering intelligence</span>
           <h2 className="h-sec rv" data-d="60">
-            Engineering AI that fits the enterprise.
+            Enterprise AI engineered to survive scrutiny
           </h2>
-          <p className="lede mt-5 max-w-[620px] rv" data-d="100">
-            We engineer custom AI systems around your workflows, data and controls, deploy them inside your
-            environment, and answer for what they produce.
-          </p>
           <div className="mt-[54px] grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <Link
-              className="card group flex flex-col p-4 text-left rv"
-              data-d="0"
-              href="/services/agentic-ai"
-            >
-              <div className="relative h-[168px] w-full overflow-hidden rounded-[10px]">
-                <div className="pimg pimg-agentic"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#000306]/60 via-transparent to-[#000306]/20"></div>
-              </div>
-              <h3 className="mt-5 font-display text-[14.5px] font-medium">Agentic AI Systems</h3>
-              <p className="mt-2 text-[11.5px] leading-[1.7] text-white/45">
-                AI agents that execute multi-step workflows, use enterprise tools and data, and make decisions
-                within defined boundaries, bringing people in when human judgement is needed.
-              </p>
-              <span className="mt-5 inline-flex text-teal transition-transform duration-300 group-hover:translate-x-1">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path
-                    d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+            <article className="card we-card group flex flex-col p-5 text-left rv" data-d="0">
+              <div className="ct-top">
+                <span className="ct-ic">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
                     stroke="currentColor"
                     strokeWidth="1.2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </Link>
-            <Link
-              className="card group flex flex-col p-4 text-left rv"
-              data-d="70"
-              href="/services/ai-governance"
-            >
-              <div className="relative h-[168px] w-full overflow-hidden rounded-[10px]">
-                <div className="pimg pimg-governance"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#000306]/60 via-transparent to-[#000306]/20"></div>
+                  >
+                    <rect x="6.6" y="6.6" width="6.8" height="6.8" rx="1.6" />
+                    <path d="M10 2.4v4.2M10 13.4v4.2M2.4 10h4.2M13.4 10h4.2" />
+                    <circle cx="10" cy="2.2" r="1.1" />
+                    <circle cx="10" cy="17.8" r="1.1" />
+                    <circle cx="2.2" cy="10" r="1.1" />
+                    <circle cx="17.8" cy="10" r="1.1" />
+                  </svg>
+                </span>
+                <h3 className="ct-t font-display text-[14.5px] font-medium">Agentic AI &amp; Automation</h3>
               </div>
-              <h3 className="mt-5 font-display text-[14.5px] font-medium">AI Governance</h3>
-              <p className="mt-2 text-[11.5px] leading-[1.7] text-white/45">
-                Governance engineered into the system from the start with traceability, permissions, human
-                oversight and controls designed for regulated and high-stakes environments.
+              <p className="we-note">
+                Autonomous agents engineered to execute multi-step enterprise workflows, connect with legacy
+                databases and make decisions within strict, human-in-the-loop boundaries.
               </p>
-              <span className="mt-5 inline-flex text-teal transition-transform duration-300 group-hover:translate-x-1">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path
-                    d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+              <Link className="iq-go we-go group" href="/engineering/agentic-ai/">
+                Explore Agentic AI
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </article>
+            <article className="card we-card group flex flex-col p-5 text-left rv" data-d="70">
+              <div className="ct-top">
+                <span className="ct-ic">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
                     stroke="currentColor"
                     strokeWidth="1.2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </Link>
-            <Link
-              className="card group flex flex-col p-4 text-left rv"
-              data-d="140"
-              href="/services/enterprise-ai"
-            >
-              <div className="relative h-[168px] w-full overflow-hidden rounded-[10px]">
-                <div className="pimg pimg-enterprise"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#000306]/60 via-transparent to-[#000306]/20"></div>
+                  >
+                    <path d="M10 2.3 16.6 4.9v5c0 3.9-2.6 6.7-6.6 7.8C6 16.6 3.4 13.8 3.4 9.9v-5Z" />
+                    <path d="m7.4 9.9 1.9 2 3.5-3.9" />
+                  </svg>
+                </span>
+                <h3 className="ct-t font-display text-[14.5px] font-medium">
+                  AI Governance &amp; Evaluation
+                </h3>
               </div>
-              <h3 className="mt-5 font-display text-[14.5px] font-medium">Enterprise AI</h3>
-              <p className="mt-2 text-[11.5px] leading-[1.7] text-white/45">
-                AI foundations engineered around your existing enterprise stack, connecting models, data and
-                legacy systems into secure, scalable systems your organisation can operate and extend.
+              <p className="we-note">
+                Governance engineered directly into the system architecture, providing full traceability,
+                audit-ready logs, role-based controls and evaluation rubrics tailored for regulated
+                environments.
               </p>
-              <span className="mt-5 inline-flex text-teal transition-transform duration-300 group-hover:translate-x-1">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path
-                    d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+              <Link className="iq-go we-go group" href="/engineering/ai-governance/">
+                Explore AI Governance
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </article>
+            <article className="card we-card group flex flex-col p-5 text-left rv" data-d="140">
+              <div className="ct-top">
+                <span className="ct-ic">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
                     stroke="currentColor"
                     strokeWidth="1.2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </Link>
+                  >
+                    <ellipse cx="10" cy="5" rx="6.4" ry="2.5" />
+                    <path d="M3.6 5v10c0 1.4 2.9 2.5 6.4 2.5s6.4-1.1 6.4-2.5V5" />
+                    <path d="M3.6 10c0 1.4 2.9 2.5 6.4 2.5s6.4-1.1 6.4-2.5" />
+                  </svg>
+                </span>
+                <h3 className="ct-t font-display text-[14.5px] font-medium">
+                  Data Architecture &amp; Infrastructure
+                </h3>
+              </div>
+              <p className="we-note">
+                Data foundations, vector storage and secure enterprise infrastructure engineered to feed
+                context to AI agents while maintaining strict isolation and access controls.
+              </p>
+              <Link className="iq-go we-go group" href="/engineering/enterprise-ai/">
+                Explore Data Architecture
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </article>
           </div>
         </div>
       </section>
       <section className="relative overflow-hidden bg-ink py-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <div className="glow-top" aria-hidden="true"></div>
-          <span className="eyebrow rv">More than AI</span>
+          <span className="eyebrow rv">Operational accountability</span>
           <h2 className="h-sec rv" data-d="60">
-            Why enterprises trust us in production.
+            Enterprises trust us in production and beyond
           </h2>
-          <p className="lede mt-5 max-w-[660px] rv" data-d="100">
-            We engineer and operate AI systems inside real enterprise environments, engineered for
-            reliability, governance, and measurable outcomes.
-          </p>
           <div className="wy-list mt-[46px]">
             <div className="wy-row rv" data-d="0">
               <div className="wy-art">
                 <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
                   <g className="ink" stroke="currentColor" fill="none" strokeWidth="1.4">
-                    <path d="M60 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M100 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M140 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M180 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M220 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M260 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M300 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M340 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M380 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 60H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 100H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 140H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 180H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 220H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 260H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 300H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 340H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 380H380" strokeWidth=".5" opacity=".18" />
                     <rect x="120" y="100" width="180" height="38" rx="5" />
                     <circle cx="140" cy="119" r="4" />
                     <rect x="120" y="152" width="180" height="38" rx="5" />
@@ -823,12 +973,12 @@ export default function HomePage() {
               </div>
               <div className="wy-txt">
                 <div className="wy-head">
-                  <span className="wy-n">01</span>
                   <h3>We operate it in production</h3>
                 </div>
                 <p>
-                  The working system is the deliverable. We deploy it into your estate, operate it there, and
-                  stay accountable for its behaviour after the engagement ends.
+                  The working system is the deliverable. We deploy directly into your cloud or on-premise
+                  environment, manage operations daily, and remain fully accountable for performance long
+                  after launch.
                 </p>
               </div>
             </div>
@@ -836,24 +986,6 @@ export default function HomePage() {
               <div className="wy-art">
                 <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
                   <g className="ink" stroke="currentColor" fill="none" strokeWidth="1.4">
-                    <path d="M60 40V380" strokeWidth=".5" opacity=".16" />
-                    <path d="M100 40V380" strokeWidth=".5" opacity=".16" />
-                    <path d="M140 40V380" strokeWidth=".5" opacity=".16" />
-                    <path d="M180 40V380" strokeWidth=".5" opacity=".16" />
-                    <path d="M220 40V380" strokeWidth=".5" opacity=".16" />
-                    <path d="M260 40V380" strokeWidth=".5" opacity=".16" />
-                    <path d="M300 40V380" strokeWidth=".5" opacity=".16" />
-                    <path d="M340 40V380" strokeWidth=".5" opacity=".16" />
-                    <path d="M380 40V380" strokeWidth=".5" opacity=".16" />
-                    <path d="M40 60H380" strokeWidth=".5" opacity=".16" />
-                    <path d="M40 100H380" strokeWidth=".5" opacity=".16" />
-                    <path d="M40 140H380" strokeWidth=".5" opacity=".16" />
-                    <path d="M40 180H380" strokeWidth=".5" opacity=".16" />
-                    <path d="M40 220H380" strokeWidth=".5" opacity=".16" />
-                    <path d="M40 260H380" strokeWidth=".5" opacity=".16" />
-                    <path d="M40 300H380" strokeWidth=".5" opacity=".16" />
-                    <path d="M40 340H380" strokeWidth=".5" opacity=".16" />
-                    <path d="M40 380H380" strokeWidth=".5" opacity=".16" />
                     <rect x="86" y="96" width="64" height="56" rx="9" />
                     <rect x="170" y="96" width="64" height="56" rx="9" />
                     <rect x="254" y="96" width="64" height="56" rx="9" />
@@ -892,12 +1024,11 @@ export default function HomePage() {
               </div>
               <div className="wy-txt">
                 <div className="wy-head">
-                  <span className="wy-n">02</span>
                   <h3>Agentic foundation</h3>
                 </div>
                 <p>
-                  Six capabilities on one shared foundation of reusable blocks. Every deployment hardens the
-                  layer beneath, so the next use case starts further along than the last one did.
+                  Six PYZO capabilities on one shared foundation of reusable layers. Every deployment hardens
+                  the core, so each subsequent use case launches faster and performs better.
                 </p>
               </div>
             </div>
@@ -905,24 +1036,6 @@ export default function HomePage() {
               <div className="wy-art">
                 <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
                   <g className="ink" stroke="currentColor" fill="none" strokeWidth="1.4">
-                    <path d="M60 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M100 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M140 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M180 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M220 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M260 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M300 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M340 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M380 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 60H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 100H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 140H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 180H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 220H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 260H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 300H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 340H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 380H380" strokeWidth=".5" opacity=".18" />
                     <rect x="92" y="80" width="196" height="272" rx="8" />
                     <path d="M116 110h84" opacity=".7" />
                     <path d="M116 132h132" opacity=".7" />
@@ -945,12 +1058,12 @@ export default function HomePage() {
               </div>
               <div className="wy-txt">
                 <div className="wy-head">
-                  <span className="wy-n">03</span>
                   <h3>Engineered for scrutiny</h3>
                 </div>
                 <p>
-                  Every decision is logged with its inputs at the moment it happens, so a specific case can be
-                  reconstructed months later, for a risk committee, an auditor or a regulator.
+                  Every agentic decision is logged with its full source inputs in real time. Any execution can
+                  be reconstructed months later for a risk committee, an internal auditor, or a regulatory
+                  body.
                 </p>
               </div>
             </div>
@@ -958,24 +1071,6 @@ export default function HomePage() {
               <div className="wy-art">
                 <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
                   <g className="ink" stroke="currentColor" fill="none" strokeWidth="1.4">
-                    <path d="M60 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M100 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M140 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M180 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M220 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M260 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M300 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M340 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M380 40V380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 60H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 100H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 140H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 180H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 220H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 260H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 300H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 340H380" strokeWidth=".5" opacity=".18" />
-                    <path d="M40 380H380" strokeWidth=".5" opacity=".18" />
                     <path d="M80 340h280M80 90v250" />
                     <rect x="104" y="314" width="20" height="26" />
                     <rect x="144" y="309" width="20" height="31" />
@@ -993,12 +1088,12 @@ export default function HomePage() {
               </div>
               <div className="wy-txt">
                 <div className="wy-head">
-                  <span className="wy-n">04</span>
                   <h3>Measurable outcomes</h3>
                 </div>
                 <p>
-                  The measure is set with you before any code is written, and reported the same way
-                  afterwards. A figure that moves only because the definition changed is not an outcome.
+                  Target metrics are defined jointly before any code is written and measured strictly against
+                  that baseline afterwards. A figure that moves only because the definition changed is not an
+                  outcome.
                 </p>
               </div>
             </div>
@@ -1007,8 +1102,8 @@ export default function HomePage() {
       </section>
       <section id="sectors" className="relative overflow-hidden bg-ink py-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
-          <span className="eyebrow rv">Industries</span>
-          <h2 className="h-sec rv">Fluent in your industry.</h2>
+          <span className="eyebrow rv">Industry expertise</span>
+          <h2 className="h-sec rv">Engineered for your industry constraints</h2>
           <div className="iq-grid mt-[46px]">
             <article className="iq-cell rv" data-d="0">
               <div className="iq-top">
@@ -1031,10 +1126,10 @@ export default function HomePage() {
                 <h3 className="iq-name">Banking &amp; Financial Services</h3>
               </div>
               <p className="iq-note">
-                Underwriting, servicing, compliance and grievance, engineered to be questioned because here it
-                will be.
+                Agentic workflows for underwriting, servicing, compliance, and grievance, engineered to be
+                questioned.
               </p>
-              <Link className="iq-go group" href="/industries/bfsi">
+              <Link className="iq-go group" href="/industries/bfsi/">
                 Explore BFSI
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -1065,10 +1160,10 @@ export default function HomePage() {
                 <h3 className="iq-name">Healthcare &amp; Life Sciences</h3>
               </div>
               <p className="iq-note">
-                AI systems for clinical, operational and patient-facing workflows, designed around privacy,
-                governance and human oversight.
+                Agentic AI systems for clinical, operational, and patient-facing workflows, architected around
+                strict privacy and human oversight loops.
               </p>
-              <Link className="iq-go group" href="/industries/healthcare">
+              <Link className="iq-go group" href="/industries/healthcare/">
                 Explore Healthcare
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -1099,10 +1194,10 @@ export default function HomePage() {
                 <h3 className="iq-name">Public Sector &amp; Governance</h3>
               </div>
               <p className="iq-note">
-                AI systems for citizen services, accreditation and institutional knowledge, auditable by
-                design and held to a public standard.
+                AI agents for citizen grievance, accreditation, and institutional workflows, auditable by
+                design and engineered to survive public scrutiny.
               </p>
-              <Link className="iq-go group" href="/industries/public-sector">
+              <Link className="iq-go group" href="/industries/public-sector/">
                 Explore Public Sector
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -1133,10 +1228,10 @@ export default function HomePage() {
                 <h3 className="iq-name">Consumer &amp; Retail</h3>
               </div>
               <p className="iq-note">
-                AI systems for customer experience, demand and inventory, engineered to hold at the volume a
-                peak week produces.
+                Gamified rewards, intelligent recommendation, and customer engagement engines, engineered to
+                operate at peak enterprise scale.
               </p>
-              <Link className="iq-go group" href="/industries/retail">
+              <Link className="iq-go group" href="/industries/retail/">
                 Explore Retail
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -1158,74 +1253,127 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <span className="eyebrow rv">From the operators</span>
           <h2 className="h-sec rv" data-d="60">
-            Ideas, evidence and outcomes.
+            Practitioner insights, outcomes, and evidence
           </h2>
           <div className="mt-[54px] grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <Link className="card group flex flex-col p-4 text-left rv" data-d="0" href="/blog">
-              <div className="relative h-[168px] w-full overflow-hidden rounded-[10px]">
-                <div className="pimg pimg-team"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#000306]/60 via-transparent to-[#000306]/20"></div>
-              </div>
-              <h3 className="mt-5 font-display text-[14.5px] font-medium">Blog</h3>
-              <p className="mt-2 text-[11.5px] leading-[1.7] text-white/45">
-                Practical thinking on AI, enterprise systems and what it takes to move from ideas to
-                production.
-              </p>
-              <span className="mt-5 inline-flex text-teal transition-transform duration-300 group-hover:translate-x-1">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path
-                    d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+            <article className="card we-card group flex flex-col p-5 text-left rv" data-d="0">
+              <div className="ct-top">
+                <span className="ct-ic">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
                     stroke="currentColor"
                     strokeWidth="1.2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </Link>
-            <Link className="card group flex flex-col p-4 text-left rv" data-d="80" href="/reports">
-              <div className="relative h-[168px] w-full overflow-hidden rounded-[10px]">
-                <div className="pimg pimg-scrutiny"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#000306]/60 via-transparent to-[#000306]/20"></div>
+                  >
+                    <path d="M4 3.2h8.4L16.4 7v9.8H4Z" />
+                    <path d="M12.4 3.2V7h4" />
+                    <path d="M6.8 10h6.4M6.8 13.2h4.6" />
+                  </svg>
+                </span>
+                <h3 className="ct-t font-display text-[14.5px] font-medium">Blog</h3>
               </div>
-              <h3 className="mt-5 font-display text-[14.5px] font-medium">Reports</h3>
-              <p className="mt-2 text-[11.5px] leading-[1.7] text-white/45">
-                Deeper research on enterprise AI, with the data, methodology and thinking behind the findings.
+              <p className="we-note">
+                Practical engineering perspectives on enterprise AI and governance architectures, and what it
+                takes to move models from pilot to production.
               </p>
-              <span className="mt-5 inline-flex text-teal transition-transform duration-300 group-hover:translate-x-1">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path
-                    d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+              <Link className="iq-go we-go group" href="/blog/">
+                Read the Blog
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </article>
+            <article className="card we-card group flex flex-col p-5 text-left rv" data-d="70">
+              <div className="ct-top">
+                <span className="ct-ic">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
                     stroke="currentColor"
                     strokeWidth="1.2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </Link>
-            <Link className="card group flex flex-col p-4 text-left rv" data-d="160" href="/case-studies">
-              <div className="relative h-[168px] w-full overflow-hidden rounded-[10px]">
-                <div className="pimg pimg-systems"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#000306]/60 via-transparent to-[#000306]/20"></div>
+                  >
+                    <rect x="2.8" y="5.6" width="14.4" height="10.6" rx="1.7" />
+                    <path d="M7.4 5.6V4.2a1.4 1.4 0 0 1 1.4-1.4h2.4a1.4 1.4 0 0 1 1.4 1.4v1.4" />
+                    <path d="M2.8 10.2h14.4M10 9.1v2.2" />
+                  </svg>
+                </span>
+                <h3 className="ct-t font-display text-[14.5px] font-medium">Case Studies</h3>
               </div>
-              <h3 className="mt-5 font-display text-[14.5px] font-medium">Case Studies</h3>
-              <p className="mt-2 text-[11.5px] leading-[1.7] text-white/45">
-                Real engagements, measurable outcomes and what it took to put AI to work in complex
-                environments.
+              <p className="we-note">
+                Documented enterprise deployments detailing the exact operational scope, the governance
+                frameworks, and the quantified outcomes achieved.
               </p>
-              <span className="mt-5 inline-flex text-teal transition-transform duration-300 group-hover:translate-x-1">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path
-                    d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+              <Link className="iq-go we-go group" href="/case-studies/">
+                Read all case studies
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </article>
+            <article className="card we-card group flex flex-col p-5 text-left rv" data-d="140">
+              <div className="ct-top">
+                <span className="ct-ic">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
                     stroke="currentColor"
                     strokeWidth="1.2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </Link>
+                  >
+                    <path d="M3.4 16.6V8.8M7.8 16.6V4.6M12.2 16.6v-5.4M16.6 16.6V7" />
+                  </svg>
+                </span>
+                <h3 className="ct-t font-display text-[14.5px] font-medium">Reports</h3>
+              </div>
+              <p className="we-note">
+                Data-driven benchmarks and regulatory research evaluating AI reliability, auditability, and
+                performance across high-stakes sectors.
+              </p>
+              <Link className="iq-go we-go group" href="/reports/">
+                Read all Reports
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            </article>
           </div>
         </div>
       </section>
@@ -1238,15 +1386,14 @@ export default function HomePage() {
             <div className="cta-wash" aria-hidden="true"></div>
             <div className="relative mx-auto grid w-full max-w-shell items-start gap-10 px-6 py-[86px] lg:grid-cols-[1fr_auto] lg:gap-16 lg:px-8">
               <div>
-                <h2 className="h-cta max-w-[24ch] lg:max-w-none">
-                  We are AI-native operators
-                  <br className="hidden sm:block" /> who make enterprises{" "}
-                  <span className="text-teal">AI-first.</span>
+                <h2 className="h-cta max-w-[26ch] lg:max-w-none">
+                  <span className="text-teal">AI-native operators</span> accountable for
+                  <br className="hidden sm:block" /> accelerated outcomes that{" "}
+                  <span className="text-teal">survive scrutiny</span>
                 </h2>
-                <p className="cta-sig mt-7">…outcomes that survive scrutiny.</p>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact">
+                <Link className="btn btn-light group" href="/contact/">
                   Define an Outcome
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path

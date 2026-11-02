@@ -9,6 +9,8 @@ import { useEffect } from "react";
  *   .rv        fades in the first time it scrolls into view (data-d = delay in ms)
  *   .tally     numbers count up the first time they are seen
  *   .faq       <details> open and close with an animated height
+ *   .ft-tst    testimonial carousel (contact page)
+ *   .hh-rot    the hero's rotating noun
  *   rails      contents lists on articles and legal pages track the current section
  *
  * Everything is idempotent and re-armed on navigation, and a MutationObserver
@@ -150,6 +152,116 @@ export function SiteEffects() {
     };
     document.addEventListener("click", onFaqClick);
     cleanups.push(() => document.removeEventListener("click", onFaqClick));
+
+    /* ---------- testimonial carousel: a slide every 8s, paused while hovered or focused ---------- */
+    document.querySelectorAll<HTMLElement>(".ft-tst").forEach((box) => {
+      const slides = [...box.querySelectorAll<HTMLElement>(".ft-slide")];
+      const dots = [...box.querySelectorAll<HTMLElement>(".ft-dot")];
+      if (slides.length < 2) return;
+      let cur = 0;
+      let timer: ReturnType<typeof setInterval> | null = null;
+      const show = (n: number) => {
+        cur = (n + slides.length) % slides.length;
+        slides.forEach((s, k) => {
+          s.classList.toggle("is-on", k === cur);
+          if (k === cur) s.removeAttribute("aria-hidden");
+          else s.setAttribute("aria-hidden", "true");
+        });
+        dots.forEach((d, k) => d.classList.toggle("is-on", k === cur));
+      };
+      const stop = () => {
+        if (timer) clearInterval(timer);
+        timer = null;
+      };
+      const start = () => {
+        if (reduce) return;
+        stop();
+        timer = setInterval(() => show(cur + 1), 8000);
+      };
+      const onDot = (ev: MouseEvent) => {
+        const d = (ev.target as Element).closest<HTMLElement>(".ft-dot");
+        if (!d) return;
+        show(Number(d.dataset.i));
+        start();
+      };
+      box.addEventListener("click", onDot);
+      for (const [ev, fn] of [["mouseenter", stop], ["mouseleave", start], ["focusin", stop], ["focusout", start]] as const)
+        box.addEventListener(ev, fn);
+      start();
+      cleanups.push(() => {
+        stop();
+        box.removeEventListener("click", onDot);
+        for (const [ev, fn] of [["mouseenter", stop], ["mouseleave", start], ["focusin", stop], ["focusout", start]] as const)
+          box.removeEventListener(ev, fn);
+      });
+    });
+
+    /* ---------- hero noun rotation: the box is sized to the word on screen ---------- */
+    document.querySelectorAll<HTMLElement>(".hh-rot").forEach((box) => {
+      const opts = [...box.querySelectorAll<HTMLElement>(".hh-opt")];
+      if (opts.length < 2) return;
+      let i = 0;
+      let widths: number[] = [];
+      let timer: ReturnType<typeof setInterval> | null = null;
+      const pending: ReturnType<typeof setTimeout>[] = [];
+      // the text itself is measured rather than the element, which stretches to its grid cell
+      const measure = () => {
+        const prev = box.style.width;
+        box.style.width = "auto";
+        widths = opts.map((el) => {
+          const r = document.createRange();
+          r.selectNodeContents(el);
+          return Math.ceil(r.getBoundingClientRect().width);
+        });
+        box.style.width = prev;
+        if (widths[i]) box.style.setProperty("--hh-w", `${widths[i]}px`);
+      };
+      const step = () => {
+        const out = opts[i];
+        out.classList.remove("is-on");
+        out.classList.add("is-out");
+        out.setAttribute("aria-hidden", "true");
+        i = (i + 1) % opts.length;
+        const next = opts[i];
+        box.style.setProperty("--hh-w", `${widths[i]}px`);
+        pending.push(
+          setTimeout(() => {
+            next.classList.add("is-on");
+            next.removeAttribute("aria-hidden");
+          }, 300),
+          // park the word that left without animating it back down while invisible
+          setTimeout(() => {
+            out.classList.add("no-anim");
+            out.classList.remove("is-out");
+            requestAnimationFrame(() => requestAnimationFrame(() => out.classList.remove("no-anim")));
+          }, 700),
+        );
+      };
+      const sync = () => {
+        if (!reduce && !document.hidden) timer ??= setInterval(step, 3600);
+        else if (timer) {
+          clearInterval(timer);
+          timer = null;
+        }
+      };
+      measure();
+      document.fonts?.ready.then(measure);
+      let rt: ReturnType<typeof setTimeout>;
+      const onResize = () => {
+        clearTimeout(rt);
+        rt = setTimeout(measure, 150);
+      };
+      addEventListener("resize", onResize, { passive: true });
+      document.addEventListener("visibilitychange", sync);
+      sync();
+      cleanups.push(() => {
+        if (timer) clearInterval(timer);
+        pending.forEach(clearTimeout);
+        clearTimeout(rt);
+        removeEventListener("resize", onResize);
+        document.removeEventListener("visibilitychange", sync);
+      });
+    });
 
     /* ---------- contents rails ---------- */
     const rail = (links: HTMLElement[], key: string, targets: Element[], rootMargin: string) => {
