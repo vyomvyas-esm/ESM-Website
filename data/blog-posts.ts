@@ -199,10 +199,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why document examination is slow and unforgiving</h2><p>Letters of credit are governed by the International Chamber of Commerce's Uniform Customs and Practice for Documentary Credits, UCP 600. A bank has a maximum of five banking days after presentation to decide whether the documents comply. Examination is strictly on the face of the documents, and the standard applied is international standard banking practice, set out in the ICC's ISBP 821.</p><p>The work demands expertise. Examiners must know which differences matter and how each document type is treated under the specific conditions of a credit. A single presentation can extend to dozens of pages, many of them scanned, some partly handwritten. Volumes rise and fall with trade cycles, and experienced examiners are scarce.</p><p>Errors are costly in both directions. Missing a genuine discrepancy can leave the bank paying against non-compliant documents. Raising a discrepancy that is not one delays payment and generates fees and correspondence that nobody needed.</p><h2 id=\"sec-2\">Extracting and comparing every field</h2><p>AI reads each document in the presentation and extracts the fields that matter: parties, goods description, quantities, amounts, ports, dates and references. It then performs two comparisons. Each document is checked against the terms of the credit, including the documents required and any additional conditions. Every document is also checked against every other, because data across documents need not be identical but must not conflict.</p><p>The output is a proposed examination: each potential discrepancy listed with the document, the field, the credit term it relates to and the exact text involved. The same pass can screen parties and vessels against sanctions lists and flag patterns associated with trade-based money laundering, such as goods descriptions that fit oddly with the declared value.</p><h2 id=\"sec-3\">The position: the examiner decides</h2><p>The rules of documentary credits are full of nuance, and the nuance is where errors arise. Different documents are held to different standards. The examiner's judgement, informed by years of practice, is what the bank's decision ultimately rests on, and the system should be designed to strengthen it.</p><p>In practice, that means the AI proposes and the examiner decides. Every flagged item is confirmed or dismissed by a person, with a reason recorded. Items the AI clears are sampled for review, so the bank knows how often the system misses something. A rubric-based evaluation engine such as PRISM supports this pattern, checking each document against defined criteria and recording the evidence behind every finding for the examiner to weigh.</p><h2 id=\"sec-4\">The discrepancy that was not one</h2><p>A bank piloted AI-assisted examination on its export letters of credit. In the second week, the system flagged the bill of lading in a presentation because its goods description read \"cotton garments\", while the credit described the goods in detail by style and fabric. A newly trained examiner, working from the flag, drafted a refusal notice.</p><p>A senior examiner reviewing the draft stopped it. Under UCP 600, only the commercial invoice must describe the goods in a way that corresponds with the credit. In other documents, the description may be in general terms, provided it does not conflict. \"Cotton garments\" was a general description consistent with the credit, and the presentation complied.</p><p>The bank encoded document-specific matching standards into the rules, so the goods description on a bill of lading or insurance certificate is tested for conflict instead of correspondence. Flags now cite the rule they rely on, and any proposed refusal requires a senior examiner's sign-off during the first year of operation.</p><p>The exporter in Tiruppur needs a fast answer, and the bank needs that answer to be right. AI can read and compare every field in a presentation in minutes, leaving examiners to apply judgement where the rules require it. A head of trade operations should ask whether the system's checks reflect the different standards UCP 600 applies to each document. A system that does, with an examiner deciding every exception, delivers outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why document examination is slow and unforgiving</h2><p>Letters of credit are governed by the International Chamber of Commerce's Uniform Customs and Practice for Documentary Credits, UCP 600. A bank has a maximum of five banking days after presentation to decide whether the documents comply. Examination is strictly on the face of the documents, and the standard applied is international standard banking practice, set out in the ICC's ISBP 821.</p><p>The work demands expertise. Examiners must know which differences matter and how each document type is treated under the specific conditions of a credit. A single presentation can extend to dozens of pages, many of them scanned, some partly handwritten. Volumes rise and fall with trade cycles, and experienced examiners are scarce.</p><p>Errors are costly in both directions. Missing a genuine discrepancy can leave the bank paying against non-compliant documents. Raising a discrepancy that is not one delays payment and generates fees and correspondence that nobody needed.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Extracting and comparing every field</h2><p>AI reads each document in the presentation and extracts the fields that matter: parties, goods description, quantities, amounts, ports, dates and references. It then performs two comparisons. Each document is checked against the terms of the credit, including the documents required and any additional conditions. Every document is also checked against every other, because data across documents need not be identical but must not conflict.</p><p>The output is a proposed examination: each potential discrepancy listed with the document, the field, the credit term it relates to and the exact text involved. The same pass can screen parties and vessels against sanctions lists and flag patterns associated with trade-based money laundering, such as goods descriptions that fit oddly with the declared value.</p><h2 id=\"sec-3\">The position: the examiner decides</h2><p>The rules of documentary credits are full of nuance, and the nuance is where errors arise. Different documents are held to different standards. The examiner's judgement, informed by years of practice, is what the bank's decision ultimately rests on, and the system should be designed to strengthen it.</p><p>In practice, that means the AI proposes and the examiner decides. Every flagged item is confirmed or dismissed by a person, with a reason recorded. Items the AI clears are sampled for review, so the bank knows how often the system misses something. A rubric-based evaluation engine such as PRISM supports this pattern, checking each document against defined criteria and recording the evidence behind every finding for the examiner to weigh.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The discrepancy that was not one</h2><p>A bank piloted AI-assisted examination on its export letters of credit. In the second week, the system flagged the bill of lading in a presentation because its goods description read \"cotton garments\", while the credit described the goods in detail by style and fabric. A newly trained examiner, working from the flag, drafted a refusal notice.</p><p>A senior examiner reviewing the draft stopped it. Under UCP 600, only the commercial invoice must describe the goods in a way that corresponds with the credit. In other documents, the description may be in general terms, provided it does not conflict. \"Cotton garments\" was a general description consistent with the credit, and the presentation complied.</p><p>The bank encoded document-specific matching standards into the rules, so the goods description on a bill of lading or insurance certificate is tested for conflict instead of correspondence. Flags now cite the rule they rely on, and any proposed refusal requires a senior examiner's sign-off during the first year of operation.</p><p>The exporter in Tiruppur needs a fast answer, and the bank needs that answer to be right. AI can read and compare every field in a presentation in minutes, leaving examiners to apply judgement where the rules require it. A head of trade operations should ask whether the system's checks reflect the different standards UCP 600 applies to each document. A system that does, with an examiner deciding every exception, delivers outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/ai-in-trade-finance-letters-of-credit-1.webp",
+        "width": 1200,
+        "height": 679,
+        "alt": "Illustration: Why document examination is slow and unforgiving"
+      },
+      {
+        "src": "/blog/ai-in-trade-finance-letters-of-credit-2.webp",
+        "width": 1200,
+        "height": 675,
+        "alt": "Illustration: The position: the examiner decides"
+      }
+    ],
     "related": {
       "section": {
         "label": "Banking & Financial Services",
@@ -253,10 +278,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What regulators now expect</h2><p>The ICH E6(R3) guideline on Good Clinical Practice, finalised in January 2025 and since adopted by regulators including the US FDA, places proportionality at the centre of trial oversight. Sponsors are expected to identify the factors critical to a trial's quality, such as the integrity of the primary endpoint and the safety of participants, and to focus their oversight on those. Centralised monitoring, the remote analysis of accumulating trial data, is recognised as a legitimate way to do that, alongside on-site visits.</p><p>For sponsors and contract research organisations, the shift is practical as much as regulatory. Monitoring visits are one of the largest costs in a trial, and uniform visit schedules spend that budget evenly across sites whose risks are not even. Moving attention to where data suggests a problem makes better use of both money and monitors.</p><h2 id=\"sec-2\">Signals that show where a site needs attention</h2><p>Central statistical monitoring looks for patterns that differ from the trial as a whole. Some point to possible data fabrication: vital signs with too little variation, or a preference for round numbers. Others point to process problems, such as a site reporting far fewer adverse events than comparable sites, or a high rate of protocol deviations.</p><p>AI adds two things to established statistical methods. It can combine many weak signals into a single view of each site's risk, and it can read unstructured material, such as monitoring visit notes and query text, that conventional key risk indicators ignore. The output is a ranked view of sites, each flag accompanied by the specific data that produced it.</p><p>The value lies in timing. A pattern that a scheduled visit would find in six weeks can be visible in days, while the affected data is still recent enough to investigate and correct.</p><h2 id=\"sec-3\">Keeping monitors and investigators in charge</h2><p>A flag is a reason to look more closely. The monitor reviews the underlying data, contacts the site and decides whether a visit or a for-cause audit is warranted. Investigators deserve a fair process. An automated flag that becomes an accusation without human review damages the relationship a trial depends on.</p><p>Fairness requires care with comparisons. Sites differ for legitimate reasons, including the populations they serve and the clinical practices of their region. A model that compares every site to the trial average will flag sites that are simply different. Expected differences need to be engineered into the comparison, so that only unexplained variation raises a flag.</p><p>Every decision, from the flag to the action taken, should be documented. Regulators inspecting the trial will want to see how oversight was targeted and why, and a clear record of risk signals and responses is the strongest evidence that the monitoring plan worked.</p><h2 id=\"sec-4\">The site that served a different population</h2><p>A sponsor introduced central monitoring across a multi-country trial and, in the first quarter, the system flagged an Indian site serving a largely rural and tribal population. Its haemoglobin values were markedly lower than the trial average, and its adverse-event profile differed. The risk score placed it at the top of the list, and a for-cause audit was proposed.</p><p>Before the audit was scheduled, the monitor responsible for the site reviewed the flag with the medical monitor. Anaemia is common in the population the site served, and the lower values were consistent with the site's baseline data and local epidemiology. The site's records were sound on every point checked. An audit would have cost the site weeks of disruption and signalled distrust to an investigator who was doing careful work in a difficult setting.</p><p>The sponsor changed the comparison. Site risk models now adjust for each site's baseline characteristics, so a site is compared with what its own population would predict. Any proposal for a for-cause audit requires review by the medical monitor, and flags for sites serving under-represented populations receive an additional check before escalation.</p><p>The research associate with eight sites should spend her next visit where the data says it matters, and she should arrive knowing why. Risk-based monitoring with AI makes that possible, provided every flag is reviewed by a person and every comparison accounts for the patients each site serves. A head of clinical operations should ask how the trial's monitoring plan decides where visits go, and how it avoids penalising sites for serving different populations. A plan that answers both protects participants and data with outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What regulators now expect</h2><p>The ICH E6(R3) guideline on Good Clinical Practice, finalised in January 2025 and since adopted by regulators including the US FDA, places proportionality at the centre of trial oversight. Sponsors are expected to identify the factors critical to a trial's quality, such as the integrity of the primary endpoint and the safety of participants, and to focus their oversight on those. Centralised monitoring, the remote analysis of accumulating trial data, is recognised as a legitimate way to do that, alongside on-site visits.</p><p>For sponsors and contract research organisations, the shift is practical as much as regulatory. Monitoring visits are one of the largest costs in a trial, and uniform visit schedules spend that budget evenly across sites whose risks are not even. Moving attention to where data suggests a problem makes better use of both money and monitors.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Signals that show where a site needs attention</h2><p>Central statistical monitoring looks for patterns that differ from the trial as a whole. Some point to possible data fabrication: vital signs with too little variation, or a preference for round numbers. Others point to process problems, such as a site reporting far fewer adverse events than comparable sites, or a high rate of protocol deviations.</p><p>AI adds two things to established statistical methods. It can combine many weak signals into a single view of each site's risk, and it can read unstructured material, such as monitoring visit notes and query text, that conventional key risk indicators ignore. The output is a ranked view of sites, each flag accompanied by the specific data that produced it.</p><p>The value lies in timing. A pattern that a scheduled visit would find in six weeks can be visible in days, while the affected data is still recent enough to investigate and correct.</p><h2 id=\"sec-3\">Keeping monitors and investigators in charge</h2><p>A flag is a reason to look more closely. The monitor reviews the underlying data, contacts the site and decides whether a visit or a for-cause audit is warranted. Investigators deserve a fair process. An automated flag that becomes an accusation without human review damages the relationship a trial depends on.</p><p>Fairness requires care with comparisons. Sites differ for legitimate reasons, including the populations they serve and the clinical practices of their region. A model that compares every site to the trial average will flag sites that are simply different. Expected differences need to be engineered into the comparison, so that only unexplained variation raises a flag.</p><p>Every decision, from the flag to the action taken, should be documented. Regulators inspecting the trial will want to see how oversight was targeted and why, and a clear record of risk signals and responses is the strongest evidence that the monitoring plan worked.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The site that served a different population</h2><p>A sponsor introduced central monitoring across a multi-country trial and, in the first quarter, the system flagged an Indian site serving a largely rural and tribal population. Its haemoglobin values were markedly lower than the trial average, and its adverse-event profile differed. The risk score placed it at the top of the list, and a for-cause audit was proposed.</p><p>Before the audit was scheduled, the monitor responsible for the site reviewed the flag with the medical monitor. Anaemia is common in the population the site served, and the lower values were consistent with the site's baseline data and local epidemiology. The site's records were sound on every point checked. An audit would have cost the site weeks of disruption and signalled distrust to an investigator who was doing careful work in a difficult setting.</p><p>The sponsor changed the comparison. Site risk models now adjust for each site's baseline characteristics, so a site is compared with what its own population would predict. Any proposal for a for-cause audit requires review by the medical monitor, and flags for sites serving under-represented populations receive an additional check before escalation.</p><p>The research associate with eight sites should spend her next visit where the data says it matters, and she should arrive knowing why. Risk-based monitoring with AI makes that possible, provided every flag is reviewed by a person and every comparison accounts for the patients each site serves. A head of clinical operations should ask how the trial's monitoring plan decides where visits go, and how it avoids penalising sites for serving different populations. A plan that answers both protects participants and data with outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/risk-based-clinical-trial-monitoring-1.webp",
+        "width": 1200,
+        "height": 679,
+        "alt": "Illustration: What regulators now expect"
+      },
+      {
+        "src": "/blog/risk-based-clinical-trial-monitoring-2.webp",
+        "width": 1200,
+        "height": 679,
+        "alt": "Illustration: Keeping monitors and investigators in charge"
+      }
+    ],
     "related": {
       "section": {
         "label": "Healthcare & Life Sciences",
@@ -310,7 +360,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -348,10 +398,23 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why rubrics age</h2><p>Most discussion of drift concerns models: the data changes and the model's accuracy degrades. Rubric drift is different. The model may be performing exactly as designed, faithfully applying criteria that no longer describe what the organisation wants. Policies are reworded and regulations add requirements. Each change moves the true standard while the written rubric stays still.</p><p>The effect is subtle because consistency survives. An evaluator applying an outdated rubric produces results that agree with last month's results and often with reviewers who learned the same outdated standard. Consistency was the reason the organisation automated the evaluation, so it is natural to read stable scores as a sign of health.</p><p>Comparability across time suffers as well. When a rubric is edited informally, scores from before and after the edit look alike but measure different things. A trend line across that boundary tells a story that never happened.</p><h2 id=\"sec-2\">Versioning the rubric like code</h2><p>The remedy starts with treating the rubric as a controlled artefact. Every criterion carries a named owner and a reference to the policy clause or regulation it enforces. Changes are made through a reviewed process, and each produces a new version.</p><p>Linking criteria to sources makes change detectable. When a referenced policy document is revised, every criterion that cites it is flagged for review automatically. The owner decides whether the criterion changes, and the decision is recorded either way.</p><p>Every score carries the rubric version that produced it. When a new version takes effect, a reference set of past cases is scored under both versions, so the organisation can see what changed and explain any shift in its numbers. A rubric-based evaluation engine such as PRISM supports this discipline, recording the rubric version and the evidence behind every mark it gives.</p><h2 id=\"sec-3\">Detecting drift before it matters</h2><p>Not every change arrives through a document the system can watch. Some come from shifts in priorities or practice that nobody writes down promptly. Detection therefore needs signals from the evaluation itself.</p><p>The most useful is the human override rate, measured per criterion. When reviewers begin overruling the evaluator on one criterion more often, the criterion and the reviewers' standard have diverged, and someone needs to find out why. Shifts in the distribution of scores on a criterion are a second signal, particularly when the incoming cases have not obviously changed.</p><p>The calibration set itself needs regular refreshing. A set of reference cases scored once and kept for years will itself age. Adding recent cases each quarter, scored by experienced reviewers against the current standard, keeps the reference honest.</p><h2 id=\"sec-4\">The exclusion the rubric never learned</h2><p>The insurer at the start of this piece found the problem through its reviewers. Claims adjusters sampling the evaluator's work began overriding one criterion more often from May onwards. Each override was handled correctly case by case, and the overall agreement rate barely moved, because one criterion among many was a small share of the total.</p><p>In July, an analyst preparing a quarterly report noticed that overrides on that criterion had tripled since April. Tracing them back led to the new exclusion. The evaluator had been marking affected claims as eligible, and adjusters had been catching most of them. A sample review found a small number that had been paid before the adjuster's check, and those were recovered or written off with the product team's agreement.</p><p>The insurer linked every rubric criterion to the policy clauses it enforces and set an alert on override rates per criterion, so a rise is investigated within a fortnight. Rubric changes now go through the same review as policy changes, with the product owner signing both.</p><p>AI evaluation is only as current as the standard it applies. Keeping that standard current means versioning the rubric against its sources and listening when reviewers start to disagree with it. A head of operations should ask when each rubric criterion was last checked against the policy it enforces. An evaluation process that can answer, criterion by criterion, delivers outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why rubrics age</h2><p>Most discussion of drift concerns models: the data changes and the model's accuracy degrades. Rubric drift is different. The model may be performing exactly as designed, faithfully applying criteria that no longer describe what the organisation wants. Policies are reworded and regulations add requirements. Each change moves the true standard while the written rubric stays still.</p><p>The effect is subtle because consistency survives. An evaluator applying an outdated rubric produces results that agree with last month's results and often with reviewers who learned the same outdated standard. Consistency was the reason the organisation automated the evaluation, so it is natural to read stable scores as a sign of health.</p><p>Comparability across time suffers as well. When a rubric is edited informally, scores from before and after the edit look alike but measure different things. A trend line across that boundary tells a story that never happened.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Versioning the rubric like code</h2><p>The remedy starts with treating the rubric as a controlled artefact. Every criterion carries a named owner and a reference to the policy clause or regulation it enforces. Changes are made through a reviewed process, and each produces a new version.</p><p>Linking criteria to sources makes change detectable. When a referenced policy document is revised, every criterion that cites it is flagged for review automatically. The owner decides whether the criterion changes, and the decision is recorded either way.</p><p>Every score carries the rubric version that produced it. When a new version takes effect, a reference set of past cases is scored under both versions, so the organisation can see what changed and explain any shift in its numbers. A rubric-based evaluation engine such as PRISM supports this discipline, recording the rubric version and the evidence behind every mark it gives.</p><h2 id=\"sec-3\">Detecting drift before it matters</h2><p>Not every change arrives through a document the system can watch. Some come from shifts in priorities or practice that nobody writes down promptly. Detection therefore needs signals from the evaluation itself.</p><p>The most useful is the human override rate, measured per criterion. When reviewers begin overruling the evaluator on one criterion more often, the criterion and the reviewers' standard have diverged, and someone needs to find out why. Shifts in the distribution of scores on a criterion are a second signal, particularly when the incoming cases have not obviously changed.</p><p>The calibration set itself needs regular refreshing. A set of reference cases scored once and kept for years will itself age. Adding recent cases each quarter, scored by experienced reviewers against the current standard, keeps the reference honest.</p><h2 id=\"sec-4\">The exclusion the rubric never learned</h2><p>The insurer at the start of this piece found the problem through its reviewers. Claims adjusters sampling the evaluator's work began overriding one criterion more often from May onwards. Each override was handled correctly case by case, and the overall agreement rate barely moved, because one criterion among many was a small share of the total.</p><p>In July, an analyst preparing a quarterly report noticed that overrides on that criterion had tripled since April. Tracing them back led to the new exclusion. The evaluator had been marking affected claims as eligible, and adjusters had been catching most of them. A sample review found a small number that had been paid before the adjuster's check, and those were recovered or written off with the product team's agreement.</p><p>The insurer linked every rubric criterion to the policy clauses it enforces and set an alert on override rates per criterion, so a rise is investigated within a fortnight. Rubric changes now go through the same review as policy changes, with the product owner signing both.</p><p>AI evaluation is only as current as the standard it applies. Keeping that standard current means versioning the rubric against its sources and listening when reviewers start to disagree with it. A head of operations should ask when each rubric criterion was last checked against the policy it enforces. An evaluation process that can answer, criterion by criterion, delivers outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/managing-evaluation-drift-1.webp",
+        "width": 1200,
+        "height": 678,
+        "alt": "Illustration: Why rubrics age"
+      }
+    ],
     "related": {
       "section": {
         "label": "Agentic AI",
@@ -393,14 +456,39 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What Autopilot offers</h2><p>Autopilot is designed as a persistent colleague more than a chat window. It works towards a goal over days and can reach out to partners on the user's behalf. Microsoft integrates it with Purview for data protection, and sensitive actions can be configured to require a person's approval. Satya Nadella summarised the design intent plainly: \"Everything that you observe should be governable by policy.\"</p><p>The commercial model is usage-based. Agent activity consumes Copilot Credits, and spending controls through Agent 365 extend to Autopilot. The product is in restricted testing, and Microsoft has not committed to a date for general availability.</p><h2 id=\"sec-2\">Where the design holds</h2><p>Giving an agent its own identity is the right call. Agents that act through a shared service account, or through the user's own credentials, leave an audit trail in which nobody can tell what the person did from what the agent did. A distinct identity separates the two, so a security team investigating an action can see exactly which agent took it and under which permissions.</p><p>Policy integration matters as much. If the same data-protection rules that apply to employees apply to agents, an organisation does not need a parallel governance system for AI. Configurable approval for sensitive actions puts a person at the point where an error would be expensive, which is where human oversight earns its cost.</p><h2 id=\"sec-3\">Where the enterprise still carries the load</h2><p>An identity in the directory needs the lifecycle every identity needs. Someone must own each agent and answer for it. Its access should be reviewed periodically, like any employee's. When its owner changes role or leaves, the agent must be reassigned or retired, or the organisation inherits a population of orphaned agents with live permissions and no accountable person. Most identity governance processes were designed for people and service accounts, and few have a place for an agent created by an individual employee in an afternoon.</p><p>Least privilege needs deliberate attention. An agent configured by a senior manager could, by default, reach everything that manager can reach. The organisation should decide which permissions agents receive, instead of letting them inherit their creator's access wholesale.</p><p>External communication deserves its own policy. An agent that contacts partners on a user's behalf speaks for the company. Which messages require approval, and which partners an agent may contact, are questions for legal and compliance, decided before the agent sends its first email.</p><p>Usage-based billing adds a further consideration. Persistent agents working towards goals consume credits continuously, and finance will want budgets and alerts per team before the feature is widely available.</p><h2 id=\"sec-4\">Where it fits</h2><p>Autopilot suits organisations already standardised on Microsoft 365 that have mature identity governance and can pilot persistent agents in a controlled group. It fits less comfortably where identity processes are informal, because it will multiply the number of identities faster than those processes can absorb. Regulated firms should pilot it with external communication disabled until legal has set the rules.</p><p>The broader lesson extends beyond Microsoft. As agents become persistent and act on their own, they belong in the directory, with the same ownership and review disciplines as any account. A CISO should ask how many agent identities the organisation will hold in a year, and who will review each one. An organisation that has answered that before the pilot begins will keep its agents accountable, and its outcomes will survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What Autopilot offers</h2><p>Autopilot is designed as a persistent colleague more than a chat window. It works towards a goal over days and can reach out to partners on the user's behalf. Microsoft integrates it with Purview for data protection, and sensitive actions can be configured to require a person's approval. Satya Nadella summarised the design intent plainly: \"Everything that you observe should be governable by policy.\"</p><p>The commercial model is usage-based. Agent activity consumes Copilot Credits, and spending controls through Agent 365 extend to Autopilot. The product is in restricted testing, and Microsoft has not committed to a date for general availability.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Where the design holds</h2><p>Giving an agent its own identity is the right call. Agents that act through a shared service account, or through the user's own credentials, leave an audit trail in which nobody can tell what the person did from what the agent did. A distinct identity separates the two, so a security team investigating an action can see exactly which agent took it and under which permissions.</p><p>Policy integration matters as much. If the same data-protection rules that apply to employees apply to agents, an organisation does not need a parallel governance system for AI. Configurable approval for sensitive actions puts a person at the point where an error would be expensive, which is where human oversight earns its cost.</p><h2 id=\"sec-3\">Where the enterprise still carries the load</h2><p>An identity in the directory needs the lifecycle every identity needs. Someone must own each agent and answer for it. Its access should be reviewed periodically, like any employee's. When its owner changes role or leaves, the agent must be reassigned or retired, or the organisation inherits a population of orphaned agents with live permissions and no accountable person. Most identity governance processes were designed for people and service accounts, and few have a place for an agent created by an individual employee in an afternoon.</p><p>Least privilege needs deliberate attention. An agent configured by a senior manager could, by default, reach everything that manager can reach. The organisation should decide which permissions agents receive, instead of letting them inherit their creator's access wholesale.</p><p>External communication deserves its own policy. An agent that contacts partners on a user's behalf speaks for the company. Which messages require approval, and which partners an agent may contact, are questions for legal and compliance, decided before the agent sends its first email.</p><p>Usage-based billing adds a further consideration. Persistent agents working towards goals consume credits continuously, and finance will want budgets and alerts per team before the feature is widely available.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">Where it fits</h2><p>Autopilot suits organisations already standardised on Microsoft 365 that have mature identity governance and can pilot persistent agents in a controlled group. It fits less comfortably where identity processes are informal, because it will multiply the number of identities faster than those processes can absorb. Regulated firms should pilot it with external communication disabled until legal has set the rules.</p><p>The broader lesson extends beyond Microsoft. As agents become persistent and act on their own, they belong in the directory, with the same ownership and review disciplines as any account. A CISO should ask how many agent identities the organisation will hold in a year, and who will review each one. An organisation that has answered that before the pilot begins will keep its agents accountable, and its outcomes will survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/microsoft-autopilot-agent-identity-1.webp",
+        "width": 1200,
+        "height": 678,
+        "alt": "Illustration: What Autopilot offers"
+      },
+      {
+        "src": "/blog/microsoft-autopilot-agent-identity-2.webp",
+        "width": 1200,
+        "height": 678,
+        "alt": "Illustration: Where the enterprise still carries the load"
+      }
+    ],
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -438,10 +526,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why policies lapse, and why it matters to both sides</h2><p>Persistency, the share of policies still in force a year or more after sale, is one of the most closely watched measures in Indian life insurance. Low persistency hurts the insurer, which pays heavily to acquire each policy and recovers that cost only if the policy stays in force. It hurts policyholders more. A lapsed policy can mean lost cover and, for older policyholders, cover that cannot be replaced at a sensible price.</p><p>Not every lapse has the same cause. Some lapses are accidents of administration, like the changed bank account. Others reflect real financial strain, and a further group points to a sale that should not have happened, where the policy never suited the buyer. A good retention programme distinguishes between them, because each needs a different response.</p><h2 id=\"sec-2\">Predicting lapse early enough to help</h2><p>The signals are usually present well before the due date. A failed or cancelled auto-debit mandate is the clearest. Others are subtler: premiums paid by cash or cheque instead of a mandate, a change of contact details, recent service complaints, or a premium that was high relative to the declared income at the time of sale. A model trained on the insurer's own history can combine these into a lapse risk score for every policy approaching renewal.</p><p>Timing matters as much as accuracy. A prediction made in the week before the due date leaves room only for a reminder. A prediction made three months ahead leaves room to fix the mandate, or to discuss options with a policyholder under financial strain.</p><h2 id=\"sec-3\">The position: retention serves the policyholder or it serves no one</h2><p>The aim of lapse prediction should be to help each policyholder keep the cover that suits them. A model optimised purely to maximise renewals will push hardest on the policyholders least able to pay and on the policies least suited to their buyers, and both create conduct risk the insurer cannot afford.</p><p>Outreach should therefore follow the cause. An administrative problem gets a practical fix: a call to update the mandate or a reminder in the policyholder's own language. Financial strain gets a conversation about the options the policy allows, such as changing the premium frequency or converting to a reduced paid-up policy, with no pressure to stretch beyond what the household can bear. Signs of an unsuitable sale go to a suitability review, never to a retention script.</p><p>Voice agents can carry much of the practical outreach, because many lapses need only a timely, clear call in the right language. An agentic calling platform such as EVIO can make those calls and escalate to a person the moment a conversation turns to hardship or a complaint.</p><h2 id=\"sec-4\">The high-risk list that was really a mis-selling list</h2><p>An insurer deployed a lapse prediction model and prepared its first outreach campaign around the policies with the highest scores. Before the calls began, a compliance analyst reviewing the list noticed a pattern. A large share of the top-risk policies had been sold through one channel to buyers over sixty, often with premiums that were high relative to their declared income.</p><p>The model had done its job accurately. These policies were likely to lapse because many of them had never suited their buyers. A retention campaign would have called elderly customers to persuade them to keep paying for products that may have been mis-sold, compounding the original harm and creating a conduct problem the insurer would have struggled to defend.</p><p>The campaign was paused before a single call was made. The insurer added a suitability screen before any retention outreach: policies showing several indicators of an unsuitable sale now go to a review team that can offer remedies, including refunds where warranted. The channel was referred for investigation. Only policies that pass the screen enter the retention programme.</p><p>The policyholder who changed jobs needed a single call to update a mandate, and his family kept their cover. Other policyholders need a different conversation, and some need the insurer to acknowledge that the policy should never have been sold. A chief distribution officer should ask whether the lapse model's highest-risk list has been reviewed for suitability before anyone picks up the phone. A retention programme that does that review serves policyholders with outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why policies lapse, and why it matters to both sides</h2><p>Persistency, the share of policies still in force a year or more after sale, is one of the most closely watched measures in Indian life insurance. Low persistency hurts the insurer, which pays heavily to acquire each policy and recovers that cost only if the policy stays in force. It hurts policyholders more. A lapsed policy can mean lost cover and, for older policyholders, cover that cannot be replaced at a sensible price.</p><p>Not every lapse has the same cause. Some lapses are accidents of administration, like the changed bank account. Others reflect real financial strain, and a further group points to a sale that should not have happened, where the policy never suited the buyer. A good retention programme distinguishes between them, because each needs a different response.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Predicting lapse early enough to help</h2><p>The signals are usually present well before the due date. A failed or cancelled auto-debit mandate is the clearest. Others are subtler: premiums paid by cash or cheque instead of a mandate, a change of contact details, recent service complaints, or a premium that was high relative to the declared income at the time of sale. A model trained on the insurer's own history can combine these into a lapse risk score for every policy approaching renewal.</p><p>Timing matters as much as accuracy. A prediction made in the week before the due date leaves room only for a reminder. A prediction made three months ahead leaves room to fix the mandate, or to discuss options with a policyholder under financial strain.</p><h2 id=\"sec-3\">The position: retention serves the policyholder or it serves no one</h2><p>The aim of lapse prediction should be to help each policyholder keep the cover that suits them. A model optimised purely to maximise renewals will push hardest on the policyholders least able to pay and on the policies least suited to their buyers, and both create conduct risk the insurer cannot afford.</p><p>Outreach should therefore follow the cause. An administrative problem gets a practical fix: a call to update the mandate or a reminder in the policyholder's own language. Financial strain gets a conversation about the options the policy allows, such as changing the premium frequency or converting to a reduced paid-up policy, with no pressure to stretch beyond what the household can bear. Signs of an unsuitable sale go to a suitability review, never to a retention script.</p><p>Voice agents can carry much of the practical outreach, because many lapses need only a timely, clear call in the right language. An agentic calling platform such as EVIO can make those calls and escalate to a person the moment a conversation turns to hardship or a complaint.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The high-risk list that was really a mis-selling list</h2><p>An insurer deployed a lapse prediction model and prepared its first outreach campaign around the policies with the highest scores. Before the calls began, a compliance analyst reviewing the list noticed a pattern. A large share of the top-risk policies had been sold through one channel to buyers over sixty, often with premiums that were high relative to their declared income.</p><p>The model had done its job accurately. These policies were likely to lapse because many of them had never suited their buyers. A retention campaign would have called elderly customers to persuade them to keep paying for products that may have been mis-sold, compounding the original harm and creating a conduct problem the insurer would have struggled to defend.</p><p>The campaign was paused before a single call was made. The insurer added a suitability screen before any retention outreach: policies showing several indicators of an unsuitable sale now go to a review team that can offer remedies, including refunds where warranted. The channel was referred for investigation. Only policies that pass the screen enter the retention programme.</p><p>The policyholder who changed jobs needed a single call to update a mandate, and his family kept their cover. Other policyholders need a different conversation, and some need the insurer to acknowledge that the policy should never have been sold. A chief distribution officer should ask whether the lapse model's highest-risk list has been reviewed for suitability before anyone picks up the phone. A retention programme that does that review serves policyholders with outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/policy-lapse-prediction-life-insurance-1.webp",
+        "width": 1200,
+        "height": 678,
+        "alt": "Illustration: Why policies lapse, and why it matters to both sides"
+      },
+      {
+        "src": "/blog/policy-lapse-prediction-life-insurance-2.webp",
+        "width": 1200,
+        "height": 678,
+        "alt": "Illustration: The position: retention serves the policyholder or it serves no one"
+      }
+    ],
     "related": {
       "section": {
         "label": "Banking & Financial Services",
@@ -492,10 +605,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why agent fleets amplify slowdowns</h2><p>A single agent that retries a failed call is harmless. A fleet of agents, each retrying independently, behaves like a crowd pushing on a door that opens inward. Every retry is reasonable from the agent's point of view, and together they multiply the load on a system that was already struggling.</p><p>Agents also face limits of their own. Model providers cap requests and tokens per minute, so a busy fleet can find its language model calls rejected at the same moment its downstream systems slow down. An agent that treats a rate-limit response as a transient error and retries immediately makes the problem worse for every other agent sharing the same quota.</p><p>The systems agents touch were usually sized for human operators. A core banking platform or an ERP can comfortably serve hundreds of staff working at human speed. It may struggle with a fraction of that number of agents working at machine speed, especially during the periods when batch processing already consumes capacity.</p><h2 id=\"sec-2\">Throttling and graceful retry</h2><p>The first control is a concurrency limit per downstream system, enforced across the fleet. The question to ask is how many simultaneous requests the core banking system can absorb from all agents combined, never how many each agent may make. A shared limiter enforces that number, and agents wait for capacity instead of competing for it.</p><p>Retries need discipline at the level of the fleet. Exponential backoff with random jitter spreads retries out so they do not arrive in synchronised waves. Each workflow carries a retry budget, after which the task is parked for later or handed to a person. A circuit breaker watches error rates on each downstream system and, when they cross a threshold, stops sending traffic for a cooling period, giving the system room to recover.</p><p>Retries are safe only if repeating a request cannot duplicate its effect. Every write an agent makes should carry an idempotency key, so that a posting retried after a timeout is recognised as the same posting and applied once. Without that, graceful retry becomes a source of duplicate entries.</p><h2 id=\"sec-3\">Deciding what waits when capacity falls short</h2><p>When capacity is scarce, the fleet must choose what to process first. Work should be queued by priority and deadline. A customer waiting on a payment status deserves capacity ahead of a reconciliation that can complete overnight. Low-priority work can be deferred automatically when the system is under strain and resumed when load falls.</p><p>Visibility makes this manageable. Queue depth and throttling events for each downstream system should appear on a dashboard the operations team already watches, so a growing backlog is seen before it becomes an incident. A self-healing automation runtime such as FORGE manages agents as a fleet in this way, with shared limits and prioritised queues.</p><h2 id=\"sec-4\">The retry storm at month-end</h2><p>The scene at the start of this piece happened to a bank operations team in its second month of operating reconciliation agents at scale. Each agent had been configured with three immediate retries on timeout, a setting that worked well during testing, when the agents executed one at a time against a quiet test environment.</p><p>At month-end, the retries compounded exactly as described, and the core banking team throttled all automated traffic to protect the system. A second problem surfaced in the reconciliation the following day. One of the agents' workflows lacked idempotency keys, and a handful of postings that had succeeded but timed out before confirmation had been posted twice. The duplicates were reversed before the books closed.</p><p>Every write now carries an idempotency key, enforced at the gateway, and a fleet-wide concurrency limit with jittered backoff and a circuit breaker replaced the per-agent settings. Reconciliation work is marked low priority during month-end windows, so it yields to customer-facing traffic and completes overnight.</p><p>An agent fleet is a new kind of load on systems that were designed for people. Treated carefully, it can absorb the slow periods those systems always have, without turning them into outages. A head of IT operations should ask what happens to the fleet when the slowest system it depends on halves its throughput, and whether that scenario has been tested. A fleet that degrades gracefully under that test delivers outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why agent fleets amplify slowdowns</h2><p>A single agent that retries a failed call is harmless. A fleet of agents, each retrying independently, behaves like a crowd pushing on a door that opens inward. Every retry is reasonable from the agent's point of view, and together they multiply the load on a system that was already struggling.</p><p>Agents also face limits of their own. Model providers cap requests and tokens per minute, so a busy fleet can find its language model calls rejected at the same moment its downstream systems slow down. An agent that treats a rate-limit response as a transient error and retries immediately makes the problem worse for every other agent sharing the same quota.</p><p>The systems agents touch were usually sized for human operators. A core banking platform or an ERP can comfortably serve hundreds of staff working at human speed. It may struggle with a fraction of that number of agents working at machine speed, especially during the periods when batch processing already consumes capacity.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Throttling and graceful retry</h2><p>The first control is a concurrency limit per downstream system, enforced across the fleet. The question to ask is how many simultaneous requests the core banking system can absorb from all agents combined, never how many each agent may make. A shared limiter enforces that number, and agents wait for capacity instead of competing for it.</p><p>Retries need discipline at the level of the fleet. Exponential backoff with random jitter spreads retries out so they do not arrive in synchronised waves. Each workflow carries a retry budget, after which the task is parked for later or handed to a person. A circuit breaker watches error rates on each downstream system and, when they cross a threshold, stops sending traffic for a cooling period, giving the system room to recover.</p><p>Retries are safe only if repeating a request cannot duplicate its effect. Every write an agent makes should carry an idempotency key, so that a posting retried after a timeout is recognised as the same posting and applied once. Without that, graceful retry becomes a source of duplicate entries.</p><h2 id=\"sec-3\">Deciding what waits when capacity falls short</h2><p>When capacity is scarce, the fleet must choose what to process first. Work should be queued by priority and deadline. A customer waiting on a payment status deserves capacity ahead of a reconciliation that can complete overnight. Low-priority work can be deferred automatically when the system is under strain and resumed when load falls.</p><p>Visibility makes this manageable. Queue depth and throttling events for each downstream system should appear on a dashboard the operations team already watches, so a growing backlog is seen before it becomes an incident. A self-healing automation runtime such as FORGE manages agents as a fleet in this way, with shared limits and prioritised queues.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The retry storm at month-end</h2><p>The scene at the start of this piece happened to a bank operations team in its second month of operating reconciliation agents at scale. Each agent had been configured with three immediate retries on timeout, a setting that worked well during testing, when the agents executed one at a time against a quiet test environment.</p><p>At month-end, the retries compounded exactly as described, and the core banking team throttled all automated traffic to protect the system. A second problem surfaced in the reconciliation the following day. One of the agents' workflows lacked idempotency keys, and a handful of postings that had succeeded but timed out before confirmation had been posted twice. The duplicates were reversed before the books closed.</p><p>Every write now carries an idempotency key, enforced at the gateway, and a fleet-wide concurrency limit with jittered backoff and a circuit breaker replaced the per-agent settings. Reconciliation work is marked low priority during month-end windows, so it yields to customer-facing traffic and completes overnight.</p><p>An agent fleet is a new kind of load on systems that were designed for people. Treated carefully, it can absorb the slow periods those systems always have, without turning them into outages. A head of IT operations should ask what happens to the fleet when the slowest system it depends on halves its throughput, and whether that scenario has been tested. A fleet that degrades gracefully under that test delivers outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/back-pressure-for-agent-fleets-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Why agent fleets amplify slowdowns"
+      },
+      {
+        "src": "/blog/back-pressure-for-agent-fleets-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Deciding what waits when capacity falls short"
+      }
+    ],
     "related": {
       "section": {
         "label": "Agentic AI",
@@ -537,14 +675,39 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What arrived in September and October</h2><p>TypeSafe AI, a company founded by a former OpenAI researcher, launched Jev on 15 September, describing it as a model for \"smart if-statements\": routing, classification, scoring and guardrails. It charges for input tokens only, with output free because there is no free-form output. On 29 September, OpenAI previewed a Decisions API powered by GPT-6 Luna. On 1 October, Cloudflare released Clef and Clef-flash as open-weight models under the Apache 2.0 licence, compatible with Jev's request format, and AWS open-sourced Strands Decider, a two-billion-parameter model. Several other labs released their own versions within days.</p><p>The mechanics are simple to describe. A request contains the input data and a set of typed questions. Clef, for example, can return a yes-or-no probability or a choice among up to 255 defined options. The model reads the input once and scores every allowed option. Because nothing is generated, it cannot answer with an option that was never offered.</p><h2 id=\"sec-2\">Why typed answers suit governed automation</h2><p>For teams responsible for controls, the appeal lies less in speed than in shape. A decision with a closed set of options can be tested exhaustively against a labelled sample. Every output is a structured record, so the audit log is a table of inputs, options and probabilities. There is no prose to interpret and no risk of a model inventing a category.</p><p>Probabilities also make thresholds explicit. A routing rule can send cases above 0.9 confidence straight through and send everything below it to a person, and that threshold can be documented, reviewed and adjusted by the risk team. With a chat model, the equivalent control usually depends on asking the model how sure it is, which is far less reliable.</p><p>Cost and latency matter at volume. Vendors report sub-second responses and prices that are a fraction of a general model's, though independent tests do not always match the claims. Cloudflare quotes a median latency of about 209 milliseconds for Clef, while one developer measured medians between roughly 520 and 730 milliseconds on launch week. The direction is clear even where the figures vary.</p><h2 id=\"sec-3\">Where decision models fall short</h2><p>A probability carries no reason with it. Many regulated decisions require an explanation the customer or the regulator can understand, such as the grounds for declining credit. A decision model can route an application to the right queue, and it should not be the component that tells a customer why they were refused. Those decisions still need reason codes, generated by a system designed to produce them, and a human accountable for the outcome.</p><p>Calibration has to be verified on the enterprise's own data. A model whose stated 0.9 means 90 percent correct on a vendor benchmark may mean something quite different on a bank's complaints or an insurer's claims. Reasoning-heavy judgements may also suit these models less well; early comparisons suggest the open models lead on classification and routing while Jev performs better on tasks that require more reasoning.</p><h2 id=\"sec-4\">Where the selection almost broke</h2><p>A team replaced the chat model behind its complaint-routing step with a decision model. On a labelled sample of past complaints, the new model was faster and more accurate, and its confidence scores looked well calibrated. It went live with a defined set of eight destination queues.</p><p>A month later, a new type of complaint began to arrive after a product change, one that belonged in none of the eight queues. A closed set of options has no way to say \"none of these\", so the model placed each new complaint in the nearest category, often with high confidence. The complaints reached a team that could not resolve them, and they bounced between queues for days before a supervisor noticed the pattern.</p><p>The team added an explicit \"none of these\" option to every routing question, and it now monitors the distribution of confidence scores each week, treating a shift as a signal that the categories need revisiting. Calibration is re-checked against a fresh labelled sample each quarter.</p><p>Decision models are a sensible addition to the enterprise toolkit, and they bring the predictability that governed automation needs. They are best suited to routing and guardrail checks, with explanations and final accountability handled elsewhere. A CTO considering them should ask whether the team has measured calibration on its own data and planned for inputs that fit none of the options. A deployment that has done both earns outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What arrived in September and October</h2><p>TypeSafe AI, a company founded by a former OpenAI researcher, launched Jev on 15 September, describing it as a model for \"smart if-statements\": routing, classification, scoring and guardrails. It charges for input tokens only, with output free because there is no free-form output. On 29 September, OpenAI previewed a Decisions API powered by GPT-6 Luna. On 1 October, Cloudflare released Clef and Clef-flash as open-weight models under the Apache 2.0 licence, compatible with Jev's request format, and AWS open-sourced Strands Decider, a two-billion-parameter model. Several other labs released their own versions within days.</p><p>The mechanics are simple to describe. A request contains the input data and a set of typed questions. Clef, for example, can return a yes-or-no probability or a choice among up to 255 defined options. The model reads the input once and scores every allowed option. Because nothing is generated, it cannot answer with an option that was never offered.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Why typed answers suit governed automation</h2><p>For teams responsible for controls, the appeal lies less in speed than in shape. A decision with a closed set of options can be tested exhaustively against a labelled sample. Every output is a structured record, so the audit log is a table of inputs, options and probabilities. There is no prose to interpret and no risk of a model inventing a category.</p><p>Probabilities also make thresholds explicit. A routing rule can send cases above 0.9 confidence straight through and send everything below it to a person, and that threshold can be documented, reviewed and adjusted by the risk team. With a chat model, the equivalent control usually depends on asking the model how sure it is, which is far less reliable.</p><p>Cost and latency matter at volume. Vendors report sub-second responses and prices that are a fraction of a general model's, though independent tests do not always match the claims. Cloudflare quotes a median latency of about 209 milliseconds for Clef, while one developer measured medians between roughly 520 and 730 milliseconds on launch week. The direction is clear even where the figures vary.</p><h2 id=\"sec-3\">Where decision models fall short</h2><p>A probability carries no reason with it. Many regulated decisions require an explanation the customer or the regulator can understand, such as the grounds for declining credit. A decision model can route an application to the right queue, and it should not be the component that tells a customer why they were refused. Those decisions still need reason codes, generated by a system designed to produce them, and a human accountable for the outcome.</p><p>Calibration has to be verified on the enterprise's own data. A model whose stated 0.9 means 90 percent correct on a vendor benchmark may mean something quite different on a bank's complaints or an insurer's claims. Reasoning-heavy judgements may also suit these models less well; early comparisons suggest the open models lead on classification and routing while Jev performs better on tasks that require more reasoning.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">Where the selection almost broke</h2><p>A team replaced the chat model behind its complaint-routing step with a decision model. On a labelled sample of past complaints, the new model was faster and more accurate, and its confidence scores looked well calibrated. It went live with a defined set of eight destination queues.</p><p>A month later, a new type of complaint began to arrive after a product change, one that belonged in none of the eight queues. A closed set of options has no way to say \"none of these\", so the model placed each new complaint in the nearest category, often with high confidence. The complaints reached a team that could not resolve them, and they bounced between queues for days before a supervisor noticed the pattern.</p><p>The team added an explicit \"none of these\" option to every routing question, and it now monitors the distribution of confidence scores each week, treating a shift as a signal that the categories need revisiting. Calibration is re-checked against a fresh labelled sample each quarter.</p><p>Decision models are a sensible addition to the enterprise toolkit, and they bring the predictability that governed automation needs. They are best suited to routing and guardrail checks, with explanations and final accountability handled elsewhere. A CTO considering them should ask whether the team has measured calibration on its own data and planned for inputs that fit none of the options. A deployment that has done both earns outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/decision-models-that-return-no-text-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What arrived in September and October"
+      },
+      {
+        "src": "/blog/decision-models-that-return-no-text-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Where decision models fall short"
+      }
+    ],
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -582,10 +745,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What ABDM has put in place</h2><p>By July 2026, more than 939.5 million Ayushman Bharat Health Account numbers had been created, and over 1.05 billion digital health records had been linked to them. More than 500,000 health facilities and nearly one million healthcare professionals were registered, and around 272,000 facilities had adopted ABDM-enabled software.</p><p>The architecture is federated. Records stay with the hospitals and laboratories that created them. When a patient consents, a consent manager authorises the exchange, and the requesting facility receives the records it is allowed to see, for the purpose and period the patient approved. Facility and professional registries establish who is sending and receiving. The model resembles the Account Aggregator framework in finance, applied to health.</p><h2 id=\"sec-2\">What changes for clinical AI</h2><p>The opportunity is longitudinal context. A summarisation model that previously saw only the current admission can now draw on prior discharge summaries and earlier lab trends from other institutions. For a physician deciding quickly, a concise, sourced summary of that history can change the first hour of care.</p><p>The difficulty is that external records arrive in uneven condition. Some come as structured data following health data standards. Many arrive as scanned PDFs of printed reports. Units and reference ranges vary between institutions. A model that treats every incoming value as if it came from the hospital's own laboratory will eventually present something misleading with complete confidence.</p><p>Provenance therefore has to travel with every fact. A summary should state where each item came from and when: the facility and the date, and whether the value was extracted from a scanned document. A physician can weigh a two-year-old value from another hospital differently from this morning's result, but only if the summary makes the difference visible.</p><h2 id=\"sec-3\">Consent and purpose inside the pipeline</h2><p>Records fetched through ABDM arrive under a specific consent, for a stated purpose and period. A hospital's AI pipeline has to respect those terms as carefully as its clinicians do. Records fetched to treat a patient in the emergency department are available for that care episode. They do not become training data for the hospital's models, and they should not persist in an analytics store after the consent lapses.</p><p>The engineering follows the same pattern as any consent-governed data. Each record is tagged with its consent identifier and expiry, and storage enforces deletion when the consent ends. Any process that reads the data checks the purpose first. Audit logs record which model or user accessed which external record, and why.</p><h2 id=\"sec-4\">The lab value in the wrong unit</h2><p>A hospital piloted an AI summary of linked records for its emergency department. Early feedback was positive: physicians valued seeing prior admissions and lab trends at a glance. Then a physician reviewing a summary noticed that a patient's fasting glucose from an external laboratory appeared as 7.8 in the trend line, alongside the hospital's own results in the 90s and 100s.</p><p>The external laboratory reported glucose in millimoles per litre; the hospital reports in milligrams per decilitre. The summariser had carried the number across without the unit, and the trend line made a high value look like an implausible drop. The physician recognised the mismatch at once, but a busier clinician might have misread it.</p><p>The hospital made unit normalisation a mandatory step for every external lab value, with the original value and unit retained beside the converted one. Values that cannot be normalised with confidence are excluded from trend lines and shown separately, clearly labelled. Every external value now displays its source laboratory in the summary.</p><p>The patient in Pune benefits when her history follows her, and ABDM has made that possible at a scale few countries have attempted. Clinical AI can turn that history into something a physician can use in minutes, provided every fact carries its source and every record respects the consent under which it arrived. A hospital CIO should ask whether the hospital's AI can show, for any value in a summary, where it came from and under which consent. A system that can do both serves patients with outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What ABDM has put in place</h2><p>By July 2026, more than 939.5 million Ayushman Bharat Health Account numbers had been created, and over 1.05 billion digital health records had been linked to them. More than 500,000 health facilities and nearly one million healthcare professionals were registered, and around 272,000 facilities had adopted ABDM-enabled software.</p><p>The architecture is federated. Records stay with the hospitals and laboratories that created them. When a patient consents, a consent manager authorises the exchange, and the requesting facility receives the records it is allowed to see, for the purpose and period the patient approved. Facility and professional registries establish who is sending and receiving. The model resembles the Account Aggregator framework in finance, applied to health.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">What changes for clinical AI</h2><p>The opportunity is longitudinal context. A summarisation model that previously saw only the current admission can now draw on prior discharge summaries and earlier lab trends from other institutions. For a physician deciding quickly, a concise, sourced summary of that history can change the first hour of care.</p><p>The difficulty is that external records arrive in uneven condition. Some come as structured data following health data standards. Many arrive as scanned PDFs of printed reports. Units and reference ranges vary between institutions. A model that treats every incoming value as if it came from the hospital's own laboratory will eventually present something misleading with complete confidence.</p><p>Provenance therefore has to travel with every fact. A summary should state where each item came from and when: the facility and the date, and whether the value was extracted from a scanned document. A physician can weigh a two-year-old value from another hospital differently from this morning's result, but only if the summary makes the difference visible.</p><h2 id=\"sec-3\">Consent and purpose inside the pipeline</h2><p>Records fetched through ABDM arrive under a specific consent, for a stated purpose and period. A hospital's AI pipeline has to respect those terms as carefully as its clinicians do. Records fetched to treat a patient in the emergency department are available for that care episode. They do not become training data for the hospital's models, and they should not persist in an analytics store after the consent lapses.</p><p>The engineering follows the same pattern as any consent-governed data. Each record is tagged with its consent identifier and expiry, and storage enforces deletion when the consent ends. Any process that reads the data checks the purpose first. Audit logs record which model or user accessed which external record, and why.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The lab value in the wrong unit</h2><p>A hospital piloted an AI summary of linked records for its emergency department. Early feedback was positive: physicians valued seeing prior admissions and lab trends at a glance. Then a physician reviewing a summary noticed that a patient's fasting glucose from an external laboratory appeared as 7.8 in the trend line, alongside the hospital's own results in the 90s and 100s.</p><p>The external laboratory reported glucose in millimoles per litre; the hospital reports in milligrams per decilitre. The summariser had carried the number across without the unit, and the trend line made a high value look like an implausible drop. The physician recognised the mismatch at once, but a busier clinician might have misread it.</p><p>The hospital made unit normalisation a mandatory step for every external lab value, with the original value and unit retained beside the converted one. Values that cannot be normalised with confidence are excluded from trend lines and shown separately, clearly labelled. Every external value now displays its source laboratory in the summary.</p><p>The patient in Pune benefits when her history follows her, and ABDM has made that possible at a scale few countries have attempted. Clinical AI can turn that history into something a physician can use in minutes, provided every fact carries its source and every record respects the consent under which it arrived. A hospital CIO should ask whether the hospital's AI can show, for any value in a summary, where it came from and under which consent. A system that can do both serves patients with outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/abdm-interoperable-health-records-ai-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What ABDM has put in place"
+      },
+      {
+        "src": "/blog/abdm-interoperable-health-records-ai-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Consent and purpose inside the pipeline"
+      }
+    ],
     "related": {
       "section": {
         "label": "Healthcare & Life Sciences",
@@ -632,10 +820,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What made admissions evaluation hard to scale</h2><p>The ivi programme evaluates applicants on substance: the strength of their ideas and their potential. That substance arrives in mixed formats. A strong candidate might write a modest résumé and give an outstanding interview, or the reverse, and reviewers have to weigh both fairly.</p><p>At volume, two problems emerge. Reviewers drift as the cycle wears on, so similar applications can receive different readings depending on when they are reviewed. And presentation can outweigh content. An applicant who speaks polished English can read as stronger than one with a better idea and a less fluent delivery. Neither problem reflects any failing of the faculty. Both reflect a process that asks a small group of people to apply judgement consistently across thousands of submissions.</p><h2 id=\"sec-2\">What we engineered and operated</h2><p>We configured PRISM to ISB's own evaluation criteria and admissions workflow, without engineering a bespoke system. The platform parses each applicant's documents and produces a structured pre-screen. Applicants complete asynchronous interviews, which PRISM scores against rubrics mapped to ISB's criteria, using language models to assess what each candidate says.</p><p>For every applicant, PRISM produces an evaluation report that combines rubric scores with qualitative feedback and psychometric insights. Faculty then work from a review layer that surfaces the AI-evaluated shortlist, so their time goes to the final-stage interviews and the close decisions where their judgement matters most. PRISM never admits or rejects anyone. It gives faculty a consistent, documented first reading of every applicant.</p><h2 id=\"sec-3\">The risk we designed out before the first cycle</h2><p>The largest risk in automated interview scoring is that it reproduces the very bias it should remove. A system that rewards fluency will favour applicants who speak polished English, and in an Indian applicant pool that would penalise strong candidates for their delivery instead of their ideas.</p><p>We addressed this before the first cycle opened. The rubrics were written around the content of an answer and the evidence offered, with no criterion for accent or delivery style. We then calibrated PRISM's scores against faculty's own assessments, criterion by criterion, and adjusted the rubric wording where machine and faculty disagreed. Calibration continues each cycle, because applicant pools and programme priorities change.</p><h2 id=\"sec-4\">How it has held up</h2><p>Across successive admission cycles, PRISM's evaluations have tracked faculty's final assessments closely, and the removal of language and reviewer bias has measurably improved the quality of the applications that reach the final stage.</p><p>9,200+ candidates evaluated through PRISM</p><p>74% reduction in evaluation time per application, about 6,100 hours of reviewer time saved each year</p><p>97% agreement between PRISM's evaluations and faculty's final assessments</p><p>Admissions is a decision about people's futures, and it should be made by people, with the best possible evidence in front of them. We engineer AI ambition into enterprise value, and at ISB that value is faculty time spent on the decisions that need it. Any institution evaluating applicants at scale should ask whether every candidate is read against the same standard, and whether it could show how. A process that can is one that delivers outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What made admissions evaluation hard to scale</h2><p>The ivi programme evaluates applicants on substance: the strength of their ideas and their potential. That substance arrives in mixed formats. A strong candidate might write a modest résumé and give an outstanding interview, or the reverse, and reviewers have to weigh both fairly.</p><p>At volume, two problems emerge. Reviewers drift as the cycle wears on, so similar applications can receive different readings depending on when they are reviewed. And presentation can outweigh content. An applicant who speaks polished English can read as stronger than one with a better idea and a less fluent delivery. Neither problem reflects any failing of the faculty. Both reflect a process that asks a small group of people to apply judgement consistently across thousands of submissions.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">What we engineered and operated</h2><p>We configured PRISM to ISB's own evaluation criteria and admissions workflow, without engineering a bespoke system. The platform parses each applicant's documents and produces a structured pre-screen. Applicants complete asynchronous interviews, which PRISM scores against rubrics mapped to ISB's criteria, using language models to assess what each candidate says.</p><p>For every applicant, PRISM produces an evaluation report that combines rubric scores with qualitative feedback and psychometric insights. Faculty then work from a review layer that surfaces the AI-evaluated shortlist, so their time goes to the final-stage interviews and the close decisions where their judgement matters most. PRISM never admits or rejects anyone. It gives faculty a consistent, documented first reading of every applicant.</p><h2 id=\"sec-3\">The risk we designed out before the first cycle</h2><p>The largest risk in automated interview scoring is that it reproduces the very bias it should remove. A system that rewards fluency will favour applicants who speak polished English, and in an Indian applicant pool that would penalise strong candidates for their delivery instead of their ideas.</p><p>We addressed this before the first cycle opened. The rubrics were written around the content of an answer and the evidence offered, with no criterion for accent or delivery style. We then calibrated PRISM's scores against faculty's own assessments, criterion by criterion, and adjusted the rubric wording where machine and faculty disagreed. Calibration continues each cycle, because applicant pools and programme priorities change.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">How it has held up</h2><p>Across successive admission cycles, PRISM's evaluations have tracked faculty's final assessments closely, and the removal of language and reviewer bias has measurably improved the quality of the applications that reach the final stage.</p><p>9,200+ candidates evaluated through PRISM</p><p>74% reduction in evaluation time per application, about 6,100 hours of reviewer time saved each year</p><p>97% agreement between PRISM's evaluations and faculty's final assessments</p><p>Admissions is a decision about people's futures, and it should be made by people, with the best possible evidence in front of them. We engineer AI ambition into enterprise value, and at ISB that value is faculty time spent on the decisions that need it. Any institution evaluating applicants at scale should ask whether every candidate is read against the same standard, and whether it could show how. A process that can is one that delivers outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/prism-in-isb-ivi-admissions-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What made admissions evaluation hard to scale"
+      },
+      {
+        "src": "/blog/prism-in-isb-ivi-admissions-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: The risk we designed out before the first cycle"
+      }
+    ],
     "related": {
       "section": {
         "label": "About Us",
@@ -690,14 +903,39 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What Eleven v4 offers</h2><p>The headline is expressiveness. ElevenLabs says the model interprets tone and emotion from context, so an agent can sound reassuring when a caller is frustrated. A pronunciation dictionary lets teams fix how brand names and drug names are spoken across languages. When a caller switches language mid-call, the agent can keep the same voice or change to another.</p><p>The company reports that Eleven v4 ranked first on Artificial Analysis's voice arena leaderboard in September 2026, and that listeners preferred it about three times in four in blind comparisons against several competing models. Those comparisons were conducted by ElevenLabs. Its launch post names the biggest quality gains in Japanese, Brazilian Portuguese, Mandarin and Cantonese, and gives no pricing for Turbo.</p><h2 id=\"sec-2\">What matters for a voice agent</h2><p>Latency figures need context. A caller experiences the full gap between finishing a sentence and hearing a reply, which includes speech recognition, end-of-turn detection, the language model's response and only then synthesis. A faster synthesis model helps, but if the language model takes most of the budget, a 100-millisecond improvement in speech output may be hard for a caller to notice. The useful measurement is end-to-end response time on the enterprise's own calls.</p><p>Expressiveness works both ways in regulated conversations. A warmer voice can calm a frustrated customer in a collections call. It can also sound inappropriately cheerful when a claimant reports a bereavement. Emotional range needs testing against the scripts and situations the agent will actually face, with compliance listening as well as the product team.</p><h2 id=\"sec-3\">The Indian-language question</h2><p>For Indian enterprises, the decisive test is quality in the languages their customers speak. The launch materials name no Indian language among the most improved, which proves nothing either way and means the evidence has to be gathered directly. Hindi, Tamil and the other languages a contact centre serves should each be tested on real scripts, including code-switched sentences that mix English terms into an Indian language.</p><p>Numbers deserve particular attention. Indian callers expect amounts in lakhs and crores, and dates in day-month order. A model that reads \"₹12,50,000\" as \"one million two hundred fifty thousand\" fails a collections call however natural its voice. The pronunciation dictionary can fix names, and number formats need their own test cases.</p><h2 id=\"sec-4\">When re-testing the voice stack is worth it</h2><p>Not every release justifies a migration. A re-test is worth the effort when the current voice is a known source of complaints, or when the enterprise is adding languages its current provider handles poorly. Where the current stack performs well on both counts, the better course is to note the release and revisit it at the next scheduled review.</p><p>When a re-test is justified, it should follow the same discipline as any model change: synthetic calls through the full audio path, scored against a rubric, with native-speaker review in each language and a canary release before full traffic.</p><p>Eleven v4 looks like a meaningful step for expressive speech, and the vendor's latency figures are competitive. Whether it improves a particular contact centre depends on that centre's languages and existing bottlenecks. A head of customer experience should ask for end-to-end response time and native-speaker ratings, measured on the organisation's own calls, before any switch. A voice decision made on that evidence holds up as one of the outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What Eleven v4 offers</h2><p>The headline is expressiveness. ElevenLabs says the model interprets tone and emotion from context, so an agent can sound reassuring when a caller is frustrated. A pronunciation dictionary lets teams fix how brand names and drug names are spoken across languages. When a caller switches language mid-call, the agent can keep the same voice or change to another.</p><p>The company reports that Eleven v4 ranked first on Artificial Analysis's voice arena leaderboard in September 2026, and that listeners preferred it about three times in four in blind comparisons against several competing models. Those comparisons were conducted by ElevenLabs. Its launch post names the biggest quality gains in Japanese, Brazilian Portuguese, Mandarin and Cantonese, and gives no pricing for Turbo.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">What matters for a voice agent</h2><p>Latency figures need context. A caller experiences the full gap between finishing a sentence and hearing a reply, which includes speech recognition, end-of-turn detection, the language model's response and only then synthesis. A faster synthesis model helps, but if the language model takes most of the budget, a 100-millisecond improvement in speech output may be hard for a caller to notice. The useful measurement is end-to-end response time on the enterprise's own calls.</p><p>Expressiveness works both ways in regulated conversations. A warmer voice can calm a frustrated customer in a collections call. It can also sound inappropriately cheerful when a claimant reports a bereavement. Emotional range needs testing against the scripts and situations the agent will actually face, with compliance listening as well as the product team.</p><h2 id=\"sec-3\">The Indian-language question</h2><p>For Indian enterprises, the decisive test is quality in the languages their customers speak. The launch materials name no Indian language among the most improved, which proves nothing either way and means the evidence has to be gathered directly. Hindi, Tamil and the other languages a contact centre serves should each be tested on real scripts, including code-switched sentences that mix English terms into an Indian language.</p><p>Numbers deserve particular attention. Indian callers expect amounts in lakhs and crores, and dates in day-month order. A model that reads \"₹12,50,000\" as \"one million two hundred fifty thousand\" fails a collections call however natural its voice. The pronunciation dictionary can fix names, and number formats need their own test cases.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">When re-testing the voice stack is worth it</h2><p>Not every release justifies a migration. A re-test is worth the effort when the current voice is a known source of complaints, or when the enterprise is adding languages its current provider handles poorly. Where the current stack performs well on both counts, the better course is to note the release and revisit it at the next scheduled review.</p><p>When a re-test is justified, it should follow the same discipline as any model change: synthetic calls through the full audio path, scored against a rubric, with native-speaker review in each language and a canary release before full traffic.</p><p>Eleven v4 looks like a meaningful step for expressive speech, and the vendor's latency figures are competitive. Whether it improves a particular contact centre depends on that centre's languages and existing bottlenecks. A head of customer experience should ask for end-to-end response time and native-speaker ratings, measured on the organisation's own calls, before any switch. A voice decision made on that evidence holds up as one of the outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/eleven-v4-voice-stack-decision-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What Eleven v4 offers"
+      },
+      {
+        "src": "/blog/eleven-v4-voice-stack-decision-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: The Indian-language question"
+      }
+    ],
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -735,10 +973,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What investors ask, and where servicing ends</h2><p>Most investor queries are transactional. Statement requests, redemption status, SIP registrations and cancellations, nominee updates and KYC changes make up the bulk of the volume, and each has a clear answer in the AMC's or its registrar's systems. These are well suited to automation, because the answer is a fact about the investor's own folio.</p><p>A smaller share of queries asks for a judgement. Should I redeem now, or is this a good time to invest more? Answering those is investment advice, which in India is regulated activity. An AMC's service channel should provide accurate information about products and the investor's holdings, and it should never recommend what the investor ought to do.</p><p>Regulators are also paying closer attention to how AI is used across the securities market. In early 2025, SEBI amended its Intermediaries Regulations to add a chapter on AI, making a regulated entity that uses AI solely responsible for investors' data and for the outputs of the tools it relies on. It consulted on further guidelines later that year, and in August 2026 its chairman said those guidelines would follow with safeguards such as human oversight and emergency stops. An AMC deploying AI in investor service is already accountable for what its assistant says, and should expect those further safeguards to apply.</p><h2 id=\"sec-2\">Answering the routine queries completely</h2><p>For transactional queries, the agent's job is to resolve the request completely. That means authenticating the investor, then completing the request or giving a precise status with a date. \"Your redemption of 12 March was processed on 14 March and credited to your bank account ending 4417\" closes the query. \"Redemptions usually take a few days\" invites a second message.</p><p>Integration matters more than conversation quality. The agent needs authorised, read access to folio data held with the registrar, and controlled write access for the requests it can complete itself, such as generating a statement. Changes with fraud potential, such as bank mandate or nominee updates, should go through the established verification process, with the agent preparing the request and the investor confirming through a secure channel.</p><p>Language matters for reach. Mutual fund investing has spread well beyond the largest cities, and investors who are comfortable in Hindi or Tamil should be served in those languages, with the same accuracy as an English query.</p><h2 id=\"sec-3\">The position: classify every message before answering it</h2><p>The line between servicing and advice cannot be left to the language model's general judgement. Every incoming message should first be classified as a request the AMC can fulfil or a request for a recommendation. Transactions and requests for factual information proceed. Requests for a recommendation receive a neutral response that explains what the AMC can provide, such as factsheets and scheme information documents, and points the investor to a registered adviser or their distributor.</p><p>Factual information needs its own care. Past returns presented side by side, without the context and disclosures required for performance data, can read as a recommendation even when no recommendation was intended. Responses that include performance figures should use approved templates with the mandatory disclosures attached.</p><h2 id=\"sec-4\">The comparison that read like advice</h2><p>An AMC's service assistant handled routine queries well for several months. Compliance reviewed a weekly sample of conversations and, in one, found an exchange that troubled them. An investor had written that his fund was down and asked whether to switch to another scheme. The assistant had not said yes or no. It had produced a clear comparison of the two schemes' returns over three and five years, with the second scheme's figures noticeably higher.</p><p>Every number in the comparison was accurate. Presented in reply to \"should I switch?\", the comparison read as an endorsement, and it omitted the disclosures that accompany any presentation of past performance. Nothing in the assistant's instructions forbade comparisons, because nobody had imagined one arriving in that context.</p><p>The AMC added a classification step ahead of generation, so any message seeking a decision is identified before the model drafts a reply. Those messages receive a neutral referral, and performance figures can only appear through approved templates that carry the required disclosures. Compliance now samples every conversation the classifier marks as advice-seeking.</p><p>The investor filing taxes in March needs his capital gains statement in seconds, and the investor worried about a falling fund needs an honest answer about what the AMC can and cannot tell him. AI can serve both, provided the line between them is engineered into the system. A head of investor services should ask how the AMC's assistant decides that a question is seeking advice, and who reviews those conversations. An AMC with a clear answer offers investors outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What investors ask, and where servicing ends</h2><p>Most investor queries are transactional. Statement requests, redemption status, SIP registrations and cancellations, nominee updates and KYC changes make up the bulk of the volume, and each has a clear answer in the AMC's or its registrar's systems. These are well suited to automation, because the answer is a fact about the investor's own folio.</p><p>A smaller share of queries asks for a judgement. Should I redeem now, or is this a good time to invest more? Answering those is investment advice, which in India is regulated activity. An AMC's service channel should provide accurate information about products and the investor's holdings, and it should never recommend what the investor ought to do.</p><p>Regulators are also paying closer attention to how AI is used across the securities market. In early 2025, SEBI amended its Intermediaries Regulations to add a chapter on AI, making a regulated entity that uses AI solely responsible for investors' data and for the outputs of the tools it relies on. It consulted on further guidelines later that year, and in August 2026 its chairman said those guidelines would follow with safeguards such as human oversight and emergency stops. An AMC deploying AI in investor service is already accountable for what its assistant says, and should expect those further safeguards to apply.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Answering the routine queries completely</h2><p>For transactional queries, the agent's job is to resolve the request completely. That means authenticating the investor, then completing the request or giving a precise status with a date. \"Your redemption of 12 March was processed on 14 March and credited to your bank account ending 4417\" closes the query. \"Redemptions usually take a few days\" invites a second message.</p><p>Integration matters more than conversation quality. The agent needs authorised, read access to folio data held with the registrar, and controlled write access for the requests it can complete itself, such as generating a statement. Changes with fraud potential, such as bank mandate or nominee updates, should go through the established verification process, with the agent preparing the request and the investor confirming through a secure channel.</p><p>Language matters for reach. Mutual fund investing has spread well beyond the largest cities, and investors who are comfortable in Hindi or Tamil should be served in those languages, with the same accuracy as an English query.</p><h2 id=\"sec-3\">The position: classify every message before answering it</h2><p>The line between servicing and advice cannot be left to the language model's general judgement. Every incoming message should first be classified as a request the AMC can fulfil or a request for a recommendation. Transactions and requests for factual information proceed. Requests for a recommendation receive a neutral response that explains what the AMC can provide, such as factsheets and scheme information documents, and points the investor to a registered adviser or their distributor.</p><p>Factual information needs its own care. Past returns presented side by side, without the context and disclosures required for performance data, can read as a recommendation even when no recommendation was intended. Responses that include performance figures should use approved templates with the mandatory disclosures attached.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The comparison that read like advice</h2><p>An AMC's service assistant handled routine queries well for several months. Compliance reviewed a weekly sample of conversations and, in one, found an exchange that troubled them. An investor had written that his fund was down and asked whether to switch to another scheme. The assistant had not said yes or no. It had produced a clear comparison of the two schemes' returns over three and five years, with the second scheme's figures noticeably higher.</p><p>Every number in the comparison was accurate. Presented in reply to \"should I switch?\", the comparison read as an endorsement, and it omitted the disclosures that accompany any presentation of past performance. Nothing in the assistant's instructions forbade comparisons, because nobody had imagined one arriving in that context.</p><p>The AMC added a classification step ahead of generation, so any message seeking a decision is identified before the model drafts a reply. Those messages receive a neutral referral, and performance figures can only appear through approved templates that carry the required disclosures. Compliance now samples every conversation the classifier marks as advice-seeking.</p><p>The investor filing taxes in March needs his capital gains statement in seconds, and the investor worried about a falling fund needs an honest answer about what the AMC can and cannot tell him. AI can serve both, provided the line between them is engineered into the system. A head of investor services should ask how the AMC's assistant decides that a question is seeking advice, and who reviews those conversations. An AMC with a clear answer offers investors outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/ai-investor-servicing-amcs-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What investors ask, and where servicing ends"
+      },
+      {
+        "src": "/blog/ai-investor-servicing-amcs-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: The position: classify every message before answering it"
+      }
+    ],
     "related": {
       "section": {
         "label": "Banking & Financial Services",
@@ -789,10 +1052,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why presence checks are not enough</h2><p>Most application journeys check that a readable file was uploaded and, at best, that it looks like the requested document type. Those checks confirm presence. They say nothing about whether the document supports the application it is attached to.</p><p>The failures that matter are about substance. A certificate is issued to a different entity. A bank statement covers the wrong period. An address proof shows an address that differs from the one typed three screens earlier. A licence was valid when issued and has since lapsed. Each of these passes a presence check and fails the moment a careful reviewer reads it.</p><p>When those failures surface later, the cost multiplies. The applicant has moved on, and the case waits in a queue while the reviewer writes back for a corrected upload. In lending and insurance, these return loops are a large share of total processing time, and each one erodes the applicant's confidence in the institution.</p><h2 id=\"sec-2\">Reading the document against the form</h2><p>The stronger approach reads each uploaded document and checks it against what the applicant has already entered. The assistant extracts the key fields: the name of the entity or person, the identifiers printed on the document, the address, the dates of issue and validity, and the period covered. It then compares those fields with the form.</p><p>Identifiers carry the most weight. A GSTIN, a PAN or a registration number should match exactly, because a single digit separates two legal entities. Names and addresses need a more forgiving comparison, since abbreviations and spelling variations are common, but a mismatch in a name should never be overruled by a match in an address alone. Dates are checked against the rules of the journey: a bank statement must cover the required months, and a certificate must be valid on the date of submission.</p><p>When a check fails, the applicant hears about it immediately and specifically. \"This certificate is issued to Shree Ganesh Polymers; your application is for Shree Ganesh Plastics. Please upload the certificate for the applying entity\" gets fixed. \"Document invalid\" gets abandoned. A co-pilot that validates every upload field by field, such as LOUPE, is engineered to give exactly this kind of guidance at the moment it is useful.</p><h2 id=\"sec-3\">Keeping reviewers in charge of judgement</h2><p>Automated checks clear the routine failures so reviewers can concentrate on the cases that need judgement. Those checks never replace the reviewer's judgement. A document that passes every check still goes to credit, and the reviewer sees a summary of what was checked and what matched, so their attention goes to the questions a machine cannot answer.</p><p>Some mismatches are legitimate. A company that changed its name or a borrower who moved house can each produce a genuine discrepancy. The assistant should let the applicant explain and attach supporting evidence, flagging the case for review instead of blocking it outright.</p><h2 id=\"sec-4\">The certificate for the sister company</h2><p>A lender introduced document checks on its small-business loan journey and saw returned applications fall noticeably within a quarter. The checks compared the entity name on each certificate with the applicant's name, using a similarity threshold to tolerate abbreviations and spelling variations.</p><p>The sister-company case slipped through that tolerance. \"Shree Ganesh Polymers\" and \"Shree Ganesh Plastics\" scored as a close match, and the address was identical. The credit officer caught it only because she knew the family operated two businesses. Had she not, the loan would have been assessed against another company's tax registration.</p><p>The lender changed the order of evidence. Identifiers printed on the document are now matched exactly against identifiers the applicant provides, and a mismatch fails the check regardless of how similar the names look. Name similarity is used only to explain a discrepancy to the applicant, never to approve one.</p><p>The manufacturer applying for working capital deserves to know at the form that the wrong certificate is attached, and the lender deserves to assess the right company. Checking what a document says, against what the applicant typed, makes both possible. An operations head should ask what share of returned applications last quarter involved a document that was present but wrong. A journey that brings that number down, and records why each upload was accepted, delivers outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why presence checks are not enough</h2><p>Most application journeys check that a readable file was uploaded and, at best, that it looks like the requested document type. Those checks confirm presence. They say nothing about whether the document supports the application it is attached to.</p><p>The failures that matter are about substance. A certificate is issued to a different entity. A bank statement covers the wrong period. An address proof shows an address that differs from the one typed three screens earlier. A licence was valid when issued and has since lapsed. Each of these passes a presence check and fails the moment a careful reviewer reads it.</p><p>When those failures surface later, the cost multiplies. The applicant has moved on, and the case waits in a queue while the reviewer writes back for a corrected upload. In lending and insurance, these return loops are a large share of total processing time, and each one erodes the applicant's confidence in the institution.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Reading the document against the form</h2><p>The stronger approach reads each uploaded document and checks it against what the applicant has already entered. The assistant extracts the key fields: the name of the entity or person, the identifiers printed on the document, the address, the dates of issue and validity, and the period covered. It then compares those fields with the form.</p><p>Identifiers carry the most weight. A GSTIN, a PAN or a registration number should match exactly, because a single digit separates two legal entities. Names and addresses need a more forgiving comparison, since abbreviations and spelling variations are common, but a mismatch in a name should never be overruled by a match in an address alone. Dates are checked against the rules of the journey: a bank statement must cover the required months, and a certificate must be valid on the date of submission.</p><p>When a check fails, the applicant hears about it immediately and specifically. \"This certificate is issued to Shree Ganesh Polymers; your application is for Shree Ganesh Plastics. Please upload the certificate for the applying entity\" gets fixed. \"Document invalid\" gets abandoned. A co-pilot that validates every upload field by field, such as LOUPE, is engineered to give exactly this kind of guidance at the moment it is useful.</p><h2 id=\"sec-3\">Keeping reviewers in charge of judgement</h2><p>Automated checks clear the routine failures so reviewers can concentrate on the cases that need judgement. Those checks never replace the reviewer's judgement. A document that passes every check still goes to credit, and the reviewer sees a summary of what was checked and what matched, so their attention goes to the questions a machine cannot answer.</p><p>Some mismatches are legitimate. A company that changed its name or a borrower who moved house can each produce a genuine discrepancy. The assistant should let the applicant explain and attach supporting evidence, flagging the case for review instead of blocking it outright.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The certificate for the sister company</h2><p>A lender introduced document checks on its small-business loan journey and saw returned applications fall noticeably within a quarter. The checks compared the entity name on each certificate with the applicant's name, using a similarity threshold to tolerate abbreviations and spelling variations.</p><p>The sister-company case slipped through that tolerance. \"Shree Ganesh Polymers\" and \"Shree Ganesh Plastics\" scored as a close match, and the address was identical. The credit officer caught it only because she knew the family operated two businesses. Had she not, the loan would have been assessed against another company's tax registration.</p><p>The lender changed the order of evidence. Identifiers printed on the document are now matched exactly against identifiers the applicant provides, and a mismatch fails the check regardless of how similar the names look. Name similarity is used only to explain a discrepancy to the applicant, never to approve one.</p><p>The manufacturer applying for working capital deserves to know at the form that the wrong certificate is attached, and the lender deserves to assess the right company. Checking what a document says, against what the applicant typed, makes both possible. An operations head should ask what share of returned applications last quarter involved a document that was present but wrong. A journey that brings that number down, and records why each upload was accepted, delivers outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/ai-checks-on-uploaded-evidence-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Why presence checks are not enough"
+      },
+      {
+        "src": "/blog/ai-checks-on-uploaded-evidence-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Keeping reviewers in charge of judgement"
+      }
+    ],
     "related": {
       "section": {
         "label": "Agentic AI",
@@ -834,14 +1122,39 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What arrived on 22 September</h2><p>OpenAI's GPT-6 comes as Sol, the larger model aimed at coding and workflow automation, and Luna, a smaller model for high-volume work such as field extraction and ticket summaries. Sol costs USD 2 per million input tokens and USD 10 per million output tokens; Luna costs USD 0.10 and USD 0.50. OpenAI describes both as roughly half the price of their predecessors. Both offer a context window of about 1.05 million tokens, and cached input is discounted by up to 90 percent within a 30-minute reuse window.</p><p>Anthropic's Claude Opus 5.5 costs USD 4 per million input tokens and USD 20 per million output tokens, a 20 percent reduction from Opus 5, with cache reads 60 percent cheaper. It offers a one-million-token context window. Anthropic says the combination of lower prices and fewer tokens per task reduces costs by about 40 percent at default settings on typical workloads.</p><h2 id=\"sec-2\">What the launch benchmarks leave out</h2><p>Each vendor's benchmarks show its model favourably, as launch benchmarks always do. The useful reading lies in the caveats. OpenAI notes that its comparisons with competitors use publicly reported figures, not its own repeats, and it published no long-context benchmark for the new million-token window. Anthropic's own results show Opus 5.5 scoring below Opus 5 on one tool-use benchmark, Toolathlon Verified, and Anthropic itself cautions that the gap between Opus 5.5 and its more expensive Fable 5.1 is narrower in practice than the scores suggest.</p><p>Independent measurement adds further texture. Artificial Analysis placed Opus 5.5 at the top of its intelligence index, and found that at maximum effort it costs about the same per task as Opus 5, because it produces roughly 1.6 times as many output tokens. Its Terminal-Bench result for Opus 5.5 was lower than Anthropic's own figure, under a different test setup. None of this argues against either model. It argues for measuring both on the enterprise's own tasks before relying on any published number.</p><h2 id=\"sec-3\">Changes that break existing integrations</h2><p>A model upgrade is a code change, and both launches carry changes that existing integrations can feel. Opus 5.5 no longer allows extended thinking to be disabled, and it rejects forced tool-use settings that worked on Opus 5. Requests that specify no effort level now default to medium. Each of these can alter cost or behaviour in a workflow that was tuned for the previous model. GPT-6's caching rules, with their 30-minute reuse window, change the economics of workloads that were designed around earlier caching behaviour.</p><p>The discipline that handles this is unglamorous. Model versions are pinned in configuration, never referenced by a floating alias. Every candidate model is tested against the organisation's evaluation set, on its own workloads, at the effort settings it will actually use. Cost per completed task is measured on real traffic, because price per token tells only part of the story. The switch happens through a canary release, with the previous model ready as a fallback.</p><h2 id=\"sec-4\">Where the upgrade almost went wrong</h2><p>A document-processing team read the launch coverage on the morning of a release and changed the model identifier in its configuration before lunch. Its extraction pipeline relied on forcing the model to call a specific tool, a pattern that had worked for months. The new model version rejected that setting, and every extraction request began to fail.</p><p>The failures appeared as errors in the overnight batch, not as wrong answers, which made them easy to spot. The team rolled back the configuration and reprocessed the batch the next morning. No client deadline was missed, but a day's work had to be repeated, and the team had planned none of it.</p><p>The team now treats every model release as a migration. New versions enter a staging environment where the full evaluation set executes at production settings, and the release notes are checked against the integration code before anyone proposes a switch. Releases that pass go to a small share of traffic first.</p><p>GPT-6 and Claude Opus 5.5 are both serious options, and many enterprises will find that either model earns a place in their workloads. That finding should come from evidence the organisation gathered itself. A CTO fielding the forwarded message should ask whether the team can test a new model against its own tasks within a week, and roll it back within an hour. A team that can do both turns every launch day into an opportunity, and its model choices into outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What arrived on 22 September</h2><p>OpenAI's GPT-6 comes as Sol, the larger model aimed at coding and workflow automation, and Luna, a smaller model for high-volume work such as field extraction and ticket summaries. Sol costs USD 2 per million input tokens and USD 10 per million output tokens; Luna costs USD 0.10 and USD 0.50. OpenAI describes both as roughly half the price of their predecessors. Both offer a context window of about 1.05 million tokens, and cached input is discounted by up to 90 percent within a 30-minute reuse window.</p><p>Anthropic's Claude Opus 5.5 costs USD 4 per million input tokens and USD 20 per million output tokens, a 20 percent reduction from Opus 5, with cache reads 60 percent cheaper. It offers a one-million-token context window. Anthropic says the combination of lower prices and fewer tokens per task reduces costs by about 40 percent at default settings on typical workloads.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">What the launch benchmarks leave out</h2><p>Each vendor's benchmarks show its model favourably, as launch benchmarks always do. The useful reading lies in the caveats. OpenAI notes that its comparisons with competitors use publicly reported figures, not its own repeats, and it published no long-context benchmark for the new million-token window. Anthropic's own results show Opus 5.5 scoring below Opus 5 on one tool-use benchmark, Toolathlon Verified, and Anthropic itself cautions that the gap between Opus 5.5 and its more expensive Fable 5.1 is narrower in practice than the scores suggest.</p><p>Independent measurement adds further texture. Artificial Analysis placed Opus 5.5 at the top of its intelligence index, and found that at maximum effort it costs about the same per task as Opus 5, because it produces roughly 1.6 times as many output tokens. Its Terminal-Bench result for Opus 5.5 was lower than Anthropic's own figure, under a different test setup. None of this argues against either model. It argues for measuring both on the enterprise's own tasks before relying on any published number.</p><h2 id=\"sec-3\">Changes that break existing integrations</h2><p>A model upgrade is a code change, and both launches carry changes that existing integrations can feel. Opus 5.5 no longer allows extended thinking to be disabled, and it rejects forced tool-use settings that worked on Opus 5. Requests that specify no effort level now default to medium. Each of these can alter cost or behaviour in a workflow that was tuned for the previous model. GPT-6's caching rules, with their 30-minute reuse window, change the economics of workloads that were designed around earlier caching behaviour.</p><p>The discipline that handles this is unglamorous. Model versions are pinned in configuration, never referenced by a floating alias. Every candidate model is tested against the organisation's evaluation set, on its own workloads, at the effort settings it will actually use. Cost per completed task is measured on real traffic, because price per token tells only part of the story. The switch happens through a canary release, with the previous model ready as a fallback.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">Where the upgrade almost went wrong</h2><p>A document-processing team read the launch coverage on the morning of a release and changed the model identifier in its configuration before lunch. Its extraction pipeline relied on forcing the model to call a specific tool, a pattern that had worked for months. The new model version rejected that setting, and every extraction request began to fail.</p><p>The failures appeared as errors in the overnight batch, not as wrong answers, which made them easy to spot. The team rolled back the configuration and reprocessed the batch the next morning. No client deadline was missed, but a day's work had to be repeated, and the team had planned none of it.</p><p>The team now treats every model release as a migration. New versions enter a staging environment where the full evaluation set executes at production settings, and the release notes are checked against the integration code before anyone proposes a switch. Releases that pass go to a small share of traffic first.</p><p>GPT-6 and Claude Opus 5.5 are both serious options, and many enterprises will find that either model earns a place in their workloads. That finding should come from evidence the organisation gathered itself. A CTO fielding the forwarded message should ask whether the team can test a new model against its own tasks within a week, and roll it back within an hour. A team that can do both turns every launch day into an opportunity, and its model choices into outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/gpt-6-and-claude-opus-5-5-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What arrived on 22 September"
+      },
+      {
+        "src": "/blog/gpt-6-and-claude-opus-5-5-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Changes that break existing integrations"
+      }
+    ],
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -879,10 +1192,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What makes a medical information answer different</h2><p>Medical information teams answer unsolicited questions from healthcare professionals about the company's products. Their answers are scientific, distinct from promotion. They draw on the prescribing information and the company's approved standard responses, and they present the evidence as it stands, including its gaps. When a doctor asks about a use the product is not approved for, a medical information team may provide balanced scientific information in reply, which a sales representative may never do.</p><p>The work has a regulatory spine. Every enquiry and response is documented, and every response must be traceable to its sources. Most importantly, enquiries often contain safety information. A doctor describing a side effect or a patient mentioning a reaction can each trigger a pharmacovigilance obligation, whatever the question they were actually asking.</p><p>Volume makes this harder each year. Enquiries arrive through email, phone, websites and field-force referrals, in several languages, and many teams answer them with a small group of pharmacists and physicians.</p><h2 id=\"sec-2\">Grounded answers drawn only from approved sources</h2><p>The assistant works from a closed corpus of approved documents, such as the current prescribing information and the company's standard responses. It never draws on open web content. Given an enquiry, it drafts a response from the retrieved passages and cites every statement to its source document and section.</p><p>The draft goes to a medical information professional, who reviews it against the sources before approving it. For the nephrologist, the draft would set out what the prescribing information says about renal impairment and note whether any dialysis data exists. Where the evidence is thin, the draft says so plainly instead of filling the gap with a plausible inference.</p><p>Version control matters as much as retrieval quality. When the prescribing information changes, the corpus changes the same day, and standard responses that cite the old version are flagged for review. An enterprise knowledge hub and reasoning engine such as COMPASS is engineered for this kind of work, answering from an approved body of knowledge and showing exactly where each answer came from.</p><h2 id=\"sec-3\">Catching adverse events inside ordinary questions</h2><p>The more important function of the system has nothing to do with drafting. Every enquiry, including its attachments, is screened for possible adverse events: an identifiable patient, a suspect product, an event and a reporter. Any enquiry that may contain one is routed to pharmacovigilance immediately, independent of the draft response, so a safety report never waits on a scientific reply.</p><p>Screening should be deliberately sensitive. A false alarm costs a pharmacovigilance associate a few minutes; a missed adverse event is a regulatory failure and, more importantly, lost safety information. The reviewer approving each response also confirms whether a safety event is present, and the medical information log is reconciled against pharmacovigilance intake every week.</p><h2 id=\"sec-4\">The adverse event inside a dosing question</h2><p>A company introduced assisted drafting for medical information and saw response times fall within weeks. Its adverse-event screening flagged enquiries that described side effects directly. An enquiry much like the nephrologist's arrived, framed entirely as a dosing question, with the rash mentioned in a subordinate clause near the end.</p><p>The screening model scored it below threshold, because the message's main subject was dosing and the event was described as background. The draft response itself was accurate and well sourced. The medical information pharmacist reviewing it read the full message, noticed the rash and opened a safety case the same morning, well within the required timeline.</p><p>The team made the screening independent of the enquiry's topic. Every sentence is now assessed on its own for the elements of an adverse event, and a mention of any reaction in a patient taking the product is enough to route the case. The reviewer's confirmation became a required field that cannot be skipped, and the weekly reconciliation now samples enquiries the screen did not flag.</p><p>The nephrologist deserves a fast, sourced answer, and the patient deserves to have that rash recorded where safety scientists will see it. AI can serve both, provided the approved corpus stays current and safety screening is treated as the system's first duty. A head of medical affairs should ask how many adverse events reached pharmacovigilance through medical information last quarter, and how many were found only at review. A function that can answer with evidence protects patients with outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What makes a medical information answer different</h2><p>Medical information teams answer unsolicited questions from healthcare professionals about the company's products. Their answers are scientific, distinct from promotion. They draw on the prescribing information and the company's approved standard responses, and they present the evidence as it stands, including its gaps. When a doctor asks about a use the product is not approved for, a medical information team may provide balanced scientific information in reply, which a sales representative may never do.</p><p>The work has a regulatory spine. Every enquiry and response is documented, and every response must be traceable to its sources. Most importantly, enquiries often contain safety information. A doctor describing a side effect or a patient mentioning a reaction can each trigger a pharmacovigilance obligation, whatever the question they were actually asking.</p><p>Volume makes this harder each year. Enquiries arrive through email, phone, websites and field-force referrals, in several languages, and many teams answer them with a small group of pharmacists and physicians.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Grounded answers drawn only from approved sources</h2><p>The assistant works from a closed corpus of approved documents, such as the current prescribing information and the company's standard responses. It never draws on open web content. Given an enquiry, it drafts a response from the retrieved passages and cites every statement to its source document and section.</p><p>The draft goes to a medical information professional, who reviews it against the sources before approving it. For the nephrologist, the draft would set out what the prescribing information says about renal impairment and note whether any dialysis data exists. Where the evidence is thin, the draft says so plainly instead of filling the gap with a plausible inference.</p><p>Version control matters as much as retrieval quality. When the prescribing information changes, the corpus changes the same day, and standard responses that cite the old version are flagged for review. An enterprise knowledge hub and reasoning engine such as COMPASS is engineered for this kind of work, answering from an approved body of knowledge and showing exactly where each answer came from.</p><h2 id=\"sec-3\">Catching adverse events inside ordinary questions</h2><p>The more important function of the system has nothing to do with drafting. Every enquiry, including its attachments, is screened for possible adverse events: an identifiable patient, a suspect product, an event and a reporter. Any enquiry that may contain one is routed to pharmacovigilance immediately, independent of the draft response, so a safety report never waits on a scientific reply.</p><p>Screening should be deliberately sensitive. A false alarm costs a pharmacovigilance associate a few minutes; a missed adverse event is a regulatory failure and, more importantly, lost safety information. The reviewer approving each response also confirms whether a safety event is present, and the medical information log is reconciled against pharmacovigilance intake every week.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The adverse event inside a dosing question</h2><p>A company introduced assisted drafting for medical information and saw response times fall within weeks. Its adverse-event screening flagged enquiries that described side effects directly. An enquiry much like the nephrologist's arrived, framed entirely as a dosing question, with the rash mentioned in a subordinate clause near the end.</p><p>The screening model scored it below threshold, because the message's main subject was dosing and the event was described as background. The draft response itself was accurate and well sourced. The medical information pharmacist reviewing it read the full message, noticed the rash and opened a safety case the same morning, well within the required timeline.</p><p>The team made the screening independent of the enquiry's topic. Every sentence is now assessed on its own for the elements of an adverse event, and a mention of any reaction in a patient taking the product is enough to route the case. The reviewer's confirmation became a required field that cannot be skipped, and the weekly reconciliation now samples enquiries the screen did not flag.</p><p>The nephrologist deserves a fast, sourced answer, and the patient deserves to have that rash recorded where safety scientists will see it. AI can serve both, provided the approved corpus stays current and safety screening is treated as the system's first duty. A head of medical affairs should ask how many adverse events reached pharmacovigilance through medical information last quarter, and how many were found only at review. A function that can answer with evidence protects patients with outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/ai-for-pharma-medical-information-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What makes a medical information answer different"
+      },
+      {
+        "src": "/blog/ai-for-pharma-medical-information-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Catching adverse events inside ordinary questions"
+      }
+    ],
     "related": {
       "section": {
         "label": "Healthcare & Life Sciences",
@@ -929,10 +1267,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why retrieval breaks across languages</h2><p>Retrieval-augmented systems find relevant passages by comparing the meaning of a question with the meaning of stored text. When both are in English, mature embedding models do this well. When the question is in Marathi and the document in English, the comparison depends on how well the model maps meaning across languages, and support for Indian languages is uneven across models.</p><p>Indian usage adds further complications. Speakers mix languages within a sentence, writing a Hindi question around English banking terms such as \"KYC re-verification\". Many type Hindi or Tamil in Latin script, so the same word appears in several spellings. A system tested on clean, single-language queries meets none of this until it reaches the field.</p><p>Translation introduces its own risk. An answer generated in English and translated into Hindi can lose a negation or alter a number, and in policy guidance those are exactly the details that matter.</p><h2 id=\"sec-2\">Engineering retrieval that works across languages</h2><p>The first layer is normalisation. Questions are converted to a consistent script, with transliterated forms mapped to their standard spelling. A maintained glossary of institutional terms, in each language the enterprise supports, keeps \"crop loan renewal\" and its Marathi equivalents pointing to the same concept.</p><p>Retrieval then combines two methods. Multilingual embeddings match meaning across languages, while keyword search on normalised terms catches the scheme names and form numbers that embeddings blur. Results from both are merged and ranked, so a question naming a specific circular finds that circular even if its phrasing is unusual.</p><p>The answer is generated from the retrieved passages in the user's language and cites the source passage in its original language, with a translation alongside. An officer can read the answer in Marathi and, when it matters, check the exact English wording of the circular. An enterprise knowledge hub and reasoning engine such as COMPASS works this way, making institutional knowledge answerable in the language of the person asking.</p><p>India's public language infrastructure, including the Bhashini programme, has expanded the translation and speech models available for Indian languages. Those models are a resource, and they still need testing on the enterprise's own vocabulary before they carry policy answers.</p><h2 id=\"sec-3\">Evaluating every language on its own</h2><p>A single accuracy score across all languages can hide a failing one. Evaluation needs a test set for each supported language, written by native speakers who know the domain, with questions phrased the way staff actually ask them, including mixed language and Latin-script spellings.</p><p>Each language is then measured separately on two things: whether the right passage was retrieved, and whether the answer is faithful to it. A language that falls below threshold is not launched, or is launched with answers that always show the source passage for the user to verify. Native-speaker reviewers sample live answers in each language every month, because usage drifts as more staff adopt the tool.</p><h2 id=\"sec-4\">The negation lost between languages</h2><p>A bank's policy assistant passed its evaluation in each language and launched to branch staff. In the second month, a Hindi-speaking reviewer sampling live answers found one that stated a document was mandatory for a particular account type. The source circular said the opposite: the document was not required.</p><p>The retrieval had been correct. The error arose in the step that rendered the answer in Hindi, where the negation was dropped. The answer cited the right circular, and a careful reader checking the English passage would have caught it, but busy branch staff rarely did.</p><p>The bank added a verification step for answers containing negations, numbers, dates or eligibility conditions. The Hindi answer is translated back to English and compared with the source passage, and any mismatch blocks the answer until it is regenerated or reviewed. Answers in these categories also display the source passage by default, so the evidence is always in front of the reader.</p><p>The field officer in Maharashtra should be able to ask in Marathi and trust the answer as much as a colleague in head office asking in English. That requires retrieval tuned to how Indians actually write, and evaluation for every language on its own terms. A CIO deploying a knowledge assistant should ask to see accuracy reported separately for each language. A system that reports it that way, and shows its source, delivers outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why retrieval breaks across languages</h2><p>Retrieval-augmented systems find relevant passages by comparing the meaning of a question with the meaning of stored text. When both are in English, mature embedding models do this well. When the question is in Marathi and the document in English, the comparison depends on how well the model maps meaning across languages, and support for Indian languages is uneven across models.</p><p>Indian usage adds further complications. Speakers mix languages within a sentence, writing a Hindi question around English banking terms such as \"KYC re-verification\". Many type Hindi or Tamil in Latin script, so the same word appears in several spellings. A system tested on clean, single-language queries meets none of this until it reaches the field.</p><p>Translation introduces its own risk. An answer generated in English and translated into Hindi can lose a negation or alter a number, and in policy guidance those are exactly the details that matter.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Engineering retrieval that works across languages</h2><p>The first layer is normalisation. Questions are converted to a consistent script, with transliterated forms mapped to their standard spelling. A maintained glossary of institutional terms, in each language the enterprise supports, keeps \"crop loan renewal\" and its Marathi equivalents pointing to the same concept.</p><p>Retrieval then combines two methods. Multilingual embeddings match meaning across languages, while keyword search on normalised terms catches the scheme names and form numbers that embeddings blur. Results from both are merged and ranked, so a question naming a specific circular finds that circular even if its phrasing is unusual.</p><p>The answer is generated from the retrieved passages in the user's language and cites the source passage in its original language, with a translation alongside. An officer can read the answer in Marathi and, when it matters, check the exact English wording of the circular. An enterprise knowledge hub and reasoning engine such as COMPASS works this way, making institutional knowledge answerable in the language of the person asking.</p><p>India's public language infrastructure, including the Bhashini programme, has expanded the translation and speech models available for Indian languages. Those models are a resource, and they still need testing on the enterprise's own vocabulary before they carry policy answers.</p><h2 id=\"sec-3\">Evaluating every language on its own</h2><p>A single accuracy score across all languages can hide a failing one. Evaluation needs a test set for each supported language, written by native speakers who know the domain, with questions phrased the way staff actually ask them, including mixed language and Latin-script spellings.</p><p>Each language is then measured separately on two things: whether the right passage was retrieved, and whether the answer is faithful to it. A language that falls below threshold is not launched, or is launched with answers that always show the source passage for the user to verify. Native-speaker reviewers sample live answers in each language every month, because usage drifts as more staff adopt the tool.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The negation lost between languages</h2><p>A bank's policy assistant passed its evaluation in each language and launched to branch staff. In the second month, a Hindi-speaking reviewer sampling live answers found one that stated a document was mandatory for a particular account type. The source circular said the opposite: the document was not required.</p><p>The retrieval had been correct. The error arose in the step that rendered the answer in Hindi, where the negation was dropped. The answer cited the right circular, and a careful reader checking the English passage would have caught it, but busy branch staff rarely did.</p><p>The bank added a verification step for answers containing negations, numbers, dates or eligibility conditions. The Hindi answer is translated back to English and compared with the source passage, and any mismatch blocks the answer until it is regenerated or reviewed. Answers in these categories also display the source passage by default, so the evidence is always in front of the reader.</p><p>The field officer in Maharashtra should be able to ask in Marathi and trust the answer as much as a colleague in head office asking in English. That requires retrieval tuned to how Indians actually write, and evaluation for every language on its own terms. A CIO deploying a knowledge assistant should ask to see accuracy reported separately for each language. A system that reports it that way, and shows its source, delivers outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/multilingual-retrieval-indian-enterprises-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Why retrieval breaks across languages"
+      },
+      {
+        "src": "/blog/multilingual-retrieval-indian-enterprises-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Evaluating every language on its own"
+      }
+    ],
     "related": {
       "section": {
         "label": "Agentic AI",
@@ -974,10 +1337,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What supervisors now expect</h2><p>In August 2025, the Reserve Bank of India published the report of its committee on a Framework for Responsible and Ethical Enablement of Artificial Intelligence, known as FREE-AI. The report sets out seven guiding principles, among them that public trust is the foundation of AI in finance and that the deploying entity remains accountable for AI decisions however autonomous the system. Its recommendations for regulated entities include a board-approved AI policy, an inventory of AI models and use cases, AI incident reporting, audit processes and disclosures about AI governance in annual reports.</p><p>The report also encourages innovation. It argues for enabling useful AI adoption alongside the controls, and it recognises that firms of different sizes need different approaches. For an NBFC, the message is to govern AI deliberately, in proportion to the risk each use creates, and to be able to show how.</p><p>In June 2026, RBI went further and published draft guidance on model risk management that would apply to NBFCs in every layer. It asks for a board-approved model risk management framework, an inventory without which no model may be used, full accountability for vendor models, and human oversight with the power to override or switch off an AI system. Customers must be told when they are dealing with AI and offered a person instead. The consultation closed on 24 July, and even in draft it is the clearest statement yet of what supervisors will expect.</p><p>RBI's scale-based framework for NBFCs already shapes how much regulatory machinery each firm carries. AI governance should follow the same logic. A base-layer lender with a single scorecard needs far less apparatus than an upper-layer NBFC with dozens of models touching customers every day.</p><h2 id=\"sec-2\">The position: proportionate governance starts with an inventory</h2><p>No firm can govern what it has not listed. The inventory comes first, and it should be defined by function instead of by department, because AI arrives through vendors and features embedded in existing software as often as through a formal project.</p><p>Each entry in the inventory then receives a tier based on its potential for customer harm. A model that decides who receives credit, at what price, ranks at the top. A voice agent that speaks to borrowers about repayment comes next, because its words carry conduct risk. An internal assistant that summarises documents for staff ranks lower, provided its output is reviewed before anyone acts on it. Controls follow the tier, so the four-person risk team spends its attention where the harm would be greatest.</p><h2 id=\"sec-3\">A governance setup a lean team can sustain</h2><p>For the highest tier, the controls resemble existing model risk management: documented purpose and data, validation before launch, fairness testing across customer segments, monitoring for drift and a named business owner who answers for outcomes. For the conduct tier, the emphasis shifts to scripts, escalation rules and sampled review of conversations. For the lowest tier, a short registration and periodic review are usually enough.</p><p>Third-party models deserve their own attention, because many NBFCs buy AI instead of developing it. Contracts should give the NBFC the information it needs to meet its own obligations: what data the vendor uses and how incidents will be reported. The accountability principle in FREE-AI leaves no room to hand responsibility to a vendor.</p><p>The board's role is oversight. A quarterly report covering the inventory and the incidents logged gives directors what they need to approve the AI policy and question it. That report is also the raw material for the annual disclosure the framework recommends.</p><h2 id=\"sec-4\">The chatbot that was not on the inventory</h2><p>An NBFC completed its first AI inventory with care. It listed its credit scorecard and its collections voice agent, assigned owners and set review dates. The board approved the policy that quarter.</p><p>Six weeks later, the grievance team noticed a pattern of complaints about foreclosure charges. Customers had been quoted figures that did not match their loan agreements. The source was a chatbot the customer service team had switched on inside the company's CRM platform, as a feature included in an upgrade. It answered foreclosure questions from an outdated fee schedule. Because it arrived as a software feature, nobody had thought of it as an AI deployment.</p><p>The chatbot was restricted to directing customers to the official calculation, and affected customers received corrected statements. The inventory definition was rewritten around what a system does, so any tool that generates customer-facing answers or recommendations is included wherever it came from. Procurement and IT now require a declaration of AI features at every software purchase and upgrade.</p><p>An NBFC does not need a large team to govern AI responsibly. It needs a complete inventory and a board that sees the picture every quarter. A managing director should ask whether the company could produce its full list of AI uses today, including the ones that arrived inside other software. An NBFC that can, and can show how each is governed, holds its AI to outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What supervisors now expect</h2><p>In August 2025, the Reserve Bank of India published the report of its committee on a Framework for Responsible and Ethical Enablement of Artificial Intelligence, known as FREE-AI. The report sets out seven guiding principles, among them that public trust is the foundation of AI in finance and that the deploying entity remains accountable for AI decisions however autonomous the system. Its recommendations for regulated entities include a board-approved AI policy, an inventory of AI models and use cases, AI incident reporting, audit processes and disclosures about AI governance in annual reports.</p><p>The report also encourages innovation. It argues for enabling useful AI adoption alongside the controls, and it recognises that firms of different sizes need different approaches. For an NBFC, the message is to govern AI deliberately, in proportion to the risk each use creates, and to be able to show how.</p><p>In June 2026, RBI went further and published draft guidance on model risk management that would apply to NBFCs in every layer. It asks for a board-approved model risk management framework, an inventory without which no model may be used, full accountability for vendor models, and human oversight with the power to override or switch off an AI system. Customers must be told when they are dealing with AI and offered a person instead. The consultation closed on 24 July, and even in draft it is the clearest statement yet of what supervisors will expect.</p><p>RBI's scale-based framework for NBFCs already shapes how much regulatory machinery each firm carries. AI governance should follow the same logic. A base-layer lender with a single scorecard needs far less apparatus than an upper-layer NBFC with dozens of models touching customers every day.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">The position: proportionate governance starts with an inventory</h2><p>No firm can govern what it has not listed. The inventory comes first, and it should be defined by function instead of by department, because AI arrives through vendors and features embedded in existing software as often as through a formal project.</p><p>Each entry in the inventory then receives a tier based on its potential for customer harm. A model that decides who receives credit, at what price, ranks at the top. A voice agent that speaks to borrowers about repayment comes next, because its words carry conduct risk. An internal assistant that summarises documents for staff ranks lower, provided its output is reviewed before anyone acts on it. Controls follow the tier, so the four-person risk team spends its attention where the harm would be greatest.</p><h2 id=\"sec-3\">A governance setup a lean team can sustain</h2><p>For the highest tier, the controls resemble existing model risk management: documented purpose and data, validation before launch, fairness testing across customer segments, monitoring for drift and a named business owner who answers for outcomes. For the conduct tier, the emphasis shifts to scripts, escalation rules and sampled review of conversations. For the lowest tier, a short registration and periodic review are usually enough.</p><p>Third-party models deserve their own attention, because many NBFCs buy AI instead of developing it. Contracts should give the NBFC the information it needs to meet its own obligations: what data the vendor uses and how incidents will be reported. The accountability principle in FREE-AI leaves no room to hand responsibility to a vendor.</p><p>The board's role is oversight. A quarterly report covering the inventory and the incidents logged gives directors what they need to approve the AI policy and question it. That report is also the raw material for the annual disclosure the framework recommends.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The chatbot that was not on the inventory</h2><p>An NBFC completed its first AI inventory with care. It listed its credit scorecard and its collections voice agent, assigned owners and set review dates. The board approved the policy that quarter.</p><p>Six weeks later, the grievance team noticed a pattern of complaints about foreclosure charges. Customers had been quoted figures that did not match their loan agreements. The source was a chatbot the customer service team had switched on inside the company's CRM platform, as a feature included in an upgrade. It answered foreclosure questions from an outdated fee schedule. Because it arrived as a software feature, nobody had thought of it as an AI deployment.</p><p>The chatbot was restricted to directing customers to the official calculation, and affected customers received corrected statements. The inventory definition was rewritten around what a system does, so any tool that generates customer-facing answers or recommendations is included wherever it came from. Procurement and IT now require a declaration of AI features at every software purchase and upgrade.</p><p>An NBFC does not need a large team to govern AI responsibly. It needs a complete inventory and a board that sees the picture every quarter. A managing director should ask whether the company could produce its full list of AI uses today, including the ones that arrived inside other software. An NBFC that can, and can show how each is governed, holds its AI to outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/ai-governance-for-nbfcs-1.webp",
+        "width": 1200,
+        "height": 675,
+        "alt": "Illustration: What supervisors now expect"
+      },
+      {
+        "src": "/blog/ai-governance-for-nbfcs-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: A governance setup a lean team can sustain"
+      }
+    ],
     "related": {
       "section": {
         "label": "Banking & Financial Services",
@@ -1028,14 +1416,39 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What Hybrid Compute offers</h2><p>The local model is a 27-billion-parameter Qwen 3.8 variant tuned by Perplexity, installed with a one-click download and no separate runtime to configure. Work handled locally uses no cloud credits. The privacy classifier that pseudonymises data before it is sent has been open-sourced, which means security teams can inspect how it works.</p><p>The feature has firm hardware requirements. It needs Apple silicon and at least 24 GB of unified memory, with 32 GB recommended. Macs with 8 or 16 GB cannot host it. The launch coverage describes no administrative controls for organisations, and it does not explain how the system decides when a step moves to the local model.</p><h2 id=\"sec-2\">Where the design holds</h2><p>Splitting work by sensitivity is the right architecture for most knowledge work. The cloud model brings breadth and current information; the local model handles the material that should never leave the device. Pseudonymising data before a cloud call is a sound control in its own right, because even when a step goes to the cloud, the provider sees placeholders in place of a customer's name or account number.</p><p>Opening the classifier is a meaningful choice. A privacy control that cannot be inspected asks the enterprise to trust a claim. A published classifier can be tested against the organisation's own data, which is how a security team should evaluate any control that stands between employees and an external service.</p><h2 id=\"sec-3\">Where the enterprise still carries the load</h2><p>The classifier is designed to recognise personal identifiers. Much of what an enterprise considers sensitive contains none. An unannounced acquisition target or a draft quarterly result can be described without a single name or account number, and a classifier trained on personal data will let it pass. Deciding what counts as sensitive is a policy decision rooted in the organisation's own classification scheme, and the launch offers no way to express that policy.</p><p>The hardware requirement narrows the audience. Many enterprise laptop fleets are standardised on configurations with 16 GB of memory, so the employees who could use Hybrid Compute may be a small subset of those who would want it. Local processing also moves sensitive work onto endpoints, so device encryption and loss procedures become part of the AI control environment.</p><p>The absence of administrative controls matters most for regulated firms. A compliance team will want to set which data classes must stay local, and to confirm that the local path is enforced instead of merely preferred. Until those controls exist, the feature is a well-designed personal tool more than an enterprise one.</p><h2 id=\"sec-4\">Where it fits</h2><p>Hybrid Compute suits individual professionals and small teams on capable Macs who handle personal data in their research and want it kept off the cloud. It is a reasonable pilot for an enterprise that wants to test the split-compute pattern on a limited group, with the security team reviewing the open classifier against its own data first. It fits poorly as a fleet-wide tool until organisations can define their own sensitivity rules and audit where each step was processed.</p><p>The direction is welcome, and it is likely to spread to other assistants. Enterprises considering it should keep sight of the question the launch leaves open. A CISO should ask who defines sensitive data in any split-compute tool, and whether the organisation can see where each step was processed. A tool that lets the enterprise answer both is one that can support outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What Hybrid Compute offers</h2><p>The local model is a 27-billion-parameter Qwen 3.8 variant tuned by Perplexity, installed with a one-click download and no separate runtime to configure. Work handled locally uses no cloud credits. The privacy classifier that pseudonymises data before it is sent has been open-sourced, which means security teams can inspect how it works.</p><p>The feature has firm hardware requirements. It needs Apple silicon and at least 24 GB of unified memory, with 32 GB recommended. Macs with 8 or 16 GB cannot host it. The launch coverage describes no administrative controls for organisations, and it does not explain how the system decides when a step moves to the local model.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Where the design holds</h2><p>Splitting work by sensitivity is the right architecture for most knowledge work. The cloud model brings breadth and current information; the local model handles the material that should never leave the device. Pseudonymising data before a cloud call is a sound control in its own right, because even when a step goes to the cloud, the provider sees placeholders in place of a customer's name or account number.</p><p>Opening the classifier is a meaningful choice. A privacy control that cannot be inspected asks the enterprise to trust a claim. A published classifier can be tested against the organisation's own data, which is how a security team should evaluate any control that stands between employees and an external service.</p><h2 id=\"sec-3\">Where the enterprise still carries the load</h2><p>The classifier is designed to recognise personal identifiers. Much of what an enterprise considers sensitive contains none. An unannounced acquisition target or a draft quarterly result can be described without a single name or account number, and a classifier trained on personal data will let it pass. Deciding what counts as sensitive is a policy decision rooted in the organisation's own classification scheme, and the launch offers no way to express that policy.</p><p>The hardware requirement narrows the audience. Many enterprise laptop fleets are standardised on configurations with 16 GB of memory, so the employees who could use Hybrid Compute may be a small subset of those who would want it. Local processing also moves sensitive work onto endpoints, so device encryption and loss procedures become part of the AI control environment.</p><p>The absence of administrative controls matters most for regulated firms. A compliance team will want to set which data classes must stay local, and to confirm that the local path is enforced instead of merely preferred. Until those controls exist, the feature is a well-designed personal tool more than an enterprise one.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">Where it fits</h2><p>Hybrid Compute suits individual professionals and small teams on capable Macs who handle personal data in their research and want it kept off the cloud. It is a reasonable pilot for an enterprise that wants to test the split-compute pattern on a limited group, with the security team reviewing the open classifier against its own data first. It fits poorly as a fleet-wide tool until organisations can define their own sensitivity rules and audit where each step was processed.</p><p>The direction is welcome, and it is likely to spread to other assistants. Enterprises considering it should keep sight of the question the launch leaves open. A CISO should ask who defines sensitive data in any split-compute tool, and whether the organisation can see where each step was processed. A tool that lets the enterprise answer both is one that can support outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/perplexity-hybrid-compute-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What Hybrid Compute offers"
+      },
+      {
+        "src": "/blog/perplexity-hybrid-compute-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Where the enterprise still carries the load"
+      }
+    ],
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -1073,10 +1486,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What the IRDAI timelines changed, and what they left to hospitals</h2><p>On 29 May 2024, the Insurance Regulatory and Development Authority of India issued its Master Circular on Health Insurance Products, which set firm expectations for cashless claims. Insurers must decide on a cashless authorisation request within one hour, and give final authorisation at discharge within three hours of the hospital's request. If final authorisation takes longer, any additional hospital charges are borne by the insurer from its shareholders' funds. Policyholders should not have to submit documents themselves; insurers and TPAs are expected to collect what they need from the hospital. The circular's stated aim is cashless settlement for every eligible claim, in a time-bound manner.</p><p>Those timelines put pressure on insurers. They also expose the hospital side of the process. The clock is most useful when the request is complete, and a request missing a report or a coded estimate invites a query that sends the case round again. Many hospital insurance desks still assemble packets by hand, across several insurers and TPAs with different forms and different document expectations.</p><h2 id=\"sec-2\">Assembling a complete packet at admission</h2><p>An AI assistant can prepare the pre-authorisation packet as the admission is recorded. It reads the admission notes and the treating doctor's plan, then checks the patient's policy for the terms that matter, such as room rent limits and sub-limits for the procedure. It then compares the documents in the patient's file with what that insurer or TPA usually asks for in a case of this kind.</p><p>Gaps now surface before the request is submitted. If the investigation report is missing from the packet, the desk is told while the patient is still being admitted, and the report is attached at once. If the estimate exceeds a sub-limit, the family can be counselled on the likely co-payment before treatment begins instead of at discharge. A co-pilot that guides each field and validates every upload for completeness, such as LOUPE, is engineered for exactly this kind of high-stakes form.</p><p>The insurance desk stays in control. The assistant drafts the packet and flags the gaps, and a trained coordinator reviews and submits it. Medical decisions belong with the treating doctor, and nothing in the process should press a clinician to change a plan to fit a policy.</p><h2 id=\"sec-3\">Discharge without the afternoon wait</h2><p>The second bottleneck arrives at discharge. Final authorisation depends on a reconciled bill and the discharge summary. When those are assembled only after the doctor signs the discharge, the three-hour clock starts late in the day and families wait into the evening.</p><p>The assistant can reconcile the bill against the authorised estimate throughout the stay. Items likely to be non-payable under the policy are flagged as they are added, so the family hears about them early. When the doctor decides on discharge, the summary and the reconciled bill are ready to send, and the desk's job is to check and submit.</p><h2 id=\"sec-4\">The estimate that missed the room change</h2><p>A hospital using assisted pre-authorisation saw its query rate fall in the first months, and the insurance desk began to trust the packets. Then a patient admitted to a twin-sharing room asked, on the second day, to move to a single room. The move was approved at the ward and recorded in the billing system, but the authorised estimate was not revisited.</p><p>The patient's policy capped room rent, and like many Indian health policies it applied a proportionate deduction to associated charges when a patient chose a room above the cap. The final authorisation came back substantially lower than the family expected. A billing executive caught the gap before the patient left and sat with the family to explain it, but the conversation was harder than it needed to be.</p><p>The hospital changed what triggers a fresh estimate. Any change of room category now prompts a fresh estimate against the policy terms and an explanation to the family, at the moment they request the change, of what the move will cost them. The insurance desk receives the revised estimate automatically for an enhancement request.</p><p>Cashless treatment works when the hospital and the payer side each do their part quickly. The IRDAI timelines speak to insurers; the hospital's contribution is a complete, accurate request at admission and a ready file at discharge. A hospital administrator should ask what share of pre-authorisation requests received a query last month, and how long discharges waited for final approval. A desk that can bring both numbers down, with families told the truth early, gives patients outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What the IRDAI timelines changed, and what they left to hospitals</h2><p>On 29 May 2024, the Insurance Regulatory and Development Authority of India issued its Master Circular on Health Insurance Products, which set firm expectations for cashless claims. Insurers must decide on a cashless authorisation request within one hour, and give final authorisation at discharge within three hours of the hospital's request. If final authorisation takes longer, any additional hospital charges are borne by the insurer from its shareholders' funds. Policyholders should not have to submit documents themselves; insurers and TPAs are expected to collect what they need from the hospital. The circular's stated aim is cashless settlement for every eligible claim, in a time-bound manner.</p><p>Those timelines put pressure on insurers. They also expose the hospital side of the process. The clock is most useful when the request is complete, and a request missing a report or a coded estimate invites a query that sends the case round again. Many hospital insurance desks still assemble packets by hand, across several insurers and TPAs with different forms and different document expectations.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Assembling a complete packet at admission</h2><p>An AI assistant can prepare the pre-authorisation packet as the admission is recorded. It reads the admission notes and the treating doctor's plan, then checks the patient's policy for the terms that matter, such as room rent limits and sub-limits for the procedure. It then compares the documents in the patient's file with what that insurer or TPA usually asks for in a case of this kind.</p><p>Gaps now surface before the request is submitted. If the investigation report is missing from the packet, the desk is told while the patient is still being admitted, and the report is attached at once. If the estimate exceeds a sub-limit, the family can be counselled on the likely co-payment before treatment begins instead of at discharge. A co-pilot that guides each field and validates every upload for completeness, such as LOUPE, is engineered for exactly this kind of high-stakes form.</p><p>The insurance desk stays in control. The assistant drafts the packet and flags the gaps, and a trained coordinator reviews and submits it. Medical decisions belong with the treating doctor, and nothing in the process should press a clinician to change a plan to fit a policy.</p><h2 id=\"sec-3\">Discharge without the afternoon wait</h2><p>The second bottleneck arrives at discharge. Final authorisation depends on a reconciled bill and the discharge summary. When those are assembled only after the doctor signs the discharge, the three-hour clock starts late in the day and families wait into the evening.</p><p>The assistant can reconcile the bill against the authorised estimate throughout the stay. Items likely to be non-payable under the policy are flagged as they are added, so the family hears about them early. When the doctor decides on discharge, the summary and the reconciled bill are ready to send, and the desk's job is to check and submit.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The estimate that missed the room change</h2><p>A hospital using assisted pre-authorisation saw its query rate fall in the first months, and the insurance desk began to trust the packets. Then a patient admitted to a twin-sharing room asked, on the second day, to move to a single room. The move was approved at the ward and recorded in the billing system, but the authorised estimate was not revisited.</p><p>The patient's policy capped room rent, and like many Indian health policies it applied a proportionate deduction to associated charges when a patient chose a room above the cap. The final authorisation came back substantially lower than the family expected. A billing executive caught the gap before the patient left and sat with the family to explain it, but the conversation was harder than it needed to be.</p><p>The hospital changed what triggers a fresh estimate. Any change of room category now prompts a fresh estimate against the policy terms and an explanation to the family, at the moment they request the change, of what the move will cost them. The insurance desk receives the revised estimate automatically for an enhancement request.</p><p>Cashless treatment works when the hospital and the payer side each do their part quickly. The IRDAI timelines speak to insurers; the hospital's contribution is a complete, accurate request at admission and a ready file at discharge. A hospital administrator should ask what share of pre-authorisation requests received a query last month, and how long discharges waited for final approval. A desk that can bring both numbers down, with families told the truth early, gives patients outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/cashless-claims-tpa-pre-authorisation-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What the IRDAI timelines changed, and what they left to hospitals"
+      },
+      {
+        "src": "/blog/cashless-claims-tpa-pre-authorisation-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Discharge without the afternoon wait"
+      }
+    ],
     "related": {
       "section": {
         "label": "Healthcare & Life Sciences",
@@ -1123,10 +1561,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why voice agents are hard to test</h2><p>A voice agent is a chain of systems that each introduce variation. Speech recognition hears the caller imperfectly, the language model decides what to say, speech synthesis says it, and turn-taking logic decides when to speak and when to stop. A change to any link can alter behaviour elsewhere. A longer sentence in the script, for instance, gives callers more opportunity to interrupt, which tests interruption handling that was fine before.</p><p>Callers add their own variation. They interrupt, change the subject, answer a question with a question, and switch languages mid-sentence. Background noise and poor networks degrade what the agent hears. A handful of calls from an office captures almost none of this, so a change can pass manual testing and still fail on the second call of the morning.</p><p>Production is the costliest place to discover these failures. In a regulated conversation, such as collections or claims, a failed call can mean a missed mandatory disclosure or a vulnerable customer handled badly. Those are conduct issues, which no team wants to find in its complaints log.</p><h2 id=\"sec-2\">Simulated callers drawn from real call patterns</h2><p>Synthetic test calls replace the quiet office with a population of simulated callers. Each one has a persona and facts the agent must discover, such as a borrower who lost her job last month and wants to pay later, or a caller who disputes the debt. Personas also carry behaviour, such as interrupting or switching between Hindi and English.</p><p>The mix should reflect real traffic. Anonymised production transcripts show which kinds of callers appear and how often, and the simulated population follows that distribution, with extra weight on the rare, difficult cases that matter most. Each new failure seen in production becomes a new persona, so the test suite grows with experience.</p><p>The simulation has to travel the full audio path. Text-only simulations test the conversation logic and miss the failures that come from hearing and timing. The simulated caller speaks with a synthetic voice, over audio degraded to match real line conditions, and the agent hears it through the same speech recognition it uses in production.</p><h2 id=\"sec-3\">Scoring every call against a rubric</h2><p>A thousand simulated calls are useful only if each one is scored consistently. The rubric covers what the business and the regulator care about. Did the agent make every mandatory disclosure? Did it reach the right outcome for this caller's situation, escalating when the rules required and never talking over the caller?</p><p>Scoring combines automated checks with model-based grading, calibrated against human reviewers on a sample of calls. Each criterion has its own threshold, and a release candidate must meet every threshold and avoid regression against the current version on the hardest personas. A rubric-based evaluation engine such as PRISM scores each call against these criteria and records the evidence behind every mark, while an agentic calling platform such as EVIO carries the release once it has passed.</p><h2 id=\"sec-4\">The change that passed in text and failed on the line</h2><p>A lender's team tested a revised hardship script using text-based simulation, which was its standard practice at the time. Every simulated conversation passed. The new script included a longer explanation of the hardship option, which read well and met every compliance criterion.</p><p>On the first morning, a small canary release showed a problem within the hour. Real callers began speaking partway through the long explanation, as people do. The agent's interruption handling stopped speaking correctly, but then restarted the explanation from the beginning once the caller paused. Callers interrupted again, and some calls looped until the customer hung up. The canary was rolled back before the change reached full traffic.</p><p>The team made audio-level simulation mandatory for every script change. Interruption-heavy personas were added to the suite, and a new rubric criterion now fails any call in which the agent repeats the same passage after an interruption. The long explanation was rewritten as two shorter turns, each confirming the caller had followed before continuing.</p><p>Voice agents will keep changing, because scripts and regulations change. Testing each change against a realistic population of callers, through the full audio path, turns release from an act of faith into a decision backed by evidence. A head of customer operations should ask how many simulated calls stood between the last script change and the first real customer. A release process that can answer is how voice automation delivers outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why voice agents are hard to test</h2><p>A voice agent is a chain of systems that each introduce variation. Speech recognition hears the caller imperfectly, the language model decides what to say, speech synthesis says it, and turn-taking logic decides when to speak and when to stop. A change to any link can alter behaviour elsewhere. A longer sentence in the script, for instance, gives callers more opportunity to interrupt, which tests interruption handling that was fine before.</p><p>Callers add their own variation. They interrupt, change the subject, answer a question with a question, and switch languages mid-sentence. Background noise and poor networks degrade what the agent hears. A handful of calls from an office captures almost none of this, so a change can pass manual testing and still fail on the second call of the morning.</p><p>Production is the costliest place to discover these failures. In a regulated conversation, such as collections or claims, a failed call can mean a missed mandatory disclosure or a vulnerable customer handled badly. Those are conduct issues, which no team wants to find in its complaints log.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Simulated callers drawn from real call patterns</h2><p>Synthetic test calls replace the quiet office with a population of simulated callers. Each one has a persona and facts the agent must discover, such as a borrower who lost her job last month and wants to pay later, or a caller who disputes the debt. Personas also carry behaviour, such as interrupting or switching between Hindi and English.</p><p>The mix should reflect real traffic. Anonymised production transcripts show which kinds of callers appear and how often, and the simulated population follows that distribution, with extra weight on the rare, difficult cases that matter most. Each new failure seen in production becomes a new persona, so the test suite grows with experience.</p><p>The simulation has to travel the full audio path. Text-only simulations test the conversation logic and miss the failures that come from hearing and timing. The simulated caller speaks with a synthetic voice, over audio degraded to match real line conditions, and the agent hears it through the same speech recognition it uses in production.</p><h2 id=\"sec-3\">Scoring every call against a rubric</h2><p>A thousand simulated calls are useful only if each one is scored consistently. The rubric covers what the business and the regulator care about. Did the agent make every mandatory disclosure? Did it reach the right outcome for this caller's situation, escalating when the rules required and never talking over the caller?</p><p>Scoring combines automated checks with model-based grading, calibrated against human reviewers on a sample of calls. Each criterion has its own threshold, and a release candidate must meet every threshold and avoid regression against the current version on the hardest personas. A rubric-based evaluation engine such as PRISM scores each call against these criteria and records the evidence behind every mark, while an agentic calling platform such as EVIO carries the release once it has passed.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The change that passed in text and failed on the line</h2><p>A lender's team tested a revised hardship script using text-based simulation, which was its standard practice at the time. Every simulated conversation passed. The new script included a longer explanation of the hardship option, which read well and met every compliance criterion.</p><p>On the first morning, a small canary release showed a problem within the hour. Real callers began speaking partway through the long explanation, as people do. The agent's interruption handling stopped speaking correctly, but then restarted the explanation from the beginning once the caller paused. Callers interrupted again, and some calls looped until the customer hung up. The canary was rolled back before the change reached full traffic.</p><p>The team made audio-level simulation mandatory for every script change. Interruption-heavy personas were added to the suite, and a new rubric criterion now fails any call in which the agent repeats the same passage after an interruption. The long explanation was rewritten as two shorter turns, each confirming the caller had followed before continuing.</p><p>Voice agents will keep changing, because scripts and regulations change. Testing each change against a realistic population of callers, through the full audio path, turns release from an act of faith into a decision backed by evidence. A head of customer operations should ask how many simulated calls stood between the last script change and the first real customer. A release process that can answer is how voice automation delivers outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/synthetic-test-calls-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Why voice agents are hard to test"
+      },
+      {
+        "src": "/blog/synthetic-test-calls-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Scoring every call against a rubric"
+      }
+    ],
     "related": {
       "section": {
         "label": "Agentic AI",
@@ -1168,10 +1631,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why a voice no longer proves identity</h2><p>For years, a bank's phone channel has treated the voice as part of the authentication. Some institutions use voice biometrics to verify callers passively. Others rely on agents and relationship managers who recognise regular customers. Both assume that a voice is hard to fake convincingly in a live conversation.</p><p>That assumption has weakened. Voice-cloning tools can now produce a convincing imitation from short samples of recorded speech, and business owners and executives often have plenty of recorded speech in public. Knowledge-based questions offer little extra protection, because the answers are often available from earlier data breaches or from the customer's own social media. A well-prepared fraudster can arrive with the right voice and the right answers.</p><p>The contact centre also has a cultural vulnerability. Agents are trained to help and to resolve the call quickly. A caller who sounds familiar and urgent is the hardest person to slow down.</p><h2 id=\"sec-2\">The position: never let the voice decide alone</h2><p>The answer is to treat voice as one signal among several and to match the strength of verification to the risk of the request. A balance enquiry needs very little verification. A change of registered mobile number or a new beneficiary needs a great deal, regardless of how familiar the caller sounds.</p><p>The strongest signals lie outside the call. Is the call coming from the customer's registered number, and has that number recently changed SIM? Is the call routed through an internet calling service the customer has never used? Confirmation through the registered app, or a call-back to the registered number placed by the bank, moves verification onto a channel the fraudster does not control.</p><p>Synthetic speech detection belongs in the stack as well. Models trained to spot the artefacts of generated audio can score each call and flag those that warrant extra checks. They work best as one input to a risk score, because detectors and generators improve in turns, and a detector that misses today's newest cloning tool should never be the only barrier.</p><h2 id=\"sec-3\">Protecting the genuine customer</h2><p>Every control that stops a fraudster also inconveniences a real customer, sometimes at a stressful moment. A traveller with a lost phone and a genuine emergency should not be treated as a criminal. The design goal is friction that rises only where the risk does, applied politely, with the reason explained.</p><p>That means clear scripts for agents. \"For your protection, we confirm new beneficiaries through your registered app\" sounds like care, while an agent improvising suspicion sounds like an accusation. It also means a defined path for customers who cannot complete the stronger check, such as a branch visit or a short cooling period before the transfer is released. Every decision to step up or decline is logged with its reason codes, so a complaint can be answered with evidence.</p><h2 id=\"sec-4\">The call that passed every question</h2><p>A bank's relationship desk received a call much like the one above. The caller's voice matched the customer's enrolled voiceprint, and he answered each security question. He first asked to update the registered mobile number, explaining that he had changed providers, and then asked for a transfer to a new beneficiary.</p><p>The transfer was not processed, but only because of an older rule. Changes to registered mobile numbers triggered an automatic notification and a call-back to the previous number. The real customer answered the call-back and said he had made no request. The bank froze the change and traced the call to an internet calling service. The cloned voice had been convincing enough that the voiceprint system scored it as a match.</p><p>The bank made two changes. A passing voiceprint no longer reduces the verification required for high-risk requests; it now counts as one signal among several. Synthetic speech scoring was added to every call reaching the relationship desk, and calls from internet calling services now trigger confirmation through the registered app. The cooling-period rule that stopped the transfer was extended to all new beneficiaries above a threshold.</p><p>The Friday call will keep coming, and the voice on the line will keep getting more convincing. Banks cannot win by teaching agents to hear the difference. They can win by making sure no voice, however familiar, can authorise a risky change on its own. A head of contact centre operations should ask which requests can still be completed on the strength of voice and security questions alone. Removing every one of them from that list is how the phone channel keeps outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why a voice no longer proves identity</h2><p>For years, a bank's phone channel has treated the voice as part of the authentication. Some institutions use voice biometrics to verify callers passively. Others rely on agents and relationship managers who recognise regular customers. Both assume that a voice is hard to fake convincingly in a live conversation.</p><p>That assumption has weakened. Voice-cloning tools can now produce a convincing imitation from short samples of recorded speech, and business owners and executives often have plenty of recorded speech in public. Knowledge-based questions offer little extra protection, because the answers are often available from earlier data breaches or from the customer's own social media. A well-prepared fraudster can arrive with the right voice and the right answers.</p><p>The contact centre also has a cultural vulnerability. Agents are trained to help and to resolve the call quickly. A caller who sounds familiar and urgent is the hardest person to slow down.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">The position: never let the voice decide alone</h2><p>The answer is to treat voice as one signal among several and to match the strength of verification to the risk of the request. A balance enquiry needs very little verification. A change of registered mobile number or a new beneficiary needs a great deal, regardless of how familiar the caller sounds.</p><p>The strongest signals lie outside the call. Is the call coming from the customer's registered number, and has that number recently changed SIM? Is the call routed through an internet calling service the customer has never used? Confirmation through the registered app, or a call-back to the registered number placed by the bank, moves verification onto a channel the fraudster does not control.</p><p>Synthetic speech detection belongs in the stack as well. Models trained to spot the artefacts of generated audio can score each call and flag those that warrant extra checks. They work best as one input to a risk score, because detectors and generators improve in turns, and a detector that misses today's newest cloning tool should never be the only barrier.</p><h2 id=\"sec-3\">Protecting the genuine customer</h2><p>Every control that stops a fraudster also inconveniences a real customer, sometimes at a stressful moment. A traveller with a lost phone and a genuine emergency should not be treated as a criminal. The design goal is friction that rises only where the risk does, applied politely, with the reason explained.</p><p>That means clear scripts for agents. \"For your protection, we confirm new beneficiaries through your registered app\" sounds like care, while an agent improvising suspicion sounds like an accusation. It also means a defined path for customers who cannot complete the stronger check, such as a branch visit or a short cooling period before the transfer is released. Every decision to step up or decline is logged with its reason codes, so a complaint can be answered with evidence.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The call that passed every question</h2><p>A bank's relationship desk received a call much like the one above. The caller's voice matched the customer's enrolled voiceprint, and he answered each security question. He first asked to update the registered mobile number, explaining that he had changed providers, and then asked for a transfer to a new beneficiary.</p><p>The transfer was not processed, but only because of an older rule. Changes to registered mobile numbers triggered an automatic notification and a call-back to the previous number. The real customer answered the call-back and said he had made no request. The bank froze the change and traced the call to an internet calling service. The cloned voice had been convincing enough that the voiceprint system scored it as a match.</p><p>The bank made two changes. A passing voiceprint no longer reduces the verification required for high-risk requests; it now counts as one signal among several. Synthetic speech scoring was added to every call reaching the relationship desk, and calls from internet calling services now trigger confirmation through the registered app. The cooling-period rule that stopped the transfer was extended to all new beneficiaries above a threshold.</p><p>The Friday call will keep coming, and the voice on the line will keep getting more convincing. Banks cannot win by teaching agents to hear the difference. They can win by making sure no voice, however familiar, can authorise a risky change on its own. A head of contact centre operations should ask which requests can still be completed on the strength of voice and security questions alone. Removing every one of them from that list is how the phone channel keeps outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/deepfake-voices-at-the-contact-centre-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Why a voice no longer proves identity"
+      },
+      {
+        "src": "/blog/deepfake-voices-at-the-contact-centre-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Protecting the genuine customer"
+      }
+    ],
     "related": {
       "section": {
         "label": "Banking & Financial Services",
@@ -1222,10 +1710,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why familiar pricing models strain</h2><p>Seat-based pricing assumes the value lies with human users. When an agent handles work that ten processors used to do, the seat count falls while the value rises, so the pricing and the outcome move in opposite directions. Vendors respond by inventing \"agent seats\", which rename the problem without solving it.</p><p>Time-and-materials pricing has the opposite flaw. It pays for effort, so a partner that engineers a system needing less ongoing attention earns less for doing better work. It also places the whole risk of underperformance on the client, who pays for the days whether or not the agent delivers.</p><p>Usage pricing, by tokens or by API calls, passes model costs through honestly but measures activity. An agent that loops on a difficult case consumes more tokens and costs more while delivering less. None of these models gives both parties a reason to care about the same number.</p><h2 id=\"sec-2\">What outcome-linked pricing asks of both sides</h2><p>Outcome pricing starts with the unit. It has to be something the business already values and can count without dispute: a claim settled, an application verified, a reconciliation completed, a customer query resolved. It also needs a quality condition, because an outcome that is later reversed or reopened was never really an outcome.</p><p>The baseline comes next. Before the agent goes live, both parties agree what the process costs today per unit, and how that figure was measured. This is the conversation most programmes skip and most regret skipping, because without it nobody can say whether the agent saved money.</p><p>The arrangement then asks something of each side. The partner accepts that part of its fee depends on results it must engineer and operate for. The client commits to the volumes and data access the agent needs to deliver them, since an outcome fee cannot be fair if the client controls the inputs and withholds them.</p><h2 id=\"sec-3\">How we structure outcome pricing</h2><p>Our engagements typically combine two components. A fixed operating fee covers the platform and the team that operates the agent, so the client pays a predictable amount for a system that is always operated responsibly. A variable fee is earned per verified outcome, counted only after the outcome passes the quality condition both sides agreed.</p><p>The terms are reviewed quarterly. Volumes and processes change as the agent improves, so the unit price and the baseline are revisited against evidence instead of renegotiated from scratch. Exclusions are written in advance, so cases the agent should never handle, such as disputed claims, fall outside the fee and route to people by design.</p><h2 id=\"sec-4\">The outcome that was counted too early</h2><p>On one engagement, the agreed unit was a resolved customer query, counted when the agent closed the conversation. In the second month, outcome numbers rose faster than anyone expected. The client's quality team noticed that a share of those resolved queries returned within days, raised again by the same customers.</p><p>Nobody had acted in bad faith. The definition counted closure, and closure arrived before resolution. We proposed changing the unit to a query with no repeat contact on the same issue within seven days, and to recalculate the previous month on that basis. The fee fell for that month, and the client's confidence in the numbers rose considerably.</p><p>The lesson shaped how we write every outcome definition since. The unit is counted at the point where the business would agree the work is done, even when that point arrives later than is convenient.</p><p>We engineer AI ambition into enterprise value, and pricing is where that ambition becomes a commitment. A CFO considering an agentic programme should ask the partner to name the unit it is prepared to be paid by, and the quality condition that unit must pass. A partner willing to answer both, in writing, is offering outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why familiar pricing models strain</h2><p>Seat-based pricing assumes the value lies with human users. When an agent handles work that ten processors used to do, the seat count falls while the value rises, so the pricing and the outcome move in opposite directions. Vendors respond by inventing \"agent seats\", which rename the problem without solving it.</p><p>Time-and-materials pricing has the opposite flaw. It pays for effort, so a partner that engineers a system needing less ongoing attention earns less for doing better work. It also places the whole risk of underperformance on the client, who pays for the days whether or not the agent delivers.</p><p>Usage pricing, by tokens or by API calls, passes model costs through honestly but measures activity. An agent that loops on a difficult case consumes more tokens and costs more while delivering less. None of these models gives both parties a reason to care about the same number.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">What outcome-linked pricing asks of both sides</h2><p>Outcome pricing starts with the unit. It has to be something the business already values and can count without dispute: a claim settled, an application verified, a reconciliation completed, a customer query resolved. It also needs a quality condition, because an outcome that is later reversed or reopened was never really an outcome.</p><p>The baseline comes next. Before the agent goes live, both parties agree what the process costs today per unit, and how that figure was measured. This is the conversation most programmes skip and most regret skipping, because without it nobody can say whether the agent saved money.</p><p>The arrangement then asks something of each side. The partner accepts that part of its fee depends on results it must engineer and operate for. The client commits to the volumes and data access the agent needs to deliver them, since an outcome fee cannot be fair if the client controls the inputs and withholds them.</p><h2 id=\"sec-3\">How we structure outcome pricing</h2><p>Our engagements typically combine two components. A fixed operating fee covers the platform and the team that operates the agent, so the client pays a predictable amount for a system that is always operated responsibly. A variable fee is earned per verified outcome, counted only after the outcome passes the quality condition both sides agreed.</p><p>The terms are reviewed quarterly. Volumes and processes change as the agent improves, so the unit price and the baseline are revisited against evidence instead of renegotiated from scratch. Exclusions are written in advance, so cases the agent should never handle, such as disputed claims, fall outside the fee and route to people by design.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The outcome that was counted too early</h2><p>On one engagement, the agreed unit was a resolved customer query, counted when the agent closed the conversation. In the second month, outcome numbers rose faster than anyone expected. The client's quality team noticed that a share of those resolved queries returned within days, raised again by the same customers.</p><p>Nobody had acted in bad faith. The definition counted closure, and closure arrived before resolution. We proposed changing the unit to a query with no repeat contact on the same issue within seven days, and to recalculate the previous month on that basis. The fee fell for that month, and the client's confidence in the numbers rose considerably.</p><p>The lesson shaped how we write every outcome definition since. The unit is counted at the point where the business would agree the work is done, even when that point arrives later than is convenient.</p><p>We engineer AI ambition into enterprise value, and pricing is where that ambition becomes a commitment. A CFO considering an agentic programme should ask the partner to name the unit it is prepared to be paid by, and the quality condition that unit must pass. A partner willing to answer both, in writing, is offering outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/pricing-agentic-ai-by-outcome-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Why familiar pricing models strain"
+      },
+      {
+        "src": "/blog/pricing-agentic-ai-by-outcome-2.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": "Illustration: How we structure outcome pricing"
+      }
+    ],
     "related": {
       "section": {
         "label": "About Us",
@@ -1267,14 +1780,39 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What Anthropic released on 1 September</h2><p>Fable 5.1 keeps the base price of its predecessor, USD 10 per million input tokens and USD 50 per million output tokens, which is twice the price of Claude Opus 5. The one price that changed is for cache reads, which fell by 75 percent, from USD 1.00 to USD 0.25 per million tokens. Anthropic positions the model for long-lived, high-stakes tasks that span hours and several applications, and it is offered through Anthropic's API and the major cloud platforms.</p><p>Anthropic reports strong gains on its own benchmarks, including a score of 52.6 percent on Terminal-Bench-Science against 24.7 percent for Fable 5. Those results had not been independently reproduced at launch. On Terminal-Bench 4.0, Anthropic reports 55.8 percent for Fable 5.1 and 60.9 percent for Mythos 5.1, and attributes the gap to safeguard interventions.</p><p>The release also follows a disruption that enterprise buyers will remember. On 12 June, Anthropic disabled Fable 5 and Mythos 5 for all customers to comply with a US government export-control directive, and restored access on 1 July after the controls were lifted. Anthropic stated publicly that it disagreed with the basis of the directive while complying with it.</p><h2 id=\"sec-2\">Two safeguard levels make procurement the first decision</h2><p>For organisations outside the United States, Mythos 5.1 is not available today, whatever its capability. An Indian bank or hospital group evaluating the model family should evaluate Fable 5.1, with its safeguards active, on its own workloads. Benchmark comparisons that cite Mythos results describe a model these buyers cannot use.</p><p>The safeguards themselves deserve testing. A security operations team or a pharmaceutical research group may find that legitimate requests occasionally trigger an intervention. The useful evidence is the rate at which that happens on the buyer's own tasks, measured before the model is placed in a workflow where a refusal halts work.</p><p>Data handling is the other procurement question. Anthropic's model documentation describes 30-day retention for Fable 5.1, with zero data retention only where Anthropic authorises it. A further set of enterprise safeguards, presented as equivalent to zero retention, is being rolled out in phases and was not yet available at launch. A regulated enterprise needs to know which terms apply to its account before any customer data reaches the model.</p><h2 id=\"sec-3\">The cache price matters more than the headline</h2><p>For agentic workloads, the cache-read price is often the number that decides the bill. An agent working through a long task re-reads its context many times, and most of those tokens are cache reads. In one independent test by Cognition, more than 95 percent of the tokens processed were cache reads, and the cost per task fell from USD 5.84 on Fable 5 to USD 2.68 on Fable 5.1 at medium effort.</p><p>The saving is not uniform across workloads. Anthropic's estimate that typical bills fall by about 25 percent, and agentic ones by up to 45 percent, comes from its own August usage. Artificial Analysis, testing at maximum effort, found the cost per task rose by about 20 percent compared with Fable 5, because the new model produced roughly 1.7 times as many output tokens. Anthropic's own documentation recommends starting with Opus 5 for most workloads, at half the price. The honest conclusion is that the cost of Fable 5.1 depends on the workload and the effort setting, and only measurement on an enterprise's own traffic will settle it.</p><h2 id=\"sec-4\">Where the selection almost broke</h2><p>An analytics team moved its contract-review pipeline to Fable 5 within weeks of its June release, attracted by its performance on long documents. The pipeline called the model directly, with no fallback configured, because the team saw no reason to expect the model to become unavailable.</p><p>When access was disabled on 12 June, the pipeline stopped. Reviews queued for days while the team rewrote prompts for another model and repeated its evaluation set to confirm the substitute performed acceptably. No client deliverable was missed, but only because the backlog fell in a quiet period.</p><p>The team now routes every model call through a gateway with a tested fallback for each workflow. The evaluation set executes against both the primary model and the fallback each month, so the team knows in advance what quality it gives up if it has to switch. The episode had nothing to do with model quality. It was a supply risk, and it applies to every frontier model an enterprise depends on.</p><p>Fable 5.1 is a capable model with a pricing change that will matter most to agent-heavy workloads. For a regulated enterprise, the decision rests on more than capability: which version it can procure and what happens if access is interrupted. A CTO weighing it should ask for cost and refusal rates measured on the organisation's own tasks, and for a fallback that has been tested within the past month. A model choice made on that evidence produces outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What Anthropic released on 1 September</h2><p>Fable 5.1 keeps the base price of its predecessor, USD 10 per million input tokens and USD 50 per million output tokens, which is twice the price of Claude Opus 5. The one price that changed is for cache reads, which fell by 75 percent, from USD 1.00 to USD 0.25 per million tokens. Anthropic positions the model for long-lived, high-stakes tasks that span hours and several applications, and it is offered through Anthropic's API and the major cloud platforms.</p><p>Anthropic reports strong gains on its own benchmarks, including a score of 52.6 percent on Terminal-Bench-Science against 24.7 percent for Fable 5. Those results had not been independently reproduced at launch. On Terminal-Bench 4.0, Anthropic reports 55.8 percent for Fable 5.1 and 60.9 percent for Mythos 5.1, and attributes the gap to safeguard interventions.</p><p>The release also follows a disruption that enterprise buyers will remember. On 12 June, Anthropic disabled Fable 5 and Mythos 5 for all customers to comply with a US government export-control directive, and restored access on 1 July after the controls were lifted. Anthropic stated publicly that it disagreed with the basis of the directive while complying with it.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Two safeguard levels make procurement the first decision</h2><p>For organisations outside the United States, Mythos 5.1 is not available today, whatever its capability. An Indian bank or hospital group evaluating the model family should evaluate Fable 5.1, with its safeguards active, on its own workloads. Benchmark comparisons that cite Mythos results describe a model these buyers cannot use.</p><p>The safeguards themselves deserve testing. A security operations team or a pharmaceutical research group may find that legitimate requests occasionally trigger an intervention. The useful evidence is the rate at which that happens on the buyer's own tasks, measured before the model is placed in a workflow where a refusal halts work.</p><p>Data handling is the other procurement question. Anthropic's model documentation describes 30-day retention for Fable 5.1, with zero data retention only where Anthropic authorises it. A further set of enterprise safeguards, presented as equivalent to zero retention, is being rolled out in phases and was not yet available at launch. A regulated enterprise needs to know which terms apply to its account before any customer data reaches the model.</p><h2 id=\"sec-3\">The cache price matters more than the headline</h2><p>For agentic workloads, the cache-read price is often the number that decides the bill. An agent working through a long task re-reads its context many times, and most of those tokens are cache reads. In one independent test by Cognition, more than 95 percent of the tokens processed were cache reads, and the cost per task fell from USD 5.84 on Fable 5 to USD 2.68 on Fable 5.1 at medium effort.</p><p>The saving is not uniform across workloads. Anthropic's estimate that typical bills fall by about 25 percent, and agentic ones by up to 45 percent, comes from its own August usage. Artificial Analysis, testing at maximum effort, found the cost per task rose by about 20 percent compared with Fable 5, because the new model produced roughly 1.7 times as many output tokens. Anthropic's own documentation recommends starting with Opus 5 for most workloads, at half the price. The honest conclusion is that the cost of Fable 5.1 depends on the workload and the effort setting, and only measurement on an enterprise's own traffic will settle it.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">Where the selection almost broke</h2><p>An analytics team moved its contract-review pipeline to Fable 5 within weeks of its June release, attracted by its performance on long documents. The pipeline called the model directly, with no fallback configured, because the team saw no reason to expect the model to become unavailable.</p><p>When access was disabled on 12 June, the pipeline stopped. Reviews queued for days while the team rewrote prompts for another model and repeated its evaluation set to confirm the substitute performed acceptably. No client deliverable was missed, but only because the backlog fell in a quiet period.</p><p>The team now routes every model call through a gateway with a tested fallback for each workflow. The evaluation set executes against both the primary model and the fallback each month, so the team knows in advance what quality it gives up if it has to switch. The episode had nothing to do with model quality. It was a supply risk, and it applies to every frontier model an enterprise depends on.</p><p>Fable 5.1 is a capable model with a pricing change that will matter most to agent-heavy workloads. For a regulated enterprise, the decision rests on more than capability: which version it can procure and what happens if access is interrupted. A CTO weighing it should ask for cost and refusal rates measured on the organisation's own tasks, and for a fallback that has been tested within the past month. A model choice made on that evidence produces outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/claude-fable-5-1-and-mythos-5-1-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What Anthropic released on 1 September"
+      },
+      {
+        "src": "/blog/claude-fable-5-1-and-mythos-5-1-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: The cache price matters more than the headline"
+      }
+    ],
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -1312,10 +1850,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why the legacy estate stays</h2><p>Core systems in banking and insurance outlast their vendors' roadmaps for sound reasons. They hold decades of records, and every change to them must pass regulatory and audit review. A replacement programme carries risk the institution may be right to avoid. The result is a large estate of applications that matter to the business and cannot be reached by modern integration.</p><p>The previous generation of automation tried to bridge this with robotic process automation. RPA bots located fields by fixed screen coordinates or brittle selectors, and broke whenever a vendor patch moved a button. Many organisations still maintain teams whose main job is repairing bots after updates. The automation worked, but the upkeep consumed much of the saving.</p><h2 id=\"sec-2\">Agents that operate the screen</h2><p>An AI agent approaches the legacy screen as a trained processor does. It reads the screen through its accessibility structure where one exists, and through vision where it does not. It locates fields by their labels and context, so a field that moves on the page can still be found. It enters the values from the incoming document and reads the screen back to confirm what was saved.</p><p>The design that holds up in production combines determinism with judgement. Steps that never vary, such as logging in or navigating to the claims entry form, follow fixed paths. Model judgement is reserved for what genuinely varies: reading an unfamiliar document, or deciding that a case needs a person. Keeping the model out of steps that do not need it reduces both cost and the room for error.</p><p>The agent operates under its own service identity with only the permissions the workflow needs. Every action it takes on the screen is logged with a screenshot and the value entered, which gives auditors the same evidence they would expect from a human processor and more. A self-healing automation runtime such as FORGE works this way, recovering when an interface changes and recording each step so the work can be reviewed or resumed.</p><h2 id=\"sec-3\">Controls that keep screen-level automation auditable</h2><p>Screen automation writes to systems of record, so it needs controls proportionate to that. The most important is read-back verification. After each entry, the agent reads the saved record and compares it field by field with the source document. A mismatch stops the case and routes it to a person.</p><p>The second control is reconciliation outside the screen. Each day, the records the agent created are compared with an independent view of the same data, such as a downstream report or a database extract the institution already trusts. Read-back proves the agent saw what it entered. Reconciliation proves the system stored what the agent intended.</p><p>Legacy applications also need protecting from the agent. Many were never designed for machine-speed input, so the agent works within agreed hours and rates. Segregation of duties still applies: an agent that enters a claim should never be the identity that approves it.</p><h2 id=\"sec-4\">The field that moved after a vendor patch</h2><p>An insurer's agent had entered policy claims reliably for several months when the vendor applied a routine patch to the policy system. The patch added a new field, \"Previous policy number\", directly above the existing \"Policy number\" field.</p><p>The agent's self-healing logic located fields by label similarity, and the new label was a close match. For a morning of entries, the agent wrote the policy number into the new field and left the original empty. Read-back verification passed, because it checked that the value appeared on the saved screen, which it did. The error surfaced the next morning, when the daily reconciliation showed a sequence of claims with no policy linked.</p><p>The affected records were corrected the same day, before any claim was assessed. The fixes went deeper than the field mapping. Read-back now confirms each value against the field identity, matching the exact label and the field's position together. Each screen also carries a fingerprint of its layout, and any change beyond a small tolerance pauses the workflow until a person approves the new mapping. Recovery from interface change is still automatic for small shifts and supervised for anything structural.</p><p>The legacy estate will be part of most regulated enterprises for years, and the people keying data into it deserve better work. Agents can take that keying over, provided every write is verified and every structural change to the screen is treated as a reason to stop and check. An operations head should ask whether the automation proves, each day, that the system stored what the agent intended. Automation that can, record by record, is how the legacy estate yields outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why the legacy estate stays</h2><p>Core systems in banking and insurance outlast their vendors' roadmaps for sound reasons. They hold decades of records, and every change to them must pass regulatory and audit review. A replacement programme carries risk the institution may be right to avoid. The result is a large estate of applications that matter to the business and cannot be reached by modern integration.</p><p>The previous generation of automation tried to bridge this with robotic process automation. RPA bots located fields by fixed screen coordinates or brittle selectors, and broke whenever a vendor patch moved a button. Many organisations still maintain teams whose main job is repairing bots after updates. The automation worked, but the upkeep consumed much of the saving.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Agents that operate the screen</h2><p>An AI agent approaches the legacy screen as a trained processor does. It reads the screen through its accessibility structure where one exists, and through vision where it does not. It locates fields by their labels and context, so a field that moves on the page can still be found. It enters the values from the incoming document and reads the screen back to confirm what was saved.</p><p>The design that holds up in production combines determinism with judgement. Steps that never vary, such as logging in or navigating to the claims entry form, follow fixed paths. Model judgement is reserved for what genuinely varies: reading an unfamiliar document, or deciding that a case needs a person. Keeping the model out of steps that do not need it reduces both cost and the room for error.</p><p>The agent operates under its own service identity with only the permissions the workflow needs. Every action it takes on the screen is logged with a screenshot and the value entered, which gives auditors the same evidence they would expect from a human processor and more. A self-healing automation runtime such as FORGE works this way, recovering when an interface changes and recording each step so the work can be reviewed or resumed.</p><h2 id=\"sec-3\">Controls that keep screen-level automation auditable</h2><p>Screen automation writes to systems of record, so it needs controls proportionate to that. The most important is read-back verification. After each entry, the agent reads the saved record and compares it field by field with the source document. A mismatch stops the case and routes it to a person.</p><p>The second control is reconciliation outside the screen. Each day, the records the agent created are compared with an independent view of the same data, such as a downstream report or a database extract the institution already trusts. Read-back proves the agent saw what it entered. Reconciliation proves the system stored what the agent intended.</p><p>Legacy applications also need protecting from the agent. Many were never designed for machine-speed input, so the agent works within agreed hours and rates. Segregation of duties still applies: an agent that enters a claim should never be the identity that approves it.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The field that moved after a vendor patch</h2><p>An insurer's agent had entered policy claims reliably for several months when the vendor applied a routine patch to the policy system. The patch added a new field, \"Previous policy number\", directly above the existing \"Policy number\" field.</p><p>The agent's self-healing logic located fields by label similarity, and the new label was a close match. For a morning of entries, the agent wrote the policy number into the new field and left the original empty. Read-back verification passed, because it checked that the value appeared on the saved screen, which it did. The error surfaced the next morning, when the daily reconciliation showed a sequence of claims with no policy linked.</p><p>The affected records were corrected the same day, before any claim was assessed. The fixes went deeper than the field mapping. Read-back now confirms each value against the field identity, matching the exact label and the field's position together. Each screen also carries a fingerprint of its layout, and any change beyond a small tolerance pauses the workflow until a person approves the new mapping. Recovery from interface change is still automatic for small shifts and supervised for anything structural.</p><p>The legacy estate will be part of most regulated enterprises for years, and the people keying data into it deserve better work. Agents can take that keying over, provided every write is verified and every structural change to the screen is treated as a reason to stop and check. An operations head should ask whether the automation proves, each day, that the system stored what the agent intended. Automation that can, record by record, is how the legacy estate yields outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/automating-applications-that-have-no-api-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Why the legacy estate stays"
+      },
+      {
+        "src": "/blog/automating-applications-that-have-no-api-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Controls that keep screen-level automation auditable"
+      }
+    ],
     "related": {
       "section": {
         "label": "Agentic AI",
@@ -1357,10 +1920,23 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What the code asks of every conversation</h2><p>The Department of Pharmaceuticals issued the Uniform Code for Pharmaceutical Marketing Practices, UCPMP 2024, in March 2024. Several of its clauses bear directly on what a representative says in a doctor's chamber. Promotion must be consistent with the terms of the drug's marketing approval. Claims of usefulness must rest on an up-to-date evaluation of the available evidence. The word \"safe\" may not be used without qualification, and \"new\" may not describe a drug that has been generally available in India for more than a year.</p><p>The code also places the responsibility on the company. Representatives must maintain a high standard of ethical conduct and must never pay, under any guise, for access to a doctor. Companies are responsible for their representatives' compliance, and the executive head of each company signs a self-declaration of compliance after every financial year.</p><p>That puts training at the centre of compliance. A company cannot supervise thousands of private conversations in clinics across the country. It can make sure every representative has practised the difficult moments, and it can keep evidence that they did.</p><h2 id=\"sec-2\">Rehearsal against an AI clinician</h2><p>Classroom training teaches the approved claims. Role-play is where representatives learn to hold to them under pressure, and until recently good role-play needed a trainer playing a doctor, one representative at a time. An AI clinician changes that. It can play a sceptical senior consultant in Mumbai or a busy general physician in a district town, in Hindi or English, and it can raise the questions doctors actually ask.</p><p>The scenarios that matter most are the ones where representatives slip. A doctor asks about an indication the drug is not approved for. Another presses for a comparison with a competitor's product that the approved material does not support. Each scenario has an approved response, written and signed off by medical affairs and compliance, and the role-play tests whether the representative reaches it under pressure.</p><p>Scoring compares what the representative said with the approved claims library for the product. Unqualified safety claims and off-label statements are flagged with the exact words used, so the coaching that follows is specific. A short lesson on the gap arrives the same day. Rehearsal of this kind, with assessment that shows what stuck, is the work ATLAS is engineered for.</p><h2 id=\"sec-3\">Keeping medical and compliance teams in charge</h2><p>The AI clinician must never become a source of claims. Its role is limited to asking questions, so it never supplies wording a representative might repeat. The approved claims library belongs to medical affairs, and every scenario is reviewed by compliance before it reaches the field. When the product's prescribing information changes, the library and the scenarios change with it, and representatives receive the revised lesson within days.</p><p>Role-play results are coaching data, and they should be treated with care. Representatives practise better when a stumble in rehearsal is not held against them. Managers should see aggregated patterns, such as a region that struggles with competitor questions, while individual transcripts stay with the representative and the trainer. The company's compliance record needs evidence that training happened and covered the code, which aggregated completion and assessment data provide.</p><h2 id=\"sec-4\">The best-scoring answer that should have failed</h2><p>A pharmaceutical company introduced AI role-play for a new launch, and the scoring rewarded answers that were specific and grounded in evidence. In the first month, compliance reviewed a sample of the highest-scoring transcripts and found a problem. Asked by the simulated doctor about an unapproved indication, several representatives had answered fluently, citing published studies on that use.</p><p>The answers were accurate and backed by data, which is why the rubric scored them highly. They were also exactly what the code forbids, because promotion must stay within the terms of the marketing approval. Representatives were learning that a well-referenced off-label answer was a good answer.</p><p>The correction changed the rubric and the scenario together. Any discussion of an unapproved indication now fails the scenario, whatever its quality, and the approved response is a referral to the company's medical information service. Compliance reviews the rubric every quarter alongside medical affairs, and the top-scoring transcripts are sampled each month, because a rubric that rewards the wrong behaviour does its damage among the best performers first.</p><p>The four-minute conversation in the cardiologist's chamber is where a company's marketing code is kept or broken. AI role-play gives every representative the chance to rehearse it in their own language against a demanding doctor. A head of commercial excellence should ask whether the company could show which representatives have practised the off-label question and how they answered. A field force trained that way is one whose conduct holds up as outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What the code asks of every conversation</h2><p>The Department of Pharmaceuticals issued the Uniform Code for Pharmaceutical Marketing Practices, UCPMP 2024, in March 2024. Several of its clauses bear directly on what a representative says in a doctor's chamber. Promotion must be consistent with the terms of the drug's marketing approval. Claims of usefulness must rest on an up-to-date evaluation of the available evidence. The word \"safe\" may not be used without qualification, and \"new\" may not describe a drug that has been generally available in India for more than a year.</p><p>The code also places the responsibility on the company. Representatives must maintain a high standard of ethical conduct and must never pay, under any guise, for access to a doctor. Companies are responsible for their representatives' compliance, and the executive head of each company signs a self-declaration of compliance after every financial year.</p><p>That puts training at the centre of compliance. A company cannot supervise thousands of private conversations in clinics across the country. It can make sure every representative has practised the difficult moments, and it can keep evidence that they did.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Rehearsal against an AI clinician</h2><p>Classroom training teaches the approved claims. Role-play is where representatives learn to hold to them under pressure, and until recently good role-play needed a trainer playing a doctor, one representative at a time. An AI clinician changes that. It can play a sceptical senior consultant in Mumbai or a busy general physician in a district town, in Hindi or English, and it can raise the questions doctors actually ask.</p><p>The scenarios that matter most are the ones where representatives slip. A doctor asks about an indication the drug is not approved for. Another presses for a comparison with a competitor's product that the approved material does not support. Each scenario has an approved response, written and signed off by medical affairs and compliance, and the role-play tests whether the representative reaches it under pressure.</p><p>Scoring compares what the representative said with the approved claims library for the product. Unqualified safety claims and off-label statements are flagged with the exact words used, so the coaching that follows is specific. A short lesson on the gap arrives the same day. Rehearsal of this kind, with assessment that shows what stuck, is the work ATLAS is engineered for.</p><h2 id=\"sec-3\">Keeping medical and compliance teams in charge</h2><p>The AI clinician must never become a source of claims. Its role is limited to asking questions, so it never supplies wording a representative might repeat. The approved claims library belongs to medical affairs, and every scenario is reviewed by compliance before it reaches the field. When the product's prescribing information changes, the library and the scenarios change with it, and representatives receive the revised lesson within days.</p><p>Role-play results are coaching data, and they should be treated with care. Representatives practise better when a stumble in rehearsal is not held against them. Managers should see aggregated patterns, such as a region that struggles with competitor questions, while individual transcripts stay with the representative and the trainer. The company's compliance record needs evidence that training happened and covered the code, which aggregated completion and assessment data provide.</p><h2 id=\"sec-4\">The best-scoring answer that should have failed</h2><p>A pharmaceutical company introduced AI role-play for a new launch, and the scoring rewarded answers that were specific and grounded in evidence. In the first month, compliance reviewed a sample of the highest-scoring transcripts and found a problem. Asked by the simulated doctor about an unapproved indication, several representatives had answered fluently, citing published studies on that use.</p><p>The answers were accurate and backed by data, which is why the rubric scored them highly. They were also exactly what the code forbids, because promotion must stay within the terms of the marketing approval. Representatives were learning that a well-referenced off-label answer was a good answer.</p><p>The correction changed the rubric and the scenario together. Any discussion of an unapproved indication now fails the scenario, whatever its quality, and the approved response is a referral to the company's medical information service. Compliance reviews the rubric every quarter alongside medical affairs, and the top-scoring transcripts are sampled each month, because a rubric that rewards the wrong behaviour does its damage among the best performers first.</p><p>The four-minute conversation in the cardiologist's chamber is where a company's marketing code is kept or broken. AI role-play gives every representative the chance to rehearse it in their own language against a demanding doctor. A head of commercial excellence should ask whether the company could show which representatives have practised the off-label question and how they answered. A field force trained that way is one whose conduct holds up as outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/preparing-pharma-field-teams-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What the code asks of every conversation"
+      }
+    ],
     "related": {
       "section": {
         "label": "Healthcare & Life Sciences",
@@ -1407,10 +1983,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What the Account Aggregator framework changes</h2><p>Under the RBI's framework for Account Aggregators, financial data moves from the institutions that hold it to the institutions that need it, only with the customer's consent. The Account Aggregator carries the data without being able to read it. The consent itself is a structured, signed artefact that states the purpose, the types of data, the date range covered, how long the recipient may keep the data and how often it may fetch it.</p><p>The detail matters for anyone designing a pipeline. In Sahamati's published example of a one-time consent for a loan application, the stated purpose is processing the borrower's loan application, and the consent allows about six months of transactions to be kept for fifteen days. Those fields are commitments the lender makes to the borrower, and they travel with the data.</p><p>The data is also better than what it replaces. Statements arrive directly from the bank in a structured format, so there is no PDF to tamper with and no extraction step to get wrong. For thin-file borrowers with little credit-bureau history, a clean record of inflows and outflows is often the strongest evidence of repayment capacity a lender can obtain.</p><h2 id=\"sec-2\">Underwriting on consented transaction data</h2><p>Transaction data supports a richer view of repayment capacity than a bureau score alone. Models can measure the regularity and seasonality of inflows, and the patterns that signal stress, such as cheque returns or recurring overdraft use. For the textile business, seasonal peaks around festivals and the wedding season are part of a healthy pattern, and a model that understands seasonality avoids penalising them.</p><p>These models carry the same obligations as any credit model. Reasons for a decline have to be explainable to the applicant, and the variables have to be checked for proxies that stand in for protected characteristics. A model that learns from transaction descriptions, for instance, can pick up signals the lender would never knowingly use, and those features need review before they reach production.</p><h2 id=\"sec-3\">The position: the consent artefact governs the pipeline</h2><p>Most lending pipelines treat consent as a gate at the front door. Once the data has arrived, it moves into the feature store and the training sets like any other data. That design ignores what the borrower actually agreed to. A consent for processing a loan application, with a data life of fifteen days, does not cover keeping derived features for a year or training a model to sell the borrower an insurance product.</p><p>The pipeline has to carry the consent with the data. Every record fetched through an Account Aggregator should be tagged with its consent identifier and expiry. Storage should delete raw data when its data life ends, automatically. Features derived from that data should inherit the same purpose and expiry, because a cash-flow ratio computed from a borrower's transactions is still her data in a different form. Any job that reads consented data, including model training, should check the purpose before it executes.</p><p>India's Digital Personal Data Protection Act points the same way, with its emphasis on using personal data for the purpose the person agreed to. Sahamati's guidance on fair use for lending journeys adds an industry expectation on top. A lender that cannot show where every derived feature came from, and under which consent, will struggle to answer either.</p><h2 id=\"sec-4\">The features that outlived the consent</h2><p>A digital lender based its underwriting on Account Aggregator data and configured its storage carefully. Raw statements were deleted when their data life expired, and the deletion logs were clean. Separately, the data science team kept a feature store of derived variables, such as monthly inflow averages and EMI burden ratios, which had no expiry at all.</p><p>A year later, the marketing analytics team asked for a propensity model to identify borrowers likely to want a top-up loan. The feature store was the obvious source, and it held features for applicants whose consent had expired long before, including applicants who had been declined. The model was trained and ready for a campaign when the data protection officer, reviewing the campaign plan, asked which consent covered the training data.</p><p>The campaign was stopped before any customer was contacted. The lender rebuilt its feature store so that every feature carries the consent identifier and expiry of its source data, and features expire with that consent. Training jobs now query a purpose register before they read anything, and marketing models draw only on data customers consented to share for that purpose.</p><p>Account Aggregator data gives lenders a faster, cleaner basis for credit decisions, and it gives borrowers real control over their financial information. The two depend on each other. A chief risk officer should ask whether the lender could show, for any feature in any model, which consent it came from and whether that consent is still valid. A lending pipeline that can answer that question is one whose outcomes survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What the Account Aggregator framework changes</h2><p>Under the RBI's framework for Account Aggregators, financial data moves from the institutions that hold it to the institutions that need it, only with the customer's consent. The Account Aggregator carries the data without being able to read it. The consent itself is a structured, signed artefact that states the purpose, the types of data, the date range covered, how long the recipient may keep the data and how often it may fetch it.</p><p>The detail matters for anyone designing a pipeline. In Sahamati's published example of a one-time consent for a loan application, the stated purpose is processing the borrower's loan application, and the consent allows about six months of transactions to be kept for fifteen days. Those fields are commitments the lender makes to the borrower, and they travel with the data.</p><p>The data is also better than what it replaces. Statements arrive directly from the bank in a structured format, so there is no PDF to tamper with and no extraction step to get wrong. For thin-file borrowers with little credit-bureau history, a clean record of inflows and outflows is often the strongest evidence of repayment capacity a lender can obtain.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Underwriting on consented transaction data</h2><p>Transaction data supports a richer view of repayment capacity than a bureau score alone. Models can measure the regularity and seasonality of inflows, and the patterns that signal stress, such as cheque returns or recurring overdraft use. For the textile business, seasonal peaks around festivals and the wedding season are part of a healthy pattern, and a model that understands seasonality avoids penalising them.</p><p>These models carry the same obligations as any credit model. Reasons for a decline have to be explainable to the applicant, and the variables have to be checked for proxies that stand in for protected characteristics. A model that learns from transaction descriptions, for instance, can pick up signals the lender would never knowingly use, and those features need review before they reach production.</p><h2 id=\"sec-3\">The position: the consent artefact governs the pipeline</h2><p>Most lending pipelines treat consent as a gate at the front door. Once the data has arrived, it moves into the feature store and the training sets like any other data. That design ignores what the borrower actually agreed to. A consent for processing a loan application, with a data life of fifteen days, does not cover keeping derived features for a year or training a model to sell the borrower an insurance product.</p><p>The pipeline has to carry the consent with the data. Every record fetched through an Account Aggregator should be tagged with its consent identifier and expiry. Storage should delete raw data when its data life ends, automatically. Features derived from that data should inherit the same purpose and expiry, because a cash-flow ratio computed from a borrower's transactions is still her data in a different form. Any job that reads consented data, including model training, should check the purpose before it executes.</p><p>India's Digital Personal Data Protection Act points the same way, with its emphasis on using personal data for the purpose the person agreed to. Sahamati's guidance on fair use for lending journeys adds an industry expectation on top. A lender that cannot show where every derived feature came from, and under which consent, will struggle to answer either.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The features that outlived the consent</h2><p>A digital lender based its underwriting on Account Aggregator data and configured its storage carefully. Raw statements were deleted when their data life expired, and the deletion logs were clean. Separately, the data science team kept a feature store of derived variables, such as monthly inflow averages and EMI burden ratios, which had no expiry at all.</p><p>A year later, the marketing analytics team asked for a propensity model to identify borrowers likely to want a top-up loan. The feature store was the obvious source, and it held features for applicants whose consent had expired long before, including applicants who had been declined. The model was trained and ready for a campaign when the data protection officer, reviewing the campaign plan, asked which consent covered the training data.</p><p>The campaign was stopped before any customer was contacted. The lender rebuilt its feature store so that every feature carries the consent identifier and expiry of its source data, and features expire with that consent. Training jobs now query a purpose register before they read anything, and marketing models draw only on data customers consented to share for that purpose.</p><p>Account Aggregator data gives lenders a faster, cleaner basis for credit decisions, and it gives borrowers real control over their financial information. The two depend on each other. A chief risk officer should ask whether the lender could show, for any feature in any model, which consent it came from and whether that consent is still valid. A lending pipeline that can answer that question is one whose outcomes survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/account-aggregator-data-in-credit-decisions-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What the Account Aggregator framework changes"
+      },
+      {
+        "src": "/blog/account-aggregator-data-in-credit-decisions-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: The position: the consent artefact governs the pipeline"
+      }
+    ],
     "related": {
       "section": {
         "label": "Banking & Financial Services",
@@ -1461,10 +2062,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why action items fail to leave the meeting</h2><p>A meeting produces decisions in spoken, provisional language. \"Someone should look at the rate limit\" is a different statement from \"Priya will raise the rate limit by Friday\", and only the second is a commitment. Most note-taking tools summarise the discussion, which captures what was said and loses who agreed to do what. The summary reads well and assigns nothing.</p><p>Meetings also revise themselves. An action proposed in the first ten minutes may be narrowed or withdrawn by the end. A participant may agree to something on behalf of a colleague who was not present. A task discussed in the meeting may already exist as an open issue in the tracker. A system that treats each sentence on its own will create tickets for cancelled actions and duplicate issues that already exist.</p><p>The cost of getting this wrong is trust. Engineers who receive a few incorrect tickets learn to ignore the source, and after that the extraction produces noise that someone has to clean up.</p><h2 id=\"sec-2\">Extracting commitments from the whole meeting</h2><p>Reliable extraction starts with a transcript that knows who is speaking. Speaker diarisation, matched to the meeting's attendee list and the company directory, lets the system resolve \"I'll take it\" to a named person. Without diarisation, ownership becomes guesswork for the model.</p><p>The extraction then works on the whole meeting. A first pass identifies candidate actions: statements of intent with an owner and a deliverable. A second pass reconciles them across the transcript, merging restatements and applying later changes, including withdrawals. Each surviving action carries an owner, a description, a due date where one was stated and the transcript passage it came from, with a timestamp.</p><p>Before writing anything, the system searches the tracker for existing issues that match. An action that duplicates an open Jira ticket or GitHub issue becomes a comment on that issue, linked to the meeting. Only genuinely new work becomes a new ticket. An enterprise knowledge hub and reasoning engine such as COMPASS works this way, treating the meeting as one more source of institutional knowledge and every ticket as an answer that cites its evidence.</p><h2 id=\"sec-3\">Writing into Jira and GitHub safely</h2><p>The write path needs as much engineering as the extraction. In the early weeks, every extracted action should go to the meeting owner as a proposed ticket, confirmed with a single click, before anything appears in the tracker. Confirmation rates by action type show where the extraction can be trusted to write directly and where review must continue.</p><p>Every write to the tracker must be idempotent. Meetings are often reprocessed when a transcript is corrected, and reprocessing must update existing tickets instead of creating duplicates. Each ticket stores the meeting identifier and the passage it came from, which gives the system a stable key and gives the assignee a way to hear exactly what was agreed.</p><p>Permissions follow the people who attended the meeting. The system creates tickets only in projects the meeting owner can write to, and it never exposes a transcript passage to someone who could not have attended the meeting. Some meetings should never be processed at all. Calendar labels can exclude HR discussions and board sessions before a transcript is ever generated.</p><h2 id=\"sec-4\">The rollback that was cancelled at minute forty</h2><p>An engineering team piloted automated ticket creation for its weekly release review. Early in one meeting, the group agreed to roll back a release that had raised error rates. Thirty minutes later, after a teammate showed that the errors came from an unrelated configuration change, the group reversed the decision and kept the release.</p><p>The pilot's extraction handled the transcript in segments. It created a high-priority ticket to roll back the release, assigned to the on-call engineer, and the later reversal produced no action because it contained no new task. The engineer began preparing the rollback that evening and paused only because the change required a second approval. The approver had been in the meeting and remembered the reversal.</p><p>The team made two changes. Extraction now reconciles every candidate action against the rest of the meeting before proposing it, and any decision that is reversed later becomes a note on the meeting record instead of a ticket. High-impact actions, such as rollbacks and access grants, always go to the meeting owner for confirmation, whatever the model's confidence.</p><p>The forty-five-minute review will keep producing decisions, and most organisations will keep losing some of them between the meeting and the tracker. Extraction that reads the whole meeting and asks before it writes can close that gap without filling the backlog with noise. An engineering leader should ask what share of last month's agreed actions became tickets, and how many tickets were later cancelled as mistakes. A system that improves the first number without raising the second earns trust, and with it the outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why action items fail to leave the meeting</h2><p>A meeting produces decisions in spoken, provisional language. \"Someone should look at the rate limit\" is a different statement from \"Priya will raise the rate limit by Friday\", and only the second is a commitment. Most note-taking tools summarise the discussion, which captures what was said and loses who agreed to do what. The summary reads well and assigns nothing.</p><p>Meetings also revise themselves. An action proposed in the first ten minutes may be narrowed or withdrawn by the end. A participant may agree to something on behalf of a colleague who was not present. A task discussed in the meeting may already exist as an open issue in the tracker. A system that treats each sentence on its own will create tickets for cancelled actions and duplicate issues that already exist.</p><p>The cost of getting this wrong is trust. Engineers who receive a few incorrect tickets learn to ignore the source, and after that the extraction produces noise that someone has to clean up.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Extracting commitments from the whole meeting</h2><p>Reliable extraction starts with a transcript that knows who is speaking. Speaker diarisation, matched to the meeting's attendee list and the company directory, lets the system resolve \"I'll take it\" to a named person. Without diarisation, ownership becomes guesswork for the model.</p><p>The extraction then works on the whole meeting. A first pass identifies candidate actions: statements of intent with an owner and a deliverable. A second pass reconciles them across the transcript, merging restatements and applying later changes, including withdrawals. Each surviving action carries an owner, a description, a due date where one was stated and the transcript passage it came from, with a timestamp.</p><p>Before writing anything, the system searches the tracker for existing issues that match. An action that duplicates an open Jira ticket or GitHub issue becomes a comment on that issue, linked to the meeting. Only genuinely new work becomes a new ticket. An enterprise knowledge hub and reasoning engine such as COMPASS works this way, treating the meeting as one more source of institutional knowledge and every ticket as an answer that cites its evidence.</p><h2 id=\"sec-3\">Writing into Jira and GitHub safely</h2><p>The write path needs as much engineering as the extraction. In the early weeks, every extracted action should go to the meeting owner as a proposed ticket, confirmed with a single click, before anything appears in the tracker. Confirmation rates by action type show where the extraction can be trusted to write directly and where review must continue.</p><p>Every write to the tracker must be idempotent. Meetings are often reprocessed when a transcript is corrected, and reprocessing must update existing tickets instead of creating duplicates. Each ticket stores the meeting identifier and the passage it came from, which gives the system a stable key and gives the assignee a way to hear exactly what was agreed.</p><p>Permissions follow the people who attended the meeting. The system creates tickets only in projects the meeting owner can write to, and it never exposes a transcript passage to someone who could not have attended the meeting. Some meetings should never be processed at all. Calendar labels can exclude HR discussions and board sessions before a transcript is ever generated.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The rollback that was cancelled at minute forty</h2><p>An engineering team piloted automated ticket creation for its weekly release review. Early in one meeting, the group agreed to roll back a release that had raised error rates. Thirty minutes later, after a teammate showed that the errors came from an unrelated configuration change, the group reversed the decision and kept the release.</p><p>The pilot's extraction handled the transcript in segments. It created a high-priority ticket to roll back the release, assigned to the on-call engineer, and the later reversal produced no action because it contained no new task. The engineer began preparing the rollback that evening and paused only because the change required a second approval. The approver had been in the meeting and remembered the reversal.</p><p>The team made two changes. Extraction now reconciles every candidate action against the rest of the meeting before proposing it, and any decision that is reversed later becomes a note on the meeting record instead of a ticket. High-impact actions, such as rollbacks and access grants, always go to the meeting owner for confirmation, whatever the model's confidence.</p><p>The forty-five-minute review will keep producing decisions, and most organisations will keep losing some of them between the meeting and the tracker. Extraction that reads the whole meeting and asks before it writes can close that gap without filling the backlog with noise. An engineering leader should ask what share of last month's agreed actions became tickets, and how many tickets were later cancelled as mistakes. A system that improves the first number without raising the second earns trust, and with it the outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/from-meeting-to-ticket-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Why action items fail to leave the meeting"
+      },
+      {
+        "src": "/blog/from-meeting-to-ticket-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Writing into Jira and GitHub safely"
+      }
+    ],
     "related": {
       "section": {
         "label": "Agentic AI",
@@ -1506,10 +2132,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why accreditation evidence decays between assessments</h2><p>NABH's 6th edition of hospital standards took effect on 1 January 2025, with a sharper emphasis on patient safety and on how hospitals adopt digital health. Every new application is now assessed against it, and hospitals already accredited move to it at their next assessment. The standards ask for a great deal of documentary evidence: policies, training records, quality indicators, committee minutes and statutory licences, each mapped to the standard it satisfies.</p><p>That evidence ages from the day it is filed. Licences expire on their own schedules. Policies are revised but the old version stays in the folder. Training records fall behind when staff turn over. Quality indicators are collected monthly but reviewed only when someone asks. Between assessments, nobody's job is to watch the whole picture, so the gap between the hospital's practice and its evidence grows unnoticed until the next visit forces a reckoning.</p><p>The cost is more than stress. Last-minute assembly produces errors an assessor will notice: a document that does not match what the hospital declared, or an indicator report with months missing. Each one raises a question about the system behind it.</p><h2 id=\"sec-2\">Checking the substance of every document</h2><p>The first role for AI is at the point of entry. When a coordinator uploads a document against a standard, a guided assistant can check that it is the document the standard asks for, and that its details, including its validity, agree with what the hospital has declared elsewhere. A biomedical waste authorisation should name the same facility and cover the same number of beds the hospital reports. A training record should list staff who appear on the current roster. Discrepancies are flagged while the coordinator is still at the form, when the fix takes minutes.</p><p>The second role is watching the register between assessments. Every document carries an expiry or a review date, and the assistant warns the owner well before it lapses. Monthly indicators that have not been entered appear as gaps on the quality manager's dashboard in the month they fall due, instead of in the week before a visit.</p><p>This is the work LOUPE is engineered for: a co-pilot that guides entries field by field and validates uploads for completeness and consistency, so the evidence a hospital submits matches the hospital as it stands. The quality manager still decides what the hospital declares and how it meets each standard. The assistant makes sure the paperwork supports that decision.</p><h2 id=\"sec-3\">Keeping the quality team in charge</h2><p>Accreditation is a judgement about how a hospital delivers care, and no software can make that judgement on a hospital's behalf. The assistant should never mark a standard as met. It reports which evidence is missing or in conflict, and the quality team decides what to do about each gap.</p><p>The design also has to respect who enters the evidence. Coordinators in a busy hospital fill forms between other duties, often on shared computers. Guidance in plain language, at the field where it applies, does more for completeness than a long instruction manual. Where the hospital's staff work in Hindi or a regional language, the guidance should follow them.</p><p>The digital health emphasis in the 6th edition makes this more relevant. A hospital that keeps its accreditation evidence in a governed, searchable form demonstrates the very discipline the standards now look for, and it can show an assessor the history of each document on request.</p><h2 id=\"sec-4\">The authorisation that covered the old hospital</h2><p>A hospital group adopted guided evidence management across its units and, for the first months, the register stayed green. Every licence was uploaded and in date. During an internal mock audit two weeks before a surveillance visit, a reviewer noticed that one unit's biomedical waste authorisation covered fewer beds than the unit now operated. The unit had added a ward the previous year, and the renewed authorisation still reflected the old capacity.</p><p>The assistant had checked the document's type and date, which were both correct, and had no rule comparing the capacity stated on the licence with the capacity the hospital declared. The mismatch was exactly the kind of finding an assessor would raise, and it had passed every automated check.</p><p>The correction added cross-document consistency checks. Figures that appear in several places, such as bed counts and facility addresses, are now compared across every document that states them, and any disagreement is flagged to the document owner. The unit applied for an amended authorisation before the visit.</p><p>Accreditation evidence will always need people who understand what good care looks like and can say so on paper. What can change is when the work happens, spread across the year instead of compressed into the weeks before an assessor arrives. A hospital CEO should ask whether the quality team could produce complete, current evidence for any standard on an ordinary Tuesday. A hospital that can, and can show how each document was checked, has accreditation resting on outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why accreditation evidence decays between assessments</h2><p>NABH's 6th edition of hospital standards took effect on 1 January 2025, with a sharper emphasis on patient safety and on how hospitals adopt digital health. Every new application is now assessed against it, and hospitals already accredited move to it at their next assessment. The standards ask for a great deal of documentary evidence: policies, training records, quality indicators, committee minutes and statutory licences, each mapped to the standard it satisfies.</p><p>That evidence ages from the day it is filed. Licences expire on their own schedules. Policies are revised but the old version stays in the folder. Training records fall behind when staff turn over. Quality indicators are collected monthly but reviewed only when someone asks. Between assessments, nobody's job is to watch the whole picture, so the gap between the hospital's practice and its evidence grows unnoticed until the next visit forces a reckoning.</p><p>The cost is more than stress. Last-minute assembly produces errors an assessor will notice: a document that does not match what the hospital declared, or an indicator report with months missing. Each one raises a question about the system behind it.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Checking the substance of every document</h2><p>The first role for AI is at the point of entry. When a coordinator uploads a document against a standard, a guided assistant can check that it is the document the standard asks for, and that its details, including its validity, agree with what the hospital has declared elsewhere. A biomedical waste authorisation should name the same facility and cover the same number of beds the hospital reports. A training record should list staff who appear on the current roster. Discrepancies are flagged while the coordinator is still at the form, when the fix takes minutes.</p><p>The second role is watching the register between assessments. Every document carries an expiry or a review date, and the assistant warns the owner well before it lapses. Monthly indicators that have not been entered appear as gaps on the quality manager's dashboard in the month they fall due, instead of in the week before a visit.</p><p>This is the work LOUPE is engineered for: a co-pilot that guides entries field by field and validates uploads for completeness and consistency, so the evidence a hospital submits matches the hospital as it stands. The quality manager still decides what the hospital declares and how it meets each standard. The assistant makes sure the paperwork supports that decision.</p><h2 id=\"sec-3\">Keeping the quality team in charge</h2><p>Accreditation is a judgement about how a hospital delivers care, and no software can make that judgement on a hospital's behalf. The assistant should never mark a standard as met. It reports which evidence is missing or in conflict, and the quality team decides what to do about each gap.</p><p>The design also has to respect who enters the evidence. Coordinators in a busy hospital fill forms between other duties, often on shared computers. Guidance in plain language, at the field where it applies, does more for completeness than a long instruction manual. Where the hospital's staff work in Hindi or a regional language, the guidance should follow them.</p><p>The digital health emphasis in the 6th edition makes this more relevant. A hospital that keeps its accreditation evidence in a governed, searchable form demonstrates the very discipline the standards now look for, and it can show an assessor the history of each document on request.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The authorisation that covered the old hospital</h2><p>A hospital group adopted guided evidence management across its units and, for the first months, the register stayed green. Every licence was uploaded and in date. During an internal mock audit two weeks before a surveillance visit, a reviewer noticed that one unit's biomedical waste authorisation covered fewer beds than the unit now operated. The unit had added a ward the previous year, and the renewed authorisation still reflected the old capacity.</p><p>The assistant had checked the document's type and date, which were both correct, and had no rule comparing the capacity stated on the licence with the capacity the hospital declared. The mismatch was exactly the kind of finding an assessor would raise, and it had passed every automated check.</p><p>The correction added cross-document consistency checks. Figures that appear in several places, such as bed counts and facility addresses, are now compared across every document that states them, and any disagreement is flagged to the document owner. The unit applied for an amended authorisation before the visit.</p><p>Accreditation evidence will always need people who understand what good care looks like and can say so on paper. What can change is when the work happens, spread across the year instead of compressed into the weeks before an assessor arrives. A hospital CEO should ask whether the quality team could produce complete, current evidence for any standard on an ordinary Tuesday. A hospital that can, and can show how each document was checked, has accreditation resting on outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/nabh-accreditation-readiness-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Why accreditation evidence decays between assessments"
+      },
+      {
+        "src": "/blog/nabh-accreditation-readiness-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Keeping the quality team in charge"
+      }
+    ],
     "related": {
       "section": {
         "label": "Healthcare & Life Sciences",
@@ -1556,14 +2207,39 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What the contributor tier exchanges</h2><p>The two tiers share a model and a context window of just over one million tokens. They differ in what happens to the data. Meta's pricing table labels the standard tier \"not used to improve our products\" and the contributor tier \"used to improve our products\". Zero data retention is available on request for the standard tier. Within the contributor tier, the published terms describe no opt-out and state no retention period, so choosing the tier is the consent.</p><p>The tiers also differ in throughput. The contributor tier is limited to 60 requests a minute per team, against 3,000 for the standard tier. That limit alone makes the discounted tier a poor fit for most production workloads, and a natural fit for prototypes and individual experiments. That is precisely where the governance risk begins, because prototypes are where real data most often appears before anyone has written a policy.</p><h2 id=\"sec-2\">The position: the discount is a data licence</h2><p>A procurement team would never sign a licence granting a vendor training rights over customer correspondence in exchange for a discount on a software subscription. Selecting the contributor tier through an API key amounts to the same agreement, made by whoever creates the key. The decision belongs with the people who own the data, and it should be reviewed with the same care as any contract that grants rights over it.</p><p>The value of what is given away depends on what the prompts contain. For a bank, prompts can carry customer complaints and internal credit notes. For an engineering team they carry source code and the architecture it reveals. Under India's Digital Personal Data Protection Act, personal data collected for one purpose cannot simply be repurposed, and sending it to a third party that will train on it is a new purpose the customer never agreed to. Contracts with clients and partners often impose similar limits on confidential material.</p><p>Set against that, the saving is real but modest for most enterprises. Token costs are rarely the largest line in an AI programme. Integration work and the people who operate the system usually cost more, so a discount on the smallest component seldom justifies risk on the most sensitive one.</p><h2 id=\"sec-3\">Where the cheaper tier is a sound choice</h2><p>The contributor tier has legitimate uses, and a blanket ban would push experimentation into personal accounts where it is harder to see. Public information, open-source code, synthetic test data and published research can all go through the discounted tier with little to lose. Work that is already public loses nothing when a vendor learns from it.</p><p>The control that makes this safe is routing by data classification. Every request passes through a gateway that knows which tier each API key represents. Requests tagged as containing confidential or personal data are blocked from training-eligible endpoints, whatever the developer intended. Keys for the contributor tier are issued only to projects whose data owners have signed off, and they expire with the project.</p><h2 id=\"sec-4\">The prototype that kept its discount</h2><p>An insurer's innovation team used a discounted, training-eligible tier from another provider to prototype a claims-summary assistant. The prototype used synthetic claims, and the choice was reasonable at the time. The assistant impressed the business, and a pilot was approved to process a sample of real claims from one region.</p><p>The pilot used the same code and the same API key. Nobody had connected the change in data to the tier the key represented, and for three weeks real claimant details went to a provider entitled to train on them. The issue surfaced in a routine vendor review, when the procurement lead asked which pricing plan the pilot was using.</p><p>The provider honoured a deletion request, and the insurer's privacy team assessed and recorded the exposure. The lasting fix changed how keys are issued. API keys are now issued per data classification and stored centrally, so moving from synthetic to real data requires a new key and a data owner's approval. The gateway rejects any request carrying personal data that is sent with a training-eligible key.</p><p>Meta's contributor tier makes visible a trade that has existed in AI pricing for some time. The model is the same and the bill is smaller. What the enterprise surrenders is the exclusive use of its own data. A CIO reviewing AI spend should ask which pricing tier every API key in the organisation uses, and who approved the data that flows through each one. An enterprise that can answer both has turned a cost decision into a governed one, which is how AI programmes keep outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What the contributor tier exchanges</h2><p>The two tiers share a model and a context window of just over one million tokens. They differ in what happens to the data. Meta's pricing table labels the standard tier \"not used to improve our products\" and the contributor tier \"used to improve our products\". Zero data retention is available on request for the standard tier. Within the contributor tier, the published terms describe no opt-out and state no retention period, so choosing the tier is the consent.</p><p>The tiers also differ in throughput. The contributor tier is limited to 60 requests a minute per team, against 3,000 for the standard tier. That limit alone makes the discounted tier a poor fit for most production workloads, and a natural fit for prototypes and individual experiments. That is precisely where the governance risk begins, because prototypes are where real data most often appears before anyone has written a policy.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">The position: the discount is a data licence</h2><p>A procurement team would never sign a licence granting a vendor training rights over customer correspondence in exchange for a discount on a software subscription. Selecting the contributor tier through an API key amounts to the same agreement, made by whoever creates the key. The decision belongs with the people who own the data, and it should be reviewed with the same care as any contract that grants rights over it.</p><p>The value of what is given away depends on what the prompts contain. For a bank, prompts can carry customer complaints and internal credit notes. For an engineering team they carry source code and the architecture it reveals. Under India's Digital Personal Data Protection Act, personal data collected for one purpose cannot simply be repurposed, and sending it to a third party that will train on it is a new purpose the customer never agreed to. Contracts with clients and partners often impose similar limits on confidential material.</p><p>Set against that, the saving is real but modest for most enterprises. Token costs are rarely the largest line in an AI programme. Integration work and the people who operate the system usually cost more, so a discount on the smallest component seldom justifies risk on the most sensitive one.</p><h2 id=\"sec-3\">Where the cheaper tier is a sound choice</h2><p>The contributor tier has legitimate uses, and a blanket ban would push experimentation into personal accounts where it is harder to see. Public information, open-source code, synthetic test data and published research can all go through the discounted tier with little to lose. Work that is already public loses nothing when a vendor learns from it.</p><p>The control that makes this safe is routing by data classification. Every request passes through a gateway that knows which tier each API key represents. Requests tagged as containing confidential or personal data are blocked from training-eligible endpoints, whatever the developer intended. Keys for the contributor tier are issued only to projects whose data owners have signed off, and they expire with the project.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The prototype that kept its discount</h2><p>An insurer's innovation team used a discounted, training-eligible tier from another provider to prototype a claims-summary assistant. The prototype used synthetic claims, and the choice was reasonable at the time. The assistant impressed the business, and a pilot was approved to process a sample of real claims from one region.</p><p>The pilot used the same code and the same API key. Nobody had connected the change in data to the tier the key represented, and for three weeks real claimant details went to a provider entitled to train on them. The issue surfaced in a routine vendor review, when the procurement lead asked which pricing plan the pilot was using.</p><p>The provider honoured a deletion request, and the insurer's privacy team assessed and recorded the exposure. The lasting fix changed how keys are issued. API keys are now issued per data classification and stored centrally, so moving from synthetic to real data requires a new key and a data owner's approval. The gateway rejects any request carrying personal data that is sent with a training-eligible key.</p><p>Meta's contributor tier makes visible a trade that has existed in AI pricing for some time. The model is the same and the bill is smaller. What the enterprise surrenders is the exclusive use of its own data. A CIO reviewing AI spend should ask which pricing tier every API key in the organisation uses, and who approved the data that flows through each one. An enterprise that can answer both has turned a cost decision into a governed one, which is how AI programmes keep outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/muse-spark-contributor-tier-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What the contributor tier exchanges"
+      },
+      {
+        "src": "/blog/muse-spark-contributor-tier-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Where the cheaper tier is a sound choice"
+      }
+    ],
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -1601,10 +2277,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why mixed formats break consistent review</h2><p>Each format rewards a different skill. Video rewards fluency and presence, while writing rewards structure and precision. A reviewer moving between the two compares a polished delivery with a dense document and, without meaning to, scores the experience of consuming each one. Language adds a further layer. A founder pitching in English as a second language may describe a stronger business than a fluent speaker and still score lower on every criterion.</p><p>Volume makes the problem considerably worse. A panel scoring two hundred submissions over a fortnight drifts as the days pass, and two panellists reading the same application can disagree by a wide margin on the same criterion. None of this reflects bad faith. It reflects a process that asks people to apply an abstract rubric to very different material, at speed, without a common reference.</p><p>The consequence for the institution is a selection it cannot fully defend. When an unsuccessful applicant asks why, the honest answer is often that the panel preferred the other pitch.</p><h2 id=\"sec-2\">A rubric written as evidence requirements</h2><p>The fix begins with the rubric itself. Criteria written as impressions, such as \"strong market understanding\", invite format bias, because a confident speaker sounds like strong understanding. Criteria written as evidence requirements are format-neutral. \"Names a specific customer segment and cites evidence of demand from it\" can be met or missed in a video and in a document alike, and a reviewer can point to where.</p><p>The evaluation pipeline then treats every submission the same way. Video and audio are transcribed and documents are parsed, so the content of each can be extracted into a common structure of claims and evidence. The scoring model assesses that structure against each criterion and must cite the source for every score: a timestamp in the video or a page and paragraph in the document. A score without a citation is treated as invalid and sent to a person.</p><p>Presentation can still count where a programme genuinely values it. The difference is that it becomes its own criterion, with its own explicit weight, instead of leaking into every other score. A rubric-based evaluation engine such as PRISM works in this way, scoring any file type against a customisable rubric and recording the evidence behind each mark.</p><h2 id=\"sec-3\">Calibrating machine scores against human panels</h2><p>No institution should accept a scoring model on trust. Calibration starts with a reference set of past submissions scored carefully by an experienced panel, with disagreements discussed and resolved. The model scores the same set, and agreement is measured criterion by criterion. Where the model and the panel disagree consistently, the cause is usually an ambiguous criterion, and fixing the wording improves the human panel as much as the model.</p><p>In production, the model handles the first pass and people decide the borderline band. Submissions scored clearly above or below the threshold are sampled for review, while those near it go to the panel with the model's evidence attached. Panellists spend their time on the decisions that are genuinely close, with the relevant passages already in front of them.</p><p>The last check is a fairness check by format and language. If video submissions score systematically higher or lower than written ones on criteria that should be format-neutral, something in the pipeline is leaking. That comparison should be published inside the institution every cycle, because it is the evidence that the process treats applicants alike.</p><h2 id=\"sec-4\">The transcript that lost the numbers</h2><p>A grant programme moved to rubric-based scoring and saw the panel's workload fall in the first cycle. The format check at the end of the cycle showed an unexpected gap: video submissions from founders pitching in a mix of Hindi and English scored lower on traction than comparable written submissions.</p><p>The cause lay upstream of the scoring model. The speech-to-text step handled the code-switched pitches poorly and mis-transcribed figures, so a founder who said \"fifty paying schools\" appeared in the transcript as \"fifteen\". The scoring model then assessed traction faithfully against a transcript that understated it. Every score carried a citation, and every citation pointed to the wrong words.</p><p>The correction treated transcription as part of the evaluation. The programme moved to a speech model trained for Indian code-switched speech, and every number in a transcript now carries a confidence score. Low-confidence figures are flagged for a person to verify against the recording before scoring. The affected applicants were re-scored before results were announced, and the format check became a standing step in every cycle.</p><p>Mixed-format submissions are now normal, and they will become more varied as applicants choose the medium that suits them. Holding them to one standard means writing the rubric as evidence and checking the results by format and language each cycle. A programme head should ask whether every score can be traced to a passage or a timestamp, and whether anyone has compared outcomes across formats. A process that can answer both is how selection delivers outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why mixed formats break consistent review</h2><p>Each format rewards a different skill. Video rewards fluency and presence, while writing rewards structure and precision. A reviewer moving between the two compares a polished delivery with a dense document and, without meaning to, scores the experience of consuming each one. Language adds a further layer. A founder pitching in English as a second language may describe a stronger business than a fluent speaker and still score lower on every criterion.</p><p>Volume makes the problem considerably worse. A panel scoring two hundred submissions over a fortnight drifts as the days pass, and two panellists reading the same application can disagree by a wide margin on the same criterion. None of this reflects bad faith. It reflects a process that asks people to apply an abstract rubric to very different material, at speed, without a common reference.</p><p>The consequence for the institution is a selection it cannot fully defend. When an unsuccessful applicant asks why, the honest answer is often that the panel preferred the other pitch.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">A rubric written as evidence requirements</h2><p>The fix begins with the rubric itself. Criteria written as impressions, such as \"strong market understanding\", invite format bias, because a confident speaker sounds like strong understanding. Criteria written as evidence requirements are format-neutral. \"Names a specific customer segment and cites evidence of demand from it\" can be met or missed in a video and in a document alike, and a reviewer can point to where.</p><p>The evaluation pipeline then treats every submission the same way. Video and audio are transcribed and documents are parsed, so the content of each can be extracted into a common structure of claims and evidence. The scoring model assesses that structure against each criterion and must cite the source for every score: a timestamp in the video or a page and paragraph in the document. A score without a citation is treated as invalid and sent to a person.</p><p>Presentation can still count where a programme genuinely values it. The difference is that it becomes its own criterion, with its own explicit weight, instead of leaking into every other score. A rubric-based evaluation engine such as PRISM works in this way, scoring any file type against a customisable rubric and recording the evidence behind each mark.</p><h2 id=\"sec-3\">Calibrating machine scores against human panels</h2><p>No institution should accept a scoring model on trust. Calibration starts with a reference set of past submissions scored carefully by an experienced panel, with disagreements discussed and resolved. The model scores the same set, and agreement is measured criterion by criterion. Where the model and the panel disagree consistently, the cause is usually an ambiguous criterion, and fixing the wording improves the human panel as much as the model.</p><p>In production, the model handles the first pass and people decide the borderline band. Submissions scored clearly above or below the threshold are sampled for review, while those near it go to the panel with the model's evidence attached. Panellists spend their time on the decisions that are genuinely close, with the relevant passages already in front of them.</p><p>The last check is a fairness check by format and language. If video submissions score systematically higher or lower than written ones on criteria that should be format-neutral, something in the pipeline is leaking. That comparison should be published inside the institution every cycle, because it is the evidence that the process treats applicants alike.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The transcript that lost the numbers</h2><p>A grant programme moved to rubric-based scoring and saw the panel's workload fall in the first cycle. The format check at the end of the cycle showed an unexpected gap: video submissions from founders pitching in a mix of Hindi and English scored lower on traction than comparable written submissions.</p><p>The cause lay upstream of the scoring model. The speech-to-text step handled the code-switched pitches poorly and mis-transcribed figures, so a founder who said \"fifty paying schools\" appeared in the transcript as \"fifteen\". The scoring model then assessed traction faithfully against a transcript that understated it. Every score carried a citation, and every citation pointed to the wrong words.</p><p>The correction treated transcription as part of the evaluation. The programme moved to a speech model trained for Indian code-switched speech, and every number in a transcript now carries a confidence score. Low-confidence figures are flagged for a person to verify against the recording before scoring. The affected applicants were re-scored before results were announced, and the format check became a standing step in every cycle.</p><p>Mixed-format submissions are now normal, and they will become more varied as applicants choose the medium that suits them. Holding them to one standard means writing the rubric as evidence and checking the results by format and language each cycle. A programme head should ask whether every score can be traced to a passage or a timestamp, and whether anyone has compared outcomes across formats. A process that can answer both is how selection delivers outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/scoring-video-and-written-submissions-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Why mixed formats break consistent review"
+      },
+      {
+        "src": "/blog/scoring-video-and-written-submissions-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Calibrating machine scores against human panels"
+      }
+    ],
     "related": {
       "section": {
         "label": "Agentic AI",
@@ -1646,10 +2347,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What video KYC was designed to prove</h2><p>The Reserve Bank of India permitted video-based customer identification in January 2020, and the V-CIP framework has expanded since. Its logic is sound. A live interaction with an official of the bank, conducted while the customer is in India, establishes that a real person is present and that the person matches the documents presented. The official varies the questions so the interaction cannot be pre-recorded, and the session is recorded and stored for later review.&amp;#32;</p><p>The framework also anticipated technology. RBI's Know Your Customer Directions, 2025, which replaced the 2016 Master Direction in November 2025, require V-CIP infrastructure to include face liveness and spoof detection, along with face matching of high accuracy. It does not name particular attack types. It sets an outcome, and leaves the bank to meet that outcome against whatever attackers bring.</p><p>What attackers bring to the call has changed. The framework was written when a spoof meant a printed photo or a replayed recording held to the camera. Today the more serious attack never passes through the camera at all.</p><h2 id=\"sec-2\">Presentation attacks and injection attacks</h2><p>A presentation attack puts something false in front of a real camera: a photograph or a mask. Liveness checks were designed for this, and the better ones look for depth and the small involuntary movements a screen cannot reproduce.</p><p>An injection attack bypasses the camera. Software on the applicant's device registers itself as a virtual camera, or the session is conducted from an emulator, and a synthetic video stream goes straight into the video call. The face in that stream can be swapped onto the attacker's own movements in real time and made to respond to the official's prompts. A liveness model that inspects only the pixels may pass it, because every frame looks like a living person.</p><p>Defending against both requires checks at two levels. At the media level, models look for the artefacts that generation leaves behind, such as inconsistent lighting across the face and timing mismatches between lip movement and audio. At the device and stream level, the bank checks whether the video is coming from a genuine camera on a genuine device: virtual camera drivers, emulator signatures, rooted devices and stream metadata that does not match the claimed hardware.</p><h2 id=\"sec-3\">The position: AI chooses where the official looks</h2><p>The official remains accountable for the V-CIP decision, and nothing in a well-engineered system should blur that. AI's job is to make the official's attention count. It scores every session in real time, and when a score crosses a threshold it prompts the official with a specific challenge, such as asking the customer to move the card in front of their face, where face-swap models still struggle. The session record shows what the model flagged and what the official asked in response.</p><p>Active challenges need care. Gesture prompts that are too demanding exclude elderly customers and people with disabilities from a journey that exists to widen access. RBI's 2025 directions make the same point: facial gestures such as blinking or smiling are not mandatory for a liveness check, and banks must consider any special needs a customer has. Passive checks should do most of the work, with active challenges reserved for sessions the passive layer finds doubtful.</p><p>The audit trail is the third requirement. For every session, the bank should be able to show the liveness and face-match scores, the stream-integrity result, the model versions in use and the official's decision with a reason. A concurrent auditor reviewing a flagged account needs that record to judge the decision. A supervisor reviewing the bank's controls needs it to judge the system.</p><h2 id=\"sec-4\">The faces that applied more than once</h2><p>A lender's video KYC journey passed its liveness tests comfortably, and its acceptance rate looked healthy. During concurrent audit, an auditor noticed something the session scores could not show: two approved applicants, with different names and documents, who appeared to share a face. A search across recent approvals found a small cluster of sessions with the same facial geometry under different identities.</p><p>Each session had passed liveness, because the attacker had used a live face-swap over a real person's movements, injected through a virtual camera. No individual session looked wrong on its own. The pattern was visible only across sessions.</p><p>The lender made two changes. It added stream-integrity checks that reject sessions from virtual cameras and emulators before the official joins. It also added a face search against recent applications and existing customers, so a face that has already appeared under another name is flagged during the call. The affected accounts were frozen before they received funds, and the attempt was reported through the lender's cyber-incident process as a forged-identity event.</p><p>Video KYC remains one of the most useful ways to bring customers into the formal financial system without a branch visit. Keeping it trustworthy now depends on checks the original framework did not need to spell out. A head of compliance should ask whether the bank's V-CIP checks inspect the source of the video stream as well as the face in it, and whether any face is searched against past applicants. A journey that does both, and records why each decision was made, is one that delivers outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What video KYC was designed to prove</h2><p>The Reserve Bank of India permitted video-based customer identification in January 2020, and the V-CIP framework has expanded since. Its logic is sound. A live interaction with an official of the bank, conducted while the customer is in India, establishes that a real person is present and that the person matches the documents presented. The official varies the questions so the interaction cannot be pre-recorded, and the session is recorded and stored for later review.&amp;#32;</p><p>The framework also anticipated technology. RBI's Know Your Customer Directions, 2025, which replaced the 2016 Master Direction in November 2025, require V-CIP infrastructure to include face liveness and spoof detection, along with face matching of high accuracy. It does not name particular attack types. It sets an outcome, and leaves the bank to meet that outcome against whatever attackers bring.</p><p>What attackers bring to the call has changed. The framework was written when a spoof meant a printed photo or a replayed recording held to the camera. Today the more serious attack never passes through the camera at all.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Presentation attacks and injection attacks</h2><p>A presentation attack puts something false in front of a real camera: a photograph or a mask. Liveness checks were designed for this, and the better ones look for depth and the small involuntary movements a screen cannot reproduce.</p><p>An injection attack bypasses the camera. Software on the applicant's device registers itself as a virtual camera, or the session is conducted from an emulator, and a synthetic video stream goes straight into the video call. The face in that stream can be swapped onto the attacker's own movements in real time and made to respond to the official's prompts. A liveness model that inspects only the pixels may pass it, because every frame looks like a living person.</p><p>Defending against both requires checks at two levels. At the media level, models look for the artefacts that generation leaves behind, such as inconsistent lighting across the face and timing mismatches between lip movement and audio. At the device and stream level, the bank checks whether the video is coming from a genuine camera on a genuine device: virtual camera drivers, emulator signatures, rooted devices and stream metadata that does not match the claimed hardware.</p><h2 id=\"sec-3\">The position: AI chooses where the official looks</h2><p>The official remains accountable for the V-CIP decision, and nothing in a well-engineered system should blur that. AI's job is to make the official's attention count. It scores every session in real time, and when a score crosses a threshold it prompts the official with a specific challenge, such as asking the customer to move the card in front of their face, where face-swap models still struggle. The session record shows what the model flagged and what the official asked in response.</p><p>Active challenges need care. Gesture prompts that are too demanding exclude elderly customers and people with disabilities from a journey that exists to widen access. RBI's 2025 directions make the same point: facial gestures such as blinking or smiling are not mandatory for a liveness check, and banks must consider any special needs a customer has. Passive checks should do most of the work, with active challenges reserved for sessions the passive layer finds doubtful.</p><p>The audit trail is the third requirement. For every session, the bank should be able to show the liveness and face-match scores, the stream-integrity result, the model versions in use and the official's decision with a reason. A concurrent auditor reviewing a flagged account needs that record to judge the decision. A supervisor reviewing the bank's controls needs it to judge the system.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The faces that applied more than once</h2><p>A lender's video KYC journey passed its liveness tests comfortably, and its acceptance rate looked healthy. During concurrent audit, an auditor noticed something the session scores could not show: two approved applicants, with different names and documents, who appeared to share a face. A search across recent approvals found a small cluster of sessions with the same facial geometry under different identities.</p><p>Each session had passed liveness, because the attacker had used a live face-swap over a real person's movements, injected through a virtual camera. No individual session looked wrong on its own. The pattern was visible only across sessions.</p><p>The lender made two changes. It added stream-integrity checks that reject sessions from virtual cameras and emulators before the official joins. It also added a face search against recent applications and existing customers, so a face that has already appeared under another name is flagged during the call. The affected accounts were frozen before they received funds, and the attempt was reported through the lender's cyber-incident process as a forged-identity event.</p><p>Video KYC remains one of the most useful ways to bring customers into the formal financial system without a branch visit. Keeping it trustworthy now depends on checks the original framework did not need to spell out. A head of compliance should ask whether the bank's V-CIP checks inspect the source of the video stream as well as the face in it, and whether any face is searched against past applicants. A journey that does both, and records why each decision was made, is one that delivers outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/ai-in-video-kyc-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What video KYC was designed to prove"
+      },
+      {
+        "src": "/blog/ai-in-video-kyc-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: The position: AI chooses where the official looks"
+      }
+    ],
     "related": {
       "section": {
         "label": "Banking & Financial Services",
@@ -1700,10 +2426,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What changes on day one</h2><p>Testing covers the cases a team can imagine. Production delivers the ones it could not. Customers phrase requests in ways no test set anticipated, and staff working alongside the agent change their own behaviour once they see what it handles. Some begin routing difficult cases to it; others stop trusting it after a single bad answer.</p><p>None of this signals that the launch has failed. It is information the agent could not receive before launch, and the first weeks exist to absorb it deliberately. The risk lies in treating go-live as the finish line, so that the information arrives with nobody assigned to act on it.</p><h2 id=\"sec-2\">How we structure the first ninety days</h2><p>We divide the period into four stages, each with its own purpose and its own exit test.</p><p>Hypercare, days one to fourteen. Every exception is reviewed daily by the people who engineered the agent. Thresholds are deliberately conservative, and more work escalates to people than the steady state will need.</p><p>Tuning on evidence, weeks three to six. Patterns in the exceptions become specific changes, each tested against a growing set of real cases before release. Escalation thresholds relax only where the evidence supports it.</p><p>Controlled expansion, weeks seven to ten. New variants or user groups are added one at a time, each with its own short hypercare window.</p><p>Handover of steady-state ownership, weeks eleven to thirteen. Review moves from daily to weekly, and the client's named owners take the chair.</p><p>The exit test for each stage is agreed before launch, in the same terms as the business case. A programme that cannot say what would make it ready for the next stage is not yet ready for this one.</p><h2 id=\"sec-3\">Who owns what once the launch team steps back</h2><p>Ownership after go-live has two halves, and both need a name attached. The business owner is accountable for the outcome: the resolution rate and the cost per resolved case. The operator is accountable for the system: its evaluation set and its change log. Where Es Magico operates the agent for a client, we hold the second role and report against the first.</p><p>The weekly review is where those two meet. It looks at a sample of failed and escalated cases and at each proposed change, with the evidence it was tested against. It is a working session with a short agenda, and its records become the history a regulator or an internal auditor will ask to see.</p><h2 id=\"sec-4\">The metric that looked healthy in week six</h2><p>On one engagement, the containment rate of a customer-service agent climbed steadily through its first six weeks. The dashboard was green and the client was pleased. The weekly review sample told a different story: a growing share of contained conversations ended with customers giving up, closing the chat without a resolution the agent could record.</p><p>The agent had not been designed to close conversations early. A tuning change intended to reduce unnecessary escalations had made it slower to offer a person, and customers who wanted one simply left. Containment rose because the customers who most needed help stopped asking for it.</p><p>We reversed the change and paired containment with two further measures, repeat contact within seven days and complaints referencing the channel. No single metric now moves the escalation threshold on its own. The lesson shaped every engagement since: in the first ninety days, a metric moving the right way deserves the same scrutiny as one moving the wrong way.</p><p>We engineer AI ambition into enterprise value, and most of that value is earned after the launch email. An executive sponsoring an agent should ask, before it goes live, who will review its failures in week three and who will own it in month four. A programme that can name both people, and show the evidence they act on, is the kind that produces outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What changes on day one</h2><p>Testing covers the cases a team can imagine. Production delivers the ones it could not. Customers phrase requests in ways no test set anticipated, and staff working alongside the agent change their own behaviour once they see what it handles. Some begin routing difficult cases to it; others stop trusting it after a single bad answer.</p><p>None of this signals that the launch has failed. It is information the agent could not receive before launch, and the first weeks exist to absorb it deliberately. The risk lies in treating go-live as the finish line, so that the information arrives with nobody assigned to act on it.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">How we structure the first ninety days</h2><p>We divide the period into four stages, each with its own purpose and its own exit test.</p><p>Hypercare, days one to fourteen. Every exception is reviewed daily by the people who engineered the agent. Thresholds are deliberately conservative, and more work escalates to people than the steady state will need.</p><p>Tuning on evidence, weeks three to six. Patterns in the exceptions become specific changes, each tested against a growing set of real cases before release. Escalation thresholds relax only where the evidence supports it.</p><p>Controlled expansion, weeks seven to ten. New variants or user groups are added one at a time, each with its own short hypercare window.</p><p>Handover of steady-state ownership, weeks eleven to thirteen. Review moves from daily to weekly, and the client's named owners take the chair.</p><p>The exit test for each stage is agreed before launch, in the same terms as the business case. A programme that cannot say what would make it ready for the next stage is not yet ready for this one.</p><h2 id=\"sec-3\">Who owns what once the launch team steps back</h2><p>Ownership after go-live has two halves, and both need a name attached. The business owner is accountable for the outcome: the resolution rate and the cost per resolved case. The operator is accountable for the system: its evaluation set and its change log. Where Es Magico operates the agent for a client, we hold the second role and report against the first.</p><p>The weekly review is where those two meet. It looks at a sample of failed and escalated cases and at each proposed change, with the evidence it was tested against. It is a working session with a short agenda, and its records become the history a regulator or an internal auditor will ask to see.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The metric that looked healthy in week six</h2><p>On one engagement, the containment rate of a customer-service agent climbed steadily through its first six weeks. The dashboard was green and the client was pleased. The weekly review sample told a different story: a growing share of contained conversations ended with customers giving up, closing the chat without a resolution the agent could record.</p><p>The agent had not been designed to close conversations early. A tuning change intended to reduce unnecessary escalations had made it slower to offer a person, and customers who wanted one simply left. Containment rose because the customers who most needed help stopped asking for it.</p><p>We reversed the change and paired containment with two further measures, repeat contact within seven days and complaints referencing the channel. No single metric now moves the escalation threshold on its own. The lesson shaped every engagement since: in the first ninety days, a metric moving the right way deserves the same scrutiny as one moving the wrong way.</p><p>We engineer AI ambition into enterprise value, and most of that value is earned after the launch email. An executive sponsoring an agent should ask, before it goes live, who will review its failures in week three and who will own it in month four. A programme that can name both people, and show the evidence they act on, is the kind that produces outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/the-first-ninety-days-after-go-live-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What changes on day one"
+      },
+      {
+        "src": "/blog/the-first-ninety-days-after-go-live-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Who owns what once the launch team steps back"
+      }
+    ],
     "related": {
       "section": {
         "label": "About Us",
@@ -1745,14 +2496,39 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What Muse Code offers</h2><p>Muse Code installs with one command on macOS and Linux and works from the terminal. Work begins with a plan that a developer approves, and bundled commands let the developer stress-test that plan before the agent drives the task to completion. The agent is powered by Muse Spark 1.2, a coding-focused update with a one-million-token context window.</p><p>Large jobs are split across parallel subagents, each working in its own isolated git worktree, so concurrent changes do not overwrite one another. Specialised subagents persist through a session and accumulate context instead of starting over with each task. In a launch demonstration, Mark Zuckerberg described the agent producing six features for a game at once without collisions, an anecdote worth reading as an illustration of intent.</p><p>Pricing follows the model's two tiers. The standard tier costs about USD 1.25 per million input tokens and USD 4.25 per million output tokens, with prompts excluded from training and zero data retention available on request. A much cheaper contributor tier allows Meta to train on prompts and completions.</p><h2 id=\"sec-2\">Where the design holds</h2><p>The write-ahead event log is the most useful idea in the release. When a coding agent changes a payments service, a reviewer eventually asks why a particular line changed and what the agent knew when it made the change. A log that records each model call and edit, in order, answers that question from evidence. It also turns a crash into an interruption, because the agent resumes from a known point instead of repeating work or leaving a half-applied change.</p><p>Worktree isolation is equally sound engineering. Parallel agents writing to the same branch produce conflicts that a person has to untangle, and isolating each subagent keeps every change reviewable on its own. The plan-approval step puts a human decision at the start of the work, where it costs least.</p><h2 id=\"sec-3\">Where the load stays with the team</h2><p>Parallelism multiplies output, and output has to be reviewed. Six features delivered at once are six diffs for a senior engineer to read and approve, and the time saved in generation can reappear as a queue in review. Teams adopting any parallel coding agent should measure review hours alongside lines produced, or the productivity gain will be counted twice and the cost not at all.</p><p>The event log is local to the developer's machine. That is useful for the developer and insufficient for an enterprise that needs to show an auditor how a change to a regulated system was produced. Unless the log is collected centrally and retained with the pull request, the audit surface exists in principle and disappears when a laptop is reimaged.</p><p>The contributor tier needs a policy before anyone uses it. An engineer choosing the cheaper tier for a personal experiment could send proprietary source code into a training pipeline. Enterprises should restrict Muse Code to the standard tier, with zero data retention requested, until legal has reviewed the terms. The release is also a beta, and Meta has said larger models are coming, so behaviour will change under teams that adopt it early.</p><h2 id=\"sec-4\">Where it fits</h2><p>Muse Code suits engineering teams that want a terminal-first agent for repository-wide changes and are prepared to treat its event log as part of their change record. It fits regulated codebases once two conditions are met: the log is shipped to central storage with each pull request, and the standard tier with zero data retention is the only tier permitted. It fits poorly where review capacity is already the bottleneck, because more parallel output will lengthen the queue.</p><p>The broader signal from this release is welcome. A coding agent that records its own reasoning trail before it acts gives engineering leaders something they have lacked: a way to reconstruct how a change came to exist. The question for any CTO is whether that record will be retained and reviewed, or left on a laptop. An agent whose history travels with its code is one that can deliver outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What Muse Code offers</h2><p>Muse Code installs with one command on macOS and Linux and works from the terminal. Work begins with a plan that a developer approves, and bundled commands let the developer stress-test that plan before the agent drives the task to completion. The agent is powered by Muse Spark 1.2, a coding-focused update with a one-million-token context window.</p><p>Large jobs are split across parallel subagents, each working in its own isolated git worktree, so concurrent changes do not overwrite one another. Specialised subagents persist through a session and accumulate context instead of starting over with each task. In a launch demonstration, Mark Zuckerberg described the agent producing six features for a game at once without collisions, an anecdote worth reading as an illustration of intent.</p><p>Pricing follows the model's two tiers. The standard tier costs about USD 1.25 per million input tokens and USD 4.25 per million output tokens, with prompts excluded from training and zero data retention available on request. A much cheaper contributor tier allows Meta to train on prompts and completions.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Where the design holds</h2><p>The write-ahead event log is the most useful idea in the release. When a coding agent changes a payments service, a reviewer eventually asks why a particular line changed and what the agent knew when it made the change. A log that records each model call and edit, in order, answers that question from evidence. It also turns a crash into an interruption, because the agent resumes from a known point instead of repeating work or leaving a half-applied change.</p><p>Worktree isolation is equally sound engineering. Parallel agents writing to the same branch produce conflicts that a person has to untangle, and isolating each subagent keeps every change reviewable on its own. The plan-approval step puts a human decision at the start of the work, where it costs least.</p><h2 id=\"sec-3\">Where the load stays with the team</h2><p>Parallelism multiplies output, and output has to be reviewed. Six features delivered at once are six diffs for a senior engineer to read and approve, and the time saved in generation can reappear as a queue in review. Teams adopting any parallel coding agent should measure review hours alongside lines produced, or the productivity gain will be counted twice and the cost not at all.</p><p>The event log is local to the developer's machine. That is useful for the developer and insufficient for an enterprise that needs to show an auditor how a change to a regulated system was produced. Unless the log is collected centrally and retained with the pull request, the audit surface exists in principle and disappears when a laptop is reimaged.</p><p>The contributor tier needs a policy before anyone uses it. An engineer choosing the cheaper tier for a personal experiment could send proprietary source code into a training pipeline. Enterprises should restrict Muse Code to the standard tier, with zero data retention requested, until legal has reviewed the terms. The release is also a beta, and Meta has said larger models are coming, so behaviour will change under teams that adopt it early.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">Where it fits</h2><p>Muse Code suits engineering teams that want a terminal-first agent for repository-wide changes and are prepared to treat its event log as part of their change record. It fits regulated codebases once two conditions are met: the log is shipped to central storage with each pull request, and the standard tier with zero data retention is the only tier permitted. It fits poorly where review capacity is already the bottleneck, because more parallel output will lengthen the queue.</p><p>The broader signal from this release is welcome. A coding agent that records its own reasoning trail before it acts gives engineering leaders something they have lacked: a way to reconstruct how a change came to exist. The question for any CTO is whether that record will be retained and reviewed, or left on a laptop. An agent whose history travels with its code is one that can deliver outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/muse-code-examined-1.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: What Muse Code offers"
+      },
+      {
+        "src": "/blog/muse-code-examined-2.webp",
+        "width": 1200,
+        "height": 677,
+        "alt": "Illustration: Where the load stays with the team"
+      }
+    ],
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -1790,10 +2566,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why stopping an agent is harder than stopping a service</h2><p>Stopping a conventional service is mostly a matter of refusing new requests. An agent is different because it holds state across many steps and acts on systems it does not own. A single workflow might read an invoice, query the ERP, draft an approval, post a journal entry and notify a supplier. Halt it between the journal entry and the notification, and the ledger and the supplier now disagree.</p><p>The effects also outlive the halt. A payment instruction already sent to the bank continues to clear. A retry policy written for transient errors may wake the agent up again after the flag is set, because the retry logic never checks the flag. Work the agent claimed from a queue stays claimed, invisible to anyone looking for it. An emergency stop that only flips a switch leaves all of this to be discovered by hand, usually by the person least equipped to reconstruct what the agent intended.</p><p>The design goal is therefore a defined state after the stop, with every in-flight action either brought to a safe end or handed to a person with enough context to finish it.</p><h2 id=\"sec-2\">Graded stops, enforced outside the agent</h2><p>A single switch is too blunt for most incidents. Mature operations define several levels of stop, each with a clear effect. Pausing intake stops new work while letting the agent finish what it holds. Draining lets in-flight workflows reach their next safe checkpoint and then halts. Read-only mode lets the agent continue to reason and propose actions while every write is blocked, which keeps evidence flowing during diagnosis. A hard stop blocks everything immediately and triggers compensation for partial steps. Each level can apply to one workflow, one tool, one client or the whole fleet, so a problem with a single ERP connector does not halt unrelated work.</p><p>The position worth holding is that the stop must be enforced where actions happen, never inside the agent's own reasoning. An agent cannot be trusted to stop itself, because the fault that requires the stop may be in the very logic that would check for it. Every action should pass through a tool gateway that reads the stop state before it executes. Whether the action is a payment or an email, a stop at the gateway means it never leaves the perimeter, whatever the agent believes.</p><p>The second requirement is a durable record of each step before it executes. A runtime that writes the intended action, its inputs and its result to a log turns a stop into a clean boundary. After a halt, the system knows precisely which steps completed and which never began. A self-healing automation runtime such as FORGE records each step in this way, which is what makes a resume or a reversal safe instead of guesswork.</p><h2 id=\"sec-3\">Degraded modes and handing work back to people</h2><p>An emergency stop does not end the business process. Invoices still need matching and customers still need answers, so every agentic workflow needs a degraded mode defined before it is needed. For most workflows the degraded mode is a human queue, and the quality of that handover decides how long the incident lasts.</p><p>A good handover packet contains the agent's completed steps and its intended next step, each with its evidence attached. A reviewer who receives an invoice with the agent's proposed match and the field it relied on can finish the work in minutes. A reviewer who receives a bare invoice must start from nothing, and will reasonably distrust anything the agent touched that day.</p><p>Partial steps need compensating actions written in advance. If the agent posted a journal entry but never sent the approval, the compensation reverses the entry and returns the invoice to the queue with a note. These reversals are themselves actions, so they pass through the same gateway and land in the same log.</p><p>Resuming deserves as much design as stopping. After the fix, the agent should restart from its last verified checkpoint and re-validate any record that changed during the halt. A small sample then goes through closer review before full volume returns. Teams that rehearse this sequence, on a schedule and with the business owner present, discover the gaps while nothing is at stake.</p><h2 id=\"sec-4\">The stop that waited for the batch to finish</h2><p>A finance operations team operated an agent that matched supplier invoices and approved those within tolerance. After a supplier changed its invoice numbering, the agent began treating reissued invoices as new ones and approving duplicates. An analyst spotted the pattern and pressed the stop.</p><p>The stop had been implemented as a pause on intake. It prevented the agent from claiming new invoices, but the agent had already claimed a large batch at the start of the hour and continued to work through it. Duplicate approvals kept arriving after the team believed the agent had stopped, and two of them reached the payment batch before a person intervened at the ERP itself. The supplier returned the duplicate amounts through credit notes, and the episode cost a week of reconciliation.</p><p>The correction moved the stop to the point of action. The payment-approval tool now checks the stop state before every write, so a stop takes effect on the next action instead of the next batch. Batches became smaller, so less work is ever held by the agent at once. The team added a monthly drill in which the business owner presses the stop on a test workflow and checks the handover queue against the action log.</p><p>The operations lead at nine in the morning needs more than a switch. They need a stop that takes effect on the next action, and a record that shows exactly where the agent left off. For any team operating agents in production, the test is direct: if the agent did the wrong thing right now, how long until it stopped acting, and what would the person picking up its work find? A stop designed to answer both is how agentic automation keeps its outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why stopping an agent is harder than stopping a service</h2><p>Stopping a conventional service is mostly a matter of refusing new requests. An agent is different because it holds state across many steps and acts on systems it does not own. A single workflow might read an invoice, query the ERP, draft an approval, post a journal entry and notify a supplier. Halt it between the journal entry and the notification, and the ledger and the supplier now disagree.</p><p>The effects also outlive the halt. A payment instruction already sent to the bank continues to clear. A retry policy written for transient errors may wake the agent up again after the flag is set, because the retry logic never checks the flag. Work the agent claimed from a queue stays claimed, invisible to anyone looking for it. An emergency stop that only flips a switch leaves all of this to be discovered by hand, usually by the person least equipped to reconstruct what the agent intended.</p><p>The design goal is therefore a defined state after the stop, with every in-flight action either brought to a safe end or handed to a person with enough context to finish it.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Graded stops, enforced outside the agent</h2><p>A single switch is too blunt for most incidents. Mature operations define several levels of stop, each with a clear effect. Pausing intake stops new work while letting the agent finish what it holds. Draining lets in-flight workflows reach their next safe checkpoint and then halts. Read-only mode lets the agent continue to reason and propose actions while every write is blocked, which keeps evidence flowing during diagnosis. A hard stop blocks everything immediately and triggers compensation for partial steps. Each level can apply to one workflow, one tool, one client or the whole fleet, so a problem with a single ERP connector does not halt unrelated work.</p><p>The position worth holding is that the stop must be enforced where actions happen, never inside the agent's own reasoning. An agent cannot be trusted to stop itself, because the fault that requires the stop may be in the very logic that would check for it. Every action should pass through a tool gateway that reads the stop state before it executes. Whether the action is a payment or an email, a stop at the gateway means it never leaves the perimeter, whatever the agent believes.</p><p>The second requirement is a durable record of each step before it executes. A runtime that writes the intended action, its inputs and its result to a log turns a stop into a clean boundary. After a halt, the system knows precisely which steps completed and which never began. A self-healing automation runtime such as FORGE records each step in this way, which is what makes a resume or a reversal safe instead of guesswork.</p><h2 id=\"sec-3\">Degraded modes and handing work back to people</h2><p>An emergency stop does not end the business process. Invoices still need matching and customers still need answers, so every agentic workflow needs a degraded mode defined before it is needed. For most workflows the degraded mode is a human queue, and the quality of that handover decides how long the incident lasts.</p><p>A good handover packet contains the agent's completed steps and its intended next step, each with its evidence attached. A reviewer who receives an invoice with the agent's proposed match and the field it relied on can finish the work in minutes. A reviewer who receives a bare invoice must start from nothing, and will reasonably distrust anything the agent touched that day.</p><p>Partial steps need compensating actions written in advance. If the agent posted a journal entry but never sent the approval, the compensation reverses the entry and returns the invoice to the queue with a note. These reversals are themselves actions, so they pass through the same gateway and land in the same log.</p><p>Resuming deserves as much design as stopping. After the fix, the agent should restart from its last verified checkpoint and re-validate any record that changed during the halt. A small sample then goes through closer review before full volume returns. Teams that rehearse this sequence, on a schedule and with the business owner present, discover the gaps while nothing is at stake.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The stop that waited for the batch to finish</h2><p>A finance operations team operated an agent that matched supplier invoices and approved those within tolerance. After a supplier changed its invoice numbering, the agent began treating reissued invoices as new ones and approving duplicates. An analyst spotted the pattern and pressed the stop.</p><p>The stop had been implemented as a pause on intake. It prevented the agent from claiming new invoices, but the agent had already claimed a large batch at the start of the hour and continued to work through it. Duplicate approvals kept arriving after the team believed the agent had stopped, and two of them reached the payment batch before a person intervened at the ERP itself. The supplier returned the duplicate amounts through credit notes, and the episode cost a week of reconciliation.</p><p>The correction moved the stop to the point of action. The payment-approval tool now checks the stop state before every write, so a stop takes effect on the next action instead of the next batch. Batches became smaller, so less work is ever held by the agent at once. The team added a monthly drill in which the business owner presses the stop on a test workflow and checks the handover queue against the action log.</p><p>The operations lead at nine in the morning needs more than a switch. They need a stop that takes effect on the next action, and a record that shows exactly where the agent left off. For any team operating agents in production, the test is direct: if the agent did the wrong thing right now, how long until it stopped acting, and what would the person picking up its work find? A stop designed to answer both is how agentic automation keeps its outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/designing-the-emergency-stop-1.webp",
+        "width": 1200,
+        "height": 675,
+        "alt": "Illustration: Why stopping an agent is harder than stopping a service"
+      },
+      {
+        "src": "/blog/designing-the-emergency-stop-2.webp",
+        "width": 1200,
+        "height": 675,
+        "alt": "Illustration: Degraded modes and handing work back to people"
+      }
+    ],
     "related": {
       "section": {
         "label": "Agentic AI",
@@ -1835,14 +2636,27 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What Alibaba released on 3 August</h2><p>The architecture extends Qwen 3.5 and pairs the mixture-of-experts design with a hybrid attention mechanism, which is how a model of this size keeps the cost of each request closer to that of a much smaller one. Alibaba positions it for long documents and long tasks. The announcement describes processing documents of a hundred pages and hours of video in a single context, and an internal test in which the model worked on a software project autonomously for sixteen days.</p><p>The benchmark evidence is a mix of public leaderboards and internal tests. Alibaba reports second place on the Vision Arena and top-five placings on the Text and Frontend Code Arenas. Arena rankings reflect the preferences of the people voting on paired answers, which is useful evidence of general quality and weak evidence of performance on a bank's claims documents or a hospital's discharge summaries. The sixteen-day autonomy claim is an internal demonstration, and an enterprise should read it as a statement of capability that its own evaluation has yet to confirm.</p><h2 id=\"sec-2\">Hosted today: the residency question comes first</h2><p>At the time of writing, the only way to use Qwen3.8-Max is through Alibaba Cloud's API, and the announcement names no regions or pricing for it. For a regulated buyer that settles the first question before any capability discussion begins. Where will prompts and outputs be processed and stored, and under which jurisdiction's law can they be accessed?</p><p>Those questions apply to every foreign model provider. An Indian bank asks them of American providers too, and the answers decide whether customer data can be sent at all. Under India's data protection rules and sector regulators' outsourcing expectations, the institution remains accountable for data it sends to a processor, whatever the provider's assurances. For workloads that touch personal or regulated data, a hosted model without an in-country region and a clear processing agreement is a non-starter, however strong its benchmarks.</p><p>The hosted model still has legitimate uses. Work on public data, and evaluation itself, can proceed while the residency questions are answered. A sensible first step is to test the model on the enterprise's own evaluation set with non-sensitive material, so the capability question is settled on evidence the institution trusts.</p><h2 id=\"sec-3\">Open weights on the way, and the hardware they demand</h2><p>The promise of open weights changes the calculation for sovereign and on-premise deployment, because a model the enterprise hosts keeps every prompt inside its own boundary. The difficulty lies in the size. A 2.4-trillion-parameter model needs multi-node data-centre infrastructure to serve, which places it beyond most on-premise clusters and well beyond a single server. For the large majority of enterprises, the open release of the flagship will matter more as a signal than as a deployable asset.</p><p>The licence matters as much as the hardware. At announcement, Alibaba had not published the licence terms for the open release, and earlier open-weight licences across the industry have carried conditions on commercial use or on very large user bases. Until the terms are public, any plan that depends on self-hosting the model is a plan that depends on an unknown.</p><h2 id=\"sec-4\">The proof of concept that assumed a licence</h2><p>A lender's analytics team once evaluated a newly announced open-weight model through its hosted preview while the weights were still on the way. The results on document extraction were strong, and the team designed its pilot on the assumption that the production version would be self-hosted inside the bank's data centre. The architecture review approved the plan on that basis.</p><p>When the licence arrived, it carried a restriction on commercial use above a certain scale that the bank's legal team could not accept. The pilot had to be redesigned around a different model, and several weeks of prompt tuning and evaluation were repeated. Nothing had gone to production, and no data had been exposed. The cost was time, together with credibility the team had spent defending a plan resting on an assumption.</p><p>The team changed its selection process afterwards. A model now enters architecture review only once its licence is published and its residency options are documented. Hosted previews are used to test capability on non-sensitive data, with the clear understanding that the test proves nothing about how the model can be deployed.</p><p>Qwen3.8-Max is a serious model and a notable entry in the open-weight field, and its long context will interest any team that works with long documents. For a regulated enterprise, capability comes after two practical questions: where the data goes when the model is hosted, and what the licence permits when it is not. The technology head weighing it should ask both before the first pilot is scoped. A selection made on that discipline holds up when legal and risk review it, which is how model choices become outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What Alibaba released on 3 August</h2><p>The architecture extends Qwen 3.5 and pairs the mixture-of-experts design with a hybrid attention mechanism, which is how a model of this size keeps the cost of each request closer to that of a much smaller one. Alibaba positions it for long documents and long tasks. The announcement describes processing documents of a hundred pages and hours of video in a single context, and an internal test in which the model worked on a software project autonomously for sixteen days.</p><p>The benchmark evidence is a mix of public leaderboards and internal tests. Alibaba reports second place on the Vision Arena and top-five placings on the Text and Frontend Code Arenas. Arena rankings reflect the preferences of the people voting on paired answers, which is useful evidence of general quality and weak evidence of performance on a bank's claims documents or a hospital's discharge summaries. The sixteen-day autonomy claim is an internal demonstration, and an enterprise should read it as a statement of capability that its own evaluation has yet to confirm.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Hosted today: the residency question comes first</h2><p>At the time of writing, the only way to use Qwen3.8-Max is through Alibaba Cloud's API, and the announcement names no regions or pricing for it. For a regulated buyer that settles the first question before any capability discussion begins. Where will prompts and outputs be processed and stored, and under which jurisdiction's law can they be accessed?</p><p>Those questions apply to every foreign model provider. An Indian bank asks them of American providers too, and the answers decide whether customer data can be sent at all. Under India's data protection rules and sector regulators' outsourcing expectations, the institution remains accountable for data it sends to a processor, whatever the provider's assurances. For workloads that touch personal or regulated data, a hosted model without an in-country region and a clear processing agreement is a non-starter, however strong its benchmarks.</p><p>The hosted model still has legitimate uses. Work on public data, and evaluation itself, can proceed while the residency questions are answered. A sensible first step is to test the model on the enterprise's own evaluation set with non-sensitive material, so the capability question is settled on evidence the institution trusts.</p><h2 id=\"sec-3\">Open weights on the way, and the hardware they demand</h2><p>The promise of open weights changes the calculation for sovereign and on-premise deployment, because a model the enterprise hosts keeps every prompt inside its own boundary. The difficulty lies in the size. A 2.4-trillion-parameter model needs multi-node data-centre infrastructure to serve, which places it beyond most on-premise clusters and well beyond a single server. For the large majority of enterprises, the open release of the flagship will matter more as a signal than as a deployable asset.</p><p>The licence matters as much as the hardware. At announcement, Alibaba had not published the licence terms for the open release, and earlier open-weight licences across the industry have carried conditions on commercial use or on very large user bases. Until the terms are public, any plan that depends on self-hosting the model is a plan that depends on an unknown.</p><h2 id=\"sec-4\">The proof of concept that assumed a licence</h2><p>A lender's analytics team once evaluated a newly announced open-weight model through its hosted preview while the weights were still on the way. The results on document extraction were strong, and the team designed its pilot on the assumption that the production version would be self-hosted inside the bank's data centre. The architecture review approved the plan on that basis.</p><p>When the licence arrived, it carried a restriction on commercial use above a certain scale that the bank's legal team could not accept. The pilot had to be redesigned around a different model, and several weeks of prompt tuning and evaluation were repeated. Nothing had gone to production, and no data had been exposed. The cost was time, together with credibility the team had spent defending a plan resting on an assumption.</p><p>The team changed its selection process afterwards. A model now enters architecture review only once its licence is published and its residency options are documented. Hosted previews are used to test capability on non-sensitive data, with the clear understanding that the test proves nothing about how the model can be deployed.</p><p>Qwen3.8-Max is a serious model and a notable entry in the open-weight field, and its long context will interest any team that works with long documents. For a regulated enterprise, capability comes after two practical questions: where the data goes when the model is hosted, and what the licence permits when it is not. The technology head weighing it should ask both before the first pilot is scoped. A selection made on that discipline holds up when legal and risk review it, which is how model choices become outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/qwen3-8-max-for-the-enterprise-1.webp",
+        "width": 1200,
+        "height": 676,
+        "alt": "Illustration: What Alibaba released on 3 August"
+      }
+    ],
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -1880,10 +2694,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why discharge timing decides hospital capacity</h2><p>A hospital's capacity behaves like a tank with a tap at each end. Admissions arrive through the day, and discharges cluster in the late afternoon because each one waits on a chain of small tasks. The discharge summary needs a consultant's sign-off, the take-home medicines need dispensing, the bill needs clearing and the family needs to arrive. In Indian private hospitals, final approval from the insurer's TPA often adds hours to that chain for cashless patients.</p><p>When the chain is slow, the cost shows up elsewhere in the hospital. Emergency patients wait for beds on trolleys, and elective surgeries are cancelled on the day because no post-operative bed is free. Most bed managers forecast the day by phoning ward in-charges and asking who looks ready to go. That works in a small hospital. Across a network with hundreds of beds, it produces a forecast nobody can check and nobody owns.</p><h2 id=\"sec-2\">Predicting discharges patient by patient</h2><p>A useful model predicts at the level of the individual patient and then adds up. For each inpatient it estimates the probability of discharge today and tomorrow, along with a likely time window. The inputs are already in the hospital information system: the diagnosis and procedure, the length of stay so far against the typical stay for that case, recent trends in vitals and lab results, tests still pending, and orders such as physiotherapy clearance or a discharge-planning note. Summed across a ward, these become a forecast of how many beds will free up and when.</p><p>Calibration matters more here than ranking. A bed manager plans with expected counts of free beds. If the model forecasts thirty discharges across a ward block with a likely range of twenty-five to thirty-four, that range has to hold day after day before anyone stakes an elective list on it. A model that ranks patients well but overstates the total by a fifth produces a confident plan that fails at four in the afternoon.</p><p>The most valuable output is often the reason a likely discharge may slip. A patient who is clinically ready but waiting on a pending echo report, or on TPA approval, is a task someone can chase at ten in the morning. Surfacing those blockers early moves discharges forward in the day, and that shift frees more capacity than any improvement in the forecast itself.</p><h2 id=\"sec-3\">Keeping the clinician in charge of the discharge</h2><p>The model never decides that a patient goes home. That decision belongs to the treating clinician, and the system has to be designed so nobody mistakes a planning signal for a clinical judgement. The forecast goes to the bed manager and the ward in-charge for operational planning. Consultants see the pending tasks for patients they have marked as nearly ready, with no probability score to anchor their judgement.</p><p>Two safeguards keep operational pressure from leaking into clinical decisions. The first is monitoring readmissions within thirty days, by ward and by consultant, before and after the forecast goes live. A rise in early readmissions is the signal that discharges are being pulled forward too hard. The second is checking performance by payer category. A model trained on historical stays can learn that cash patients leave sooner than insured ones, and a forecast that encodes that difference invites the very pressure the hospital must avoid.</p><p>Validation has to cover the hospital's own seasons. A model back-tested only on a calm quarter will mislead during a monsoon surge in dengue admissions or a festival week when families delay collecting patients. Back-testing across at least a full year, ward by ward, shows where the forecast can be trusted and where the bed manager should rely on judgement instead.</p><h2 id=\"sec-4\">The forecast that missed the new weekend roster</h2><p>A hospital network operated its discharge forecast for four months with steady accuracy. Bed managers began accepting elective admissions on Saturday mornings based on the forecast range, and the routine held. Then the network changed its weekend consultant roster, with fewer senior reviews on Saturdays. Nobody told the model about the change.</p><p>The forecast continued to predict Saturday discharges at the old rate. Over two weekends, elective patients completed surgery and waited in recovery for ward beds that were still occupied. No patient came to harm, but theatre schedules slipped and the surgical teams lost confidence in the forecast quickly.</p><p>The correction treated operational change as a model input. Roster changes and other policy shifts are now logged and fed to the forecast, and its error is tracked daily by ward and by weekday. An alert fires when actual discharges fall outside the predicted range on consecutive days. The bed manager always sees the range beside the point estimate, so a wider band on an unusual day prompts caution instead of a fixed plan.</p><p>The bed manager at eight in the morning needs a number to plan around, along with the reasons some discharges may slip. AI can supply both, provided the hospital validates it against its own seasons and keeps every discharge decision with the clinician. For a hospital COO, the useful question is how accurate yesterday's discharge forecast was, ward by ward, and what the team did differently because of it. A forecast that can answer that, with readmissions watched alongside it, gives patient flow the outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why discharge timing decides hospital capacity</h2><p>A hospital's capacity behaves like a tank with a tap at each end. Admissions arrive through the day, and discharges cluster in the late afternoon because each one waits on a chain of small tasks. The discharge summary needs a consultant's sign-off, the take-home medicines need dispensing, the bill needs clearing and the family needs to arrive. In Indian private hospitals, final approval from the insurer's TPA often adds hours to that chain for cashless patients.</p><p>When the chain is slow, the cost shows up elsewhere in the hospital. Emergency patients wait for beds on trolleys, and elective surgeries are cancelled on the day because no post-operative bed is free. Most bed managers forecast the day by phoning ward in-charges and asking who looks ready to go. That works in a small hospital. Across a network with hundreds of beds, it produces a forecast nobody can check and nobody owns.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Predicting discharges patient by patient</h2><p>A useful model predicts at the level of the individual patient and then adds up. For each inpatient it estimates the probability of discharge today and tomorrow, along with a likely time window. The inputs are already in the hospital information system: the diagnosis and procedure, the length of stay so far against the typical stay for that case, recent trends in vitals and lab results, tests still pending, and orders such as physiotherapy clearance or a discharge-planning note. Summed across a ward, these become a forecast of how many beds will free up and when.</p><p>Calibration matters more here than ranking. A bed manager plans with expected counts of free beds. If the model forecasts thirty discharges across a ward block with a likely range of twenty-five to thirty-four, that range has to hold day after day before anyone stakes an elective list on it. A model that ranks patients well but overstates the total by a fifth produces a confident plan that fails at four in the afternoon.</p><p>The most valuable output is often the reason a likely discharge may slip. A patient who is clinically ready but waiting on a pending echo report, or on TPA approval, is a task someone can chase at ten in the morning. Surfacing those blockers early moves discharges forward in the day, and that shift frees more capacity than any improvement in the forecast itself.</p><h2 id=\"sec-3\">Keeping the clinician in charge of the discharge</h2><p>The model never decides that a patient goes home. That decision belongs to the treating clinician, and the system has to be designed so nobody mistakes a planning signal for a clinical judgement. The forecast goes to the bed manager and the ward in-charge for operational planning. Consultants see the pending tasks for patients they have marked as nearly ready, with no probability score to anchor their judgement.</p><p>Two safeguards keep operational pressure from leaking into clinical decisions. The first is monitoring readmissions within thirty days, by ward and by consultant, before and after the forecast goes live. A rise in early readmissions is the signal that discharges are being pulled forward too hard. The second is checking performance by payer category. A model trained on historical stays can learn that cash patients leave sooner than insured ones, and a forecast that encodes that difference invites the very pressure the hospital must avoid.</p><p>Validation has to cover the hospital's own seasons. A model back-tested only on a calm quarter will mislead during a monsoon surge in dengue admissions or a festival week when families delay collecting patients. Back-testing across at least a full year, ward by ward, shows where the forecast can be trusted and where the bed manager should rely on judgement instead.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The forecast that missed the new weekend roster</h2><p>A hospital network operated its discharge forecast for four months with steady accuracy. Bed managers began accepting elective admissions on Saturday mornings based on the forecast range, and the routine held. Then the network changed its weekend consultant roster, with fewer senior reviews on Saturdays. Nobody told the model about the change.</p><p>The forecast continued to predict Saturday discharges at the old rate. Over two weekends, elective patients completed surgery and waited in recovery for ward beds that were still occupied. No patient came to harm, but theatre schedules slipped and the surgical teams lost confidence in the forecast quickly.</p><p>The correction treated operational change as a model input. Roster changes and other policy shifts are now logged and fed to the forecast, and its error is tracked daily by ward and by weekday. An alert fires when actual discharges fall outside the predicted range on consecutive days. The bed manager always sees the range beside the point estimate, so a wider band on an unusual day prompts caution instead of a fixed plan.</p><p>The bed manager at eight in the morning needs a number to plan around, along with the reasons some discharges may slip. AI can supply both, provided the hospital validates it against its own seasons and keeps every discharge decision with the clinician. For a hospital COO, the useful question is how accurate yesterday's discharge forecast was, ward by ward, and what the team did differently because of it. A forecast that can answer that, with readmissions watched alongside it, gives patient flow the outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/ai-for-bed-management-1.webp",
+        "width": 1200,
+        "height": 676,
+        "alt": "Illustration: Why discharge timing decides hospital capacity"
+      },
+      {
+        "src": "/blog/ai-for-bed-management-2.webp",
+        "width": 1200,
+        "height": 675,
+        "alt": "Illustration: Keeping the clinician in charge of the discharge"
+      }
+    ],
     "related": {
       "section": {
         "label": "Healthcare & Life Sciences",
@@ -1930,10 +2769,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why mule accounts defeat transaction-level rules</h2><p>A mule account is a legitimate account, held by a real customer, used to receive and pass on the proceeds of fraud. That is precisely what makes it hard to catch. The KYC is genuine and the individual payments remain within normal limits. Rules written for single transactions, such as amount thresholds or unusual hours, see nothing worth stopping.</p><p>The obligation on the bank is direct. Indian banks must report suspicious transactions to FIU-IND and act on account-freeze requests routed through the National Cybercrime Reporting Portal, and supervisors expect institutions to detect mule activity on their own books before a police request arrives. Regulatory pressure on mule accounts has grown steadily. In December 2024 the Reserve Bank of India encouraged banks to adopt MuleHunter.AI, a model developed by the Reserve Bank Innovation Hub after studying 19 distinct patterns of mule activity with several banks. In May 2026 the Indian Cyber Crime Coordination Centre signed an agreement with RBIH to extend that work.</p><p>The constraint that shapes every design decision is time. Fraud proceeds rarely stay in a mule account for long, because the people orchestrating them know a freeze request may follow the victim's complaint. Detection that arrives the next morning, in a batch report, documents the loss and recovers none of it.</p><h2 id=\"sec-2\">The position: a mule model is judged by its false positives</h2><p>The common way to evaluate a mule model is detection rate, the share of confirmed mule accounts it flagged. That number matters, and it tells only half the story. The other half is what the model does to the honest customers whose behaviour resembles a mule's.</p><p>Those customers are numerous and easy to name. A delivery rider receives a daily payout and withdraws it the same evening. A small trader collects dozens of UPI payments at a weekly market and sweeps them to a supplier. A family member manages the household's transfers from one account. Each pattern shows many inbound credits and fast outward movement, which is the mule signature in its simplest form.</p><p>A model that freezes these accounts imposes a real harm on people who did nothing wrong, and in India's financial-inclusion segments that harm lands hardest on the customers with the least margin to absorb it. The case for a bank to defend before its board and its regulator is a model whose false positives are measured by segment and kept low enough that the response to a flag can be proportionate. A strong detection rate earns a model attention. False-positive discipline earns the right to act quickly on what the model finds.</p><h2 id=\"sec-3\">Signals that follow the money across accounts</h2><p>Effective detection treats accounts as nodes in a network and payments as the edges between them. The useful features describe how money moves through an account and who it moves with. Pass-through ratio measures how much of what arrives leaves again within a short window, and how long it stays before moving. Fan-in and fan-out count the distinct counterparties on each side. Network features add context a single account cannot supply, such as devices shared across accounts and clusters of accounts opened from the same location within days of each other.</p><p>Onboarding is the second place to look. Many mule accounts are opened for the purpose, and signals at account opening, such as a device already linked to other recently opened accounts, give the bank a chance to apply tighter limits before the first fraudulent credit arrives.</p><p>The response has to be graded to match the confidence. A low-confidence flag can trigger enhanced monitoring. A moderate one can prompt a verification call to the customer. A higher one can restrict transfers to new beneficiaries while leaving salary credits and bill payments untouched. A full debit freeze belongs to the cases where the evidence is strong or a valid request has arrived through the reporting portal. Every action carries reason codes recorded at the moment of decision, because the customer who calls the branch and the examiner who reviews the file will both ask why.</p><p>Labels for mule accounts arrive late and imperfectly. A confirmed mule is usually established through a victim complaint or a police request, often weeks after the funds moved. Teams that retrain only on confirmed cases learn the patterns of last quarter's fraud rings, so investigator feedback on reviewed alerts has to flow back into the model as a label in its own right.</p><h2 id=\"sec-4\">The payout cycle that looked like laundering</h2><p>A mid-sized bank deployed a network-based mule model and saw its alert volume rise sharply in the first week. Investigators found that a large share of the new alerts came from one segment: delivery and ride-hailing partners paid through a single payout aggregator. Their accounts received a credit every evening from the same source and emptied within the hour, to a few regular payees. The model read the pattern as pass-through behaviour and recommended freezes.</p><p>None of those freezes were executed, because the bank had set every early recommendation to route through investigator review. Had the model been wired to act on its own, a large group of working people would have lost access to a day's earnings.</p><p>The correction went into the features and the policy together. The model now derives baselines by segment, so a payout pattern is compared with other payout recipients instead of with salaried customers. Known corporate payers, verified through the bank's own onboarding of the aggregator, reduce the weight of inbound concentration. Restriction of new-beneficiary transfers replaced the freeze as the default action for medium-confidence flags, which stopped mule behaviour without touching the payouts.</p><p>Mule account detection is a race against funds that move in minutes, and AI gives banks the network view that rules never had. The harder discipline is proportion: acting fast on strong evidence while protecting the riders and small traders whose accounts resemble a mule's from the outside. A risk head reviewing a mule programme should ask for its false-positive rate by customer segment and for the share of flags that end in a full freeze. A programme that can produce both numbers, and explain each action it took, is one that delivers outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why mule accounts defeat transaction-level rules</h2><p>A mule account is a legitimate account, held by a real customer, used to receive and pass on the proceeds of fraud. That is precisely what makes it hard to catch. The KYC is genuine and the individual payments remain within normal limits. Rules written for single transactions, such as amount thresholds or unusual hours, see nothing worth stopping.</p><p>The obligation on the bank is direct. Indian banks must report suspicious transactions to FIU-IND and act on account-freeze requests routed through the National Cybercrime Reporting Portal, and supervisors expect institutions to detect mule activity on their own books before a police request arrives. Regulatory pressure on mule accounts has grown steadily. In December 2024 the Reserve Bank of India encouraged banks to adopt MuleHunter.AI, a model developed by the Reserve Bank Innovation Hub after studying 19 distinct patterns of mule activity with several banks. In May 2026 the Indian Cyber Crime Coordination Centre signed an agreement with RBIH to extend that work.</p><p>The constraint that shapes every design decision is time. Fraud proceeds rarely stay in a mule account for long, because the people orchestrating them know a freeze request may follow the victim's complaint. Detection that arrives the next morning, in a batch report, documents the loss and recovers none of it.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">The position: a mule model is judged by its false positives</h2><p>The common way to evaluate a mule model is detection rate, the share of confirmed mule accounts it flagged. That number matters, and it tells only half the story. The other half is what the model does to the honest customers whose behaviour resembles a mule's.</p><p>Those customers are numerous and easy to name. A delivery rider receives a daily payout and withdraws it the same evening. A small trader collects dozens of UPI payments at a weekly market and sweeps them to a supplier. A family member manages the household's transfers from one account. Each pattern shows many inbound credits and fast outward movement, which is the mule signature in its simplest form.</p><p>A model that freezes these accounts imposes a real harm on people who did nothing wrong, and in India's financial-inclusion segments that harm lands hardest on the customers with the least margin to absorb it. The case for a bank to defend before its board and its regulator is a model whose false positives are measured by segment and kept low enough that the response to a flag can be proportionate. A strong detection rate earns a model attention. False-positive discipline earns the right to act quickly on what the model finds.</p><h2 id=\"sec-3\">Signals that follow the money across accounts</h2><p>Effective detection treats accounts as nodes in a network and payments as the edges between them. The useful features describe how money moves through an account and who it moves with. Pass-through ratio measures how much of what arrives leaves again within a short window, and how long it stays before moving. Fan-in and fan-out count the distinct counterparties on each side. Network features add context a single account cannot supply, such as devices shared across accounts and clusters of accounts opened from the same location within days of each other.</p><p>Onboarding is the second place to look. Many mule accounts are opened for the purpose, and signals at account opening, such as a device already linked to other recently opened accounts, give the bank a chance to apply tighter limits before the first fraudulent credit arrives.</p><p>The response has to be graded to match the confidence. A low-confidence flag can trigger enhanced monitoring. A moderate one can prompt a verification call to the customer. A higher one can restrict transfers to new beneficiaries while leaving salary credits and bill payments untouched. A full debit freeze belongs to the cases where the evidence is strong or a valid request has arrived through the reporting portal. Every action carries reason codes recorded at the moment of decision, because the customer who calls the branch and the examiner who reviews the file will both ask why.</p><p>Labels for mule accounts arrive late and imperfectly. A confirmed mule is usually established through a victim complaint or a police request, often weeks after the funds moved. Teams that retrain only on confirmed cases learn the patterns of last quarter's fraud rings, so investigator feedback on reviewed alerts has to flow back into the model as a label in its own right.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The payout cycle that looked like laundering</h2><p>A mid-sized bank deployed a network-based mule model and saw its alert volume rise sharply in the first week. Investigators found that a large share of the new alerts came from one segment: delivery and ride-hailing partners paid through a single payout aggregator. Their accounts received a credit every evening from the same source and emptied within the hour, to a few regular payees. The model read the pattern as pass-through behaviour and recommended freezes.</p><p>None of those freezes were executed, because the bank had set every early recommendation to route through investigator review. Had the model been wired to act on its own, a large group of working people would have lost access to a day's earnings.</p><p>The correction went into the features and the policy together. The model now derives baselines by segment, so a payout pattern is compared with other payout recipients instead of with salaried customers. Known corporate payers, verified through the bank's own onboarding of the aggregator, reduce the weight of inbound concentration. Restriction of new-beneficiary transfers replaced the freeze as the default action for medium-confidence flags, which stopped mule behaviour without touching the payouts.</p><p>Mule account detection is a race against funds that move in minutes, and AI gives banks the network view that rules never had. The harder discipline is proportion: acting fast on strong evidence while protecting the riders and small traders whose accounts resemble a mule's from the outside. A risk head reviewing a mule programme should ask for its false-positive rate by customer segment and for the share of flags that end in a full freeze. A programme that can produce both numbers, and explain each action it took, is one that delivers outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/mule-account-detection-with-ai-1.webp",
+        "width": 1200,
+        "height": 675,
+        "alt": "Illustration: Why mule accounts defeat transaction-level rules"
+      },
+      {
+        "src": "/blog/mule-account-detection-with-ai-2.webp",
+        "width": 1200,
+        "height": 675,
+        "alt": "Illustration: Signals that follow the money across accounts"
+      }
+    ],
     "related": {
       "section": {
         "label": "Banking & Financial Services",
@@ -1984,14 +2848,39 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">What Presence promises</h2><p>The design starts deliberately narrow, with a single job. Each deployment begins with one specific job, and the agent receives only the knowledge and system access that job requires. The enterprise decides what the agent may do, when it needs approval and when a person takes over. Guardrails intervene when a conversation leaves the boundaries the company has set.</p><p>Before launch, teams test the agent against common requests and higher-risk edge cases. Simulations and graders check whether the agent reached the right outcome, followed policy, used its tools correctly and escalated when it should. After launch, production sessions and escalations feed an improvement process in which Codex investigates where the agent struggled and proposes changes. Each proposed change is tested against the production version, and the team approves a controlled rollout.</p><p>OpenAI reports that its own English-language phone support line uses Presence and resolves 75 percent of inbound issues without human help. It also reports that the improvement loop reduced human handoffs by 15 percentage points in 10 days during its own launch. Both figures are vendor-reported and describe a single English-language deployment on OpenAI's own support traffic.</p><h2 id=\"sec-2\">Where the design holds</h2><p>The architecture reflects lessons that operators of voice agents learn the hard way. Scoping an agent to one job with least-privilege access is the right starting point, because most early failures in production come from agents that can reach more than they should. Treating escalation as a rule set by the enterprise, with a defined trigger, puts the human handoff where it belongs.</p><p>The improvement loop is the most interesting part of the announcement. Most voice deployments degrade after launch because nobody owns the steady work of reading failed calls and adjusting the agent. A process that surfaces failures, proposes a fix and requires a tested, approved release turns that work into a governed change process. Regulated buyers should recognise the shape, since it mirrors how model changes already pass through model-risk review.</p><h2 id=\"sec-3\">Where the buyer still carries the load</h2><p>The forward-deployed model tells buyers that configuration alone does not produce a dependable agent. Someone has to map the job, wire the systems, write the escalation rules and judge the edge cases, and for now OpenAI supplies that someone. The practical question for a buyer is who owns that work in month seven, after the launch team has moved to the next customer.</p><p>The approval step in the improvement loop deserves the same scrutiny. A proposed change that is tested and approved is only as safe as the evaluation set it was tested against and the reviewer who approved it. An enterprise adopting Presence needs its own grading criteria, drawn from its own difficult calls, and a named owner for every release. The platform supplies the mechanism, and the accountability stays with the institution.</p><p>The announcement also leaves gaps a procurement team will notice. It names English and Japanese, through a SoftBank pilot, with no reference to Indian languages. It describes design-partner work with BBVA in Mexico and IAG in Australia as exploration. It states that generalised insights from deployments inform OpenAI's research, and it does not describe how long data is retained or where it is stored. None of these are disqualifying, and all of them belong in the contract before a single customer call is routed.</p><h2 id=\"sec-4\">Where Presence fits</h2><p>Presence suits an enterprise that has a contained first workflow and can accept a vendor-led deployment while it develops its own operating capability. It fits less comfortably where calls arrive in several Indian languages, or where the institution expects to own and audit every component of the agent it puts in front of customers.</p><p>The announcement is candid about what it takes to get a voice agent into production, and that candour is useful to every buyer in the category. Before signing with any voice platform, a contact-centre leader should be able to name the person who reads the failed calls each week and approves every change to the agent's behaviour. They should also know what evidence the institution would show a regulator about a call that went wrong. A deployment with clear answers to both is the kind that delivers outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">What Presence promises</h2><p>The design starts deliberately narrow, with a single job. Each deployment begins with one specific job, and the agent receives only the knowledge and system access that job requires. The enterprise decides what the agent may do, when it needs approval and when a person takes over. Guardrails intervene when a conversation leaves the boundaries the company has set.</p><p>Before launch, teams test the agent against common requests and higher-risk edge cases. Simulations and graders check whether the agent reached the right outcome, followed policy, used its tools correctly and escalated when it should. After launch, production sessions and escalations feed an improvement process in which Codex investigates where the agent struggled and proposes changes. Each proposed change is tested against the production version, and the team approves a controlled rollout.</p><p>OpenAI reports that its own English-language phone support line uses Presence and resolves 75 percent of inbound issues without human help. It also reports that the improvement loop reduced human handoffs by 15 percentage points in 10 days during its own launch. Both figures are vendor-reported and describe a single English-language deployment on OpenAI's own support traffic.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Where the design holds</h2><p>The architecture reflects lessons that operators of voice agents learn the hard way. Scoping an agent to one job with least-privilege access is the right starting point, because most early failures in production come from agents that can reach more than they should. Treating escalation as a rule set by the enterprise, with a defined trigger, puts the human handoff where it belongs.</p><p>The improvement loop is the most interesting part of the announcement. Most voice deployments degrade after launch because nobody owns the steady work of reading failed calls and adjusting the agent. A process that surfaces failures, proposes a fix and requires a tested, approved release turns that work into a governed change process. Regulated buyers should recognise the shape, since it mirrors how model changes already pass through model-risk review.</p><h2 id=\"sec-3\">Where the buyer still carries the load</h2><p>The forward-deployed model tells buyers that configuration alone does not produce a dependable agent. Someone has to map the job, wire the systems, write the escalation rules and judge the edge cases, and for now OpenAI supplies that someone. The practical question for a buyer is who owns that work in month seven, after the launch team has moved to the next customer.</p><p>The approval step in the improvement loop deserves the same scrutiny. A proposed change that is tested and approved is only as safe as the evaluation set it was tested against and the reviewer who approved it. An enterprise adopting Presence needs its own grading criteria, drawn from its own difficult calls, and a named owner for every release. The platform supplies the mechanism, and the accountability stays with the institution.</p><p>The announcement also leaves gaps a procurement team will notice. It names English and Japanese, through a SoftBank pilot, with no reference to Indian languages. It describes design-partner work with BBVA in Mexico and IAG in Australia as exploration. It states that generalised insights from deployments inform OpenAI's research, and it does not describe how long data is retained or where it is stored. None of these are disqualifying, and all of them belong in the contract before a single customer call is routed.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">Where Presence fits</h2><p>Presence suits an enterprise that has a contained first workflow and can accept a vendor-led deployment while it develops its own operating capability. It fits less comfortably where calls arrive in several Indian languages, or where the institution expects to own and audit every component of the agent it puts in front of customers.</p><p>The announcement is candid about what it takes to get a voice agent into production, and that candour is useful to every buyer in the category. Before signing with any voice platform, a contact-centre leader should be able to name the person who reads the failed calls each week and approves every change to the agent's behaviour. They should also know what evidence the institution would show a regulator about a call that went wrong. A deployment with clear answers to both is the kind that delivers outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/openai-presence-forward-deployed-voice-agents-1.webp",
+        "width": 1200,
+        "height": 675,
+        "alt": "Illustration: What Presence promises"
+      },
+      {
+        "src": "/blog/openai-presence-forward-deployed-voice-agents-2.webp",
+        "width": 1200,
+        "height": 675,
+        "alt": "Illustration: Where the buyer still carries the load"
+      }
+    ],
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -2029,10 +2918,35 @@ export const blogPosts: BlogPost[] = [
     ],
     "body": [
       {
-        "html": "<h2 id=\"sec-1\">Why a training library falls behind its own procedures</h2><p>Most enterprise training is produced as a project. A subject expert explains the process, an instructional designer turns it into a module, a studio records it and compliance reviews the final version. That sequence makes sense for content that holds still for a year. It breaks down for procedures that change every few weeks, which in banking and insurance operations now describes a growing share of the rulebook.</p><p>The problem compounds with volume. An operations function with a few hundred SOPs, each revised a handful of times a year, produces a revision on most working days, and no production team can re-record at that cadence. The training library drifts behind the procedures it was meant to teach, one version at a time.</p><p>The gap has a cost that rarely appears on a dashboard. Staff learn the old rule and apply it with confidence. The error surfaces weeks later in a quality audit or a customer complaint, long after anyone remembers which version they were taught. Supervisors compensate with huddles and forwarded emails, which keeps people informed but leaves no record of who understood what. When a regulator asks how the institution ensured staff were trained on the revised process, a forwarded email is a weak answer.</p><h2 id=\"sec-2\">Treating the approved SOP as the single source</h2><p>The workable pattern inverts the production model. The approved SOP becomes the single source, and every lesson and assessment is generated from it and versioned against it. When the document changes, the system identifies which sections moved and regenerates only the lessons those sections feed. The changed material then goes to the process owner for approval before any learner sees it.</p><p>Two engineering choices decide whether this holds up in production. The first choice is the granularity of each lesson. A lesson mapped to a whole forty-page SOP has to be regenerated every time a comma changes, which floods reviewers and teaches staff to ignore update notices. Lessons mapped to individual clauses change only when their clause changes, so a revision to a refund threshold produces one new three-minute lesson and leaves the other thirty untouched.</p><p>The second is the approval boundary. Generated content stays a draft until a named owner signs it off, and the sign-off is recorded against the SOP version it was checked against. That record turns a training system into evidence. For any employee, the institution can show which version they were taught and how they scored on the assessment that followed.</p><p>Format matters as much as freshness. A three-minute lesson delivered in the voice and likeness of the team's most trusted trainer gets watched on a shift break, while a forty-minute recorded module gets scheduled and postponed. Generating lessons from the latest approved SOP, and checking that each change landed, is the job ATLAS is engineered to do.</p><h2 id=\"sec-3\">Assessing the change itself after every revision</h2><p>After a revision, the useful question is narrow. Can the person at the counter apply the one rule that moved, in the situation where it applies? A full course completion says very little about that.</p><p>Targeted assessment answers the question with a handful of scenario questions or a short role-play drawn from the changed clause, sent only to the roles the clause affects. A collections agent receives the revised hardship script, while the branch cashier is left alone. Results flow back to the process owner by team and by question. A cluster of wrong answers on one question usually means the SOP itself is ambiguous, which is information the policy team needs as much as the training team does.</p><p>Language matters here more than it first appears. A revised rule taught in English to a team that works in Marathi or Tamil is technically delivered and practically missed. Lessons are generated in the languages the floor actually speaks, and assessed in the same language, so a wrong answer reflects the rule and never the translation.</p><h2 id=\"sec-4\">The lesson that taught a superseded limit</h2><p>An insurance operations team adopted generated lessons, and for the first two months the update cycle worked as designed. Then a revised claims SOP was uploaded while an earlier draft of the same document was still present in the source folder. The system ingested both versions without telling them apart. Lessons for the changed clause were generated from the draft, which carried a higher approval limit that legal had later removed.</p><p>The process owner approved the lesson because it matched what they remembered discussing. A full shift of claims handlers completed it before a quality reviewer noticed a claim approved above the correct limit. Nothing had reached a regulator, but the institution had trained its own staff on a rule it never adopted.</p><p>The correction went into the pipeline itself. Only documents carrying a published status and a version number can now feed lesson generation, and every generated lesson displays the SOP version it came from. The approver checks the lesson against a reference instead of against memory. Affected staff received a corrective lesson within the day, and the assessment record showed exactly who had been taught the wrong limit.</p><p>The Monday revision will keep arriving, and in regulated operations it arrives more often each year. Keeping pace means treating each lesson as a derivative of the procedure, versioned with it and approved against it, so a change to the rulebook reaches the floor in days with a record behind it. The question for any operations leader is easy to ask and uncomfortable to answer. If the SOP changed this morning, how long until every affected person has learned the new rule, and could you prove it to an auditor by name and by version? A training system that can answer both is how workforce readiness joins the outcomes that survive scrutiny.</p>"
+        "html": "<h2 id=\"sec-1\">Why a training library falls behind its own procedures</h2><p>Most enterprise training is produced as a project. A subject expert explains the process, an instructional designer turns it into a module, a studio records it and compliance reviews the final version. That sequence makes sense for content that holds still for a year. It breaks down for procedures that change every few weeks, which in banking and insurance operations now describes a growing share of the rulebook.</p><p>The problem compounds with volume. An operations function with a few hundred SOPs, each revised a handful of times a year, produces a revision on most working days, and no production team can re-record at that cadence. The training library drifts behind the procedures it was meant to teach, one version at a time.</p><p>The gap has a cost that rarely appears on a dashboard. Staff learn the old rule and apply it with confidence. The error surfaces weeks later in a quality audit or a customer complaint, long after anyone remembers which version they were taught. Supervisors compensate with huddles and forwarded emails, which keeps people informed but leaves no record of who understood what. When a regulator asks how the institution ensured staff were trained on the revised process, a forwarded email is a weak answer.</p>"
+      },
+      {
+        "image": 0
+      },
+      {
+        "html": "<h2 id=\"sec-2\">Treating the approved SOP as the single source</h2><p>The workable pattern inverts the production model. The approved SOP becomes the single source, and every lesson and assessment is generated from it and versioned against it. When the document changes, the system identifies which sections moved and regenerates only the lessons those sections feed. The changed material then goes to the process owner for approval before any learner sees it.</p><p>Two engineering choices decide whether this holds up in production. The first choice is the granularity of each lesson. A lesson mapped to a whole forty-page SOP has to be regenerated every time a comma changes, which floods reviewers and teaches staff to ignore update notices. Lessons mapped to individual clauses change only when their clause changes, so a revision to a refund threshold produces one new three-minute lesson and leaves the other thirty untouched.</p><p>The second is the approval boundary. Generated content stays a draft until a named owner signs it off, and the sign-off is recorded against the SOP version it was checked against. That record turns a training system into evidence. For any employee, the institution can show which version they were taught and how they scored on the assessment that followed.</p><p>Format matters as much as freshness. A three-minute lesson delivered in the voice and likeness of the team's most trusted trainer gets watched on a shift break, while a forty-minute recorded module gets scheduled and postponed. Generating lessons from the latest approved SOP, and checking that each change landed, is the job ATLAS is engineered to do.</p><h2 id=\"sec-3\">Assessing the change itself after every revision</h2><p>After a revision, the useful question is narrow. Can the person at the counter apply the one rule that moved, in the situation where it applies? A full course completion says very little about that.</p><p>Targeted assessment answers the question with a handful of scenario questions or a short role-play drawn from the changed clause, sent only to the roles the clause affects. A collections agent receives the revised hardship script, while the branch cashier is left alone. Results flow back to the process owner by team and by question. A cluster of wrong answers on one question usually means the SOP itself is ambiguous, which is information the policy team needs as much as the training team does.</p><p>Language matters here more than it first appears. A revised rule taught in English to a team that works in Marathi or Tamil is technically delivered and practically missed. Lessons are generated in the languages the floor actually speaks, and assessed in the same language, so a wrong answer reflects the rule and never the translation.</p>"
+      },
+      {
+        "image": 1
+      },
+      {
+        "html": "<h2 id=\"sec-4\">The lesson that taught a superseded limit</h2><p>An insurance operations team adopted generated lessons, and for the first two months the update cycle worked as designed. Then a revised claims SOP was uploaded while an earlier draft of the same document was still present in the source folder. The system ingested both versions without telling them apart. Lessons for the changed clause were generated from the draft, which carried a higher approval limit that legal had later removed.</p><p>The process owner approved the lesson because it matched what they remembered discussing. A full shift of claims handlers completed it before a quality reviewer noticed a claim approved above the correct limit. Nothing had reached a regulator, but the institution had trained its own staff on a rule it never adopted.</p><p>The correction went into the pipeline itself. Only documents carrying a published status and a version number can now feed lesson generation, and every generated lesson displays the SOP version it came from. The approver checks the lesson against a reference instead of against memory. Affected staff received a corrective lesson within the day, and the assessment record showed exactly who had been taught the wrong limit.</p><p>The Monday revision will keep arriving, and in regulated operations it arrives more often each year. Keeping pace means treating each lesson as a derivative of the procedure, versioned with it and approved against it, so a change to the rulebook reaches the floor in days with a record behind it. The question for any operations leader is easy to ask and uncomfortable to answer. If the SOP changed this morning, how long until every affected person has learned the new rule, and could you prove it to an auditor by name and by version? A training system that can answer both is how workforce readiness joins the outcomes that survive scrutiny.</p>"
       }
     ],
-    "images": [],
+    "images": [
+      {
+        "src": "/blog/when-the-sop-changes-every-week-1.webp",
+        "width": 1200,
+        "height": 675,
+        "alt": "Illustration: Why a training library falls behind its own procedures"
+      },
+      {
+        "src": "/blog/when-the-sop-changes-every-week-2.webp",
+        "width": 1200,
+        "height": 675,
+        "alt": "Illustration: Assessing the change itself after every revision"
+      }
+    ],
     "related": {
       "section": {
         "label": "Agentic AI",
@@ -2335,7 +3249,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -2401,7 +3315,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -2848,7 +3762,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -2914,7 +3828,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -3435,7 +4349,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -3501,7 +4415,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -3951,7 +4865,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -4316,7 +5230,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -4390,7 +5304,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -4832,7 +5746,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -4985,7 +5899,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -5429,7 +6343,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -5499,7 +6413,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -6174,7 +7088,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -6314,7 +7228,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -6678,7 +7592,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -6905,7 +7819,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -7191,7 +8105,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -7406,7 +8320,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -7787,7 +8701,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -8152,7 +9066,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -8226,7 +9140,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -8656,7 +9570,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -8809,7 +9723,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -9248,7 +10162,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -9530,7 +10444,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -9757,7 +10671,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -10121,7 +11035,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -10491,7 +11405,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -10714,7 +11628,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -11003,7 +11917,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -11363,7 +12277,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -11590,7 +12504,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -11947,7 +12861,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -12095,7 +13009,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -12463,7 +13377,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -12682,7 +13596,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -13050,7 +13964,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -13335,7 +14249,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -13562,7 +14476,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -13922,7 +14836,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -14291,7 +15205,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -14734,7 +15648,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -15094,7 +16008,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -15322,7 +16236,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -15690,7 +16604,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -15826,7 +16740,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -16203,7 +17117,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -16427,7 +17341,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -16804,7 +17718,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -17102,7 +18016,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -17329,7 +18243,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -17632,7 +18546,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -18006,7 +18920,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -18229,7 +19143,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -18514,7 +19428,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -18952,7 +19866,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -19022,7 +19936,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -19539,7 +20453,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -19609,7 +20523,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -19973,7 +20887,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -20333,7 +21247,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -20556,7 +21470,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -20833,7 +21747,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -21057,7 +21971,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -21422,7 +22336,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -21791,7 +22705,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -22226,7 +23140,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -22301,7 +23215,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -22735,7 +23649,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -22797,7 +23711,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -23304,7 +24218,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -23374,7 +24288,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -23739,7 +24653,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -24162,7 +25076,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -24232,7 +25146,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -24674,7 +25588,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -24824,7 +25738,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -25250,7 +26164,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }
@@ -25316,7 +26230,7 @@ export const blogPosts: BlogPost[] = [
     "related": {
       "section": {
         "label": "Data Architecture",
-        "href": "/engineering/enterprise-ai/"
+        "href": "/engineering/data-architecture/"
       },
       "caseStudies": []
     }

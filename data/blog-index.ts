@@ -68,7 +68,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -39,
     "txt": "ai in trade finance: checking documents against letters of credit ai in bfsi shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/ai-in-trade-finance-letters-of-credit-1.webp",
+      "width": 1200,
+      "height": 679
+    }
   },
   {
     "slug": "risk-based-clinical-trial-monitoring",
@@ -83,7 +87,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -38,
     "txt": "risk-based clinical trial monitoring with ai: oversight where it counts ai in healthcare shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/risk-based-clinical-trial-monitoring-1.webp",
+      "width": 1200,
+      "height": 679
+    }
   },
   {
     "slug": "mistral-large-4-open-weight-option",
@@ -113,7 +121,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -36,
     "txt": "when the rubric ages faster than the model: managing evaluation drift agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/managing-evaluation-drift-1.webp",
+      "width": 1200,
+      "height": 678
+    }
   },
   {
     "slug": "microsoft-autopilot-agent-identity",
@@ -128,7 +140,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -35,
     "txt": "microsoft autopilot and agent identity: when an agent gets an account ai tools shreyas sanghvi",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/microsoft-autopilot-agent-identity-1.webp",
+      "width": 1200,
+      "height": 678
+    }
   },
   {
     "slug": "policy-lapse-prediction-life-insurance",
@@ -143,7 +159,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -34,
     "txt": "policy lapse prediction in life insurance: outreach policyholders welcome ai in bfsi snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/policy-lapse-prediction-life-insurance-1.webp",
+      "width": 1200,
+      "height": 678
+    }
   },
   {
     "slug": "back-pressure-for-agent-fleets",
@@ -158,7 +178,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -33,
     "txt": "back-pressure for agent fleets: staying stable when upstream systems slow agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/back-pressure-for-agent-fleets-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "decision-models-that-return-no-text",
@@ -173,7 +197,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -32,
     "txt": "decision models that return no text: typed answers for governed ai ai models shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/decision-models-that-return-no-text-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "abdm-interoperable-health-records-ai",
@@ -188,7 +216,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -31,
     "txt": "interoperable health records and ai: what abdm changes for hospitals ai in healthcare shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/abdm-interoperable-health-records-ai-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "prism-in-isb-ivi-admissions",
@@ -203,7 +235,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -30,
     "txt": "one rubric for every applicant: prism in isb's ivi admissions esmagico shreyas sanghvi",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/prism-in-isb-ivi-admissions-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "eleven-v4-voice-stack-decision",
@@ -218,7 +254,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -29,
     "txt": "eleven v4 and the voice stack decision for multilingual agents ai tools snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/eleven-v4-voice-stack-decision-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "ai-investor-servicing-amcs",
@@ -233,7 +273,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -28,
     "txt": "ai for investor servicing at amcs: faster answers within sebi's limits ai in bfsi snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/ai-investor-servicing-amcs-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "ai-checks-on-uploaded-evidence",
@@ -248,7 +292,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -27,
     "txt": "is this the right document? ai checks on uploaded evidence agentic ai snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/ai-checks-on-uploaded-evidence-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "gpt-6-and-claude-opus-5-5",
@@ -263,7 +311,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -26,
     "txt": "gpt-6 and claude opus 5.5 on the same day: an upgrade discipline ai models shreyas sanghvi",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/gpt-6-and-claude-opus-5-5-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "ai-for-pharma-medical-information",
@@ -278,7 +330,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -25,
     "txt": "ai for pharma medical information: accurate answers to clinicians at scale ai in healthcare snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/ai-for-pharma-medical-information-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "multilingual-retrieval-indian-enterprises",
@@ -293,7 +349,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -24,
     "txt": "multilingual retrieval: answering indian enterprises in their own language agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/multilingual-retrieval-indian-enterprises-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "ai-governance-for-nbfcs",
@@ -308,7 +368,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -23,
     "txt": "ai governance for nbfcs: supervisory expectations without a large team ai in bfsi shreyas sanghvi",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/ai-governance-for-nbfcs-1.webp",
+      "width": 1200,
+      "height": 675
+    }
   },
   {
     "slug": "perplexity-hybrid-compute",
@@ -323,7 +387,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -22,
     "txt": "perplexity hybrid compute: sensitive work split between device and cloud ai tools shreyas sanghvi",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/perplexity-hybrid-compute-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "cashless-claims-tpa-pre-authorisation",
@@ -338,7 +406,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -21,
     "txt": "cashless claims in indian hospitals: ai for tpa pre-authorisation ai in healthcare snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/cashless-claims-tpa-pre-authorisation-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "synthetic-test-calls",
@@ -353,7 +425,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -20,
     "txt": "synthetic test calls: evaluating a voice agent before it meets a customer agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/synthetic-test-calls-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "deepfake-voices-at-the-contact-centre",
@@ -368,7 +444,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -19,
     "txt": "deepfake voices at the contact centre: authenticating cloned callers ai in bfsi snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/deepfake-voices-at-the-contact-centre-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "pricing-agentic-ai-by-outcome",
@@ -383,7 +463,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -18,
     "txt": "pricing agentic ai by outcome: commercial models when agents do the work esmagico shreyas sanghvi",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/pricing-agentic-ai-by-outcome-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "claude-fable-5-1-and-mythos-5-1",
@@ -398,7 +482,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -17,
     "txt": "claude fable 5.1 and mythos 5.1: one model at two safeguard levels ai models snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/claude-fable-5-1-and-mythos-5-1-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "automating-applications-that-have-no-api",
@@ -413,7 +501,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -16,
     "txt": "automating applications that have no api: agents for the legacy estate agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/automating-applications-that-have-no-api-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "preparing-pharma-field-teams",
@@ -428,7 +520,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -15,
     "txt": "preparing pharma field teams: compliant detailing practised with ai ai in healthcare snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/preparing-pharma-field-teams-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "account-aggregator-data-in-credit-decisions",
@@ -443,7 +539,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -14,
     "txt": "account aggregator data in credit decisions: consent-led underwriting ai in bfsi snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/account-aggregator-data-in-credit-decisions-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "from-meeting-to-ticket",
@@ -458,7 +558,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -13,
     "txt": "from meeting to ticket: reliable action extraction into jira and github agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/from-meeting-to-ticket-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "nabh-accreditation-readiness",
@@ -473,7 +577,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -12,
     "txt": "nabh accreditation readiness: keeping evidence audit-ready all year ai in healthcare snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/nabh-accreditation-readiness-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "muse-spark-contributor-tier",
@@ -488,7 +596,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -11,
     "txt": "muse spark's contributor tier: the data price of a discounted model ai models snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/muse-spark-contributor-tier-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "scoring-video-and-written-submissions",
@@ -503,7 +615,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -10,
     "txt": "scoring video and written submissions to the same standard agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/scoring-video-and-written-submissions-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "ai-in-video-kyc",
@@ -518,7 +634,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -9,
     "txt": "ai in video kyc: liveness checks and deepfake defence you can audit ai in bfsi snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/ai-in-video-kyc-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "the-first-ninety-days-after-go-live",
@@ -533,7 +653,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -8,
     "txt": "the first ninety days after go-live: what operating an agent involves esmagico shreyas sanghvi",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/the-first-ninety-days-after-go-live-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "muse-code-examined",
@@ -548,7 +672,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -7,
     "txt": "muse code, examined: what replayable subagents mean for coding agents ai tools shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/muse-code-examined-1.webp",
+      "width": 1200,
+      "height": 677
+    }
   },
   {
     "slug": "designing-the-emergency-stop",
@@ -563,7 +691,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -6,
     "txt": "designing the emergency stop: safe shutdown for production agents agentic ai shardul singh",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/designing-the-emergency-stop-1.webp",
+      "width": 1200,
+      "height": 675
+    }
   },
   {
     "slug": "qwen3-8-max-for-the-enterprise",
@@ -578,7 +710,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -5,
     "txt": "qwen3.8-max for the enterprise: hosted now, open weights promised ai models shreyas sanghvi",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/qwen3-8-max-for-the-enterprise-1.webp",
+      "width": 1200,
+      "height": 676
+    }
   },
   {
     "slug": "ai-for-bed-management",
@@ -593,7 +729,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -4,
     "txt": "ai for bed management: discharge predictions hospitals can plan around ai in healthcare snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/ai-for-bed-management-1.webp",
+      "width": 1200,
+      "height": 676
+    }
   },
   {
     "slug": "mule-account-detection-with-ai",
@@ -608,7 +748,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -3,
     "txt": "mule account detection with ai: finding accounts that move fraud money ai in bfsi snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/mule-account-detection-with-ai-1.webp",
+      "width": 1200,
+      "height": 675
+    }
   },
   {
     "slug": "openai-presence-forward-deployed-voice-agents",
@@ -623,7 +767,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -2,
     "txt": "openai presence and the forward-deployed model for voice agents ai tools shreyas sanghvi",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/openai-presence-forward-deployed-voice-agents-1.webp",
+      "width": 1200,
+      "height": 675
+    }
   },
   {
     "slug": "when-the-sop-changes-every-week",
@@ -638,7 +786,11 @@ export const blogCards: BlogCard[] = [
     },
     "ts": -1,
     "txt": "when the sop changes every week: keeping workforce training current agentic ai snehasis panda",
-    "thumb": null
+    "thumb": {
+      "src": "/blog/when-the-sop-changes-every-week-1.webp",
+      "width": 1200,
+      "height": 675
+    }
   },
   {
     "slug": "measuring-ai-roi-in-banking",

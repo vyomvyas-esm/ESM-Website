@@ -15,7 +15,7 @@ export const ROUTES = {
   "pyzo-prism": "/pyzo/prism/",
   "svc-agentic": "/engineering/agentic-ai/",
   "svc-governance": "/engineering/ai-governance/",
-  "svc-modernisation": "/engineering/enterprise-ai/",
+  "svc-modernisation": "/engineering/data-architecture/",
   "ind-bfsi": "/industries/bfsi/",
   "ind-healthcare": "/industries/healthcare/",
   "ind-public": "/industries/public-sector/",

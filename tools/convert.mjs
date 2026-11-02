@@ -560,7 +560,18 @@ function bodyBlocks(prose, slug, title) {
     if (html.trim()) body.push({ html: html.trim() });
     html = "";
   };
+  /* Later exports carry no figure slots in a new article's markup. Its artwork goes where
+     the illustrated articles keep theirs: the first image closing the first section, the
+     second two sections on (before the 2nd and the 4th heading, or the last one). */
+  const h2s = prose.childNodes.filter((n) => isEl(n) && n.tagName === "h2");
+  const hasSlots = prose.childNodes.some((n) => isEl(n) && n.tagName === "figure");
+  const before = hasSlots || !sources.length ? [] : [...new Set([h2s[1], h2s[3] ?? h2s.at(-1)])].filter((n) => n && n !== h2s[0]);
   for (const node of prose.childNodes) {
+    if (before.includes(node) && sources[images.length]) {
+      flush();
+      images.push({ ...sources[images.length], alt: altFor(heading, `${slug} #${images.length + 1}`) });
+      body.push({ image: images.length - 1 });
+    }
     if (isEl(node) && node.tagName === "h2") heading = text(node);
     if (isEl(node) && node.tagName === "figure") {
       const src = sources[images.length];
@@ -904,7 +915,7 @@ const simple = {
   "pyzo-prism": "app/pyzo/prism/page.tsx",
   "svc-agentic": "app/engineering/agentic-ai/page.tsx",
   "svc-governance": "app/engineering/ai-governance/page.tsx",
-  "svc-modernisation": "app/engineering/enterprise-ai/page.tsx",
+  "svc-modernisation": "app/engineering/data-architecture/page.tsx",
   "ind-bfsi": "app/industries/bfsi/page.tsx",
   "ind-healthcare": "app/industries/healthcare/page.tsx",
   "ind-public": "app/industries/public-sector/page.tsx",
@@ -949,7 +960,14 @@ await emitPage("who-we-are", {
   },
 });
 
-// pyzo: the capability proof tabs are stateful (the foundation grid is static markup now)
+// pyzo: the capability proof tabs are stateful (the foundation grid is static markup now).
+// The page's own calls to action invite a trial rather than an outcome (client request,
+// 2 November 2026); they still lead to the contact page. The header button is unchanged.
+const PYZO_CTA = "Start Free Trial";
+for (const b of qa(pageOf("pyzo"), (n) => n.tagName === "button" && attr(n, "data-nav") === "contact")) {
+  const label = b.childNodes.find((c) => c.nodeName === "#text" && c.value.trim() === "Define an Outcome");
+  if (label) label.value = label.value.replace("Define an Outcome", PYZO_CTA);
+}
 await emitPage("pyzo", {
   file: "app/pyzo/page.tsx",
   faq: true,

@@ -11,7 +11,7 @@
     },
     {
       "source": "/services/enterprise-ai",
-      "destination": "/engineering/enterprise-ai/"
+      "destination": "/engineering/data-architecture/"
     },
     {
       "source": "/case-studies/rbi",
@@ -185,7 +185,7 @@
     },
     {
       "source": "/build/gen-ai-llms",
-      "destination": "/engineering/enterprise-ai/"
+      "destination": "/engineering/data-architecture/"
     },
     {
       "source": "/case-studies/dominos-india",
@@ -214,6 +214,10 @@
     {
       "source": "/glossary",
       "destination": "/resources/glossary/"
+    },
+    {
+      "source": "/engineering/enterprise-ai",
+      "destination": "/engineering/data-architecture/"
     }
   ]
 }

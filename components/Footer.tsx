@@ -112,7 +112,7 @@ export function Footer() {
                 </li>
 
                 <li>
-                  <Link className="foot-link" href="/engineering/enterprise-ai/">
+                  <Link className="foot-link" href="/engineering/data-architecture/">
                     Data Architecture
                   </Link>
                 </li>

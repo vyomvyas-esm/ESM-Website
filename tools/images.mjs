@@ -21,7 +21,21 @@ const MAX_WIDTH = 1200; // the article column is 74ch (~700px); 1200 leaves 2x h
 const QUALITY = 82;
 
 const { blogCards } = await import("../data/blog-index.ts");
-const slugByN = new Map(blogCards.map((c) => [324 - c.ts, c.slug]));
+const { isoDate } = await import("../lib/seo.ts");
+
+/* The export numbers posts #1-#325 by position (324 - ts). Posts added since share
+   positions with older ones (two cards can carry the same ts), so a number keeps the
+   earliest-dated post, and every post published after #325 is numbered by date from #326,
+   the order the designer used for the later image batch. */
+const byDate = (a, b) => isoDate(a.date).localeCompare(isoDate(b.date));
+const slugByN = new Map();
+for (const c of [...blogCards].sort(byDate)) if (!slugByN.has(324 - c.ts) && 324 - c.ts <= 325) slugByN.set(324 - c.ts, c.slug);
+const last = blogCards.find((c) => c.slug === slugByN.get(325));
+const assigned = new Set(slugByN.values());
+blogCards
+  .filter((c) => !assigned.has(c.slug) && isoDate(c.date) > isoDate(last.date))
+  .sort(byDate)
+  .forEach((c, i) => slugByN.set(326 + i, c.slug));
 
 /* Two folders in the export are numbered #308. The one under "AI in BFSI" holds
    "Aggregate Scores Can Hide What Matters Most", which is the section
@@ -45,6 +59,31 @@ for (const cat of fs.readdirSync(SRC)) {
       .map((x) => path.join(catDir, f, x));
     if (folders.has(n)) throw new Error(`folder #${n} appears twice: ${cat} and ${folders.get(n).cat}`);
     folders.set(n, { cat, files });
+  }
+}
+
+/* Later batches come as one flat folder per batch beside the export, named
+   "blog <N> im<K>.png" with loose spacing and case ("blog342 im1", "Blog 326 im1"), and
+   one "1m" for "im". Two different files labelled im1 for the same post are kept, in
+   name order, and reported. */
+const BATCH = /^ *blog *(\d+) *[i1]m *(\d+) *\.png$/i;
+for (const dir of fs.readdirSync(path.dirname(SRC))) {
+  const batch = path.join(path.dirname(SRC), dir);
+  if (batch === SRC || !fs.statSync(batch).isDirectory()) continue;
+  const byN = new Map();
+  for (const f of fs.readdirSync(batch)) {
+    const m = f.match(BATCH);
+    if (!m) continue;
+    const n = Number(m[1]);
+    if (!byN.has(n)) byN.set(n, []);
+    byN.get(n).push({ k: Number(m[2]), name: f, file: path.join(batch, f) });
+  }
+  for (const [n, list] of byN) {
+    if (folders.has(n)) throw new Error(`#${n} is in both the export and ${dir}`);
+    list.sort((a, b) => a.k - b.k || a.name.trim().localeCompare(b.name.trim()));
+    const ks = list.map((x) => x.k);
+    if (new Set(ks).size !== ks.length) console.log(`[images] #${n}: ${list.length} files labelled ${ks.map((k) => `im${k}`).join(", ")}; kept in name order`);
+    folders.set(n, { cat: dir, files: list.map((x) => x.file) });
   }
 }
 

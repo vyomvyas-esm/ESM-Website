@@ -27,7 +27,7 @@ const STATIC_PATHS = [
   "/pyzo/prism/",
   "/engineering/agentic-ai/",
   "/engineering/ai-governance/",
-  "/engineering/enterprise-ai/",
+  "/engineering/data-architecture/",
   "/industries/bfsi/",
   "/industries/healthcare/",
   "/industries/public-sector/",
