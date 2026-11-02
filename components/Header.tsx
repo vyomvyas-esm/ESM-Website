@@ -123,7 +123,7 @@ export function Header() {
   }, [pathname]);
 
   return (
-    <header id="hdr" className={`site-header fixed top-0 inset-x-0 z-50${stuck ? " is-stuck" : ""}`}>
+    <header id="hdr" className={`site-header fixed top-0 inset-x-0 z-50 ${stuck ? "is-stuck" : ""}`}>
       <div className="mx-auto max-w-shell px-6 lg:px-8">
         <div className="flex h-[68px] items-center justify-between gap-6">
           <Link aria-label="Es Magico home" className="shrink-0 text-white" href="/">
@@ -172,7 +172,7 @@ export function Header() {
         </div>
       </div>
 
-      <div className={`mmenu lg:hidden border-t border-hair backdrop-blur-xl${open ? "" : " hidden"}`}>
+      <div className={`mmenu lg:hidden border-t border-hair backdrop-blur-xl ${open ? "" : "hidden"}`}>
         <nav className="mx-auto max-w-shell px-6 py-5 flex flex-col gap-3" aria-label="Mobile">
           <Link className="flex text-left" aria-label="PYZO" href="/pyzo/">
             <PyzoLogo size="lg" />
