@@ -6,7 +6,7 @@ import { reportFilters, reports } from "@/data/reports";
 import type { Report } from "@/data/types";
 import { HONEYPOT, sendForm } from "@/lib/forms";
 import { Arrow } from "./Arrow";
-import { FilterSelect } from "./FilterSelect";
+import { FilterSelect, countBy } from "./FilterSelect";
 
 const EMAIL = /^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/;
 
@@ -145,8 +145,20 @@ export function ReportsIndex() {
               />
             </div>
             <div className="bl-selects">
-              <FilterSelect label="Series" value={series} options={reportFilters.series} onChange={setSeries} />
-              <FilterSelect label="Topic" value={topic} options={reportFilters.topics} onChange={setTopic} />
+              <FilterSelect
+                label="Series"
+                value={series}
+                options={reportFilters.series}
+                counts={countBy(reports, reportFilters.series, (r, v) => r.series === v)}
+                onChange={setSeries}
+              />
+              <FilterSelect
+                label="Topic"
+                value={topic}
+                options={reportFilters.topics}
+                counts={countBy(reports, reportFilters.topics, (r, v) => r.topic === v)}
+                onChange={setTopic}
+              />
             </div>
           </div>
         </aside>

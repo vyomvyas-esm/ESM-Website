@@ -172,7 +172,7 @@ function checkPages() {
    and the review documents that list current titles for a human, and the crawl of the live site. In every other file,
    added lines are checked with code spans removed (a quoted path is not prose), and a
    line may carry `brand-rules: allow` only where it defines the rules themselves. */
-const SKIP = [/^data\//, /^tools\/slugs\.mjs$/, /^tools\/alt-overrides\.mjs$/, /^docs\/seo-url-map\.md$/, /^docs\/seo-title-review\.md$/, /^docs\/seo-alt-text-review\.md$/, /^docs\/seo-copy-brief\.md$/, /^docs\/live-urls\.json$/, /^public\//, /package-lock\.json$/];
+const SKIP = [/^data\//, /^tools\/slugs\.mjs$/, /^tools\/alt-overrides\.mjs$/, /^docs\/seo-url-map\.md$/, /^docs\/seo-title-review\.md$/, /^docs\/seo-alt-text-review\.md$/, /^docs\/seo-copy-brief\.md$/, /^docs\/live-urls\.json$/, /^assets\//, /package-lock\.json$/];
 const RULES = [
   { name: "em/en dash", re: /[–—]/ }, // brand-rules: allow
   { name: "run-word", re: /\b(run|running|runs)\b/i }, // brand-rules: allow
@@ -215,13 +215,13 @@ function checkBrand() {
 }
 
 /* Crawl the generated HTML from / following every internal href. Every generated page must
-   be reached (no orphans), every link must resolve to a page or a public file (no broken
+   be reached (no orphans), every link must resolve to a page or a file in assets/ (no broken
    links), and every page link must already be in its canonical /path/ form so a crawler
    never hits the trailing-slash redirect (no chains). */
 function checkCrawl() {
   const all = pages();
   const byRoute = new Map(all.map((p) => [p.route, p]));
-  const publicDir = path.join(ROOT, "public");
+  const publicDir = path.join(ROOT, "assets");
   const seen = new Set(["/"]);
   const queue = ["/"];
   const broken = new Set();

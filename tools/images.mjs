@@ -7,7 +7,7 @@
  * where #N is the post's position in the journal (N = 325 is the newest; the site's
  * own numbering, verified against the 231 posts that already referenced N-1.webp).
  * Each PNG is converted to WebP, never upscaled, capped at MAX_WIDTH, and written to
- * public/blog/<post-slug>-<index>.webp. Dimensions are recorded in data/blog-images.ts
+ * assets/blog/<post-slug>-<index>.webp (served at /blog/). Dimensions are recorded in data/blog-images.ts
  * for the converter, which places them back into the article body and the cards.
  */
 import fs from "node:fs";
@@ -16,7 +16,7 @@ import sharp from "sharp";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const SRC = path.join(ROOT, "tools/src/blog-src/Blogs Complete");
-const OUT = path.join(ROOT, "public/blog");
+const OUT = path.join(ROOT, "assets/blog");
 const MAX_WIDTH = 1200; // the article column is 74ch (~700px); 1200 leaves 2x headroom for next/image
 const QUALITY = 82;
 
