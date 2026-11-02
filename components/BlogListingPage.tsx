@@ -2,7 +2,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import Link from "next/link";
 import { BlogIndex } from "@/components/BlogIndex";
 import { cardsFor, pageCount, PAGE_SIZE, type Category } from "@/lib/blog";
-/* The journal listing, shared by /blog/, /blog/page/N/ and /blog/<category>/ (SEO
+/* The journal listing, shared by /blog/, /blog/N/ and /blog/<category>/ (SEO
    brief, Phase 4.6). The hero is the blog page's; a category page takes its name as
    the heading and adds itself to the breadcrumb. */
 export function BlogListingPage({ category, page }: { category: Category | null; page: number }) {
