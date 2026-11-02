@@ -42,3 +42,13 @@
     animation: none;
   }
 }
+
+/* The forms' spam trap (lib/forms.ts): out of sight and out of the tab order, but
+   still in the form, where bots that fill every field will find it. */
+.hp-field {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
