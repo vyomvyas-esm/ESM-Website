@@ -922,7 +922,7 @@ export default function HomePage() {
                 Data foundations, vector storage and secure enterprise infrastructure engineered to feed
                 context to AI agents while maintaining strict isolation and access controls.
               </p>
-              <Link className="iq-go we-go group" href="/engineering/enterprise-ai/">
+              <Link className="iq-go we-go group" href="/engineering/data-architecture/">
                 Explore Data Architecture
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">

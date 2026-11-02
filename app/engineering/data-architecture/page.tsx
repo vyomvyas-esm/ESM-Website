@@ -8,7 +8,7 @@ export const metadata = pageMetadata({
   title: "Data Architecture",
   description:
     "We turn scattered enterprise data into one governed layer that every agent draws on, so accuracy improves and the investment compounds.",
-  path: "/engineering/enterprise-ai/",
+  path: "/engineering/data-architecture/",
 });
 export default function SvcModernisationPage() {
   return (

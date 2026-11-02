@@ -19,10 +19,10 @@ const { blogPosts } = await import("../data/blog-posts.ts");
 const { caseStudies } = await import("../data/case-studies.ts");
 
 const generated = [];
-// the prototype's /services section is /engineering now
-for (const [id, dest] of Object.entries(ROUTES)) {
-  if (id.startsWith("svc-")) generated.push({ source: `/services/${dest.split("/")[2]}`, destination: dest });
-}
+// the prototype's /services section is /engineering now; its slugs are fixed here because
+// a page can move again (Enterprise AI became /engineering/data-architecture/)
+const SERVICE_SLUGS = { "svc-agentic": "agentic-ai", "svc-governance": "ai-governance", "svc-modernisation": "enterprise-ai" };
+for (const [id, slug] of Object.entries(SERVICE_SLUGS)) generated.push({ source: `/services/${slug}`, destination: ROUTES[id] });
 for (const c of caseStudies) {
   if (c.prototypeId !== c.slug) generated.push({ source: `/case-studies/${c.prototypeId}`, destination: `/case-studies/${c.slug}/` });
 }

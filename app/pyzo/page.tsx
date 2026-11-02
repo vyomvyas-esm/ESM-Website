@@ -58,7 +58,7 @@ export default function PyzoPage() {
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3 rv" data-d="240">
               <Link className="btn btn-light group" href="/contact/">
-                Define an Outcome
+                Start Free Trial
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
                     d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
@@ -786,7 +786,7 @@ export default function PyzoPage() {
               </div>
               <div className="flex flex-col items-start lg:pt-2">
                 <Link className="btn btn-light group" href="/contact/">
-                  Define an Outcome
+                  Start Free Trial
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path
                       d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"

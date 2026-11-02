@@ -2,6 +2,447 @@
 import type { ImageSource } from "./types";
 
 export const blogImages: Record<string, ImageSource[]> = {
+  "ai-in-trade-finance-letters-of-credit": [
+    {
+      "src": "/blog/ai-in-trade-finance-letters-of-credit-1.webp",
+      "width": 1200,
+      "height": 679
+    },
+    {
+      "src": "/blog/ai-in-trade-finance-letters-of-credit-2.webp",
+      "width": 1200,
+      "height": 675
+    }
+  ],
+  "risk-based-clinical-trial-monitoring": [
+    {
+      "src": "/blog/risk-based-clinical-trial-monitoring-1.webp",
+      "width": 1200,
+      "height": 679
+    },
+    {
+      "src": "/blog/risk-based-clinical-trial-monitoring-2.webp",
+      "width": 1200,
+      "height": 679
+    }
+  ],
+  "managing-evaluation-drift": [
+    {
+      "src": "/blog/managing-evaluation-drift-1.webp",
+      "width": 1200,
+      "height": 678
+    }
+  ],
+  "microsoft-autopilot-agent-identity": [
+    {
+      "src": "/blog/microsoft-autopilot-agent-identity-1.webp",
+      "width": 1200,
+      "height": 678
+    },
+    {
+      "src": "/blog/microsoft-autopilot-agent-identity-2.webp",
+      "width": 1200,
+      "height": 678
+    }
+  ],
+  "policy-lapse-prediction-life-insurance": [
+    {
+      "src": "/blog/policy-lapse-prediction-life-insurance-1.webp",
+      "width": 1200,
+      "height": 678
+    },
+    {
+      "src": "/blog/policy-lapse-prediction-life-insurance-2.webp",
+      "width": 1200,
+      "height": 678
+    }
+  ],
+  "back-pressure-for-agent-fleets": [
+    {
+      "src": "/blog/back-pressure-for-agent-fleets-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/back-pressure-for-agent-fleets-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "decision-models-that-return-no-text": [
+    {
+      "src": "/blog/decision-models-that-return-no-text-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/decision-models-that-return-no-text-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "abdm-interoperable-health-records-ai": [
+    {
+      "src": "/blog/abdm-interoperable-health-records-ai-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/abdm-interoperable-health-records-ai-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "prism-in-isb-ivi-admissions": [
+    {
+      "src": "/blog/prism-in-isb-ivi-admissions-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/prism-in-isb-ivi-admissions-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "eleven-v4-voice-stack-decision": [
+    {
+      "src": "/blog/eleven-v4-voice-stack-decision-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/eleven-v4-voice-stack-decision-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "ai-investor-servicing-amcs": [
+    {
+      "src": "/blog/ai-investor-servicing-amcs-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/ai-investor-servicing-amcs-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "ai-checks-on-uploaded-evidence": [
+    {
+      "src": "/blog/ai-checks-on-uploaded-evidence-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/ai-checks-on-uploaded-evidence-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "gpt-6-and-claude-opus-5-5": [
+    {
+      "src": "/blog/gpt-6-and-claude-opus-5-5-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/gpt-6-and-claude-opus-5-5-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "ai-for-pharma-medical-information": [
+    {
+      "src": "/blog/ai-for-pharma-medical-information-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/ai-for-pharma-medical-information-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "multilingual-retrieval-indian-enterprises": [
+    {
+      "src": "/blog/multilingual-retrieval-indian-enterprises-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/multilingual-retrieval-indian-enterprises-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "ai-governance-for-nbfcs": [
+    {
+      "src": "/blog/ai-governance-for-nbfcs-1.webp",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "src": "/blog/ai-governance-for-nbfcs-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "perplexity-hybrid-compute": [
+    {
+      "src": "/blog/perplexity-hybrid-compute-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/perplexity-hybrid-compute-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "cashless-claims-tpa-pre-authorisation": [
+    {
+      "src": "/blog/cashless-claims-tpa-pre-authorisation-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/cashless-claims-tpa-pre-authorisation-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "synthetic-test-calls": [
+    {
+      "src": "/blog/synthetic-test-calls-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/synthetic-test-calls-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "deepfake-voices-at-the-contact-centre": [
+    {
+      "src": "/blog/deepfake-voices-at-the-contact-centre-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/deepfake-voices-at-the-contact-centre-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "pricing-agentic-ai-by-outcome": [
+    {
+      "src": "/blog/pricing-agentic-ai-by-outcome-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/pricing-agentic-ai-by-outcome-2.webp",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "claude-fable-5-1-and-mythos-5-1": [
+    {
+      "src": "/blog/claude-fable-5-1-and-mythos-5-1-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/claude-fable-5-1-and-mythos-5-1-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "automating-applications-that-have-no-api": [
+    {
+      "src": "/blog/automating-applications-that-have-no-api-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/automating-applications-that-have-no-api-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "preparing-pharma-field-teams": [
+    {
+      "src": "/blog/preparing-pharma-field-teams-1.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "account-aggregator-data-in-credit-decisions": [
+    {
+      "src": "/blog/account-aggregator-data-in-credit-decisions-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/account-aggregator-data-in-credit-decisions-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "from-meeting-to-ticket": [
+    {
+      "src": "/blog/from-meeting-to-ticket-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/from-meeting-to-ticket-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "nabh-accreditation-readiness": [
+    {
+      "src": "/blog/nabh-accreditation-readiness-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/nabh-accreditation-readiness-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "muse-spark-contributor-tier": [
+    {
+      "src": "/blog/muse-spark-contributor-tier-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/muse-spark-contributor-tier-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "scoring-video-and-written-submissions": [
+    {
+      "src": "/blog/scoring-video-and-written-submissions-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/scoring-video-and-written-submissions-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "ai-in-video-kyc": [
+    {
+      "src": "/blog/ai-in-video-kyc-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/ai-in-video-kyc-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "the-first-ninety-days-after-go-live": [
+    {
+      "src": "/blog/the-first-ninety-days-after-go-live-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/the-first-ninety-days-after-go-live-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "muse-code-examined": [
+    {
+      "src": "/blog/muse-code-examined-1.webp",
+      "width": 1200,
+      "height": 677
+    },
+    {
+      "src": "/blog/muse-code-examined-2.webp",
+      "width": 1200,
+      "height": 677
+    }
+  ],
+  "designing-the-emergency-stop": [
+    {
+      "src": "/blog/designing-the-emergency-stop-1.webp",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "src": "/blog/designing-the-emergency-stop-2.webp",
+      "width": 1200,
+      "height": 675
+    }
+  ],
+  "qwen3-8-max-for-the-enterprise": [
+    {
+      "src": "/blog/qwen3-8-max-for-the-enterprise-1.webp",
+      "width": 1200,
+      "height": 676
+    }
+  ],
+  "ai-for-bed-management": [
+    {
+      "src": "/blog/ai-for-bed-management-1.webp",
+      "width": 1200,
+      "height": 676
+    },
+    {
+      "src": "/blog/ai-for-bed-management-2.webp",
+      "width": 1200,
+      "height": 675
+    }
+  ],
+  "mule-account-detection-with-ai": [
+    {
+      "src": "/blog/mule-account-detection-with-ai-1.webp",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "src": "/blog/mule-account-detection-with-ai-2.webp",
+      "width": 1200,
+      "height": 675
+    }
+  ],
+  "openai-presence-forward-deployed-voice-agents": [
+    {
+      "src": "/blog/openai-presence-forward-deployed-voice-agents-1.webp",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "src": "/blog/openai-presence-forward-deployed-voice-agents-2.webp",
+      "width": 1200,
+      "height": 675
+    }
+  ],
+  "when-the-sop-changes-every-week": [
+    {
+      "src": "/blog/when-the-sop-changes-every-week-1.webp",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "src": "/blog/when-the-sop-changes-every-week-2.webp",
+      "width": 1200,
+      "height": 675
+    }
+  ],
   "human-in-the-loop-data-capture": [
     {
       "src": "/blog/human-in-the-loop-data-capture-1.webp",

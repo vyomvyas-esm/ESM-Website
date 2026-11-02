@@ -12,7 +12,7 @@ const NAV: { label: string; items: { label: string; href: string }[] }[] = [
     items: [
       { label: "Agentic AI", href: "/engineering/agentic-ai/" },
       { label: "AI Governance", href: "/engineering/ai-governance/" },
-      { label: "Data Architecture", href: "/engineering/enterprise-ai/" },
+      { label: "Data Architecture", href: "/engineering/data-architecture/" },
     ],
   },
   {

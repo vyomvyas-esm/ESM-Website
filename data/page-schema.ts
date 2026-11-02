@@ -49,7 +49,7 @@ export const services: Record<string, { name: string; description: string; path:
   "svc-modernisation": {
     "name": "Data Architecture",
     "description": "We turn scattered enterprise data into one governed layer that every agent draws on, so accuracy improves and the investment compounds.",
-    "path": "/engineering/enterprise-ai/"
+    "path": "/engineering/data-architecture/"
   }
 };
 
