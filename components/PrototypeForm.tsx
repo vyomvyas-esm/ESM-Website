@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { HONEYPOT, sendForm, type FormName } from "@/lib/forms";
 import { Arrow } from "./Arrow";
 
 export type Field =
@@ -9,6 +10,8 @@ export type Field =
   | { kind: "textarea"; id: string; label: string; placeholder: string };
 
 interface Props {
+  /** which tab of the Google Sheet the entry goes to */
+  form: FormName;
   fields: Field[];
   submitLabel: string;
   doneTitle: string;
@@ -29,10 +32,14 @@ function check(f: Field, value: string): Problem {
   return "";
 }
 
-/* The site's prototype form: it checks every required field, then turns over to the
-   thank-you. It sends nothing; wire `send` to a real endpoint when one exists. */
-export function PrototypeForm({ fields, submitLabel, doneTitle, doneText }: Props) {
+/* A field's key in the sheet is the last part of its id: "careers-apply-email" -> "email". */
+const keyOf = (f: Field) => f.id.split("-").pop()!;
+
+/* The site's form: it checks every required field, sends the entry to the Google Sheet
+   (lib/forms.ts), then turns over to the thank-you. */
+export function PrototypeForm({ form: formName, fields, submitLabel, doneTitle, doneText }: Props) {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
   const [flip, setFlip] = useState<"" | "is-flip" | "is-flip-in">("");
   const [errors, setErrors] = useState<Record<string, Problem>>({});
   const [msg, setMsg] = useState("");
@@ -48,9 +55,9 @@ export function PrototypeForm({ fields, submitLabel, doneTitle, doneText }: Prop
     if (!Object.values(next).some(Boolean)) setMsg("");
   };
 
-  const send = (e: React.FormEvent) => {
+  const send = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (sent || flip) return;
+    if (sent || flip || sending) return;
     const found: Record<string, Problem> = {};
     for (const f of fields) found[f.id] = check(f, valueOf(f.id));
     setErrors(found);
@@ -66,6 +73,17 @@ export function PrototypeForm({ fields, submitLabel, doneTitle, doneText }: Prop
     }
     setMsg("");
     const form = ref.current!;
+    const data: Record<string, string> = { [HONEYPOT]: valueOf(`${formName}-${HONEYPOT}`) };
+    for (const f of fields) data[keyOf(f)] = valueOf(f.id).trim();
+    setSending(true);
+    try {
+      await sendForm(formName, data);
+    } catch (err) {
+      setMsg((err as Error).message);
+      return;
+    } finally {
+      setSending(false);
+    }
     // hold the height so the panel does not jump when its content changes
     form.style.minHeight = `${form.offsetHeight}px`;
     const done = () => {
@@ -109,11 +127,20 @@ export function PrototypeForm({ fields, submitLabel, doneTitle, doneText }: Prop
             </div>
           );
         })}
+        <input
+          id={`${formName}-${HONEYPOT}`}
+          name={HONEYPOT}
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          className="hp-field"
+        />
         <p className="form-msg" role="alert" hidden={!msg}>
           {msg}
         </p>
-        <button type="submit" className="btn btn-light group mt-auto w-full js-send">
-          {submitLabel}
+        <button type="submit" className="btn btn-light group mt-auto w-full js-send" disabled={sending} aria-busy={sending}>
+          {sending ? "Sending…" : submitLabel}
           <Arrow />
         </button>
       </div>

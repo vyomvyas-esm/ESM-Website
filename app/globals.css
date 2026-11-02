@@ -43,6 +43,16 @@
   }
 }
 
+/* The forms' spam trap (lib/forms.ts): out of sight and out of the tab order, but
+   still in the form, where bots that fill every field will find it. */
+.hp-field {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* Numbered pages under the journal (components/Pager.tsx). Built from the design's own
    tokens, so both themes follow; the current page carries the teal of the active tab. */
 .pager {
