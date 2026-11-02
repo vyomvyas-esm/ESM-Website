@@ -24,7 +24,12 @@
   }
 }
 
-@import "../styles/site.css";
+/* The design layer goes in the components layer, beneath the utilities. In the original
+   site the Tailwind utilities loaded after this stylesheet and won ties, so a utility such
+   as `hidden` overrode a design class such as `.btn` on the same element. Unlayered, this
+   file would outrank every utility and invert that (the header's Define button stayed on
+   phones and pushed the menu button off the screen). */
+@import "../styles/site.css" layer(components);
 
 /* Rows on the PYZO proof tabs settle in when the tab changes
    (the original used the Web Animations API for this). */
@@ -101,4 +106,34 @@ button.pager-arrow:hover {
   min-width: 20px;
   text-align: center;
   color: rgb(var(--c-fg) / 0.35);
+}
+
+/* Case-study figures on a phone. The design keeps the three figures of a case card side by
+   side down to any width; under ~560px a column is about 90px, narrower than a figure such
+   as "12,000+" at 1.25rem, which then runs into its neighbour. They stack instead, one per
+   row, each with the design's hairline above it. */
+@media (max-width: 560px) {
+  .ca-figs {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.9rem;
+  }
+  .ca-fig {
+    padding: 0.9rem 0 0;
+    border-left: 0;
+    border-top: 1px solid var(--hair);
+  }
+  .ca-fig:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+}
+
+/* The hero's rotating word on a phone. Under 560px the design lets the word's box size
+   itself, so it takes the width of the longer of the two words (or the whole line), and
+   the word showing sits at its left edge: "Governed outcomes" read left of centre under a
+   centred headline. Centred in its box, each word sits under the middle of the line. */
+@media (max-width: 560px) {
+  .hh-h1 .hh-rot {
+    text-align: center;
+  }
 }
