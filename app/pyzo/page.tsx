@@ -57,7 +57,7 @@ export default function PyzoPage() {
               functions with an AI-first foundation.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3 rv" data-d="240">
-              <Link className="btn btn-light group" href="/contact/">
+              <a className="btn btn-light group" href="https://staging-dashboard.pyzo.ai/">
                 Start Free Trial
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
@@ -68,7 +68,7 @@ export default function PyzoPage() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </Link>{" "}
+              </a>{" "}
               <a className="btn btn-ghost" href="#pyzo-proof">
                 See the proof
               </a>
@@ -785,7 +785,7 @@ export default function PyzoPage() {
                 </h2>
               </div>
               <div className="flex flex-col items-start lg:pt-2">
-                <Link className="btn btn-light group" href="/contact/">
+                <a className="btn btn-light group" href="https://staging-dashboard.pyzo.ai/">
                   Start Free Trial
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path
@@ -796,7 +796,7 @@ export default function PyzoPage() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
