@@ -988,11 +988,16 @@ await emitPage("who-we-are", {
 
 // pyzo: the capability proof tabs are stateful (the foundation grid is static markup now).
 // The page's own calls to action invite a trial rather than an outcome (client request,
-// 2 November 2026); they still lead to the contact page. The header button is unchanged.
+// 2 November 2026) and open the PYZO dashboard (3 November 2026). The header button is
+// unchanged and still leads to the contact page.
 const PYZO_CTA = "Start Free Trial";
+const PYZO_TRIAL_URL = "https://staging-dashboard.pyzo.ai/";
 for (const b of qa(pageOf("pyzo"), (n) => n.tagName === "button" && attr(n, "data-nav") === "contact")) {
   const label = b.childNodes.find((c) => c.nodeName === "#text" && c.value.trim() === "Define an Outcome");
-  if (label) label.value = label.value.replace("Define an Outcome", PYZO_CTA);
+  if (!label) continue;
+  label.value = label.value.replace("Define an Outcome", PYZO_CTA);
+  b.tagName = b.nodeName = "a";
+  b.attrs = b.attrs.filter((a) => a.name !== "data-nav" && a.name !== "type").concat({ name: "href", value: PYZO_TRIAL_URL });
 }
 await emitPage("pyzo", {
   file: "app/pyzo/page.tsx",
