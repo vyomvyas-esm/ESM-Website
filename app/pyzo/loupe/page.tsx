@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { graph, service } from "@/lib/jsonld";
 import { services } from "@/data/page-schema";
 import Link from "next/link";
+import Image from "next/image";
 export const metadata = pageMetadata({
   title: "Loupe, Application Assistant - PYZO",
   description:
@@ -430,7 +431,14 @@ export default function PyzoLoupePage() {
               href="/blog/loupe-explained/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/134-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/loupe-explained-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">LOUPE, Explained</h3>
@@ -473,7 +481,14 @@ export default function PyzoLoupePage() {
               href="/blog/the-cost-of-a-missing-field/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/319-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/the-cost-of-a-missing-field-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">
@@ -520,7 +535,14 @@ export default function PyzoLoupePage() {
               href="/blog/how-a-regulated-lender-cleared-audit-on-first-pass/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/297-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/how-a-regulated-lender-cleared-audit-on-first-pass-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">

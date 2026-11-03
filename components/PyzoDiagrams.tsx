@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
+import { buildVertical, type ArchProduct } from "./pyzoArchVertical";
 
 /*
  * The PYZO architecture diagrams ([data-pyzo-arch]) and card flows ([data-pyzo-flow])
@@ -14,7 +15,16 @@ const LIBS = [
   { attr: "data-pyzo-flow", src: "/js/pyzo-flow.js", global: "PyzoFlow", theme: (dark: boolean) => (dark ? "dark" : null) },
 ] as const;
 
-type Lib = { mountAll: (scope?: ParentNode) => void };
+type Lib = { mountAll: (scope?: ParentNode) => void; products?: Record<string, ArchProduct> };
+
+/* Beside each architecture diagram, its phone version (components/pyzoArchVertical.ts). */
+function addVertical(lib: Lib | undefined) {
+  document.querySelectorAll<HTMLElement>("[data-pyzo-arch]").forEach((d) => {
+    const p = lib?.products?.[d.getAttribute("data-pyzo-arch") ?? ""];
+    if (!p || d.nextElementSibling?.classList.contains("pav")) return;
+    d.after(buildVertical(p));
+  });
+}
 const loading = new Map<string, Promise<void>>();
 
 function load(src: string) {
@@ -53,7 +63,11 @@ export function PyzoDiagrams() {
     for (const lib of LIBS) {
       if (!document.querySelector(`[${lib.attr}]`)) continue;
       load(lib.src)
-        .then(() => (window as unknown as Record<string, Lib | undefined>)[lib.global]?.mountAll())
+        .then(() => {
+          const api = (window as unknown as Record<string, Lib | undefined>)[lib.global];
+          api?.mountAll();
+          if (lib.attr === "data-pyzo-arch") addVertical(api);
+        })
         .catch(() => {
           /* a diagram that cannot load leaves its empty frame, as with no script */
         });

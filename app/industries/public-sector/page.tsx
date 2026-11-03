@@ -1,6 +1,7 @@
 import { pageMetadata } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import Link from "next/link";
+import Image from "next/image";
 export const metadata = pageMetadata({
   title: "Public Sector & Governance",
   description: "",
@@ -227,7 +228,14 @@ export default function IndPublicPage() {
           <div className="iq-grid mt-[46px]">
             <article className="iq-cell rv" data-d="0">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-atlas" role="img" aria-label="Atlas"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0c0 5-6.5 11.2-6.5 11.2Z"/><circle cx="12" cy="9" r="2"/><path d="M8.8 14.2a4.2 4.2 0 0 1 6.4 0"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Field staff trained to one standard</h3>
               </div>
               <p className="iq-note">
@@ -251,7 +259,14 @@ export default function IndPublicPage() {
             </article>
             <article className="iq-cell rv" data-d="50">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-compass" role="img" aria-label="Compass"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5h11a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-14a1 1 0 0 1 1-1Z"/><path d="M6.5 9h6M6.5 12.5h6M6.5 16h3.5"/><path d="M16 9.5h4.5a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H19v2l-3-2"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Information requests answered on the record</h3>
               </div>
               <p className="iq-note">
@@ -275,7 +290,14 @@ export default function IndPublicPage() {
             </article>
             <article className="iq-cell rv" data-d="100">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-evio" role="img" aria-label="Evio"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="12" r="8"/><path d="M2.5 12h16M10.5 4c2.2 2.2 3.3 4.9 3.3 8s-1.1 5.8-3.3 8c-2.2-2.2-3.3-4.9-3.3-8s1.1-5.8 3.3-8Z"/><path d="M17.5 3.5h4v3.2h-1.6L18.5 8V6.7h-1Z"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Grievances heard in every language</h3>
               </div>
               <p className="iq-note">
@@ -299,7 +321,14 @@ export default function IndPublicPage() {
             </article>
             <article className="iq-cell rv" data-d="150">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-forge" role="img" aria-label="Forge"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><path d="m9 14.6 2 2 4-4.2"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Processing that keeps its schedule</h3>
               </div>
               <p className="iq-note">
@@ -323,7 +352,14 @@ export default function IndPublicPage() {
             </article>
             <article className="iq-cell rv" data-d="200">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-loupe" role="img" aria-label="Loupe"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13.5 5.5 5a1 1 0 0 1 1-.7h11a1 1 0 0 1 1 .7L21 13.5V19a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/><path d="M3 13.5h5l1.2 2.2h5.6L16 13.5h5"/><path d="m9.5 9 1.7 1.7 3.3-3.4"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Scheme applications that arrive complete</h3>
               </div>
               <p className="iq-note">
@@ -347,7 +383,14 @@ export default function IndPublicPage() {
             </article>
             <article className="iq-cell rv" data-d="250">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-prism" role="img" aria-label="Prism"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m13.5 4.5 6 6M11 7l6 6M12.2 5.8l4.8 4.8"/><path d="m14 10-8.5 8.5"/><path d="M3 21h9"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Grants and tenders judged consistently</h3>
               </div>
               <p className="iq-note">
@@ -577,7 +620,14 @@ export default function IndPublicPage() {
               href="/blog/preserving-institutional-knowledge-in-government-with-agentic-ai/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/212-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/preserving-institutional-knowledge-in-government-with-agentic-ai-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">
@@ -624,7 +674,14 @@ export default function IndPublicPage() {
               href="/blog/ai-for-accreditation-and-citizen-services/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/206-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/ai-for-accreditation-and-citizen-services-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">
@@ -671,7 +728,14 @@ export default function IndPublicPage() {
               href="/blog/generic-ai-vs-sector-fluent-ai/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/290-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/generic-ai-vs-sector-fluent-ai-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">

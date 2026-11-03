@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { blogCards, blogFilters } from "@/data/blog-index";
 import type { BlogCard, ImageSource } from "@/data/types";
-import { CATEGORIES, PAGE_SIZE, listingPath, type Category } from "@/lib/blog";
+import { CATEGORIES, DEFAULT_SORT, PAGE_SIZE, byDate, listingPath, type Category, type SortOrder } from "@/lib/blog";
 import { Arrow } from "./Arrow";
 import { Byline } from "./Byline";
 import { FilterSelect, countBy } from "./FilterSelect";
@@ -98,7 +98,7 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
   const router = useRouter();
   const [q, setQ] = useState("");
   const [author, setAuthor] = useState("");
-  const [sort, setSort] = useState("new");
+  const [sort, setSort] = useState<SortOrder>(DEFAULT_SORT);
   // the page of matches shown while searching or filtering
   const [matchPage, setMatchPage] = useState(1);
   const barRef = useRef<HTMLDivElement>(null);
@@ -113,11 +113,10 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
     barRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
   }, []);
 
-  const filtering = q.trim() !== "" || author !== "" || sort !== "new";
+  const filtering = q.trim() !== "" || author !== "" || sort !== DEFAULT_SORT;
   const live = useMemo(() => {
     if (!filtering) return cards;
     const k = q.trim().toLowerCase();
-    const dir = sort === "old" ? -1 : 1;
     return blogCards
       .filter(
         (c) =>
@@ -125,7 +124,7 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
           (!k || c.txt.includes(k)) &&
           (!author || c.author.name === author),
       )
-      .sort((a, b) => (a.ts - b.ts) * dir);
+      .sort(byDate(sort));
   }, [filtering, cards, q, author, sort, category]);
 
   const categoryOptions = [{ value: "", label: "All categories" }, ...CATEGORIES.map((c) => ({ value: c.slug, label: c.tag }))];
@@ -177,6 +176,8 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
                   value={category?.slug ?? ""}
                   options={categoryOptions}
                   counts={countBy(blogCards, categoryOptions, (c, slug) => c.topic === CATEGORIES.find((k) => k.slug === slug)?.tag)}
+                  /* each category is a route, and these options are its crawlable links */
+                  hrefFor={(slug) => listingPath(CATEGORIES.find((c) => c.slug === slug) ?? null, 1)}
                   onChange={(slug) => router.push(listingPath(CATEGORIES.find((c) => c.slug === slug) ?? null, 1))}
                 />
                 <FilterSelect
@@ -190,10 +191,10 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
                   label="Sort"
                   value={sort}
                   options={[
-                    { value: "new", label: "Newest first" },
                     { value: "old", label: "Oldest first" },
+                    { value: "new", label: "Newest first" },
                   ]}
-                  onChange={reset(setSort)}
+                  onChange={(v) => reset(setSort)(v as SortOrder)}
                 />
               </div>
             </div>
@@ -216,19 +217,6 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
             {!filtering && (
               <div className="mt-10 flex flex-col items-center gap-5">
                 <Pager page={page} pages={pages} label="Blog pages" hrefFor={(n) => listingPath(category, n)} />
-                {/* real links to every category, so each listing is reachable by a crawler */}
-                <nav className="flex flex-wrap items-center justify-center gap-2" aria-label="Blog categories">
-                  {category && (
-                    <Link className="bl-tag" href="/blog/">
-                      All categories
-                    </Link>
-                  )}
-                  {CATEGORIES.filter((c) => c.slug !== category?.slug).map((c) => (
-                    <Link key={c.slug} className="bl-tag" href={listingPath(c, 1)}>
-                      {c.tag}
-                    </Link>
-                  ))}
-                </nav>
               </div>
             )}
           </div>

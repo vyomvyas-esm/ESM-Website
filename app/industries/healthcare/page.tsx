@@ -1,6 +1,7 @@
 import { pageMetadata } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import Link from "next/link";
+import Image from "next/image";
 export const metadata = pageMetadata({
   title: "Healthcare & Life Sciences",
   description: "",
@@ -215,7 +216,14 @@ export default function IndHealthcarePage() {
           <div className="iq-grid mt-[46px]">
             <article className="iq-cell rv" data-d="0">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-atlas" role="img" aria-label="Atlas"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"/><path d="m9.5 9 1.7 1.7 3.3-3.4"/><path d="M8.6 13.4 7 21l5-2.6 5 2.6-1.6-7.6"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Training an inspector will accept</h3>
               </div>
               <p className="iq-note">
@@ -239,7 +247,14 @@ export default function IndHealthcarePage() {
             </article>
             <article className="iq-cell rv" data-d="50">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-compass" role="img" aria-label="Compass"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.3 15.3 5.2 5.2"/><path d="m7.8 10.6 1.9 1.9 3.6-3.8"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Inspection readiness in less time</h3>
               </div>
               <p className="iq-note">
@@ -263,7 +278,14 @@ export default function IndHealthcarePage() {
             </article>
             <article className="iq-cell rv" data-d="100">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-evio" role="img" aria-label="Evio"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13.5" width="3.5" height="5.5" rx="1.2"/><rect x="17.5" y="13.5" width="3.5" height="5.5" rx="1.2"/><path d="M19.2 19v.5a2.5 2.5 0 0 1-2.5 2.5H13"/><path d="M12 8.5v3l2 1.2"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Patient support at any hour</h3>
               </div>
               <p className="iq-note">
@@ -287,7 +309,14 @@ export default function IndHealthcarePage() {
             </article>
             <article className="iq-cell rv" data-d="150">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-forge" role="img" aria-label="Forge"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h6M9 3v6.2L4.6 17.5A2.3 2.3 0 0 0 6.6 21h8.8a2.3 2.3 0 0 0 2-3.5L13 9.2V3"/><path d="M6.4 15h9.2"/><path d="M17.5 6.5h4M19.8 4.5l1.7 2-1.7 2"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Faster batch release</h3>
               </div>
               <p className="iq-note">
@@ -311,7 +340,14 @@ export default function IndHealthcarePage() {
             </article>
             <article className="iq-cell rv" data-d="200">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-loupe" role="img" aria-label="Loupe"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8.5L19 7.5V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5"/><path d="M12 18v-7M9 13.5 12 10.5l3 3"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Submissions complete before review</h3>
               </div>
               <p className="iq-note">
@@ -335,7 +371,14 @@ export default function IndHealthcarePage() {
             </article>
             <article className="iq-cell rv" data-d="250">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-prism" role="img" aria-label="Prism"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="5" rx="1"/><rect x="4" y="9.5" width="16" height="5" rx="1"/><rect x="4" y="16" width="16" height="5" rx="1"/><path d="m7 5.5.9.9L9.5 4.8M7 12l.9.9 1.6-1.6M7 18.5l.9.9 1.6-1.6M12 5.5h5M12 12h5M12 18.5h5"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Every batch record reviewed in full</h3>
               </div>
               <p className="iq-note">
@@ -565,7 +608,14 @@ export default function IndHealthcarePage() {
               href="/blog/ai-in-pharma-manufacturing-and-quality/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/302-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/ai-in-pharma-manufacturing-and-quality-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">
@@ -610,7 +660,14 @@ export default function IndHealthcarePage() {
               href="/blog/rag-for-clinical-knowledge/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/68-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/rag-for-clinical-knowledge-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">

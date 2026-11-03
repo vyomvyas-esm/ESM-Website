@@ -1,5 +1,6 @@
 import { blogCards } from "../data/blog-index.ts";
 import type { BlogCard } from "../data/types.ts";
+import { isoDate } from "./seo.ts";
 
 /* The journal's listing model: real pages and real category routes (SEO brief, Phase 4.6)
    in place of a client-side "show more" over every post. An article slug is never a bare
@@ -25,9 +26,17 @@ export const CATEGORIES: Category[] = [
 export const categoryBySlug = (slug: string) => CATEGORIES.find((c) => c.slug === slug);
 export const categoryByTag = (tag: string) => CATEGORIES.find((c) => c.tag === tag);
 
-/** all cards, newest first, optionally within one category */
+/* The journal lists oldest first for now (client request, 3 November 2026: the most
+   recent posts share similar artwork). By publication date, since two cards can carry the
+   same position number; a reader can still choose "Newest first" in the Sort filter. */
+export type SortOrder = "old" | "new";
+export const DEFAULT_SORT: SortOrder = "old";
+export const byDate = (order: SortOrder) => (a: BlogCard, b: BlogCard) =>
+  (isoDate(a.date).localeCompare(isoDate(b.date)) || b.ts - a.ts) * (order === "old" ? 1 : -1);
+
+/** all cards in the listing order, optionally within one category */
 export function cardsFor(category?: Category | null): BlogCard[] {
-  return blogCards.filter((c) => !category || c.topic === category.tag).sort((a, b) => a.ts - b.ts);
+  return blogCards.filter((c) => !category || c.topic === category.tag).sort(byDate(DEFAULT_SORT));
 }
 
 export const pageCount = (cards: BlogCard[]) => Math.max(1, Math.ceil(cards.length / PAGE_SIZE));

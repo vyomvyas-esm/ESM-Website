@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { graph, service } from "@/lib/jsonld";
 import { services } from "@/data/page-schema";
 import Link from "next/link";
+import Image from "next/image";
 export const metadata = pageMetadata({
   title: "Prism, Evaluation Consultant - PYZO",
   description:
@@ -434,7 +435,14 @@ export default function PyzoPrismPage() {
               href="/blog/prism-explained/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/121-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/prism-explained-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">PRISM, Explained</h3>

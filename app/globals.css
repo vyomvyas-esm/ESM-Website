@@ -137,3 +137,258 @@ button.pager-arrow:hover {
     text-align: center;
   }
 }
+
+/* The phone menu is taller than a phone (every section and sub-menu, about 890px) and sits
+   in the fixed header, so it scrolls within the screen below the header; the page behind
+   is held still while it is open (components/Header.tsx). */
+.mmenu {
+  max-height: calc(100dvh - 69px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* The engineering pages' path-to-production timeline. Horizontal from 1024px, as designed;
+   below that the steps stack, and the design's per-step top rule read as five separate
+   bars. There it becomes a vertical timeline: one line down the left from dot to dot, the
+   content beside each dot, and the line stopping at the last one. */
+@media (max-width: 1023px) {
+  .tl {
+    gap: 0;
+  }
+  .tl-step {
+    padding: 0 0 2.2rem 1.9rem;
+  }
+  .tl-step.is-last,
+  .tl-step:last-child {
+    padding-bottom: 0;
+  }
+  .tl-step::before {
+    left: 4px;
+    right: auto;
+    top: 12px;
+    bottom: 0;
+    width: 1px;
+    height: auto;
+  }
+  .tl-step.is-last::before,
+  .tl-step:last-child::before {
+    display: none;
+  }
+  .tl-dot {
+    top: 4px;
+  }
+  .tl-step h3 {
+    margin-top: 0;
+  }
+}
+
+/* Case-study rows and report cards beside a listing rail (Case Studies, Reports). The
+   design narrows them for the rail (".bl-main .csr", ".bl-main .rp-card") with fixed desktop
+   columns and no phone rule, and those outrank its own phone layout: on a phone the case
+   description and the report text were each given a 0px column and ran down through the
+   figures, or stretched the report cover into a tall blank. */
+@media (max-width: 1024px) {
+  /* the case card on a phone: logo, then client and description, then the figures on a
+     line of their own under a hairline */
+  .bl-main .csr {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.9rem;
+    padding: 1.4rem 0.2rem;
+  }
+  .bl-main .csr:hover {
+    padding-left: 0.2rem;
+  }
+  .bl-main .csr-figs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--hair);
+  }
+}
+@media (max-width: 820px) {
+  /* the design's own phone layout for a report card: cover above, text below */
+  .bl-main .rp-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .bl-main .rp-cover {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* The listing rail stays put while the list scrolls, on every listing as on the Glossary.
+   position:sticky needs every ancestor to let it overflow; the design frees only a section
+   whose child's child is the layout, which only the Glossary's markup is, so on Blog, Case
+   Studies and Reports the section clipped and the rail scrolled away with the page. */
+section:has(.bl-layout) {
+  overflow: visible;
+}
+
+/* PYZO "How it works" on a phone (components/pyzoArchVertical.ts): the architecture read top
+   to bottom, lane by lane, joined by teal arrows. Below 768px it replaces the library's
+   drawing; at 768px and up the drawing shows as designed and this stays hidden. */
+.pav {
+  display: none;
+}
+@media (max-width: 767px) {
+  [data-pyzo-arch] {
+    display: none !important;
+  }
+  .pav {
+    display: grid;
+    gap: 0.75rem;
+  }
+}
+.pav-head {
+  padding-bottom: 0.4rem;
+}
+.pav-k {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal-txt);
+}
+.pav-line {
+  margin-top: 0.45rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: rgb(var(--c-fg) / 0.78);
+}
+.pav-cap {
+  font-size: 0.78rem;
+  line-height: 1.65;
+  color: rgb(var(--c-fg) / 0.55);
+  padding-left: 0.85rem;
+  border-left: 2px solid rgb(var(--c-teal) / 0.45);
+}
+.pav-lane,
+.pav-journey {
+  border: 1px solid var(--hair);
+  border-radius: 14px;
+  padding: 0.95rem 1rem 1rem;
+  background: rgb(var(--c-fg) / 0.02);
+}
+html[data-theme="light"] .pav-lane,
+html[data-theme="light"] .pav-journey {
+  background: rgb(var(--c-teal) / 0.035);
+}
+.pav-lane-t {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal-txt);
+  padding-bottom: 0.65rem;
+  margin-bottom: 0.15rem;
+  border-bottom: 1px solid var(--hair);
+}
+.pav-nodes {
+  display: grid;
+}
+.pav-node {
+  display: grid;
+  grid-template-columns: 1.6rem minmax(0, 1fr);
+  gap: 0.7rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--hair-2);
+}
+.pav-node:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.pav-ic {
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 8px;
+  border: 1px solid rgb(var(--c-teal) / 0.4);
+  color: var(--teal-txt);
+}
+.pav-ic svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+.pav-node-t {
+  font-family: var(--font-schibsted), system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgb(var(--c-fg) / 0.92);
+}
+.pav-node-s {
+  margin-top: 0.2rem;
+  font-size: 0.75rem;
+  line-height: 1.55;
+  color: rgb(var(--c-fg) / 0.5);
+}
+.pav-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.55rem;
+}
+.pav-step {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.04em;
+  padding: 0.22rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgb(var(--c-teal) / 0.35);
+  color: var(--teal-txt);
+}
+.pav-arrow {
+  justify-self: center;
+  width: 1px;
+  height: 1.4rem;
+  background: rgb(var(--c-teal) / 0.6);
+  position: relative;
+}
+.pav-arrow::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid rgb(var(--c-teal) / 0.85);
+  border-bottom: 1px solid rgb(var(--c-teal) / 0.85);
+  transform: translateX(-50%) rotate(45deg);
+}
+.pav-journey .pav-cap {
+  margin: 0.7rem 0 0.4rem;
+}
+.pav-hops {
+  display: grid;
+  gap: 0.45rem;
+  counter-reset: hop;
+}
+.pav-hop {
+  display: grid;
+  grid-template-columns: 1.3rem minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: rgb(var(--c-fg) / 0.78);
+  counter-increment: hop;
+}
+.pav-hop::before {
+  content: counter(hop);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.6rem;
+  color: var(--teal-txt);
+}
+.pav-hop-to {
+  color: var(--teal-txt);
+}
+
+/* "Where AI fits" use-case icons (tools/use-case-icons.mjs) are teal in both themes, as
+   asked. The design's .iq-ic takes the accent token, which in the light theme is blue
+   (--c-teal-txt: 17 95 212); there they take a deep teal that keeps 5:1 on the light
+   ground instead. The dark theme keeps the design's teal. */
+html[data-theme="light"] .iq-ic {
+  color: rgb(15 118 110);
+}
