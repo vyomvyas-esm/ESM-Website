@@ -1,6 +1,7 @@
 import { pageMetadata } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import Link from "next/link";
+import Image from "next/image";
 export const metadata = pageMetadata({
   title: "Consumer & Retail",
   description:
@@ -256,7 +257,14 @@ export default function IndRetailPage() {
           <div className="iq-grid mt-[46px]">
             <article className="iq-cell rv" data-d="0">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-atlas" role="img" aria-label="Atlas"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.5" cy="8" r="3.5"/><path d="M3 20c.6-3.8 3.1-5.8 6.5-5.8s5.9 2 6.5 5.8"/><path d="M18.5 8v6M15.5 11h6"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Seasonal hiring without the service dip</h3>
               </div>
               <p className="iq-note">
@@ -281,7 +289,14 @@ export default function IndRetailPage() {
             </article>
             <article className="iq-cell rv" data-d="50">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-compass" role="img" aria-label="Compass"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4M4 20h16"/><path d="M7.5 16v-4M11 16V9M14.5 16v-2.5"/><path d="m15.5 9.5 4.3-4.3a1.2 1.2 0 0 1 1.7 1.7l-4.3 4.3-2.3.6Z"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Category reviews drafted for you</h3>
               </div>
               <p className="iq-note">
@@ -305,7 +320,14 @@ export default function IndRetailPage() {
             </article>
             <article className="iq-cell rv" data-d="100">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-evio" role="img" aria-label="Evio"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 3.5h15a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H10l-4 3.5V15H4.5a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Z"/><path d="m6.5 11.5 2.6-3 2.4 2 2.7-4.3 3.3 5.3"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Customers answered through every peak</h3>
               </div>
               <p className="iq-note">
@@ -329,7 +351,14 @@ export default function IndRetailPage() {
             </article>
             <article className="iq-cell rv" data-d="150">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-forge" role="img" aria-label="Forge"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3.5h12a1 1 0 0 1 1 1V12M5 3.5a1.5 1.5 0 0 0-1.5 1.5v14A1.5 1.5 0 0 0 5 20.5h6"/><path d="M7.5 3.5v17M10 8h5M10 11.5h5"/><path d="M14.5 17.5a3.2 3.2 0 0 1 5.6-2.1M21 17.5a3.2 3.2 0 0 1-5.6 2.1"/><path d="M20.4 13.6v1.9h-1.9M15.1 21.4v-1.9H17"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Inventory that reconciles itself</h3>
               </div>
               <p className="iq-note">
@@ -353,7 +382,14 @@ export default function IndRetailPage() {
             </article>
             <article className="iq-cell rv" data-d="200">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-loupe" role="img" aria-label="Loupe"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5V20a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9.5"/><path d="M3 4h18l1 4.2a2.6 2.6 0 0 1-5 .7 2.6 2.6 0 0 1-5 0 2.6 2.6 0 0 1-5 0 2.6 2.6 0 0 1-5-.7Z"/><path d="m9 15.2 2 2 4-4.2"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Sellers onboarded right the first time</h3>
               </div>
               <p className="iq-note">
@@ -377,7 +413,14 @@ export default function IndRetailPage() {
             </article>
             <article className="iq-cell rv" data-d="250">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-prism" role="img" aria-label="Prism"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1.5"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/><path d="m4.7 6.1.8.8 1.3-1.4M10.7 6.1l.8.8 1.3-1.4M16.7 6.1l.8.8 1.3-1.4M4.7 12.1l.8.8 1.3-1.4M10.7 12.1l.8.8 1.3-1.4M16.7 12.1l.8.8 1.3-1.4M4.7 18.1l.8.8 1.3-1.4M10.7 18.1l.8.8 1.3-1.4M16.7 18.1l.8.8 1.3-1.4"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Vendor and store audits without sampling</h3>
               </div>
               <p className="iq-note">
@@ -603,7 +646,14 @@ export default function IndRetailPage() {
               href="/blog/personalisation-that-holds-up-at-scale/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/219-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/personalisation-that-holds-up-at-scale-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">
@@ -650,7 +700,14 @@ export default function IndRetailPage() {
               href="/blog/demand-and-inventory-intelligence-under-real-margins/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/231-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/demand-and-inventory-intelligence-under-real-margins-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">
@@ -697,7 +754,14 @@ export default function IndRetailPage() {
               href="/blog/order-delivery-and-returns-calls/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/226-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/order-delivery-and-returns-calls-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">

@@ -20,6 +20,7 @@ import { ROUTES, blogSlug, caseStudySlug } from "./slugs.mjs";
 import { firstSentences, isoDate } from "../lib/seo.ts";
 import { blogImages } from "../data/blog-images.ts";
 import { ALT_OVERRIDES } from "./alt-overrides.mjs";
+import { USE_CASE_ICONS } from "./use-case-icons.mjs";
 import copyOverrides from "../data/copy-overrides.json" with { type: "json" };
 import articleLinks from "../data/article-links.json" with { type: "json" };
 
@@ -282,6 +283,20 @@ function serialize(node, ctx, inSvg = false) {
     if (attrs.has("loading")) extra.push(`loading=${escAttr(attrs.get("loading"))}`);
     if (attrs.has("sizes")) extra.push(`sizes=${escAttr(attrs.get("sizes"))}`);
     return `<Image src=${escAttr(attrs.get("src"))} width={${width}} height={${height}} alt=${escAttr(attrs.get("alt") ?? "")} ${extra.join(" ")} />`;
+  }
+  /* A blog card on a page (product, engineering and industry "related reading") names its
+     thumbnail by the export's post number, "/blog/108-t.webp", which is not a file here:
+     artwork is named by article. The card links to its article, so the thumbnail is that
+     article's first image; an article without artwork gets the listing's placeholder. */
+  if (tag === "img" && /^\/blog\/\d+-t\.webp$/.test(attrs.get("src") || "")) {
+    let card = node.parentNode;
+    while (card && !(attr(card, "data-nav") || "").startsWith("blog-")) card = card.parentNode;
+    if (!card) throw new Error(`blog thumbnail outside a blog card: ${attrs.get("src")}`);
+    const slug = blogSlug(attr(card, "data-nav").slice(5));
+    const src = blogImages[slug]?.[0];
+    if (!src) return `<span className="bl-ph absolute inset-0"><span className="bl-ph-k">${attr(card, "data-topic") || ""}</span></span>`;
+    ctx.usesImage = true;
+    return `<Image src=${escAttr(src.src)} width={${src.width}} height={${src.height}} alt="" className=${escAttr(attrs.get("class") || "thumb")} sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />`;
   }
   if (attrs.has("data-wave")) {
     ctx.usesWaveform = true;
@@ -924,7 +939,18 @@ const simple = {
 };
 const SERVICE_PAGES = new Set(["pyzo-atlas", "pyzo-compass", "pyzo-evio", "pyzo-forge", "pyzo-loupe", "pyzo-prism", "svc-agentic", "svc-governance", "svc-modernisation"]);
 const FAQ_PAGES = new Set(["pyzo", "ind-bfsi", "ind-healthcare", "ind-public", "ind-retail"]);
-for (const [id, file] of Object.entries(simple)) await emitPage(id, { file, service: SERVICE_PAGES.has(id), faq: FAQ_PAGES.has(id) });
+/* "Where AI fits" on the industry pages: each use case's product logo becomes an icon of
+   the use case itself (tools/use-case-icons.mjs), in the design's own .iq-ic slot. */
+const useCaseIcon = (node) => {
+  if (!hasCls(node, "iq-pzmark")) return undefined;
+  const heading = text(children(node.parentNode).find((c) => hasCls(c, "iq-name")));
+  const paths = USE_CASE_ICONS[heading];
+  if (!paths) throw new Error(`no use-case icon for "${heading}"`);
+  const svg = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${paths}</svg>`;
+  return `<span className="iq-ic" aria-hidden="true" dangerouslySetInnerHTML={{ __html: ${JSON.stringify(svg)} }} />`;
+};
+for (const [id, file] of Object.entries(simple))
+  await emitPage(id, { file, service: SERVICE_PAGES.has(id), faq: FAQ_PAGES.has(id), ...(id.startsWith("ind-") ? { replace: useCaseIcon } : {}) });
 
 await emitPage("home", { file: "app/page.tsx" });
 

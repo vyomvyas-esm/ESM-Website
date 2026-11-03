@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { graph, service } from "@/lib/jsonld";
 import { services } from "@/data/page-schema";
 import Link from "next/link";
+import Image from "next/image";
 export const metadata = pageMetadata({
   title: "Agentic AI",
   description:
@@ -282,7 +283,14 @@ export default function SvcAgenticPage() {
               href="/blog/agreeing-the-number-before-you-start/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/246-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/agreeing-the-number-before-you-start-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">
@@ -329,7 +337,14 @@ export default function SvcAgenticPage() {
               href="/blog/what-a-production-ready-agent-actually-requires/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/272-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/what-a-production-ready-agent-actually-requires-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">
@@ -376,7 +391,14 @@ export default function SvcAgenticPage() {
               href="/blog/the-cfo-test-for-enterprise-ai/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/238-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/the-cfo-test-for-enterprise-ai-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">

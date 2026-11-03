@@ -1,6 +1,7 @@
 import { pageMetadata } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import Link from "next/link";
+import Image from "next/image";
 export const metadata = pageMetadata({
   title: "Banking & Financial Services",
   description: "",
@@ -219,7 +220,14 @@ export default function IndBfsiPage() {
           <div className="iq-grid mt-[46px]">
             <article className="iq-cell rv" data-d="0">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-atlas" role="img" aria-label="Atlas"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9 12 4.5 21.5 9 12 13.5Z"/><path d="M6.5 11v4.2c1.6 1.5 3.4 2.3 5.5 2.3s3.9-.8 5.5-2.3V11"/><path d="M21.5 9v5"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Every branch trained to one standard</h3>
               </div>
               <p className="iq-note">
@@ -244,7 +252,14 @@ export default function IndBfsiPage() {
             </article>
             <article className="iq-cell rv" data-d="50">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-compass" role="img" aria-label="Compass"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5H7.5A1.5 1.5 0 0 0 6 6v13.5A1.5 1.5 0 0 0 7.5 21h9a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H15"/><rect x="9" y="3" width="6" height="3" rx="1"/><path d="m9 13 2 2 4-4.5"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Audit preparation in days</h3>
               </div>
               <p className="iq-note">
@@ -269,7 +284,14 @@ export default function IndBfsiPage() {
             </article>
             <article className="iq-cell rv" data-d="100">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-evio" role="img" aria-label="Evio"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 5.5h10a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H8l-3 2.5v-2.5H3.5a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1Z"/><path d="M17.5 9.5h3a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H19V20l-3-2.5h-4.5a1 1 0 0 1-1-1V16"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Collections in the borrower’s language</h3>
               </div>
               <p className="iq-note">
@@ -293,7 +315,14 @@ export default function IndBfsiPage() {
             </article>
             <article className="iq-cell rv" data-d="150">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-forge" role="img" aria-label="Forge"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="13" rx="1.5"/><path d="M8.5 21h7M12 17v4"/><path d="M15 10.5a3 3 0 1 1-1-2.2"/><path d="M14.5 6.8v1.8h-1.8"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Workflows that survive a screen change</h3>
               </div>
               <p className="iq-note">
@@ -318,7 +347,14 @@ export default function IndBfsiPage() {
             </article>
             <article className="iq-cell rv" data-d="200">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-loupe" role="img" aria-label="Loupe"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8.5L19 7.5V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5"/><path d="m8 12.5 1.3 1.3 2.2-2.4M8 17l1.3 1.3 2.2-2.4M13.5 13h3M13.5 17.5h3"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Applications complete the first time</h3>
               </div>
               <p className="iq-note">
@@ -342,7 +378,14 @@ export default function IndBfsiPage() {
             </article>
             <article className="iq-cell rv" data-d="250">
               <div className="iq-top">
-                <span className="iq-pzmark pzlogo-prism" role="img" aria-label="Prism"></span>
+                <span
+                  className="iq-ic"
+                  aria-hidden="true"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M8 20h8M5 7h14"/><path d="m5 7-2.5 6a2.5 2.5 0 0 0 5 0Z"/><path d="m19 7-2.5 6a2.5 2.5 0 0 0 5 0Z"/></svg>',
+                  }}
+                />
                 <h3 className="iq-name">Claims and loans assessed consistently</h3>
               </div>
               <p className="iq-note">
@@ -521,7 +564,14 @@ export default function IndBfsiPage() {
               href="/blog/multilingual-ai-customer-service-in-banking/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/307-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/multilingual-ai-customer-service-in-banking-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">
@@ -568,7 +618,14 @@ export default function IndBfsiPage() {
               href="/blog/explainable-credit-decisions/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/197-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/explainable-credit-decisions-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">
@@ -615,7 +672,14 @@ export default function IndBfsiPage() {
               href="/blog/ai-for-regulatory-change-management/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/187-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/ai-for-regulatory-change-management-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">

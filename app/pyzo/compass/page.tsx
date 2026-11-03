@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { graph, service } from "@/lib/jsonld";
 import { services } from "@/data/page-schema";
 import Link from "next/link";
+import Image from "next/image";
 export const metadata = pageMetadata({
   title: "Compass, Business Analyst - PYZO",
   description:
@@ -430,7 +431,14 @@ export default function PyzoCompassPage() {
               href="/blog/compass-explained/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/127-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/compass-explained-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">COMPASS, Explained</h3>
@@ -475,7 +483,14 @@ export default function PyzoCompassPage() {
               href="/blog/getting-rag-to-hold-up-in-a-regulated-enterprise/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/96-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/getting-rag-to-hold-up-in-a-regulated-enterprise-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">
@@ -522,7 +537,14 @@ export default function PyzoCompassPage() {
               href="/blog/selecting-a-model-for-enterprise-rag/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <img className="thumb" src="/blog/255-t.webp" alt="" decoding="async" />
+                <Image
+                  src="/blog/selecting-a-model-for-enterprise-rag-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">

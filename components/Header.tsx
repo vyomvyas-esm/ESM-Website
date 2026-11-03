@@ -95,6 +95,16 @@ export function Header() {
 
   // the menu never outlives the page it was opened on
   useEffect(() => setOpen(false), [pathname]);
+  // while the phone menu is open it scrolls on its own and the page behind it stays put
+  useEffect(() => {
+    if (!open) return;
+    const root = document.documentElement;
+    const prev = root.style.overflow;
+    root.style.overflow = "hidden";
+    return () => {
+      root.style.overflow = prev;
+    };
+  }, [open]);
 
   useEffect(() => {
     let pending = false;

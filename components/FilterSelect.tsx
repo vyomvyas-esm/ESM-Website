@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 interface Props {
@@ -9,6 +10,8 @@ interface Props {
   onChange: (value: string) => void;
   /** entries behind each option, shown beside it; an option with no count shows none */
   counts?: Record<string, number>;
+  /** when each option is a page of its own, its address: the options render as links */
+  hrefFor?: (value: string) => string;
   ariaLabel?: string;
 }
 
@@ -23,7 +26,7 @@ export function countBy<T>(items: T[], options: { value: string }[], matches: (i
    a labelled list of options with counts and hides the button; elsewhere the button opens
    the same menu as a dropdown. The native <select> stays in the DOM, visually hidden, as
    the keyboard and screen-reader control and the source of truth. */
-export function FilterSelect({ label, value, options, onChange, counts, ariaLabel }: Props) {
+export function FilterSelect({ label, value, options, onChange, counts, hrefFor, ariaLabel }: Props) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const current = options.find((o) => o.value === value) ?? options[0];
@@ -63,20 +66,39 @@ export function FilterSelect({ label, value, options, onChange, counts, ariaLabe
         </svg>
       </button>
       <div className="fdd-menu" role="listbox" aria-label={ariaLabel ?? label} data-label={label}>
-        {options.map((o) => (
-          <button
-            key={o.value}
-            type="button"
-            role="option"
-            className="fdd-opt"
-            aria-selected={o.value === value}
-            tabIndex={-1}
-            onClick={() => pick(o.value)}
-          >
-            <span>{o.label}</span>
-            <span className="fdd-n">{counts?.[o.value] ?? ""}</span>
-          </button>
-        ))}
+        {options.map((o) => {
+          const inner = (
+            <>
+              <span>{o.label}</span>
+              <span className="fdd-n">{counts?.[o.value] ?? ""}</span>
+            </>
+          );
+          return hrefFor ? (
+            <Link
+              key={o.value}
+              href={hrefFor(o.value)}
+              role="option"
+              className="fdd-opt"
+              aria-selected={o.value === value}
+              tabIndex={-1}
+              onClick={() => setOpen(false)}
+            >
+              {inner}
+            </Link>
+          ) : (
+            <button
+              key={o.value}
+              type="button"
+              role="option"
+              className="fdd-opt"
+              aria-selected={o.value === value}
+              tabIndex={-1}
+              onClick={() => pick(o.value)}
+            >
+              {inner}
+            </button>
+          );
+        })}
       </div>
       <select aria-label={ariaLabel ?? label} value={value} onChange={(e) => onChange(e.target.value)}>
         {options.map((o) => (
