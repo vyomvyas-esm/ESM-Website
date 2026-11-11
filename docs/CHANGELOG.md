@@ -1,5 +1,15 @@
 # Changelog
 
+## v63.1 (3 November 2026)
+
+- **"Start Free Trial"** on the PYZO page (hero and closing band) now opens the PYZO
+  dashboard, https://staging-dashboard.pyzo.ai/, instead of the contact page. The header's
+  "Define an Outcome" still leads to the contact page.
+- **pyzo.ai**: `tools/pyzo-ai.mjs` packages the PYZO page as its own small Node.js app
+  for pyzo.ai, from the main build. Every link on it points to www.esmagico.com, its
+  canonical stays www.esmagico.com/pyzo/, and any other pyzo.ai address is sent
+  permanently to the same address on www.esmagico.com.
+
 ## v63 (3 November 2026)
 
 Built on the live site (main after PR #15). Every mobile change was checked at 390px and
