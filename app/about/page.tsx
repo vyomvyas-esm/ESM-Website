@@ -891,7 +891,7 @@ export default function WhoWeArePage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pb-[108px]">
+      <section className="relative overflow-hidden bg-ink pb-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <div className="wm-grid">
             <div className="rv">

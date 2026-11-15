@@ -24,14 +24,14 @@ export function CaseStudiesIndex() {
   const [shown, setShown] = useState(STEP);
   const sentinel = useRef<HTMLDivElement>(null);
 
+  const inIndustry = (s: (typeof caseStudies)[number]) =>
+    industry === "all" || s.card.industry === INDUSTRY_KEY[industry] || s.card.industry === industry;
+  const inProduct = (s: (typeof caseStudies)[number]) => product === "all" || s.card.products.includes(product);
+
   const live = useMemo(() => {
     const k = q.trim().toLowerCase();
-    return caseStudies.filter(
-      (s) =>
-        (industry === "all" || s.card.industry === INDUSTRY_KEY[industry] || s.card.industry === industry) &&
-        (product === "all" || s.card.products.includes(product)) &&
-        (!k || s.card.txt.includes(k)),
-    );
+    return caseStudies.filter((s) => inIndustry(s) && inProduct(s) && (!k || s.card.txt.includes(k)));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [industry, product, q]);
 
   // the next batch appears as the reader reaches the end of the current one
@@ -77,14 +77,18 @@ export function CaseStudiesIndex() {
               label="Industry"
               value={industry}
               options={caseStudyFilters.industries}
-              counts={countBy(caseStudies, caseStudyFilters.industries, (s, v) => s.card.industry === INDUSTRY_KEY[v] || s.card.industry === v)}
+              counts={countBy(
+                caseStudies.filter(inProduct),
+                caseStudyFilters.industries,
+                (s, v) => s.card.industry === INDUSTRY_KEY[v] || s.card.industry === v,
+              )}
               onChange={reset(setIndustry)}
             />
             <FilterSelect
               label="Product"
               value={product}
               options={caseStudyFilters.products}
-              counts={countBy(caseStudies, caseStudyFilters.products, (s, v) => s.card.products.includes(v))}
+              counts={countBy(caseStudies.filter(inIndustry), caseStudyFilters.products, (s, v) => s.card.products.includes(v))}
               onChange={reset(setProduct)}
             />
           </div>

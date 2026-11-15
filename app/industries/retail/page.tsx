@@ -24,7 +24,7 @@ export default function IndRetailPage() {
           <h1 className="h-hero mt-6 max-w-[18ch] rv" data-d="60">
             Retail operations that hold at peak volume
           </h1>
-          <p className="lede mt-5 max-w-[680px] rv" data-d="120">
+          <p className="lede hero-lede mt-5 max-w-[680px] rv" data-d="120">
             We engineer customer experience, demand and inventory that performs under real traffic and real
             margins, at the volume a peak week actually produces.
           </p>
@@ -175,7 +175,7 @@ export default function IndRetailPage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink py-[108px]">
+      <section className="relative overflow-hidden bg-ink py-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <div className="glow-top" aria-hidden="true"></div>
           <div className="grid gap-12 lg:grid-cols-[minmax(280px,1fr)_2fr] lg:gap-16">
@@ -248,7 +248,7 @@ export default function IndRetailPage() {
           </div>
         </div>
       </section>
-      <section id="ind-uses" className="relative overflow-hidden bg-ink pt-[96px] pb-[108px]">
+      <section id="ind-uses" className="relative overflow-hidden bg-ink pt-[96px] pb-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <span className="eyebrow rv">Across retail</span>
           <h2 className="h-sec rv" data-d="60">
@@ -445,7 +445,7 @@ export default function IndRetailPage() {
           </div>
         </div>
       </section>
-      <section id="ind-retail-proof" className="relative overflow-hidden bg-ink pt-[108px] pb-[108px]">
+      <section id="ind-retail-proof" className="relative overflow-hidden bg-ink pt-[96px] pb-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <div className="pf-head">
             <div>
@@ -612,7 +612,7 @@ export default function IndRetailPage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pb-[108px]">
+      <section className="relative overflow-hidden bg-ink pb-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <div className="pf-head">
             <div>
@@ -622,7 +622,7 @@ export default function IndRetailPage() {
                 <br className="hidden sm:block" /> operating these systems
               </h2>
             </div>
-            <Link className="btn btn-ghost group rv" data-d="120" href="/blog/">
+            <Link className="btn btn-ghost group rv" data-d="120" href="/blog/#blog-list">
               All blogs
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path

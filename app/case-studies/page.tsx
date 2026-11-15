@@ -23,7 +23,7 @@ export default function CaseStudiesPage() {
           <h1 className="h-hero mt-6 max-w-[18ch] rv" data-d="60">
             Proof in production
           </h1>
-          <p className="lede mt-5 max-w-[660px] rv" data-d="120">
+          <p className="lede hero-lede mt-5 max-w-[660px] rv" data-d="120">
             Each case study names the business metric we agreed with the client at the start and shows how far
             it moved, with the system behind it still operating in production today.
           </p>
@@ -48,7 +48,7 @@ export default function CaseStudiesPage() {
           <CaseStudiesIndex />
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pb-[108px]">
+      <section className="relative overflow-hidden bg-ink pb-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <div className="flex flex-col items-center text-center">
             <span className="eyebrow rv">In their words</span>

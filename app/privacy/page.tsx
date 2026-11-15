@@ -27,7 +27,7 @@ export default function PrivacyPage() {
           <h1 className="h-hero mt-6 max-w-[16ch] rv" data-d="60">
             Privacy Policy
           </h1>
-          <p className="lede mt-5 max-w-[660px] rv" data-d="120">
+          <p className="lede hero-lede mt-5 max-w-[660px] rv" data-d="120">
             How Es Magico Experiences Private Limited collects, uses and protects personal data, both on this
             website and inside the systems we operate for clients.
           </p>
@@ -47,7 +47,7 @@ export default function PrivacyPage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pb-[108px]">
+      <section className="relative overflow-hidden bg-ink pb-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <div className="lg-grid">
             <aside className="lg-toc">

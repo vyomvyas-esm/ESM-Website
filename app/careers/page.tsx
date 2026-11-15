@@ -40,7 +40,7 @@ export default function CareersPage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink py-[108px]">
+      <section className="relative overflow-hidden bg-ink py-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <div className="glow-top" aria-hidden="true"></div>
           <div className="grid gap-12 lg:grid-cols-[minmax(280px,1fr)_2fr] lg:gap-16">
@@ -80,7 +80,7 @@ export default function CareersPage() {
           </div>
         </div>
       </section>
-      <section id="open-roles" className="relative overflow-hidden bg-ink pb-[108px]">
+      <section id="open-roles" className="relative overflow-hidden bg-ink pb-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <h2 className="h-sec rv">Open roles</h2>
           <div className="mt-[46px] flex flex-col">

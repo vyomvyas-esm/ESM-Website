@@ -15,6 +15,9 @@ const onApex = [{ type: "host" as const, value: new URL(CANONICAL_ORIGIN).host.r
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  /* Dev only: lets the dev server serve its scripts to a page opened through an ngrok
+     tunnel. Without it the page loads but its JavaScript is blocked, so nothing reveals. */
+  allowedDevOrigins: ["*.ngrok-free.app", "*.ngrok-free.dev", "*.ngrok.app", "*.ngrok.io"],
   /* Shared hosting (Hostinger) caps how many processes a build may start. The build script
      uses webpack rather than Turbopack, whose CSS step runs in a separate worker process
      that such a cap kills, and prerendering is held to two workers. */

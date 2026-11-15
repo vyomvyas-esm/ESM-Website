@@ -49,7 +49,7 @@ export default async function CaseStudyPage({ params }: Params) {
             {cs.title}
           </h1>
           {cs.lede && (
-            <p className="lede mt-5 max-w-[680px] rv" data-d="120">
+            <p className="lede hero-lede mt-5 max-w-[680px] rv" data-d="120">
               {cs.lede}
             </p>
           )}

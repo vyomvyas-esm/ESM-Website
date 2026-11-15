@@ -30,7 +30,7 @@ export function BlogListingPage({ category, page }: { category: Category | null;
           <h1 className="h-hero mt-6 max-w-[16ch] rv" data-d="60">
             {category ? category.tag : "What we learn operating AI"}
           </h1>
-          <p className="lede mt-5 max-w-[660px] rv" data-d="120">
+          <p className="lede hero-lede mt-5 max-w-[660px] rv" data-d="120">
             Every post draws on a system we engineered and still answer for in production, written by the
             engineers and leaders accountable for it, so each lesson has already been tested against real
             users and real auditors.
@@ -51,7 +51,7 @@ export function BlogListingPage({ category, page }: { category: Category | null;
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pb-[96px]">
+      <section id="blog-list" className="relative overflow-hidden bg-ink pb-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <BlogIndex cards={cards} page={page} pages={pages} category={category} />
         </div>

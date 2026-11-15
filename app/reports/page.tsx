@@ -21,7 +21,7 @@ export default function ReportsPage() {
           <h1 className="h-hero mt-6 max-w-[20ch] rv" data-d="60">
             The evidence behind enterprise AI decisions
           </h1>
-          <p className="lede mt-5 max-w-[660px] rv" data-d="120">
+          <p className="lede hero-lede mt-5 max-w-[660px] rv" data-d="120">
             Deep reports on AI in banking and life sciences, with every figure sourced and every conclusion
             argued, written for leaders who have to defend an AI investment in the room where it is decided.
           </p>
@@ -41,7 +41,7 @@ export default function ReportsPage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pb-[108px]">
+      <section className="relative overflow-hidden bg-ink pb-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <ReportsIndex />
         </div>

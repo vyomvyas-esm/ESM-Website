@@ -231,6 +231,16 @@ section:has(.bl-layout) {
 .pav {
   display: none;
 }
+/* Until the diagram script has drawn into it, the frame holds its place with a faint
+   outline, so the page does not jump when the diagram appears. */
+@media (min-width: 768px) {
+  [data-pyzo-arch]:empty {
+    min-height: 540px;
+    border: 1px solid var(--hair);
+    border-radius: 14px;
+    opacity: 0.6;
+  }
+}
 @media (max-width: 767px) {
   [data-pyzo-arch] {
     display: none !important;

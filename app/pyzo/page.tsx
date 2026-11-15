@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import { PreloadPyzoScript } from "@/components/PreloadPyzoScript";
 import Link from "next/link";
 import { PyzoPanels } from "@/components/PyzoPanels";
 export const metadata = pageMetadata({
@@ -9,6 +10,7 @@ export const metadata = pageMetadata({
 export default function PyzoPage() {
   return (
     <main className="page" id="page-pyzo">
+      <PreloadPyzoScript lib="flow" />
       <section className="hero-tall relative isolate flex min-h-[100svh] flex-col overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>

@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import { PreloadPyzoScript } from "@/components/PreloadPyzoScript";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { graph, service } from "@/lib/jsonld";
@@ -14,6 +15,7 @@ export const metadata = pageMetadata({
 export default function PyzoForgePage() {
   return (
     <main className="page" id="page-pyzo-forge">
+      <PreloadPyzoScript lib="arch" />
       <JsonLd data={graph(service(services["pyzo-forge"]))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
@@ -34,7 +36,7 @@ export default function PyzoForgePage() {
               <h1 className="h-hero mt-6 max-w-[20ch] rv" data-d="60">
                 Workflows that hold when the screen changes
               </h1>
-              <p className="lede mt-5 max-w-[640px] rv" data-d="120">
+              <p className="lede hero-lede mt-5 max-w-[640px] rv" data-d="120">
                 Executes cross-application workflows across desktop, browser and legacy systems, with
                 self-healing process execution.
               </p>
@@ -397,7 +399,7 @@ export default function PyzoForgePage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pb-[108px]">
+      <section className="relative overflow-hidden bg-ink pb-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <div className="pf-head">
             <div>
@@ -407,7 +409,7 @@ export default function PyzoForgePage() {
                 <br className="hidden sm:block" /> operating these systems
               </h2>
             </div>
-            <Link className="btn btn-ghost group rv" data-d="120" href="/blog/">
+            <Link className="btn btn-ghost group rv" data-d="120" href="/blog/#blog-list">
               All blogs
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path

@@ -148,7 +148,7 @@ export default async function BlogPostPage({ params }: Params) {
                 </p>
               )}
               <div className="mt-12 rv">
-                <Link className="btn btn-ghost group" href="/blog/">
+                <Link className="btn btn-ghost group" href="/blog/#blog-list">
                   All blogs
                   <Arrow />
                 </Link>

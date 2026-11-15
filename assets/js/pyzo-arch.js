@@ -20,7 +20,7 @@
   var LANE_STAGE = { users: 2, entry: 2, core: 3, ai: 4, data: 5, systems: 5, rail: 6, es: 7 };
   var DEFAULT_KIND = { users: 'user', entry: 'pyzo', core: 'pyzo', ai: 'ai', data: 'store', systems: 'client', rail: 'client', es: 'es' };
   var LAST = 8;
-  var STAGE_MS = [0, 2800, 4400, 4200, 4800, 4800, 4400, 5200];
+  var STAGE_MS = [0, 2100, 3300, 3150, 3600, 3600, 3300, 3900];
   var WIDE_MIN = 1100;
   var SVGNS = 'http://www.w3.org/2000/svg';
   var ICON = {

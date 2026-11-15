@@ -50,7 +50,7 @@ export default async function GlossaryTermPage({ params }: Params) {
               {t.capability.label}
             </Link>
           </div>
-          <p className="lede mt-5 max-w-[680px] rv" data-d="120">
+          <p className="lede hero-lede mt-5 max-w-[680px] rv" data-d="120">
             {t.lede}
           </p>
         </div>

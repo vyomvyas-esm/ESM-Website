@@ -21,7 +21,7 @@ export default function SvcAgenticPage() {
           <div className="hero-scrim"></div>
           <div className="sky-fade"></div>
         </div>
-        <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[132px]">
+        <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[96px]">
           <Breadcrumbs
             items={[{ label: "Home", href: "/" }, { label: "Engineering" }, { label: "Agentic AI" }]}
           />
@@ -32,7 +32,7 @@ export default function SvcAgenticPage() {
             We engineer agents around one number your business already tracks, then operate them in production
             and report against that number every month.
           </p>
-          <div className="mt-9 flex flex-wrap gap-3 rv" data-d="180">
+          <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
             <Link className="btn btn-light group" href="/contact/">
               Define an Outcome
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -51,7 +51,7 @@ export default function SvcAgenticPage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink py-[108px]">
+      <section className="relative overflow-hidden bg-ink py-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <span className="eyebrow rv">What we engineer</span>
           <h2 className="h-sec rv" data-d="60">
@@ -90,7 +90,7 @@ export default function SvcAgenticPage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink py-[108px]">
+      <section className="relative overflow-hidden bg-ink py-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <div className="glow-top" aria-hidden="true"></div>
           <div className="grid gap-12 lg:grid-cols-[minmax(280px,1fr)_2fr] lg:gap-16">
@@ -201,7 +201,7 @@ export default function SvcAgenticPage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pb-[108px]">
+      <section className="relative overflow-hidden bg-ink pb-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <span className="eyebrow rv">The path to production</span>
           <h2 className="h-sec rv">We operate what we engineer</h2>
@@ -249,7 +249,7 @@ export default function SvcAgenticPage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pb-[108px]">
+      <section className="relative overflow-hidden bg-ink pb-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <div className="pf-head">
             <div>
@@ -259,7 +259,7 @@ export default function SvcAgenticPage() {
                 <br className="hidden sm:block" /> operating these systems
               </h2>
             </div>
-            <Link className="btn btn-ghost group rv" data-d="120" href="/blog/">
+            <Link className="btn btn-ghost group rv" data-d="120" href="/blog/#blog-list">
               All blogs
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path

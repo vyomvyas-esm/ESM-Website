@@ -29,7 +29,7 @@ export default function GlossaryPage() {
           <h1 className="h-hero mt-6 max-w-[17ch] rv" data-d="60">
             The Agentic AI Glossary
           </h1>
-          <p className="lede mt-5 max-w-[680px] rv" data-d="120">
+          <p className="lede hero-lede mt-5 max-w-[680px] rv" data-d="120">
             Most of this vocabulary was coined in demonstrations and acquires a different weight once a system
             is deployed and answerable for what it produces. Each definition gives the production meaning.
           </p>
@@ -49,7 +49,7 @@ export default function GlossaryPage() {
           </div>
         </div>
       </section>
-      <section className="relative bg-ink pb-[108px]">
+      <section className="relative bg-ink pb-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <GlossaryIndex />
         </div>

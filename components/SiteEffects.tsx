@@ -153,6 +153,18 @@ export function SiteEffects() {
     document.addEventListener("click", onFaqClick);
     cleanups.push(() => document.removeEventListener("click", onFaqClick));
 
+    /* ---------- case-study rows: opening one closes the others in its list ---------- */
+    const onRowToggle = (ev: Event) => {
+      const row = ev.target as HTMLDetailsElement;
+      if (!row.matches?.("details.ca-row") || !row.open) return;
+      row.parentElement?.querySelectorAll<HTMLDetailsElement>(":scope > details.ca-row[open]").forEach((other) => {
+        if (other !== row) other.open = false;
+      });
+    };
+    // toggle does not bubble, so listen in the capture phase
+    document.addEventListener("toggle", onRowToggle, true);
+    cleanups.push(() => document.removeEventListener("toggle", onRowToggle, true));
+
     /* ---------- testimonial carousel: a slide every 8s, paused while hovered or focused ---------- */
     document.querySelectorAll<HTMLElement>(".ft-tst").forEach((box) => {
       const slides = [...box.querySelectorAll<HTMLElement>(".ft-slide")];

@@ -1304,7 +1304,7 @@ h1,h2,h3,h4,h5,.font-display{
   padding:0 0 1.4rem;
   font-size:.875rem;
   line-height:1.75;
-  color:var(--muted)
+  color:rgb(var(--c-fg) / .8)
 }
 
 /* generic prose */
@@ -7002,9 +7002,20 @@ html[data-theme="dark"] .pzlogo-prism{background-image:var(--pz-prism-d)}
    height, and sets the name as live type at the glyph's own height. */
 .pz-card-lock{display:flex;align-items:center;gap:.55rem;min-width:0}
 .pz-card-mark{
-  display:block;height:26px;width:26px;flex:0 0 auto;
-  background-repeat:no-repeat;background-position:left center;background-size:auto 100%
+  --mh:26px;
+  display:block;height:var(--mh);flex:0 0 auto;
+  /* each lockup sits in a 620-unit-high box with its glyph at a different offset and
+     width (--gs start, --gw width, in those units). The box is cut to the glyph itself,
+     so the gap to the name is the same in every card */
+  width:calc(var(--gw) * var(--mh) / 620);
+  background-repeat:no-repeat;background-position:calc(var(--gs) * var(--mh) / -620) center;background-size:auto 100%
 }
+.pz-card-mark.pzlogo-atlas{--gs:70;--gw:480}
+.pz-card-mark.pzlogo-compass{--gs:97;--gw:427}
+.pz-card-mark.pzlogo-evio{--gs:60;--gw:465}
+.pz-card-mark.pzlogo-forge{--gs:166;--gw:288}
+.pz-card-mark.pzlogo-loupe{--gs:120;--gw:371}
+.pz-card-mark.pzlogo-prism{--gs:60;--gw:500}
 .pz-card-name{
   font-family:var(--font-schibsted),system-ui,sans-serif;
   font-size:26px;line-height:1;font-weight:500;letter-spacing:-.03em;
@@ -7013,7 +7024,7 @@ html[data-theme="dark"] .pzlogo-prism{background-image:var(--pz-prism-d)}
 .pz-card-head .pz-card-role{font-size:12.5px}
 
 @media (max-width:640px){
-  .pz-card-mark{height:21px;width:21px}
+  .pz-card-mark{--mh:21px}
   .pz-card-name{font-size:21px}
 }
 /* The role sits on the mark's own line, pushed to the card's right edge, so
@@ -7034,13 +7045,13 @@ html[data-theme="dark"] .pzlogo-prism{background-image:var(--pz-prism-d)}
    it needs: the copy sits on the left and the form on the right, rather than
    stacked, which is what made it half as tall again */
 .foot-top{align-items:stretch}
-.foot-news{min-width:0;width:clamp(460px,48vw,620px);
+.foot-news{min-width:0;width:fit-content;max-width:100%;
   display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1.6rem;align-items:center;
   padding:1.1rem 1.4rem}
 .foot-news .fn-sub{margin-top:.3rem;max-width:34ch;font-size:.71875rem}
 .foot-news form{margin-top:0;width:250px;flex:0 0 auto}
 @media (max-width:1100px){
-  .foot-news{width:100%;grid-template-columns:1fr;gap:.9rem;align-items:start}
+  .foot-news{width:100%;max-width:none;grid-template-columns:1fr;gap:.9rem;align-items:start}
   .foot-news .fn-sub{max-width:none}
   .foot-news form{width:100%;max-width:340px}
 }
@@ -7775,3 +7786,6 @@ html[data-theme="dark"] .form-msg{color:rgb(255 140 140)}
   .pi-row .ca-body{padding:.2rem 1.2rem 1.6rem}
   .pi-row summary{padding:1.1rem 1.2rem}
 }
+
+/* "All blogs" lands on the listing, clear of the fixed header */
+#blog-list{scroll-margin-top:84px}

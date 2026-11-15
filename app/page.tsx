@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import { PreloadPyzoScript } from "@/components/PreloadPyzoScript";
 import Link from "next/link";
 export const metadata = pageMetadata({
   title: "Es Magico - The Operator for AI-native Transformation",
@@ -9,6 +10,7 @@ export const metadata = pageMetadata({
 export default function HomePage() {
   return (
     <main className="page" id="page-home">
+      <PreloadPyzoScript lib="flow" />
       <section className="hero-tall relative isolate flex min-h-[100svh] flex-col overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>
@@ -237,7 +239,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section id="proof" className="relative overflow-hidden bg-ink pb-[108px]">
+      <section id="proof" className="relative overflow-hidden bg-ink pb-[96px]">
         <div className="proof-photo" aria-hidden="true"></div>
         <div className="proof-scrim" aria-hidden="true"></div>
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
@@ -623,7 +625,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-ink pt-[86px] pb-[108px]">
+      <section className="relative overflow-hidden bg-ink py-[96px]">
         <div className="relative mx-auto max-w-shell px-6 lg:px-8">
           <span className="eyebrow rv">The enterprise AI suite</span>
           <div className="pz-split mt-7">
