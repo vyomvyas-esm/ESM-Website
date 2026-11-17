@@ -395,10 +395,3 @@ html[data-theme="light"] .pav-journey {
   color: var(--teal-txt);
 }
 
-/* "Where AI fits" use-case icons (tools/use-case-icons.mjs) are teal in both themes, as
-   asked. The design's .iq-ic takes the accent token, which in the light theme is blue
-   (--c-teal-txt: 17 95 212); there they take a deep teal that keeps 5:1 on the light
-   ground instead. The dark theme keeps the design's teal. */
-html[data-theme="light"] .iq-ic {
-  color: rgb(15 118 110);
-}

@@ -165,7 +165,7 @@ export function SiteEffects() {
     document.addEventListener("toggle", onRowToggle, true);
     cleanups.push(() => document.removeEventListener("toggle", onRowToggle, true));
 
-    /* ---------- testimonial carousel: a slide every 8s, paused while hovered or focused ---------- */
+    /* ---------- testimonial carousel: a slide every 5s, paused while hovered or focused ---------- */
     document.querySelectorAll<HTMLElement>(".ft-tst").forEach((box) => {
       const slides = [...box.querySelectorAll<HTMLElement>(".ft-slide")];
       const dots = [...box.querySelectorAll<HTMLElement>(".ft-dot")];
@@ -188,7 +188,7 @@ export function SiteEffects() {
       const start = () => {
         if (reduce) return;
         stop();
-        timer = setInterval(() => show(cur + 1), 8000);
+        timer = setInterval(() => show(cur + 1), 5000);
       };
       const onDot = (ev: MouseEvent) => {
         const d = (ev.target as Element).closest<HTMLElement>(".ft-dot");

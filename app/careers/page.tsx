@@ -26,7 +26,7 @@ export default function CareersPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3 rv" data-d="180">
             <a className="btn btn-light group" href="#open-roles">
-              Check open roles
+              Check Open Roles
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
                   d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
@@ -192,7 +192,7 @@ export default function CareersPage() {
                   className="btn btn-light group"
                   aria-label="Check open roles on LinkedIn, opens LinkedIn in a new tab"
                 >
-                  Check open roles
+                  Check Open Roles
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path
                       d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"

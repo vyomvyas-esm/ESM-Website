@@ -46,7 +46,7 @@ export default function SvcAgenticPage() {
               </svg>
             </Link>{" "}
             <a className="btn btn-ghost" href="#svc-proof">
-              See the proof
+              See the Proof
             </a>
           </div>
         </div>
@@ -141,7 +141,7 @@ export default function SvcAgenticPage() {
               <h2 className="h-sec rv">Governed outcomes, proven in production</h2>
             </div>
             <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies/">
-              See all case studies
+              See All Case Studies
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
                   d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
@@ -260,7 +260,7 @@ export default function SvcAgenticPage() {
               </h2>
             </div>
             <Link className="btn btn-ghost group rv" data-d="120" href="/blog/#blog-list">
-              All blogs
+              All Blogs
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
                   d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"

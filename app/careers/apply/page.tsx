@@ -17,7 +17,7 @@ export default function CareersApplyPage() {
           <div className="hero-scrim"></div>
           <div className="sky-fade"></div>
         </div>
-        <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[46px] pb-[80px]">
+        <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[80px]">
           <Breadcrumbs
             items={[
               { label: "Home", href: "/" },

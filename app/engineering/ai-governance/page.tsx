@@ -163,7 +163,7 @@ export default function SvcGovernancePage() {
               </svg>
             </Link>{" "}
             <a className="btn btn-ghost" href="#svc-proof">
-              See the proof
+              See the Proof
             </a>
           </div>
         </div>
@@ -285,7 +285,7 @@ export default function SvcGovernancePage() {
               <h2 className="h-sec rv">Governed outcomes, proven in production</h2>
             </div>
             <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies/">
-              See all case studies
+              See All Case Studies
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
                   d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
@@ -408,7 +408,7 @@ export default function SvcGovernancePage() {
               </h2>
             </div>
             <Link className="btn btn-ghost group rv" data-d="120" href="/blog/#blog-list">
-              All blogs
+              All Blogs
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
                   d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
@@ -431,9 +431,15 @@ export default function SvcGovernancePage() {
               href="/blog/llm-cost-optimization/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <span className="thumb thumb-none">
-                  <span>Image to come</span>
-                </span>
+                <Image
+                  src="/blog/llm-cost-optimization-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  loading="lazy"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">LLM Cost Optimisation</h3>
@@ -532,9 +538,15 @@ export default function SvcGovernancePage() {
               href="/blog/llama-4-against-qwen-3-for-sovereign-enterprise-deployment/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <span className="thumb thumb-none">
-                  <span>Image to come</span>
-                </span>
+                <Image
+                  src="/blog/llama-4-against-qwen-3-for-sovereign-enterprise-deployment-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  loading="lazy"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">

@@ -26,11 +26,11 @@ export const CATEGORIES: Category[] = [
 export const categoryBySlug = (slug: string) => CATEGORIES.find((c) => c.slug === slug);
 export const categoryByTag = (tag: string) => CATEGORIES.find((c) => c.tag === tag);
 
-/* The journal lists oldest first for now (client request, 3 November 2026: the most
-   recent posts share similar artwork). By publication date, since two cards can carry the
-   same position number; a reader can still choose "Newest first" in the Sort filter. */
+/* The journal lists the newest first (review feedback, November 2026; it listed oldest first
+   before). By publication date, since two cards can carry the same position number; a reader
+   can still choose "Oldest first" in the Sort filter. */
 export type SortOrder = "old" | "new";
-export const DEFAULT_SORT: SortOrder = "old";
+export const DEFAULT_SORT: SortOrder = "new";
 export const byDate = (order: SortOrder) => (a: BlogCard, b: BlogCard) =>
   (isoDate(a.date).localeCompare(isoDate(b.date)) || b.ts - a.ts) * (order === "old" ? 1 : -1);
 

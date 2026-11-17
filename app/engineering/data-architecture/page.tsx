@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { graph, service } from "@/lib/jsonld";
 import { services } from "@/data/page-schema";
 import Link from "next/link";
+import Image from "next/image";
 export const metadata = pageMetadata({
   title: "Data Architecture",
   description:
@@ -45,7 +46,7 @@ export default function SvcModernisationPage() {
               </svg>
             </Link>{" "}
             <a className="btn btn-ghost" href="#svc-proof">
-              See the proof
+              See the Proof
             </a>
           </div>
         </div>
@@ -138,7 +139,7 @@ export default function SvcModernisationPage() {
               <h2 className="h-sec rv">Governed outcomes, proven in production</h2>
             </div>
             <Link className="btn btn-ghost group rv" data-d="120" href="/case-studies/">
-              See all case studies
+              See All Case Studies
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
                   d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
@@ -257,7 +258,7 @@ export default function SvcModernisationPage() {
               </h2>
             </div>
             <Link className="btn btn-ghost group rv" data-d="120" href="/blog/#blog-list">
-              All blogs
+              All Blogs
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
                   d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
@@ -327,9 +328,15 @@ export default function SvcModernisationPage() {
               href="/blog/data-governance-for-agentic-ai/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <span className="thumb thumb-none">
-                  <span>Image to come</span>
-                </span>
+                <Image
+                  src="/blog/data-governance-for-agentic-ai-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  loading="lazy"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">
@@ -376,9 +383,15 @@ export default function SvcModernisationPage() {
               href="/blog/measuring-rag-quality/"
             >
               <div className="relative h-[176px] overflow-hidden">
-                <span className="thumb thumb-none">
-                  <span>Image to come</span>
-                </span>
+                <Image
+                  src="/blog/measuring-rag-quality-1.webp"
+                  width={1024}
+                  height={1024}
+                  alt=""
+                  className="thumb"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  loading="lazy"
+                />
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-[13.5px] font-medium leading-snug">Measuring RAG Quality</h3>

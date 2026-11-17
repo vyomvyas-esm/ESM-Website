@@ -7789,3 +7789,50 @@ html[data-theme="dark"] .form-msg{color:rgb(255 140 140)}
 
 /* "All blogs" lands on the listing, clear of the fixed header */
 #blog-list{scroll-margin-top:84px}
+
+/* ================================================================
+   Review round 2 (team feedback, November 2026)
+   ================================================================ */
+
+/* the logo strip is a tinted band already: the two hairlines around it read as extra lines */
+.brand-band{border-top:0;border-bottom:0}
+
+/* the contact form's industry menu: dimmed like the other placeholders until a choice is made,
+   with the chevron kept in both themes (the light theme's background shorthand dropped it) */
+.field select:has(option[value=""]:checked){color:rgb(var(--c-fg) / .3)}
+html[data-theme] .field select{
+  background-image:url("/img/chevron-select.svg");
+  background-repeat:no-repeat;
+  background-position:right .9rem center;
+  padding-right:2.4rem
+}
+
+/* alternating feature rows breathe */
+.wy-row{padding:2rem 0}
+@media (max-width:900px){.wy-row{padding:1.6rem 0}}
+
+/* an open card keeps a gap from the cards around it */
+.ca-row[open]{margin-block:.65rem;border-bottom-color:transparent}
+
+/* case-study rows: the hover tint has to show on the dark ground */
+html[data-theme="dark"] .csr:hover{background:rgb(var(--c-fg) / .07)}
+
+/* the footer and contact icons: a border that can be seen on the dark ground */
+html[data-theme="dark"] .soc{border-color:rgb(var(--c-fg) / .34);color:rgb(var(--c-fg) / .8)}
+
+/* the testimonial is an open quote with no card, so its hover is the quote mark and rule */
+.ft-tst:hover{transform:none}
+#page-contact .ct-open .ct-qm,#page-contact .ct-open .ct-rule{transition:transform .35s ease,width .35s ease}
+#page-contact .ct-open:hover .ct-qm{transform:translateX(4px)}
+#page-contact .ct-open:hover .ct-rule{width:96px}
+#page-contact .ct-open:hover .ft-q{color:rgb(var(--c-fg))}
+
+/* the message under a field that did not pass the checks */
+.field-err{margin:.35rem 0 0;font-size:.75rem;line-height:1.45;color:rgb(200 50 55)}
+html[data-theme="dark"] .field-err{color:rgb(255 140 140)}
+/* on the contact page the form is held to the height of the left column, so the message sits
+   on the label's line (right-aligned) instead of adding a line under the field */
+@media (min-width:1024px){
+  #page-contact .field{position:relative}
+  #page-contact .field-err{position:absolute;top:0;right:0;margin:0;font-size:.6875rem;line-height:1.3;text-align:right}
+}

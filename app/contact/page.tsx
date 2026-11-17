@@ -15,7 +15,7 @@ export default function ContactPage() {
           <div className="hero-scrim"></div>
           <div className="sky-fade"></div>
         </div>
-        <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[46px] pb-[80px]">
+        <div className="relative mx-auto max-w-shell px-6 lg:px-8 pt-[80px] pb-[80px]">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Define an Outcome" }]} />
           <div className="mt-8 grid items-stretch gap-10 lg:grid-cols-2 lg:gap-16">
             <div className="flex flex-col rv">
@@ -56,7 +56,10 @@ export default function ContactPage() {
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
                     <path
                       d="M6.6 3.5c.5-.3 1.2-.2 1.6.3l2 2.6c.4.5.3 1.2-.2 1.6l-1.3 1c-.3.2-.4.6-.2.9a12 12 0 0 0 4.6 4.6c.3.2.7.1.9-.2l1-1.3c.4-.5 1.1-.6 1.6-.2l2.6 2c.5.4.6 1.1.3 1.6l-1.2 1.9c-.5.8-1.5 1.2-2.4 1A16.8 16.8 0 0 1 4.4 7.2c-.2-.9.2-1.9 1-2.4Z"
-                      fill="currentColor"
+                      stroke="currentColor"
+ strokeWidth="1.6"
+ fill="none"
+ strokeLinejoin="round"
                     />
                   </svg>
                 </a>

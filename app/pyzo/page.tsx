@@ -72,7 +72,7 @@ export default function PyzoPage() {
                 </svg>
               </a>{" "}
               <a className="btn btn-ghost" href="#pyzo-proof">
-                See the proof
+                See the Proof
               </a>
             </div>
           </div>
@@ -755,7 +755,7 @@ export default function PyzoPage() {
             </div>
             <div className="rv" data-d="120">
               <Link className="btn btn-light group" href="/case-studies/">
-                Read all case studies
+                Read All Case Studies
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
                     d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"

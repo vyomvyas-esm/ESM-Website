@@ -261,7 +261,10 @@ export function Footer() {
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
                   <path
                     d="M6.6 3.5c.5-.3 1.2-.2 1.6.3l2 2.6c.4.5.3 1.2-.2 1.6l-1.3 1c-.3.2-.4.6-.2.9a12 12 0 0 0 4.6 4.6c.3.2.7.1.9-.2l1-1.3c.4-.5 1.1-.6 1.6-.2l2.6 2c.5.4.6 1.1.3 1.6l-1.2 1.9c-.5.8-1.5 1.2-2.4 1A16.8 16.8 0 0 1 4.4 7.2c-.2-.9.2-1.9 1-2.4Z"
-                    fill="currentColor"
+                    stroke="currentColor"
+ strokeWidth="1.6"
+ fill="none"
+ strokeLinejoin="round"
                   />
                 </svg>
               </a>

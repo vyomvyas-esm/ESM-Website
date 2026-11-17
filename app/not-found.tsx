@@ -23,7 +23,7 @@ export default function NotFound() {
           </p>
           <div className="mt-8 rv" data-d="180">
             <Link className="btn btn-light group" href="/">
-              Back to home
+              Back to Home
               <Arrow />
             </Link>
           </div>

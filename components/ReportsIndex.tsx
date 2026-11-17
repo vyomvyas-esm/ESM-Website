@@ -189,7 +189,7 @@ export function ReportsIndex() {
                       setOpen(r);
                     }}
                   >
-                    Send me the report
+                    Send Me the Report
                     <Arrow />
                   </button>
                 </div>

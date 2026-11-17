@@ -191,8 +191,8 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
                   label="Sort"
                   value={sort}
                   options={[
-                    { value: "old", label: "Oldest first" },
                     { value: "new", label: "Newest first" },
+                    { value: "old", label: "Oldest first" },
                   ]}
                   onChange={(v) => reset(setSort)(v as SortOrder)}
                 />
@@ -207,7 +207,7 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
             </div>
             {live.length === 0 && <p className="mt-10 text-[13px] text-white/45">Nothing matches that yet.</p>}
             {filtering && live.length > 0 && (
-              <div className="mt-10 flex flex-col items-center gap-3">
+              <div className="mt-14 flex flex-col items-center gap-3">
                 <Pager page={matchPage} pages={matchPages} label="Pages of matching blogs" onPick={pickMatchPage} />
                 <p className="text-[11.5px] text-white/35">
                   {live.length} {live.length === 1 ? "blog matches" : "blogs match"}
@@ -215,8 +215,8 @@ export function BlogIndex({ cards, page, pages, category }: Props) {
               </div>
             )}
             {!filtering && (
-              <div className="mt-10 flex flex-col items-center gap-5">
-                <Pager page={page} pages={pages} label="Blog pages" hrefFor={(n) => listingPath(category, n)} />
+              <div className="mt-14 flex flex-col items-center gap-5">
+                <Pager page={page} pages={pages} label="Blog pages" hrefFor={(n) => `${listingPath(category, n)}#blog-list`} />
               </div>
             )}
           </div>

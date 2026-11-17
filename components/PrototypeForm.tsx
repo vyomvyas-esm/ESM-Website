@@ -18,17 +18,30 @@ interface Props {
   doneText?: string;
 }
 
-type Problem = "empty" | "format" | "";
+/* "" is fine; any other value is the message shown under the field. */
+type Problem = string;
 
 /* A field whose label says "optional" may be left empty; every other one is required. */
 const required = (f: Field) => !/optional/i.test(f.label);
 
+/* Longest entry each kind of field takes. */
+const MAX = { name: 80, input: 120, textarea: 1500 };
+const isName = (f: Field) => f.kind === "input" && /(^|-)name$/.test(f.id);
+
 function check(f: Field, value: string): Problem {
   const v = value.trim();
-  if (!v) return required(f) ? "empty" : "";
+  if (!v) {
+    if (!required(f)) return "";
+    return f.kind === "select" ? "Choose an option." : "This field is required.";
+  }
+  if (f.kind === "textarea") return v.length > MAX.textarea ? `Keep this under ${MAX.textarea} characters.` : "";
   if (f.kind !== "input") return "";
-  if (f.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) return "format";
-  if (f.type === "url" && !/^(https?:\/\/)?[^\s.]+\.[^\s]{2,}/i.test(v.replace(/^https?:\/\/$/, ""))) return "format";
+  if (v.length > (isName(f) ? MAX.name : MAX.input)) return `Keep this under ${isName(f) ? MAX.name : MAX.input} characters.`;
+  if (isName(f) && !/^[\p{L}][\p{L}\s.'’-]*$/u.test(v)) return "Letters only, no numbers or symbols.";
+  if (f.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) return "Enter a valid email address.";
+  if (f.type === "tel" && (!/^\+?[\d\s().-]+$/.test(v) || v.replace(/\D/g, "").length < 7 || v.replace(/\D/g, "").length > 15))
+    return "Enter a valid phone number.";
+  if (f.type === "url" && !/^(https?:\/\/)?[^\s.]+\.[^\s]{2,}/i.test(v.replace(/^https?:\/\/$/, ""))) return "Enter a valid web address.";
   return "";
 }
 
@@ -50,7 +63,7 @@ export function PrototypeForm({ form: formName, fields, submitLabel, doneTitle, 
 
   const onEdit = (f: Field) => () => {
     if (!errors[f.id] || check(f, valueOf(f.id))) return;
-    const next = { ...errors, [f.id]: "" as Problem };
+    const next: Record<string, Problem> = { ...errors, [f.id]: "" };
     setErrors(next);
     if (!Object.values(next).some(Boolean)) setMsg("");
   };
@@ -63,11 +76,7 @@ export function PrototypeForm({ form: formName, fields, submitLabel, doneTitle, 
     setErrors(found);
     const bad = fields.filter((f) => found[f.id]);
     if (bad.length) {
-      setMsg(
-        bad.some((f) => found[f.id] === "empty")
-          ? "Please complete every field before you submit the form."
-          : "Please check the address you entered, it does not look right.",
-      );
+      setMsg(bad.length === 1 ? "Please fix the field marked below." : `Please fix the ${bad.length} fields marked below.`);
       ref.current?.querySelector<HTMLElement>(`#${bad[0].id}`)?.focus();
       return;
     }
@@ -107,14 +116,22 @@ export function PrototypeForm({ form: formName, fields, submitLabel, doneTitle, 
       onSubmit={send}
       noValidate
     >
-      <div className="form-body flex flex-1 flex-col">
+      {/* the layout utilities sit in a later CSS layer than .form-sent .form-body, so they would
+          keep the form on screen after it is sent; leave them off once it has gone */}
+      <div className={sent ? "form-body hidden" : "form-body flex flex-1 flex-col"} aria-hidden={sent || undefined}>
         {fields.map((f) => {
           const err = !!errors[f.id];
-          const common = { id: f.id, "aria-invalid": err || undefined, onChange: onEdit(f) };
+          const common = {
+            id: f.id,
+            "aria-invalid": err || undefined,
+            "aria-describedby": err ? `${f.id}-err` : undefined,
+            onChange: onEdit(f),
+          };
+          const maxLength = f.kind === "textarea" ? MAX.textarea : isName(f) ? MAX.name : MAX.input;
           return (
             <div key={f.id} className={`field${err ? " is-err" : ""}`}>
               <label htmlFor={f.id}>{f.label}</label>
-              {f.kind === "input" && <input {...common} type={f.type} placeholder={f.placeholder} autoComplete={f.autoComplete} />}
+              {f.kind === "input" && <input {...common} type={f.type} placeholder={f.placeholder} autoComplete={f.autoComplete} maxLength={maxLength} />}
               {f.kind === "select" && (
                 <select {...common} defaultValue="">
                   <option value="">{f.placeholder}</option>
@@ -123,7 +140,12 @@ export function PrototypeForm({ form: formName, fields, submitLabel, doneTitle, 
                   ))}
                 </select>
               )}
-              {f.kind === "textarea" && <textarea {...common} placeholder={f.placeholder}></textarea>}
+              {f.kind === "textarea" && <textarea {...common} placeholder={f.placeholder} maxLength={maxLength}></textarea>}
+              {err && (
+                <p id={`${f.id}-err`} className="field-err">
+                  {errors[f.id]}
+                </p>
+              )}
             </div>
           );
         })}

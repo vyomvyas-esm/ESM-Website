@@ -84,7 +84,7 @@ export default async function CaseStudyPage({ params }: Params) {
           </div>
           <div className="mt-10 rv">
             <Link className="btn btn-ghost group" href="/case-studies/">
-              All case studies
+              All Case Studies
               <Arrow />
             </Link>
           </div>

@@ -122,7 +122,7 @@ export function CaseStudiesIndex() {
         {live.length > 0 && visible < live.length && (
           <div className="mt-10 flex flex-col items-center gap-3">
             <button type="button" className="btn btn-ghost group" onClick={() => setShown((s) => s + STEP)}>
-              Show more case studies
+              Show More Case Studies
               <Arrow />
             </button>
             <p className="text-[11.5px] text-white/35">

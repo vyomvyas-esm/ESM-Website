@@ -60,7 +60,7 @@ export default function HomePage() {
                 </svg>
               </Link>{" "}
               <a className="btn btn-ghost" href="#proof">
-                Check the proof
+                Check the Proof
               </a>
             </div>
           </div>
@@ -365,7 +365,7 @@ export default function HomePage() {
             </div>
             <div className="rv" data-d="120">
               <Link className="btn btn-light group" href="/case-studies/">
-                Read all case studies
+                Read All Case Studies
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
                     d="M2.8 8h10.4M9.4 4.2 13.2 8l-3.8 3.8"
@@ -1324,7 +1324,7 @@ export default function HomePage() {
                 frameworks, and the quantified outcomes achieved.
               </p>
               <Link className="iq-go we-go group" href="/case-studies/">
-                Read all case studies
+                Read All Case Studies
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path
