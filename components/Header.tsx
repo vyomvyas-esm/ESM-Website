@@ -209,8 +209,7 @@ export function Header() {
           <div className="mt-3 flex items-center gap-3">
             <Link className="btn btn-light btn-sm" href="/contact/">
               Define an Outcome
-            </Link>{" "}
-            <span className="text-[12px] text-white/45">Appearance</span> <ThemeSwitch />
+            </Link>
           </div>
         </nav>
       </div>

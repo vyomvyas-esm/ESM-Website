@@ -68,7 +68,7 @@ export default async function BlogPostPage({ params }: Params) {
   if (!post) notFound();
 
   return (
-    <main className="page">
+    <main className="page" data-hero="left">
       <JsonLd data={graph(blogPosting(post, firstSentences(post.lede)))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">

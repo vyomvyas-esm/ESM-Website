@@ -32,7 +32,7 @@ export default async function GlossaryTermPage({ params }: Params) {
   const related = t.related.map((slug) => bySlug(slug)!);
 
   return (
-    <main className="page glt" id={`page-gl-${t.slug}`}>
+    <main className="page glt" id={`page-gl-${t.slug}`} data-hero="left">
       <JsonLd data={graph(definedTerm(t))} />
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">

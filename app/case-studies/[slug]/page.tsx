@@ -31,7 +31,7 @@ export default async function CaseStudyPage({ params }: Params) {
   if (!cs) notFound();
 
   return (
-    <main className="page">
+    <main className="page" data-hero="left">
       <section className="relative isolate overflow-hidden pt-[68px]">
         <div className="sky" aria-hidden="true">
           <div className="hero-photo"></div>

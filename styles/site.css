@@ -7836,3 +7836,22 @@ html[data-theme="dark"] .field-err{color:rgb(255 140 140)}
   #page-contact .field{position:relative}
   #page-contact .field-err{position:absolute;top:0;right:0;margin:0;font-size:.6875rem;line-height:1.3;text-align:right}
 }
+
+/* ================================================================
+   Heroes are centred (design review, November 2026). The breadcrumb stays on the left.
+   The hero is whatever sits beside a .crumb. Left alone: the contact page (a form beside
+   the headline), the careers application, and article headers (data-hero="left").
+   ================================================================ */
+main.page:not(#page-contact):not(#page-careers-apply):not([data-hero="left"]) :has(> .crumb) > :not(.crumb):not(.sky){
+  text-align:center
+}
+main.page:not(#page-contact):not(#page-careers-apply):not([data-hero="left"]) :has(> .crumb) > :is(.lede,.hero-lede,h1,.h-hero){
+  margin-inline:auto
+}
+main.page:not(#page-contact):not(#page-careers-apply):not([data-hero="left"]) :has(> .crumb) > :is(div,p):not(.crumb){
+  justify-content:center
+}
+main.page:not(#page-contact):not(#page-careers-apply):not([data-hero="left"]) :has(> .crumb) > .pz-hero-logo{
+  display:block;margin-inline:auto;margin-top:2.25rem
+}
+.crumb{justify-content:flex-start;text-align:left}
